@@ -6,7 +6,7 @@
   <link href="https://readmengk90.github.io/atom.xml" rel="self"/>
   
   <link href="https://readmengk90.github.io/"/>
-  <updated>2024-01-08T12:33:41.583Z</updated>
+  <updated>2024-01-08T12:46:38.649Z</updated>
   <id>https://readmengk90.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://readmengk90.github.io/2024/01/08/first-blog/"/>
     <id>https://readmengk90.github.io/2024/01/08/first-blog/</id>
     <published>2024-01-08T03:36:23.935Z</published>
-    <updated>2024-01-08T12:33:41.583Z</updated>
+    <updated>2024-01-08T12:46:38.649Z</updated>
     
-    <content type="html"><![CDATA[<hr><p>title: first blog<br>date: 2024-01-08 11:36:23<br>categories: #分类<br>tags: # 标签</p><ul><li>first-blog</li><li>hello-world</li></ul><p>#This is my first blog<br>  welcome to you!</p>]]></content>
+    <content type="html"><![CDATA[<hr><p>title: first blog<br>date: 2024-01-08 11:36:23<br>categories: #分类<br>tags: # 标签</p><ul><li>first-blog</li></ul><p>#This is my first blog<br>  welcome to you!</p>]]></content>
     
     
       
@@ -32,8 +32,8 @@
 &lt;p&gt;title: first blog&lt;br&gt;date: 2024-01-08 11:36:23&lt;br&gt;categories: #分类&lt;br&gt;tags: # 标签&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;first-blog&lt;/li&gt;
-&lt;li&gt;hello-world&lt;/li&gt;
-&lt;/</summary>
+&lt;/ul&gt;
+&lt;p&gt;#This is my fi</summary>
       
     
     
