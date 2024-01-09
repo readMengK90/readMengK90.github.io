@@ -6,7 +6,7 @@
   <link href="https://readmengk90.github.io/atom.xml" rel="self"/>
   
   <link href="https://readmengk90.github.io/"/>
-  <updated>2024-01-08T16:34:43.470Z</updated>
+  <updated>2024-01-09T02:12:09.675Z</updated>
   <id>https://readmengk90.github.io/</id>
   
   <author>
@@ -20,15 +20,16 @@
     <title>好好学习，天天向上</title>
     <link href="https://readmengk90.github.io/2024/01/08/first-blog/"/>
     <id>https://readmengk90.github.io/2024/01/08/first-blog/</id>
-    <published>2024-01-08T03:36:23.935Z</published>
-    <updated>2024-01-08T16:34:43.470Z</updated>
+    <published>2024-01-08T03:36:23.000Z</published>
+    <updated>2024-01-09T02:12:09.675Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="https://markdown.com.cn/assets/img/shiprock.c3b9a023.jpg" alt="沙漠中的岩石"><br>title: first blog<br>date: 2024-01-08 11:36:23<br>#This is my first blog<br>  welcome to you!</p>]]></content>
+    <content type="html"><![CDATA[<p><img src="https://markdown.com.cn/assets/img/shiprock.c3b9a023.jpg" alt="沙漠中的岩石"></p><h1 id="This-is-my-first-blog"><a href="#This-is-my-first-blog" class="headerlink" title="This is my first blog"></a>This is my first blog</h1><h2 id="welcome-to-you"><a href="#welcome-to-you" class="headerlink" title="welcome to you!"></a>welcome to you!</h2>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://markdown.com.cn/assets/img/shiprock.c3b9a023.jpg&quot; alt=&quot;沙漠中的岩石&quot;&gt;&lt;br&gt;title: first blog&lt;br&gt;date: 2024-01-08 11:36:23&lt;br&gt;#T</summary>
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://markdown.com.cn/assets/img/shiprock.c3b9a023.jpg&quot; alt=&quot;沙漠中的岩石&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;This-is-my-first-blog&quot;&gt;&lt;a href=&quot;#This-is-my</summary>
       
     
     
