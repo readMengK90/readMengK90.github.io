@@ -9,11 +9,11 @@
   <entry>
     <title>Hexo+Next主题下的阅读全文设置</title>
     <url>/2024/01/10/Hexo-%E6%98%BE%E7%A4%BA%E5%85%A8%E6%96%87%E7%9A%84%E8%AE%BE%E7%BD%AE/</url>
-    <content><![CDATA[<h1 id="Hexo-显示全文的设置"><a href="#Hexo-显示全文的设置" class="headerlink" title="Hexo-显示全文的设置"></a>Hexo-显示全文的设置</h1><h5 id="1-在文章中使用-more-手动进行截断"><a href="#1-在文章中使用-more-手动进行截断" class="headerlink" title="1.在文章中使用&lt; !--more--&gt; 手动进行截断"></a>1.在文章中使用<code>&lt; !--more--&gt;</code> 手动进行截断</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-01.png" alt="image-20240110132555493"></p>
-<h5 id="2-添加描述信息的内容，会成为一种相关内容的提示信息"><a href="#2-添加描述信息的内容，会成为一种相关内容的提示信息" class="headerlink" title="2.添加描述信息的内容，会成为一种相关内容的提示信息"></a>2.添加描述信息的内容，会成为一种相关内容的提示信息</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-02.png" alt="image-20240110132853566"></p>
+    <content><![CDATA[<h1 id="Hexo-显示全文的设置"><a href="#Hexo-显示全文的设置" class="headerlink" title="Hexo-显示全文的设置"></a>Hexo-显示全文的设置</h1><h5 id="1-在文章中使用-more-手动进行截断"><a href="#1-在文章中使用-more-手动进行截断" class="headerlink" title="1.在文章中使用&lt; !--more--&gt; 手动进行截断"></a>1.在文章中使用<code>&lt; !--more--&gt;</code> 手动进行截断</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-01.png?raw=true" alt="image-20240110132555493"></p>
+<h5 id="2-添加描述信息的内容，会成为一种相关内容的提示信息"><a href="#2-添加描述信息的内容，会成为一种相关内容的提示信息" class="headerlink" title="2.添加描述信息的内容，会成为一种相关内容的提示信息"></a>2.添加描述信息的内容，会成为一种相关内容的提示信息</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-02.png?raw=true" alt="image-20240110132853566"></p>
 <h5 id="3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部"><a href="#3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部" class="headerlink" title="3.在主题配置文件中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部"></a>3.在<strong>主题配置文件</strong>中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部</h5><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">auto_excerpt:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">length:</span> <span class="number">150</span></span><br></pre></td></tr></table></figure>
 
-<h5 id="4-效果-展示"><a href="#4-效果-展示" class="headerlink" title="4.效果 展示"></a>4.效果 展示</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-03.png" alt="image-20240110133302658"></p>
+<h5 id="4-效果-展示"><a href="#4-效果-展示" class="headerlink" title="4.效果 展示"></a>4.效果 展示</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-03.png?raw=true" alt="image-20240110133302658"></p>
 ]]></content>
   </entry>
   <entry>
