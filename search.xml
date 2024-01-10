@@ -1,21 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hexo+Next主题下的阅读全文设置</title>
+    <title>Hexo+Next主题的主页文章添加边框阴影效果</title>
     <url>/2024/01/10/Hexo+Next%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%BB%E9%A1%B5%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E8%BE%B9%E6%A1%86%E9%98%B4%E5%BD%B1%E6%95%88%E6%9E%9C/</url>
-    <content><![CDATA[<h1 id="Hexo-Next主题的主页文章添加边框阴影效果"><a href="#Hexo-Next主题的主页文章添加边框阴影效果" class="headerlink" title="Hexo+Next主题的主页文章添加边框阴影效果"></a>Hexo+Next主题的主页文章添加边框阴影效果</h1><h3 id="1-打开-themes-next-source-css-common-components-post-下的post-styl文件"><a href="#1-打开-themes-next-source-css-common-components-post-下的post-styl文件" class="headerlink" title="1.打开(themes&#x2F;next&#x2F;source&#x2F;css&#x2F;common&#x2F;components&#x2F;post&#x2F;)下的post.styl文件"></a>1.打开(themes&#x2F;next&#x2F;source&#x2F;css&#x2F;common&#x2F;components&#x2F;post&#x2F;)下的post.styl文件</h3><h4 id="查找到-use-motion-补充缺少的内容，可以-根据自身需求做出相应调整-。"><a href="#查找到-use-motion-补充缺少的内容，可以-根据自身需求做出相应调整-。" class="headerlink" title="查找到.use-motion,补充缺少的内容，可以 根据自身需求做出相应调整 。"></a>查找到.use-motion,补充缺少的内容，可以 根据自身需求做出相应调整 。</h4><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.use-motion</span> &#123;</span><br><span class="line"> if (hexo-config(&#x27;motion<span class="selector-class">.transition</span><span class="selector-class">.post_block</span>&#x27;)) &#123;</span><br><span class="line">    <span class="selector-class">.post-block</span>, <span class="selector-class">.pagination</span>, <span class="selector-class">.comments</span> &#123;</span><br><span class="line">      <span class="attribute">opacity</span>: <span class="number">0</span>;</span><br><span class="line">      <span class="attribute">margin-top</span>: <span class="number">3px</span>;</span><br><span class="line">      <span class="attribute">margin-bottom</span>: <span class="number">30px</span>;</span><br><span class="line">      <span class="attribute">padding</span>: <span class="number">25px</span>;</span><br><span class="line">      -webkit-<span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">5px</span> <span class="built_in">rgba</span>(<span class="number">202</span>, <span class="number">203</span>, <span class="number">203</span>, .<span class="number">5</span>);</span><br><span class="line">      -moz-<span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">5px</span> <span class="built_in">rgba</span>(<span class="number">202</span>, <span class="number">203</span>, <span class="number">204</span>, .<span class="number">5</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
-
+    <content><![CDATA[<h1 id="Hexo-Next主题的主页文章添加边框阴影效果"><a href="#Hexo-Next主题的主页文章添加边框阴影效果" class="headerlink" title="Hexo+Next主题的主页文章添加边框阴影效果"></a>Hexo+Next主题的主页文章添加边框阴影效果</h1><h3 id="1-打开-themes-next-source-css-common-components-post-下的post-styl文件"><a href="#1-打开-themes-next-source-css-common-components-post-下的post-styl文件" class="headerlink" title="1.打开(themes&#x2F;next&#x2F;source&#x2F;css&#x2F;common&#x2F;components&#x2F;post&#x2F;)下的post.styl文件"></a>1.打开(themes&#x2F;next&#x2F;source&#x2F;css&#x2F;common&#x2F;components&#x2F;post&#x2F;)下的post.styl文件</h3><h4 id="查找到-use-motion-补充缺少的内容，可以-根据自身需求做出相应调整-。"><a href="#查找到-use-motion-补充缺少的内容，可以-根据自身需求做出相应调整-。" class="headerlink" title="查找到.use-motion,补充缺少的内容，可以 根据自身需求做出相应调整 。"></a>查找到.use-motion,补充缺少的内容，可以 根据自身需求做出相应调整 。</h4><p>.use-motion {<br> if (hexo-config(‘motion.transition.post_block’)) {<br>    .post-block, .pagination, .comments {<br>      opacity: 0;<br>      margin-top: 3px;<br>      margin-bottom: 30px;<br>      padding: 25px;<br>      -webkit-box-shadow: 0 0 5px rgba(202, 203, 203, .5);<br>      -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);<br>    }<br>  }</p>
 <h3 id="2-效果展示"><a href="#2-效果展示" class="headerlink" title="2.效果展示"></a>2.效果展示</h3><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/2-001.png?raw=true" alt="image-20240110185616468"></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Hexo+Next主题下的阅读全文设置</title>
-    <url>/2024/01/10/Hexo-%E6%98%BE%E7%A4%BA%E5%85%A8%E6%96%87%E7%9A%84%E8%AE%BE%E7%BD%AE/</url>
-    <content><![CDATA[<h1 id="Hexo-显示全文的设置"><a href="#Hexo-显示全文的设置" class="headerlink" title="Hexo-显示全文的设置"></a>Hexo-显示全文的设置</h1><h5 id="1-在文章中使用-more-手动进行截断"><a href="#1-在文章中使用-more-手动进行截断" class="headerlink" title="1.在文章中使用&lt; !--more--&gt; 手动进行截断"></a>1.在文章中使用<code>&lt; !--more--&gt;</code> 手动进行截断</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-01.png?raw=true" alt="image-20240110132555493"></p>
-<h5 id="2-添加描述信息的内容，会成为一种相关内容的提示信息"><a href="#2-添加描述信息的内容，会成为一种相关内容的提示信息" class="headerlink" title="2.添加描述信息的内容，会成为一种相关内容的提示信息"></a>2.添加描述信息的内容，会成为一种相关内容的提示信息</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-02.png?raw=true" alt="image-20240110132853566"></p>
-<h5 id="3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部"><a href="#3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部" class="headerlink" title="3.在主题配置文件中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部"></a>3.在<strong>主题配置文件</strong>中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部</h5><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">auto_excerpt:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">length:</span> <span class="number">150</span></span><br></pre></td></tr></table></figure>
-
-<h5 id="4-效果-展示"><a href="#4-效果-展示" class="headerlink" title="4.效果 展示"></a>4.效果 展示</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-03.png?raw=true" alt="image-20240110133302658"></p>
 ]]></content>
   </entry>
   <entry>
@@ -26,6 +15,16 @@
         <tag>Java</tag>
         <tag>前端</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Hexo+Next主题下的阅读全文设置</title>
+    <url>/2024/01/10/Hexo-%E6%98%BE%E7%A4%BA%E5%85%A8%E6%96%87%E7%9A%84%E8%AE%BE%E7%BD%AE/</url>
+    <content><![CDATA[<h1 id="Hexo-显示全文的设置"><a href="#Hexo-显示全文的设置" class="headerlink" title="Hexo-显示全文的设置"></a>Hexo-显示全文的设置</h1><h5 id="1-在文章中使用-more-手动进行截断"><a href="#1-在文章中使用-more-手动进行截断" class="headerlink" title="1.在文章中使用&lt; !--more--&gt; 手动进行截断"></a>1.在文章中使用<code>&lt; !--more--&gt;</code> 手动进行截断</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-01.png?raw=true" alt="image-20240110132555493"></p>
+<h5 id="2-添加描述信息的内容，会成为一种相关内容的提示信息"><a href="#2-添加描述信息的内容，会成为一种相关内容的提示信息" class="headerlink" title="2.添加描述信息的内容，会成为一种相关内容的提示信息"></a>2.添加描述信息的内容，会成为一种相关内容的提示信息</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-02.png?raw=true" alt="image-20240110132853566"></p>
+<h5 id="3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部"><a href="#3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部" class="headerlink" title="3.在主题配置文件中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部"></a>3.在<strong>主题配置文件</strong>中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部</h5><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">auto_excerpt:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">length:</span> <span class="number">150</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="4-效果-展示"><a href="#4-效果-展示" class="headerlink" title="4.效果 展示"></a>4.效果 展示</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-03.png?raw=true" alt="image-20240110133302658"></p>
+]]></content>
   </entry>
   <entry>
     <title>Hello World</title>
