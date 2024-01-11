@@ -49,19 +49,43 @@
     <title>常用的CMD命令</title>
     <url>/2024/01/11/java%E5%9F%BA%E7%A1%80-%E5%B8%B8%E7%94%A8%E7%9A%84CMD%E5%91%BD%E4%BB%A4/</url>
     <content><![CDATA[<h1 id="1-常用的CMD命令"><a href="#1-常用的CMD命令" class="headerlink" title="1. 常用的CMD命令"></a>1. 常用的CMD命令</h1><ol>
-<li>Ctrl+R打开CMD命令窗口，<strong>同时可以按住ctrl键不松，拖动滚轮放大或缩小CMD窗口大小</strong></li>
-<li><em>盘符名称+冒号</em> (C:,D:,E:),表示切换到指定盘符</li>
-<li><em>dir</em> 查看当前路径下的内容，就是该目录列表(显示所有的文件和文件夹，<strong>包含隐藏的文件和文件夹</strong>)</li>
-<li><em>cd 目录</em>  ， <strong>进入单极目录</strong>，(目录名可以写出部分内容，按住tab键关联出目录名称)</li>
-<li><em>cd..</em> 回退到上一级目录，<strong>单级回退</strong></li>
-<li>cd 目录1\目录2…     <strong>进入多级目录</strong></li>
-<li>cd \    回退到盘符目录,<strong>多级回退</strong></li>
-<li>cls 清屏(Clear screen)</li>
-<li>exit  退出命令提示符窗口</li>
+<li><p>Ctrl+R打开CMD命令窗口，<strong>同时可以按住ctrl键不松，拖动滚轮放大或缩小CMD窗口大小</strong></p>
+</li>
+<li><p><em>盘符名称+冒号</em> (C:,D:,E:),表示切换到指定盘符</p>
+</li>
+<li><p><em>dir</em> 查看当前路径下的内容，就是该目录列表(显示所有的文件和文件夹，<strong>包含隐藏的文件和文件夹</strong>)</p>
+</li>
+<li><p><em>cd 目录</em>  ， <strong>进入单极目录</strong>，(目录名可以写出部分内容，按住tab键关联出目录名称)</p>
+</li>
+<li><p><em>cd..</em> 回退到上一级目录，<strong>单级回退</strong></p>
+</li>
+<li><p>cd 目录1\目录2…     <strong>进入多级目录</strong></p>
+</li>
+<li><p>cd \    回退到盘符目录,<strong>多级回退</strong></p>
+</li>
+<li><p>cls 清屏(Clear screen)</p>
+</li>
+<li><p>exit  退出命令提示符窗口</p>
+<h1 id="2-命令窗口打开应用程序"><a href="#2-命令窗口打开应用程序" class="headerlink" title="2. 命令窗口打开应用程序"></a>2. 命令窗口打开应用程序</h1></li>
+<li><p>方法一: 进入应用程序所处的文件夹，输入程序的名称(qq.exe)</p>
+</li>
+<li><p>方法二: 把程序的路径记录在电脑的某个地方(<strong>环境变量</strong>)</p>
+</li>
 </ol>
+<ul>
+<li>环境变量的配置方式：<ul>
+<li>打开<em>此电脑</em>-&gt;右键选择<em>属性</em>-&gt;左侧边栏选择<em>高级系统设置</em>-&gt;打开<em>系统属性</em>对话框-&gt;在<em>高级</em>选项卡中选择“<em>环境变量</em>”-&gt;选择系统变量(s)中的Path-&gt;.编辑路径信息</li>
+<li>配置环境变量的作用：用于实现任意目录下打开指定文件。</li>
+</ul>
+</li>
+</ul>
+<p>​		</p>
 ]]></content>
       <categories>
         <category>Java基础</category>
       </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
   </entry>
 </search>
