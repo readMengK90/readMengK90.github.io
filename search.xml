@@ -137,6 +137,33 @@
       </tags>
   </entry>
   <entry>
+    <title>环境变量的配置</title>
+    <url>/2024/01/12/java%E5%9F%BA%E7%A1%80-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E7%9A%84%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<h1 id="环境变量的配置"><a href="#环境变量的配置" class="headerlink" title="环境变量的配置"></a>环境变量的配置</h1><ol>
+<li><h5 id="java已经自动配置好了java-javac-javaw-jshell-有且仅有这四种，想要配置其他的环境变量需要手动配置（C-Program-Files-Common-Files-Oracle-Java-javapath）"><a href="#java已经自动配置好了java-javac-javaw-jshell-有且仅有这四种，想要配置其他的环境变量需要手动配置（C-Program-Files-Common-Files-Oracle-Java-javapath）" class="headerlink" title="java已经自动配置好了java,javac,javaw,jshell,有且仅有这四种，想要配置其他的环境变量需要手动配置（C:\Program Files\Common Files\Oracle\Java\javapath）"></a>java已经自动配置好了java,javac,javaw,jshell,有且仅有这四种，想要配置其他的环境变量需要手动配置（C:\Program Files\Common Files\Oracle\Java\javapath）</h5><p><img src="/../images/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F004.png"></p>
+</li>
+<li><p>手动配置</p>
+<ol>
+<li><p>法1：在Path里直接添加到java的路径(bin之前的路径)</p>
+<p><img src="/../images/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F001.png"></p>
+</li>
+<li><p>法2-01：新建变量名 JAVA_HOME和变量值java的路径(bin之前的路径)</p>
+<p><img src="/../images/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F002.png"></p>
+</li>
+</ol>
+</li>
+</ol>
+<p>​		法2-02： 引用JAVA_HOME变量</p>
+<p>​		<img src="/../images/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F003.png"></p>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>编译和运行</title>
     <url>/2024/01/12/java%E5%9F%BA%E7%A1%80-%E7%BC%96%E8%AF%91%E8%BF%90%E8%A1%8C/</url>
     <content><![CDATA[<h1 id="编译和运行"><a href="#编译和运行" class="headerlink" title="编译和运行"></a>编译和运行</h1><ol>

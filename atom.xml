@@ -6,7 +6,7 @@
   <link href="https://readmengk90.github.io/atom.xml" rel="self"/>
   
   <link href="https://readmengk90.github.io/"/>
-  <updated>2024-01-12T05:53:33.269Z</updated>
+  <updated>2024-01-12T06:35:00.285Z</updated>
   <id>https://readmengk90.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>环境变量的配置</title>
+    <link href="https://readmengk90.github.io/2024/01/12/java%E5%9F%BA%E7%A1%80-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E7%9A%84%E9%85%8D%E7%BD%AE/"/>
+    <id>https://readmengk90.github.io/2024/01/12/java%E5%9F%BA%E7%A1%80-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E7%9A%84%E9%85%8D%E7%BD%AE/</id>
+    <published>2024-01-12T06:17:38.250Z</published>
+    <updated>2024-01-12T06:35:00.285Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="环境变量的配置"><a href="#环境变量的配置" class="headerlink" title="环境变量的配置"></a>环境变量的配置</h1><ol><li><h5 id="java已经自动配置好了java-javac-javaw-jshell-有且仅有这四种，想要配置其他的环境变量需要手动配置（C-Program-Files-Common-Files-Oracle-Java-javapath）"><a href="#java已经自动配置好了java-javac-javaw-jshell-有且仅有这四种，想要配置其他的环境变量需要手动配置（C-Program-Files-Common-Files-Oracle-Java-javapath）" class="headerlink" title="java已经自动配置好了java,javac,javaw,jshell,有且仅有这四种，想要配置其他的环境变量需要手动配置（C:\Program Files\Common Files\Oracle\Java\javapath）"></a>java已经自动配置好了java,javac,javaw,jshell,有且仅有这四种，想要配置其他的环境变量需要手动配置（C:\Program Files\Common Files\Oracle\Java\javapath）</h5><p><img src="/../images/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F004.png"></p></li><li><p>手动配置</p><ol><li><p>法1：在Path里直接添加到java的路径(bin之前的路径)</p><p><img src="/../images/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F001.png"></p></li><li><p>法2-01：新建变量名 JAVA_HOME和变量值java的路径(bin之前的路径)</p><p><img src="/../images/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F002.png"></p></li></ol></li></ol><p>​法2-02： 引用JAVA_HOME变量</p><p>​<img src="/../images/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F003.png"></p>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;配置环境变量步骤&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="Java基础" scheme="https://readmengk90.github.io/categories/Java%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="java" scheme="https://readmengk90.github.io/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>编译和运行</title>
@@ -42,7 +63,7 @@
     <link href="https://readmengk90.github.io/2024/01/11/java%E5%9F%BA%E7%A1%80-JDK%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%B8%8B%E8%BD%BD/"/>
     <id>https://readmengk90.github.io/2024/01/11/java%E5%9F%BA%E7%A1%80-JDK%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%B8%8B%E8%BD%BD/</id>
     <published>2024-01-11T11:46:18.463Z</published>
-    <updated>2024-01-12T02:26:56.845Z</updated>
+    <updated>2024-01-12T06:24:34.621Z</updated>
     
     <content type="html"><![CDATA[<h1 id="JDK的安装与下载"><a href="#JDK的安装与下载" class="headerlink" title="JDK的安装与下载"></a>JDK的安装与下载</h1><h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><ol><li>网址 <a href="http://www.oracle.com/">www.oracle.com</a>  ,找到Products -&gt; Hardware and Software -&gt; Java-&gt;Download Java -&gt;Java archive（历史版本）&#x2F; Java Downloads(最新版本)-&gt;Windows系统下的 x64 Installer-&gt;点击下载</li></ol><h4 id="安装："><a href="#安装：" class="headerlink" title="安装："></a>安装：</h4><ol><li><p>双击打开 点击下一步</p><p><img src="/../images/%E5%AE%89%E8%A3%85001.png"></p></li><li><p>选择更改安装路径(安装路径不要有中文，空格，和特殊符号)</p><p><img src="/../images/%E5%AE%89%E8%A3%85002.png"></p></li><li><p>安装成功,点击关闭</p><p><img src="/../images/%E5%AE%89%E8%A3%85003.png"></p></li><li><p>JDK的安装目录及解释</p><p><img src="/../images/%E5%AE%89%E8%A3%85004.png"></p></li></ol>]]></content>
     
