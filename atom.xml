@@ -6,7 +6,7 @@
   <link href="https://readmengk90.github.io/atom.xml" rel="self"/>
   
   <link href="https://readmengk90.github.io/"/>
-  <updated>2024-01-12T01:41:46.383Z</updated>
+  <updated>2024-01-12T02:09:39.893Z</updated>
   <id>https://readmengk90.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://readmengk90.github.io/2024/01/11/java%E5%9F%BA%E7%A1%80-JDK%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%B8%8B%E8%BD%BD/"/>
     <id>https://readmengk90.github.io/2024/01/11/java%E5%9F%BA%E7%A1%80-JDK%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%B8%8B%E8%BD%BD/</id>
     <published>2024-01-11T11:46:18.463Z</published>
-    <updated>2024-01-12T01:41:46.383Z</updated>
+    <updated>2024-01-12T02:09:39.893Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="JDK的安装与下载"><a href="#JDK的安装与下载" class="headerlink" title="JDK的安装与下载"></a>JDK的安装与下载</h1><ol><li>网址 <a href="http://www.oracle.com/">www.oracle.com</a>  ,找到Resources -&gt; Downloads -&gt; Java Runtime Enviroment(JRE) Consumer Downloads</li><li></li></ol>]]></content>
+    <content type="html"><![CDATA[<h1 id="JDK的安装与下载"><a href="#JDK的安装与下载" class="headerlink" title="JDK的安装与下载"></a>JDK的安装与下载</h1><h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><ol><li>网址 <a href="http://www.oracle.com/">www.oracle.com</a>  ,找到Products -&gt; Hardware and Software -&gt; Java-&gt;Download Java -&gt;Java archive（历史版本）&#x2F; Java Downloads(最新版本)-&gt;Windows系统下的 x64 Installer-&gt;点击下载</li></ol><h4 id="安装："><a href="#安装：" class="headerlink" title="安装："></a>安装：</h4><ol><li><p>双击打开 点击下一步</p><p><img src="/../images/%E5%AE%89%E8%A3%85001.png"></p></li><li><p>选择更改安装路径(安装路径不要有中文，空格，和特殊符号)</p><p><img src="/../images/%E5%AE%89%E8%A3%85002.png"></p></li><li></li></ol>]]></content>
     
     
     <summary type="html">&lt;center&gt;JDK的安装步骤&lt;/center&gt;</summary>
