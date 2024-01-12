@@ -42,7 +42,7 @@
     <link href="https://readmengk90.github.io/2024/01/12/java%E5%9F%BA%E7%A1%80-%E7%BC%96%E8%AF%91%E8%BF%90%E8%A1%8C/"/>
     <id>https://readmengk90.github.io/2024/01/12/java%E5%9F%BA%E7%A1%80-%E7%BC%96%E8%AF%91%E8%BF%90%E8%A1%8C/</id>
     <published>2024-01-12T02:53:31.261Z</published>
-    <updated>2024-01-12T05:53:33.269Z</updated>
+    <updated>2024-01-12T06:40:32.017Z</updated>
     
     <content type="html"><![CDATA[<h1 id="编译和运行"><a href="#编译和运行" class="headerlink" title="编译和运行"></a>编译和运行</h1><ol><li><p>编译和运行的应用程序</p><p><img src="/../images/%E7%BC%96%E8%AF%91%E8%BF%90%E8%A1%8C001.png"></p></li><li><p>如何操作</p><p><img src="/../images/%E7%BC%96%E8%AF%91%E8%BF%90%E8%A1%8C002.png"></p></li></ol>]]></content>
     
@@ -54,7 +54,7 @@
     <category term="Java基础" scheme="https://readmengk90.github.io/categories/Java%E5%9F%BA%E7%A1%80/"/>
     
     
-    <category term="java基础" scheme="https://readmengk90.github.io/tags/java%E5%9F%BA%E7%A1%80/"/>
+    <category term="java" scheme="https://readmengk90.github.io/tags/java/"/>
     
   </entry>
   
@@ -63,7 +63,7 @@
     <link href="https://readmengk90.github.io/2024/01/11/java%E5%9F%BA%E7%A1%80-JDK%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%B8%8B%E8%BD%BD/"/>
     <id>https://readmengk90.github.io/2024/01/11/java%E5%9F%BA%E7%A1%80-JDK%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%B8%8B%E8%BD%BD/</id>
     <published>2024-01-11T11:46:18.463Z</published>
-    <updated>2024-01-12T06:24:34.621Z</updated>
+    <updated>2024-01-12T06:40:37.130Z</updated>
     
     <content type="html"><![CDATA[<h1 id="JDK的安装与下载"><a href="#JDK的安装与下载" class="headerlink" title="JDK的安装与下载"></a>JDK的安装与下载</h1><h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><ol><li>网址 <a href="http://www.oracle.com/">www.oracle.com</a>  ,找到Products -&gt; Hardware and Software -&gt; Java-&gt;Download Java -&gt;Java archive（历史版本）&#x2F; Java Downloads(最新版本)-&gt;Windows系统下的 x64 Installer-&gt;点击下载</li></ol><h4 id="安装："><a href="#安装：" class="headerlink" title="安装："></a>安装：</h4><ol><li><p>双击打开 点击下一步</p><p><img src="/../images/%E5%AE%89%E8%A3%85001.png"></p></li><li><p>选择更改安装路径(安装路径不要有中文，空格，和特殊符号)</p><p><img src="/../images/%E5%AE%89%E8%A3%85002.png"></p></li><li><p>安装成功,点击关闭</p><p><img src="/../images/%E5%AE%89%E8%A3%85003.png"></p></li><li><p>JDK的安装目录及解释</p><p><img src="/../images/%E5%AE%89%E8%A3%85004.png"></p></li></ol>]]></content>
     
