@@ -6,7 +6,7 @@
   <link href="https://readmengk90.github.io/atom.xml" rel="self"/>
   
   <link href="https://readmengk90.github.io/"/>
-  <updated>2024-01-11T17:23:28.036Z</updated>
+  <updated>2024-01-12T01:36:16.261Z</updated>
   <id>https://readmengk90.github.io/</id>
   
   <author>
@@ -17,23 +17,23 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>常用的CMD命令</title>
     <link href="https://readmengk90.github.io/2024/01/11/java%E5%9F%BA%E7%A1%80-JDK%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%B8%8B%E8%BD%BD/"/>
     <id>https://readmengk90.github.io/2024/01/11/java%E5%9F%BA%E7%A1%80-JDK%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%B8%8B%E8%BD%BD/</id>
     <published>2024-01-11T11:46:18.463Z</published>
-    <updated>2024-01-11T17:23:28.036Z</updated>
+    <updated>2024-01-12T01:36:16.261Z</updated>
     
     <content type="html"><![CDATA[<h1 id="JDK的安装与下载"><a href="#JDK的安装与下载" class="headerlink" title="JDK的安装与下载"></a>JDK的安装与下载</h1><ol><li>网址 <a href="http://www.oracle.com/">www.oracle.com</a>  ,找到Resources -&gt; Downloads -&gt; Java Runtime Enviroment(JRE) Consumer Downloads</li><li></li></ol>]]></content>
     
     
-    <summary type="html">&lt;h1 id=&quot;JDK的安装与下载&quot;&gt;&lt;a href=&quot;#JDK的安装与下载&quot; class=&quot;headerlink&quot; title=&quot;JDK的安装与下载&quot;&gt;&lt;/a&gt;JDK的安装与下载&lt;/h1&gt;&lt;ol&gt;
-&lt;li&gt;网址 &lt;a href=&quot;http://www.oracle.com/&quot;&gt;www.oracle.com&lt;/a&gt;  ,找到Resources -&amp;gt; Downloads -&amp;gt; Java Runtime Enviroment(JRE) Consumer Downloads&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</summary>
+    <summary type="html">&lt;center&gt;进入目录&amp;回退目录&amp;清屏退出&lt;/center&gt;</summary>
     
     
     
+    <category term="Java基础" scheme="https://readmengk90.github.io/categories/Java%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="java" scheme="https://readmengk90.github.io/tags/java/"/>
     
   </entry>
   
