@@ -244,25 +244,6 @@
       </tags>
   </entry>
   <entry>
-    <title>编译和运行</title>
-    <url>/2024/01/12/java%E5%9F%BA%E7%A1%80-%E7%BC%96%E8%AF%91%E8%BF%90%E8%A1%8C/</url>
-    <content><![CDATA[<h1 id="编译和运行"><a href="#编译和运行" class="headerlink" title="编译和运行"></a>编译和运行</h1><ol>
-<li><p>编译和运行的应用程序</p>
-<p><img src="/../images/%E7%BC%96%E8%AF%91%E8%BF%90%E8%A1%8C001.png"></p>
-</li>
-<li><p>如何操作</p>
-<p><img src="/../images/%E7%BC%96%E8%AF%91%E8%BF%90%E8%A1%8C002.png"></p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>环境变量的配置</title>
     <url>/2024/01/12/java%E5%9F%BA%E7%A1%80-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E7%9A%84%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<h1 id="环境变量的配置"><a href="#环境变量的配置" class="headerlink" title="环境变量的配置"></a>环境变量的配置</h1><ol>
@@ -281,6 +262,25 @@
 </ol>
 <p>​		法2-02： 引用JAVA_HOME变量</p>
 <p>​		<img src="/../images/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F003.png"></p>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>编译和运行</title>
+    <url>/2024/01/12/java%E5%9F%BA%E7%A1%80-%E7%BC%96%E8%AF%91%E8%BF%90%E8%A1%8C/</url>
+    <content><![CDATA[<h1 id="编译和运行"><a href="#编译和运行" class="headerlink" title="编译和运行"></a>编译和运行</h1><ol>
+<li><p>编译和运行的应用程序</p>
+<p><img src="/../images/%E7%BC%96%E8%AF%91%E8%BF%90%E8%A1%8C001.png"></p>
+</li>
+<li><p>如何操作</p>
+<p><img src="/../images/%E7%BC%96%E8%AF%91%E8%BF%90%E8%A1%8C002.png"></p>
+</li>
+</ol>
 ]]></content>
       <categories>
         <category>Java基础</category>
