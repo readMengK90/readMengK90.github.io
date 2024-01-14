@@ -6,7 +6,7 @@
   <link href="https://readmengk90.github.io/atom.xml" rel="self"/>
   
   <link href="https://readmengk90.github.io/"/>
-  <updated>2024-01-13T09:25:08.120Z</updated>
+  <updated>2024-01-14T16:30:36.999Z</updated>
   <id>https://readmengk90.github.io/</id>
   
   <author>
@@ -15,6 +15,75 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JAVA的数据类型-标识符-键盘录入</title>
+    <link href="https://readmengk90.github.io/2024/01/14/java%E5%9F%BA%E7%A1%80-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B&amp;%E6%A0%87%E8%AF%86%E7%AC%A6&amp;%E9%94%AE%E7%9B%98%E5%BD%95%E5%85%A5/"/>
+    <id>https://readmengk90.github.io/2024/01/14/java%E5%9F%BA%E7%A1%80-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B&amp;%E6%A0%87%E8%AF%86%E7%AC%A6&amp;%E9%94%AE%E7%9B%98%E5%BD%95%E5%85%A5/</id>
+    <published>2024-01-14T09:05:37.873Z</published>
+    <updated>2024-01-14T16:30:36.999Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="1-数据类型"><a href="#1-数据类型" class="headerlink" title="1. 数据类型"></a>1. 数据类型</h1><h4 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h4><table><thead><tr><th align="center">数据类型</th><th align="left">关键字</th><th align="left">取值范围</th></tr></thead><tbody><tr><td align="center">整数</td><td align="left">byte<br/>short<br/>int<br/>long</td><td align="left">-128~127(byte)</td></tr><tr><td align="center">浮点数</td><td align="left">float<br/>double</td><td align="left"></td></tr><tr><td align="center">字符</td><td align="left">char</td><td align="left"></td></tr><tr><td align="center">布尔</td><td align="left">boolean</td><td align="left"></td></tr></tbody></table><p>如果要定义long类型的变量，在数据值的后面需要加一个L作为后缀。float类型变量，数据值也需要加一个F作为后缀。</p><p>整数和小数取值范围大小关系：double&gt;float&gt;long&gt;int&gt; short&gt;byte</p><h1 id="2-标识符"><a href="#2-标识符" class="headerlink" title="2.标识符"></a>2.标识符</h1><p>定义：自定义的类，方法，变量的名字。</p><p>规则： </p><p>   硬性规则:</p><p>​由数字，字母，下划线(_)和美元$符组成，但是<strong>不能以数字开头</strong>，不能是关键字，<strong>区分大小写</strong>。(关键字是全部小写的)</p><p>   软性建议:</p><p>​小驼峰命名法: <strong>方法</strong>，<strong>变量</strong></p><p>​标识符是一个单词的时候，全部小写，例如:name.</p><p>​标识符由对个单词组成的时候，第一个单词首字母小写，其他单词首字母大写,例如：firstName.</p><p>​大驼峰命名法: <strong>类名</strong></p><p>​标识符是一个单词的时候，首字母大写，例如：Student.</p><p>​标识符由多个单词组成的时候，每个单词的首字母大写，例如：GoodStudent.</p><h1 id="3-键盘录入"><a href="#3-键盘录入" class="headerlink" title="3.键盘录入"></a>3.键盘录入</h1><p>Scanner类: 接收键盘输入的<strong>整数</strong></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//步骤一：导包</span></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"><span class="comment">//步骤二：创建对象</span></span><br><span class="line"><span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line"><span class="comment">//步骤三：接收数据</span></span><br><span class="line"><span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> sc.nextInt();   <span class="comment">//除了i可以修改，其他的均不能修改</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;JAVA的数据类型-标识符-键盘录入&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="Java基础" scheme="https://readmengk90.github.io/categories/Java%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="java" scheme="https://readmengk90.github.io/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://readmengk90.github.io/2024/01/14/java%E5%9F%BA%E7%A1%80-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
+    <id>https://readmengk90.github.io/2024/01/14/java%E5%9F%BA%E7%A1%80-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</id>
+    <published>2024-01-14T08:53:22.322Z</published>
+    <updated>2024-01-14T09:04:29.713Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="1-数据类型"><a href="#1-数据类型" class="headerlink" title="1. 数据类型"></a>1. 数据类型</h1><h4 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h4><table><thead><tr><th align="center">数据类型</th><th align="left">关键字</th><th align="left">取值范围</th></tr></thead><tbody><tr><td align="center">整数</td><td align="left">byte<br/>short<br/>int<br/>long</td><td align="left">-128~127(byte)</td></tr><tr><td align="center">浮点数</td><td align="left">float<br/>double</td><td align="left"></td></tr><tr><td align="center">字符</td><td align="left">char</td><td align="left"></td></tr><tr><td align="center">布尔</td><td align="left">boolean</td><td align="left"></td></tr></tbody></table><p>如果要定义long类型的变量，在数据值的后面需要加一个L作为后缀。float类型变量，数据值也需要加一个F作为后缀。</p><p>整数和小数取值范围大小关系：double&gt;float&gt;long&gt;int&gt; short&gt;byte</p>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;1-数据类型&quot;&gt;&lt;a href=&quot;#1-数据类型&quot; class=&quot;headerlink&quot; title=&quot;1. 数据类型&quot;&gt;&lt;/a&gt;1. 数据类型&lt;/h1&gt;&lt;h4 id=&quot;基本数据类型&quot;&gt;&lt;a href=&quot;#基本数据类型&quot; class=&quot;headerlink&quot; title=&quot;基本数据类型&quot;&gt;&lt;/a&gt;基本数据类型&lt;/h4&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;数据类型&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;关键字&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;取值范围&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;整数&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;byte&lt;br&gt;short&lt;br&gt;int&lt;br&gt;long&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;-128~127(byte)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;浮点数&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;float&lt;br&gt;double&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;字符&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;char&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;布尔&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;boolean&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;如果要定义long类型的变量，在数据值的后面需要加一个L作为后缀。float类型变量，数据值也需要加一个F作为后缀。&lt;/p&gt;
+&lt;p&gt;整数和小数取值范围大小关系：double&amp;gt;float&amp;gt;long&amp;gt;int&amp;gt; short&amp;gt;byte&lt;/p&gt;
+</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>JAVA的基础语法</title>
