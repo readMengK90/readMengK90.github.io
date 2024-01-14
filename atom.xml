@@ -38,54 +38,6 @@
   </entry>
   
   <entry>
-    <title></title>
-    <link href="https://readmengk90.github.io/2024/01/14/java%E5%9F%BA%E7%A1%80-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
-    <id>https://readmengk90.github.io/2024/01/14/java%E5%9F%BA%E7%A1%80-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</id>
-    <published>2024-01-14T08:53:22.322Z</published>
-    <updated>2024-01-14T09:04:29.713Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="1-数据类型"><a href="#1-数据类型" class="headerlink" title="1. 数据类型"></a>1. 数据类型</h1><h4 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h4><table><thead><tr><th align="center">数据类型</th><th align="left">关键字</th><th align="left">取值范围</th></tr></thead><tbody><tr><td align="center">整数</td><td align="left">byte<br/>short<br/>int<br/>long</td><td align="left">-128~127(byte)</td></tr><tr><td align="center">浮点数</td><td align="left">float<br/>double</td><td align="left"></td></tr><tr><td align="center">字符</td><td align="left">char</td><td align="left"></td></tr><tr><td align="center">布尔</td><td align="left">boolean</td><td align="left"></td></tr></tbody></table><p>如果要定义long类型的变量，在数据值的后面需要加一个L作为后缀。float类型变量，数据值也需要加一个F作为后缀。</p><p>整数和小数取值范围大小关系：double&gt;float&gt;long&gt;int&gt; short&gt;byte</p>]]></content>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;1-数据类型&quot;&gt;&lt;a href=&quot;#1-数据类型&quot; class=&quot;headerlink&quot; title=&quot;1. 数据类型&quot;&gt;&lt;/a&gt;1. 数据类型&lt;/h1&gt;&lt;h4 id=&quot;基本数据类型&quot;&gt;&lt;a href=&quot;#基本数据类型&quot; class=&quot;headerlink&quot; title=&quot;基本数据类型&quot;&gt;&lt;/a&gt;基本数据类型&lt;/h4&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&quot;center&quot;&gt;数据类型&lt;/th&gt;
-&lt;th align=&quot;left&quot;&gt;关键字&lt;/th&gt;
-&lt;th align=&quot;left&quot;&gt;取值范围&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;整数&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;byte&lt;br&gt;short&lt;br&gt;int&lt;br&gt;long&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;-128~127(byte)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;浮点数&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;float&lt;br&gt;double&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;字符&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;char&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;布尔&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;boolean&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;p&gt;如果要定义long类型的变量，在数据值的后面需要加一个L作为后缀。float类型变量，数据值也需要加一个F作为后缀。&lt;/p&gt;
-&lt;p&gt;整数和小数取值范围大小关系：double&amp;gt;float&amp;gt;long&amp;gt;int&amp;gt; short&amp;gt;byte&lt;/p&gt;
-</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>JAVA的基础语法</title>
     <link href="https://readmengk90.github.io/2024/01/12/java%E5%9F%BA%E7%A1%80-JAVA%E7%9A%84%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
     <id>https://readmengk90.github.io/2024/01/12/java%E5%9F%BA%E7%A1%80-JAVA%E7%9A%84%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</id>
