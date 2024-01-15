@@ -6,7 +6,7 @@
   <link href="https://readmengk90.github.io/atom.xml" rel="self"/>
   
   <link href="https://readmengk90.github.io/"/>
-  <updated>2024-01-14T16:30:36.999Z</updated>
+  <updated>2024-01-15T03:14:40.748Z</updated>
   <id>https://readmengk90.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>IDEA的下载安装&amp;相关设置</title>
+    <link href="https://readmengk90.github.io/2024/01/15/java%E5%9F%BA%E7%A1%80-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
+    <id>https://readmengk90.github.io/2024/01/15/java%E5%9F%BA%E7%A1%80-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</id>
+    <published>2024-01-14T23:53:26.312Z</published>
+    <updated>2024-01-15T03:14:40.748Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="IDEA的下载与安装"><a href="#IDEA的下载与安装" class="headerlink" title="IDEA的下载与安装"></a>IDEA的下载与安装</h1><ol><li>下载安装</li></ol><p>把代码编写，编译，执行，调试等多种功能综合在一起。</p><p><a href="https://www.jetbrains.com/idea/">https://www.jetbrains.com/idea/</a></p><p>拼多多买个授权码。</p><ol start="2"><li>结构介绍</li></ol><p>IDEA的项目结构：</p><p>​项目(project)：以微信项目为例，整个微信可以看作一个项目。</p><p>​模块(module)：微信的四大功能键(微信，通讯录，发现，我)，是相互独立的四个模块。</p><p>​包(package)：文件夹，在模块里新建很多的包，把相同功能的代码放在同一个包中方便管理。</p><p>​       类 (class)：在类里面编写代码</p><ol start="3"><li><p>扩展设置</p><p>修改主题：file-&gt;Settings-&gt;Appearance&amp;Behavior(Appearance)-&gt;Theme。</p><p>设置字体：file-&gt;Settings-&gt;Editor-&gt;Font-&gt;可以设置这个字体，大小。</p><p>设置注释的颜色：file-&gt;Settings-&gt;Editor-&gt;Color Scheme-&gt;Language Defaults-&gt;Comments-&gt;单行注释(Line comment)&#x2F;多行注释(Block comment)的设置-&gt;Foreground进行设置。</p><p>自动导包的设置：file-&gt;Settings-&gt;Editor-&gt;General-&gt;Auto Import-&gt;Java下的两个带？的复选框选中。</p><p>自动提示不区分大小写设置:file-&gt;Settings-&gt;Editor-&gt;General-&gt;Code Completion-&gt;取消Match case的勾。</p></li><li><p>项目和模块操作</p><p>类的相关操作：</p><p>​新建类：右键指定包然后新建类</p><p>​删除类：右键指定类然后delete</p><p>​修改类:   右键指定类-&gt;Refactor-&gt;Rename,文件名类名同时修改</p><p>模块的操作：</p><p>​新建模块：</p><p>​删除模块：</p><p>​修改模块：</p><p>​导入模块：</p><p>项目的操作：</p><p>​关闭项目：File-&gt;Close Project</p><p>​新建项目:  Empty Project</p><p>​打开项目：</p><p>​修改项目：</p></li></ol>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;下载安装&amp;结构介绍&amp;拓展设置&amp;项目及模块操作&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="Java基础" scheme="https://readmengk90.github.io/categories/Java%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="java" scheme="https://readmengk90.github.io/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>JAVA的数据类型-标识符-键盘录入</title>
