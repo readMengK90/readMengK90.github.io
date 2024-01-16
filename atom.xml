@@ -6,7 +6,7 @@
   <link href="https://readmengk90.github.io/atom.xml" rel="self"/>
   
   <link href="https://readmengk90.github.io/"/>
-  <updated>2024-01-16T09:40:43.728Z</updated>
+  <updated>2024-01-16T11:13:08.977Z</updated>
   <id>https://readmengk90.github.io/</id>
   
   <author>
@@ -17,16 +17,16 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Java的运算符</title>
+    <title>源码-反码-补码</title>
     <link href="https://readmengk90.github.io/2024/01/16/java%E5%9F%BA%E7%A1%80-%E5%8E%9F%E7%A0%81%E5%8F%8D%E7%A0%81%E8%A1%A5%E7%A0%81/"/>
     <id>https://readmengk90.github.io/2024/01/16/java%E5%9F%BA%E7%A1%80-%E5%8E%9F%E7%A0%81%E5%8F%8D%E7%A0%81%E8%A1%A5%E7%A0%81/</id>
     <published>2024-01-16T02:28:53.486Z</published>
-    <updated>2024-01-16T09:40:43.728Z</updated>
+    <updated>2024-01-16T11:13:08.977Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="原码-反码-补码"><a href="#原码-反码-补码" class="headerlink" title="原码&#x2F;反码&#x2F;补码"></a>原码&#x2F;反码&#x2F;补码</h1>]]></content>
+    <content type="html"><![CDATA[<h1 id="原码-反码-补码"><a href="#原码-反码-补码" class="headerlink" title="原码&#x2F;反码&#x2F;补码"></a>原码&#x2F;反码&#x2F;补码</h1><p>符号位：0正1负</p><p><strong>原码</strong>：十进制数据的二进制表现形式，最左边的是符号位，0为正，1为负。</p><p>​    利用原码对正数进行计算是不会有问题的，但是如果是<strong>负数计算，结果就会出错</strong>，实际运算的结果，跟我们预期的结果是相反的。</p><p><strong>反码</strong>：为了解决原码不能计算负数的问题而出现的。</p><p>计算规则：正数的反码不变，负数的反码在原码的基础上，符号位不变。数值取反，0变1，1变0；</p><p>计算结果跨零时(-5+6&#x3D;0),有可能存在误差。因为在反码中0有两种表现形式，**+0**(0000 0000),-<strong>0</strong>(1111 1111)</p><p><strong>补码：</strong>屏蔽掉0的两种表现形式.使得+0和-0只有一种表现形式，实现方式是负数的反码加1.</p><p><img src="/../images/3-01.png" alt="原反补"></p>]]></content>
     
     
-    <summary type="html">&lt;center&gt;算术运算&amp;自增自减&amp;赋值&amp;关系&amp;逻辑&lt;/center&gt;</summary>
+    <summary type="html">&lt;center&gt;原反补&lt;/center&gt;</summary>
     
     
     

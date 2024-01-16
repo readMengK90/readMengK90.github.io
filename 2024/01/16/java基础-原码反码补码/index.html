@@ -20,18 +20,20 @@
     var CONFIG = {"hostname":"readmengk90.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":{"home":"/","about":"/about","tags":"/tags"}},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="算术运算&amp;自增自减&amp;赋值&amp;关系&amp;逻辑">
+  <meta name="description" content="原反补">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Java的运算符">
+<meta property="og:title" content="源码-反码-补码">
 <meta property="og:url" content="https://readmengk90.github.io/2024/01/16/java%E5%9F%BA%E7%A1%80-%E5%8E%9F%E7%A0%81%E5%8F%8D%E7%A0%81%E8%A1%A5%E7%A0%81/index.html">
 <meta property="og:site_name" content="东瓶西镜">
-<meta property="og:description" content="算术运算&amp;自增自减&amp;赋值&amp;关系&amp;逻辑">
+<meta property="og:description" content="原反补">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://readmengk90.github.io/images/3-01.png">
 <meta property="article:published_time" content="2024-01-16T02:28:53.486Z">
-<meta property="article:modified_time" content="2024-01-16T09:40:43.728Z">
+<meta property="article:modified_time" content="2024-01-16T11:13:08.977Z">
 <meta property="article:author" content="Amber">
 <meta property="article:tag" content="java">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://readmengk90.github.io/images/3-01.png">
 
 <link rel="canonical" href="https://readmengk90.github.io/2024/01/16/java%E5%9F%BA%E7%A1%80-%E5%8E%9F%E7%A0%81%E5%8F%8D%E7%A0%81%E8%A1%A5%E7%A0%81/">
 
@@ -46,7 +48,7 @@
   };
 </script>
 
-  <title>Java的运算符 | 东瓶西镜</title>
+  <title>源码-反码-补码 | 东瓶西镜</title>
   
 
 
@@ -217,7 +219,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Java的运算符
+          源码-反码-补码
         </h1>
 
         <div class="post-meta">
@@ -228,7 +230,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2024-01-16 10:28:53 / 修改时间：17:40:43" itemprop="dateCreated datePublished" datetime="2024-01-16T10:28:53+08:00">2024-01-16</time>
+              <time title="创建时间：2024-01-16 10:28:53 / 修改时间：19:13:08" itemprop="dateCreated datePublished" datetime="2024-01-16T10:28:53+08:00">2024-01-16</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -253,7 +255,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>18</span>
+              <span>303</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -262,7 +264,7 @@
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
               <span>1 分钟</span>
             </span>
-            <div class="post-description"><center>算术运算&自增自减&赋值&关系&逻辑</center></div>
+            <div class="post-description"><center>原反补</center></div>
 
         </div>
       </header>
@@ -273,7 +275,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="原码-反码-补码"><a href="#原码-反码-补码" class="headerlink" title="原码&#x2F;反码&#x2F;补码"></a>原码&#x2F;反码&#x2F;补码</h1>
+        <h1 id="原码-反码-补码"><a href="#原码-反码-补码" class="headerlink" title="原码&#x2F;反码&#x2F;补码"></a>原码&#x2F;反码&#x2F;补码</h1><p>符号位：0正1负</p>
+<p><strong>原码</strong>：十进制数据的二进制表现形式，最左边的是符号位，0为正，1为负。</p>
+<p>​	    利用原码对正数进行计算是不会有问题的，但是如果是<strong>负数计算，结果就会出错</strong>，实际运算的结果，跟我们预期的结果是相反的。</p>
+<p><strong>反码</strong>：为了解决原码不能计算负数的问题而出现的。</p>
+<p>计算规则：正数的反码不变，负数的反码在原码的基础上，符号位不变。数值取反，0变1，1变0；</p>
+<p>计算结果跨零时(-5+6&#x3D;0),有可能存在误差。因为在反码中0有两种表现形式，**+0**(0000 0000),-<strong>0</strong>(1111 1111)</p>
+<p><strong>补码：</strong>屏蔽掉0的两种表现形式.使得+0和-0只有一种表现形式，实现方式是负数的反码加1.</p>
+<p><img src="/../images/3-01.png" alt="原反补"></p>
+
     </div>
 
     
@@ -308,7 +318,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://readmengk90.github.io/2024/01/16/java%E5%9F%BA%E7%A1%80-%E5%8E%9F%E7%A0%81%E5%8F%8D%E7%A0%81%E8%A1%A5%E7%A0%81/" title="Java的运算符">https://readmengk90.github.io/2024/01/16/java基础-原码反码补码/</a>
+    <a href="https://readmengk90.github.io/2024/01/16/java%E5%9F%BA%E7%A1%80-%E5%8E%9F%E7%A0%81%E5%8F%8D%E7%A0%81%E8%A1%A5%E7%A0%81/" title="源码-反码-补码">https://readmengk90.github.io/2024/01/16/java基础-原码反码补码/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -476,7 +486,7 @@
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">10 分钟</span>
+    <span title="站点阅读时长">11 分钟</span>
 </div>
   <div class="powered-by">
     
