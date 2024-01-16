@@ -20,20 +20,20 @@
     var CONFIG = {"hostname":"readmengk90.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":{"home":"/","about":"/about","tags":"/tags"}},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="下载安装&amp;结构介绍&amp;拓展设置&amp;项目及模块操作">
+  <meta name="description" content="算术运算&amp;自增自减&amp;赋值&amp;关系&amp;逻辑">
 <meta property="og:type" content="article">
-<meta property="og:title" content="IDEA的下载安装&amp;相关设置">
-<meta property="og:url" content="https://readmengk90.github.io/2024/01/15/java%E5%9F%BA%E7%A1%80-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/index.html">
+<meta property="og:title" content="Java的运算符">
+<meta property="og:url" content="https://readmengk90.github.io/2024/01/15/java%E5%9F%BA%E7%A1%80-%E8%BF%90%E7%AE%97%E7%AC%A6/index.html">
 <meta property="og:site_name" content="东瓶西镜">
-<meta property="og:description" content="下载安装&amp;结构介绍&amp;拓展设置&amp;项目及模块操作">
+<meta property="og:description" content="算术运算&amp;自增自减&amp;赋值&amp;关系&amp;逻辑">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-01-14T23:53:26.312Z">
-<meta property="article:modified_time" content="2024-01-15T03:14:40.748Z">
+<meta property="article:published_time" content="2024-01-15T05:43:44.638Z">
+<meta property="article:modified_time" content="2024-01-16T00:08:41.395Z">
 <meta property="article:author" content="Amber">
 <meta property="article:tag" content="java">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://readmengk90.github.io/2024/01/15/java%E5%9F%BA%E7%A1%80-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">
+<link rel="canonical" href="https://readmengk90.github.io/2024/01/15/java%E5%9F%BA%E7%A1%80-%E8%BF%90%E7%AE%97%E7%AC%A6/">
 
 
 <script id="page-configurations">
@@ -46,7 +46,7 @@
   };
 </script>
 
-  <title>IDEA的下载安装&相关设置 | 东瓶西镜</title>
+  <title>Java的运算符 | 东瓶西镜</title>
   
 
 
@@ -204,7 +204,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://readmengk90.github.io/2024/01/15/java%E5%9F%BA%E7%A1%80-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">
+    <link itemprop="mainEntityOfPage" href="https://readmengk90.github.io/2024/01/15/java%E5%9F%BA%E7%A1%80-%E8%BF%90%E7%AE%97%E7%AC%A6/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -217,7 +217,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          IDEA的下载安装&相关设置
+          Java的运算符
         </h1>
 
         <div class="post-meta">
@@ -226,10 +226,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2024-01-15 07:53:26 / 修改时间：11:14:40" itemprop="dateCreated datePublished" datetime="2024-01-15T07:53:26+08:00">2024-01-15</time>
+              <time title="创建时间：2024-01-15 13:43:44" itemprop="dateCreated datePublished" datetime="2024-01-15T13:43:44+08:00">2024-01-15</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2024-01-16 08:08:41" itemprop="dateModified" datetime="2024-01-16T08:08:41+08:00">2024-01-16</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -253,16 +259,16 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>888</span>
+              <span>791</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 分钟</span>
+              <span>1 分钟</span>
             </span>
-            <div class="post-description"><center>下载安装&结构介绍&拓展设置&项目及模块操作</center></div>
+            <div class="post-description"><center>算术运算&自增自减&赋值&关系&逻辑</center></div>
 
         </div>
       </header>
@@ -273,45 +279,111 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="IDEA的下载与安装"><a href="#IDEA的下载与安装" class="headerlink" title="IDEA的下载与安装"></a>IDEA的下载与安装</h1><ol>
-<li>下载安装</li>
-</ol>
-<p>把代码编写，编译，执行，调试等多种功能综合在一起。</p>
-<p><a target="_blank" rel="noopener" href="https://www.jetbrains.com/idea/">https://www.jetbrains.com/idea/</a></p>
-<p>拼多多买个授权码。</p>
-<ol start="2">
-<li>结构介绍</li>
-</ol>
-<p>IDEA的项目结构：</p>
-<p>​	项目(project)：以微信项目为例，整个微信可以看作一个项目。</p>
-<p>​		模块(module)：微信的四大功能键(微信，通讯录，发现，我)，是相互独立的四个模块。</p>
-<p>​			包(package)：文件夹，在模块里新建很多的包，把相同功能的代码放在同一个包中方便管理。</p>
-<p>​       			类 (class)：在类里面编写代码</p>
-<ol start="3">
-<li><p>扩展设置</p>
-<p>修改主题：file-&gt;Settings-&gt;Appearance&amp;Behavior(Appearance)-&gt;Theme。</p>
-<p>设置字体：file-&gt;Settings-&gt;Editor-&gt;Font-&gt;可以设置这个字体，大小。</p>
-<p>设置注释的颜色：file-&gt;Settings-&gt;Editor-&gt;Color Scheme-&gt;Language Defaults-&gt;Comments-&gt;单行注释(Line comment)&#x2F;多行注释(Block comment)的设置-&gt;Foreground进行设置。</p>
-<p>自动导包的设置：file-&gt;Settings-&gt;Editor-&gt;General-&gt;Auto Import-&gt;Java下的两个带？的复选框选中。</p>
-<p>自动提示不区分大小写设置:file-&gt;Settings-&gt;Editor-&gt;General-&gt;Code Completion-&gt;取消Match case的勾。</p>
+        <h1 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h1><ol>
+<li><p>算术运算符</p>
+<table>
+<thead>
+<tr>
+<th align="center">运算符</th>
+<th align="center">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">+</td>
+<td align="center">加</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">减</td>
+</tr>
+<tr>
+<td align="center">*</td>
+<td align="center">乘</td>
+</tr>
+<tr>
+<td align="center">&#x2F;</td>
+<td align="center">除(取商)</td>
+</tr>
+<tr>
+<td align="center">%</td>
+<td align="center">取余</td>
+</tr>
+</tbody></table>
+<p>** 如果在计算的时候有小数参与，结果有可能不精确。</p>
+<p>** &#x2F; 运算，整数参与运算，结果只能得到整数；小数参与运算，结果有可能不精确。</p>
+<p>** %运算的应用场景：A是否可以被B整除；A是否为偶数(A%2)；</p>
+<p><em>隐式转换</em>：取值范围<strong>小</strong>的数据<strong>转换成</strong>取值范围<strong>大</strong>的数据。（byte&lt;short&lt;int&lt;long&lt;float&lt;double）</p>
+<p>​		   byte,short,char三种类型的数据在运算的时候，都会<strong>自动先提升为int</strong>,然后再进行运算</p>
+<p><em>强制转换</em>：取值范围<strong>大</strong>的数据<strong>转换成</strong>取值范围<strong>小</strong>的数据。格式：目标数据类型 变量名 &#x3D; （目标数据类型）被强转的数据</p>
+<p>** ：有可能会导致数据不准确；</p>
+<p><em>字符串相加</em>：当“+”操作中出现字符串时，这个“+”是字符串连接符，而不是算术运算符。会将前后的数据进行拼接，并产生一个新的字符串。(连续加时从左到右逐个执行)</p>
+<p><em>字符相加</em>：当字符+字符(字符+数字)时，会把字符通过<strong>ASCII码表</strong>查询到对应的数字再进行计算。</p>
 </li>
-<li><p>项目和模块操作</p>
-<p>类的相关操作：</p>
-<p>​	新建类：右键指定包然后新建类</p>
-<p>​	删除类：右键指定类然后delete</p>
-<p>​	修改类:   右键指定类-&gt;Refactor-&gt;Rename,文件名类名同时修改</p>
-<p>模块的操作：</p>
-<p>​	新建模块：</p>
-<p>​	删除模块：</p>
-<p>​	修改模块：</p>
-<p>​	导入模块：</p>
-<p>项目的操作：</p>
-<p>​	关闭项目：File-&gt;Close Project</p>
-<p>​	新建项目:  Empty Project</p>
-<p>​	打开项目：</p>
-<p>​	修改项目：</p>
+<li><p>自增自减运算符</p>
+<table>
+<thead>
+<tr>
+<th align="center">符号</th>
+<th align="center">作用</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">++</td>
+<td align="center">加</td>
+<td align="center">变量的值加1</td>
+</tr>
+<tr>
+<td align="center">–</td>
+<td align="center">减</td>
+<td align="center">变量的值减1</td>
+</tr>
+</tbody></table>
+<p>单独成行时：++，–无论是放在变量的前面还是后面，单独写一行结果都是一样的。</p>
+<p>参与运算时：先用后加，先加后用；</p>
 </li>
+<li><p>赋值运算符</p>
+<p>&#x3D;，+&#x3D;，-&#x3D;，*&#x3D;，&#x2F;&#x3D;，%&#x3D;。</p>
+<p>(扩展的赋值运算符底层隐藏了强制类型转换，不用再强转了)</p>
+</li>
+<li><p>关系运算符</p>
+<p>&#x3D;&#x3D;，!&#x3D;， &gt;,  &gt;&#x3D;  ,  &lt;  ,&lt;&#x3D;</p>
+<p>（关系运算符的结果都是布尔类型，要么true，要么false）</p>
+</li>
+<li><p>逻辑运算符</p>
+<table>
+<thead>
+<tr>
+<th align="center">符号</th>
+<th align="center">作用</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong>&amp;</strong></td>
+<td align="center">逻辑与</td>
+<td align="center">并且 ，两边都为真，结果才为真</td>
+</tr>
+<tr>
+<td align="center"><strong>|</strong></td>
+<td align="center">逻辑或</td>
+<td align="center">或则，两边都为假，结果才是假</td>
+</tr>
+<tr>
+<td align="center">^</td>
+<td align="center">逻辑异或</td>
+<td align="center">相同为false，不同为true</td>
+</tr>
+<tr>
+<td align="center"><strong>!</strong></td>
+<td align="center">逻辑非</td>
+<td align="center">取反</td>
+</tr>
+</tbody></table>
+</li>
+<li></li>
 </ol>
+<p>​       </p>
 
     </div>
 
@@ -347,7 +419,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://readmengk90.github.io/2024/01/15/java%E5%9F%BA%E7%A1%80-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" title="IDEA的下载安装&amp;相关设置">https://readmengk90.github.io/2024/01/15/java基础-数据类型/</a>
+    <a href="https://readmengk90.github.io/2024/01/15/java%E5%9F%BA%E7%A1%80-%E8%BF%90%E7%AE%97%E7%AC%A6/" title="Java的运算符">https://readmengk90.github.io/2024/01/15/java基础-运算符/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -367,13 +439,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2024/01/14/java%E5%9F%BA%E7%A1%80-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B&%E6%A0%87%E8%AF%86%E7%AC%A6&%E9%94%AE%E7%9B%98%E5%BD%95%E5%85%A5/" rel="prev" title="JAVA的数据类型-标识符-键盘录入">
-      <i class="fa fa-chevron-left"></i> JAVA的数据类型-标识符-键盘录入
+    <a href="/2024/01/15/java%E5%9F%BA%E7%A1%80-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" rel="prev" title="IDEA的下载安装&相关设置">
+      <i class="fa fa-chevron-left"></i> IDEA的下载安装&相关设置
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2024/01/15/java%E5%9F%BA%E7%A1%80-%E8%BF%90%E7%AE%97%E7%AC%A6/" rel="next" title="Java的运算符">
-      Java的运算符 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -432,7 +501,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#IDEA%E7%9A%84%E4%B8%8B%E8%BD%BD%E4%B8%8E%E5%AE%89%E8%A3%85"><span class="nav-number">1.</span> <span class="nav-text">IDEA的下载与安装</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">1.</span> <span class="nav-text">运算符</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

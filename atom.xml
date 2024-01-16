@@ -6,7 +6,7 @@
   <link href="https://readmengk90.github.io/atom.xml" rel="self"/>
   
   <link href="https://readmengk90.github.io/"/>
-  <updated>2024-01-15T03:14:40.748Z</updated>
+  <updated>2024-01-16T00:08:41.395Z</updated>
   <id>https://readmengk90.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java的运算符</title>
+    <link href="https://readmengk90.github.io/2024/01/15/java%E5%9F%BA%E7%A1%80-%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
+    <id>https://readmengk90.github.io/2024/01/15/java%E5%9F%BA%E7%A1%80-%E8%BF%90%E7%AE%97%E7%AC%A6/</id>
+    <published>2024-01-15T05:43:44.638Z</published>
+    <updated>2024-01-16T00:08:41.395Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h1><ol><li><p>算术运算符</p><table><thead><tr><th align="center">运算符</th><th align="center">作用</th></tr></thead><tbody><tr><td align="center">+</td><td align="center">加</td></tr><tr><td align="center">-</td><td align="center">减</td></tr><tr><td align="center">*</td><td align="center">乘</td></tr><tr><td align="center">&#x2F;</td><td align="center">除(取商)</td></tr><tr><td align="center">%</td><td align="center">取余</td></tr></tbody></table><p>** 如果在计算的时候有小数参与，结果有可能不精确。</p><p>** &#x2F; 运算，整数参与运算，结果只能得到整数；小数参与运算，结果有可能不精确。</p><p>** %运算的应用场景：A是否可以被B整除；A是否为偶数(A%2)；</p><p><em>隐式转换</em>：取值范围<strong>小</strong>的数据<strong>转换成</strong>取值范围<strong>大</strong>的数据。（byte&lt;short&lt;int&lt;long&lt;float&lt;double）</p><p>​   byte,short,char三种类型的数据在运算的时候，都会<strong>自动先提升为int</strong>,然后再进行运算</p><p><em>强制转换</em>：取值范围<strong>大</strong>的数据<strong>转换成</strong>取值范围<strong>小</strong>的数据。格式：目标数据类型 变量名 &#x3D; （目标数据类型）被强转的数据</p><p>** ：有可能会导致数据不准确；</p><p><em>字符串相加</em>：当“+”操作中出现字符串时，这个“+”是字符串连接符，而不是算术运算符。会将前后的数据进行拼接，并产生一个新的字符串。(连续加时从左到右逐个执行)</p><p><em>字符相加</em>：当字符+字符(字符+数字)时，会把字符通过<strong>ASCII码表</strong>查询到对应的数字再进行计算。</p></li><li><p>自增自减运算符</p><table><thead><tr><th align="center">符号</th><th align="center">作用</th><th align="center">说明</th></tr></thead><tbody><tr><td align="center">++</td><td align="center">加</td><td align="center">变量的值加1</td></tr><tr><td align="center">–</td><td align="center">减</td><td align="center">变量的值减1</td></tr></tbody></table><p>单独成行时：++，–无论是放在变量的前面还是后面，单独写一行结果都是一样的。</p><p>参与运算时：先用后加，先加后用；</p></li><li><p>赋值运算符</p><p>&#x3D;，+&#x3D;，-&#x3D;，*&#x3D;，&#x2F;&#x3D;，%&#x3D;。</p><p>(扩展的赋值运算符底层隐藏了强制类型转换，不用再强转了)</p></li><li><p>关系运算符</p><p>&#x3D;&#x3D;，!&#x3D;， &gt;,  &gt;&#x3D;  ,  &lt;  ,&lt;&#x3D;</p><p>（关系运算符的结果都是布尔类型，要么true，要么false）</p></li><li><p>逻辑运算符</p><table><thead><tr><th align="center">符号</th><th align="center">作用</th><th align="center">说明</th></tr></thead><tbody><tr><td align="center"><strong>&amp;</strong></td><td align="center">逻辑与</td><td align="center">并且 ，两边都为真，结果才为真</td></tr><tr><td align="center"><strong>|</strong></td><td align="center">逻辑或</td><td align="center">或则，两边都为假，结果才是假</td></tr><tr><td align="center">^</td><td align="center">逻辑异或</td><td align="center">相同为false，不同为true</td></tr><tr><td align="center"><strong>!</strong></td><td align="center">逻辑非</td><td align="center">取反</td></tr></tbody></table></li><li></li></ol><p>​       </p>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;算术运算&amp;自增自减&amp;赋值&amp;关系&amp;逻辑&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="Java基础" scheme="https://readmengk90.github.io/categories/Java%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="java" scheme="https://readmengk90.github.io/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>IDEA的下载安装&amp;相关设置</title>
