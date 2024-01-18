@@ -93,31 +93,6 @@
       </tags>
   </entry>
   <entry>
-    <title>JDK&amp;JRE&amp;JVM</title>
-    <url>/2024/01/12/java%E5%9F%BA%E7%A1%80-JAVA%E8%AF%AD%E8%A8%80%E7%9A%84%E7%89%B9%E7%82%B9/</url>
-    <content><![CDATA[<h1 id="JAVA语言的特点"><a href="#JAVA语言的特点" class="headerlink" title="JAVA语言的特点"></a>JAVA语言的特点</h1><ol>
-<li>跨平台的原理：<ol>
-<li>Java语言的跨平台是通过虚拟机(<strong>JVM</strong>)实现的</li>
-<li>Java语言不是直接运行在操作系统里面的，而是运行在虚拟机中的</li>
-<li>因此，针对于不同的操作系统，安装不同的虚拟机就可以了</li>
-</ol>
-</li>
-<li><strong>JDK</strong> 和 <strong>JRE</strong><ol>
-<li><strong>JDK</strong>(Java Development kit):Java开发工具包，由 <strong>JVM</strong>, <strong>核心类库</strong>，<strong>开发工具</strong>组成。</li>
-<li><strong>JER</strong> (JAVA Runtime Environment):Java的运行环境，把<strong>JVM</strong>和核心类库以及<strong>运行时所用到的开发工具</strong>单独抽离出来所组成的。</li>
-</ol>
-</li>
-</ol>
-<p>​	 </p>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>JAVA的基础语法</title>
     <url>/2024/01/12/java%E5%9F%BA%E7%A1%80-JAVA%E7%9A%84%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</url>
     <content><![CDATA[<h1 id="JAVA的基础语法"><a href="#JAVA的基础语法" class="headerlink" title="JAVA的基础语法"></a>JAVA的基础语法</h1><ol>
@@ -200,6 +175,31 @@
       </tags>
   </entry>
   <entry>
+    <title>JDK&amp;JRE&amp;JVM</title>
+    <url>/2024/01/12/java%E5%9F%BA%E7%A1%80-JAVA%E8%AF%AD%E8%A8%80%E7%9A%84%E7%89%B9%E7%82%B9/</url>
+    <content><![CDATA[<h1 id="JAVA语言的特点"><a href="#JAVA语言的特点" class="headerlink" title="JAVA语言的特点"></a>JAVA语言的特点</h1><ol>
+<li>跨平台的原理：<ol>
+<li>Java语言的跨平台是通过虚拟机(<strong>JVM</strong>)实现的</li>
+<li>Java语言不是直接运行在操作系统里面的，而是运行在虚拟机中的</li>
+<li>因此，针对于不同的操作系统，安装不同的虚拟机就可以了</li>
+</ol>
+</li>
+<li><strong>JDK</strong> 和 <strong>JRE</strong><ol>
+<li><strong>JDK</strong>(Java Development kit):Java开发工具包，由 <strong>JVM</strong>, <strong>核心类库</strong>，<strong>开发工具</strong>组成。</li>
+<li><strong>JER</strong> (JAVA Runtime Environment):Java的运行环境，把<strong>JVM</strong>和核心类库以及<strong>运行时所用到的开发工具</strong>单独抽离出来所组成的。</li>
+</ol>
+</li>
+</ol>
+<p>​	 </p>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>JDK的安装与下载</title>
     <url>/2024/01/11/java%E5%9F%BA%E7%A1%80-JDK%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%B8%8B%E8%BD%BD/</url>
     <content><![CDATA[<h1 id="JDK的安装与下载"><a href="#JDK的安装与下载" class="headerlink" title="JDK的安装与下载"></a>JDK的安装与下载</h1><h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><ol>
@@ -219,21 +219,6 @@
 <p><img src="/../images/%E5%AE%89%E8%A3%85004.png"></p>
 </li>
 </ol>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>for循环语句</title>
-    <url>/2024/01/18/java%E5%9F%BA%E7%A1%80-for%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5/</url>
-    <content><![CDATA[<h1 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h1><p>for循环</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(初始化语句;条件判断语句;条件控制语句)&#123;</span><br><span class="line">    循环体语句;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>初始化语句只执行一次，判断语句为true，循环继续，判断语句为false，循环结束。</p>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -491,6 +476,25 @@
       </tags>
   </entry>
   <entry>
+    <title>编译和运行</title>
+    <url>/2024/01/12/java%E5%9F%BA%E7%A1%80-%E7%BC%96%E8%AF%91%E8%BF%90%E8%A1%8C/</url>
+    <content><![CDATA[<h1 id="编译和运行"><a href="#编译和运行" class="headerlink" title="编译和运行"></a>编译和运行</h1><ol>
+<li><p>编译和运行的应用程序</p>
+<p><img src="/../images/%E7%BC%96%E8%AF%91%E8%BF%90%E8%A1%8C001.png"></p>
+</li>
+<li><p>如何操作</p>
+<p><img src="/../images/%E7%BC%96%E8%AF%91%E8%BF%90%E8%A1%8C002.png"></p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Java的运算符</title>
     <url>/2024/01/15/java%E5%9F%BA%E7%A1%80-%E8%BF%90%E7%AE%97%E7%AC%A6/</url>
     <content><![CDATA[<h1 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h1><ol>
@@ -628,25 +632,6 @@
 </li>
 </ol>
 <p>​       </p>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>编译和运行</title>
-    <url>/2024/01/12/java%E5%9F%BA%E7%A1%80-%E7%BC%96%E8%AF%91%E8%BF%90%E8%A1%8C/</url>
-    <content><![CDATA[<h1 id="编译和运行"><a href="#编译和运行" class="headerlink" title="编译和运行"></a>编译和运行</h1><ol>
-<li><p>编译和运行的应用程序</p>
-<p><img src="/../images/%E7%BC%96%E8%AF%91%E8%BF%90%E8%A1%8C001.png"></p>
-</li>
-<li><p>如何操作</p>
-<p><img src="/../images/%E7%BC%96%E8%AF%91%E8%BF%90%E8%A1%8C002.png"></p>
-</li>
-</ol>
 ]]></content>
       <categories>
         <category>Java基础</category>
