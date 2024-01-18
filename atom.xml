@@ -42,16 +42,20 @@
     <link href="https://readmengk90.github.io/2024/01/18/java%E5%9F%BA%E7%A1%80-for%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5/"/>
     <id>https://readmengk90.github.io/2024/01/18/java%E5%9F%BA%E7%A1%80-for%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5/</id>
     <published>2024-01-18T03:14:39.363Z</published>
-    <updated>2024-01-18T05:28:41.198Z</updated>
+    <updated>2024-01-18T12:52:36.671Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h1><p>for循环</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(初始化语句;条件判断语句;条件控制语句)&#123;</span><br><span class="line">    循环体语句;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>初始化语句只执行一次，判断语句为true，循环继续，判断语句为false，循环结束。</p>]]></content>
+    <content type="html"><![CDATA[<p>title: for循环语句<br>description: <center>for循环语句</center><br>categories:</p><ul><li>Java基础<br>tags: </li><li>java</li></ul><h1 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h1><p>for循环</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(初始化语句;条件判断语句;条件控制语句)&#123;</span><br><span class="line">    循环体语句;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>初始化语句只执行一次，判断语句为true，循环继续，判断语句为false，循环结束。</p>]]></content>
     
     
-    <summary type="html">&lt;h1 id=&quot;循环&quot;&gt;&lt;a href=&quot;#循环&quot; class=&quot;headerlink&quot; title=&quot;循环&quot;&gt;&lt;/a&gt;循环&lt;/h1&gt;&lt;p&gt;for循环&lt;/p&gt;
-&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(初始化语句;条件判断语句;条件控制语句)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    循环体语句;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;初始化语句只执行一次，判断语句为true，循环继续，判断语句为false，循环结束。&lt;/p&gt;
-</summary>
+      
+      
+    <summary type="html">&lt;p&gt;title: for循环语句&lt;br&gt;description: &lt;center&gt;for循环语句&lt;/center&gt;&lt;br&gt;categories:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Java基础&lt;br&gt;tags: &lt;/li&gt;
+&lt;li&gt;java&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;循环&quot;</summary>
+      
     
     
     
