@@ -6,7 +6,7 @@
   <link href="https://readmengk90.github.io/atom.xml" rel="self"/>
   
   <link href="https://readmengk90.github.io/"/>
-  <updated>2024-01-18T13:44:31.151Z</updated>
+  <updated>2024-01-20T01:42:37.629Z</updated>
   <id>https://readmengk90.github.io/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>求质数计算中的标记思想</title>
+    <link href="https://readmengk90.github.io/2024/01/20/%E6%A0%87%E8%AE%B0%E6%80%9D%E6%83%B3/"/>
+    <id>https://readmengk90.github.io/2024/01/20/%E6%A0%87%E8%AE%B0%E6%80%9D%E6%83%B3/</id>
+    <published>2024-01-20T01:40:57.761Z</published>
+    <updated>2024-01-20T01:42:37.629Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="标记思想"><a href="#标记思想" class="headerlink" title="标记思想"></a>标记思想</h1><p>定义一个布尔变量，表示标记</p><p>要在for循环外判断是否为质数，最初认为number是一个质数</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.itheima.jump;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">JumpDemo04</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">         * 键盘录入一个正整数x，判断该整数是否为一个质数</span></span><br><span class="line"><span class="comment">         * 质数的定义:一个大于1的自然数，除了1和它自身外，不能被其他自然数整除的数叫做质数</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">        <span class="type">boolean</span> <span class="variable">flag</span> <span class="operator">=</span> <span class="literal">true</span>;   <span class="comment">//***************************************************************</span></span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        System.out.println(<span class="string">&quot;录入一个正整数:&quot;</span>);</span><br><span class="line">        <span class="type">int</span> <span class="variable">number</span> <span class="operator">=</span> sc.nextInt();</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">2</span>; i &lt;number ; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (number % i == <span class="number">0</span>) &#123;</span><br><span class="line">                flag=<span class="literal">false</span>;   <span class="comment">//****************************************************************</span></span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (flag)&#123;<span class="comment">//******************************************************************</span></span><br><span class="line">            System.out.println(number+<span class="string">&quot;是质数&quot;</span>);</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            System.out.println(number+<span class="string">&quot;不是质数&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;标记思想的运用&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="经典算法思想" scheme="https://readmengk90.github.io/categories/%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3/"/>
+    
+    
+    <category term="算法思想" scheme="https://readmengk90.github.io/tags/%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>无限循环和跳转控制语句</title>
+    <link href="https://readmengk90.github.io/2024/01/19/java%E5%9F%BA%E7%A1%80-%E6%97%A0%E9%99%90%E5%BE%AA%E7%8E%AF/"/>
+    <id>https://readmengk90.github.io/2024/01/19/java%E5%9F%BA%E7%A1%80-%E6%97%A0%E9%99%90%E5%BE%AA%E7%8E%AF/</id>
+    <published>2024-01-19T02:30:46.961Z</published>
+    <updated>2024-01-20T01:37:23.583Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="无限循环"><a href="#无限循环" class="headerlink" title="无限循环"></a>无限循环</h1><p>格式：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(;;)&#123;</span><br><span class="line">System.out.println(<span class="string">&quot;学习&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">while</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">System.out.println(<span class="string">&quot;学习&quot;</span>);<span class="comment">//常用</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">do</span>&#123;</span><br><span class="line">System.out.println(<span class="string">&quot;学习&quot;</span>);</span><br><span class="line">&#125;<span class="keyword">while</span>(<span class="literal">true</span>)</span><br></pre></td></tr></table></figure><p>无限循环的下面不能在写其他代码了</p><h1 id="跳转控制语句"><a href="#跳转控制语句" class="headerlink" title="跳转控制语句"></a>跳转控制语句</h1><p>在循环的过程中，跳转到其他语句上执行</p><p>break:结束整个循环。</p><p>continue:结束本次循环，继续下次循环。</p><p><img src="/../images/005.png"></p>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;无限循环和跳转控制语句&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="Java基础" scheme="https://readmengk90.github.io/categories/Java%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="java" scheme="https://readmengk90.github.io/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>回文数的计算</title>
