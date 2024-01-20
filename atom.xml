@@ -6,7 +6,7 @@
   <link href="https://readmengk90.github.io/atom.xml" rel="self"/>
   
   <link href="https://readmengk90.github.io/"/>
-  <updated>2024-01-20T01:42:37.629Z</updated>
+  <updated>2024-01-20T03:40:34.221Z</updated>
   <id>https://readmengk90.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://readmengk90.github.io/2024/01/20/java%E5%9F%BA%E7%A1%80-%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E6%95%B0Random/"/>
+    <id>https://readmengk90.github.io/2024/01/20/java%E5%9F%BA%E7%A1%80-%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E6%95%B0Random/</id>
+    <published>2024-01-20T03:38:38.016Z</published>
+    <updated>2024-01-20T03:40:34.221Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="生成随机数Random"><a href="#生成随机数Random" class="headerlink" title="生成随机数Random"></a>生成随机数Random</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1.导包---Random这个类在哪里?</span></span><br><span class="line"><span class="keyword">import</span> java.util.Random<span class="comment">//导包的动作必须出现在类定义的上边</span></span><br><span class="line"><span class="comment">//2.创建对象---表示我要开始用Random这个类了</span></span><br><span class="line"><span class="type">Random</span> <span class="variable">r</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Random</span>();<span class="comment">//这个格式里面，只有r是变量名，可以变，其他的都不允许变</span></span><br><span class="line"><span class="comment">//3.生成随机数--真正开始干活了</span></span><br><span class="line"><span class="type">int</span> <span class="variable">number</span> <span class="operator">=</span> r.nextInt(随机数的范围)<span class="comment">//这个格式里面，只有number是变量名，可以变，其他的都不允许变</span></span><br></pre></td></tr></table></figure><p><em>在3.小括号中，书写的是生成随机数的范围，这个范围<strong>一定是从0开始</strong>，到这个数减1结束(包头不包尾，包左不包右)</em></p><p><em>生成任意数到<strong>任意数之间</strong>的随机数:</em><br>    1.让这个范围头尾都减去一个值，让这个范围从0开始<br>    2.尾巴＋1<br>    3.最终结果，再加上第一步减去的值</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//生成7~15之间的值</span></span><br><span class="line"><span class="type">Random</span> <span class="variable">r</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Random</span>();</span><br><span class="line"><span class="type">int</span> number= r.nextInt(<span class="number">9</span>)+<span class="number">7</span>;</span><br><span class="line">System.out.println(number);</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;生成随机数Random&quot;&gt;&lt;a href=&quot;#生成随机数Random&quot; class=&quot;headerlink&quot; title=&quot;生成随机数Random&quot;&gt;&lt;/a&gt;生成随机数Random&lt;/h1&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>求质数计算中的标记思想</title>
@@ -405,23 +425,6 @@
     
     
     <summary type="html">&lt;center&gt; This is my first blog &lt;/center&gt;</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://readmengk90.github.io/2024/01/08/hello-world/"/>
-    <id>https://readmengk90.github.io/2024/01/08/hello-world/</id>
-    <published>2024-01-08T01:52:23.885Z</published>
-    <updated>2024-01-11T11:33:14.645Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.<br>&lt; !–more–&gt;</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;hello world&lt;/center&gt;</summary>
     
     
     
