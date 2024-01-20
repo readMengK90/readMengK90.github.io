@@ -6,7 +6,7 @@
   <link href="https://readmengk90.github.io/atom.xml" rel="self"/>
   
   <link href="https://readmengk90.github.io/"/>
-  <updated>2024-01-20T13:08:43.842Z</updated>
+  <updated>2024-01-20T13:37:36.557Z</updated>
   <id>https://readmengk90.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>比较最值时提高效率(数组)</title>
+    <link href="https://readmengk90.github.io/2024/01/20/%E6%AF%94%E8%BE%83%E6%9C%80%E5%80%BC%E6%97%B6%E6%8F%90%E9%AB%98%E6%95%88%E7%8E%87(%E6%95%B0%E7%BB%84)/"/>
+    <id>https://readmengk90.github.io/2024/01/20/%E6%AF%94%E8%BE%83%E6%9C%80%E5%80%BC%E6%97%B6%E6%8F%90%E9%AB%98%E6%95%88%E7%8E%87(%E6%95%B0%E7%BB%84)/</id>
+    <published>2024-01-20T13:37:36.509Z</published>
+    <updated>2024-01-20T13:37:36.557Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="数组循环比较最值时提高效率"><a href="#数组循环比较最值时提高效率" class="headerlink" title="数组循环比较最值时提高效率"></a>数组循环比较最值时提高效率</h1><p>循环中开始条件如果为0，那么第一次循环的时候是自己跟自己比了一下，对结果没有任何影响，但是效率偏低，为了提高效率，减少一次 循环的次数，循环开始的条件可以写1.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> min=array[<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt; array.length; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (array[i]&lt;min)&#123;</span><br><span class="line">                min=array[i];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(min);</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;数组循环比较最值时提高效率&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="经典算法思想" scheme="https://readmengk90.github.io/categories/%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3/"/>
+    
+    
+    <category term="算法思想" scheme="https://readmengk90.github.io/tags/%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3/"/>
+    
+  </entry>
   
   <entry>
     <title>数组相关介绍</title>
@@ -405,27 +426,6 @@
     
     
     <summary type="html">&lt;center&gt;找到post.styl文件&amp;配置.use-motion&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="Next主题配置" scheme="https://readmengk90.github.io/categories/Next%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/"/>
-    
-    
-    <category term="hexo" scheme="https://readmengk90.github.io/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo+Next主题下的阅读全文设置</title>
-    <link href="https://readmengk90.github.io/2024/01/10/Hexo-%E6%98%BE%E7%A4%BA%E5%85%A8%E6%96%87%E7%9A%84%E8%AE%BE%E7%BD%AE/"/>
-    <id>https://readmengk90.github.io/2024/01/10/Hexo-%E6%98%BE%E7%A4%BA%E5%85%A8%E6%96%87%E7%9A%84%E8%AE%BE%E7%BD%AE/</id>
-    <published>2024-01-10T05:47:46.621Z</published>
-    <updated>2024-01-11T11:36:09.051Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Hexo-显示全文的设置"><a href="#Hexo-显示全文的设置" class="headerlink" title="Hexo-显示全文的设置"></a>Hexo-显示全文的设置</h1><h5 id="1-在文章中使用-more-手动进行截断"><a href="#1-在文章中使用-more-手动进行截断" class="headerlink" title="1.在文章中使用&lt; !--more--&gt; 手动进行截断"></a>1.在文章中使用<code>&lt; !--more--&gt;</code> 手动进行截断</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-01.png?raw=true" alt="image-20240110132555493"></p><h5 id="2-添加描述信息的内容，会成为一种相关内容的提示信息"><a href="#2-添加描述信息的内容，会成为一种相关内容的提示信息" class="headerlink" title="2.添加描述信息的内容，会成为一种相关内容的提示信息"></a>2.添加描述信息的内容，会成为一种相关内容的提示信息</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-02.png?raw=true" alt="image-20240110132853566"></p><h5 id="3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部"><a href="#3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部" class="headerlink" title="3.在主题配置文件中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部"></a>3.在<strong>主题配置文件</strong>中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部</h5><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">auto_excerpt:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">length:</span> <span class="number">150</span></span><br></pre></td></tr></table></figure><h5 id="4-效果-展示"><a href="#4-效果-展示" class="headerlink" title="4.效果 展示"></a>4.效果 展示</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-03.png?raw=true" alt="image-20240110133302658"></p>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;手动进行截断&amp;相关内容的提示信息&amp;自行设定配置信息&lt;/center&gt;</summary>
     
     
     
