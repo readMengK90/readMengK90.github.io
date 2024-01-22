@@ -6,7 +6,7 @@
   <link href="https://readmengk90.github.io/atom.xml" rel="self"/>
   
   <link href="https://readmengk90.github.io/"/>
-  <updated>2024-01-22T11:39:49.890Z</updated>
+  <updated>2024-01-22T15:58:39.557Z</updated>
   <id>https://readmengk90.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>快捷键的妙用</title>
+    <link href="https://readmengk90.github.io/2024/01/22/Idea%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9A%84%E5%A6%99%E7%94%A8/"/>
+    <id>https://readmengk90.github.io/2024/01/22/Idea%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9A%84%E5%A6%99%E7%94%A8/</id>
+    <published>2024-01-22T15:51:38.388Z</published>
+    <updated>2024-01-22T15:58:39.557Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Idea快捷键的妙用"><a href="#Idea快捷键的妙用" class="headerlink" title="Idea快捷键的妙用"></a>Idea快捷键的妙用</h1><p>Ctrl+alt+M:自动抽取方法 </p><p>​编写程序时发现有重复代码，可以使用快捷键自动抽取方法，提高效率。</p><p>Ctrl+alt+L:代码格式化</p><p>​编写完成一段代码后养成格式化的习惯。</p><p>Ctrl+alt+v:自动补全代码快捷键</p>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;Idea快捷键的妙用&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="快捷方式" scheme="https://readmengk90.github.io/categories/%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/"/>
+    
+    
+    <category term="快捷方式" scheme="https://readmengk90.github.io/tags/%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>无限循环和跳转控制语句</title>
@@ -405,27 +426,6 @@
     
     
     <summary type="html">&lt;center&gt;配置环境变量步骤&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="Java基础" scheme="https://readmengk90.github.io/categories/Java%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="java" scheme="https://readmengk90.github.io/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>编译和运行</title>
-    <link href="https://readmengk90.github.io/2024/01/12/java%E5%9F%BA%E7%A1%80-%E7%BC%96%E8%AF%91%E8%BF%90%E8%A1%8C/"/>
-    <id>https://readmengk90.github.io/2024/01/12/java%E5%9F%BA%E7%A1%80-%E7%BC%96%E8%AF%91%E8%BF%90%E8%A1%8C/</id>
-    <published>2024-01-12T02:53:31.261Z</published>
-    <updated>2024-01-18T13:48:35.481Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="编译和运行"><a href="#编译和运行" class="headerlink" title="编译和运行"></a>编译和运行</h1><ol><li><p>编译和运行的应用程序</p><p><img src="/../images/%E7%BC%96%E8%AF%91%E8%BF%90%E8%A1%8C001.png"></p></li><li><p>如何操作</p><p><img src="/../images/%E7%BC%96%E8%AF%91%E8%BF%90%E8%A1%8C002.png"></p></li></ol>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;JDK如何编译和运行&lt;/center&gt;</summary>
     
     
     
