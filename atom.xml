@@ -6,7 +6,7 @@
   <link href="https://readmengk90.github.io/atom.xml" rel="self"/>
   
   <link href="https://readmengk90.github.io/"/>
-  <updated>2024-01-22T15:58:39.557Z</updated>
+  <updated>2024-01-23T07:29:16.916Z</updated>
   <id>https://readmengk90.github.io/</id>
   
   <author>
@@ -17,13 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>大小写字母放进数组</title>
+    <link href="https://readmengk90.github.io/2024/01/23/%E5%A4%A7%E5%B0%8F%E5%86%99%E5%AD%97%E6%AF%8D%E6%94%BE%E8%BF%9B%E6%95%B0%E7%BB%84/"/>
+    <id>https://readmengk90.github.io/2024/01/23/%E5%A4%A7%E5%B0%8F%E5%86%99%E5%AD%97%E6%AF%8D%E6%94%BE%E8%BF%9B%E6%95%B0%E7%BB%84/</id>
+    <published>2024-01-23T07:29:16.866Z</published>
+    <updated>2024-01-23T07:29:16.916Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="大小写字母都放进数组内"><a href="#大小写字母都放进数组内" class="headerlink" title="大小写字母都放进数组内"></a>大小写字母都放进数组内</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">char</span>[] array = <span class="keyword">new</span> <span class="title class_">char</span>[<span class="number">52</span>];<span class="comment">//26+26=52</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; array.length; i++) &#123;</span><br><span class="line">            <span class="type">int</span> <span class="variable">number3</span> <span class="operator">=</span> r.nextInt(<span class="number">9</span>);</span><br><span class="line">            <span class="keyword">if</span> (i &lt; array.length / <span class="number">2</span>) &#123;</span><br><span class="line">                array[i] = (<span class="type">char</span>) (<span class="number">97</span> + i);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                array[i] = (<span class="type">char</span>) (<span class="number">65</span> + j);</span><br><span class="line">                j++;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;大小写字母都放进数组&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="经典算法思想" scheme="https://readmengk90.github.io/categories/%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3/"/>
+    
+    
+    <category term="算法思想" scheme="https://readmengk90.github.io/tags/%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3/"/>
+    
+  </entry>
+  
+  <entry>
     <title>快捷键的妙用</title>
     <link href="https://readmengk90.github.io/2024/01/22/Idea%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9A%84%E5%A6%99%E7%94%A8/"/>
     <id>https://readmengk90.github.io/2024/01/22/Idea%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9A%84%E5%A6%99%E7%94%A8/</id>
     <published>2024-01-22T15:51:38.388Z</published>
-    <updated>2024-01-22T15:58:39.557Z</updated>
+    <updated>2024-01-23T06:19:33.594Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Idea快捷键的妙用"><a href="#Idea快捷键的妙用" class="headerlink" title="Idea快捷键的妙用"></a>Idea快捷键的妙用</h1><p>Ctrl+alt+M:自动抽取方法 </p><p>​编写程序时发现有重复代码，可以使用快捷键自动抽取方法，提高效率。</p><p>Ctrl+alt+L:代码格式化</p><p>​编写完成一段代码后养成格式化的习惯。</p><p>Ctrl+alt+v:自动补全代码快捷键</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="Idea快捷键的妙用"><a href="#Idea快捷键的妙用" class="headerlink" title="Idea快捷键的妙用"></a>Idea快捷键的妙用</h1><p>Ctrl+alt+M:自动抽取方法 </p><p>​编写程序时发现有重复代码，可以使用快捷键自动抽取方法，提高效率。</p><p>Ctrl+alt+L:代码格式化</p><p>​编写完成一段代码后养成格式化的习惯。</p><p>Ctrl+alt+v:自动补全代码快捷键</p><p>CTRL+&#x2F;：单行注释</p><p>CTRL+ALT+&#x2F;:多行注释</p>]]></content>
     
     
     <summary type="html">&lt;center&gt;Idea快捷键的妙用&lt;/center&gt;</summary>
@@ -405,27 +426,6 @@
     
     
     <summary type="html">&lt;center&gt;JAVA语言的特点&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="Java基础" scheme="https://readmengk90.github.io/categories/Java%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="java" scheme="https://readmengk90.github.io/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>环境变量的配置</title>
-    <link href="https://readmengk90.github.io/2024/01/12/java%E5%9F%BA%E7%A1%80-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E7%9A%84%E9%85%8D%E7%BD%AE/"/>
-    <id>https://readmengk90.github.io/2024/01/12/java%E5%9F%BA%E7%A1%80-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E7%9A%84%E9%85%8D%E7%BD%AE/</id>
-    <published>2024-01-12T06:17:38.250Z</published>
-    <updated>2024-01-18T13:48:54.470Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="环境变量的配置"><a href="#环境变量的配置" class="headerlink" title="环境变量的配置"></a>环境变量的配置</h1><ol><li><h5 id="java已经自动配置好了java-javac-javaw-jshell-有且仅有这四种，想要配置其他的环境变量需要手动配置（C-Program-Files-Common-Files-Oracle-Java-javapath）"><a href="#java已经自动配置好了java-javac-javaw-jshell-有且仅有这四种，想要配置其他的环境变量需要手动配置（C-Program-Files-Common-Files-Oracle-Java-javapath）" class="headerlink" title="java已经自动配置好了java,javac,javaw,jshell,有且仅有这四种，想要配置其他的环境变量需要手动配置（C:\Program Files\Common Files\Oracle\Java\javapath）"></a>java已经自动配置好了java,javac,javaw,jshell,有且仅有这四种，想要配置其他的环境变量需要手动配置（C:\Program Files\Common Files\Oracle\Java\javapath）</h5><p><img src="/../images/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F004.png"></p></li><li><p>手动配置</p><ol><li><p>法1：在Path里直接添加到java的路径(bin之前的路径)</p><p><img src="/../images/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F001.png"></p></li><li><p>法2-01：新建变量名 JAVA_HOME和变量值java的路径(bin之前的路径)</p><p><img src="/../images/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F002.png"></p></li></ol></li></ol><p>​法2-02： 引用JAVA_HOME变量</p><p>​<img src="/../images/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F003.png"></p>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;配置环境变量步骤&lt;/center&gt;</summary>
     
     
     
