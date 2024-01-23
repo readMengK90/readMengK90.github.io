@@ -6,7 +6,7 @@
   <link href="https://readmengk90.github.io/atom.xml" rel="self"/>
   
   <link href="https://readmengk90.github.io/"/>
-  <updated>2024-01-23T07:29:16.916Z</updated>
+  <updated>2024-01-23T15:58:50.952Z</updated>
   <id>https://readmengk90.github.io/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>把整数中的每一位都添加到数组中</title>
+    <link href="https://readmengk90.github.io/2024/01/23/%E6%8A%8A%E6%95%B4%E6%95%B0%E4%B8%AD%E7%9A%84%E6%AF%8F%E4%B8%80%E4%BD%8D%E9%83%BD%E6%B7%BB%E5%8A%A0%E5%88%B0%E6%95%B0%E7%BB%84%E4%B8%AD/"/>
+    <id>https://readmengk90.github.io/2024/01/23/%E6%8A%8A%E6%95%B4%E6%95%B0%E4%B8%AD%E7%9A%84%E6%AF%8F%E4%B8%80%E4%BD%8D%E9%83%BD%E6%B7%BB%E5%8A%A0%E5%88%B0%E6%95%B0%E7%BB%84%E4%B8%AD/</id>
+    <published>2024-01-23T14:00:58.967Z</published>
+    <updated>2024-01-23T15:58:50.952Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="把整数中的每一位都添加到数组中"><a href="#把整数中的每一位都添加到数组中" class="headerlink" title="把整数中的每一位都添加到数组中"></a>把整数中的每一位都添加到数组中</h1><p>反向推导：</p><ol><li><p>计算数组的长度(新建数组)-定义数组-把整数上的每一位都添加到数组上</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="type">int</span>[] getInts(<span class="type">int</span> number) &#123;</span><br><span class="line">        <span class="type">int</span> temp= number;</span><br><span class="line">        <span class="comment">//1.1求数字的长度充当数组的长度</span></span><br><span class="line">        <span class="type">int</span> count=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (number !=<span class="number">0</span>)&#123;</span><br><span class="line">            number = number /<span class="number">10</span>;</span><br><span class="line">            count++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//1.2定义数组</span></span><br><span class="line">        <span class="type">int</span> [] array=<span class="keyword">new</span> <span class="title class_">int</span>[count];</span><br><span class="line">        <span class="comment">//1.3得到每一位</span></span><br><span class="line">        <span class="type">int</span> index= array.length-<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span>(temp!=<span class="number">0</span>)&#123;</span><br><span class="line">            <span class="type">int</span> ge=temp%<span class="number">10</span>;</span><br><span class="line">            temp=temp/<span class="number">10</span>;</span><br><span class="line">            array[index]=ge;</span><br><span class="line">            index--;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> array;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><p>day07-TestDemo06</p></li></ol>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;把整数中的每一位都添加到数组中&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="经典算法思想" scheme="https://readmengk90.github.io/categories/%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3/"/>
+    
+    
+    <category term="算法思想" scheme="https://readmengk90.github.io/tags/%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>规定范围内录入数据</title>
+    <link href="https://readmengk90.github.io/2024/01/23/%E8%A7%84%E5%AE%9A%E8%8C%83%E5%9B%B4%E5%86%85%E5%BD%95%E5%85%A5%E6%95%B0%E6%8D%AE/"/>
+    <id>https://readmengk90.github.io/2024/01/23/%E8%A7%84%E5%AE%9A%E8%8C%83%E5%9B%B4%E5%86%85%E5%BD%95%E5%85%A5%E6%95%B0%E6%8D%AE/</id>
+    <published>2024-01-23T11:43:52.767Z</published>
+    <updated>2024-01-23T11:43:52.820Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="规定范围内录入数据"><a href="#规定范围内录入数据" class="headerlink" title="规定范围内录入数据"></a>规定范围内录入数据</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="comment">//输入规定范围的整数：0-100之间</span></span><br><span class="line">        <span class="type">int</span>[] scores = <span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">6</span>];</span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span><span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; scores.length;) &#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;请输入评分:&quot;</span>);</span><br><span class="line">            <span class="type">int</span> score=sc.nextInt();</span><br><span class="line">            <span class="keyword">if</span> (score&gt;=<span class="number">0</span>&amp;&amp;score&lt;=<span class="number">100</span>)&#123;</span><br><span class="line">                scores[i]=score;</span><br><span class="line">                i++;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                System.out.println(<span class="string">&quot;超出范围，继续录入，当前的i为:&quot;</span>+i);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;规定范围内录入数据，当超出范围后，仍能输出&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="经典算法思想" scheme="https://readmengk90.github.io/categories/%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3/"/>
+    
+    
+    <category term="算法思想" scheme="https://readmengk90.github.io/tags/%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3/"/>
+    
+  </entry>
   
   <entry>
     <title>大小写字母放进数组</title>
@@ -42,9 +84,9 @@
     <link href="https://readmengk90.github.io/2024/01/22/Idea%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9A%84%E5%A6%99%E7%94%A8/"/>
     <id>https://readmengk90.github.io/2024/01/22/Idea%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9A%84%E5%A6%99%E7%94%A8/</id>
     <published>2024-01-22T15:51:38.388Z</published>
-    <updated>2024-01-23T06:19:33.594Z</updated>
+    <updated>2024-01-23T13:56:43.079Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Idea快捷键的妙用"><a href="#Idea快捷键的妙用" class="headerlink" title="Idea快捷键的妙用"></a>Idea快捷键的妙用</h1><p>Ctrl+alt+M:自动抽取方法 </p><p>​编写程序时发现有重复代码，可以使用快捷键自动抽取方法，提高效率。</p><p>Ctrl+alt+L:代码格式化</p><p>​编写完成一段代码后养成格式化的习惯。</p><p>Ctrl+alt+v:自动补全代码快捷键</p><p>CTRL+&#x2F;：单行注释</p><p>CTRL+ALT+&#x2F;:多行注释</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="Idea快捷键的妙用"><a href="#Idea快捷键的妙用" class="headerlink" title="Idea快捷键的妙用"></a>Idea快捷键的妙用</h1><p>Ctrl+alt+M:自动抽取方法 </p><p>​编写程序时发现有重复代码，可以使用快捷键自动抽取方法，提高效率。</p><p>Ctrl+alt+L:代码格式化</p><p>​编写完成一段代码后养成格式化的习惯。</p><p>Ctrl+alt+v:自动补全代码快捷键</p><p>CTRL+&#x2F;：单行注释</p><p>CTRL+ALT+&#x2F;:多行注释</p><p>选择变量+shift+F6:变量的批量修改</p>]]></content>
     
     
     <summary type="html">&lt;center&gt;Idea快捷键的妙用&lt;/center&gt;</summary>
@@ -384,48 +426,6 @@
     
     
     <summary type="html">&lt;center&gt;JAVA的数据类型-标识符-键盘录入&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="Java基础" scheme="https://readmengk90.github.io/categories/Java%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="java" scheme="https://readmengk90.github.io/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JAVA的基础语法</title>
-    <link href="https://readmengk90.github.io/2024/01/12/java%E5%9F%BA%E7%A1%80-JAVA%E7%9A%84%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
-    <id>https://readmengk90.github.io/2024/01/12/java%E5%9F%BA%E7%A1%80-JAVA%E7%9A%84%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</id>
-    <published>2024-01-12T11:15:26.395Z</published>
-    <updated>2024-01-18T13:47:45.206Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="JAVA的基础语法"><a href="#JAVA的基础语法" class="headerlink" title="JAVA的基础语法"></a>JAVA的基础语法</h1><ol><li><p>注释</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 注释信息    --单行注释</span></span><br><span class="line"><span class="comment">/*注释信息*/</span>   --多行注释</span><br><span class="line"><span class="comment">/**注释信息**/</span> --文档注释</span><br></pre></td></tr></table></figure></li><li><p>关键字</p><p>关键字的字母全部<strong>小写</strong>，常用的代码编辑器，针对关键字<strong>有特殊的颜色标记</strong>，非常直观。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;  <span class="comment">//class:用于创建一个类，类是Java最基本的组成单元</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">System.out.println(<span class="string">&quot;我爱你中国&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p>字面量</p></li></ol><table><thead><tr><th align="center">字面量类型</th><th align="center">说明</th><th align="center">举例</th></tr></thead><tbody><tr><td align="center">整数类型</td><td align="center">不带小数点的数字</td><td align="center">666，-88</td></tr><tr><td align="center">小数类型</td><td align="center">带小数点的数字</td><td align="center">13.14，52.1</td></tr><tr><td align="center">字符串类型</td><td align="center">用双引号括起来的内容</td><td align="center">“Hello”</td></tr><tr><td align="center">字符类型</td><td align="center">用单引号括起来的内容，内容只有一个</td><td align="center">‘A’,’0’,’我‘</td></tr><tr><td align="center">布尔类型</td><td align="center">布尔值，表示真假</td><td align="center">只有两个值：true,false</td></tr><tr><td align="center">空类型</td><td align="center">一个特殊的值，空值（不能直接打印，只能用字符串方式打印）</td><td align="center">null</td></tr></tbody></table><table><thead><tr><th align="center">特殊字符</th><th align="center">含义</th></tr></thead><tbody><tr><td align="center">‘\t’   (制表符)</td><td align="center">打印时，把前面字符串的长度补齐到8，或者8的整数倍。最少补1个空格，最多补8个空格**(实现表格方式对齐)**，只跟\t前面的字符串有关系</td></tr><tr><td align="center">‘\r’</td><td align="center">在Windows 中表示换行且回到下一行的最开始位置。相当于Mac OS 里的 \r 的效果。<br/>      在Linux、unix 中只表示换行，但不会回到下一行的开始位置。</td></tr></tbody></table><ol start="4"><li><p>变量</p><p>数据类型    变量名 &#x3D;  变量值</p></li></ol>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;JAVA语法的类型特点&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="Java基础" scheme="https://readmengk90.github.io/categories/Java%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="java" scheme="https://readmengk90.github.io/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JDK&amp;JRE&amp;JVM</title>
-    <link href="https://readmengk90.github.io/2024/01/12/java%E5%9F%BA%E7%A1%80-JAVA%E8%AF%AD%E8%A8%80%E7%9A%84%E7%89%B9%E7%82%B9/"/>
-    <id>https://readmengk90.github.io/2024/01/12/java%E5%9F%BA%E7%A1%80-JAVA%E8%AF%AD%E8%A8%80%E7%9A%84%E7%89%B9%E7%82%B9/</id>
-    <published>2024-01-12T10:37:51.720Z</published>
-    <updated>2024-01-18T13:48:12.781Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="JAVA语言的特点"><a href="#JAVA语言的特点" class="headerlink" title="JAVA语言的特点"></a>JAVA语言的特点</h1><ol><li>跨平台的原理：<ol><li>Java语言的跨平台是通过虚拟机(<strong>JVM</strong>)实现的</li><li>Java语言不是直接运行在操作系统里面的，而是运行在虚拟机中的</li><li>因此，针对于不同的操作系统，安装不同的虚拟机就可以了</li></ol></li><li><strong>JDK</strong> 和 <strong>JRE</strong><ol><li><strong>JDK</strong>(Java Development kit):Java开发工具包，由 <strong>JVM</strong>, <strong>核心类库</strong>，<strong>开发工具</strong>组成。</li><li><strong>JER</strong> (JAVA Runtime Environment):Java的运行环境，把<strong>JVM</strong>和核心类库以及<strong>运行时所用到的开发工具</strong>单独抽离出来所组成的。</li></ol></li></ol><p>​ </p>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;JAVA语言的特点&lt;/center&gt;</summary>
     
     
     
