@@ -28,7 +28,7 @@
 <meta property="og:description" content="设计对象并使用&amp;封装&amp;内存图">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-01-25T07:31:26.428Z">
-<meta property="article:modified_time" content="2024-01-25T15:45:43.795Z">
+<meta property="article:modified_time" content="2024-01-25T15:56:00.412Z">
 <meta property="article:author" content="Amber">
 <meta property="article:tag" content="java">
 <meta name="twitter:card" content="summary">
@@ -228,7 +228,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2024-01-25 15:31:26 / 修改时间：23:45:43" itemprop="dateCreated datePublished" datetime="2024-01-25T15:31:26+08:00">2024-01-25</time>
+              <time title="创建时间：2024-01-25 15:31:26 / 修改时间：23:56:00" itemprop="dateCreated datePublished" datetime="2024-01-25T15:31:26+08:00">2024-01-25</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -260,7 +260,7 @@
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>4 分钟</span>
+              <span>5 分钟</span>
             </span>
             <div class="post-description"><center>设计对象并使用&封装&内存图</center></div>
 
@@ -314,7 +314,7 @@
 <p>this关键字的作用可以区别成员变量和局部变量.</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">GirlFriend</span>&#123;</span><br><span class="line"><span class="keyword">private</span> <span class="type">int</span> age;</span><br><span class="line"><span class="comment">//set(赋值)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setAge</span><span class="params">(<span class="type">int</span> age)</span>&#123;<span class="comment">//在所有的类中都可以使用它修饰的成员</span></span><br><span class="line">    <span class="keyword">if</span>(a&gt;=<span class="number">18</span>&amp;&amp;a&lt;<span class="number">50</span>)&#123;</span><br><span class="line">        <span class="built_in">this</span>.age=age;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;非法数据&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//get(获取)</span></span><br><span class="line"><span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getAge</span><span class="params">()</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> age;</span><br><span class="line">&#125;   </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>构造方法:</p>
+<li><p><strong>构造方法:</strong></p>
 <p>格式:</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Student</span>&#123;</span><br><span class="line">    修饰符 类名(参数) &#123;</span><br><span class="line">        方法体;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">Student</span><span class="params">()</span>&#123;</span><br><span class="line">        <span class="comment">//空参构造方法</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">Student</span><span class="params">(String name,<span class="type">int</span> age)</span>&#123; <span class="comment">//创建对象调用实参构造:Student s = new Student(&quot;AA&quot;,19);</span></span><br><span class="line">        <span class="comment">//全参构造方法</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//★★★★★★★★</span></span><br><span class="line"><span class="comment">//全参构造,在方法里面就可以给所有的成员变量赋值,不用再用set方法进行赋值了,简化代码.</span></span><br><span class="line"><span class="comment">//空参的构造方法,利用空参构造创建对象,成员变量默认初始化值.,</span></span><br><span class="line"><span class="comment">//如果我们自己没写任何构造方法,那么虚拟机会给我们加一个空参构造方法;如果已经定义了带参构造方法,系统将不会提供默认的无参构造方法.</span></span><br><span class="line"><span class="comment">//构造方法的重载,带参构造方法和无参构造方法,两者方法名相同,但是参数不同,这叫做构造方法的重载.</span></span><br><span class="line"><span class="comment">//执行时机:构造方法不能手动调用,在创建对象的时候由虚拟机调用,每创建一次对象就调用一次构造方法.</span></span><br><span class="line"><span class="comment">//★★★★★★★★</span></span><br></pre></td></tr></table></figure>
 
@@ -324,7 +324,7 @@
 <p>作用:在创建对象的时候由<strong>虚拟机自动调用</strong>构造方法给成员变量进行初始化(赋值)的.</p>
 <p>建议:实际开发中,空参构造和有参构造都会写上,因为有时不完全知道属性值</p>
 </li>
-<li><p>标准JavaBean</p>
+<li><p><strong>标准JavaBean</strong></p>
 <ol>
 <li>类名需要见名知意,驼峰命名</li>
 <li>成员变量使用private修饰</li>
@@ -332,7 +332,13 @@
 <li>成员方法:提供每一个私有化的成员变量对应的setXxx()&#x2F;getXxx()方法,如果还有其他行为,也需要写上</li>
 </ol>
 </li>
-<li><p>对象内存图</p>
+<li><p><strong>对象内存图</strong></p>
+<p><strong>一个对象的内存图</strong>:</p>
+<p><strong>多个对象的内存图</strong>:</p>
+<p><strong>两个变量指向同一个对象内存图</strong>:</p>
+<p><strong>this的内存原理</strong>:</p>
+<p><strong>基本数据类型和引用数据类型的区别</strong>:</p>
+<p><strong>局部变量和成员变量的区别</strong>:</p>
 </li>
 <li><p>补充知识:成员变量，局部变量的区别</p>
 </li>
