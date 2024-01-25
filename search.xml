@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hexo+Next主题下的阅读全文设置</title>
+    <url>/2024/01/10/Hexo-%E6%98%BE%E7%A4%BA%E5%85%A8%E6%96%87%E7%9A%84%E8%AE%BE%E7%BD%AE/</url>
+    <content><![CDATA[<h1 id="Hexo-显示全文的设置"><a href="#Hexo-显示全文的设置" class="headerlink" title="Hexo-显示全文的设置"></a>Hexo-显示全文的设置</h1><h5 id="1-在文章中使用-more-手动进行截断"><a href="#1-在文章中使用-more-手动进行截断" class="headerlink" title="1.在文章中使用&lt; !--more--&gt; 手动进行截断"></a>1.在文章中使用<code>&lt; !--more--&gt;</code> 手动进行截断</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-01.png?raw=true" alt="image-20240110132555493"></p>
+<h5 id="2-添加描述信息的内容，会成为一种相关内容的提示信息"><a href="#2-添加描述信息的内容，会成为一种相关内容的提示信息" class="headerlink" title="2.添加描述信息的内容，会成为一种相关内容的提示信息"></a>2.添加描述信息的内容，会成为一种相关内容的提示信息</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-02.png?raw=true" alt="image-20240110132853566"></p>
+<h5 id="3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部"><a href="#3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部" class="headerlink" title="3.在主题配置文件中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部"></a>3.在<strong>主题配置文件</strong>中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部</h5><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">auto_excerpt:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">length:</span> <span class="number">150</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="4-效果-展示"><a href="#4-效果-展示" class="headerlink" title="4.效果 展示"></a>4.效果 展示</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-03.png?raw=true" alt="image-20240110133302658"></p>
+]]></content>
+      <categories>
+        <category>Next主题配置</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo+Mext设置主页文章添加边框阴影效果</title>
     <url>/2024/01/10/Hexo+Next%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%BB%E9%A1%B5%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E8%BE%B9%E6%A1%86%E9%98%B4%E5%BD%B1%E6%95%88%E6%9E%9C/</url>
     <content><![CDATA[<h1 id="设置主页文章添加边框阴影效果"><a href="#设置主页文章添加边框阴影效果" class="headerlink" title="设置主页文章添加边框阴影效果"></a>设置主页文章添加边框阴影效果</h1><ol>
@@ -27,20 +43,9 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo+Next主题下的阅读全文设置</title>
-    <url>/2024/01/10/Hexo-%E6%98%BE%E7%A4%BA%E5%85%A8%E6%96%87%E7%9A%84%E8%AE%BE%E7%BD%AE/</url>
-    <content><![CDATA[<h1 id="Hexo-显示全文的设置"><a href="#Hexo-显示全文的设置" class="headerlink" title="Hexo-显示全文的设置"></a>Hexo-显示全文的设置</h1><h5 id="1-在文章中使用-more-手动进行截断"><a href="#1-在文章中使用-more-手动进行截断" class="headerlink" title="1.在文章中使用&lt; !--more--&gt; 手动进行截断"></a>1.在文章中使用<code>&lt; !--more--&gt;</code> 手动进行截断</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-01.png?raw=true" alt="image-20240110132555493"></p>
-<h5 id="2-添加描述信息的内容，会成为一种相关内容的提示信息"><a href="#2-添加描述信息的内容，会成为一种相关内容的提示信息" class="headerlink" title="2.添加描述信息的内容，会成为一种相关内容的提示信息"></a>2.添加描述信息的内容，会成为一种相关内容的提示信息</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-02.png?raw=true" alt="image-20240110132853566"></p>
-<h5 id="3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部"><a href="#3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部" class="headerlink" title="3.在主题配置文件中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部"></a>3.在<strong>主题配置文件</strong>中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部</h5><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">auto_excerpt:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">length:</span> <span class="number">150</span></span><br></pre></td></tr></table></figure>
-
-<h5 id="4-效果-展示"><a href="#4-效果-展示" class="headerlink" title="4.效果 展示"></a>4.效果 展示</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-03.png?raw=true" alt="image-20240110133302658"></p>
-]]></content>
-      <categories>
-        <category>Next主题配置</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
+    <title>好好学习  天天向上</title>
+    <url>/2024/01/08/first-blog/</url>
+    <content><![CDATA[<h1 id="This-is-my-first-blog-路上只我一个人，背着手踱着。这一片天地好像是我的-我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静-爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜-niao-nuo-地开着旳，有羞涩地打着朵儿旳-正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉-mo-的流水，遮住了，不能见一些颜色-而叶子却更见风致了。"><a href="#This-is-my-first-blog-路上只我一个人，背着手踱着。这一片天地好像是我的-我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静-爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜-niao-nuo-地开着旳，有羞涩地打着朵儿旳-正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉-mo-的流水，遮住了，不能见一些颜色-而叶子却更见风致了。" class="headerlink" title="This is my first blog 路上只我一个人，背着手踱着。这一片天地好像是我的;我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静;爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜(niǎo,nuó)地开着旳，有羞涩地打着朵儿旳;正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉(mò)的流水，遮住了，不能见一些颜色;而叶子却更见风致了。"></a>This is my first blog 路上只我一个人，背着手踱着。这一片天地好像是我的;我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静;爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜(niǎo,nuó)地开着旳，有羞涩地打着朵儿旳;正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉(mò)的流水，遮住了，不能见一些颜色;而叶子却更见风致了。</h1><h2 id="welcome-to-you"><a href="#welcome-to-you" class="headerlink" title="welcome to you!"></a>welcome to you!</h2>]]></content>
   </entry>
   <entry>
     <title>快捷键的妙用</title>
@@ -63,11 +68,6 @@
       </tags>
   </entry>
   <entry>
-    <title>好好学习  天天向上</title>
-    <url>/2024/01/08/first-blog/</url>
-    <content><![CDATA[<h1 id="This-is-my-first-blog-路上只我一个人，背着手踱着。这一片天地好像是我的-我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静-爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜-niao-nuo-地开着旳，有羞涩地打着朵儿旳-正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉-mo-的流水，遮住了，不能见一些颜色-而叶子却更见风致了。"><a href="#This-is-my-first-blog-路上只我一个人，背着手踱着。这一片天地好像是我的-我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静-爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜-niao-nuo-地开着旳，有羞涩地打着朵儿旳-正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉-mo-的流水，遮住了，不能见一些颜色-而叶子却更见风致了。" class="headerlink" title="This is my first blog 路上只我一个人，背着手踱着。这一片天地好像是我的;我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静;爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜(niǎo,nuó)地开着旳，有羞涩地打着朵儿旳;正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉(mò)的流水，遮住了，不能见一些颜色;而叶子却更见风致了。"></a>This is my first blog 路上只我一个人，背着手踱着。这一片天地好像是我的;我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静;爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜(niǎo,nuó)地开着旳，有羞涩地打着朵儿旳;正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉(mò)的流水，遮住了，不能见一些颜色;而叶子却更见风致了。</h1><h2 id="welcome-to-you"><a href="#welcome-to-you" class="headerlink" title="welcome to you!"></a>welcome to you!</h2>]]></content>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2024/01/08/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.<br>&lt; !–more–&gt;</p>
@@ -84,6 +84,33 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>分支语句-switch</title>
+    <url>/2024/01/17/java-Switch%E8%AF%AD%E5%8F%A5/</url>
+    <content><![CDATA[<h1 id="Switch的语句格式"><a href="#Switch的语句格式" class="headerlink" title="Switch的语句格式"></a>Switch的语句格式</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">switch</span>(表达式) &#123;					<span class="comment">//	表达式的值==case的值</span></span><br><span class="line">	<span class="keyword">case</span> 值<span class="number">1</span>：					<span class="comment">//表达式：取值为byte,short,int,char,枚举(jdk5以后)，String(jdk7以后)</span></span><br><span class="line">		语句体<span class="number">1</span>;				   <span class="comment">// case后面的值只能表示字面量，不能是变量。</span></span><br><span class="line">        <span class="keyword">break</span>;					 <span class="comment">//当switch里面的内容得到一个结果，可以将switch赋值给一个变量</span></span><br><span class="line">    <span class="keyword">case</span> 值<span class="number">2</span>：</span><br><span class="line">		语句体<span class="number">2</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    ......</span><br><span class="line">     <span class="keyword">default</span>:</span><br><span class="line">        语句体n+<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li><p>default的位置和省略</p>
+<p>位置：default位置随意，习惯写在最下面。</p>
+<p>省略：default可以省略，语法不出差，但不建议。</p>
+</li>
+<li><p>case穿透</p>
+<p>省略break会引起case穿透。</p>
+<p>使用场景：多个case的语句体重复了，那么我们考虑利用case穿透去简化代码。</p>
+</li>
+<li><p>switch的新特性(jdk12)</p>
+<p><strong>case 值1 -&gt;{</strong>	<em>&#x2F;&#x2F;消除了case穿透，大括号里面<strong>只有一行代码</strong>时，可以省略大括号</em></p>
+<p><strong>}</strong></p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
   </entry>
   <entry>
     <title>JAVA的基础语法</title>
@@ -157,33 +184,6 @@
 <ol start="4">
 <li><p>变量</p>
 <p>数据类型    变量名 &#x3D;  变量值</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>分支语句-switch</title>
-    <url>/2024/01/17/java-Switch%E8%AF%AD%E5%8F%A5/</url>
-    <content><![CDATA[<h1 id="Switch的语句格式"><a href="#Switch的语句格式" class="headerlink" title="Switch的语句格式"></a>Switch的语句格式</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">switch</span>(表达式) &#123;					<span class="comment">//	表达式的值==case的值</span></span><br><span class="line">	<span class="keyword">case</span> 值<span class="number">1</span>：					<span class="comment">//表达式：取值为byte,short,int,char,枚举(jdk5以后)，String(jdk7以后)</span></span><br><span class="line">		语句体<span class="number">1</span>;				   <span class="comment">// case后面的值只能表示字面量，不能是变量。</span></span><br><span class="line">        <span class="keyword">break</span>;					 <span class="comment">//当switch里面的内容得到一个结果，可以将switch赋值给一个变量</span></span><br><span class="line">    <span class="keyword">case</span> 值<span class="number">2</span>：</span><br><span class="line">		语句体<span class="number">2</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    ......</span><br><span class="line">     <span class="keyword">default</span>:</span><br><span class="line">        语句体n+<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li><p>default的位置和省略</p>
-<p>位置：default位置随意，习惯写在最下面。</p>
-<p>省略：default可以省略，语法不出差，但不建议。</p>
-</li>
-<li><p>case穿透</p>
-<p>省略break会引起case穿透。</p>
-<p>使用场景：多个case的语句体重复了，那么我们考虑利用case穿透去简化代码。</p>
-</li>
-<li><p>switch的新特性(jdk12)</p>
-<p><strong>case 值1 -&gt;{</strong>	<em>&#x2F;&#x2F;消除了case穿透，大括号里面<strong>只有一行代码</strong>时，可以省略大括号</em></p>
-<p><strong>}</strong></p>
 </li>
 </ol>
 ]]></content>
@@ -328,6 +328,26 @@
       </tags>
   </entry>
   <entry>
+    <title>循环语句</title>
+    <url>/2024/01/18/java%E5%9F%BA%E7%A1%80-%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5(for&amp;while)/</url>
+    <content><![CDATA[<h1 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h1><h4 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(初始化语句;条件判断语句;条件控制语句)&#123;</span><br><span class="line">    循环体语句;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>初始化语句只执行一次，判断语句为true，循环继续，判断语句为false，循环结束。</p>
+<h4 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">初始化语句;</span><br><span class="line"><span class="keyword">while</span>(条件判断语句)&#123;</span><br><span class="line">	循环体语句;</span><br><span class="line">	条件控制语句;</span><br><span class="line">&#125;</span><br><span class="line">循环下面的其他语句;</span><br></pre></td></tr></table></figure>
+
+<h4 id="区别："><a href="#区别：" class="headerlink" title="区别："></a>区别：</h4><pre><code>1. 运行规则都是一样的
+1. for循环中，控制循环的变量，因为归属for循环的语法结构中 在for循环结束中，就不能再次被访问到了。**（已知循环次数或者范围）**
+1. while循环中，控制循环的变量，对于while循环来说不归属其语法结构中，在while循环结束后，该变量还可以继续使用。**(不知道循环次数和范围，只知道循环的结束条件 )**
+</code></pre>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>常用的CMD命令</title>
     <url>/2024/01/11/java%E5%9F%BA%E7%A1%80-%E5%B8%B8%E7%94%A8%E7%9A%84CMD%E5%91%BD%E4%BB%A4/</url>
     <content><![CDATA[<h1 id="1-常用的CMD命令"><a href="#1-常用的CMD命令" class="headerlink" title="1. 常用的CMD命令"></a>1. 常用的CMD命令</h1><ol>
@@ -362,26 +382,6 @@
 </li>
 </ul>
 <p>​		</p>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>循环语句</title>
-    <url>/2024/01/18/java%E5%9F%BA%E7%A1%80-%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5(for&amp;while)/</url>
-    <content><![CDATA[<h1 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h1><h4 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(初始化语句;条件判断语句;条件控制语句)&#123;</span><br><span class="line">    循环体语句;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>初始化语句只执行一次，判断语句为true，循环继续，判断语句为false，循环结束。</p>
-<h4 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">初始化语句;</span><br><span class="line"><span class="keyword">while</span>(条件判断语句)&#123;</span><br><span class="line">	循环体语句;</span><br><span class="line">	条件控制语句;</span><br><span class="line">&#125;</span><br><span class="line">循环下面的其他语句;</span><br></pre></td></tr></table></figure>
-
-<h4 id="区别："><a href="#区别：" class="headerlink" title="区别："></a>区别：</h4><pre><code>1. 运行规则都是一样的
-1. for循环中，控制循环的变量，因为归属for循环的语法结构中 在for循环结束中，就不能再次被访问到了。**（已知循环次数或者范围）**
-1. while循环中，控制循环的变量，对于while循环来说不归属其语法结构中，在while循环结束后，该变量还可以继续使用。**(不知道循环次数和范围，只知道循环的结束条件 )**
-</code></pre>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -441,56 +441,6 @@
 <p>多次录入–不知道录入次数(例如猜随机数)、</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span> (<span class="literal">true</span>)&#123;		</span><br><span class="line">            Scanner sc= <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">            System.out.println(<span class="string">&quot;输入你要猜的数字:&quot;</span>);</span><br><span class="line">            <span class="type">int</span> number2= sc.nextInt();</span><br><span class="line">            <span class="comment">//3.判断两个数字给出不同的提示</span></span><br><span class="line">            <span class="comment">//猜的数字大了，提示大了</span></span><br><span class="line">            <span class="comment">//猜的数字小了，提示小了</span></span><br><span class="line">            <span class="comment">//猜的数字正确，提示对了</span></span><br><span class="line">            <span class="keyword">if</span> (number1&lt;number2)&#123;</span><br><span class="line">                System.out.println(<span class="string">&quot;猜数大了&quot;</span>);</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (number1&gt;number2) &#123;</span><br><span class="line">                System.out.println(<span class="string">&quot;猜数小了&quot;</span>);</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                System.out.println(<span class="string">&quot;数字相等&quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
 
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>IDEA的下载安装&amp;相关设置</title>
-    <url>/2024/01/15/java%E5%9F%BA%E7%A1%80-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</url>
-    <content><![CDATA[<h1 id="IDEA的下载与安装"><a href="#IDEA的下载与安装" class="headerlink" title="IDEA的下载与安装"></a>IDEA的下载与安装</h1><ol>
-<li>下载安装</li>
-</ol>
-<p>把代码编写，编译，执行，调试等多种功能综合在一起。</p>
-<p><a href="https://www.jetbrains.com/idea/">https://www.jetbrains.com/idea/</a></p>
-<p>拼多多买个授权码。</p>
-<ol start="2">
-<li>结构介绍</li>
-</ol>
-<p>IDEA的项目结构：</p>
-<p>​	项目(project)：以微信项目为例，整个微信可以看作一个项目。</p>
-<p>​		模块(module)：微信的四大功能键(微信，通讯录，发现，我)，是相互独立的四个模块。</p>
-<p>​			包(package)：文件夹，在模块里新建很多的包，把相同功能的代码放在同一个包中方便管理。</p>
-<p>​       			类 (class)：在类里面编写代码</p>
-<ol start="3">
-<li><p>扩展设置</p>
-<p>修改主题：file-&gt;Settings-&gt;Appearance&amp;Behavior(Appearance)-&gt;Theme。</p>
-<p>设置字体：file-&gt;Settings-&gt;Editor-&gt;Font-&gt;可以设置这个字体，大小。</p>
-<p>设置注释的颜色：file-&gt;Settings-&gt;Editor-&gt;Color Scheme-&gt;Language Defaults-&gt;Comments-&gt;单行注释(Line comment)&#x2F;多行注释(Block comment)的设置-&gt;Foreground进行设置。</p>
-<p>自动导包的设置：file-&gt;Settings-&gt;Editor-&gt;General-&gt;Auto Import-&gt;Java下的两个带？的复选框选中。</p>
-<p>自动提示不区分大小写设置:file-&gt;Settings-&gt;Editor-&gt;General-&gt;Code Completion-&gt;取消Match case的勾。</p>
-</li>
-<li><p>项目和模块操作</p>
-<p>类的相关操作：</p>
-<p>​	新建类：右键指定包然后新建类</p>
-<p>​	删除类：右键指定类然后delete</p>
-<p>​	修改类:   右键指定类-&gt;Refactor-&gt;Rename,文件名类名同时修改</p>
-<p>模块的操作：</p>
-<p>​	新建模块：</p>
-<p>​	删除模块：</p>
-<p>​	修改模块：</p>
-<p>​	导入模块：</p>
-<p>项目的操作：</p>
-<p>​	关闭项目：File-&gt;Close Project</p>
-<p>​	新建项目:  Empty Project</p>
-<p>​	打开项目：</p>
-<p>​	修改项目：</p>
-</li>
-</ol>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -576,6 +526,56 @@
 <td align="left">寄存器：给CPU使用，和开发无关</td>
 </tr>
 </tbody></table>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>IDEA的下载安装&amp;相关设置</title>
+    <url>/2024/01/15/java%E5%9F%BA%E7%A1%80-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</url>
+    <content><![CDATA[<h1 id="IDEA的下载与安装"><a href="#IDEA的下载与安装" class="headerlink" title="IDEA的下载与安装"></a>IDEA的下载与安装</h1><ol>
+<li>下载安装</li>
+</ol>
+<p>把代码编写，编译，执行，调试等多种功能综合在一起。</p>
+<p><a href="https://www.jetbrains.com/idea/">https://www.jetbrains.com/idea/</a></p>
+<p>拼多多买个授权码。</p>
+<ol start="2">
+<li>结构介绍</li>
+</ol>
+<p>IDEA的项目结构：</p>
+<p>​	项目(project)：以微信项目为例，整个微信可以看作一个项目。</p>
+<p>​		模块(module)：微信的四大功能键(微信，通讯录，发现，我)，是相互独立的四个模块。</p>
+<p>​			包(package)：文件夹，在模块里新建很多的包，把相同功能的代码放在同一个包中方便管理。</p>
+<p>​       			类 (class)：在类里面编写代码</p>
+<ol start="3">
+<li><p>扩展设置</p>
+<p>修改主题：file-&gt;Settings-&gt;Appearance&amp;Behavior(Appearance)-&gt;Theme。</p>
+<p>设置字体：file-&gt;Settings-&gt;Editor-&gt;Font-&gt;可以设置这个字体，大小。</p>
+<p>设置注释的颜色：file-&gt;Settings-&gt;Editor-&gt;Color Scheme-&gt;Language Defaults-&gt;Comments-&gt;单行注释(Line comment)&#x2F;多行注释(Block comment)的设置-&gt;Foreground进行设置。</p>
+<p>自动导包的设置：file-&gt;Settings-&gt;Editor-&gt;General-&gt;Auto Import-&gt;Java下的两个带？的复选框选中。</p>
+<p>自动提示不区分大小写设置:file-&gt;Settings-&gt;Editor-&gt;General-&gt;Code Completion-&gt;取消Match case的勾。</p>
+</li>
+<li><p>项目和模块操作</p>
+<p>类的相关操作：</p>
+<p>​	新建类：右键指定包然后新建类</p>
+<p>​	删除类：右键指定类然后delete</p>
+<p>​	修改类:   右键指定类-&gt;Refactor-&gt;Rename,文件名类名同时修改</p>
+<p>模块的操作：</p>
+<p>​	新建模块：</p>
+<p>​	删除模块：</p>
+<p>​	修改模块：</p>
+<p>​	导入模块：</p>
+<p>项目的操作：</p>
+<p>​	关闭项目：File-&gt;Close Project</p>
+<p>​	新建项目:  Empty Project</p>
+<p>​	打开项目：</p>
+<p>​	修改项目：</p>
+</li>
+</ol>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -876,6 +876,60 @@
       </tags>
   </entry>
   <entry>
+    <title>面向对象</title>
+    <url>/2024/01/25/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</url>
+    <content><![CDATA[<p>面向对象</p>
+<p>​	面向对象介绍:</p>
+<p>​		面向:拿，找。</p>
+<p>​		对象:能干活的东西。</p>
+<p>​		面向对象编程:拿东西过来做对应的事情。</p>
+<ol>
+<li><p><strong>设计对象并使用</strong></p>
+<ol>
+<li><p>类和对象</p>
+<p>类(设计图):是对象共同特征的描述(类名首字母建议大写，需要见名知意，驼峰命名)；</p>
+<p>对象:是真实存在的具体东西(在Java中，必须先设计类，才能获得对象)</p>
+<p><strong>如何得到对象:</strong>	</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> class 类名&#123;</span><br><span class="line">    <span class="number">1.</span>成员变量(代表属性的，一般是名词)<span class="comment">//完整定义格式:修饰符 数据类型 变量名称= 初始化值;一般无需指定初始化值(创建对象后									再赋值),存在默认值，修饰符一般不写</span></span><br><span class="line">    <span class="number">2.</span>成员方法(代表行为的，一般是动词)</span><br><span class="line">&#125;</span><br><span class="line">类名 对象名 = <span class="keyword">new</span> 类名( );</span><br></pre></td></tr></table></figure>
+
+<p><strong>如何使用对象:</strong></p>
+<p>​	访问属性:对象名.成员变量</p>
+<p>​	访问行为:对象名.方法名(…)</p>
+<p><strong>类的注意事项</strong>:</p>
+<p>开发中的设计</p>
+<ol>
+<li><p>用来描述一类事物的类，专业就叫:<strong>javabean类</strong>。在javabean类中，是不写main方法的</p>
+</li>
+<li><p>在以前，编写main方法的类，叫做<strong>测试类</strong>。可以在测试类中创建javabean类的对象并进行赋值调用。</p>
+</li>
+<li><p>一个<strong>Java文件</strong>中可以定义多个class类，且只能一个类是public修饰，而且public修饰的类名必须成为代码文件名，实际开发中建议还是一个文件定义一个class类</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">A</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;hello&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">----------------------------</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">B</span> &#123;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">C</span> &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p><strong>封装</strong></p>
+<p>告诉我们，如何正确设计对象的属性和方法。</p>
+<p>原则:对象代表什么，就得封装对应的数据，并提供数据对应的行为。（　张三　杀　李四（生死状态））</p>
+</li>
+<li><p>构造方法</p>
+</li>
+<li><p>标准JavaBean</p>
+</li>
+<li><p>对象内存图</p>
+</li>
+<li><p>补充知识:成员变量，局部变量的区别</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>回文数的计算</title>
     <url>/2024/01/18/%E5%9B%9E%E6%96%87%E6%95%B0/</url>
     <content><![CDATA[<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> com.itheima.struct;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">PalindromeNumber</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="comment">//需求:给你一个整数x</span></span><br><span class="line">        <span class="comment">//如果x是一个回文整数，打印true，否则，返回false。</span></span><br><span class="line">        <span class="comment">//解释：回文数是指正序(从左向右)和倒序(从右向左)读都是一样的整数。</span></span><br><span class="line">        <span class="comment">//例如，121是回文，而123不是</span></span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        System.out.println(<span class="string">&quot;请输入一个整数&quot;</span>);</span><br><span class="line">        <span class="type">int</span> <span class="variable">number</span> <span class="operator">=</span> sc.nextInt();</span><br><span class="line">        <span class="type">int</span> reverse=<span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> origin=number;</span><br><span class="line">        <span class="type">int</span> k;</span><br><span class="line">        <span class="comment">//思路：翻转后的数字等于翻转前的数字</span></span><br><span class="line">        <span class="keyword">while</span> (number != <span class="number">0</span>)&#123;</span><br><span class="line">            k=number%<span class="number">10</span>;</span><br><span class="line">            reverse=reverse*<span class="number">10</span>+k;</span><br><span class="line">            number/=<span class="number">10</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (origin==reverse)&#123;</span><br><span class="line">            System.out.println(origin+<span class="string">&quot;是回文数&quot;</span>);</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            System.out.println(origin+<span class="string">&quot;不是回文数&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
@@ -958,20 +1012,6 @@
         <category>经典算法思想</category>
       </categories>
       <tags>
-        <tag>算法思想.</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>标准数组格式</title>
-    <url>/2024/01/21/%E8%BE%93%E5%87%BA%E6%A0%87%E5%87%86%E6%95%B0%E7%BB%84%E6%A0%BC%E5%BC%8F%EF%BC%9A%5B11,22,33,44,55%5D/</url>
-    <content><![CDATA[<p>输出标准数组格式：[11,22,33,44,55]</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">System.out.print(<span class="string">&quot;[&quot;</span>);</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; array.length; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (i==array.length-<span class="number">1</span>)&#123;</span><br><span class="line">                System.out.print(array[i]);</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                System.out.print(array[i]+<span class="string">&quot;,&quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(<span class="string">&quot;]&quot;</span>);</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>经典算法思想</category>
-      </categories>
-      <tags>
         <tag>算法思想</tag>
       </tags>
   </entry>
@@ -983,6 +1023,20 @@
 
 <p>2.一位时(while和break)</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;输入蓝色球号:&quot;</span>);</span><br><span class="line">    <span class="type">int</span> <span class="variable">number</span> <span class="operator">=</span> number = sc.nextInt();</span><br><span class="line">    <span class="keyword">if</span> (number &gt;= <span class="number">1</span> &amp;&amp; number &lt;= <span class="number">16</span>) &#123;</span><br><span class="line">        newArr[newArr.length-<span class="number">1</span>] = number;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;蓝球码超出范围，重新输入:&quot;</span>);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>经典算法思想</category>
+      </categories>
+      <tags>
+        <tag>算法思想</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>标准数组格式</title>
+    <url>/2024/01/21/%E8%BE%93%E5%87%BA%E6%A0%87%E5%87%86%E6%95%B0%E7%BB%84%E6%A0%BC%E5%BC%8F%EF%BC%9A%5B11,22,33,44,55%5D/</url>
+    <content><![CDATA[<p>输出标准数组格式：[11,22,33,44,55]</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">System.out.print(<span class="string">&quot;[&quot;</span>);</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; array.length; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (i==array.length-<span class="number">1</span>)&#123;</span><br><span class="line">                System.out.print(array[i]);</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                System.out.print(array[i]+<span class="string">&quot;,&quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(<span class="string">&quot;]&quot;</span>);</span><br></pre></td></tr></table></figure>
+
 ]]></content>
       <categories>
         <category>经典算法思想</category>

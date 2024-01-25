@@ -20,17 +20,20 @@
     var CONFIG = {"hostname":"readmengk90.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":{"home":"/","about":"/about","tags":"/tags"}},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="programming study">
-<meta property="og:type" content="website">
-<meta property="og:title" content="东瓶西镜">
-<meta property="og:url" content="https://readmengk90.github.io/archives/2024/page/2/index.html">
+  <meta name="description" content="设计对象并使用&amp;封装&amp;内存图">
+<meta property="og:type" content="article">
+<meta property="og:title" content="面向对象">
+<meta property="og:url" content="https://readmengk90.github.io/2024/01/25/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/index.html">
 <meta property="og:site_name" content="东瓶西镜">
-<meta property="og:description" content="programming study">
+<meta property="og:description" content="设计对象并使用&amp;封装&amp;内存图">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-01-25T07:31:26.428Z">
+<meta property="article:modified_time" content="2024-01-25T12:04:27.284Z">
 <meta property="article:author" content="Amber">
+<meta property="article:tag" content="java">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://readmengk90.github.io/archives/2024/page/2/">
+<link rel="canonical" href="https://readmengk90.github.io/2024/01/25/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">
 
 
 <script id="page-configurations">
@@ -38,12 +41,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>归档 | 东瓶西镜</title>
+  <title>面向对象 | 东瓶西镜</title>
   
 
 
@@ -194,335 +197,191 @@
         <div class="content-wrap">
           
 
-          <div class="content archive">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        
-        <span class="collection-header">还行! 目前共计 33 篇日志。 继续努力。</span>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://readmengk90.github.io/2024/01/25/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Amber">
+      <meta itemprop="description" content="programming study">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="东瓶西镜">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          面向对象
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2024-01-25 15:31:26 / 修改时间：20:04:27" itemprop="dateCreated datePublished" datetime="2024-01-25T15:31:26+08:00">2024-01-25</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java%E5%9F%BA%E7%A1%80/" itemprop="url" rel="index"><span itemprop="name">Java基础</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>804</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+            <div class="post-description"><center>设计对象并使用&封装&内存图</center></div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2024</span>
-    </div>
+        <p>面向对象</p>
+<p>​	面向对象介绍:</p>
+<p>​		面向:拿，找。</p>
+<p>​		对象:能干活的东西。</p>
+<p>​		面向对象编程:拿东西过来做对应的事情。</p>
+<ol>
+<li><p><strong>设计对象并使用</strong></p>
+<ol>
+<li><p>类和对象</p>
+<p>类(设计图):是对象共同特征的描述(类名首字母建议大写，需要见名知意，驼峰命名)；</p>
+<p>对象:是真实存在的具体东西(在Java中，必须先设计类，才能获得对象)</p>
+<p><strong>如何得到对象:</strong>	</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> class 类名&#123;</span><br><span class="line">    <span class="number">1.</span>成员变量(代表属性的，一般是名词)<span class="comment">//完整定义格式:修饰符 数据类型 变量名称= 初始化值;一般无需指定初始化值(创建对象后									再赋值),存在默认值，修饰符一般不写</span></span><br><span class="line">    <span class="number">2.</span>成员方法(代表行为的，一般是动词)</span><br><span class="line">&#125;</span><br><span class="line">类名 对象名 = <span class="keyword">new</span> 类名( );</span><br></pre></td></tr></table></figure>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2024-01-16T19:32:57+08:00"
-              content="2024-01-16">
-          01-16
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2024/01/16/java%E5%9F%BA%E7%A1%80-if%E8%AF%AD%E5%8F%A5/" itemprop="url">
-            <span itemprop="name">分支语句-if</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2024-01-16T10:28:53+08:00"
-              content="2024-01-16">
-          01-16
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2024/01/16/java%E5%9F%BA%E7%A1%80-%E5%8E%9F%E7%A0%81%E5%8F%8D%E7%A0%81%E8%A1%A5%E7%A0%81/" itemprop="url">
-            <span itemprop="name">源码-反码-补码</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2024-01-15T13:43:44+08:00"
-              content="2024-01-15">
-          01-15
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2024/01/15/java%E5%9F%BA%E7%A1%80-%E8%BF%90%E7%AE%97%E7%AC%A6/" itemprop="url">
-            <span itemprop="name">Java的运算符</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2024-01-15T07:53:26+08:00"
-              content="2024-01-15">
-          01-15
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2024/01/15/java%E5%9F%BA%E7%A1%80-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" itemprop="url">
-            <span itemprop="name">IDEA的下载安装&相关设置</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2024-01-14T17:05:37+08:00"
-              content="2024-01-14">
-          01-14
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2024/01/14/java%E5%9F%BA%E7%A1%80-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B&%E6%A0%87%E8%AF%86%E7%AC%A6&%E9%94%AE%E7%9B%98%E5%BD%95%E5%85%A5/" itemprop="url">
-            <span itemprop="name">JAVA的数据类型-标识符-键盘录入</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2024-01-12T19:15:26+08:00"
-              content="2024-01-12">
-          01-12
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2024/01/12/java%E5%9F%BA%E7%A1%80-JAVA%E7%9A%84%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" itemprop="url">
-            <span itemprop="name">JAVA的基础语法</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2024-01-12T18:37:51+08:00"
-              content="2024-01-12">
-          01-12
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2024/01/12/java%E5%9F%BA%E7%A1%80-JAVA%E8%AF%AD%E8%A8%80%E7%9A%84%E7%89%B9%E7%82%B9/" itemprop="url">
-            <span itemprop="name">JDK&JRE&JVM</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2024-01-12T14:17:38+08:00"
-              content="2024-01-12">
-          01-12
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2024/01/12/java%E5%9F%BA%E7%A1%80-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E7%9A%84%E9%85%8D%E7%BD%AE/" itemprop="url">
-            <span itemprop="name">环境变量的配置</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2024-01-12T10:53:31+08:00"
-              content="2024-01-12">
-          01-12
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2024/01/12/java%E5%9F%BA%E7%A1%80-%E7%BC%96%E8%AF%91%E8%BF%90%E8%A1%8C/" itemprop="url">
-            <span itemprop="name">编译和运行</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2024-01-11T19:46:18+08:00"
-              content="2024-01-11">
-          01-11
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2024/01/11/java%E5%9F%BA%E7%A1%80-JDK%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%B8%8B%E8%BD%BD/" itemprop="url">
-            <span itemprop="name">JDK的安装与下载</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2024-01-11T14:32:19+08:00"
-              content="2024-01-11">
-          01-11
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2024/01/11/java%E5%9F%BA%E7%A1%80-%E5%B8%B8%E7%94%A8%E7%9A%84CMD%E5%91%BD%E4%BB%A4/" itemprop="url">
-            <span itemprop="name">常用的CMD命令</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2024-01-10T18:38:14+08:00"
-              content="2024-01-10">
-          01-10
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2024/01/10/Hexo+Next%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%BB%E9%A1%B5%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E8%BE%B9%E6%A1%86%E9%98%B4%E5%BD%B1%E6%95%88%E6%9E%9C/" itemprop="url">
-            <span itemprop="name">Hexo+Mext设置主页文章添加边框阴影效果</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2024-01-10T13:47:46+08:00"
-              content="2024-01-10">
-          01-10
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2024/01/10/Hexo-%E6%98%BE%E7%A4%BA%E5%85%A8%E6%96%87%E7%9A%84%E8%AE%BE%E7%BD%AE/" itemprop="url">
-            <span itemprop="name">Hexo+Next主题下的阅读全文设置</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2024-01-08T11:36:23+08:00"
-              content="2024-01-08">
-          01-08
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2024/01/08/first-blog/" itemprop="url">
-            <span itemprop="name">好好学习  天天向上</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2024-01-08T09:52:23+08:00"
-              content="2024-01-08">
-          01-08
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2024/01/08/hello-world/" itemprop="url">
-            <span itemprop="name">Hello World</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
+<p><strong>如何使用对象:</strong></p>
+<p>​	访问属性:对象名.成员变量</p>
+<p>​	访问行为:对象名.方法名(…)</p>
+<p><strong>类的注意事项</strong>:</p>
+<p>开发中的设计</p>
+<ol>
+<li><p>用来描述一类事物的类，专业就叫:<strong>javabean类</strong>。在javabean类中，是不写main方法的</p>
+</li>
+<li><p>在以前，编写main方法的类，叫做<strong>测试类</strong>。可以在测试类中创建javabean类的对象并进行赋值调用。</p>
+</li>
+<li><p>一个<strong>Java文件</strong>中可以定义多个class类，且只能一个类是public修饰，而且public修饰的类名必须成为代码文件名，实际开发中建议还是一个文件定义一个class类</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">A</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;hello&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">----------------------------</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">B</span> &#123;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">C</span> &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p><strong>封装</strong></p>
+<p>告诉我们，如何正确设计对象的属性和方法。</p>
+<p>原则:对象代表什么，就得封装对应的数据，并提供数据对应的行为。（　张三　杀　李四（生死状态））</p>
+</li>
+<li><p>构造方法</p>
+</li>
+<li><p>标准JavaBean</p>
+</li>
+<li><p>对象内存图</p>
+</li>
+<li><p>补充知识:成员变量，局部变量的区别</p>
+</li>
+</ol>
 
     </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div></div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/WeChat.png" alt="Amber 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.png" alt="Amber 支付宝">
+        <p>支付宝</p>
+      </div>
+
   </div>
-  
-  
-  
+</div>
 
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Amber
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://readmengk90.github.io/2024/01/25/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" title="面向对象">https://readmengk90.github.io/2024/01/25/java基础-面向对象/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/java/" rel="tag"># java</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2024/01/25/java%E5%9F%BA%E7%A1%80-%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84/" rel="prev" title="二维数组">
+      <i class="fa fa-chevron-left"></i> 二维数组
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
   
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/archives/2024/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/archives/2024/">1</a><span class="page-number current">2</span>
-  </nav>
+  
+  
 
 
 
