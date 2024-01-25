@@ -28,7 +28,7 @@
 <meta property="og:description" content="设计对象并使用&amp;封装&amp;内存图">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-01-25T07:31:26.428Z">
-<meta property="article:modified_time" content="2024-01-25T12:04:27.284Z">
+<meta property="article:modified_time" content="2024-01-25T15:45:43.795Z">
 <meta property="article:author" content="Amber">
 <meta property="article:tag" content="java">
 <meta name="twitter:card" content="summary">
@@ -228,7 +228,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2024-01-25 15:31:26 / 修改时间：20:04:27" itemprop="dateCreated datePublished" datetime="2024-01-25T15:31:26+08:00">2024-01-25</time>
+              <time title="创建时间：2024-01-25 15:31:26 / 修改时间：23:45:43" itemprop="dateCreated datePublished" datetime="2024-01-25T15:31:26+08:00">2024-01-25</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -253,14 +253,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>804</span>
+              <span>2.5k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
+              <span>4 分钟</span>
             </span>
             <div class="post-description"><center>设计对象并使用&封装&内存图</center></div>
 
@@ -306,10 +306,31 @@
 <li><p><strong>封装</strong></p>
 <p>告诉我们，如何正确设计对象的属性和方法。</p>
 <p>原则:对象代表什么，就得封装对应的数据，并提供数据对应的行为。（　张三　杀　李四（生死状态））</p>
+<p><strong>private</strong>关键字:是一个权限修饰符,可以修饰成员(成员变量和成员方法).	 	</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1.数据安全问题(p.age=-99)</span></span><br><span class="line"> 被<span class="keyword">private</span>修饰的成员只能在本类中才能访问**(*解决了数据安全问题*).</span><br><span class="line">     <span class="keyword">private</span> <span class="type">int</span> age;</span><br><span class="line"><span class="comment">//2.实现正确的数据可以赋值,错误的无法赋值-通过get set方法赋值,过滤通道</span></span><br><span class="line"><span class="comment">//set(赋值)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setAge</span><span class="params">(<span class="type">int</span> a)</span>&#123;<span class="comment">//在所有的类中都可以使用它修饰的成员</span></span><br><span class="line">    <span class="keyword">if</span>(a&gt;=<span class="number">18</span>&amp;&amp;a&lt;<span class="number">50</span>)&#123;</span><br><span class="line">        age=a;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;非法数据&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//get(获取)</span></span><br><span class="line"><span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getAge</span><span class="params">()</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> age;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//被其他的类调用和访问</span></span><br><span class="line"><span class="comment">//在测试类中调用赋值</span></span><br><span class="line">GirlFriend gf1=<span class="keyword">new</span> <span class="title class_">GirlFriend</span>();</span><br><span class="line">gf1.setName(<span class="string">&quot;AA&quot;</span>);</span><br><span class="line">gf1.setAge(<span class="number">19</span>);</span><br><span class="line"><span class="comment">//获取</span></span><br><span class="line"><span class="type">String</span> <span class="variable">name</span> <span class="operator">=</span> gf1.getName();</span><br><span class="line"><span class="type">int</span> age=gf1.getAge();</span><br></pre></td></tr></table></figure>
+
+<p><strong>this关键字</strong>:</p>
+<p>成员变量(方法外,类里面)和局部变量(方法里).<strong>就近原则</strong>,想用成员变量需加this.</p>
+<p>this关键字的作用可以区别成员变量和局部变量.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">GirlFriend</span>&#123;</span><br><span class="line"><span class="keyword">private</span> <span class="type">int</span> age;</span><br><span class="line"><span class="comment">//set(赋值)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setAge</span><span class="params">(<span class="type">int</span> age)</span>&#123;<span class="comment">//在所有的类中都可以使用它修饰的成员</span></span><br><span class="line">    <span class="keyword">if</span>(a&gt;=<span class="number">18</span>&amp;&amp;a&lt;<span class="number">50</span>)&#123;</span><br><span class="line">        <span class="built_in">this</span>.age=age;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;非法数据&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//get(获取)</span></span><br><span class="line"><span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getAge</span><span class="params">()</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> age;</span><br><span class="line">&#125;   </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>构造方法</p>
+<li><p>构造方法:</p>
+<p>格式:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Student</span>&#123;</span><br><span class="line">    修饰符 类名(参数) &#123;</span><br><span class="line">        方法体;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">Student</span><span class="params">()</span>&#123;</span><br><span class="line">        <span class="comment">//空参构造方法</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">Student</span><span class="params">(String name,<span class="type">int</span> age)</span>&#123; <span class="comment">//创建对象调用实参构造:Student s = new Student(&quot;AA&quot;,19);</span></span><br><span class="line">        <span class="comment">//全参构造方法</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//★★★★★★★★</span></span><br><span class="line"><span class="comment">//全参构造,在方法里面就可以给所有的成员变量赋值,不用再用set方法进行赋值了,简化代码.</span></span><br><span class="line"><span class="comment">//空参的构造方法,利用空参构造创建对象,成员变量默认初始化值.,</span></span><br><span class="line"><span class="comment">//如果我们自己没写任何构造方法,那么虚拟机会给我们加一个空参构造方法;如果已经定义了带参构造方法,系统将不会提供默认的无参构造方法.</span></span><br><span class="line"><span class="comment">//构造方法的重载,带参构造方法和无参构造方法,两者方法名相同,但是参数不同,这叫做构造方法的重载.</span></span><br><span class="line"><span class="comment">//执行时机:构造方法不能手动调用,在创建对象的时候由虚拟机调用,每创建一次对象就调用一次构造方法.</span></span><br><span class="line"><span class="comment">//★★★★★★★★</span></span><br></pre></td></tr></table></figure>
+
+<p>特点:方法名和类名相同,大小写也要一致;</p>
+<p>​	没有返回值类型,连void都没有;</p>
+<p>​	没有具体的返回值(不能由return带回结果数据);</p>
+<p>作用:在创建对象的时候由<strong>虚拟机自动调用</strong>构造方法给成员变量进行初始化(赋值)的.</p>
+<p>建议:实际开发中,空参构造和有参构造都会写上,因为有时不完全知道属性值</p>
 </li>
 <li><p>标准JavaBean</p>
+<ol>
+<li>类名需要见名知意,驼峰命名</li>
+<li>成员变量使用private修饰</li>
+<li>提供至少两个构造方法(无参构造方法&amp;全参构造方法)</li>
+<li>成员方法:提供每一个私有化的成员变量对应的setXxx()&#x2F;getXxx()方法,如果还有其他行为,也需要写上</li>
+</ol>
 </li>
 <li><p>对象内存图</p>
 </li>
@@ -374,7 +395,10 @@
     <a href="/2024/01/25/java%E5%9F%BA%E7%A1%80-%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84/" rel="prev" title="二维数组">
       <i class="fa fa-chevron-left"></i> 二维数组
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2024/01/25/idea%E6%8F%92%E4%BB%B6%E9%9B%86%E5%90%88/" rel="next" title="idea插件集合">
+      idea插件集合 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -448,20 +472,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">33</span>
+          <span class="site-state-item-count">34</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags">
           
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -512,13 +536,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">16k</span>
+    <span title="站点总字数">18k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">29 分钟</span>
+    <span title="站点阅读时长">33 分钟</span>
 </div>
   <div class="powered-by">
     
