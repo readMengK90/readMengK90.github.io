@@ -106,33 +106,6 @@
       </tags>
   </entry>
   <entry>
-    <title>分支语句-switch</title>
-    <url>/2024/01/17/java-Switch%E8%AF%AD%E5%8F%A5/</url>
-    <content><![CDATA[<h1 id="Switch的语句格式"><a href="#Switch的语句格式" class="headerlink" title="Switch的语句格式"></a>Switch的语句格式</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">switch</span>(表达式) &#123;					<span class="comment">//	表达式的值==case的值</span></span><br><span class="line">	<span class="keyword">case</span> 值<span class="number">1</span>：					<span class="comment">//表达式：取值为byte,short,int,char,枚举(jdk5以后)，String(jdk7以后)</span></span><br><span class="line">		语句体<span class="number">1</span>;				   <span class="comment">// case后面的值只能表示字面量，不能是变量。</span></span><br><span class="line">        <span class="keyword">break</span>;					 <span class="comment">//当switch里面的内容得到一个结果，可以将switch赋值给一个变量</span></span><br><span class="line">    <span class="keyword">case</span> 值<span class="number">2</span>：</span><br><span class="line">		语句体<span class="number">2</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    ......</span><br><span class="line">     <span class="keyword">default</span>:</span><br><span class="line">        语句体n+<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li><p>default的位置和省略</p>
-<p>位置：default位置随意，习惯写在最下面。</p>
-<p>省略：default可以省略，语法不出差，但不建议。</p>
-</li>
-<li><p>case穿透</p>
-<p>省略break会引起case穿透。</p>
-<p>使用场景：多个case的语句体重复了，那么我们考虑利用case穿透去简化代码。</p>
-</li>
-<li><p>switch的新特性(jdk12)</p>
-<p><strong>case 值1 -&gt;{</strong>	<em>&#x2F;&#x2F;消除了case穿透，大括号里面<strong>只有一行代码</strong>时，可以省略大括号</em></p>
-<p><strong>}</strong></p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>JAVA的基础语法</title>
     <url>/2024/01/12/java%E5%9F%BA%E7%A1%80-JAVA%E7%9A%84%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</url>
     <content><![CDATA[<h1 id="JAVA的基础语法"><a href="#JAVA的基础语法" class="headerlink" title="JAVA的基础语法"></a>JAVA的基础语法</h1><ol>
@@ -240,6 +213,33 @@
       </tags>
   </entry>
   <entry>
+    <title>分支语句-switch</title>
+    <url>/2024/01/17/java-Switch%E8%AF%AD%E5%8F%A5/</url>
+    <content><![CDATA[<h1 id="Switch的语句格式"><a href="#Switch的语句格式" class="headerlink" title="Switch的语句格式"></a>Switch的语句格式</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">switch</span>(表达式) &#123;					<span class="comment">//	表达式的值==case的值</span></span><br><span class="line">	<span class="keyword">case</span> 值<span class="number">1</span>：					<span class="comment">//表达式：取值为byte,short,int,char,枚举(jdk5以后)，String(jdk7以后)</span></span><br><span class="line">		语句体<span class="number">1</span>;				   <span class="comment">// case后面的值只能表示字面量，不能是变量。</span></span><br><span class="line">        <span class="keyword">break</span>;					 <span class="comment">//当switch里面的内容得到一个结果，可以将switch赋值给一个变量</span></span><br><span class="line">    <span class="keyword">case</span> 值<span class="number">2</span>：</span><br><span class="line">		语句体<span class="number">2</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    ......</span><br><span class="line">     <span class="keyword">default</span>:</span><br><span class="line">        语句体n+<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li><p>default的位置和省略</p>
+<p>位置：default位置随意，习惯写在最下面。</p>
+<p>省略：default可以省略，语法不出差，但不建议。</p>
+</li>
+<li><p>case穿透</p>
+<p>省略break会引起case穿透。</p>
+<p>使用场景：多个case的语句体重复了，那么我们考虑利用case穿透去简化代码。</p>
+</li>
+<li><p>switch的新特性(jdk12)</p>
+<p><strong>case 值1 -&gt;{</strong>	<em>&#x2F;&#x2F;消除了case穿透，大括号里面<strong>只有一行代码</strong>时，可以省略大括号</em></p>
+<p><strong>}</strong></p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>JDK的安装与下载</title>
     <url>/2024/01/11/java%E5%9F%BA%E7%A1%80-JDK%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%B8%8B%E8%BD%BD/</url>
     <content><![CDATA[<h1 id="JDK的安装与下载"><a href="#JDK的安装与下载" class="headerlink" title="JDK的安装与下载"></a>JDK的安装与下载</h1><h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><ol>
@@ -307,7 +307,7 @@
 <p><strong>初始化</strong>：</p>
 <p><img src="/../images/%E5%88%9D%E5%A7%8B%E5%8C%96.png"></p>
 <p>二维数组的内存图:</p>
-<p><img src="C:\Users\Administrator\Desktop\MyBlog\source\images\Screenshot_20240125_135008.jpg"></p>
+<p><img src="/../images/%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84.jpg"></p>
 <p>另外两种特殊的初始化:</p>
 <p>（1）一位数组的长度灵活</p>
 <p>​	int[ ] [ ] arr &#x3D; new int [2] [ ];</p>
@@ -339,6 +339,49 @@
 <p>计算结果跨零时(-5+6&#x3D;0),有可能存在误差。因为在反码中0有两种表现形式，**+0**(0000 0000),-<strong>0</strong>(1111 1111)</p>
 <p><strong>补码：</strong>屏蔽掉0的两种表现形式.使得+0和-0只有一种表现形式，实现方式是负数的反码加1.</p>
 <p><img src="/../images/3-01.png" alt="原反补"></p>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>常用的CMD命令</title>
+    <url>/2024/01/11/java%E5%9F%BA%E7%A1%80-%E5%B8%B8%E7%94%A8%E7%9A%84CMD%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h1 id="1-常用的CMD命令"><a href="#1-常用的CMD命令" class="headerlink" title="1. 常用的CMD命令"></a>1. 常用的CMD命令</h1><ol>
+<li><p>Ctrl+R打开CMD命令窗口，<strong>同时可以按住ctrl键不松，拖动滚轮放大或缩小CMD窗口大小</strong></p>
+</li>
+<li><p><em>盘符名称+冒号</em> (C:,D:,E:),表示切换到指定盘符</p>
+</li>
+<li><p><em>dir</em> 查看当前路径下的内容，就是该目录列表(显示所有的文件和文件夹，<strong>包含隐藏的文件和文件夹</strong>)</p>
+</li>
+<li><p><em>cd 目录</em>  ， <strong>进入单极目录</strong>，(目录名可以写出部分内容，按住tab键关联出目录名称)</p>
+</li>
+<li><p><em>cd..</em> 回退到上一级目录，<strong>单级回退</strong></p>
+</li>
+<li><p>cd 目录1\目录2…     <strong>进入多级目录</strong></p>
+</li>
+<li><p>cd \    回退到盘符目录,<strong>多级回退</strong></p>
+</li>
+<li><p>cls 清屏(Clear screen)</p>
+</li>
+<li><p>exit  退出命令提示符窗口</p>
+<h1 id="2-命令窗口打开应用程序"><a href="#2-命令窗口打开应用程序" class="headerlink" title="2. 命令窗口打开应用程序"></a>2. 命令窗口打开应用程序</h1></li>
+<li><p>方法一: 进入应用程序所处的文件夹，输入程序的名称(qq.exe)</p>
+</li>
+<li><p>方法二: 把程序的路径记录在电脑的某个地方(<strong>环境变量</strong>)</p>
+</li>
+</ol>
+<ul>
+<li>环境变量的配置方式：<ul>
+<li>打开<em>此电脑</em>-&gt;右键选择<em>属性</em>-&gt;左侧边栏选择<em>高级系统设置</em>-&gt;打开<em>系统属性</em>对话框-&gt;在<em>高级</em>选项卡中选择“<em>环境变量</em>”-&gt;选择系统变量(s)中的Path-&gt;.编辑路径信息</li>
+<li>配置环境变量的作用：用于实现任意目录下打开指定文件。</li>
+</ul>
+</li>
+</ul>
+<p>​		</p>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -418,49 +461,6 @@
 <p>多次录入–不知道录入次数(例如猜随机数)、</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span> (<span class="literal">true</span>)&#123;		</span><br><span class="line">            Scanner sc= <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">            System.out.println(<span class="string">&quot;输入你要猜的数字:&quot;</span>);</span><br><span class="line">            <span class="type">int</span> number2= sc.nextInt();</span><br><span class="line">            <span class="comment">//3.判断两个数字给出不同的提示</span></span><br><span class="line">            <span class="comment">//猜的数字大了，提示大了</span></span><br><span class="line">            <span class="comment">//猜的数字小了，提示小了</span></span><br><span class="line">            <span class="comment">//猜的数字正确，提示对了</span></span><br><span class="line">            <span class="keyword">if</span> (number1&lt;number2)&#123;</span><br><span class="line">                System.out.println(<span class="string">&quot;猜数大了&quot;</span>);</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (number1&gt;number2) &#123;</span><br><span class="line">                System.out.println(<span class="string">&quot;猜数小了&quot;</span>);</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                System.out.println(<span class="string">&quot;数字相等&quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
 
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>常用的CMD命令</title>
-    <url>/2024/01/11/java%E5%9F%BA%E7%A1%80-%E5%B8%B8%E7%94%A8%E7%9A%84CMD%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<h1 id="1-常用的CMD命令"><a href="#1-常用的CMD命令" class="headerlink" title="1. 常用的CMD命令"></a>1. 常用的CMD命令</h1><ol>
-<li><p>Ctrl+R打开CMD命令窗口，<strong>同时可以按住ctrl键不松，拖动滚轮放大或缩小CMD窗口大小</strong></p>
-</li>
-<li><p><em>盘符名称+冒号</em> (C:,D:,E:),表示切换到指定盘符</p>
-</li>
-<li><p><em>dir</em> 查看当前路径下的内容，就是该目录列表(显示所有的文件和文件夹，<strong>包含隐藏的文件和文件夹</strong>)</p>
-</li>
-<li><p><em>cd 目录</em>  ， <strong>进入单极目录</strong>，(目录名可以写出部分内容，按住tab键关联出目录名称)</p>
-</li>
-<li><p><em>cd..</em> 回退到上一级目录，<strong>单级回退</strong></p>
-</li>
-<li><p>cd 目录1\目录2…     <strong>进入多级目录</strong></p>
-</li>
-<li><p>cd \    回退到盘符目录,<strong>多级回退</strong></p>
-</li>
-<li><p>cls 清屏(Clear screen)</p>
-</li>
-<li><p>exit  退出命令提示符窗口</p>
-<h1 id="2-命令窗口打开应用程序"><a href="#2-命令窗口打开应用程序" class="headerlink" title="2. 命令窗口打开应用程序"></a>2. 命令窗口打开应用程序</h1></li>
-<li><p>方法一: 进入应用程序所处的文件夹，输入程序的名称(qq.exe)</p>
-</li>
-<li><p>方法二: 把程序的路径记录在电脑的某个地方(<strong>环境变量</strong>)</p>
-</li>
-</ol>
-<ul>
-<li>环境变量的配置方式：<ul>
-<li>打开<em>此电脑</em>-&gt;右键选择<em>属性</em>-&gt;左侧边栏选择<em>高级系统设置</em>-&gt;打开<em>系统属性</em>对话框-&gt;在<em>高级</em>选项卡中选择“<em>环境变量</em>”-&gt;选择系统变量(s)中的Path-&gt;.编辑路径信息</li>
-<li>配置环境变量的作用：用于实现任意目录下打开指定文件。</li>
-</ul>
-</li>
-</ul>
-<p>​		</p>
 ]]></content>
       <categories>
         <category>Java基础</category>
