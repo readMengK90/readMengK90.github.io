@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hexo+Next主题下的阅读全文设置</title>
+    <url>/2024/01/10/Hexo-%E6%98%BE%E7%A4%BA%E5%85%A8%E6%96%87%E7%9A%84%E8%AE%BE%E7%BD%AE/</url>
+    <content><![CDATA[<h1 id="Hexo-显示全文的设置"><a href="#Hexo-显示全文的设置" class="headerlink" title="Hexo-显示全文的设置"></a>Hexo-显示全文的设置</h1><h5 id="1-在文章中使用-more-手动进行截断"><a href="#1-在文章中使用-more-手动进行截断" class="headerlink" title="1.在文章中使用&lt; !--more--&gt; 手动进行截断"></a>1.在文章中使用<code>&lt; !--more--&gt;</code> 手动进行截断</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-01.png?raw=true" alt="image-20240110132555493"></p>
+<h5 id="2-添加描述信息的内容，会成为一种相关内容的提示信息"><a href="#2-添加描述信息的内容，会成为一种相关内容的提示信息" class="headerlink" title="2.添加描述信息的内容，会成为一种相关内容的提示信息"></a>2.添加描述信息的内容，会成为一种相关内容的提示信息</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-02.png?raw=true" alt="image-20240110132853566"></p>
+<h5 id="3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部"><a href="#3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部" class="headerlink" title="3.在主题配置文件中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部"></a>3.在<strong>主题配置文件</strong>中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部</h5><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">auto_excerpt:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">length:</span> <span class="number">150</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="4-效果-展示"><a href="#4-效果-展示" class="headerlink" title="4.效果 展示"></a>4.效果 展示</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-03.png?raw=true" alt="image-20240110133302658"></p>
+]]></content>
+      <categories>
+        <category>Next主题配置</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo+Mext设置主页文章添加边框阴影效果</title>
     <url>/2024/01/10/Hexo+Next%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%BB%E9%A1%B5%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E8%BE%B9%E6%A1%86%E9%98%B4%E5%BD%B1%E6%95%88%E6%9E%9C/</url>
     <content><![CDATA[<h1 id="设置主页文章添加边框阴影效果"><a href="#设置主页文章添加边框阴影效果" class="headerlink" title="设置主页文章添加边框阴影效果"></a>设置主页文章添加边框阴影效果</h1><ol>
@@ -18,22 +34,6 @@
 <li><p>重启</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo+clean</span><br><span class="line"></span><br><span class="line">hexo+g</span><br><span class="line"></span><br><span class="line">hexo+d</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
 </ol>
-]]></content>
-      <categories>
-        <category>Next主题配置</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo+Next主题下的阅读全文设置</title>
-    <url>/2024/01/10/Hexo-%E6%98%BE%E7%A4%BA%E5%85%A8%E6%96%87%E7%9A%84%E8%AE%BE%E7%BD%AE/</url>
-    <content><![CDATA[<h1 id="Hexo-显示全文的设置"><a href="#Hexo-显示全文的设置" class="headerlink" title="Hexo-显示全文的设置"></a>Hexo-显示全文的设置</h1><h5 id="1-在文章中使用-more-手动进行截断"><a href="#1-在文章中使用-more-手动进行截断" class="headerlink" title="1.在文章中使用&lt; !--more--&gt; 手动进行截断"></a>1.在文章中使用<code>&lt; !--more--&gt;</code> 手动进行截断</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-01.png?raw=true" alt="image-20240110132555493"></p>
-<h5 id="2-添加描述信息的内容，会成为一种相关内容的提示信息"><a href="#2-添加描述信息的内容，会成为一种相关内容的提示信息" class="headerlink" title="2.添加描述信息的内容，会成为一种相关内容的提示信息"></a>2.添加描述信息的内容，会成为一种相关内容的提示信息</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-02.png?raw=true" alt="image-20240110132853566"></p>
-<h5 id="3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部"><a href="#3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部" class="headerlink" title="3.在主题配置文件中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部"></a>3.在<strong>主题配置文件</strong>中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部</h5><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">auto_excerpt:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">length:</span> <span class="number">150</span></span><br></pre></td></tr></table></figure>
-
-<h5 id="4-效果-展示"><a href="#4-效果-展示" class="headerlink" title="4.效果 展示"></a>4.效果 展示</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-03.png?raw=true" alt="image-20240110133302658"></p>
 ]]></content>
       <categories>
         <category>Next主题配置</category>
@@ -103,6 +103,58 @@
       </categories>
       <tags>
         <tag>插件库</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>分支语句-switch</title>
+    <url>/2024/01/17/java-Switch%E8%AF%AD%E5%8F%A5/</url>
+    <content><![CDATA[<h1 id="Switch的语句格式"><a href="#Switch的语句格式" class="headerlink" title="Switch的语句格式"></a>Switch的语句格式</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">switch</span>(表达式) &#123;					<span class="comment">//	表达式的值==case的值</span></span><br><span class="line">	<span class="keyword">case</span> 值<span class="number">1</span>：					<span class="comment">//表达式：取值为byte,short,int,char,枚举(jdk5以后)，String(jdk7以后)</span></span><br><span class="line">		语句体<span class="number">1</span>;				   <span class="comment">// case后面的值只能表示字面量，不能是变量。</span></span><br><span class="line">        <span class="keyword">break</span>;					 <span class="comment">//当switch里面的内容得到一个结果，可以将switch赋值给一个变量</span></span><br><span class="line">    <span class="keyword">case</span> 值<span class="number">2</span>：</span><br><span class="line">		语句体<span class="number">2</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    ......</span><br><span class="line">     <span class="keyword">default</span>:</span><br><span class="line">        语句体n+<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li><p>default的位置和省略</p>
+<p>位置：default位置随意，习惯写在最下面。</p>
+<p>省略：default可以省略，语法不出差，但不建议。</p>
+</li>
+<li><p>case穿透</p>
+<p>省略break会引起case穿透。</p>
+<p>使用场景：多个case的语句体重复了，那么我们考虑利用case穿透去简化代码。</p>
+</li>
+<li><p>switch的新特性(jdk12)</p>
+<p><strong>case 值1 -&gt;{</strong>	<em>&#x2F;&#x2F;消除了case穿透，大括号里面<strong>只有一行代码</strong>时，可以省略大括号</em></p>
+<p><strong>}</strong></p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JDK&amp;JRE&amp;JVM</title>
+    <url>/2024/01/12/java%E5%9F%BA%E7%A1%80-JAVA%E8%AF%AD%E8%A8%80%E7%9A%84%E7%89%B9%E7%82%B9/</url>
+    <content><![CDATA[<h1 id="JAVA语言的特点"><a href="#JAVA语言的特点" class="headerlink" title="JAVA语言的特点"></a>JAVA语言的特点</h1><ol>
+<li>跨平台的原理：<ol>
+<li>Java语言的跨平台是通过虚拟机(<strong>JVM</strong>)实现的</li>
+<li>Java语言不是直接运行在操作系统里面的，而是运行在虚拟机中的</li>
+<li>因此，针对于不同的操作系统，安装不同的虚拟机就可以了</li>
+</ol>
+</li>
+<li><strong>JDK</strong> 和 <strong>JRE</strong><ol>
+<li><strong>JDK</strong>(Java Development kit):Java开发工具包，由 <strong>JVM</strong>, <strong>核心类库</strong>，<strong>开发工具</strong>组成。</li>
+<li><strong>JER</strong> (JAVA Runtime Environment):Java的运行环境，把<strong>JVM</strong>和核心类库以及<strong>运行时所用到的开发工具</strong>单独抽离出来所组成的。</li>
+</ol>
+</li>
+</ol>
+<p>​	 </p>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
       </tags>
   </entry>
   <entry>
@@ -188,58 +240,6 @@
       </tags>
   </entry>
   <entry>
-    <title>JDK&amp;JRE&amp;JVM</title>
-    <url>/2024/01/12/java%E5%9F%BA%E7%A1%80-JAVA%E8%AF%AD%E8%A8%80%E7%9A%84%E7%89%B9%E7%82%B9/</url>
-    <content><![CDATA[<h1 id="JAVA语言的特点"><a href="#JAVA语言的特点" class="headerlink" title="JAVA语言的特点"></a>JAVA语言的特点</h1><ol>
-<li>跨平台的原理：<ol>
-<li>Java语言的跨平台是通过虚拟机(<strong>JVM</strong>)实现的</li>
-<li>Java语言不是直接运行在操作系统里面的，而是运行在虚拟机中的</li>
-<li>因此，针对于不同的操作系统，安装不同的虚拟机就可以了</li>
-</ol>
-</li>
-<li><strong>JDK</strong> 和 <strong>JRE</strong><ol>
-<li><strong>JDK</strong>(Java Development kit):Java开发工具包，由 <strong>JVM</strong>, <strong>核心类库</strong>，<strong>开发工具</strong>组成。</li>
-<li><strong>JER</strong> (JAVA Runtime Environment):Java的运行环境，把<strong>JVM</strong>和核心类库以及<strong>运行时所用到的开发工具</strong>单独抽离出来所组成的。</li>
-</ol>
-</li>
-</ol>
-<p>​	 </p>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>分支语句-switch</title>
-    <url>/2024/01/17/java-Switch%E8%AF%AD%E5%8F%A5/</url>
-    <content><![CDATA[<h1 id="Switch的语句格式"><a href="#Switch的语句格式" class="headerlink" title="Switch的语句格式"></a>Switch的语句格式</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">switch</span>(表达式) &#123;					<span class="comment">//	表达式的值==case的值</span></span><br><span class="line">	<span class="keyword">case</span> 值<span class="number">1</span>：					<span class="comment">//表达式：取值为byte,short,int,char,枚举(jdk5以后)，String(jdk7以后)</span></span><br><span class="line">		语句体<span class="number">1</span>;				   <span class="comment">// case后面的值只能表示字面量，不能是变量。</span></span><br><span class="line">        <span class="keyword">break</span>;					 <span class="comment">//当switch里面的内容得到一个结果，可以将switch赋值给一个变量</span></span><br><span class="line">    <span class="keyword">case</span> 值<span class="number">2</span>：</span><br><span class="line">		语句体<span class="number">2</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    ......</span><br><span class="line">     <span class="keyword">default</span>:</span><br><span class="line">        语句体n+<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li><p>default的位置和省略</p>
-<p>位置：default位置随意，习惯写在最下面。</p>
-<p>省略：default可以省略，语法不出差，但不建议。</p>
-</li>
-<li><p>case穿透</p>
-<p>省略break会引起case穿透。</p>
-<p>使用场景：多个case的语句体重复了，那么我们考虑利用case穿透去简化代码。</p>
-</li>
-<li><p>switch的新特性(jdk12)</p>
-<p><strong>case 值1 -&gt;{</strong>	<em>&#x2F;&#x2F;消除了case穿透，大括号里面<strong>只有一行代码</strong>时，可以省略大括号</em></p>
-<p><strong>}</strong></p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>JDK的安装与下载</title>
     <url>/2024/01/11/java%E5%9F%BA%E7%A1%80-JDK%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%B8%8B%E8%BD%BD/</url>
     <content><![CDATA[<h1 id="JDK的安装与下载"><a href="#JDK的安装与下载" class="headerlink" title="JDK的安装与下载"></a>JDK的安装与下载</h1><h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><ol>
@@ -291,34 +291,6 @@
 <p>​     <strong>if-格式3</strong>:(多条件判断)</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(关系表达式)&#123;</span><br><span class="line">	语句体<span class="number">1</span>;</span><br><span class="line"> &#125;<span class="keyword">else</span> <span class="keyword">if</span>&#123;</span><br><span class="line">	语句体<span class="number">2</span>;</span><br><span class="line"> &#125;</span><br><span class="line">.....</span><br><span class="line"> <span class="keyword">else</span>&#123;</span><br><span class="line">     语句体n+<span class="number">1</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></li>
 </ol>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>二维数组</title>
-    <url>/2024/01/25/java%E5%9F%BA%E7%A1%80-%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84/</url>
-    <content><![CDATA[<h1 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a>二维数组</h1><p><strong>应用场景</strong>:</p>
-<p>需要把数据分组管理的时候，需要用到二维数组。</p>
-<p><strong>初始化</strong>：</p>
-<p><img src="/../images/%E5%88%9D%E5%A7%8B%E5%8C%96.png"></p>
-<p>二维数组的内存图:</p>
-<p><img src="/../images/%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84.jpg"></p>
-<p>另外两种特殊的初始化:</p>
-<p>（1）一位数组的长度灵活</p>
-<p>​	int[ ] [ ] arr &#x3D; new int [2] [ ];</p>
-<p>​	int[] arr1 &#x3D; {11,22};</p>
-<p>​	int[] arr2 &#x3D; {44,55,66}; </p>
-<p>（2）覆盖</p>
-<p>​	int[ ] [ ] arr &#x3D; new int [2] [ 3];</p>
-<p>​	int[] arr1 &#x3D; {11,22};</p>
-<p>​	int[] arr2 &#x3D; {44,55,66}; </p>
-<p>​	arr[0] &#x3D; arr1;</p>
-<p>​	arr[1] &#x3D; arr2;</p>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -382,6 +354,34 @@
 </li>
 </ul>
 <p>​		</p>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>二维数组</title>
+    <url>/2024/01/25/java%E5%9F%BA%E7%A1%80-%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84/</url>
+    <content><![CDATA[<h1 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a>二维数组</h1><p><strong>应用场景</strong>:</p>
+<p>需要把数据分组管理的时候，需要用到二维数组。</p>
+<p><strong>初始化</strong>：</p>
+<p><img src="/../images/%E5%88%9D%E5%A7%8B%E5%8C%96.png"></p>
+<p>二维数组的内存图:</p>
+<p><img src="/../images/%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84.jpg"></p>
+<p>另外两种特殊的初始化:</p>
+<p>（1）一位数组的长度灵活</p>
+<p>​	int[ ] [ ] arr &#x3D; new int [2] [ ];</p>
+<p>​	int[] arr1 &#x3D; {11,22};</p>
+<p>​	int[] arr2 &#x3D; {44,55,66}; </p>
+<p>（2）覆盖</p>
+<p>​	int[ ] [ ] arr &#x3D; new int [2] [ 3];</p>
+<p>​	int[] arr1 &#x3D; {11,22};</p>
+<p>​	int[] arr2 &#x3D; {44,55,66}; </p>
+<p>​	arr[0] &#x3D; arr1;</p>
+<p>​	arr[1] &#x3D; arr2;</p>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -958,14 +958,35 @@
 </ol>
 </li>
 <li><p><strong>对象内存图</strong></p>
+<p>方法区:字节码文件加载时进入的内存</p>
+<p>栈内存:方法运行时所进入的内存，变量也在这里</p>
+<p>堆内存:new出来的东西会在这块内存中开辟空间并产生地址</p>
 <p><strong>一个对象的内存图</strong>:</p>
+<p>Student s &#x3D; new Student();</p>
+<p>​	1.加载class文件(方法区临时存储main()方法，虚拟机调用main()方法，main()方法加载进栈)</p>
+<p>​	2.申明局部变量</p>
+<p>​	3.在堆内存中开辟一个空间</p>
+<p>​	4.默认初始化</p>
+<p>​	5.显示初始化</p>
+<p>​	6.构造方法的初始化</p>
+<p>​	7.将堆内存中的地址值赋值给左边的局部变量</p>
+<p><img src="/images/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/%E5%AF%B9%E8%B1%A1.png"></p>
 <p><strong>多个对象的内存图</strong>:</p>
+<p>对个对象时class对象不用重新加载</p>
+<p><img src="/images/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/%E5%AF%B9%E8%B1%A12.png"></p>
 <p><strong>两个变量指向同一个对象内存图</strong>:</p>
+<p><img src="/images/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240127202759.png"></p>
 <p><strong>this的内存原理</strong>:</p>
+<p>作用：变量得就近原则，区分局部变量和成员变量。</p>
+<p>本质：所在<strong>方法调用者的地址值</strong></p>
+<p>​	</p>
 <p><strong>基本数据类型和引用数据类型的区别</strong>:</p>
+<pre><code> 基本数据类型：数据值是存储在自己的空间中(栈)，赋值给其他变量，也是赋得真实得值。
+</code></pre>
+<p>​	 引用数据类型：数据值 是存储在其他空间中，自己空间中存储得是地址值，赋值给其他变量，赋得是地址值</p>
 <p><strong>局部变量和成员变量的区别</strong>:</p>
-</li>
-<li><p>补充知识:成员变量，局部变量的区别</p>
+<p>​	成员变量：类中方法外的变量</p>
+<p>​	局部变量：方法中的变量，（栈里面的局部变量没有默认值，是要给个初始化值才能用的）</p>
 </li>
 </ol>
 ]]></content>

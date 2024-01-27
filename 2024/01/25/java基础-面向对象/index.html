@@ -27,11 +27,15 @@
 <meta property="og:site_name" content="东瓶西镜">
 <meta property="og:description" content="设计对象并使用&amp;封装&amp;内存图">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://readmengk90.github.io/images/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/%E5%AF%B9%E8%B1%A1.png">
+<meta property="og:image" content="https://readmengk90.github.io/images/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/%E5%AF%B9%E8%B1%A12.png">
+<meta property="og:image" content="https://readmengk90.github.io/images/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240127202759.png">
 <meta property="article:published_time" content="2024-01-25T07:31:26.428Z">
-<meta property="article:modified_time" content="2024-01-25T16:04:33.998Z">
+<meta property="article:modified_time" content="2024-01-27T13:13:02.827Z">
 <meta property="article:author" content="Amber">
 <meta property="article:tag" content="java">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://readmengk90.github.io/images/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/%E5%AF%B9%E8%B1%A1.png">
 
 <link rel="canonical" href="https://readmengk90.github.io/2024/01/25/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">
 
@@ -234,7 +238,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2024-01-26 00:04:33" itemprop="dateModified" datetime="2024-01-26T00:04:33+08:00">2024-01-26</time>
+                <time title="修改时间：2024-01-27 21:13:02" itemprop="dateModified" datetime="2024-01-27T21:13:02+08:00">2024-01-27</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -259,7 +263,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2.5k</span>
+              <span>2.9k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -339,14 +343,35 @@
 </ol>
 </li>
 <li><p><strong>对象内存图</strong></p>
+<p>方法区:字节码文件加载时进入的内存</p>
+<p>栈内存:方法运行时所进入的内存，变量也在这里</p>
+<p>堆内存:new出来的东西会在这块内存中开辟空间并产生地址</p>
 <p><strong>一个对象的内存图</strong>:</p>
+<p>Student s &#x3D; new Student();</p>
+<p>​	1.加载class文件(方法区临时存储main()方法，虚拟机调用main()方法，main()方法加载进栈)</p>
+<p>​	2.申明局部变量</p>
+<p>​	3.在堆内存中开辟一个空间</p>
+<p>​	4.默认初始化</p>
+<p>​	5.显示初始化</p>
+<p>​	6.构造方法的初始化</p>
+<p>​	7.将堆内存中的地址值赋值给左边的局部变量</p>
+<p><img src="/images/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/%E5%AF%B9%E8%B1%A1.png"></p>
 <p><strong>多个对象的内存图</strong>:</p>
+<p>对个对象时class对象不用重新加载</p>
+<p><img src="/images/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/%E5%AF%B9%E8%B1%A12.png"></p>
 <p><strong>两个变量指向同一个对象内存图</strong>:</p>
+<p><img src="/images/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240127202759.png"></p>
 <p><strong>this的内存原理</strong>:</p>
+<p>作用：变量得就近原则，区分局部变量和成员变量。</p>
+<p>本质：所在<strong>方法调用者的地址值</strong></p>
+<p>​	</p>
 <p><strong>基本数据类型和引用数据类型的区别</strong>:</p>
+<pre><code> 基本数据类型：数据值是存储在自己的空间中(栈)，赋值给其他变量，也是赋得真实得值。
+</code></pre>
+<p>​	 引用数据类型：数据值 是存储在其他空间中，自己空间中存储得是地址值，赋值给其他变量，赋得是地址值</p>
 <p><strong>局部变量和成员变量的区别</strong>:</p>
-</li>
-<li><p>补充知识:成员变量，局部变量的区别</p>
+<p>​	成员变量：类中方法外的变量</p>
+<p>​	局部变量：方法中的变量，（栈里面的局部变量没有默认值，是要给个初始化值才能用的）</p>
 </li>
 </ol>
 
@@ -554,7 +579,7 @@
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">33 分钟</span>
+    <span title="站点阅读时长">34 分钟</span>
 </div>
   <div class="powered-by">
     
