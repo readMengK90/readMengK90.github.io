@@ -6,7 +6,7 @@
   <link href="https://readmengk90.github.io/atom.xml" rel="self"/>
   
   <link href="https://readmengk90.github.io/"/>
-  <updated>2024-01-27T15:30:04.576Z</updated>
+  <updated>2024-02-03T12:38:52.985Z</updated>
   <id>https://readmengk90.github.io/</id>
   
   <author>
@@ -17,19 +17,23 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="https://readmengk90.github.io/2024/01/27/%E6%96%87%E5%AD%97%E7%89%88%E6%A0%BC%E6%96%97%E6%B8%B8%E6%88%8F-%E4%BB%A3%E7%A0%81%E8%AE%BE%E8%AE%A1%E8%BF%87%E7%A8%8B/"/>
-    <id>https://readmengk90.github.io/2024/01/27/%E6%96%87%E5%AD%97%E7%89%88%E6%A0%BC%E6%96%97%E6%B8%B8%E6%88%8F-%E4%BB%A3%E7%A0%81%E8%AE%BE%E8%AE%A1%E8%BF%87%E7%A8%8B/</id>
-    <published>2024-01-27T15:30:04.529Z</published>
-    <updated>2024-01-27T15:30:04.576Z</updated>
+    <title>Java API 和字符串</title>
+    <link href="https://readmengk90.github.io/2024/02/03/Java%E5%9F%BA%E7%A1%80-API%E5%92%8C%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    <id>https://readmengk90.github.io/2024/02/03/Java%E5%9F%BA%E7%A1%80-API%E5%92%8C%E5%AD%97%E7%AC%A6%E4%B8%B2/</id>
+    <published>2024-02-03T10:57:21.851Z</published>
+    <updated>2024-02-03T12:38:52.985Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="文字版格斗游戏-代码设计过程"><a href="#文字版格斗游戏-代码设计过程" class="headerlink" title="文字版格斗游戏-代码设计过程"></a>文字版格斗游戏-代码设计过程</h1>]]></content>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;文字版格斗游戏-代码设计过程&quot;&gt;&lt;a href=&quot;#文字版格斗游戏-代码设计过程&quot; class=&quot;headerlink&quot; title=&quot;文字版格斗游戏-代码设计过程&quot;&gt;&lt;/a&gt;文字版格斗游戏-代码设计过程&lt;/h1&gt;</summary>
+    <content type="html"><![CDATA[<p>**API(**Application Programming Interface):应用程序编程接口</p><p>简单理解：API就是别人已经写好的东西，我们不需要自己编写，直接使用即可.</p><p>Java API:指的就是JDK中提供得各种功能得Java类，这些类将底层的实现封装起来，我们不需要关心这些类是如何实现的，只需要学习这些类如何使用即可。</p><p>API帮助文档：帮助开发人员更好的使用API和查询API的一个工具</p><p>链接：<a href="https://pan.baidu.com/s/1DXJGNchknR_VgQVxbqzQig?pwd=rqei">https://pan.baidu.com/s/1DXJGNchknR_VgQVxbqzQig?pwd=rqei</a><br>提取码：rqei </p><p>如何使用帮助文档：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">java.io包：读取文件的内容，或者把数据写到文件中去</span><br><span class="line">java.lang包：</span><br></pre></td></tr></table></figure><p><strong>字符串：</strong>JAVA不会字符串，开发就会凉一半</p><p>String：定义在java.lang.String包内，代表字符串，Java程序中的所有字符串(“abc”)文字都为此类的对象。</p><p>​字符串的内容是不会发生改变的，它的对象在创建后不能被更改</p><p><em>创建String对象的两种方式</em>：</p><p>1.<strong>直接赋值</strong>：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">String</span> <span class="variable">name</span> <span class="operator">=</span> <span class="string">&quot;abc&quot;</span>;</span><br></pre></td></tr></table></figure><p>2.<strong>使用new关键字使用不同的构造方法去创建字符串对象</strong>:</p><table><thead><tr><th align="center">构造方法</th><th align="center">说明</th></tr></thead><tbody><tr><td align="center">public String（）</td><td align="center">创建空白字符串，不含任何内容<br>String s0 &#x3D; new String( );</td></tr><tr><td align="center">public String(String original)</td><td align="center">根据传入的字符串，创建字符串对象<br>String s1 &#x3D; new String(“abc”)</td></tr><tr><td align="center">public String(char[ ] chs)</td><td align="center">根据传入字符数组，创建字符串对象<br>char[] chs &#x3D; {‘a’,’b’,’c’,’d’}<br>String s2 &#x3D; new String(chs)</td></tr><tr><td align="center">public String(byte[ ] chs)</td><td align="center">根据传入字节数组，创建字符串对象<br>byte[] bytes&#x3D; {97,98,99,100}<br>String s3 &#x3D; new String(bytes)</td></tr></tbody></table><p>字符串-字符数组-字符串：(应用场景:修改字符串的内容)</p><p>字节数组-字符串：(应用场景：网络中传输的数据其实都是字节信息)</p><p><em>字符串在内存中是如何创建的</em></p><p>StringTable(<strong>字符串常量池</strong>)：直接赋值的方式获取的字符串放在串次中，串池在<strong>堆内存</strong>中</p><p>当时有双引号直接赋值时，系统会坚持该字符串在串池中是否存在，不存在，创建新的，<strong>存在，复用。</strong></p><p><strong>Java的常用方法-字符串的比较</strong></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">String</span> <span class="variable">s1</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">String</span>(<span class="string">&quot;abc&quot;</span>);</span><br><span class="line"><span class="type">String</span> <span class="variable">s2</span> <span class="operator">=</span> <span class="string">&quot;abc&quot;</span>;</span><br><span class="line">System.out.println(s1==s2);<span class="comment">//这种比较可以吗？</span></span><br></pre></td></tr></table></figure><p><em>&#x3D;&#x3D;号比较的原理？</em>（String属于引用数据类型）</p><p>基本数据类型：&#x3D;&#x3D;号比较基本数据类型比较的是<strong>数据值</strong></p><p>引用数据类型：&#x3D;&#x3D;号比较引用数据类型比较的是<strong>地址值</strong></p><p><em>字符串的比较？</em></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">String</span> <span class="variable">s1</span> <span class="operator">=</span> <span class="string">&quot;abc&quot;</span>;<span class="comment">//记录串池里的地址</span></span><br><span class="line"><span class="type">String</span> <span class="variable">s2</span> <span class="operator">=</span> <span class="string">&quot;abc&quot;</span>;<span class="comment">//串池中存在该字符串，复用，地址值相同</span></span><br><span class="line">System.out.println(s1==s2);</span><br><span class="line"><span class="comment">//----------------------------------------------------------</span></span><br><span class="line"><span class="type">String</span> <span class="variable">s1</span> <span class="operator">=</span> <span class="string">&quot;abc&quot;</span>;<span class="comment">//记录串池里面的地址</span></span><br><span class="line"><span class="type">String</span> <span class="variable">s2</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">String</span>(<span class="string">&quot;abc&quot;</span>);<span class="comment">//记录堆里面的地址</span></span><br><span class="line">System.out.println(s1==s2);</span><br></pre></td></tr></table></figure><p>字符串比较：</p><p><strong>boolean equals方法(要比较的字符串)</strong> &#x2F;&#x2F;完全一样的结果才是true，否则为false.</p><p><strong>boolean equalsIgnoreCase(要比较的字符串)</strong>  &#x2F;&#x2F;忽略(<strong>英文状态下的</strong>)大小写的比较,适用于验证码校验</p><p><strong>&#x2F;&#x2F;键盘录入得到的字符串是new出来的</strong>，只有想比较字符串的内容，就必须要用String里面的方法。</p>]]></content>
     
     
+    <summary type="html">&lt;center&gt;JavaAPI 和字符串&lt;/center&gt;</summary>
     
+    
+    
+    <category term="Java基础" scheme="https://readmengk90.github.io/categories/Java%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="java" scheme="https://readmengk90.github.io/tags/java/"/>
     
   </entry>
   
@@ -185,9 +189,9 @@
     <link href="https://readmengk90.github.io/2024/01/22/Idea%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9A%84%E5%A6%99%E7%94%A8/"/>
     <id>https://readmengk90.github.io/2024/01/22/Idea%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9A%84%E5%A6%99%E7%94%A8/</id>
     <published>2024-01-22T15:51:38.388Z</published>
-    <updated>2024-01-25T13:42:28.409Z</updated>
+    <updated>2024-02-03T12:34:11.761Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Idea快捷键的妙用"><a href="#Idea快捷键的妙用" class="headerlink" title="Idea快捷键的妙用"></a>Idea快捷键的妙用</h1><p>Ctrl+alt+M:自动抽取方法 </p><p>​编写程序时发现有重复代码，可以使用快捷键自动抽取方法，提高效率。</p><p>Ctrl+alt+L:代码格式化</p><p>​编写完成一段代码后养成格式化的习惯。</p><p>Ctrl+alt+v:自动补全代码快捷键</p><p>CTRL+&#x2F;：单行注释</p><p>CTRL+ALT+&#x2F;:多行注释</p><p>选择变量+shift+F6:变量的批量修改</p><p>Ctrl + Alt + T： 对选中的代码弹出环绕选项弹出层(while,if….)</p><p>Alt+Insert:选择get和set方法</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="Idea快捷键的妙用"><a href="#Idea快捷键的妙用" class="headerlink" title="Idea快捷键的妙用"></a>Idea快捷键的妙用</h1><p>Ctrl+alt+M:自动抽取方法 </p><p>​编写程序时发现有重复代码，可以使用快捷键自动抽取方法，提高效率。</p><p>Ctrl+alt+L:代码格式化</p><p>​编写完成一段代码后养成格式化的习惯。</p><p>Ctrl+alt+v:自动补全代码快捷键</p><p>CTRL+&#x2F;：单行注释</p><p>CTRL+ALT+&#x2F;:多行注释</p><p>选择变量+shift+F6:变量的批量修改</p><p>Ctrl + Alt + T： 对选中的代码弹出环绕选项弹出层(while,if….)</p><p>Alt+Insert:选择get和set方法</p><p>Ctrl+B:点击方法，跟进原码</p>]]></content>
     
     
     <summary type="html">&lt;center&gt;Idea快捷键的妙用&lt;/center&gt;</summary>
