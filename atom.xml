@@ -6,7 +6,7 @@
   <link href="https://readmengk90.github.io/atom.xml" rel="self"/>
   
   <link href="https://readmengk90.github.io/"/>
-  <updated>2024-02-05T02:09:01.844Z</updated>
+  <updated>2024-02-05T16:17:55.998Z</updated>
   <id>https://readmengk90.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>StringBuilder</title>
+    <link href="https://readmengk90.github.io/2024/02/05/java%E5%9F%BA%E7%A1%80-StringBuilder/"/>
+    <id>https://readmengk90.github.io/2024/02/05/java%E5%9F%BA%E7%A1%80-StringBuilder/</id>
+    <published>2024-02-05T15:34:25.941Z</published>
+    <updated>2024-02-05T16:17:55.998Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="StringBuilder"><a href="#StringBuilder" class="headerlink" title="StringBuilder"></a><strong>StringBuilder</strong></h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">    String s=<span class="string">&quot;&quot;</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">1000000</span>;i++)&#123;</span><br><span class="line">        s=s+<span class="string">&quot;abc&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println(s);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//数据量较大时，字符串拼接耗时长</span></span><br></pre></td></tr></table></figure><p>1.为什么要学习StringBuilder?:<strong>提高字符串的操作效率</strong></p><p>   StringBuilder可以看成是一个容器，创建之后里面的<strong>内容是可变的</strong>,不像字符串一样是固定的。</p><p>2.StringBuilder的构造方法</p><table><thead><tr><th align="center">方法名</th><th align="center">说明</th></tr></thead><tbody><tr><td align="center">public StringBuilder()</td><td align="center">创建一个空白可变字符，不含有任何内容</td></tr><tr><td align="center">public StringBuilder(String str)</td><td align="center">根据字符串的内容，来创建可变字符串对象</td></tr></tbody></table><p>3.StringBuilder常用方法</p><table><thead><tr><th>方法名</th><th>说明</th></tr></thead><tbody><tr><td>public StringBuilder append(任意类型)</td><td>添加数据，并返回对象本身</td></tr><tr><td>public StringBuilder reverse()</td><td>反转容器中的内容</td></tr><tr><td>public int length()</td><td>返回长度(字符出现的个数)</td></tr><tr><td>public String toString()</td><td>通过toString()就可以实现把StringBuilder转换成String</td></tr></tbody></table><p><strong>StringBuilder是Java已经写好的类，Java在底层对它做了一些特殊处理，打印对象不是地址值而是属性值。</strong></p><p>链式编程：当我们在调用一个方法的时候，不需要用变量接收他的结果，可以继续调用其他方法。</p>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;StringBuilder&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="Java基础" scheme="https://readmengk90.github.io/categories/Java%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="java" scheme="https://readmengk90.github.io/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>手机号中间屏蔽&amp;身份证号码查询&amp;敏感词替换</title>
@@ -412,27 +433,6 @@
     
     
     <category term="java" scheme="https://readmengk90.github.io/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>回文数的计算</title>
-    <link href="https://readmengk90.github.io/2024/01/18/%E5%9B%9E%E6%96%87%E6%95%B0/"/>
-    <id>https://readmengk90.github.io/2024/01/18/%E5%9B%9E%E6%96%87%E6%95%B0/</id>
-    <published>2024-01-18T13:41:43.830Z</published>
-    <updated>2024-01-25T12:15:40.036Z</updated>
-    
-    <content type="html"><![CDATA[<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.itheima.struct;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">PalindromeNumber</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="comment">//需求:给你一个整数x</span></span><br><span class="line">        <span class="comment">//如果x是一个回文整数，打印true，否则，返回false。</span></span><br><span class="line">        <span class="comment">//解释：回文数是指正序(从左向右)和倒序(从右向左)读都是一样的整数。</span></span><br><span class="line">        <span class="comment">//例如，121是回文，而123不是</span></span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        System.out.println(<span class="string">&quot;请输入一个整数&quot;</span>);</span><br><span class="line">        <span class="type">int</span> <span class="variable">number</span> <span class="operator">=</span> sc.nextInt();</span><br><span class="line">        <span class="type">int</span> reverse=<span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> origin=number;</span><br><span class="line">        <span class="type">int</span> k;</span><br><span class="line">        <span class="comment">//思路：翻转后的数字等于翻转前的数字</span></span><br><span class="line">        <span class="keyword">while</span> (number != <span class="number">0</span>)&#123;</span><br><span class="line">            k=number%<span class="number">10</span>;</span><br><span class="line">            reverse=reverse*<span class="number">10</span>+k;</span><br><span class="line">            number/=<span class="number">10</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (origin==reverse)&#123;</span><br><span class="line">            System.out.println(origin+<span class="string">&quot;是回文数&quot;</span>);</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            System.out.println(origin+<span class="string">&quot;不是回文数&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;数字翻转的实现&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="经典算法思想" scheme="https://readmengk90.github.io/categories/%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3/"/>
-    
-    
-    <category term="算法思想" scheme="https://readmengk90.github.io/tags/%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3/"/>
     
   </entry>
   
