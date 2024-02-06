@@ -28,7 +28,7 @@
 <meta property="og:description" content="StringBuilder的升级StringJoiner">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-02-06T13:18:34.058Z">
-<meta property="article:modified_time" content="2024-02-06T13:18:34.111Z">
+<meta property="article:modified_time" content="2024-02-06T13:48:52.147Z">
 <meta property="article:author" content="Amber">
 <meta property="article:tag" content="java">
 <meta name="twitter:card" content="summary">
@@ -226,8 +226,9 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2024-02-06 21:18:34" itemprop="dateCreated datePublished" datetime="2024-02-06T21:18:34+08:00">2024-02-06</time>
+              <time title="创建时间：2024-02-06 21:18:34 / 修改时间：21:48:52" itemprop="dateCreated datePublished" datetime="2024-02-06T21:18:34+08:00">2024-02-06</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -252,7 +253,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>26</span>
+              <span>275</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -273,6 +274,8 @@
 
       
         <h1 id="StringJoiner"><a href="#StringJoiner" class="headerlink" title="StringJoiner"></a>StringJoiner</h1><p>拼接速度快，代码又简单的方式</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">    <span class="type">int</span>[] arr=&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line">    StringJoiner sj=<span class="keyword">new</span> <span class="title class_">StringJoiner</span>(<span class="string">&quot;,&quot;</span>,<span class="string">&quot;[&quot;</span>,<span class="string">&quot;]&quot;</span>);</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">        sj.add(arr[i]+<span class="string">&quot;&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println(sj);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 
     </div>
 
