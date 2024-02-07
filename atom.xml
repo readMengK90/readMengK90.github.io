@@ -6,7 +6,7 @@
   <link href="https://readmengk90.github.io/atom.xml" rel="self"/>
   
   <link href="https://readmengk90.github.io/"/>
-  <updated>2024-02-06T14:41:24.136Z</updated>
+  <updated>2024-02-07T00:34:32.140Z</updated>
   <id>https://readmengk90.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>字符串相关类的底层原理</title>
+    <link href="https://readmengk90.github.io/2024/02/07/java%E5%9F%BA%E7%A1%80-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9B%B8%E5%85%B3%E7%B1%BB%E7%9A%84%E5%BA%95%E5%B1%82%E5%8E%9F%E7%90%86/"/>
+    <id>https://readmengk90.github.io/2024/02/07/java%E5%9F%BA%E7%A1%80-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9B%B8%E5%85%B3%E7%B1%BB%E7%9A%84%E5%BA%95%E5%B1%82%E5%8E%9F%E7%90%86/</id>
+    <published>2024-02-07T00:34:09.426Z</published>
+    <updated>2024-02-07T00:34:32.140Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="字符串相关类的底层原理："><a href="#字符串相关类的底层原理：" class="headerlink" title="字符串相关类的底层原理："></a>字符串相关类的底层原理：</h1><p><strong>1.字符串存储的内存原理</strong></p><p>​直接赋值会复用字符串常量池</p><p>​new出来不会复用，而是开辟一个新空间</p><p><strong>2.&#x3D;&#x3D;号比较的到底是什么？</strong></p><p>​基本数据类型比较数据值</p><p>​引用数据类型比较地址值</p><p><strong>3.字符串拼接的底层原理</strong></p><p>​<strong>等号右边没有变量参与：</strong></p><p>如果没有变量参与，都是字符串直接相加，编译之后就是拼接之后的结果，会复用串次中的字符串。</p><p>​<strong>等号右边有变量参与：</strong></p><p>JDK8以前：系统底层会自动创建一个StringBuilder对象，然后再调用其append方法完成拼接。拼接后，再调用其toString方法转换为String类型，而toString方法的底层是直接new了一个字符串对象。</p><p>JDK8版本：系统会预估字符串拼接后的总大小，把要拼接的内容都放在数组中，此时也是产生一个新的字符串。</p><p><strong>4.StringBuilder提高效率原理图</strong></p><p>所有要拼接的内容都会往String Builder中放，不会创建很多无用的空间，节约内存。</p><p>​<img src="C:\Users\Administrator\Desktop\微信截图_20240207073607.png"></p><p><strong>5.StringBuilder源码分析</strong></p><p>默认创建一个长度为16的字节数组，添加的内容长度小于16，直接存，添加的内容大于16会扩容(原来的内容*2+2)，如果扩容之后还不够，以实际长度为准。</p>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;字符串相关类的底层原理&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="Java基础" scheme="https://readmengk90.github.io/categories/Java%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="java" scheme="https://readmengk90.github.io/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>StringJoiner</title>
@@ -252,9 +273,9 @@
     <link href="https://readmengk90.github.io/2024/01/22/Idea%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9A%84%E5%A6%99%E7%94%A8/"/>
     <id>https://readmengk90.github.io/2024/01/22/Idea%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9A%84%E5%A6%99%E7%94%A8/</id>
     <published>2024-01-22T15:51:38.388Z</published>
-    <updated>2024-02-04T08:19:50.167Z</updated>
+    <updated>2024-02-06T23:42:06.517Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Idea快捷键的妙用"><a href="#Idea快捷键的妙用" class="headerlink" title="Idea快捷键的妙用"></a>Idea快捷键的妙用</h1><p>Ctrl+alt+M:自动抽取方法 </p><p>​编写程序时发现有重复代码，可以使用快捷键自动抽取方法，提高效率。</p><p>Ctrl+alt+L:代码格式化</p><p>​编写完成一段代码后养成格式化的习惯。</p><p>Ctrl+alt+v:自动补全代码快捷键</p><p>CTRL+&#x2F;：单行注释</p><p>CTRL+ALT+&#x2F;:多行注释</p><p>选择变量+shift+F6:变量的批量修改</p><p>Ctrl + Alt + T： 对选中的代码弹出环绕选项弹出层(while,if….)</p><p>Alt+Insert:选择get和set方法</p><p>Ctrl+B:点击方法，跟进原码</p><p>Insert:书写代码是错误碰到insert键，会出现闪速黑色正方形块，影响书写。再次点击insert键可恢复</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="Idea快捷键的妙用"><a href="#Idea快捷键的妙用" class="headerlink" title="Idea快捷键的妙用"></a>Idea快捷键的妙用</h1><p>Ctrl+alt+M:自动抽取方法 </p><p>​编写程序时发现有重复代码，可以使用快捷键自动抽取方法，提高效率。</p><p>Ctrl+alt+L:代码格式化</p><p>​编写完成一段代码后养成格式化的习惯。</p><p>Ctrl+alt+v:自动补全代码快捷键</p><p>CTRL+&#x2F;：单行注释</p><p>CTRL+ALT+&#x2F;:多行注释</p><p>选择变量+shift+F6:变量的批量修改</p><p>Ctrl + Alt + T： 对选中的代码弹出环绕选项弹出层(while,if….)</p><p>Alt+Insert:选择get和set方法</p><p>Ctrl+B:点击方法，跟进原码,选中要进入的方法，使用快捷键直接进入</p><p>Insert:书写代码是错误碰到insert键，会出现闪速黑色正方形块，影响书写。再次点击insert键可恢复</p><p>Ctrll+N:搜索类快捷键</p>]]></content>
     
     
     <summary type="html">&lt;center&gt;Idea快捷键的妙用&lt;/center&gt;</summary>
@@ -412,27 +433,6 @@
     
     
     <category term="算法思想" scheme="https://readmengk90.github.io/tags/%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>无限循环和跳转控制语句</title>
-    <link href="https://readmengk90.github.io/2024/01/19/java%E5%9F%BA%E7%A1%80-%E6%97%A0%E9%99%90%E5%BE%AA%E7%8E%AF/"/>
-    <id>https://readmengk90.github.io/2024/01/19/java%E5%9F%BA%E7%A1%80-%E6%97%A0%E9%99%90%E5%BE%AA%E7%8E%AF/</id>
-    <published>2024-01-19T02:30:46.961Z</published>
-    <updated>2024-01-22T02:24:33.177Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="无限循环"><a href="#无限循环" class="headerlink" title="无限循环"></a>无限循环</h1><p>格式：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(;;)&#123;</span><br><span class="line">System.out.println(<span class="string">&quot;学习&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">while</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">System.out.println(<span class="string">&quot;学习&quot;</span>);<span class="comment">//常用</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">do</span>&#123;</span><br><span class="line">System.out.println(<span class="string">&quot;学习&quot;</span>);</span><br><span class="line">&#125;<span class="keyword">while</span>(<span class="literal">true</span>)</span><br></pre></td></tr></table></figure><p>无限循环的下面不能在写其他代码了</p><h1 id="跳转控制语句"><a href="#跳转控制语句" class="headerlink" title="跳转控制语句"></a>跳转控制语句</h1><p>在循环的过程中，跳转到其他语句上执行</p><p>break:结束整个循环。</p><p>continue:结束本次循环，继续下次循环。</p><p>&lt;补充:&gt;return:其实跟循环没有什么关系，跟方法有关，表示1结束方法，2返回结果。如果方法执行到了return，那么整个方法全部结束，里面的循环也随之结束。 </p><p><img src="/../images/005.png"></p>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;无限循环和跳转控制语句&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="Java基础" scheme="https://readmengk90.github.io/categories/Java%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="java" scheme="https://readmengk90.github.io/tags/java/"/>
     
   </entry>
   
