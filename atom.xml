@@ -38,27 +38,6 @@
   </entry>
   
   <entry>
-    <title>集合ArrayList</title>
-    <link href="https://readmengk90.github.io/2024/02/08/java%E5%9F%BA%E7%A1%80%E9%9B%86%E5%90%88ArrayList/"/>
-    <id>https://readmengk90.github.io/2024/02/08/java%E5%9F%BA%E7%A1%80%E9%9B%86%E5%90%88ArrayList/</id>
-    <published>2024-02-08T02:30:45.371Z</published>
-    <updated>2024-02-09T16:16:03.744Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="集合ArrayList"><a href="#集合ArrayList" class="headerlink" title="集合ArrayList"></a>集合ArrayList</h1><p>长度可变的容器(自动扩容)</p><p>集合不能<strong>直接</strong>存基本数据类型–》包装类</p><ol><li><p>为什么要有集合?</p><p>ArrayList:</p><p>构造方法：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ArrayList&lt;泛型&gt; list = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;可省略&gt;();</span><br><span class="line"><span class="comment">//此时我们创建的是ArrayList的对象，而ArrayList是Java已经写好的一个类，这个类在底层做了一些处理打印对象不是地址值，而是集合中存储数据的内容，在展示的时候会拿[]把所有的数据进行包裹。</span></span><br></pre></td></tr></table></figure><p>成员方法：</p><table><thead><tr><th>方法名</th><th>说明</th></tr></thead><tbody><tr><td>boolean add(E,e)</td><td></td></tr><tr><td>boolean remove(E,e)</td><td></td></tr><tr><td>E remove(int index)</td><td></td></tr><tr><td>E set(int index,E,e)</td><td></td></tr><tr><td>E get(int index)</td><td></td></tr><tr><td>int size()</td><td></td></tr></tbody></table></li><li><p>泛型：限定集合中存储数据的类型，集合不能直接存储基本数据类型，可以存储引用数据类型。</p></li></ol>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;字符串相关类的底层原理&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="Java基础" scheme="https://readmengk90.github.io/categories/Java%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="java" scheme="https://readmengk90.github.io/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
     <title>字符串相关类的底层原理</title>
     <link href="https://readmengk90.github.io/2024/02/07/java%E5%9F%BA%E7%A1%80-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9B%B8%E5%85%B3%E7%B1%BB%E7%9A%84%E5%BA%95%E5%B1%82%E5%8E%9F%E7%90%86/"/>
     <id>https://readmengk90.github.io/2024/02/07/java%E5%9F%BA%E7%A1%80-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9B%B8%E5%85%B3%E7%B1%BB%E7%9A%84%E5%BA%95%E5%B1%82%E5%8E%9F%E7%90%86/</id>
@@ -426,6 +405,27 @@
     
     
     <summary type="html">&lt;center&gt;数组的概述&amp;初始化&amp;元素访问&amp;&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="Java基础" scheme="https://readmengk90.github.io/categories/Java%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="java" scheme="https://readmengk90.github.io/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>生成随机数Random</title>
+    <link href="https://readmengk90.github.io/2024/01/20/java%E5%9F%BA%E7%A1%80-%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E6%95%B0Random/"/>
+    <id>https://readmengk90.github.io/2024/01/20/java%E5%9F%BA%E7%A1%80-%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E6%95%B0Random/</id>
+    <published>2024-01-20T03:38:38.016Z</published>
+    <updated>2024-01-20T06:54:47.604Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="生成随机数Random"><a href="#生成随机数Random" class="headerlink" title="生成随机数Random"></a>生成随机数Random</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1.导包---Random这个类在哪里?</span></span><br><span class="line"><span class="keyword">import</span> java.util.Random<span class="comment">//导包的动作必须出现在类定义的上边</span></span><br><span class="line"><span class="comment">//2.创建对象---表示我要开始用Random这个类了</span></span><br><span class="line"><span class="type">Random</span> <span class="variable">r</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Random</span>();<span class="comment">//这个格式里面，只有r是变量名，可以变，其他的都不允许变</span></span><br><span class="line"><span class="comment">//3.生成随机数--真正开始干活了</span></span><br><span class="line"><span class="type">int</span> <span class="variable">number</span> <span class="operator">=</span> r.nextInt(随机数的范围)<span class="comment">//这个格式里面，只有number是变量名，可以变，其他的都不允许变</span></span><br></pre></td></tr></table></figure><p><em>在3.小括号中，书写的是生成随机数的范围，这个范围<strong>一定是从0开始</strong>，到这个数减1结束(包头不包尾，包左不包右)</em></p><p><em>生成任意数到<strong>任意数之间</strong>的随机数:</em><br>    1.让这个范围头尾都减去一个值，让这个范围从0开始<br>    2.尾巴＋1<br>    3.最终结果，再加上第一步减去的值</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//生成7~15之间的值</span></span><br><span class="line"><span class="type">Random</span> <span class="variable">r</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Random</span>();</span><br><span class="line"><span class="type">int</span> number= r.nextInt(<span class="number">9</span>)+<span class="number">7</span>;</span><br><span class="line">System.out.println(number);</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;Random()方法&lt;/center&gt;</summary>
     
     
     
