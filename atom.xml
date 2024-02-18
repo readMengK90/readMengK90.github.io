@@ -315,9 +315,9 @@
     <link href="https://readmengk90.github.io/2024/01/22/Idea%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9A%84%E5%A6%99%E7%94%A8/"/>
     <id>https://readmengk90.github.io/2024/01/22/Idea%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9A%84%E5%A6%99%E7%94%A8/</id>
     <published>2024-01-22T15:51:38.388Z</published>
-    <updated>2024-02-07T06:45:19.911Z</updated>
+    <updated>2024-02-18T11:44:47.985Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Idea快捷键的妙用"><a href="#Idea快捷键的妙用" class="headerlink" title="Idea快捷键的妙用"></a>Idea快捷键的妙用</h1><p>Ctrl+alt+M:自动抽取方法 </p><p>​编写程序时发现有重复代码，可以使用快捷键自动抽取方法，提高效率。</p><p>Ctrl+alt+L:代码格式化</p><p>​编写完成一段代码后养成格式化的习惯。</p><p>Ctrl+alt+v:自动补全代码快捷键</p><p>CTRL+&#x2F;：单行注释</p><p>CTRL+ALT+&#x2F;:多行注释</p><p>选择变量+shift+F6:变量的批量修改</p><p>Ctrl + Alt + T： 对选中的代码弹出环绕选项弹出层(while,if….)</p><p>Alt+Insert:选择get和set方法</p><p>Ctrl+B:点击方法，跟进原码,选中要进入的方法，使用快捷键直接进入</p><p>Insert:书写代码是错误碰到insert键，会出现闪速黑色正方形块，影响书写。再次点击insert键可恢复</p><p>Ctrll+N:搜索类快捷键</p><p>alt+回车(enter):选中变量，alt+回车，左右进行切割</p><p>代码 上 &#x2F;下移 ：Shift+Alt +方向上键&#x2F;下键</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="Idea快捷键的妙用"><a href="#Idea快捷键的妙用" class="headerlink" title="Idea快捷键的妙用"></a>Idea快捷键的妙用</h1><p>Ctrl+alt+M:自动抽取方法 </p><p>​编写程序时发现有重复代码，可以使用快捷键自动抽取方法，提高效率。</p><p>Ctrl+alt+L:代码格式化</p><p>​编写完成一段代码后养成格式化的习惯。</p><p>Ctrl+alt+v:自动补全代码快捷键</p><p>CTRL+&#x2F;：单行注释</p><p>CTRL+ALT+&#x2F;:多行注释</p><p>选择变量+shift+F6:变量的批量修改</p><p>Ctrl + Alt + T： 对选中的代码弹出环绕选项弹出层(while,if….)</p><p>Alt+Insert:选择get和set方法</p><p>Ctrl+B:点击方法，跟进原码,选中要进入的方法，使用快捷键直接进入</p><p>Insert:书写代码是错误碰到insert键，会出现闪速黑色正方形块，影响书写。再次点击insert键可恢复</p><p>Ctrll+N:搜索类快捷键</p><p>alt+回车(enter):选中变量，alt+回车，左右进行切割</p><p>代码 上 &#x2F;下移 ：Shift+Alt +方向上键&#x2F;下键</p><p>alt+回车：点击方法，直接可以创建方法</p>]]></content>
     
     
     <summary type="html">&lt;center&gt;Idea快捷键的妙用&lt;/center&gt;</summary>
