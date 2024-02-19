@@ -6,7 +6,7 @@
   <link href="https://readmengk90.github.io/atom.xml" rel="self"/>
   
   <link href="https://readmengk90.github.io/"/>
-  <updated>2024-02-19T06:15:54.042Z</updated>
+  <updated>2024-02-19T07:14:45.605Z</updated>
   <id>https://readmengk90.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>登录错误时的次数限制</title>
+    <link href="https://readmengk90.github.io/2024/02/19/%E7%99%BB%E5%BD%95%E5%A4%B1%E8%AF%AF%E6%97%B6%E6%AC%A1%E6%95%B0%E7%9A%84%E9%99%90%E5%88%B6/"/>
+    <id>https://readmengk90.github.io/2024/02/19/%E7%99%BB%E5%BD%95%E5%A4%B1%E8%AF%AF%E6%97%B6%E6%AC%A1%E6%95%B0%E7%9A%84%E9%99%90%E5%88%B6/</id>
+    <published>2024-02-19T06:28:35.124Z</published>
+    <updated>2024-02-19T07:14:45.605Z</updated>
+    
+    <content type="html"><![CDATA[<p>day12</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">3</span>;i++) &#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;请输入用户名:&quot;</span>);</span><br><span class="line">    <span class="type">String</span> <span class="variable">username</span> <span class="operator">=</span> sc.next();</span><br><span class="line">    <span class="type">boolean</span> <span class="variable">flag</span> <span class="operator">=</span> contains(list, username);</span><br><span class="line">    <span class="keyword">if</span> (!flag) &#123;<span class="comment">//集合中没有该用户名</span></span><br><span class="line">        System.out.println(<span class="string">&quot;用户名未注册，请先注册&quot;</span>);</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println(<span class="string">&quot;请输入密码&quot;</span>);</span><br><span class="line">    <span class="type">String</span> <span class="variable">password</span> <span class="operator">=</span> sc.next();</span><br><span class="line">    <span class="keyword">while</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">        <span class="type">String</span> <span class="variable">vericode</span> <span class="operator">=</span> getVericode();</span><br><span class="line">        System.out.println(vericode);</span><br><span class="line">        System.out.println(<span class="string">&quot;请录入验证码:&quot;</span>);</span><br><span class="line">        <span class="type">String</span> <span class="variable">againcode</span> <span class="operator">=</span> sc.next();</span><br><span class="line">        <span class="keyword">if</span> (vericode.equalsIgnoreCase(againcode)) &#123;<span class="comment">//验证码正确</span></span><br><span class="line">            System.out.println(<span class="string">&quot;验证码录入成功&quot;</span>);</span><br><span class="line">            System.out.println(<span class="string">&quot;成功登录&quot;</span>);</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;请重新录入验证码:&quot;</span>);</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">Student</span> <span class="variable">stuInfo</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Student</span>(username, password, <span class="literal">null</span>, <span class="literal">null</span>);</span><br><span class="line">    <span class="type">boolean</span> result=checkstuInfo(list,stuInfo);</span><br><span class="line">    <span class="keyword">if</span> (result)&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;登录成功，可以使用你的学生管理系统了&quot;</span>);</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;登录失败，用户名或密码错误&quot;</span>);</span><br><span class="line">        <span class="keyword">if</span> (i==<span class="number">2</span>)&#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;当前账号&quot;</span>+username+<span class="string">&quot;被锁定&quot;</span>);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;用户名或密码错误，还剩下&quot;</span>+(<span class="number">2</span>-i)+<span class="string">&quot;次机会&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;次数限制&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="经典算法思想" scheme="https://readmengk90.github.io/categories/%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3/"/>
+    
+    
+    <category term="算法思想" scheme="https://readmengk90.github.io/tags/%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3/"/>
+    
+  </entry>
   
   <entry>
     <title>生成验证码</title>
@@ -412,27 +433,6 @@
     
     
     <category term="java" scheme="https://readmengk90.github.io/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>比较最值时提高效率(数组)</title>
-    <link href="https://readmengk90.github.io/2024/01/20/%E6%AF%94%E8%BE%83%E6%9C%80%E5%80%BC%E6%97%B6%E6%8F%90%E9%AB%98%E6%95%88%E7%8E%87(%E6%95%B0%E7%BB%84)/"/>
-    <id>https://readmengk90.github.io/2024/01/20/%E6%AF%94%E8%BE%83%E6%9C%80%E5%80%BC%E6%97%B6%E6%8F%90%E9%AB%98%E6%95%88%E7%8E%87(%E6%95%B0%E7%BB%84)/</id>
-    <published>2024-01-20T13:37:36.509Z</published>
-    <updated>2024-01-25T12:16:37.236Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="数组循环比较最值时提高效率"><a href="#数组循环比较最值时提高效率" class="headerlink" title="数组循环比较最值时提高效率"></a>数组循环比较最值时提高效率</h1><p>循环中开始条件如果为0，那么第一次循环的时候是自己跟自己比了一下，对结果没有任何影响，但是效率偏低，为了提高效率，减少一次 循环的次数，循环开始的条件可以写1.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> min=array[<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt; array.length; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (array[i]&lt;min)&#123;</span><br><span class="line">                min=array[i];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(min);</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;数组循环比较最值时提高效率&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="经典算法思想" scheme="https://readmengk90.github.io/categories/%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3/"/>
-    
-    
-    <category term="算法思想" scheme="https://readmengk90.github.io/tags/%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3/"/>
     
   </entry>
   
