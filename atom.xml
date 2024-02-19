@@ -6,7 +6,7 @@
   <link href="https://readmengk90.github.io/atom.xml" rel="self"/>
   
   <link href="https://readmengk90.github.io/"/>
-  <updated>2024-02-19T07:14:45.605Z</updated>
+  <updated>2024-02-19T14:16:30.191Z</updated>
   <id>https://readmengk90.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>面向对象进阶-static静态变量</title>
+    <link href="https://readmengk90.github.io/2024/02/19/java%E5%9F%BA%E7%A1%80-static/"/>
+    <id>https://readmengk90.github.io/2024/02/19/java%E5%9F%BA%E7%A1%80-static/</id>
+    <published>2024-02-19T07:50:51.004Z</published>
+    <updated>2024-02-19T14:16:30.191Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>static</strong>：表示静态，是Java中的一个修饰符，可以修饰成员方法，成员变量。</p><p>学生对象共享同一个老师</p><p>public static String treachName;</p><p>类名调用，对象调用均可</p><table><thead><tr><th>被static修饰的成员变量，叫做静态变量</th><th>被static修饰的成员方法，叫做静态方法</th></tr></thead><tbody><tr><td>特点：被这个类所有对象共享<br>调用方式:<br>               类名调用(推荐)<br>               对象名调用<br>静态变量是随着类的加载而加载的，优先于对象出现的<br><img src="/../images/java%E5%9F%BA%E7%A1%80-static/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240219162328.png"></td><td>特点：多用在测试类和工具类，javabean类中很少会用。<br>调用方式:<br/>               类名调用(推荐)<br/>               对象名调用<br/><strong>工具类</strong>：帮助我们做一些事情，但是不描述任何事物的类<br>1.类名见名知意<br>2.私有化构造方法<br>3.方法都定义为静态的<br><strong>javabean类</strong>：用来描述一类事物的类。比如student，teacher.<br><strong>测试类</strong>：用来坚持其他类是否书写正确，带有main方法的类，是程序的入口</td></tr></tbody></table><p>那些属性可以被定义为静态—-具有共享性质的</p><p><strong>static的注意事项</strong></p><p>1.静态方法<strong>只能</strong>访问静态变量和静态方法(和this有关)</p><p>2.非静态方法<strong>可以</strong>访问静态变量或静态方法，<strong>也可以</strong>访问非静态的成员变量和非静态的成员方法(<strong>和调用方式有关</strong>)</p><p>3.静态方法中<strong>没有</strong>this关键字</p><p><strong>this:表示当前方法调用者的地址值，这个this是由虚拟机赋值的</strong>，<strong>方法内调用成员变量的时候就可以区分不太的对象</strong></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">show1</span><span class="params">(Student <span class="built_in">this</span>)</span>&#123; <span class="comment">//Student this在非静态方法中是隐藏的</span></span><br><span class="line">System.out.println(name+<span class="string">&quot;,&quot;</span>+age+<span class="string">&quot;,&quot;</span>+teachernaem)<span class="comment">//this.name  this.age  this.teachername</span></span><br><span class="line">    <span class="comment">//调用其他方法</span></span><br><span class="line">    show2<span class="comment">//this.show2();</span></span><br><span class="line">&#125;</span><br><span class="line">s1.show1/s2.show2</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>为什么非静态方法设计没有this?</p><p>​和某一个对象没有关系，共享思想。</p><p>静态(变量&#x2F;方法)随着类的加载而加载，非静态(变量&#x2F;方法)跟对象有关。</p><p>1.静态方法<strong>只能</strong>访问静态变量和静态方法(和this有关)</p><p><img src="/../images/java%E5%9F%BA%E7%A1%80-static/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240219220725.png"></p><p><img src="/../images/java%E5%9F%BA%E7%A1%80-static/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240219221017.png"></p><p>2.非静态方法<strong>可以</strong>访问静态变量或静态方法，<strong>也可以</strong>访问非静态的成员变量和非静态的成员方法(<strong>和调用方式有关</strong>)</p><p><img src="/../images/java%E5%9F%BA%E7%A1%80-static/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240219221500.png"></p>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;静态变量&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="Java基础" scheme="https://readmengk90.github.io/categories/Java%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="java" scheme="https://readmengk90.github.io/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>登录错误时的次数限制</title>
@@ -412,27 +433,6 @@
     
     
     <category term="算法思想" scheme="https://readmengk90.github.io/tags/%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>方法的相关介绍</title>
-    <link href="https://readmengk90.github.io/2024/01/21/java%E5%9F%BA%E7%A1%80-%E6%96%B9%E6%B3%95%E7%9A%84%E7%9B%B8%E5%85%B3%E4%BB%8B%E7%BB%8D/"/>
-    <id>https://readmengk90.github.io/2024/01/21/java%E5%9F%BA%E7%A1%80-%E6%96%B9%E6%B3%95%E7%9A%84%E7%9B%B8%E5%85%B3%E4%BB%8B%E7%BB%8D/</id>
-    <published>2024-01-21T07:34:11.425Z</published>
-    <updated>2024-01-22T12:25:31.762Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h1><ol><li><p>什么是方法</p><p>方法：程序中最小的执行单元。</p><p>场景：重复的代码，具有 独立功能的代码可以抽取到方法中。</p><p>作用：提高代码的复用性&amp;提高代码的可维护性。</p></li><li><p>方法的格式</p><p>方法不调用就执行；</p><p>方法间是平级关系，不能互相嵌套定义；</p><p>方法的编写顺序和执行顺序无关(与调用顺序有关)；</p><p>方法的返回值类型是void，表示该方法没有返回值，如果要编写return，后面不能跟具体的数据。</p><p>return语句的下面，不能编写代码，因为永远执行不到，属于无效代码。</p><p>​方法没有返回值：可以省略不写，如果书写，表示结束方法。</p><p>​方法有返回值：必须要写，表示结束方法<strong>和</strong>返回结果。</p><p>方法的定义：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1.最简单的方法定义和调用格式</span></span><br><span class="line"><span class="comment">//定义</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> 方法名()&#123;</span><br><span class="line">    方法体(就是打包起来的代码)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//掉头</span></span><br><span class="line">方法名();</span><br><span class="line"><span class="comment">//2带参的方法定义和调用格式</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> 方法名(参数<span class="number">1</span>,参数<span class="number">2</span>,.....)&#123;</span><br><span class="line">    方法体</span><br><span class="line">&#125;</span><br><span class="line">方法名(实参)</span><br><span class="line"><span class="comment">//方法调用时，参数的数量与类型必须与方法定义中小括号里面的变量一一对应，否则程序会报错</span></span><br><span class="line"><span class="comment">//3.带返回值方法的定义和调用</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> 返回值类型 方法名(参数)&#123;</span><br><span class="line">    方法体;</span><br><span class="line">    <span class="keyword">return</span> 返回值;</span><br><span class="line">&#125;</span><br><span class="line">调用：</span><br><span class="line">    直接调用：方法名(实参);</span><br><span class="line">    赋值调用：整数类型 变量名 = 方法名(实参);</span><br><span class="line">    输出调用：System.out.println(方法名(实参));</span><br></pre></td></tr></table></figure></li><li><p>方法的重载</p><p>概念：在<strong>同一个类</strong>中，定义了多个<strong>同名的方法</strong>，这些同名的方法具有<strong>同种的功能</strong>，每一个方法具有<strong>不同的参数类型</strong>或<strong>参数个数</strong>(个数，类型，顺序)，这些同名的方法，就构成了重载关系，与返回值无关。</p></li><li><p>方法的内存</p><p>方法被调用之后就会进栈执行</p><p><strong>基本数据类型&amp;引用数据类型</strong>：</p><p>​基本数据类型变量中存储的是真实的数据。（数据值是存储在自己的空间中）</p><p>​只要是new出来的都是引用数据类型(数组)  （数据值存储在其他空间，自己空间存储的是地址值）</p><p><img src="/../images/Screenshot_20240122_195710.jpg"></p></li></ol><p>​<strong>方法传递基本数据类型的内存原理</strong></p><p>​传递基本数据类型(4类8种)时，传递的是真实的数据，形参的改变，不影响实际参数的值。</p><p>​传递引用数据类型(int[] arr)时，传递的是地址值，形参的改变 ，影响的是地址的值。</p>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;什么是方法&amp;格式&amp;重载&amp;内存&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="Java基础" scheme="https://readmengk90.github.io/categories/Java%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="java" scheme="https://readmengk90.github.io/tags/java/"/>
     
   </entry>
   

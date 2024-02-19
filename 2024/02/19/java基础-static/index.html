@@ -20,19 +20,25 @@
     var CONFIG = {"hostname":"readmengk90.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":{"home":"/","about":"/about","tags":"/tags"}},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="hello world">
+  <meta name="description" content="静态变量">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://readmengk90.github.io/2024/01/08/hello-world/index.html">
+<meta property="og:title" content="面向对象进阶-static静态变量">
+<meta property="og:url" content="https://readmengk90.github.io/2024/02/19/java%E5%9F%BA%E7%A1%80-static/index.html">
 <meta property="og:site_name" content="东瓶西镜">
-<meta property="og:description" content="hello world">
+<meta property="og:description" content="静态变量">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-01-08T01:52:23.885Z">
-<meta property="article:modified_time" content="2024-01-11T11:33:14.645Z">
+<meta property="og:image" content="https://readmengk90.github.io/images/java%E5%9F%BA%E7%A1%80-static/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240219162328.png">
+<meta property="og:image" content="https://readmengk90.github.io/images/java%E5%9F%BA%E7%A1%80-static/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240219220725.png">
+<meta property="og:image" content="https://readmengk90.github.io/images/java%E5%9F%BA%E7%A1%80-static/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240219221017.png">
+<meta property="og:image" content="https://readmengk90.github.io/images/java%E5%9F%BA%E7%A1%80-static/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240219221500.png">
+<meta property="article:published_time" content="2024-02-19T07:50:51.004Z">
+<meta property="article:modified_time" content="2024-02-19T14:16:30.191Z">
 <meta property="article:author" content="Amber">
+<meta property="article:tag" content="java">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://readmengk90.github.io/images/java%E5%9F%BA%E7%A1%80-static/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240219162328.png">
 
-<link rel="canonical" href="https://readmengk90.github.io/2024/01/08/hello-world/">
+<link rel="canonical" href="https://readmengk90.github.io/2024/02/19/java%E5%9F%BA%E7%A1%80-static/">
 
 
 <script id="page-configurations">
@@ -45,7 +51,7 @@
   };
 </script>
 
-  <title>Hello World | 东瓶西镜</title>
+  <title>面向对象进阶-static静态变量 | 东瓶西镜</title>
   
 
 
@@ -203,7 +209,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://readmengk90.github.io/2024/01/08/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://readmengk90.github.io/2024/02/19/java%E5%9F%BA%E7%A1%80-static/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -216,7 +222,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hello World
+          面向对象进阶-static静态变量
         </h1>
 
         <div class="post-meta">
@@ -225,16 +231,19 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2024-01-08 09:52:23" itemprop="dateCreated datePublished" datetime="2024-01-08T09:52:23+08:00">2024-01-08</time>
+              <time title="创建时间：2024-02-19 15:50:51 / 修改时间：22:16:30" itemprop="dateCreated datePublished" datetime="2024-02-19T15:50:51+08:00">2024-02-19</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2024-01-11 19:33:14" itemprop="dateModified" datetime="2024-01-11T19:33:14+08:00">2024-01-11</time>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
               </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java%E5%9F%BA%E7%A1%80/" itemprop="url" rel="index"><span itemprop="name">Java基础</span></a>
+                </span>
+            </span>
 
           
             <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
@@ -249,16 +258,16 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>382</span>
+              <span>923</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
+              <span>2 分钟</span>
             </span>
-            <div class="post-description"><center>hello world</center></div>
+            <div class="post-description"><center>静态变量</center></div>
 
         </div>
       </header>
@@ -269,19 +278,38 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.<br>&lt; !–more–&gt;</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+        <p><strong>static</strong>：表示静态，是Java中的一个修饰符，可以修饰成员方法，成员变量。</p>
+<p>学生对象共享同一个老师</p>
+<p>public static String treachName;</p>
+<p>类名调用，对象调用均可</p>
+<table>
+<thead>
+<tr>
+<th>被static修饰的成员变量，叫做静态变量</th>
+<th>被static修饰的成员方法，叫做静态方法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>特点：被这个类所有对象共享<br>调用方式:<br>               类名调用(推荐)<br>               对象名调用<br>静态变量是随着类的加载而加载的，优先于对象出现的<br><img src="/../images/java%E5%9F%BA%E7%A1%80-static/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240219162328.png"></td>
+<td>特点：多用在测试类和工具类，javabean类中很少会用。<br>调用方式:<br/>               类名调用(推荐)<br/>               对象名调用<br/><strong>工具类</strong>：帮助我们做一些事情，但是不描述任何事物的类<br>1.类名见名知意<br>2.私有化构造方法<br>3.方法都定义为静态的<br><strong>javabean类</strong>：用来描述一类事物的类。比如student，teacher.<br><strong>测试类</strong>：用来坚持其他类是否书写正确，带有main方法的类，是程序的入口</td>
+</tr>
+</tbody></table>
+<p>那些属性可以被定义为静态—-具有共享性质的</p>
+<p><strong>static的注意事项</strong></p>
+<p>1.静态方法<strong>只能</strong>访问静态变量和静态方法(和this有关)</p>
+<p>2.非静态方法<strong>可以</strong>访问静态变量或静态方法，<strong>也可以</strong>访问非静态的成员变量和非静态的成员方法(<strong>和调用方式有关</strong>)</p>
+<p>3.静态方法中<strong>没有</strong>this关键字</p>
+<p><strong>this:表示当前方法调用者的地址值，这个this是由虚拟机赋值的</strong>，<strong>方法内调用成员变量的时候就可以区分不太的对象</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">show1</span><span class="params">(Student <span class="built_in">this</span>)</span>&#123; <span class="comment">//Student this在非静态方法中是隐藏的</span></span><br><span class="line">	System.out.println(name+<span class="string">&quot;,&quot;</span>+age+<span class="string">&quot;,&quot;</span>+teachernaem)<span class="comment">//this.name  this.age  this.teachername</span></span><br><span class="line">    <span class="comment">//调用其他方法</span></span><br><span class="line">    show2<span class="comment">//this.show2();</span></span><br><span class="line">&#125;</span><br><span class="line">s1.show1/s2.show2</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>为什么非静态方法设计没有this?</p>
+<p>​	和某一个对象没有关系，共享思想。</p>
+<p>静态(变量&#x2F;方法)随着类的加载而加载，非静态(变量&#x2F;方法)跟对象有关。</p>
+<p>1.静态方法<strong>只能</strong>访问静态变量和静态方法(和this有关)</p>
+<p><img src="/../images/java%E5%9F%BA%E7%A1%80-static/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240219220725.png"></p>
+<p><img src="/../images/java%E5%9F%BA%E7%A1%80-static/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240219221017.png"></p>
+<p>2.非静态方法<strong>可以</strong>访问静态变量或静态方法，<strong>也可以</strong>访问非静态的成员变量和非静态的成员方法(<strong>和调用方式有关</strong>)</p>
+<p><img src="/../images/java%E5%9F%BA%E7%A1%80-static/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240219221500.png"></p>
 
     </div>
 
@@ -317,7 +345,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://readmengk90.github.io/2024/01/08/hello-world/" title="Hello World">https://readmengk90.github.io/2024/01/08/hello-world/</a>
+    <a href="https://readmengk90.github.io/2024/02/19/java%E5%9F%BA%E7%A1%80-static/" title="面向对象进阶-static静态变量">https://readmengk90.github.io/2024/02/19/java基础-static/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -327,17 +355,20 @@
 
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/java/" rel="tag"># java</a>
+          </div>
 
         
 
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/2024/01/08/first-blog/" rel="next" title="好好学习  天天向上">
-      好好学习  天天向上 <i class="fa fa-chevron-right"></i>
+    <a href="/2024/02/19/%E7%99%BB%E5%BD%95%E5%A4%B1%E8%AF%AF%E6%97%B6%E6%AC%A1%E6%95%B0%E7%9A%84%E9%99%90%E5%88%B6/" rel="prev" title="登录错误时的次数限制">
+      <i class="fa fa-chevron-left"></i> 登录错误时的次数限制
     </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -396,7 +427,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
