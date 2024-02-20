@@ -6,7 +6,7 @@
   <link href="https://readmengk90.github.io/atom.xml" rel="self"/>
   
   <link href="https://readmengk90.github.io/"/>
-  <updated>2024-02-19T14:34:14.036Z</updated>
+  <updated>2024-02-20T13:50:13.877Z</updated>
   <id>https://readmengk90.github.io/</id>
   
   <author>
@@ -17,16 +17,16 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>面向对象进阶main()方法的进一步理解</title>
-    <link href="https://readmengk90.github.io/2024/02/19/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6main()%E6%96%B9%E6%B3%95%E7%9A%84%E8%BF%9B%E4%B8%80%E6%AD%A5%E7%90%86%E8%A7%A3/"/>
-    <id>https://readmengk90.github.io/2024/02/19/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6main()%E6%96%B9%E6%B3%95%E7%9A%84%E8%BF%9B%E4%B8%80%E6%AD%A5%E7%90%86%E8%A7%A3/</id>
-    <published>2024-02-19T14:34:13.952Z</published>
-    <updated>2024-02-19T14:34:14.036Z</updated>
+    <title>面向对象进阶-继承</title>
+    <link href="https://readmengk90.github.io/2024/02/20/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E7%BB%A7%E6%89%BF/"/>
+    <id>https://readmengk90.github.io/2024/02/20/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E7%BB%A7%E6%89%BF/</id>
+    <published>2024-02-20T01:37:51.641Z</published>
+    <updated>2024-02-20T13:50:13.877Z</updated>
     
-    <content type="html"><![CDATA[<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">public:被JVM(虚拟机)调用，访问权限足够大</span></span><br><span class="line"><span class="comment">static:被JVM调用，不用创建对象，直接类名访问，因为main()方法是静态的，所以测试类中其他方法也需要是静态的</span></span><br><span class="line"><span class="comment">void:被JVM调用，不需要给JVM返回值</span></span><br><span class="line"><span class="comment">main:一个通用的名称，虽然不是关键字，但是被JVM识别</span></span><br><span class="line"><span class="comment">String[] args:以前用于接收键盘录入数据的，现在没用。</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<p>封装：对象代表什么，就得封装对应的数据，并提供数据对应的行为。</p><p><strong>继承</strong>：Java中提供一个关键字extends，用这个关键字，我们可以让一个类和另一个类建立起继承关系。</p><p>public class Student extends Person(){}</p><p>Student称为子类,Person称为父类</p><p>1.<strong>优点</strong>：</p><p>可以把多个子类中重复的代码抽取到父类中，提高代码的复用性</p><p>子类可以在父类的基础上，增加其他的功能，使子类更强大。</p><p>子类可以得到父类的属性和行为，子类可以使用。</p><p><strong>什么时候用到继承？</strong>：当类与类之间，存在相同(共性)的内容，并满足子类是父类中的一种(学生是人的一种)，就可以考虑使用继承来优化代码。</p><p>2.<strong>方式</strong>：</p><p>1.自己设计</p><p>2.用别人的</p><p>3.<strong>特点</strong>：</p><p>​Java只<strong>支持</strong>单继承：</p><p>​<strong>不支持</strong>多继承：</p><p>​<strong>支持</strong>多层继承：子类A继承父类B,父类B可以继承父类C(直接父类(BA,CB)，间接父类(CA))</p><p>​<strong>每一个类都直接或间接的继承于Object</strong>(祖宗类)</p><p>4.<strong>子类到底能继承父类中的那些内容?:</strong>(继承和调用不一样)</p><table><thead><tr><th align="center">内容</th><th align="center"></th><th align="center"></th></tr></thead><tbody><tr><td align="center">构造方法</td><td align="center">非私有(NO)</td><td align="center">private(NO)</td></tr><tr><td align="center">成员变量</td><td align="center">非私有(YES)</td><td align="center">private(YES)   get&#x2F;set方法去使用</td></tr><tr><td align="center">成员方法</td><td align="center">非私有(YES)&#x2F;&#x2F;虚方法表</td><td align="center">private（NO）</td></tr></tbody></table><p>违背了构造方法的规则：构造方法名与类名必须相同。</p><p>只有父类中的<strong>虚方法</strong>(*非private,非static,非final)*才能被子类继承，生成虚方法表传给子类</p><p><strong>5.内存分析工具的使用：</strong></p><p>控制台输入jps:类的地址</p><p>内存分析工具：控制台输入 jhsdb hsdb</p><p><strong>6.继承中的特点</strong></p><p>继承中:成员变量的访问特点</p><p>​<strong>就近原则：谁离我近，我就用谁</strong>，先在局部位置找，然后本类位置找，父类成员位置找，逐级往上。</p><p>​如果重名了怎么访问?:</p><p>​从局部位置开始往上找，name</p><p>​从本类成员位置开始往上找, this.name</p><p>​从父类成员位置开始往上找, super.name</p><p>继承中:成员方法的访问特点</p><p>​直接调用：谁离我近，我就用谁</p><p>​先查看本类中是否有对应方法，有，就会调用子类的，如果没有，就会调用从父类中继承下来的对应方法</p><p>​super调用: 直接访问父类</p><p>​不会查看本类，直接查看父类中是否中是否有对应的方法</p><p>继承中:构造方法的特点</p><p>​ 父类中的构造方法不会 被子类继承。（构造方法名与类名不一致了）</p><p>​子类中所有的构造方法默认先访问父类中的无参构造，在执行自己的</p><p>​<strong>原因：</strong></p><p>​子类在初始化的时候，又可能会使用到父类中的数据，如果父类没有完成初始化，子类将无法使用父类的数据。</p><p>​子类在初始化之前，一点要调用父类构造方法先完成父类数据空间的初始化</p><p>​<strong>调用父类方法</strong>：</p><p>​子类构造方法的第一行语句默认都是：super(),不写也存在，且必须在第一行</p><p>​如果想调用父类的有参构造，必须手动写super进行调用</p><p><strong><em>方法</em>的重写</strong>：当父类的方法不能满足子类现在的需求时，需要进行方法重写</p><p>​书写格式：在继承体系中，子类出现了和父类中一模一样的方法声明，我们就称子类这个方法是重写的方法。</p><p>​@Override重写注解–给虚拟机和程序员看的</p><p>​1.@Override是放在重写后的方法上，校验子类重写时语法是否正确</p><p>​2.加上注解后如果有红色波浪线，表示语法错误。</p><p>​3.建议重写方法都加@Override注解，代码安全，优雅</p><p>​要求：</p><p>​1.重写方法的名称，形参列表必须与父类中的一致。</p><p>​2.子类重写父类方法时，访问权限<strong>子类</strong>必须大于等于父类(空着不写&lt;protected&lt;public)。</p><p>​3.子类重写父类方法时，返回值类型必须小于等于父类。</p><p>​<strong>4.建立：重写的方法尽量和父类保持一致。</strong></p><p>​<strong>5.只有被添加到虚方法表中的方法才能被重写。</strong></p><p><strong>7.this,super使用总结</strong></p><p>​this:本类,理解为一个变量，表示当前方法调用在的地址值。</p><p>​super:代表父类存储空间</p><table><thead><tr><th align="center">关键字</th><th align="center">访问成员变量</th><th align="center">访问成员方法</th><th align="center">访问构造方法</th></tr></thead><tbody><tr><td align="center">this</td><td align="center">this.成员变量<br>访问本类的成员变量</td><td align="center">this.成员方法(…..)<br/>访问本类成员方法</td><td align="center">this(…..)<br/>访问本类构造方法</td></tr><tr><td align="center">super</td><td align="center">super.成员变量<br/>访问父类成员变量</td><td align="center">super.成员方法(…..)<br/>访问父类的成员方法</td><td align="center">super(…….)<br/>访问父类构造方法</td></tr></tbody></table>]]></content>
     
     
-    <summary type="html">&lt;center&gt;静态变量&lt;/center&gt;</summary>
+    <summary type="html">&lt;center&gt;继承&lt;/center&gt;</summary>
     
     
     
@@ -38,11 +38,13 @@
   </entry>
   
   <entry>
-    <title>面向对象进阶-main方法的详解</title>
-    <link href="https://readmengk90.github.io/2024/02/19/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-main%E6%96%B9%E6%B3%95%E7%9A%84%E8%AF%A6%E8%A7%A3/"/>
-    <id>https://readmengk90.github.io/2024/02/19/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-main%E6%96%B9%E6%B3%95%E7%9A%84%E8%AF%A6%E8%A7%A3/</id>
-    <published>2024-02-19T14:22:46.052Z</published>
-    <updated>2024-02-19T14:24:46.389Z</updated>
+    <title>面向对象进阶main()方法的进一步理解</title>
+    <link href="https://readmengk90.github.io/2024/02/19/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6main()%E6%96%B9%E6%B3%95%E7%9A%84%E8%BF%9B%E4%B8%80%E6%AD%A5%E7%90%86%E8%A7%A3/"/>
+    <id>https://readmengk90.github.io/2024/02/19/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6main()%E6%96%B9%E6%B3%95%E7%9A%84%E8%BF%9B%E4%B8%80%E6%AD%A5%E7%90%86%E8%A7%A3/</id>
+    <published>2024-02-19T14:34:13.952Z</published>
+    <updated>2024-02-19T14:34:14.036Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">public:被JVM(虚拟机)调用，访问权限足够大</span></span><br><span class="line"><span class="comment">static:被JVM调用，不用创建对象，直接类名访问，因为main()方法是静态的，所以测试类中其他方法也需要是静态的</span></span><br><span class="line"><span class="comment">void:被JVM调用，不需要给JVM返回值</span></span><br><span class="line"><span class="comment">main:一个通用的名称，虽然不是关键字，但是被JVM识别</span></span><br><span class="line"><span class="comment">String[] args:以前用于接收键盘录入数据的，现在没用。</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>]]></content>
     
     
     <summary type="html">&lt;center&gt;静态变量&lt;/center&gt;</summary>
