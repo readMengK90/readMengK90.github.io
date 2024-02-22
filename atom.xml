@@ -6,7 +6,7 @@
   <link href="https://readmengk90.github.io/atom.xml" rel="self"/>
   
   <link href="https://readmengk90.github.io/"/>
-  <updated>2024-02-20T13:50:13.877Z</updated>
+  <updated>2024-02-21T14:01:40.628Z</updated>
   <id>https://readmengk90.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>面向对象进阶-多态</title>
+    <link href="https://readmengk90.github.io/2024/02/21/java%E7%BB%A7%E6%89%BF-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E5%A4%9A%E6%80%81/"/>
+    <id>https://readmengk90.github.io/2024/02/21/java%E7%BB%A7%E6%89%BF-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E5%A4%9A%E6%80%81/</id>
+    <published>2024-02-21T13:09:43.581Z</published>
+    <updated>2024-02-21T14:01:40.628Z</updated>
+    
+    <content type="html"><![CDATA[<p>多态：多种形态，即，同种类型的对象，表现出得不太形态</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Student</span> <span class="variable">s</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Student</span>();</span><br><span class="line"><span class="type">Person</span> <span class="variable">p</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Student</span>();</span><br></pre></td></tr></table></figure><p>应用场景：多种权限的用户注册时。</p><p>表现形式：父类类型  对象名称 &#x3D; 子类对象；</p><p>多态的前提：1.有继承关系；</p><p>​        2.有父类引用指向子类对象（Fu f &#x3D; new Zi();）</p><p>​3.有方法重写；</p><p>多态的好处：使用父类型作为参数，可以接收所有子类对象，体现多态的扩展性与便利。</p>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;多态&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="Java基础" scheme="https://readmengk90.github.io/categories/Java%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="java" scheme="https://readmengk90.github.io/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>面向对象进阶-继承</title>
@@ -412,27 +433,6 @@
     
     
     <category term="算法思想" scheme="https://readmengk90.github.io/tags/%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>快捷键的妙用</title>
-    <link href="https://readmengk90.github.io/2024/01/22/Idea%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9A%84%E5%A6%99%E7%94%A8/"/>
-    <id>https://readmengk90.github.io/2024/01/22/Idea%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9A%84%E5%A6%99%E7%94%A8/</id>
-    <published>2024-01-22T15:51:38.388Z</published>
-    <updated>2024-02-18T11:44:47.985Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Idea快捷键的妙用"><a href="#Idea快捷键的妙用" class="headerlink" title="Idea快捷键的妙用"></a>Idea快捷键的妙用</h1><p>Ctrl+alt+M:自动抽取方法 </p><p>​编写程序时发现有重复代码，可以使用快捷键自动抽取方法，提高效率。</p><p>Ctrl+alt+L:代码格式化</p><p>​编写完成一段代码后养成格式化的习惯。</p><p>Ctrl+alt+v:自动补全代码快捷键</p><p>CTRL+&#x2F;：单行注释</p><p>CTRL+ALT+&#x2F;:多行注释</p><p>选择变量+shift+F6:变量的批量修改</p><p>Ctrl + Alt + T： 对选中的代码弹出环绕选项弹出层(while,if….)</p><p>Alt+Insert:选择get和set方法</p><p>Ctrl+B:点击方法，跟进原码,选中要进入的方法，使用快捷键直接进入</p><p>Insert:书写代码是错误碰到insert键，会出现闪速黑色正方形块，影响书写。再次点击insert键可恢复</p><p>Ctrll+N:搜索类快捷键</p><p>alt+回车(enter):选中变量，alt+回车，左右进行切割</p><p>代码 上 &#x2F;下移 ：Shift+Alt +方向上键&#x2F;下键</p><p>alt+回车：点击方法，直接可以创建方法</p>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;Idea快捷键的妙用&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="快捷方式" scheme="https://readmengk90.github.io/categories/%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/"/>
-    
-    
-    <category term="快捷方式" scheme="https://readmengk90.github.io/tags/%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/"/>
     
   </entry>
   
