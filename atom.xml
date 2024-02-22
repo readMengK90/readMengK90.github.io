@@ -6,7 +6,7 @@
   <link href="https://readmengk90.github.io/atom.xml" rel="self"/>
   
   <link href="https://readmengk90.github.io/"/>
-  <updated>2024-02-22T02:16:30.528Z</updated>
+  <updated>2024-02-22T15:45:34.907Z</updated>
   <id>https://readmengk90.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>面向对象进阶-包-final-权限修饰符-代码块</title>
+    <link href="https://readmengk90.github.io/2024/02/22/java%E7%BB%A7%E6%89%BF-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E5%8C%85-final-%E6%9D%83%E9%99%90%E4%BF%AE%E9%A5%B0%E7%AC%A6-%E4%BB%A3%E7%A0%81%E5%9D%97/"/>
+    <id>https://readmengk90.github.io/2024/02/22/java%E7%BB%A7%E6%89%BF-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E5%8C%85-final-%E6%9D%83%E9%99%90%E4%BF%AE%E9%A5%B0%E7%AC%A6-%E4%BB%A3%E7%A0%81%E5%9D%97/</id>
+    <published>2024-02-22T15:11:50.663Z</published>
+    <updated>2024-02-22T15:45:34.907Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>包：</strong></p><p>定义：包就是文件夹，用来管理各种不同功能的Java类，方便后期代码维护</p><p>规则：公司域名反写+包的作用名，需要全部英文小写，见名知意，com.itheima.domain</p><p>使用其他类的规则：</p><p>​1.使用同一个包中的类时，不需要导包</p><p>​2.使用java.lang包中的类时，不需要导包 </p><p>​3.其他情况都需要导包</p><p>​4.如果同时使用两个包中的同类名，需要用全类名 </p><p><strong>final:</strong></p><table><thead><tr><th>final修饰</th><th></th></tr></thead><tbody><tr><td>方法</td><td>表明该方法是最终方法，不能被重写</td></tr><tr><td>类</td><td>表明该类是最终类，不能被继承</td></tr><tr><td>变量</td><td>叫做常量，只能被赋值一次</td></tr></tbody></table><p>常量：在实际开发中，常量一般作为系统的配置信息，方便维护，提高可读性</p><p>常量的命名规则：</p><p>​单个单词：全部大写</p><p>​多个单词：全部大写，单词之间用下划线隔开</p><p>细节：</p><p>final修饰的变量是基本类型：那么变量存储的数据值不能发生改变</p><p>final修饰的变量是引用类型：那么变量存储的地址值不能发生改变，对象内部的可以改变。</p>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;包-final-权限修饰符-代码块&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="Java基础" scheme="https://readmengk90.github.io/categories/Java%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="java" scheme="https://readmengk90.github.io/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>面向对象进阶-多态</title>
@@ -405,27 +426,6 @@
     
     
     <summary type="html">&lt;center&gt;规定范围内录入数据，当超出范围后，仍能输出&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="经典算法思想" scheme="https://readmengk90.github.io/categories/%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3/"/>
-    
-    
-    <category term="算法思想" scheme="https://readmengk90.github.io/tags/%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>大小写字母放进数组</title>
-    <link href="https://readmengk90.github.io/2024/01/23/%E5%A4%A7%E5%B0%8F%E5%86%99%E5%AD%97%E6%AF%8D%E6%94%BE%E8%BF%9B%E6%95%B0%E7%BB%84/"/>
-    <id>https://readmengk90.github.io/2024/01/23/%E5%A4%A7%E5%B0%8F%E5%86%99%E5%AD%97%E6%AF%8D%E6%94%BE%E8%BF%9B%E6%95%B0%E7%BB%84/</id>
-    <published>2024-01-23T07:29:16.866Z</published>
-    <updated>2024-01-25T12:16:19.819Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="大小写字母都放进数组内"><a href="#大小写字母都放进数组内" class="headerlink" title="大小写字母都放进数组内"></a>大小写字母都放进数组内</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">char</span>[] array = <span class="keyword">new</span> <span class="title class_">char</span>[<span class="number">52</span>];<span class="comment">//26+26=52</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; array.length; i++) &#123;</span><br><span class="line">            <span class="type">int</span> <span class="variable">number3</span> <span class="operator">=</span> r.nextInt(<span class="number">9</span>);</span><br><span class="line">            <span class="keyword">if</span> (i &lt; array.length / <span class="number">2</span>) &#123;</span><br><span class="line">                array[i] = (<span class="type">char</span>) (<span class="number">97</span> + i);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                array[i] = (<span class="type">char</span>) (<span class="number">65</span> + j);</span><br><span class="line">                j++;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;大小写字母都放进数组&lt;/center&gt;</summary>
     
     
     
