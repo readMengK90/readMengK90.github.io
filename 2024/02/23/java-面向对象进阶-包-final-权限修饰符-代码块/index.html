@@ -20,20 +20,20 @@
     var CONFIG = {"hostname":"readmengk90.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":{"home":"/","about":"/about","tags":"/tags"}},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="JAVA语法的类型特点">
+  <meta name="description" content="包-final-权限修饰符-代码块">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JAVA的基础语法">
-<meta property="og:url" content="https://readmengk90.github.io/2024/01/12/java%E5%9F%BA%E7%A1%80-JAVA%E7%9A%84%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/index.html">
+<meta property="og:title" content="面向对象进阶-包-final-权限修饰符-代码块">
+<meta property="og:url" content="https://readmengk90.github.io/2024/02/23/java-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E5%8C%85-final-%E6%9D%83%E9%99%90%E4%BF%AE%E9%A5%B0%E7%AC%A6-%E4%BB%A3%E7%A0%81%E5%9D%97/index.html">
 <meta property="og:site_name" content="东瓶西镜">
-<meta property="og:description" content="JAVA语法的类型特点">
+<meta property="og:description" content="包-final-权限修饰符-代码块">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-01-12T11:15:26.395Z">
-<meta property="article:modified_time" content="2024-01-18T13:47:45.206Z">
+<meta property="article:published_time" content="2024-02-23T00:55:45.618Z">
+<meta property="article:modified_time" content="2024-02-23T00:55:45.673Z">
 <meta property="article:author" content="Amber">
 <meta property="article:tag" content="java">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://readmengk90.github.io/2024/01/12/java%E5%9F%BA%E7%A1%80-JAVA%E7%9A%84%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/">
+<link rel="canonical" href="https://readmengk90.github.io/2024/02/23/java-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E5%8C%85-final-%E6%9D%83%E9%99%90%E4%BF%AE%E9%A5%B0%E7%AC%A6-%E4%BB%A3%E7%A0%81%E5%9D%97/">
 
 
 <script id="page-configurations">
@@ -46,7 +46,7 @@
   };
 </script>
 
-  <title>JAVA的基础语法 | 东瓶西镜</title>
+  <title>面向对象进阶-包-final-权限修饰符-代码块 | 东瓶西镜</title>
   
 
 
@@ -204,7 +204,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://readmengk90.github.io/2024/01/12/java%E5%9F%BA%E7%A1%80-JAVA%E7%9A%84%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/">
+    <link itemprop="mainEntityOfPage" href="https://readmengk90.github.io/2024/02/23/java-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E5%8C%85-final-%E6%9D%83%E9%99%90%E4%BF%AE%E9%A5%B0%E7%AC%A6-%E4%BB%A3%E7%A0%81%E5%9D%97/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -217,7 +217,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          JAVA的基础语法
+          面向对象进阶-包-final-权限修饰符-代码块
         </h1>
 
         <div class="post-meta">
@@ -227,15 +227,8 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2024-01-12 19:15:26" itemprop="dateCreated datePublished" datetime="2024-01-12T19:15:26+08:00">2024-01-12</time>
+              <time title="创建时间：2024-02-23 08:55:45" itemprop="dateCreated datePublished" datetime="2024-02-23T08:55:45+08:00">2024-02-23</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2024-01-18 21:47:45" itemprop="dateModified" datetime="2024-01-18T21:47:45+08:00">2024-01-18</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -259,16 +252,16 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>599</span>
+              <span>827</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
+              <span>2 分钟</span>
             </span>
-            <div class="post-description"><center>JAVA语法的类型特点</center></div>
+            <div class="post-description"><center>包-final-权限修饰符-代码块</center></div>
 
         </div>
       </header>
@@ -279,77 +272,96 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="JAVA的基础语法"><a href="#JAVA的基础语法" class="headerlink" title="JAVA的基础语法"></a>JAVA的基础语法</h1><ol>
-<li><p>注释</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 注释信息    --单行注释</span></span><br><span class="line"><span class="comment">/*注释信息*/</span>   --多行注释</span><br><span class="line"><span class="comment">/**注释信息**/</span> --文档注释</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>关键字</p>
-<p>关键字的字母全部<strong>小写</strong>，常用的代码编辑器，针对关键字<strong>有特殊的颜色标记</strong>，非常直观。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;  <span class="comment">//class:用于创建一个类，类是Java最基本的组成单元</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">		System.out.println(<span class="string">&quot;我爱你中国&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>字面量</p>
-</li>
-</ol>
+        <p><strong>包：</strong></p>
+<p>定义：包就是文件夹，用来管理各种不同功能的Java类，方便后期代码维护</p>
+<p>规则：公司域名反写+包的作用名，需要全部英文小写，见名知意，com.itheima.domain</p>
+<p>使用其他类的规则：</p>
+<p>​	1.使用同一个包中的类时，不需要导包</p>
+<p>​	2.使用java.lang包中的类时，不需要导包 </p>
+<p>​	3.其他情况都需要导包</p>
+<p>​	4.如果同时使用两个包中的同类名，需要用全类名 </p>
+<p><strong>final:</strong></p>
 <table>
 <thead>
 <tr>
-<th align="center">字面量类型</th>
-<th align="center">说明</th>
-<th align="center">举例</th>
+<th>final修饰</th>
+<th></th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">整数类型</td>
-<td align="center">不带小数点的数字</td>
-<td align="center">666，-88</td>
+<td>方法</td>
+<td>表明该方法是最终方法，不能被重写</td>
 </tr>
 <tr>
-<td align="center">小数类型</td>
-<td align="center">带小数点的数字</td>
-<td align="center">13.14，52.1</td>
+<td>类</td>
+<td>表明该类是最终类，不能被继承</td>
 </tr>
 <tr>
-<td align="center">字符串类型</td>
-<td align="center">用双引号括起来的内容</td>
-<td align="center">“Hello”</td>
-</tr>
-<tr>
-<td align="center">字符类型</td>
-<td align="center">用单引号括起来的内容，内容只有一个</td>
-<td align="center">‘A’,’0’,’我‘</td>
-</tr>
-<tr>
-<td align="center">布尔类型</td>
-<td align="center">布尔值，表示真假</td>
-<td align="center">只有两个值：true,false</td>
-</tr>
-<tr>
-<td align="center">空类型</td>
-<td align="center">一个特殊的值，空值（不能直接打印，只能用字符串方式打印）</td>
-<td align="center">null</td>
+<td>变量</td>
+<td>叫做常量，只能被赋值一次</td>
 </tr>
 </tbody></table>
+<p>常量：在实际开发中，常量一般作为系统的配置信息，方便维护，提高可读性</p>
+<p>常量的命名规则：</p>
+<p>​	单个单词：全部大写</p>
+<p>​	多个单词：全部大写，单词之间用下划线隔开</p>
+<p>细节：</p>
+<p>final修饰的变量是基本类型：那么变量存储的数据值不能发生改变</p>
+<p>final修饰的变量是引用类型：那么变量存储的地址值不能发生改变，对象内部的可以改变。</p>
+<p><strong>权限修饰符：</strong></p>
+<p>权限修饰符：是用来控制一个成员能够被访问的范围的。</p>
+<p>可以修饰成员变量，方法，构造方法，内部类。</p>
+<p>分类：有四种作用范围从小到大(private&lt;缺省&lt;protected&lt;public)</p>
 <table>
 <thead>
 <tr>
-<th align="center">特殊字符</th>
-<th align="center">含义</th>
+<th align="center">修饰符</th>
+<th align="center">同一个类</th>
+<th align="center">同一个包中其他类</th>
+<th align="center">不同包下的子类</th>
+<th align="center">不同包下的无关类</th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">‘\t’   (制表符)</td>
-<td align="center">打印时，把前面字符串的长度补齐到8，或者8的整数倍。最少补1个空格，最多补8个空格**(实现表格方式对齐)**，只跟\t前面的字符串有关系</td>
+<td align="center">private</td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
 </tr>
 <tr>
-<td align="center">‘\r’</td>
-<td align="center">在Windows 中表示换行且回到下一行的最开始位置。相当于Mac OS 里的 \r 的效果。<br/>      在Linux、unix 中只表示换行，但不会回到下一行的开始位置。</td>
+<td align="center">空着不写</td>
+<td align="center">√</td>
+<td align="center">√</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">protected</td>
+<td align="center">√</td>
+<td align="center">√</td>
+<td align="center">√</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">public</td>
+<td align="center">√</td>
+<td align="center">√</td>
+<td align="center">√</td>
+<td align="center">√</td>
 </tr>
 </tbody></table>
-<ol start="4">
-<li><p>变量</p>
-<p>数据类型    变量名 &#x3D;  变量值</p>
-</li>
-</ol>
+<p>规则：实际开发中，一般只用private和public</p>
+<p>成员变量私有</p>
+<p>方法公开</p>
+<p>特列：如果方法中的代码是抽取其他方法中共性代码，这个方法一般私有。</p>
+<p><strong>代码块：</strong></p>
+<p>局部代码块：写在方法里面的一对单独的{}，提前结束变量的生命周期。</p>
+<p>构造代码块：写在成员位置的代码块，可以把多个构造方法中重复的代码抽取出来，在创建本类对象的时候会优先于构造方法执行。</p>
+<p><strong>静态代码块</strong>：格式:static{}</p>
+<p>​			特点：需要通过static关键字修饰，随着类的加载而加载，并且自动触发，只执行一次</p>
+<p>​			使用场景：在类加载的时候，做一些数据初始化的时候使用。</p>
+<p>​			应用场景：程序刚开始时进行数据的初始化</p>
 
     </div>
 
@@ -385,7 +397,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://readmengk90.github.io/2024/01/12/java%E5%9F%BA%E7%A1%80-JAVA%E7%9A%84%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" title="JAVA的基础语法">https://readmengk90.github.io/2024/01/12/java基础-JAVA的基础语法/</a>
+    <a href="https://readmengk90.github.io/2024/02/23/java-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E5%8C%85-final-%E6%9D%83%E9%99%90%E4%BF%AE%E9%A5%B0%E7%AC%A6-%E4%BB%A3%E7%A0%81%E5%9D%97/" title="面向对象进阶-包-final-权限修饰符-代码块">https://readmengk90.github.io/2024/02/23/java-面向对象进阶-包-final-权限修饰符-代码块/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -405,13 +417,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2024/01/12/java%E5%9F%BA%E7%A1%80-JAVA%E8%AF%AD%E8%A8%80%E7%9A%84%E7%89%B9%E7%82%B9/" rel="prev" title="JDK&JRE&JVM">
-      <i class="fa fa-chevron-left"></i> JDK&JRE&JVM
+    <a href="/2024/02/22/java%E7%BB%A7%E6%89%BF-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E5%8C%85-final-%E6%9D%83%E9%99%90%E4%BF%AE%E9%A5%B0%E7%AC%A6-%E4%BB%A3%E7%A0%81%E5%9D%97/" rel="prev" title="面向对象进阶-包-final-权限修饰符-代码块">
+      <i class="fa fa-chevron-left"></i> 面向对象进阶-包-final-权限修饰符-代码块
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2024/01/14/java%E5%9F%BA%E7%A1%80-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B&%E6%A0%87%E8%AF%86%E7%AC%A6&%E9%94%AE%E7%9B%98%E5%BD%95%E5%85%A5/" rel="next" title="JAVA的数据类型-标识符-键盘录入">
-      JAVA的数据类型-标识符-键盘录入 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -470,7 +479,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#JAVA%E7%9A%84%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95"><span class="nav-number">1.</span> <span class="nav-text">JAVA的基础语法</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
