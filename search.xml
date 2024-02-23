@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hexo+Next主题下的阅读全文设置</title>
+    <url>/2024/01/10/Hexo-%E6%98%BE%E7%A4%BA%E5%85%A8%E6%96%87%E7%9A%84%E8%AE%BE%E7%BD%AE/</url>
+    <content><![CDATA[<h1 id="Hexo-显示全文的设置"><a href="#Hexo-显示全文的设置" class="headerlink" title="Hexo-显示全文的设置"></a>Hexo-显示全文的设置</h1><h5 id="1-在文章中使用-more-手动进行截断"><a href="#1-在文章中使用-more-手动进行截断" class="headerlink" title="1.在文章中使用&lt; !--more--&gt; 手动进行截断"></a>1.在文章中使用<code>&lt; !--more--&gt;</code> 手动进行截断</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-01.png?raw=true" alt="image-20240110132555493"></p>
+<h5 id="2-添加描述信息的内容，会成为一种相关内容的提示信息"><a href="#2-添加描述信息的内容，会成为一种相关内容的提示信息" class="headerlink" title="2.添加描述信息的内容，会成为一种相关内容的提示信息"></a>2.添加描述信息的内容，会成为一种相关内容的提示信息</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-02.png?raw=true" alt="image-20240110132853566"></p>
+<h5 id="3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部"><a href="#3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部" class="headerlink" title="3.在主题配置文件中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部"></a>3.在<strong>主题配置文件</strong>中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部</h5><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">auto_excerpt:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">length:</span> <span class="number">150</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="4-效果-展示"><a href="#4-效果-展示" class="headerlink" title="4.效果 展示"></a>4.效果 展示</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-03.png?raw=true" alt="image-20240110133302658"></p>
+]]></content>
+      <categories>
+        <category>Next主题配置</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo+Mext设置主页文章添加边框阴影效果</title>
     <url>/2024/01/10/Hexo+Next%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%BB%E9%A1%B5%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E8%BE%B9%E6%A1%86%E9%98%B4%E5%BD%B1%E6%95%88%E6%9E%9C/</url>
     <content><![CDATA[<h1 id="设置主页文章添加边框阴影效果"><a href="#设置主页文章添加边框阴影效果" class="headerlink" title="设置主页文章添加边框阴影效果"></a>设置主页文章添加边框阴影效果</h1><ol>
@@ -51,22 +67,6 @@
       </categories>
       <tags>
         <tag>快捷方式</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo+Next主题下的阅读全文设置</title>
-    <url>/2024/01/10/Hexo-%E6%98%BE%E7%A4%BA%E5%85%A8%E6%96%87%E7%9A%84%E8%AE%BE%E7%BD%AE/</url>
-    <content><![CDATA[<h1 id="Hexo-显示全文的设置"><a href="#Hexo-显示全文的设置" class="headerlink" title="Hexo-显示全文的设置"></a>Hexo-显示全文的设置</h1><h5 id="1-在文章中使用-more-手动进行截断"><a href="#1-在文章中使用-more-手动进行截断" class="headerlink" title="1.在文章中使用&lt; !--more--&gt; 手动进行截断"></a>1.在文章中使用<code>&lt; !--more--&gt;</code> 手动进行截断</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-01.png?raw=true" alt="image-20240110132555493"></p>
-<h5 id="2-添加描述信息的内容，会成为一种相关内容的提示信息"><a href="#2-添加描述信息的内容，会成为一种相关内容的提示信息" class="headerlink" title="2.添加描述信息的内容，会成为一种相关内容的提示信息"></a>2.添加描述信息的内容，会成为一种相关内容的提示信息</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-02.png?raw=true" alt="image-20240110132853566"></p>
-<h5 id="3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部"><a href="#3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部" class="headerlink" title="3.在主题配置文件中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部"></a>3.在<strong>主题配置文件</strong>中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部</h5><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">auto_excerpt:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">length:</span> <span class="number">150</span></span><br></pre></td></tr></table></figure>
-
-<h5 id="4-效果-展示"><a href="#4-效果-展示" class="headerlink" title="4.效果 展示"></a>4.效果 展示</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-03.png?raw=true" alt="image-20240110133302658"></p>
-]]></content>
-      <categories>
-        <category>Next主题配置</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -653,34 +653,6 @@
       </tags>
   </entry>
   <entry>
-    <title>二维数组</title>
-    <url>/2024/01/25/java%E5%9F%BA%E7%A1%80-%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84/</url>
-    <content><![CDATA[<h1 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a>二维数组</h1><p><strong>应用场景</strong>:</p>
-<p>需要把数据分组管理的时候，需要用到二维数组。</p>
-<p><strong>初始化</strong>：</p>
-<p><img src="/../images/%E5%88%9D%E5%A7%8B%E5%8C%96.png"></p>
-<p>二维数组的内存图:</p>
-<p><img src="/../images/%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84.jpg"></p>
-<p>另外两种特殊的初始化:</p>
-<p>（1）一位数组的长度灵活</p>
-<p>​	int[ ] [ ] arr &#x3D; new int [2] [ ];</p>
-<p>​	int[] arr1 &#x3D; {11,22};</p>
-<p>​	int[] arr2 &#x3D; {44,55,66}; </p>
-<p>（2）覆盖</p>
-<p>​	int[ ] [ ] arr &#x3D; new int [2] [ 3];</p>
-<p>​	int[] arr1 &#x3D; {11,22};</p>
-<p>​	int[] arr2 &#x3D; {44,55,66}; </p>
-<p>​	arr[0] &#x3D; arr1;</p>
-<p>​	arr[1] &#x3D; arr2;</p>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>源码-反码-补码</title>
     <url>/2024/01/16/java%E5%9F%BA%E7%A1%80-%E5%8E%9F%E7%A0%81%E5%8F%8D%E7%A0%81%E8%A1%A5%E7%A0%81/</url>
     <content><![CDATA[<h1 id="原码-反码-补码"><a href="#原码-反码-补码" class="headerlink" title="原码&#x2F;反码&#x2F;补码"></a>原码&#x2F;反码&#x2F;补码</h1><p>符号位：0正1负</p>
@@ -720,6 +692,34 @@
 <p>​	<img src="C:\Users\Administrator\Desktop\微信截图_20240207073607.png"></p>
 <p><strong>5.StringBuilder源码分析</strong></p>
 <p>默认创建一个长度为16的字节数组，添加的内容长度小于16，直接存，添加的内容大于16会扩容(原来的内容*2+2)，如果扩容之后还不够，以实际长度为准。</p>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>二维数组</title>
+    <url>/2024/01/25/java%E5%9F%BA%E7%A1%80-%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84/</url>
+    <content><![CDATA[<h1 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a>二维数组</h1><p><strong>应用场景</strong>:</p>
+<p>需要把数据分组管理的时候，需要用到二维数组。</p>
+<p><strong>初始化</strong>：</p>
+<p><img src="/../images/%E5%88%9D%E5%A7%8B%E5%8C%96.png"></p>
+<p>二维数组的内存图:</p>
+<p><img src="/../images/%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84.jpg"></p>
+<p>另外两种特殊的初始化:</p>
+<p>（1）一位数组的长度灵活</p>
+<p>​	int[ ] [ ] arr &#x3D; new int [2] [ ];</p>
+<p>​	int[] arr1 &#x3D; {11,22};</p>
+<p>​	int[] arr2 &#x3D; {44,55,66}; </p>
+<p>（2）覆盖</p>
+<p>​	int[ ] [ ] arr &#x3D; new int [2] [ 3];</p>
+<p>​	int[] arr1 &#x3D; {11,22};</p>
+<p>​	int[] arr2 &#x3D; {44,55,66}; </p>
+<p>​	arr[0] &#x3D; arr1;</p>
+<p>​	arr[1] &#x3D; arr2;</p>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -995,6 +995,26 @@
       </tags>
   </entry>
   <entry>
+    <title>无限循环和跳转控制语句</title>
+    <url>/2024/01/19/java%E5%9F%BA%E7%A1%80-%E6%97%A0%E9%99%90%E5%BE%AA%E7%8E%AF/</url>
+    <content><![CDATA[<h1 id="无限循环"><a href="#无限循环" class="headerlink" title="无限循环"></a>无限循环</h1><p>格式：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(;;)&#123;</span><br><span class="line">	System.out.println(<span class="string">&quot;学习&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">while</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">	System.out.println(<span class="string">&quot;学习&quot;</span>);<span class="comment">//常用</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">do</span>&#123;</span><br><span class="line">	System.out.println(<span class="string">&quot;学习&quot;</span>);</span><br><span class="line">&#125;<span class="keyword">while</span>(<span class="literal">true</span>)</span><br></pre></td></tr></table></figure>
+
+<p>无限循环的下面不能在写其他代码了</p>
+<h1 id="跳转控制语句"><a href="#跳转控制语句" class="headerlink" title="跳转控制语句"></a>跳转控制语句</h1><p>在循环的过程中，跳转到其他语句上执行</p>
+<p>break:结束整个循环。</p>
+<p>continue:结束本次循环，继续下次循环。</p>
+<p>&lt;补充:&gt;return:其实跟循环没有什么关系，跟方法有关，表示1结束方法，2返回结果。如果方法执行到了return，那么整个方法全部结束，里面的循环也随之结束。 </p>
+<p><img src="/../images/005.png"></p>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>方法的相关介绍</title>
     <url>/2024/01/21/java%E5%9F%BA%E7%A1%80-%E6%96%B9%E6%B3%95%E7%9A%84%E7%9B%B8%E5%85%B3%E4%BB%8B%E7%BB%8D/</url>
     <content><![CDATA[<h1 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h1><ol>
@@ -1028,26 +1048,6 @@
 <p>​	<strong>方法传递基本数据类型的内存原理</strong></p>
 <p>​	传递基本数据类型(4类8种)时，传递的是真实的数据，形参的改变，不影响实际参数的值。</p>
 <p>​	传递引用数据类型(int[] arr)时，传递的是地址值，形参的改变 ，影响的是地址的值。</p>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>无限循环和跳转控制语句</title>
-    <url>/2024/01/19/java%E5%9F%BA%E7%A1%80-%E6%97%A0%E9%99%90%E5%BE%AA%E7%8E%AF/</url>
-    <content><![CDATA[<h1 id="无限循环"><a href="#无限循环" class="headerlink" title="无限循环"></a>无限循环</h1><p>格式：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(;;)&#123;</span><br><span class="line">	System.out.println(<span class="string">&quot;学习&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">while</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">	System.out.println(<span class="string">&quot;学习&quot;</span>);<span class="comment">//常用</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">do</span>&#123;</span><br><span class="line">	System.out.println(<span class="string">&quot;学习&quot;</span>);</span><br><span class="line">&#125;<span class="keyword">while</span>(<span class="literal">true</span>)</span><br></pre></td></tr></table></figure>
-
-<p>无限循环的下面不能在写其他代码了</p>
-<h1 id="跳转控制语句"><a href="#跳转控制语句" class="headerlink" title="跳转控制语句"></a>跳转控制语句</h1><p>在循环的过程中，跳转到其他语句上执行</p>
-<p>break:结束整个循环。</p>
-<p>continue:结束本次循环，继续下次循环。</p>
-<p>&lt;补充:&gt;return:其实跟循环没有什么关系，跟方法有关，表示1结束方法，2返回结果。如果方法执行到了return，那么整个方法全部结束，里面的循环也随之结束。 </p>
-<p><img src="/../images/005.png"></p>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -1496,6 +1496,47 @@
       </tags>
   </entry>
   <entry>
+    <title>面向对象进阶-抽象类和抽象方法</title>
+    <url>/2024/02/23/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E6%8A%BD%E8%B1%A1%E7%B1%BB%E5%92%8C%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<p>抽象类：抽象方法所在的类叫做抽象类，子类必须强制重写，否则子类代码直接报错</p>
+<p>定义格式：public abstract class 类名{}</p>
+<p>抽象方法：将共性的行为抽取到父类之后，由于每一个子类执行的内容是不一样，所以，<strong>在父类中不能确定具体的方法体</strong>，该方法就可以定义为抽象方法。</p>
+<p>定义格式：public abstract 返回值类型 方法名(参数列表)；alt+回车</p>
+<p>注意事项：1.抽象类不能实例化-不能创建对象</p>
+<p>​		   2.抽象类中不一定有抽象方法，但是抽象方法的类一定是抽象类</p>
+<p>​		   3.可能有构造方法</p>
+<p>​		   4.<strong>抽象类的子类</strong></p>
+<p>​				<strong>要么重写抽象类中的所有抽象方法</strong>(推荐使用)</p>
+<p>​				要么是抽象类</p>
+<p>意义：强制子类必须按照统一格式书写</p>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>面向对象进阶-内部类</title>
+    <url>/2024/02/23/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E5%86%85%E9%83%A8%E7%B1%BB/</url>
+    <content><![CDATA[<p>内部类–是类的五大成员之一(属性，方法，构造方法，内部类)，在一个类的里面，在定义一个类。</p>
+<p><strong>应用场景</strong>：</p>
+<p>​	需求：写一个javabean类描述汽车</p>
+<p>​	属性：汽车的品牌，车龄，颜色，发动机的品牌，使用年限。(汽车和发动机属于两个类，又有联系)</p>
+<p>内部类表示的事物是外部类的一部分，内部类单独出现没有任何意义</p>
+<p><strong>访问特点</strong>：</p>
+<p>​	内部类可以直接访问外部类的成员，包括私有</p>
+<p>​	外部类要访问内部类的成员，必须创建对象</p>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>面向对象进阶-接口</title>
     <url>/2024/02/23/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E6%8E%A5%E5%8F%A3/</url>
     <content><![CDATA[<p><strong>接口：</strong>就是一种规则，对行为的抽象。</p>
@@ -1543,28 +1584,6 @@
 <p>​	适配器设计模式：解决接口与接口实现类之间的矛盾问题</p>
 <p>​			1.当接口中抽象方法较多，而你执行操作其他一个，这时在实现类，就需要重写全部方法，影响阅读和操作，可以新建一个抽象类来存储所有的重写方法(空实现，即方法体空着)，然后让实现类来继承这个类，这时实现类就可以任意重写某一个方法。</p>
 <p>（为了避免其他类创建适配器类的对象，中间的适配器类用abstract进行修饰）</p>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>面向对象进阶-抽象类和抽象方法</title>
-    <url>/2024/02/23/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E6%8A%BD%E8%B1%A1%E7%B1%BB%E5%92%8C%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<p>抽象类：抽象方法所在的类叫做抽象类，子类必须强制重写，否则子类代码直接报错</p>
-<p>定义格式：public abstract class 类名{}</p>
-<p>抽象方法：将共性的行为抽取到父类之后，由于每一个子类执行的内容是不一样，所以，<strong>在父类中不能确定具体的方法体</strong>，该方法就可以定义为抽象方法。</p>
-<p>定义格式：public abstract 返回值类型 方法名(参数列表)；alt+回车</p>
-<p>注意事项：1.抽象类不能实例化-不能创建对象</p>
-<p>​		   2.抽象类中不一定有抽象方法，但是抽象方法的类一定是抽象类</p>
-<p>​		   3.可能有构造方法</p>
-<p>​		   4.<strong>抽象类的子类</strong></p>
-<p>​				<strong>要么重写抽象类中的所有抽象方法</strong>(推荐使用)</p>
-<p>​				要么是抽象类</p>
-<p>意义：强制子类必须按照统一格式书写</p>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -1690,17 +1709,6 @@
       </tags>
   </entry>
   <entry>
-    <title>面向对象进阶main()方法的进一步理解</title>
-    <url>/2024/02/19/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6main()%E6%96%B9%E6%B3%95%E7%9A%84%E8%BF%9B%E4%B8%80%E6%AD%A5%E7%90%86%E8%A7%A3/</url>
-    <content><![CDATA[<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">public:被JVM(虚拟机)调用，访问权限足够大</span></span><br><span class="line"><span class="comment">static:被JVM调用，不用创建对象，直接类名访问，因为main()方法是静态的，所以测试类中其他方法也需要是静态的</span></span><br><span class="line"><span class="comment">void:被JVM调用，不需要给JVM返回值</span></span><br><span class="line"><span class="comment">main:一个通用的名称，虽然不是关键字，但是被JVM识别</span></span><br><span class="line"><span class="comment">String[] args:以前用于接收键盘录入数据的，现在没用。</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>面向对象进阶-多态</title>
     <url>/2024/02/21/java%E7%BB%A7%E6%89%BF-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E5%A4%9A%E6%80%81/</url>
     <content><![CDATA[<p><strong>多态</strong>：多种形态，即，同种类型的对象，表现出得不太形态</p>
@@ -1743,6 +1751,17 @@
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(a <span class="keyword">instanceof</span> Dog d)&#123;<span class="comment">//Animal a = new Dog();</span></span><br><span class="line">	d.lookHome();</span><br><span class="line">&#125;<span class="keyword">else</span> <span class="keyword">if</span>(a <span class="keyword">instanceof</span> Cat c)&#123;<span class="comment">//Animal a = new Cat();</span></span><br><span class="line">	c.catMouse();</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">	System.out.println(<span class="string">&quot;没有这个类型，无法转换&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 ]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>面向对象进阶main()方法的进一步理解</title>
+    <url>/2024/02/19/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6main()%E6%96%B9%E6%B3%95%E7%9A%84%E8%BF%9B%E4%B8%80%E6%AD%A5%E7%90%86%E8%A7%A3/</url>
+    <content><![CDATA[<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">public:被JVM(虚拟机)调用，访问权限足够大</span></span><br><span class="line"><span class="comment">static:被JVM调用，不用创建对象，直接类名访问，因为main()方法是静态的，所以测试类中其他方法也需要是静态的</span></span><br><span class="line"><span class="comment">void:被JVM调用，不需要给JVM返回值</span></span><br><span class="line"><span class="comment">main:一个通用的名称，虽然不是关键字，但是被JVM识别</span></span><br><span class="line"><span class="comment">String[] args:以前用于接收键盘录入数据的，现在没用。</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>Java基础</category>
       </categories>
