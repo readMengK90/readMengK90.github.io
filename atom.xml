@@ -59,27 +59,6 @@
   </entry>
   
   <entry>
-    <title>面向对象进阶-包-final-权限修饰符-代码块</title>
-    <link href="https://readmengk90.github.io/2024/02/22/java%E7%BB%A7%E6%89%BF-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E5%8C%85-final-%E6%9D%83%E9%99%90%E4%BF%AE%E9%A5%B0%E7%AC%A6-%E4%BB%A3%E7%A0%81%E5%9D%97/"/>
-    <id>https://readmengk90.github.io/2024/02/22/java%E7%BB%A7%E6%89%BF-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E5%8C%85-final-%E6%9D%83%E9%99%90%E4%BF%AE%E9%A5%B0%E7%AC%A6-%E4%BB%A3%E7%A0%81%E5%9D%97/</id>
-    <published>2024-02-22T15:11:50.663Z</published>
-    <updated>2024-02-23T00:55:04.456Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>包：</strong></p><p>定义：包就是文件夹，用来管理各种不同功能的Java类，方便后期代码维护</p><p>规则：公司域名反写+包的作用名，需要全部英文小写，见名知意，com.itheima.domain</p><p>使用其他类的规则：</p><p>​1.使用同一个包中的类时，不需要导包</p><p>​2.使用java.lang包中的类时，不需要导包 </p><p>​3.其他情况都需要导包</p><p>​4.如果同时使用两个包中的同类名，需要用全类名 </p><p><strong>final:</strong></p><table><thead><tr><th>final修饰</th><th></th></tr></thead><tbody><tr><td>方法</td><td>表明该方法是最终方法，不能被重写</td></tr><tr><td>类</td><td>表明该类是最终类，不能被继承</td></tr><tr><td>变量</td><td>叫做常量，只能被赋值一次</td></tr></tbody></table><p>常量：在实际开发中，常量一般作为系统的配置信息，方便维护，提高可读性</p><p>常量的命名规则：</p><p>​单个单词：全部大写</p><p>​多个单词：全部大写，单词之间用下划线隔开</p><p>细节：</p><p>final修饰的变量是基本类型：那么变量存储的数据值不能发生改变</p><p>final修饰的变量是引用类型：那么变量存储的地址值不能发生改变，对象内部的可以改变。</p><p><strong>权限修饰符：</strong></p><p>权限修饰符：是用来控制一个成员能够被访问的范围的。</p><p>可以修饰成员变量，方法，构造方法，内部类。</p><p>分类：有四种作用范围从小到大(private&lt;缺省&lt;protected&lt;public)</p><table><thead><tr><th align="center">修饰符</th><th align="center">同一个类</th><th align="center">同一个包中其他类</th><th align="center">不同包下的子类</th><th align="center">不同包下的无关类</th></tr></thead><tbody><tr><td align="center">private</td><td align="center">√</td><td align="center"></td><td align="center"></td><td align="center"></td></tr><tr><td align="center">空着不写</td><td align="center">√</td><td align="center">√</td><td align="center"></td><td align="center"></td></tr><tr><td align="center">protected</td><td align="center">√</td><td align="center">√</td><td align="center">√</td><td align="center"></td></tr><tr><td align="center">public</td><td align="center">√</td><td align="center">√</td><td align="center">√</td><td align="center">√</td></tr></tbody></table><p>规则：实际开发中，一般只用private和public</p><p>成员变量私有</p><p>方法公开</p><p>特列：如果方法中的代码是抽取其他方法中共性代码，这个方法一般私有。</p><p><strong>代码块：</strong></p><p>局部代码块：写在方法里面的一对单独的{}，提前结束变量的生命周期。</p><p>构造代码块：写在成员位置的代码块，可以把多个构造方法中重复的代码抽取出来，在创建本类对象的时候会优先于构造方法执行。</p><p><strong>静态代码块</strong>：格式:static{}</p><p>​特点：需要通过static关键字修饰，随着类的加载而加载，并且自动触发，只执行一次</p><p>​使用场景：在类加载的时候，做一些数据初始化的时候使用。</p><p>​应用场景：程序刚开始时进行数据的初始化</p>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;包-final-权限修饰符-代码块&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="Java基础" scheme="https://readmengk90.github.io/categories/Java%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="java" scheme="https://readmengk90.github.io/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
     <title>面向对象进阶-多态</title>
     <link href="https://readmengk90.github.io/2024/02/21/java%E7%BB%A7%E6%89%BF-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E5%A4%9A%E6%80%81/"/>
     <id>https://readmengk90.github.io/2024/02/21/java%E7%BB%A7%E6%89%BF-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E5%A4%9A%E6%80%81/</id>
@@ -426,6 +405,27 @@
     
     
     <summary type="html">&lt;center&gt;数字在数组中是否存在&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="经典算法思想" scheme="https://readmengk90.github.io/categories/%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3/"/>
+    
+    
+    <category term="算法思想" scheme="https://readmengk90.github.io/tags/%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>把整数中的每一位都添加到数组中</title>
+    <link href="https://readmengk90.github.io/2024/01/23/%E6%8A%8A%E6%95%B4%E6%95%B0%E4%B8%AD%E7%9A%84%E6%AF%8F%E4%B8%80%E4%BD%8D%E9%83%BD%E6%B7%BB%E5%8A%A0%E5%88%B0%E6%95%B0%E7%BB%84%E4%B8%AD/"/>
+    <id>https://readmengk90.github.io/2024/01/23/%E6%8A%8A%E6%95%B4%E6%95%B0%E4%B8%AD%E7%9A%84%E6%AF%8F%E4%B8%80%E4%BD%8D%E9%83%BD%E6%B7%BB%E5%8A%A0%E5%88%B0%E6%95%B0%E7%BB%84%E4%B8%AD/</id>
+    <published>2024-01-23T14:00:58.967Z</published>
+    <updated>2024-01-25T12:16:45.092Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="把整数中的每一位都添加到数组中"><a href="#把整数中的每一位都添加到数组中" class="headerlink" title="把整数中的每一位都添加到数组中"></a>把整数中的每一位都添加到数组中</h1><p>反向推导：</p><ol><li><p>计算数组的长度(新建数组)-定义数组-把整数上的每一位都添加到数组上</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="type">int</span>[] getInts(<span class="type">int</span> number) &#123;</span><br><span class="line">        <span class="type">int</span> temp= number;</span><br><span class="line">        <span class="comment">//1.1求数字的长度充当数组的长度</span></span><br><span class="line">        <span class="type">int</span> count=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (number !=<span class="number">0</span>)&#123;</span><br><span class="line">            number = number /<span class="number">10</span>;</span><br><span class="line">            count++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//1.2定义数组</span></span><br><span class="line">        <span class="type">int</span> [] array=<span class="keyword">new</span> <span class="title class_">int</span>[count];</span><br><span class="line">        <span class="comment">//1.3得到每一位</span></span><br><span class="line">        <span class="type">int</span> index= array.length-<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span>(temp!=<span class="number">0</span>)&#123;</span><br><span class="line">            <span class="type">int</span> ge=temp%<span class="number">10</span>;</span><br><span class="line">            temp=temp/<span class="number">10</span>;</span><br><span class="line">            array[index]=ge;</span><br><span class="line">            index--;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> array;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><p>day07-TestDemo06</p></li></ol>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;把整数中的每一位都添加到数组中&lt;/center&gt;</summary>
     
     
     
