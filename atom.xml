@@ -6,7 +6,7 @@
   <link href="https://readmengk90.github.io/atom.xml" rel="self"/>
   
   <link href="https://readmengk90.github.io/"/>
-  <updated>2024-02-23T03:24:42.204Z</updated>
+  <updated>2024-02-23T03:25:43.451Z</updated>
   <id>https://readmengk90.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://readmengk90.github.io/2024/02/23/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E6%8A%BD%E8%B1%A1%E7%B1%BB%E5%92%8C%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95/"/>
     <id>https://readmengk90.github.io/2024/02/23/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E6%8A%BD%E8%B1%A1%E7%B1%BB%E5%92%8C%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95/</id>
     <published>2024-02-23T02:04:42.634Z</published>
-    <updated>2024-02-23T03:24:42.204Z</updated>
+    <updated>2024-02-23T03:25:43.451Z</updated>
     
-    <content type="html"><![CDATA[<p>抽象类：抽象方法所在的类叫做抽象类，子类必须强制重写，否则子类代码直接报错</p><p>定义格式：public abstract class 类名{}</p><p>抽象方法：将共性的行为抽取到父类之后，由于每一个子类执行的内容是不一样，所以，在父类中不能确定具体的方法体，该方法就可以定义为抽象方法。</p><p>定义格式：public abstract 返回值类型 方法名(参数列表)；alt+回车</p><p>注意事项：1.抽象类不能实例化-不能创建对象</p><p>​   2.抽象类中不一定有抽象方法，但是抽象方法的类一定是抽象类</p><p>​   3.可能有构造方法</p><p>​   4.<strong>抽象类的子类</strong></p><p>​<strong>要么重写抽象类中的所有抽象方法</strong></p><p>​要么是抽象类</p><p>意义：强制子类必须按照统一格式书写</p>]]></content>
+    <content type="html"><![CDATA[<p>抽象类：抽象方法所在的类叫做抽象类，子类必须强制重写，否则子类代码直接报错</p><p>定义格式：public abstract class 类名{}</p><p>抽象方法：将共性的行为抽取到父类之后，由于每一个子类执行的内容是不一样，所以，<strong>在父类中不能确定具体的方法体</strong>，该方法就可以定义为抽象方法。</p><p>定义格式：public abstract 返回值类型 方法名(参数列表)；alt+回车</p><p>注意事项：1.抽象类不能实例化-不能创建对象</p><p>​   2.抽象类中不一定有抽象方法，但是抽象方法的类一定是抽象类</p><p>​   3.可能有构造方法</p><p>​   4.<strong>抽象类的子类</strong></p><p>​<strong>要么重写抽象类中的所有抽象方法</strong>(推荐使用)</p><p>​要么是抽象类</p><p>意义：强制子类必须按照统一格式书写</p>]]></content>
     
     
     <summary type="html">&lt;center&gt;抽象类和抽象方法&lt;/center&gt;</summary>
