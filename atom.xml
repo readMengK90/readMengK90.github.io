@@ -6,7 +6,7 @@
   <link href="https://readmengk90.github.io/atom.xml" rel="self"/>
   
   <link href="https://readmengk90.github.io/"/>
-  <updated>2024-02-23T03:25:43.451Z</updated>
+  <updated>2024-02-23T09:59:38.099Z</updated>
   <id>https://readmengk90.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>面向对象进阶-接口</title>
+    <link href="https://readmengk90.github.io/2024/02/23/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E6%8E%A5%E5%8F%A3/"/>
+    <id>https://readmengk90.github.io/2024/02/23/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E6%8E%A5%E5%8F%A3/</id>
+    <published>2024-02-23T05:53:28.788Z</published>
+    <updated>2024-02-23T09:59:38.099Z</updated>
+    
+    <content type="html"><![CDATA[<p>接口：就是一种规则，对行为的抽象。</p><p><img src="C:\Users\Administrator\Desktop\MyBlog\source\images\微信截图_20240223135234.png"></p><p>如何定义：</p><p>​接口用关键字interface来定义，<strong>public interface 接口名{ }</strong></p><p>​<strong>接口不能实例化</strong></p><p>​接口和类之间是实现关系，通过<strong>implements</strong>关键字表示，<strong>public class 类名 implements 接口名{}</strong></p><p>​接口的子类称为实现类</p><p>​<strong>要么重写接口中的所有抽象方法。</strong></p><p>​要么是抽象类。</p><p>注意点1：接口和类的实现关系，可以单实现，也可以多实现。<strong>pubic class 类名 implements 接口名1 ，接口名2{ }</strong></p><p>注意到2：实现类还可以在继承一个类的同时实现多个接口。<strong>public class 类名 extends 父类 implements 接口名1，接口名2{}</strong></p><p>如何使用：</p><p>​方法可以是抽象类，默认类，静态类</p><p>成员特点：</p><p>​成员变量：接口中的成员变量只能是常量，默认修饰符：public static final</p><p>​构造方法：没有，因为接口不能创建对象，而且接口当中也不需要给子类去赋值。</p><p>​成员方法：只能是抽象方法，默认修饰符：public abstract</p><p>​  JDK7以前：接口中只能定义抽象方法。</p><p>​  JDK8的新特性：接口中可以定义有方法体的方法。</p><p>​  JDK9的新特性：接口中可以定义私有方法。</p><p>​</p>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;抽象类和抽象方法&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="Java基础" scheme="https://readmengk90.github.io/categories/Java%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="java" scheme="https://readmengk90.github.io/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>面向对象进阶-抽象类和抽象方法</title>
@@ -405,27 +426,6 @@
     
     
     <summary type="html">&lt;center&gt;数字在数组中是否存在&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="经典算法思想" scheme="https://readmengk90.github.io/categories/%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3/"/>
-    
-    
-    <category term="算法思想" scheme="https://readmengk90.github.io/tags/%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>把整数中的每一位都添加到数组中</title>
-    <link href="https://readmengk90.github.io/2024/01/23/%E6%8A%8A%E6%95%B4%E6%95%B0%E4%B8%AD%E7%9A%84%E6%AF%8F%E4%B8%80%E4%BD%8D%E9%83%BD%E6%B7%BB%E5%8A%A0%E5%88%B0%E6%95%B0%E7%BB%84%E4%B8%AD/"/>
-    <id>https://readmengk90.github.io/2024/01/23/%E6%8A%8A%E6%95%B4%E6%95%B0%E4%B8%AD%E7%9A%84%E6%AF%8F%E4%B8%80%E4%BD%8D%E9%83%BD%E6%B7%BB%E5%8A%A0%E5%88%B0%E6%95%B0%E7%BB%84%E4%B8%AD/</id>
-    <published>2024-01-23T14:00:58.967Z</published>
-    <updated>2024-01-25T12:16:45.092Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="把整数中的每一位都添加到数组中"><a href="#把整数中的每一位都添加到数组中" class="headerlink" title="把整数中的每一位都添加到数组中"></a>把整数中的每一位都添加到数组中</h1><p>反向推导：</p><ol><li><p>计算数组的长度(新建数组)-定义数组-把整数上的每一位都添加到数组上</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="type">int</span>[] getInts(<span class="type">int</span> number) &#123;</span><br><span class="line">        <span class="type">int</span> temp= number;</span><br><span class="line">        <span class="comment">//1.1求数字的长度充当数组的长度</span></span><br><span class="line">        <span class="type">int</span> count=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (number !=<span class="number">0</span>)&#123;</span><br><span class="line">            number = number /<span class="number">10</span>;</span><br><span class="line">            count++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//1.2定义数组</span></span><br><span class="line">        <span class="type">int</span> [] array=<span class="keyword">new</span> <span class="title class_">int</span>[count];</span><br><span class="line">        <span class="comment">//1.3得到每一位</span></span><br><span class="line">        <span class="type">int</span> index= array.length-<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span>(temp!=<span class="number">0</span>)&#123;</span><br><span class="line">            <span class="type">int</span> ge=temp%<span class="number">10</span>;</span><br><span class="line">            temp=temp/<span class="number">10</span>;</span><br><span class="line">            array[index]=ge;</span><br><span class="line">            index--;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> array;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><p>day07-TestDemo06</p></li></ol>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;把整数中的每一位都添加到数组中&lt;/center&gt;</summary>
     
     
     
