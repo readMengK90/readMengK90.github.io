@@ -6,7 +6,7 @@
   <link href="https://readmengk90.github.io/atom.xml" rel="self"/>
   
   <link href="https://readmengk90.github.io/"/>
-  <updated>2024-02-23T15:55:18.065Z</updated>
+  <updated>2024-02-24T14:25:21.280Z</updated>
   <id>https://readmengk90.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://readmengk90.github.io/2024/02/23/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E5%86%85%E9%83%A8%E7%B1%BB/"/>
     <id>https://readmengk90.github.io/2024/02/23/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E5%86%85%E9%83%A8%E7%B1%BB/</id>
     <published>2024-02-23T15:55:18.010Z</published>
-    <updated>2024-02-23T15:55:18.065Z</updated>
+    <updated>2024-02-24T14:25:21.280Z</updated>
     
-    <content type="html"><![CDATA[<p>内部类–是类的五大成员之一(属性，方法，构造方法，内部类)，在一个类的里面，在定义一个类。</p><p><strong>应用场景</strong>：</p><p>​需求：写一个javabean类描述汽车</p><p>​属性：汽车的品牌，车龄，颜色，发动机的品牌，使用年限。(汽车和发动机属于两个类，又有联系)</p><p>内部类表示的事物是外部类的一部分，内部类单独出现没有任何意义</p><p><strong>访问特点</strong>：</p><p>​内部类可以直接访问外部类的成员，包括私有</p><p>​外部类要访问内部类的成员，必须创建对象</p>]]></content>
+    <content type="html"><![CDATA[<p>内部类–是类的五大成员之一(属性，方法，构造方法，内部类)，在一个类的里面，在定义一个类。</p><p><strong>应用场景</strong>：</p><p>​需求：写一个javabean类描述汽车</p><p>​属性：汽车的品牌，车龄，颜色，发动机的品牌，使用年限。(汽车和发动机属于两个类，又有联系)</p><p>内部类表示的事物是外部类的一部分，内部类单独出现没有任何意义</p><p><strong>访问特点</strong>：</p><p>​内部类可以直接访问外部类的成员，包括私有&#x2F;&#x2F;Outer.this.变量名</p><p>​外部类要访问内部类的成员，必须创建对象</p><p><strong>成员内部类</strong>：</p><p>​如何书写？：写在成员位置(类中方法外)，属于外部类的成员。</p><p>​成员内部类可以被一些修饰符所修饰，比如：private(本类)，默认(本包)，protected(本包其他类，其他包的子类)，public(所有地方)，static(静态的)等。</p><p>​在成员内部类里面，JDK16之前不能定义<strong>静态变量</strong>，JDK16开始才可以定义<strong>静态变量</strong>。</p><p>​如何创建成员内部类的对象？：</p><p>​ 方式一：在外部类中编写方法，对外提供内部类的对象</p><p>​&#x2F;&#x2F;使用场景：用在private修饰内部类的</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Outer</span>&#123;</span><br><span class="line">String name;</span><br><span class="line"><span class="keyword">private</span> <span class="keyword">class</span> <span class="title class_">Inner</span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">public</span> Inner <span class="title function_">getInstance</span><span class="params">()</span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//测试类</span></span><br><span class="line"><span class="type">Outer</span> <span class="variable">o</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Outer</span>();</span><br><span class="line"><span class="type">Object</span> <span class="variable">ob</span> <span class="operator">=</span> o.getInstance();<span class="comment">//获取内部类对象</span></span><br></pre></td></tr></table></figure><p>​ 方式二：直接创建格式：外部类名.内部类名  对象名 &#x3D; 外部类对象.内部类对象；范例：Outer.Inner oi &#x3D; new Outer().new Inner();   &#x2F;&#x2F;使用场景：不是用private修饰内部类的</p><p><strong>静态内部类</strong>：</p><p><strong>局部内部类</strong>：</p><p><strong>匿名内部类</strong>(重点)：</p>]]></content>
     
     
     <summary type="html">&lt;center&gt;内部类&lt;/center&gt;</summary>
