@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>软件危机/软件工程/软件生命周期/软件过程</title>
+    <url>/2024/02/27/01%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%AD%A6%E6%A6%82%E8%BF%B0/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>软件工程</category>
+      </categories>
+      <tags>
+        <tag>考研复试</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo+Mext设置主页文章添加边框阴影效果</title>
     <url>/2024/01/10/Hexo+Next%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%BB%E9%A1%B5%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E8%BE%B9%E6%A1%86%E9%98%B4%E5%BD%B1%E6%95%88%E6%9E%9C/</url>
     <content><![CDATA[<h1 id="设置主页文章添加边框阴影效果"><a href="#设置主页文章添加边框阴影效果" class="headerlink" title="设置主页文章添加边框阴影效果"></a>设置主页文章添加边框阴影效果</h1><ol>
@@ -40,6 +51,33 @@
       </categories>
       <tags>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>快捷键的妙用</title>
+    <url>/2024/01/22/Idea%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9A%84%E5%A6%99%E7%94%A8/</url>
+    <content><![CDATA[<h1 id="Idea快捷键的妙用"><a href="#Idea快捷键的妙用" class="headerlink" title="Idea快捷键的妙用"></a>Idea快捷键的妙用</h1><p>Ctrl+alt+M:自动抽取方法 </p>
+<p>​	编写程序时发现有重复代码，可以使用快捷键自动抽取方法，提高效率。</p>
+<p>Ctrl+alt+L:代码格式化</p>
+<p>​	编写完成一段代码后养成格式化的习惯。</p>
+<p>Ctrl+alt+v:自动补全代码快捷键</p>
+<p>CTRL+&#x2F;：单行注释</p>
+<p>CTRL+ALT+&#x2F;:多行注释</p>
+<p>选择变量+shift+F6:变量的批量修改</p>
+<p>Ctrl + Alt + T： 对选中的代码弹出环绕选项弹出层(while,if….)</p>
+<p>Alt+Insert:选择get和set方法</p>
+<p>Ctrl+B:点击方法，跟进原码,选中要进入的方法，使用快捷键直接进入</p>
+<p>Insert:书写代码是错误碰到insert键，会出现闪速黑色正方形块，影响书写。再次点击insert键可恢复</p>
+<p>Ctrll+N:搜索类快捷键</p>
+<p>alt+回车(enter):选中变量，alt+回车，左右进行切割</p>
+<p>代码 上 &#x2F;下移 ：Shift+Alt +方向上键&#x2F;下键</p>
+<p>alt+回车：点击方法，直接可以创建方法</p>
+]]></content>
+      <categories>
+        <category>快捷方式</category>
+      </categories>
+      <tags>
+        <tag>快捷方式</tag>
       </tags>
   </entry>
   <entry>
@@ -132,31 +170,9 @@
       </tags>
   </entry>
   <entry>
-    <title>快捷键的妙用</title>
-    <url>/2024/01/22/Idea%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9A%84%E5%A6%99%E7%94%A8/</url>
-    <content><![CDATA[<h1 id="Idea快捷键的妙用"><a href="#Idea快捷键的妙用" class="headerlink" title="Idea快捷键的妙用"></a>Idea快捷键的妙用</h1><p>Ctrl+alt+M:自动抽取方法 </p>
-<p>​	编写程序时发现有重复代码，可以使用快捷键自动抽取方法，提高效率。</p>
-<p>Ctrl+alt+L:代码格式化</p>
-<p>​	编写完成一段代码后养成格式化的习惯。</p>
-<p>Ctrl+alt+v:自动补全代码快捷键</p>
-<p>CTRL+&#x2F;：单行注释</p>
-<p>CTRL+ALT+&#x2F;:多行注释</p>
-<p>选择变量+shift+F6:变量的批量修改</p>
-<p>Ctrl + Alt + T： 对选中的代码弹出环绕选项弹出层(while,if….)</p>
-<p>Alt+Insert:选择get和set方法</p>
-<p>Ctrl+B:点击方法，跟进原码,选中要进入的方法，使用快捷键直接进入</p>
-<p>Insert:书写代码是错误碰到insert键，会出现闪速黑色正方形块，影响书写。再次点击insert键可恢复</p>
-<p>Ctrll+N:搜索类快捷键</p>
-<p>alt+回车(enter):选中变量，alt+回车，左右进行切割</p>
-<p>代码 上 &#x2F;下移 ：Shift+Alt +方向上键&#x2F;下键</p>
-<p>alt+回车：点击方法，直接可以创建方法</p>
-]]></content>
-      <categories>
-        <category>快捷方式</category>
-      </categories>
-      <tags>
-        <tag>快捷方式</tag>
-      </tags>
+    <title>好好学习  天天向上</title>
+    <url>/2024/01/08/first-blog/</url>
+    <content><![CDATA[<h1 id="This-is-my-first-blog-路上只我一个人，背着手踱着。这一片天地好像是我的-我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静-爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜-niao-nuo-地开着旳，有羞涩地打着朵儿旳-正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉-mo-的流水，遮住了，不能见一些颜色-而叶子却更见风致了。"><a href="#This-is-my-first-blog-路上只我一个人，背着手踱着。这一片天地好像是我的-我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静-爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜-niao-nuo-地开着旳，有羞涩地打着朵儿旳-正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉-mo-的流水，遮住了，不能见一些颜色-而叶子却更见风致了。" class="headerlink" title="This is my first blog 路上只我一个人，背着手踱着。这一片天地好像是我的;我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静;爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜(niǎo,nuó)地开着旳，有羞涩地打着朵儿旳;正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉(mò)的流水，遮住了，不能见一些颜色;而叶子却更见风致了。"></a>This is my first blog 路上只我一个人，背着手踱着。这一片天地好像是我的;我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静;爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜(niǎo,nuó)地开着旳，有羞涩地打着朵儿旳;正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉(mò)的流水，遮住了，不能见一些颜色;而叶子却更见风致了。</h1><h2 id="welcome-to-you"><a href="#welcome-to-you" class="headerlink" title="welcome to you!"></a>welcome to you!</h2>]]></content>
   </entry>
   <entry>
     <title>Hello World</title>
@@ -177,11 +193,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>好好学习  天天向上</title>
-    <url>/2024/01/08/first-blog/</url>
-    <content><![CDATA[<h1 id="This-is-my-first-blog-路上只我一个人，背着手踱着。这一片天地好像是我的-我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静-爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜-niao-nuo-地开着旳，有羞涩地打着朵儿旳-正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉-mo-的流水，遮住了，不能见一些颜色-而叶子却更见风致了。"><a href="#This-is-my-first-blog-路上只我一个人，背着手踱着。这一片天地好像是我的-我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静-爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜-niao-nuo-地开着旳，有羞涩地打着朵儿旳-正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉-mo-的流水，遮住了，不能见一些颜色-而叶子却更见风致了。" class="headerlink" title="This is my first blog 路上只我一个人，背着手踱着。这一片天地好像是我的;我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静;爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜(niǎo,nuó)地开着旳，有羞涩地打着朵儿旳;正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉(mò)的流水，遮住了，不能见一些颜色;而叶子却更见风致了。"></a>This is my first blog 路上只我一个人，背着手踱着。这一片天地好像是我的;我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静;爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜(niǎo,nuó)地开着旳，有羞涩地打着朵儿旳;正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉(mò)的流水，遮住了，不能见一些颜色;而叶子却更见风致了。</h1><h2 id="welcome-to-you"><a href="#welcome-to-you" class="headerlink" title="welcome to you!"></a>welcome to you!</h2>]]></content>
-  </entry>
-  <entry>
     <title>idea插件集合</title>
     <url>/2024/01/25/idea%E6%8F%92%E4%BB%B6%E9%9B%86%E5%90%88/</url>
     <content><![CDATA[<p>idea插件集合:</p>
@@ -198,6 +209,33 @@
       </categories>
       <tags>
         <tag>插件库</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>分支语句-switch</title>
+    <url>/2024/01/17/java-Switch%E8%AF%AD%E5%8F%A5/</url>
+    <content><![CDATA[<h1 id="Switch的语句格式"><a href="#Switch的语句格式" class="headerlink" title="Switch的语句格式"></a>Switch的语句格式</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">switch</span>(表达式) &#123;					<span class="comment">//	表达式的值==case的值</span></span><br><span class="line">	<span class="keyword">case</span> 值<span class="number">1</span>：					<span class="comment">//表达式：取值为byte,short,int,char,枚举(jdk5以后)，String(jdk7以后)</span></span><br><span class="line">		语句体<span class="number">1</span>;				   <span class="comment">// case后面的值只能表示字面量，不能是变量。</span></span><br><span class="line">        <span class="keyword">break</span>;					 <span class="comment">//当switch里面的内容得到一个结果，可以将switch赋值给一个变量</span></span><br><span class="line">    <span class="keyword">case</span> 值<span class="number">2</span>：</span><br><span class="line">		语句体<span class="number">2</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    ......</span><br><span class="line">     <span class="keyword">default</span>:</span><br><span class="line">        语句体n+<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li><p>default的位置和省略</p>
+<p>位置：default位置随意，习惯写在最下面。</p>
+<p>省略：default可以省略，语法不出差，但不建议。</p>
+</li>
+<li><p>case穿透</p>
+<p>省略break会引起case穿透。</p>
+<p>使用场景：多个case的语句体重复了，那么我们考虑利用case穿透去简化代码。</p>
+</li>
+<li><p>switch的新特性(jdk12)</p>
+<p><strong>case 值1 -&gt;{</strong>	<em>&#x2F;&#x2F;消除了case穿透，大括号里面<strong>只有一行代码</strong>时，可以省略大括号</em></p>
+<p><strong>}</strong></p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
       </tags>
   </entry>
   <entry>
@@ -302,39 +340,14 @@
       </tags>
   </entry>
   <entry>
-    <title>分支语句-switch</title>
-    <url>/2024/01/17/java-Switch%E8%AF%AD%E5%8F%A5/</url>
-    <content><![CDATA[<h1 id="Switch的语句格式"><a href="#Switch的语句格式" class="headerlink" title="Switch的语句格式"></a>Switch的语句格式</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">switch</span>(表达式) &#123;					<span class="comment">//	表达式的值==case的值</span></span><br><span class="line">	<span class="keyword">case</span> 值<span class="number">1</span>：					<span class="comment">//表达式：取值为byte,short,int,char,枚举(jdk5以后)，String(jdk7以后)</span></span><br><span class="line">		语句体<span class="number">1</span>;				   <span class="comment">// case后面的值只能表示字面量，不能是变量。</span></span><br><span class="line">        <span class="keyword">break</span>;					 <span class="comment">//当switch里面的内容得到一个结果，可以将switch赋值给一个变量</span></span><br><span class="line">    <span class="keyword">case</span> 值<span class="number">2</span>：</span><br><span class="line">		语句体<span class="number">2</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    ......</span><br><span class="line">     <span class="keyword">default</span>:</span><br><span class="line">        语句体n+<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li><p>default的位置和省略</p>
-<p>位置：default位置随意，习惯写在最下面。</p>
-<p>省略：default可以省略，语法不出差，但不建议。</p>
-</li>
-<li><p>case穿透</p>
-<p>省略break会引起case穿透。</p>
-<p>使用场景：多个case的语句体重复了，那么我们考虑利用case穿透去简化代码。</p>
-</li>
-<li><p>switch的新特性(jdk12)</p>
-<p><strong>case 值1 -&gt;{</strong>	<em>&#x2F;&#x2F;消除了case穿透，大括号里面<strong>只有一行代码</strong>时，可以省略大括号</em></p>
-<p><strong>}</strong></p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>GUI图形化用户界面</title>
     <url>/2024/02/25/java%E5%9F%BA%E7%A1%80-GUI%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2/</url>
     <content><![CDATA[<p>GUI</p>
 <p>​	JFrame:最外层的窗体</p>
 <p>​	JMenuBar:最上层的菜单</p>
 <p>​	JLabel:管理文字和图片的容器</p>
+<p>​	IMageIcon</p>
+<p>​	取消隐藏容器中居中的默认方式：setLayout(null)</p>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -593,6 +606,38 @@
       </tags>
   </entry>
   <entry>
+    <title>分支语句-if</title>
+    <url>/2024/01/16/java%E5%9F%BA%E7%A1%80-if%E8%AF%AD%E5%8F%A5/</url>
+    <content><![CDATA[<h1 id="流程控制语句"><a href="#流程控制语句" class="headerlink" title="流程控制语句"></a>流程控制语句</h1><ol>
+<li><p>顺序结构</p>
+<p>按照代码的先后顺序，从上往下依次执行的。</p>
+</li>
+<li><p>分支结构</p>
+<p>if语句：</p>
+<p>​     <strong>if-格式1</strong>：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(关系表达式)&#123;</span><br><span class="line">	语句体;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+<p>if的注意点:</p>
+<p>​      1.大括号的开头可以另起一行书写，但是建议写在第一行的末尾</p>
+<p>​      2.在语句体中，如果只有一句代码，大括号可以省略不写。</p>
+<p>​      3.如果对一个布尔类型的变量进行判断，不要用&#x3D;&#x3D;号。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">boolean</span> <span class="variable">flag</span> <span class="operator">=</span> <span class="literal">false</span>;</span><br><span class="line"><span class="keyword">if</span>(flag == <span class="literal">true</span>)&#123;  <span class="comment">//判断的方式定义容易误写成赋值等号型，建议直接写布尔类型的变量。</span></span><br><span class="line">    System.out.println(<span class="string">&quot;flag的值是true&quot;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>​      <strong>if-格式2:</strong>(二选一时使用)</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(关系表达式)&#123;</span><br><span class="line">	语句体<span class="number">1</span>;</span><br><span class="line"> &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">	语句体<span class="number">2</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+<p>​     <strong>if-格式3</strong>:(多条件判断)</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(关系表达式)&#123;</span><br><span class="line">	语句体<span class="number">1</span>;</span><br><span class="line"> &#125;<span class="keyword">else</span> <span class="keyword">if</span>&#123;</span><br><span class="line">	语句体<span class="number">2</span>;</span><br><span class="line"> &#125;</span><br><span class="line">.....</span><br><span class="line"> <span class="keyword">else</span>&#123;</span><br><span class="line">     语句体n+<span class="number">1</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>面向对象进阶-static静态变量</title>
     <url>/2024/02/19/java%E5%9F%BA%E7%A1%80-static/</url>
     <content><![CDATA[<p><strong>static</strong>：表示静态，是Java中的一个修饰符，可以修饰成员方法，成员变量。</p>
@@ -636,38 +681,6 @@
       </tags>
   </entry>
   <entry>
-    <title>分支语句-if</title>
-    <url>/2024/01/16/java%E5%9F%BA%E7%A1%80-if%E8%AF%AD%E5%8F%A5/</url>
-    <content><![CDATA[<h1 id="流程控制语句"><a href="#流程控制语句" class="headerlink" title="流程控制语句"></a>流程控制语句</h1><ol>
-<li><p>顺序结构</p>
-<p>按照代码的先后顺序，从上往下依次执行的。</p>
-</li>
-<li><p>分支结构</p>
-<p>if语句：</p>
-<p>​     <strong>if-格式1</strong>：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(关系表达式)&#123;</span><br><span class="line">	语句体;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-
-<p>if的注意点:</p>
-<p>​      1.大括号的开头可以另起一行书写，但是建议写在第一行的末尾</p>
-<p>​      2.在语句体中，如果只有一句代码，大括号可以省略不写。</p>
-<p>​      3.如果对一个布尔类型的变量进行判断，不要用&#x3D;&#x3D;号。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">boolean</span> <span class="variable">flag</span> <span class="operator">=</span> <span class="literal">false</span>;</span><br><span class="line"><span class="keyword">if</span>(flag == <span class="literal">true</span>)&#123;  <span class="comment">//判断的方式定义容易误写成赋值等号型，建议直接写布尔类型的变量。</span></span><br><span class="line">    System.out.println(<span class="string">&quot;flag的值是true&quot;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>​      <strong>if-格式2:</strong>(二选一时使用)</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(关系表达式)&#123;</span><br><span class="line">	语句体<span class="number">1</span>;</span><br><span class="line"> &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">	语句体<span class="number">2</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-
-<p>​     <strong>if-格式3</strong>:(多条件判断)</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(关系表达式)&#123;</span><br><span class="line">	语句体<span class="number">1</span>;</span><br><span class="line"> &#125;<span class="keyword">else</span> <span class="keyword">if</span>&#123;</span><br><span class="line">	语句体<span class="number">2</span>;</span><br><span class="line"> &#125;</span><br><span class="line">.....</span><br><span class="line"> <span class="keyword">else</span>&#123;</span><br><span class="line">     语句体n+<span class="number">1</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>二维数组</title>
     <url>/2024/01/25/java%E5%9F%BA%E7%A1%80-%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84/</url>
     <content><![CDATA[<h1 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a>二维数组</h1><p><strong>应用场景</strong>:</p>
@@ -696,6 +709,26 @@
       </tags>
   </entry>
   <entry>
+    <title>源码-反码-补码</title>
+    <url>/2024/01/16/java%E5%9F%BA%E7%A1%80-%E5%8E%9F%E7%A0%81%E5%8F%8D%E7%A0%81%E8%A1%A5%E7%A0%81/</url>
+    <content><![CDATA[<h1 id="原码-反码-补码"><a href="#原码-反码-补码" class="headerlink" title="原码&#x2F;反码&#x2F;补码"></a>原码&#x2F;反码&#x2F;补码</h1><p>符号位：0正1负</p>
+<p>计算机中数字的存储和计算都是以补码的形式进行的。</p>
+<p><strong>原码</strong>：十进制数据的二进制表现形式，最左边的是符号位，0为正，1为负。</p>
+<p>​	    利用原码对正数进行计算是不会有问题的，但是如果是<strong>负数计算，结果就会出错</strong>，实际运算的结果，跟我们预期的结果是相反的。</p>
+<p><strong>反码</strong>：为了解决原码不能计算负数的问题而出现的。</p>
+<p>计算规则：正数的反码不变，负数的反码在原码的基础上，符号位不变。数值取反，0变1，1变0；</p>
+<p>计算结果跨零时(-5+6&#x3D;0),有可能存在误差。因为在反码中0有两种表现形式，**+0**(0000 0000),-<strong>0</strong>(1111 1111)</p>
+<p><strong>补码：</strong>屏蔽掉0的两种表现形式.使得+0和-0只有一种表现形式，实现方式是负数的反码加1.</p>
+<p><img src="/../images/3-01.png" alt="原反补"></p>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>字符串相关类的底层原理</title>
     <url>/2024/02/07/java%E5%9F%BA%E7%A1%80-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9B%B8%E5%85%B3%E7%B1%BB%E7%9A%84%E5%BA%95%E5%B1%82%E5%8E%9F%E7%90%86/</url>
     <content><![CDATA[<h1 id="字符串相关类的底层原理："><a href="#字符串相关类的底层原理：" class="headerlink" title="字符串相关类的底层原理："></a>字符串相关类的底层原理：</h1><p><strong>1.字符串存储的内存原理</strong></p>
@@ -715,26 +748,6 @@
 <p>​	<img src="C:\Users\Administrator\Desktop\微信截图_20240207073607.png"></p>
 <p><strong>5.StringBuilder源码分析</strong></p>
 <p>默认创建一个长度为16的字节数组，添加的内容长度小于16，直接存，添加的内容大于16会扩容(原来的内容*2+2)，如果扩容之后还不够，以实际长度为准。</p>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>源码-反码-补码</title>
-    <url>/2024/01/16/java%E5%9F%BA%E7%A1%80-%E5%8E%9F%E7%A0%81%E5%8F%8D%E7%A0%81%E8%A1%A5%E7%A0%81/</url>
-    <content><![CDATA[<h1 id="原码-反码-补码"><a href="#原码-反码-补码" class="headerlink" title="原码&#x2F;反码&#x2F;补码"></a>原码&#x2F;反码&#x2F;补码</h1><p>符号位：0正1负</p>
-<p>计算机中数字的存储和计算都是以补码的形式进行的。</p>
-<p><strong>原码</strong>：十进制数据的二进制表现形式，最左边的是符号位，0为正，1为负。</p>
-<p>​	    利用原码对正数进行计算是不会有问题的，但是如果是<strong>负数计算，结果就会出错</strong>，实际运算的结果，跟我们预期的结果是相反的。</p>
-<p><strong>反码</strong>：为了解决原码不能计算负数的问题而出现的。</p>
-<p>计算规则：正数的反码不变，负数的反码在原码的基础上，符号位不变。数值取反，0变1，1变0；</p>
-<p>计算结果跨零时(-5+6&#x3D;0),有可能存在误差。因为在反码中0有两种表现形式，**+0**(0000 0000),-<strong>0</strong>(1111 1111)</p>
-<p><strong>补码：</strong>屏蔽掉0的两种表现形式.使得+0和-0只有一种表现形式，实现方式是负数的反码加1.</p>
-<p><img src="/../images/3-01.png" alt="原反补"></p>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -1169,6 +1182,142 @@
       </tags>
   </entry>
   <entry>
+    <title>集合ArrayList</title>
+    <url>/2024/02/10/java%E5%9F%BA%E7%A1%80-%E9%9B%86%E5%90%88ArrayList/</url>
+    <content><![CDATA[<h1 id="集合ArrayList"><a href="#集合ArrayList" class="headerlink" title="集合ArrayList"></a>集合ArrayList</h1><p>长度可变的容器(自动扩容)</p>
+<p>集合不能<strong>直接</strong>存基本数据类型–》包装类</p>
+<ol>
+<li><p>为什么要有集合?</p>
+<p>ArrayList:</p>
+<p>构造方法：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">ArrayList&lt;泛型&gt; list = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;可省略&gt;();</span><br><span class="line"><span class="comment">//此时我们创建的是ArrayList的对象，而ArrayList是Java已经写好的一个类，这个类在底层做了一些处理打印对象不是地址值，而是集合中存储数据的内容，在展示的时候会拿[]把所有的数据进行包裹。</span></span><br></pre></td></tr></table></figure>
+
+<p>成员方法：</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>boolean add(E,e)</td>
+<td>添加元素，返回值表示是否添加成功</td>
+</tr>
+<tr>
+<td>boolean remove(E,e)</td>
+<td>删除指定元素，返回值表示是否删除成功</td>
+</tr>
+<tr>
+<td>E remove(int index)</td>
+<td>删除指定索引的元素，返回被删除元素</td>
+</tr>
+<tr>
+<td>E set(int index,E,e)</td>
+<td>修改指定索引下的元素，返回原来的元素</td>
+</tr>
+<tr>
+<td>E get(int index)</td>
+<td>获取指定索引的元素</td>
+</tr>
+<tr>
+<td>int size()</td>
+<td>集合的长度，也就是集合中元素的个数</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>泛型：限定集合中存储数据的类型，集合不能<strong>直接存储</strong>基本数据类型，可以存储引用数据类型。</p>
+</li>
+<li><p>基本数据类型对应的包装类</p>
+<table>
+<thead>
+<tr>
+<th align="center">byte</th>
+<th align="center">Byte</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">short</td>
+<td align="center">Short</td>
+</tr>
+<tr>
+<td align="center">char</td>
+<td align="center"><strong>Character</strong></td>
+</tr>
+<tr>
+<td align="center">int</td>
+<td align="center"><strong>Integer</strong></td>
+</tr>
+<tr>
+<td align="center">long</td>
+<td align="center">Long</td>
+</tr>
+<tr>
+<td align="center">float</td>
+<td align="center">Float</td>
+</tr>
+<tr>
+<td align="center">boolean</td>
+<td align="center">Boolean</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>集合返回多个对象</p>
+<p>技巧：如果我们要返回多个数据，可以把这些数据先放到一个容器当中，再把容器返回(集合&#x2F;数组)</p>
+</li>
+<li></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>面向对象进阶-内部类</title>
+    <url>/2024/02/23/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E5%86%85%E9%83%A8%E7%B1%BB/</url>
+    <content><![CDATA[<p>内部类–是类的五大成员之一(属性，方法，构造方法，内部类)，在一个类的里面，在定义一个类。</p>
+<p><strong>应用场景</strong>：</p>
+<p>​	需求：写一个javabean类描述汽车</p>
+<p>​	属性：汽车的品牌，车龄，颜色，发动机的品牌，使用年限。(汽车和发动机属于两个类，又有联系)</p>
+<p>内部类表示的事物是外部类的一部分，内部类单独出现没有任何意义</p>
+<p><strong>访问特点</strong>：</p>
+<p>​	内部类可以直接访问外部类的成员，包括私有&#x2F;&#x2F;Outer.this.变量名</p>
+<p>​	外部类要访问内部类的成员，必须创建对象</p>
+<p><strong>成员内部类</strong>：</p>
+<p>​	如何书写？：写在成员位置(类中方法外)，属于外部类的成员。</p>
+<p>​				成员内部类可以被一些修饰符所修饰，比如：private(本类)，默认(本包)，protected(本包其他类，其他包的子类)，public(所有地方)，static(静态的)等。</p>
+<p>​				在成员内部类里面，JDK16之前不能定义<strong>静态变量</strong>，JDK16开始才可以定义<strong>静态变量</strong>。</p>
+<p>​	如何创建成员内部类的对象？：</p>
+<p>​			 <strong>方式一</strong>：在外部类中编写方法，对外提供内部类的对象</p>
+<p>​			&#x2F;&#x2F;使用场景：用在private修饰内部类的</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Outer</span>&#123;</span><br><span class="line">	String name;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">class</span> <span class="title class_">Inner</span>&#123;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">public</span> Inner <span class="title function_">getInstance</span><span class="params">()</span>&#123;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//测试类</span></span><br><span class="line"><span class="type">Outer</span> <span class="variable">o</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Outer</span>();</span><br><span class="line"><span class="type">Object</span> <span class="variable">ob</span> <span class="operator">=</span> o.getInstance();<span class="comment">//获取内部类对象</span></span><br></pre></td></tr></table></figure>
+
+<p>​			 <strong>方式二</strong>：直接创建格式：外部类名.内部类名  对象名 &#x3D; 外部类对象.内部类对象；范例：Outer.Inner oi &#x3D; new Outer().new Inner();	   &#x2F;&#x2F;使用场景：不是用private修饰内部类的</p>
+<p><strong>静态内部类</strong>：静态内部类只能访问外部类中的静态变量和静态方法，如果想要访问非静态的需要创建外部类的对象</p>
+<p>​	<strong>创建静态内部类对象的格式</strong>：外部类名.内部类名  <em>对象</em>名 &#x3D;  new  外部类名.内部类名( );</p>
+<p>​	<strong>调用非静态方法的格式</strong>：先创建对象，用<em>对象</em>调用</p>
+<p>​	<strong>调用静态方法的格式</strong>：外部类名.内部类名.方法名();</p>
+<p>​	静态内部类是一种特殊的成员内部类</p>
+<p><strong>局部内部类</strong>：1.将内部类定义在方法里面就叫做局部内部类，类似于方法里面的局部变量，</p>
+<p>​		       2.外界是无法直接使用，需要在方法内部创建对象并使用。</p>
+<p>​		       3.该类可以直接访问外部类的成员，也可以访问方法内的局部变量</p>
+<p><strong>匿名内部类</strong>(重点)：本质就是隐藏了名字的内部类，可以写在成员位置，也可以写在局部位置</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//格式</span></span><br><span class="line"><span class="keyword">new</span> 类名或接口名()&#123;</span><br><span class="line">    重写方法;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">//包含了继承或实现，方法重写，创建对象</span></span><br><span class="line"><span class="comment">//整体就是一个类的子类对象或者接口的实现类对象</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="/../images/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E5%86%85%E9%83%A8%E7%B1%BB/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240225202806.png" alt="接口"></p>
+<p>使用场景：当方法的参数是接口或类时，以接口为例，可以传递这个接口的实现类对象，如果实现类只要使用一次，就可以用匿名内部类简化代码。</p>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Java的运算符</title>
     <url>/2024/01/15/java%E5%9F%BA%E7%A1%80-%E8%BF%90%E7%AE%97%E7%AC%A6/</url>
     <content><![CDATA[<h1 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h1><ol>
@@ -1417,164 +1566,6 @@
       </tags>
   </entry>
   <entry>
-    <title>集合ArrayList</title>
-    <url>/2024/02/10/java%E5%9F%BA%E7%A1%80-%E9%9B%86%E5%90%88ArrayList/</url>
-    <content><![CDATA[<h1 id="集合ArrayList"><a href="#集合ArrayList" class="headerlink" title="集合ArrayList"></a>集合ArrayList</h1><p>长度可变的容器(自动扩容)</p>
-<p>集合不能<strong>直接</strong>存基本数据类型–》包装类</p>
-<ol>
-<li><p>为什么要有集合?</p>
-<p>ArrayList:</p>
-<p>构造方法：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">ArrayList&lt;泛型&gt; list = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;可省略&gt;();</span><br><span class="line"><span class="comment">//此时我们创建的是ArrayList的对象，而ArrayList是Java已经写好的一个类，这个类在底层做了一些处理打印对象不是地址值，而是集合中存储数据的内容，在展示的时候会拿[]把所有的数据进行包裹。</span></span><br></pre></td></tr></table></figure>
-
-<p>成员方法：</p>
-<table>
-<thead>
-<tr>
-<th>方法名</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>boolean add(E,e)</td>
-<td>添加元素，返回值表示是否添加成功</td>
-</tr>
-<tr>
-<td>boolean remove(E,e)</td>
-<td>删除指定元素，返回值表示是否删除成功</td>
-</tr>
-<tr>
-<td>E remove(int index)</td>
-<td>删除指定索引的元素，返回被删除元素</td>
-</tr>
-<tr>
-<td>E set(int index,E,e)</td>
-<td>修改指定索引下的元素，返回原来的元素</td>
-</tr>
-<tr>
-<td>E get(int index)</td>
-<td>获取指定索引的元素</td>
-</tr>
-<tr>
-<td>int size()</td>
-<td>集合的长度，也就是集合中元素的个数</td>
-</tr>
-</tbody></table>
-</li>
-<li><p>泛型：限定集合中存储数据的类型，集合不能<strong>直接存储</strong>基本数据类型，可以存储引用数据类型。</p>
-</li>
-<li><p>基本数据类型对应的包装类</p>
-<table>
-<thead>
-<tr>
-<th align="center">byte</th>
-<th align="center">Byte</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">short</td>
-<td align="center">Short</td>
-</tr>
-<tr>
-<td align="center">char</td>
-<td align="center"><strong>Character</strong></td>
-</tr>
-<tr>
-<td align="center">int</td>
-<td align="center"><strong>Integer</strong></td>
-</tr>
-<tr>
-<td align="center">long</td>
-<td align="center">Long</td>
-</tr>
-<tr>
-<td align="center">float</td>
-<td align="center">Float</td>
-</tr>
-<tr>
-<td align="center">boolean</td>
-<td align="center">Boolean</td>
-</tr>
-</tbody></table>
-</li>
-<li><p>集合返回多个对象</p>
-<p>技巧：如果我们要返回多个数据，可以把这些数据先放到一个容器当中，再把容器返回(集合&#x2F;数组)</p>
-</li>
-<li></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>面向对象进阶-内部类</title>
-    <url>/2024/02/23/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E5%86%85%E9%83%A8%E7%B1%BB/</url>
-    <content><![CDATA[<p>内部类–是类的五大成员之一(属性，方法，构造方法，内部类)，在一个类的里面，在定义一个类。</p>
-<p><strong>应用场景</strong>：</p>
-<p>​	需求：写一个javabean类描述汽车</p>
-<p>​	属性：汽车的品牌，车龄，颜色，发动机的品牌，使用年限。(汽车和发动机属于两个类，又有联系)</p>
-<p>内部类表示的事物是外部类的一部分，内部类单独出现没有任何意义</p>
-<p><strong>访问特点</strong>：</p>
-<p>​	内部类可以直接访问外部类的成员，包括私有&#x2F;&#x2F;Outer.this.变量名</p>
-<p>​	外部类要访问内部类的成员，必须创建对象</p>
-<p><strong>成员内部类</strong>：</p>
-<p>​	如何书写？：写在成员位置(类中方法外)，属于外部类的成员。</p>
-<p>​				成员内部类可以被一些修饰符所修饰，比如：private(本类)，默认(本包)，protected(本包其他类，其他包的子类)，public(所有地方)，static(静态的)等。</p>
-<p>​				在成员内部类里面，JDK16之前不能定义<strong>静态变量</strong>，JDK16开始才可以定义<strong>静态变量</strong>。</p>
-<p>​	如何创建成员内部类的对象？：</p>
-<p>​			 <strong>方式一</strong>：在外部类中编写方法，对外提供内部类的对象</p>
-<p>​			&#x2F;&#x2F;使用场景：用在private修饰内部类的</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Outer</span>&#123;</span><br><span class="line">	String name;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">class</span> <span class="title class_">Inner</span>&#123;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">public</span> Inner <span class="title function_">getInstance</span><span class="params">()</span>&#123;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//测试类</span></span><br><span class="line"><span class="type">Outer</span> <span class="variable">o</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Outer</span>();</span><br><span class="line"><span class="type">Object</span> <span class="variable">ob</span> <span class="operator">=</span> o.getInstance();<span class="comment">//获取内部类对象</span></span><br></pre></td></tr></table></figure>
-
-<p>​			 <strong>方式二</strong>：直接创建格式：外部类名.内部类名  对象名 &#x3D; 外部类对象.内部类对象；范例：Outer.Inner oi &#x3D; new Outer().new Inner();	   &#x2F;&#x2F;使用场景：不是用private修饰内部类的</p>
-<p><strong>静态内部类</strong>：静态内部类只能访问外部类中的静态变量和静态方法，如果想要访问非静态的需要创建外部类的对象</p>
-<p>​	<strong>创建静态内部类对象的格式</strong>：外部类名.内部类名  <em>对象</em>名 &#x3D;  new  外部类名.内部类名( );</p>
-<p>​	<strong>调用非静态方法的格式</strong>：先创建对象，用<em>对象</em>调用</p>
-<p>​	<strong>调用静态方法的格式</strong>：外部类名.内部类名.方法名();</p>
-<p>​	静态内部类是一种特殊的成员内部类</p>
-<p><strong>局部内部类</strong>：1.将内部类定义在方法里面就叫做局部内部类，类似于方法里面的局部变量，</p>
-<p>​		       2.外界是无法直接使用，需要在方法内部创建对象并使用。</p>
-<p>​		       3.该类可以直接访问外部类的成员，也可以访问方法内的局部变量</p>
-<p><strong>匿名内部类</strong>(重点)：本质就是隐藏了名字的内部类，可以写在成员位置，也可以写在局部位置</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//格式</span></span><br><span class="line"><span class="keyword">new</span> 类名或接口名()&#123;</span><br><span class="line">    重写方法;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">//包含了继承或实现，方法重写，创建对象</span></span><br><span class="line"><span class="comment">//整体就是一个类的子类对象或者接口的实现类对象</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="/../images/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E5%86%85%E9%83%A8%E7%B1%BB/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240225202806.png" alt="接口"></p>
-<p>使用场景：当方法的参数是接口或类时，以接口为例，可以传递这个接口的实现类对象，如果实现类只要使用一次，就可以用匿名内部类简化代码。</p>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>面向对象进阶-抽象类和抽象方法</title>
-    <url>/2024/02/23/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E6%8A%BD%E8%B1%A1%E7%B1%BB%E5%92%8C%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<p>抽象类：抽象方法所在的类叫做抽象类，子类必须强制重写，否则子类代码直接报错</p>
-<p>定义格式：public abstract class 类名{}</p>
-<p>抽象方法：将共性的行为抽取到父类之后，由于每一个子类执行的内容是不一样，所以，<strong>在父类中不能确定具体的方法体</strong>，该方法就可以定义为抽象方法。</p>
-<p>定义格式：public abstract 返回值类型 方法名(参数列表)；alt+回车</p>
-<p>注意事项：1.抽象类不能实例化-不能创建对象</p>
-<p>​		   2.抽象类中不一定有抽象方法，但是抽象方法的类一定是抽象类</p>
-<p>​		   3.可能有构造方法</p>
-<p>​		   4.<strong>抽象类的子类</strong></p>
-<p>​				<strong>要么重写抽象类中的所有抽象方法</strong>(推荐使用)</p>
-<p>​				要么是抽象类</p>
-<p>意义：强制子类必须按照统一格式书写</p>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>面向对象进阶-接口</title>
     <url>/2024/02/23/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E6%8E%A5%E5%8F%A3/</url>
     <content><![CDATA[<p><strong>接口：</strong>就是一种规则，对行为的抽象。</p>
@@ -1622,6 +1613,28 @@
 <p>​	适配器设计模式：解决接口与接口实现类之间的矛盾问题</p>
 <p>​			1.当接口中抽象方法较多，而你执行操作其他一个，这时在实现类，就需要重写全部方法，影响阅读和操作，可以新建一个抽象类来存储所有的重写方法(空实现，即方法体空着)，然后让实现类来继承这个类，这时实现类就可以任意重写某一个方法。</p>
 <p>（为了避免其他类创建适配器类的对象，中间的适配器类用abstract进行修饰）</p>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>面向对象进阶-抽象类和抽象方法</title>
+    <url>/2024/02/23/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E6%8A%BD%E8%B1%A1%E7%B1%BB%E5%92%8C%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<p>抽象类：抽象方法所在的类叫做抽象类，子类必须强制重写，否则子类代码直接报错</p>
+<p>定义格式：public abstract class 类名{}</p>
+<p>抽象方法：将共性的行为抽取到父类之后，由于每一个子类执行的内容是不一样，所以，<strong>在父类中不能确定具体的方法体</strong>，该方法就可以定义为抽象方法。</p>
+<p>定义格式：public abstract 返回值类型 方法名(参数列表)；alt+回车</p>
+<p>注意事项：1.抽象类不能实例化-不能创建对象</p>
+<p>​		   2.抽象类中不一定有抽象方法，但是抽象方法的类一定是抽象类</p>
+<p>​		   3.可能有构造方法</p>
+<p>​		   4.<strong>抽象类的子类</strong></p>
+<p>​				<strong>要么重写抽象类中的所有抽象方法</strong>(推荐使用)</p>
+<p>​				要么是抽象类</p>
+<p>意义：强制子类必须按照统一格式书写</p>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -1894,6 +1907,18 @@
       </tags>
   </entry>
   <entry>
+    <title>登录错误时的次数限制</title>
+    <url>/2024/02/19/%E7%99%BB%E5%BD%95%E5%A4%B1%E8%AF%AF%E6%97%B6%E6%AC%A1%E6%95%B0%E7%9A%84%E9%99%90%E5%88%B6/</url>
+    <content><![CDATA[<p>day12</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">3</span>;i++) &#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;请输入用户名:&quot;</span>);</span><br><span class="line">    <span class="type">String</span> <span class="variable">username</span> <span class="operator">=</span> sc.next();</span><br><span class="line">    <span class="type">boolean</span> <span class="variable">flag</span> <span class="operator">=</span> contains(list, username);</span><br><span class="line">    <span class="keyword">if</span> (!flag) &#123;<span class="comment">//集合中没有该用户名</span></span><br><span class="line">        System.out.println(<span class="string">&quot;用户名未注册，请先注册&quot;</span>);</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println(<span class="string">&quot;请输入密码&quot;</span>);</span><br><span class="line">    <span class="type">String</span> <span class="variable">password</span> <span class="operator">=</span> sc.next();</span><br><span class="line">    <span class="keyword">while</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">        <span class="type">String</span> <span class="variable">vericode</span> <span class="operator">=</span> getVericode();</span><br><span class="line">        System.out.println(vericode);</span><br><span class="line">        System.out.println(<span class="string">&quot;请录入验证码:&quot;</span>);</span><br><span class="line">        <span class="type">String</span> <span class="variable">againcode</span> <span class="operator">=</span> sc.next();</span><br><span class="line">        <span class="keyword">if</span> (vericode.equalsIgnoreCase(againcode)) &#123;<span class="comment">//验证码正确</span></span><br><span class="line">            System.out.println(<span class="string">&quot;验证码录入成功&quot;</span>);</span><br><span class="line">            System.out.println(<span class="string">&quot;成功登录&quot;</span>);</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;请重新录入验证码:&quot;</span>);</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">Student</span> <span class="variable">stuInfo</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Student</span>(username, password, <span class="literal">null</span>, <span class="literal">null</span>);</span><br><span class="line">    <span class="type">boolean</span> result=checkstuInfo(list,stuInfo);</span><br><span class="line">    <span class="keyword">if</span> (result)&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;登录成功，可以使用你的学生管理系统了&quot;</span>);</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;登录失败，用户名或密码错误&quot;</span>);</span><br><span class="line">        <span class="keyword">if</span> (i==<span class="number">2</span>)&#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;当前账号&quot;</span>+username+<span class="string">&quot;被锁定&quot;</span>);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;用户名或密码错误，还剩下&quot;</span>+(<span class="number">2</span>-i)+<span class="string">&quot;次机会&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>经典算法思想</category>
+      </categories>
+      <tags>
+        <tag>算法思想</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>生成验证码</title>
     <url>/2024/02/19/%E7%94%9F%E6%88%90%E9%AA%8C%E8%AF%81%E7%A0%81/</url>
     <content><![CDATA[<h4 id="验证码规则："><a href="#验证码规则：" class="headerlink" title="验证码规则："></a>验证码规则：</h4><p>​	长度为5</p>
@@ -1933,18 +1958,6 @@
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">System.out.print(<span class="string">&quot;[&quot;</span>);</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; array.length; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (i==array.length-<span class="number">1</span>)&#123;</span><br><span class="line">                System.out.print(array[i]);</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                System.out.print(array[i]+<span class="string">&quot;,&quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(<span class="string">&quot;]&quot;</span>);</span><br></pre></td></tr></table></figure>
 
 ]]></content>
-      <categories>
-        <category>经典算法思想</category>
-      </categories>
-      <tags>
-        <tag>算法思想</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>登录错误时的次数限制</title>
-    <url>/2024/02/19/%E7%99%BB%E5%BD%95%E5%A4%B1%E8%AF%AF%E6%97%B6%E6%AC%A1%E6%95%B0%E7%9A%84%E9%99%90%E5%88%B6/</url>
-    <content><![CDATA[<p>day12</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">3</span>;i++) &#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;请输入用户名:&quot;</span>);</span><br><span class="line">    <span class="type">String</span> <span class="variable">username</span> <span class="operator">=</span> sc.next();</span><br><span class="line">    <span class="type">boolean</span> <span class="variable">flag</span> <span class="operator">=</span> contains(list, username);</span><br><span class="line">    <span class="keyword">if</span> (!flag) &#123;<span class="comment">//集合中没有该用户名</span></span><br><span class="line">        System.out.println(<span class="string">&quot;用户名未注册，请先注册&quot;</span>);</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println(<span class="string">&quot;请输入密码&quot;</span>);</span><br><span class="line">    <span class="type">String</span> <span class="variable">password</span> <span class="operator">=</span> sc.next();</span><br><span class="line">    <span class="keyword">while</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">        <span class="type">String</span> <span class="variable">vericode</span> <span class="operator">=</span> getVericode();</span><br><span class="line">        System.out.println(vericode);</span><br><span class="line">        System.out.println(<span class="string">&quot;请录入验证码:&quot;</span>);</span><br><span class="line">        <span class="type">String</span> <span class="variable">againcode</span> <span class="operator">=</span> sc.next();</span><br><span class="line">        <span class="keyword">if</span> (vericode.equalsIgnoreCase(againcode)) &#123;<span class="comment">//验证码正确</span></span><br><span class="line">            System.out.println(<span class="string">&quot;验证码录入成功&quot;</span>);</span><br><span class="line">            System.out.println(<span class="string">&quot;成功登录&quot;</span>);</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;请重新录入验证码:&quot;</span>);</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">Student</span> <span class="variable">stuInfo</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Student</span>(username, password, <span class="literal">null</span>, <span class="literal">null</span>);</span><br><span class="line">    <span class="type">boolean</span> result=checkstuInfo(list,stuInfo);</span><br><span class="line">    <span class="keyword">if</span> (result)&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;登录成功，可以使用你的学生管理系统了&quot;</span>);</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;登录失败，用户名或密码错误&quot;</span>);</span><br><span class="line">        <span class="keyword">if</span> (i==<span class="number">2</span>)&#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;当前账号&quot;</span>+username+<span class="string">&quot;被锁定&quot;</span>);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;用户名或密码错误，还剩下&quot;</span>+(<span class="number">2</span>-i)+<span class="string">&quot;次机会&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>经典算法思想</category>
       </categories>
