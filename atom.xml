@@ -6,7 +6,7 @@
   <link href="https://readmengk90.github.io/atom.xml" rel="self"/>
   
   <link href="https://readmengk90.github.io/"/>
-  <updated>2024-02-27T02:26:33.399Z</updated>
+  <updated>2024-02-27T04:56:42.494Z</updated>
   <id>https://readmengk90.github.io/</id>
   
   <author>
@@ -21,7 +21,9 @@
     <link href="https://readmengk90.github.io/2024/02/27/01%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%AD%A6%E6%A6%82%E8%BF%B0/"/>
     <id>https://readmengk90.github.io/2024/02/27/01%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%AD%A6%E6%A6%82%E8%BF%B0/</id>
     <published>2024-02-27T02:21:01.665Z</published>
-    <updated>2024-02-27T02:26:33.399Z</updated>
+    <updated>2024-02-27T04:56:42.494Z</updated>
+    
+    <content type="html"><![CDATA[<table><thead><tr><th align="left">考试内容</th><th align="left">考试要求</th></tr></thead><tbody><tr><td align="left">1. 软件和软件工程的含义、软件工程的基本原理</td><td align="left">1.理解软件和软件工程的含义、软件工程的基本原理。</td></tr><tr><td align="left">2. 软件危机的原因、表现和消除途径。</td><td align="left">2.理解产生软件危机的原因和消除软件危机的途径。</td></tr><tr><td align="left">3. 软件生命周期各个阶段的基本任务。</td><td align="left">3.了解什么是软件生命周期，了解生命周期各个阶段：可行性分析、需求分析、系统设计、详细设计、实现、测试的基本任务。</td></tr><tr><td align="left">4. 软件生命周期模型。</td><td align="left">4.了解各种软件生命周期模型的优缺点和适用场合：瀑布模型、增量模型、快速原型模型、螺旋模型。</td></tr></tbody></table><p><strong>软件危机：</strong></p><p>​定义：在计算机软件的<strong>开发</strong>和<strong>维护</strong>过程中所遇到的一系列严重问题。</p><p>​范围： 1.如何维护数量不断膨胀的已有软件。</p><p>​     2.如何开发软件，以满足对软件日益增长的需求。</p><p>​        典型表现：1.对软件成本和开发进度的估计不准确。</p><p>​   2.用户对“已完成的”软件系统不满意的现象经常发生。</p><p>​   3.软件产品质量往往靠不住</p><p>​   4.软件常常是不可维护的</p><p>​   5.软件通常没有适当的文档资料</p><p>​           6.软件成本在计算机系统总成本中所占比例逐年上升。</p><p>​   7.软件开发生产率提高的速度，远远跟不上计算机应用迅速普及深入的趋势</p><p>​<strong>产生的原因</strong>：</p><table><thead><tr><th>与软件本身的特点有关(客观)</th><th>与软件本身的特点无关(主观)</th></tr></thead><tbody><tr><td>缺乏可见性，进展较难衡量，软件质量较难评价(用户与产品之间的矛盾)</td><td>软件开发与维护的方法不准确，即采用了错误的方法和技术。</td></tr><tr><td>不会用坏，难维护</td><td>忽视软件需求分析的重要性</td></tr><tr><td>复杂性随规模的增加呈指数上升</td><td>轻视软件维护</td></tr></tbody></table><p>​<strong>消除途径</strong>：</p><p>​1.对计算机软件有一个正确的认识(软件是程序，数据，及相关文档的完整集合)</p><p>​2.软件是一个工程项目(软件开发是一种组织良好，管理严密，各类人员协同配合，共同完成的工程项目)</p><p>​3.推广使用成功的技术和方法，探索更有效地技术和方法。</p><p>​4.开发和使用更好的软件工具 </p><p>**软件工程( Software Engineering)**：</p>]]></content>
     
     
     <summary type="html">&lt;center&gt;软件工程学概论&lt;/center&gt;</summary>
