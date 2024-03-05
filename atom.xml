@@ -6,7 +6,7 @@
   <link href="https://readmengk90.github.io/atom.xml" rel="self"/>
   
   <link href="https://readmengk90.github.io/"/>
-  <updated>2024-03-02T10:20:52.071Z</updated>
+  <updated>2024-03-02T10:26:14.366Z</updated>
   <id>https://readmengk90.github.io/</id>
   
   <author>
@@ -17,32 +17,13 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>英语口语</title>
-    <link href="https://readmengk90.github.io/2024/03/02/%E8%8B%B1%E8%AF%AD%E5%8F%A3%E8%AF%AD/"/>
-    <id>https://readmengk90.github.io/2024/03/02/%E8%8B%B1%E8%AF%AD%E5%8F%A3%E8%AF%AD/</id>
-    <published>2024-03-02T10:20:21.164Z</published>
-    <updated>2024-03-02T10:20:52.071Z</updated>
-    
-    
-    <summary type="html">&lt;center&gt;英语口语&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="软件工程" scheme="https://readmengk90.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
-    
-    
-    <category term="考研复试" scheme="https://readmengk90.github.io/tags/%E8%80%83%E7%A0%94%E5%A4%8D%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
     <title>可行性研究</title>
     <link href="https://readmengk90.github.io/2024/03/02/02%E5%8F%AF%E8%A1%8C%E6%80%A7%E7%A0%94%E7%A9%B6/"/>
     <id>https://readmengk90.github.io/2024/03/02/02%E5%8F%AF%E8%A1%8C%E6%80%A7%E7%A0%94%E7%A9%B6/</id>
     <published>2024-03-02T09:40:25.581Z</published>
-    <updated>2024-03-02T10:20:05.570Z</updated>
+    <updated>2024-03-02T10:26:14.366Z</updated>
     
-    <content type="html"><![CDATA[<table><thead><tr><th align="left">考试内容</th><th align="left">考试要求</th></tr></thead><tbody><tr><td align="left">1. 软件和软件工程的含义、软件工程的基本原理</td><td align="left">1.理解软件和软件工程的含义、软件工程的基本原理。</td></tr><tr><td align="left">2. 软件危机的原因、表现和消除途径。</td><td align="left">2.理解产生软件危机的原因和消除软件危机的途径。</td></tr><tr><td align="left">3. 软件生命周期各个阶段的基本任务。</td><td align="left">3.了解什么是软件生命周期，了解生命周期各个阶段：可行性分析、需求分析、系统设计、详细设计、实现、测试的基本任务。</td></tr><tr><td align="left">4. 软件生命周期模型。</td><td align="left">4.了解各种软件生命周期模型的优缺点和适用场合：瀑布模型、增量模型、快速原型模型、螺旋模型。</td></tr></tbody></table>]]></content>
+    <content type="html"><![CDATA[<table><thead><tr><th align="left">考试内容</th><th align="left">考试要求</th></tr></thead><tbody><tr><td align="left">1. 可行性研究的任务</td><td align="left">1.了解可行性研究的任务</td></tr><tr><td align="left">2. 数据流图和数据字典</td><td align="left"></td></tr><tr><td align="left">3.成本效益分析</td><td align="left">3.了解什么是软件生命周期，了解生命周期各个阶段：可行性分析、需求分析、系统设计、详细设计、实现、测试的基本任务。</td></tr><tr><td align="left">4. 需求分析的任务</td><td align="left">4.了解需求分析的任务</td></tr><tr><td align="left">5.实体联系图，状态转换图，层次方框图，IPO图</td><td align="left">掌握可行性研究和需求分析的建模方法：数据流图，数据字典，实体联系图，状态转换图，层次方框图，IPO图</td></tr></tbody></table>]]></content>
     
     
     <summary type="html">&lt;center&gt;可行性研究&lt;/center&gt;</summary>
@@ -431,6 +412,27 @@
     
     
     <category term="算法思想" scheme="https://readmengk90.github.io/tags/%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java API 和字符串</title>
+    <link href="https://readmengk90.github.io/2024/02/03/Java%E5%9F%BA%E7%A1%80-API%E5%92%8C%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    <id>https://readmengk90.github.io/2024/02/03/Java%E5%9F%BA%E7%A1%80-API%E5%92%8C%E5%AD%97%E7%AC%A6%E4%B8%B2/</id>
+    <published>2024-02-03T10:57:21.851Z</published>
+    <updated>2024-02-08T02:41:28.509Z</updated>
+    
+    <content type="html"><![CDATA[<p>**API(**Application Programming Interface):应用程序编程接口</p><p>简单理解：API就是别人已经写好的东西，我们不需要自己编写，直接使用即可.</p><p>Java API:指的就是JDK中提供得各种功能得Java类，这些类将底层的实现封装起来，我们不需要关心这些类是如何实现的，只需要学习这些类如何使用即可。</p><p>API帮助文档：帮助开发人员更好的使用API和查询API的一个工具</p><p>链接：<a href="https://pan.baidu.com/s/1DXJGNchknR_VgQVxbqzQig?pwd=rqei">https://pan.baidu.com/s/1DXJGNchknR_VgQVxbqzQig?pwd=rqei</a><br>提取码：rqei </p><p>如何使用帮助文档：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">java.io包：读取文件的内容，或者把数据写到文件中去</span><br><span class="line">java.lang包：</span><br></pre></td></tr></table></figure><p><strong>字符串：</strong>JAVA不会字符串，开发就会凉一半</p><p>String：定义在java.lang.String包内，代表字符串，Java程序中的所有字符串(“abc”)文字都为此类的对象。</p><p>​字符串的内容是不会发生改变的，它的对象在创建后不能被更改</p><p><em>创建String对象的两种方式</em>：</p><p>1.<strong>直接赋值</strong>：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">String</span> <span class="variable">name</span> <span class="operator">=</span> <span class="string">&quot;abc&quot;</span>;</span><br></pre></td></tr></table></figure><p>2.<strong>使用new关键字使用不同的构造方法去创建字符串对象</strong>:</p><table><thead><tr><th align="center">构造方法</th><th align="center">说明</th></tr></thead><tbody><tr><td align="center">public String（）</td><td align="center">创建空白字符串，不含任何内容<br>String s0 &#x3D; new String( );</td></tr><tr><td align="center">public String(String original)</td><td align="center">根据传入的字符串，创建字符串对象<br>String s1 &#x3D; new String(“abc”)</td></tr><tr><td align="center">public String(char[ ] chs)</td><td align="center">根据传入字符数组，创建字符串对象<br>char[] chs &#x3D; {‘a’,’b’,’c’,’d’}<br>String s2 &#x3D; new String(chs)</td></tr><tr><td align="center">public String(byte[ ] chs)</td><td align="center">根据传入字节数组，创建字符串对象<br>byte[] bytes&#x3D; {97,98,99,100}<br>String s3 &#x3D; new String(bytes)</td></tr></tbody></table><p>字符串-字符数组-字符串：(应用场景:修改字符串的内容)</p><p>字节数组-字符串：(应用场景：网络中传输的数据其实都是字节信息)</p><p><em>字符串在内存中是如何创建的</em></p><p>StringTable(<strong>字符串常量池</strong>)：直接赋值的方式获取的字符串放在串次中，串池在<strong>堆内存</strong>中</p><p>当时有双引号直接赋值时，系统会坚持该字符串在串池中是否存在，不存在，创建新的，<strong>存在，复用。</strong></p><p>Java的常用方法1-<strong>字符串的比较</strong></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">String</span> <span class="variable">s1</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">String</span>(<span class="string">&quot;abc&quot;</span>);</span><br><span class="line"><span class="type">String</span> <span class="variable">s2</span> <span class="operator">=</span> <span class="string">&quot;abc&quot;</span>;</span><br><span class="line">System.out.println(s1==s2);<span class="comment">//这种比较可以吗？</span></span><br></pre></td></tr></table></figure><p><em>&#x3D;&#x3D;号比较的原理？</em>（String属于引用数据类型）</p><p>基本数据类型：&#x3D;&#x3D;号比较基本数据类型比较的是<strong>数据值</strong></p><p>引用数据类型：&#x3D;&#x3D;号比较引用数据类型比较的是<strong>地址值</strong></p><p><em>字符串的比较？</em></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">String</span> <span class="variable">s1</span> <span class="operator">=</span> <span class="string">&quot;abc&quot;</span>;<span class="comment">//记录串池里的地址</span></span><br><span class="line"><span class="type">String</span> <span class="variable">s2</span> <span class="operator">=</span> <span class="string">&quot;abc&quot;</span>;<span class="comment">//串池中存在该字符串，复用，地址值相同</span></span><br><span class="line">System.out.println(s1==s2);</span><br><span class="line"><span class="comment">//----------------------------------------------------------</span></span><br><span class="line"><span class="type">String</span> <span class="variable">s1</span> <span class="operator">=</span> <span class="string">&quot;abc&quot;</span>;<span class="comment">//记录串池里面的地址</span></span><br><span class="line"><span class="type">String</span> <span class="variable">s2</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">String</span>(<span class="string">&quot;abc&quot;</span>);<span class="comment">//记录堆里面的地址</span></span><br><span class="line">System.out.println(s1==s2);</span><br></pre></td></tr></table></figure><p>字符串比较：</p><p><strong>boolean equals方法(要比较的字符串)</strong> &#x2F;&#x2F;完全一样的结果才是true，否则为false.</p><p><strong>boolean equalsIgnoreCase(要比较的字符串)</strong>  &#x2F;&#x2F;忽略(<strong>英文状态下的</strong>)大小写的比较,适用于验证码校验</p><p><strong>&#x2F;&#x2F;键盘录入得到的字符串是new出来的</strong>，只有想比较字符串的内容，就必须要用String里面的方法。</p><p>Java常用的方法2-<strong>遍历字符串</strong></p><table><thead><tr><th>public char charAt(int index):根据索引返回字符</th></tr></thead><tbody><tr><td><strong>public int length():返回此字符串的长度，字符串的长度：字符串对象.length()</strong></td></tr></tbody></table><p>Java常用的方法3-<strong>字符串拼接和反转</strong></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">String newStr=<span class="string">&quot;&quot;</span>;<span class="comment">//-------------------------------拼接--------------</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">L</span> <span class="operator">=</span> str.length();</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> L-<span class="number">1</span>; i &gt;=<span class="number">0</span>; i--) &#123;</span><br><span class="line">            <span class="type">char</span> <span class="variable">c</span> <span class="operator">=</span> str.charAt(i);</span><br><span class="line">            newStr=newStr+c;----------------------思想--------------</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> newStr;</span><br></pre></td></tr></table></figure><p>Java常用的方法4-<strong>字符串的截取</strong></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">String <span class="title function_">subString</span><span class="params">(<span class="type">int</span> beginIndex,<span class="type">int</span> endIndex)</span>   <span class="comment">//截取---包头不包围，包左不包右</span></span><br><span class="line">    <span class="comment">//只有返回值才是截取的小串，对原来的字符串没有任何影响，字符串本身不能发生变化。</span></span><br><span class="line">String <span class="title function_">subString</span><span class="params">(<span class="type">int</span> beginIndex)</span>  <span class="comment">//截取到末尾</span></span><br></pre></td></tr></table></figure><p> Java常用的方法5-<strong>新旧值替换</strong></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">String <span class="title function_">replace</span><span class="params">(旧值,新值)</span><span class="comment">//替换</span></span><br><span class="line"><span class="comment">//注意点：只有返回值才是替换之后的结果</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;JavaAPI 和字符串&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="Java基础" scheme="https://readmengk90.github.io/categories/Java%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="java" scheme="https://readmengk90.github.io/tags/java/"/>
     
   </entry>
   
