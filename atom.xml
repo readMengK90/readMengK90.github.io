@@ -6,7 +6,7 @@
   <link href="https://readmengk90.github.io/atom.xml" rel="self"/>
   
   <link href="https://readmengk90.github.io/"/>
-  <updated>2024-09-09T07:25:12.110Z</updated>
+  <updated>2024-09-09T07:32:07.804Z</updated>
   <id>https://readmengk90.github.io/</id>
   
   <author>
@@ -17,28 +17,23 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>endNode的使用</title>
     <link href="https://readmengk90.github.io/2024/09/08/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
     <id>https://readmengk90.github.io/2024/09/08/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/</id>
     <published>2024-09-08T07:41:01.862Z</published>
-    <updated>2024-09-09T07:25:12.110Z</updated>
+    <updated>2024-09-09T07:32:07.804Z</updated>
     
     <content type="html"><![CDATA[<p>1.endnode的下载和安装：</p><p>​<a href="https://mp.weixin.qq.com/s/dVgeXShxAsyfyVfzJkREMw">EndNote21.4安装教程 (qq.com)</a></p><p>2.导入文献</p><p>​2.1数据库导入</p><p>​（PubMed是文摘型数据库，也就意味着PubMed的强项是<strong>检索</strong>，这与全文数据库是不同的）</p><p>​2.2</p><p>3.管理文献</p><p>4.引用文献</p><p>5.国内期刊&#x2F;学位论文文献引用</p>]]></content>
     
     
-    <summary type="html">&lt;p&gt;1.endnode的下载和安装：&lt;/p&gt;
-&lt;p&gt;​	&lt;a href=&quot;https://mp.weixin.qq.com/s/dVgeXShxAsyfyVfzJkREMw&quot;&gt;EndNote21.4安装教程 (qq.com)&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;2.导入文献&lt;/p&gt;
-&lt;p&gt;​	2.1数据库导入&lt;/p&gt;
-&lt;p&gt;​	（PubMed是文摘型数据库，也就意味着PubMed的强项是&lt;strong&gt;检索&lt;/strong&gt;，这与全文数据库是不同的）&lt;/p&gt;
-&lt;p&gt;​	2.2&lt;/p&gt;
-&lt;p&gt;3.管理文献&lt;/p&gt;
-&lt;p&gt;4.引用文献&lt;/p&gt;
-&lt;p&gt;5.国内期刊&amp;#x2F;学位论文文献引用&lt;/p&gt;
-</summary>
+    <summary type="html">&lt;center&gt;科研软件&lt;/center&gt;</summary>
     
     
     
+    <category term="科研软件" scheme="https://readmengk90.github.io/categories/%E7%A7%91%E7%A0%94%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="科研软件" scheme="https://readmengk90.github.io/tags/%E7%A7%91%E7%A0%94%E8%BD%AF%E4%BB%B6/"/>
     
   </entry>
   
