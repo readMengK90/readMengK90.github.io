@@ -110,6 +110,32 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo+Mext设置主页文章添加边框阴影效果</title>
+    <url>/2024/01/10/Hexo+Next%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%BB%E9%A1%B5%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E8%BE%B9%E6%A1%86%E9%98%B4%E5%BD%B1%E6%95%88%E6%9E%9C/</url>
+    <content><![CDATA[<h1 id="设置主页文章添加边框阴影效果"><a href="#设置主页文章添加边框阴影效果" class="headerlink" title="设置主页文章添加边框阴影效果"></a>设置主页文章添加边框阴影效果</h1><ol>
+<li><p>打开主题文件夹下的post：</p>
+<p>MyBlog\themes\next\source\css\ _common\components\post\post.styl文件</p>
+</li>
+<li><p>ctrl+F查找.use-motion{},修改后的内容如下方所示</p>
+</li>
+</ol>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.use-motion</span> &#123;</span><br><span class="line"> if (hexo-config(&#x27;motion<span class="selector-class">.transition</span><span class="selector-class">.post_block</span>&#x27;)) &#123;</span><br><span class="line">    <span class="selector-class">.post-block</span>, <span class="selector-class">.pagination</span>, <span class="selector-class">.comments</span> &#123;</span><br><span class="line">      <span class="attribute">opacity</span>: <span class="number">0</span>;</span><br><span class="line">      <span class="attribute">margin-top</span>: <span class="number">3px</span>;</span><br><span class="line">      <span class="attribute">margin-bottom</span>: <span class="number">30px</span>;</span><br><span class="line">      <span class="attribute">padding</span>: <span class="number">25px</span>;</span><br><span class="line">      -webkit-<span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">5px</span> <span class="built_in">rgba</span>(<span class="number">202</span>, <span class="number">203</span>, <span class="number">203</span>, .<span class="number">5</span>);</span><br><span class="line">      -moz-<span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">5px</span> <span class="built_in">rgba</span>(<span class="number">202</span>, <span class="number">203</span>, <span class="number">204</span>, .<span class="number">5</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<ol>
+<li><p>重启</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo+clean</span><br><span class="line"></span><br><span class="line">hexo+g</span><br><span class="line"></span><br><span class="line">hexo+d</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Next主题配置</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>可行性研究</title>
     <url>/2024/03/02/02%E5%8F%AF%E8%A1%8C%E6%80%A7%E7%A0%94%E7%A9%B6/</url>
     <content><![CDATA[<table>
@@ -149,79 +175,30 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo+Mext设置主页文章添加边框阴影效果</title>
-    <url>/2024/01/10/Hexo+Next%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%BB%E9%A1%B5%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E8%BE%B9%E6%A1%86%E9%98%B4%E5%BD%B1%E6%95%88%E6%9E%9C/</url>
-    <content><![CDATA[<h1 id="设置主页文章添加边框阴影效果"><a href="#设置主页文章添加边框阴影效果" class="headerlink" title="设置主页文章添加边框阴影效果"></a>设置主页文章添加边框阴影效果</h1><ol>
-<li><p>打开主题文件夹下的post：</p>
-<p>MyBlog\themes\next\source\css\ _common\components\post\post.styl文件</p>
-</li>
-<li><p>ctrl+F查找.use-motion{},修改后的内容如下方所示</p>
-</li>
-</ol>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.use-motion</span> &#123;</span><br><span class="line"> if (hexo-config(&#x27;motion<span class="selector-class">.transition</span><span class="selector-class">.post_block</span>&#x27;)) &#123;</span><br><span class="line">    <span class="selector-class">.post-block</span>, <span class="selector-class">.pagination</span>, <span class="selector-class">.comments</span> &#123;</span><br><span class="line">      <span class="attribute">opacity</span>: <span class="number">0</span>;</span><br><span class="line">      <span class="attribute">margin-top</span>: <span class="number">3px</span>;</span><br><span class="line">      <span class="attribute">margin-bottom</span>: <span class="number">30px</span>;</span><br><span class="line">      <span class="attribute">padding</span>: <span class="number">25px</span>;</span><br><span class="line">      -webkit-<span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">5px</span> <span class="built_in">rgba</span>(<span class="number">202</span>, <span class="number">203</span>, <span class="number">203</span>, .<span class="number">5</span>);</span><br><span class="line">      -moz-<span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">5px</span> <span class="built_in">rgba</span>(<span class="number">202</span>, <span class="number">203</span>, <span class="number">204</span>, .<span class="number">5</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<ol>
-<li><p>重启</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo+clean</span><br><span class="line"></span><br><span class="line">hexo+g</span><br><span class="line"></span><br><span class="line">hexo+d</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
-</ol>
+    <title>快捷键的妙用</title>
+    <url>/2024/01/22/Idea%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9A%84%E5%A6%99%E7%94%A8/</url>
+    <content><![CDATA[<h1 id="Idea快捷键的妙用"><a href="#Idea快捷键的妙用" class="headerlink" title="Idea快捷键的妙用"></a>Idea快捷键的妙用</h1><p>Ctrl+alt+M:自动抽取方法 </p>
+<p>​	编写程序时发现有重复代码，可以使用快捷键自动抽取方法，提高效率。</p>
+<p>Ctrl+alt+L:代码格式化</p>
+<p>​	编写完成一段代码后养成格式化的习惯。</p>
+<p>Ctrl+alt+v:自动补全代码快捷键</p>
+<p>CTRL+&#x2F;：单行注释</p>
+<p>CTRL+ALT+&#x2F;:多行注释</p>
+<p>选择变量+shift+F6:变量的批量修改</p>
+<p>Ctrl + Alt + T： 对选中的代码弹出环绕选项弹出层(while,if….)</p>
+<p>Alt+Insert:选择get和set方法</p>
+<p>Ctrl+B:点击方法，跟进原码,选中要进入的方法，使用快捷键直接进入</p>
+<p>Insert:书写代码是错误碰到insert键，会出现闪速黑色正方形块，影响书写。再次点击insert键可恢复</p>
+<p>Ctrll+N:搜索类快捷键</p>
+<p>alt+回车(enter):选中变量，alt+回车，左右进行切割</p>
+<p>代码 上 &#x2F;下移 ：Shift+Alt +方向上键&#x2F;下键</p>
+<p>alt+回车：点击方法，直接可以创建方法</p>
 ]]></content>
       <categories>
-        <category>Next主题配置</category>
+        <category>快捷方式</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo+Next主题下的阅读全文设置</title>
-    <url>/2024/01/10/Hexo-%E6%98%BE%E7%A4%BA%E5%85%A8%E6%96%87%E7%9A%84%E8%AE%BE%E7%BD%AE/</url>
-    <content><![CDATA[<h1 id="Hexo-显示全文的设置"><a href="#Hexo-显示全文的设置" class="headerlink" title="Hexo-显示全文的设置"></a>Hexo-显示全文的设置</h1><h5 id="1-在文章中使用-more-手动进行截断"><a href="#1-在文章中使用-more-手动进行截断" class="headerlink" title="1.在文章中使用&lt; !--more--&gt; 手动进行截断"></a>1.在文章中使用<code>&lt; !--more--&gt;</code> 手动进行截断</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-01.png?raw=true" alt="image-20240110132555493"></p>
-<h5 id="2-添加描述信息的内容，会成为一种相关内容的提示信息"><a href="#2-添加描述信息的内容，会成为一种相关内容的提示信息" class="headerlink" title="2.添加描述信息的内容，会成为一种相关内容的提示信息"></a>2.添加描述信息的内容，会成为一种相关内容的提示信息</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-02.png?raw=true" alt="image-20240110132853566"></p>
-<h5 id="3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部"><a href="#3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部" class="headerlink" title="3.在主题配置文件中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部"></a>3.在<strong>主题配置文件</strong>中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部</h5><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">auto_excerpt:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">length:</span> <span class="number">150</span></span><br></pre></td></tr></table></figure>
-
-<h5 id="4-效果-展示"><a href="#4-效果-展示" class="headerlink" title="4.效果 展示"></a>4.效果 展示</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-03.png?raw=true" alt="image-20240110133302658"></p>
-]]></content>
-      <categories>
-        <category>Next主题配置</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>endNode的使用</title>
-    <url>/2024/09/08/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<p>1.endnode的下载和安装：</p>
-<p>​	<a href="https://mp.weixin.qq.com/s/dVgeXShxAsyfyVfzJkREMw">EndNote21.4安装教程 (qq.com)</a></p>
-<p>2.导入文献</p>
-<p>​	2.1数据库导入</p>
-<p>​	<strong>PubMed</strong>(<a href="https://pubmed.ncbi.nlm.nih.gov/">PubMed (nih.gov)</a>)是文摘型数据库，也就意味着PubMed的强项是<strong>检索</strong>，这与全文数据库是不同的，点击create file会生成一个nbib文件。</p>
-<p>​	nbib文件导入endNode的方式：</p>
-<p>​		(1):直接双击文件，文件就会自动导入到endNode.</p>
-<p>​                (2):通过文献过滤器导入，File-&gt;Import-&gt;File(&#x2F;import⬇),选择导入文件，导入选择选择其他过滤器-&gt;PubMed(NLM).</p>
-<p><img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/pubmed%E4%BD%BF%E7%94%A8.png" alt=" "></p>
-<p>​	<strong>web of science</strong>(<a href="https://webofscience.clarivate.cn/wos/alldb/basic-search">Document Search - All Databases (clarivate.cn)</a>),输入关键词点击搜索，勾选你需要的文献，点击导出(export)–EndNode desktop,生成一个ciw文件，双击即可导入文件。</p>
-<p><img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/web-of-science.png"></p>
-<p>​	<strong>Google Scholar学术导入</strong>，在谷歌学术进行检索，点击引用–EndNote格式–会下载一个enw文件，双击即可导入(选择….XML这个选项)，批量导出需要先收藏–我的图书馆–全部导出。</p>
-<p>​	<strong>知网导入</strong>，勾选文献–导出与分析–EndNote格式–点击导出–生成TXT文件；点击Import⬇.</p>
-<p><img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/%E7%9F%A5%E7%BD%91.png"></p>
-<p>​			    《《<em>文献标题和期刊在一起的问题》》：</em>这是EndNote Import过滤器的问题，方法为Edit–Import Filters–Open Filter Manager–找到EndNote Import这个过滤器–点击编辑Edit–左侧的Templates–文件类型选择Journal Article–将Journal一行前的标签%B改成%J–关闭–是–重命名–重新导入–过滤器选择刚才修改的。</p>
-<p>​			    《《<em>补充缺失信息</em>》》：因为某些原因，可能有些文件会缺失一些信息，按CTRL批量选择缺失信息的文献—鼠标右键—Find Reference Updates—Update All Files–Y.(只对英文文献有效，中文缺失双击手动添加)。</p>
-<p>​	<strong>PDF导入</strong>，通过识别PDF的DOI号，从而提取文献信息，不建议导入中文文献论文，从中文数据库中直接导入。</p>
-<p>​			    《《PDF导入英文文献信息缺失》》：主要是没检测到DOI号，方法：复制文件标题到浏览器搜索—复制DOI—-双击文献下拉到<strong>DOI</strong>–左上角查找全文更新—Update  Files</p>
-<p><img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/PDF.png"></p>
-<p>​			    《《导入文件夹所有PDF》》:File–import–文件夹</p>
-<p>3.管理文献</p>
-<p>4.引用文献</p>
-<p>5.国内期刊&#x2F;学位论文文献引用</p>
-]]></content>
-      <categories>
-        <category>科研软件</category>
-      </categories>
-      <tags>
-        <tag>科研软件</tag>
+        <tag>快捷方式</tag>
       </tags>
   </entry>
   <entry>
@@ -314,27 +291,77 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo+Next主题下的阅读全文设置</title>
+    <url>/2024/01/10/Hexo-%E6%98%BE%E7%A4%BA%E5%85%A8%E6%96%87%E7%9A%84%E8%AE%BE%E7%BD%AE/</url>
+    <content><![CDATA[<h1 id="Hexo-显示全文的设置"><a href="#Hexo-显示全文的设置" class="headerlink" title="Hexo-显示全文的设置"></a>Hexo-显示全文的设置</h1><h5 id="1-在文章中使用-more-手动进行截断"><a href="#1-在文章中使用-more-手动进行截断" class="headerlink" title="1.在文章中使用&lt; !--more--&gt; 手动进行截断"></a>1.在文章中使用<code>&lt; !--more--&gt;</code> 手动进行截断</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-01.png?raw=true" alt="image-20240110132555493"></p>
+<h5 id="2-添加描述信息的内容，会成为一种相关内容的提示信息"><a href="#2-添加描述信息的内容，会成为一种相关内容的提示信息" class="headerlink" title="2.添加描述信息的内容，会成为一种相关内容的提示信息"></a>2.添加描述信息的内容，会成为一种相关内容的提示信息</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-02.png?raw=true" alt="image-20240110132853566"></p>
+<h5 id="3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部"><a href="#3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部" class="headerlink" title="3.在主题配置文件中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部"></a>3.在<strong>主题配置文件</strong>中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部</h5><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">auto_excerpt:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">length:</span> <span class="number">150</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="4-效果-展示"><a href="#4-效果-展示" class="headerlink" title="4.效果 展示"></a>4.效果 展示</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-03.png?raw=true" alt="image-20240110133302658"></p>
+]]></content>
+      <categories>
+        <category>Next主题配置</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>好好学习  天天向上</title>
     <url>/2024/01/08/first-blog/</url>
     <content><![CDATA[<h1 id="This-is-my-first-blog-路上只我一个人，背着手踱着。这一片天地好像是我的-我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静-爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜-niao-nuo-地开着旳，有羞涩地打着朵儿旳-正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉-mo-的流水，遮住了，不能见一些颜色-而叶子却更见风致了。"><a href="#This-is-my-first-blog-路上只我一个人，背着手踱着。这一片天地好像是我的-我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静-爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜-niao-nuo-地开着旳，有羞涩地打着朵儿旳-正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉-mo-的流水，遮住了，不能见一些颜色-而叶子却更见风致了。" class="headerlink" title="This is my first blog 路上只我一个人，背着手踱着。这一片天地好像是我的;我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静;爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜(niǎo,nuó)地开着旳，有羞涩地打着朵儿旳;正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉(mò)的流水，遮住了，不能见一些颜色;而叶子却更见风致了。"></a>This is my first blog 路上只我一个人，背着手踱着。这一片天地好像是我的;我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静;爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜(niǎo,nuó)地开着旳，有羞涩地打着朵儿旳;正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉(mò)的流水，遮住了，不能见一些颜色;而叶子却更见风致了。</h1><h2 id="welcome-to-you"><a href="#welcome-to-you" class="headerlink" title="welcome to you!"></a>welcome to you!</h2>]]></content>
   </entry>
   <entry>
-    <title>idea插件集合</title>
-    <url>/2024/01/25/idea%E6%8F%92%E4%BB%B6%E9%9B%86%E5%90%88/</url>
-    <content><![CDATA[<p>idea插件集合:</p>
-<p>1:<strong>一秒生成标准JavaBean–插件PTG</strong></p>
-<ol>
-<li>电脑连接外网</li>
-<li>idea-file-settings-Plugins-Marketplace-搜索ptg-install</li>
-<li>idea右键-选择Ptg To JavaBean</li>
-</ol>
-<p><img src="/images/idea%E6%8F%92%E4%BB%B6%E9%9B%86%E5%90%88/%E6%8F%92%E4%BB%B61.png"></p>
+    <title>endNode的使用</title>
+    <url>/2024/09/08/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<p>1.endnode的下载和安装：</p>
+<p>​	<a href="https://mp.weixin.qq.com/s/dVgeXShxAsyfyVfzJkREMw">EndNote21.4安装教程 (qq.com)</a></p>
+<p>2.导入文献</p>
+<p>​	2.1数据库导入</p>
+<p>​	<strong>PubMed</strong>(<a href="https://pubmed.ncbi.nlm.nih.gov/">PubMed (nih.gov)</a>)是文摘型数据库，也就意味着PubMed的强项是<strong>检索</strong>，这与全文数据库是不同的，点击create file会生成一个nbib文件。</p>
+<p>​	nbib文件导入endNode的方式：</p>
+<p>​		(1):直接双击文件，文件就会自动导入到endNode.</p>
+<p>​                (2):通过文献过滤器导入，File-&gt;Import-&gt;File(&#x2F;import⬇),选择导入文件，导入选择选择其他过滤器-&gt;PubMed(NLM).</p>
+<p><img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/pubmed%E4%BD%BF%E7%94%A8.png" alt=" "></p>
+<p>​	<strong>web of science</strong>(<a href="https://webofscience.clarivate.cn/wos/alldb/basic-search">Document Search - All Databases (clarivate.cn)</a>),输入关键词点击搜索，勾选你需要的文献，点击导出(export)–EndNode desktop,生成一个ciw文件，双击即可导入文件。</p>
+<p><img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/web-of-science.png"></p>
+<p>​	<strong>Google Scholar学术导入</strong>，在谷歌学术进行检索，点击引用–EndNote格式–会下载一个enw文件，双击即可导入(选择….XML这个选项)，批量导出需要先收藏–我的图书馆–全部导出。</p>
+<p>​	<strong>知网导入</strong>，勾选文献–导出与分析–EndNote格式–点击导出–生成TXT文件；点击Import⬇.</p>
+<p><img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/%E7%9F%A5%E7%BD%91.png"></p>
+<p>​			    《《<em>文献标题和期刊在一起的问题》》：</em>这是EndNote Import过滤器的问题，方法为Edit–Import Filters–Open Filter Manager–找到EndNote Import这个过滤器–点击编辑Edit–左侧的Templates–文件类型选择Journal Article–将Journal一行前的标签%B改成%J–关闭–是–重命名–重新导入–过滤器选择刚才修改的。</p>
+<p>​			    《《<em>补充缺失信息</em>》》：因为某些原因，可能有些文件会缺失一些信息，按CTRL批量选择缺失信息的文献—鼠标右键—Find Reference Updates—Update All Files–Y.(只对英文文献有效，中文缺失双击手动添加)。</p>
+<p>​	<strong>PDF导入</strong>，通过识别PDF的DOI号，从而提取文献信息，不建议导入中文文献论文，从中文数据库中直接导入。</p>
+<p>​			    《《PDF导入英文文献信息缺失》》：主要是没检测到DOI号，方法：复制文件标题到浏览器搜索—复制DOI—-双击文献下拉到<strong>DOI</strong>–左上角查找全文更新—Update  Files</p>
+<p><img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/PDF.png"></p>
+<p>​			    《《导入文件夹所有PDF》》:File–import–文件夹</p>
+<p>3.管理文献</p>
+<p>​	<strong>3.1 分组</strong>    对导入的文件可以对其进行分组，只能有二级分类；在我的分组里点击–创建组，然后将同类型文献批量拖拽进组内.</p>
+<p>​	**3.2 文献去重 ** 从同一个研究主题，往往会从不同数据库导入文献，会涉及到文献重复，点击All Reference—Reference(导航栏)—Find Duplicates—cancle–在左侧会新增一个重复文献文件夹—里面的文献数量就代表重复数量2倍，有灰色阴影的文献就是重复的文献—-鼠标右键单击Move Reference to Trash</p>
+<p>​	<strong>3.3 文献排序</strong>  </p>
+<p>​		查找全文：全选文献—右键查找全文–查找全文–出现回形针表示能找到</p>
+<p>​		查找全文对于中文文献是不适用的，对于没有中文文献和没有查找到全文的英文文献，可以先将PDF下载到本地，这篇文献就会被链接到一个全文，该PDF文件会被自动存储到数据库文件夹中(删除后无影响)</p>
+<p>​	<strong>3.4 对文献做笔记</strong></p>
+<p>​		1,2步骤后 然后调出reserch Notes，保存。</p>
+<p>​		<img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/%E7%AC%94%E8%AE%B0.png"></p>
+<p>4.引用文献</p>
+<p>​	<strong>预览样式</strong>：在引用文献前，可以在EndNote预览参考文献样式</p>
+<p>​	<img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/%E9%A2%84%E8%A7%88%E6%A0%B7%E5%BC%8F.png"></p>
+<p>​	<strong>添加样式：</strong><a href="https://endnote.com/downloads/styles/?wpv_aux_current_post_id=12829&wpv_view_count=12764-TCPID12829">Output styles - EndNote</a></p>
+<p>​		下载后粘贴到endnote下载位置的Style中</p>
+<p>​	<strong>引入到word中</strong>：在word中EndNote(导航栏)—选择好style—在EndNote里选择好要导入的文件—在word里Insert Citation—Insert  selected Citation.</p>
+<p>​	<strong>去除参考文献域代码</strong>：域代码去除就无法恢复（Ctrl+A–Ctrl+Shift+F9）</p>
+<p>​	<img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/%E5%9F%9F%E4%BB%A3%E7%A0%81.png"></p>
+<p>​	<strong>更改作者数：</strong></p>
+<p>​	<img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/%E4%BD%9C%E8%80%85%E6%95%B0.png"></p>
+<p><img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/%E4%BD%9C%E8%80%85%E6%95%B02.png"></p>
+<p>​	<strong>引用网页文献的问题</strong>：</p>
+<p><img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/%E7%BD%91%E9%A1%B5%E6%96%87%E7%8C%AE.png"></p>
 ]]></content>
       <categories>
-        <category>插件库</category>
+        <category>科研软件</category>
       </categories>
       <tags>
-        <tag>插件库</tag>
+        <tag>科研软件</tag>
       </tags>
   </entry>
   <entry>
@@ -354,6 +381,25 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>idea插件集合</title>
+    <url>/2024/01/25/idea%E6%8F%92%E4%BB%B6%E9%9B%86%E5%90%88/</url>
+    <content><![CDATA[<p>idea插件集合:</p>
+<p>1:<strong>一秒生成标准JavaBean–插件PTG</strong></p>
+<ol>
+<li>电脑连接外网</li>
+<li>idea-file-settings-Plugins-Marketplace-搜索ptg-install</li>
+<li>idea右键-选择Ptg To JavaBean</li>
+</ol>
+<p><img src="/images/idea%E6%8F%92%E4%BB%B6%E9%9B%86%E5%90%88/%E6%8F%92%E4%BB%B61.png"></p>
+]]></content>
+      <categories>
+        <category>插件库</category>
+      </categories>
+      <tags>
+        <tag>插件库</tag>
+      </tags>
   </entry>
   <entry>
     <title>分支语句-switch</title>
@@ -501,33 +547,6 @@
       </tags>
   </entry>
   <entry>
-    <title>快捷键的妙用</title>
-    <url>/2024/01/22/Idea%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9A%84%E5%A6%99%E7%94%A8/</url>
-    <content><![CDATA[<h1 id="Idea快捷键的妙用"><a href="#Idea快捷键的妙用" class="headerlink" title="Idea快捷键的妙用"></a>Idea快捷键的妙用</h1><p>Ctrl+alt+M:自动抽取方法 </p>
-<p>​	编写程序时发现有重复代码，可以使用快捷键自动抽取方法，提高效率。</p>
-<p>Ctrl+alt+L:代码格式化</p>
-<p>​	编写完成一段代码后养成格式化的习惯。</p>
-<p>Ctrl+alt+v:自动补全代码快捷键</p>
-<p>CTRL+&#x2F;：单行注释</p>
-<p>CTRL+ALT+&#x2F;:多行注释</p>
-<p>选择变量+shift+F6:变量的批量修改</p>
-<p>Ctrl + Alt + T： 对选中的代码弹出环绕选项弹出层(while,if….)</p>
-<p>Alt+Insert:选择get和set方法</p>
-<p>Ctrl+B:点击方法，跟进原码,选中要进入的方法，使用快捷键直接进入</p>
-<p>Insert:书写代码是错误碰到insert键，会出现闪速黑色正方形块，影响书写。再次点击insert键可恢复</p>
-<p>Ctrll+N:搜索类快捷键</p>
-<p>alt+回车(enter):选中变量，alt+回车，左右进行切割</p>
-<p>代码 上 &#x2F;下移 ：Shift+Alt +方向上键&#x2F;下键</p>
-<p>alt+回车：点击方法，直接可以创建方法</p>
-]]></content>
-      <categories>
-        <category>快捷方式</category>
-      </categories>
-      <tags>
-        <tag>快捷方式</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>JAVA的基础语法</title>
     <url>/2024/01/12/java%E5%9F%BA%E7%A1%80-JAVA%E7%9A%84%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</url>
     <content><![CDATA[<h1 id="JAVA的基础语法"><a href="#JAVA的基础语法" class="headerlink" title="JAVA的基础语法"></a>JAVA的基础语法</h1><ol>
@@ -635,6 +654,34 @@
       </tags>
   </entry>
   <entry>
+    <title>JDK的安装与下载</title>
+    <url>/2024/01/11/java%E5%9F%BA%E7%A1%80-JDK%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%B8%8B%E8%BD%BD/</url>
+    <content><![CDATA[<h1 id="JDK的安装与下载"><a href="#JDK的安装与下载" class="headerlink" title="JDK的安装与下载"></a>JDK的安装与下载</h1><h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><ol>
+<li>网址 <a href="http://www.oracle.com/">www.oracle.com</a>  ,找到Products -&gt; Hardware and Software -&gt; Java-&gt;Download Java -&gt;Java archive（历史版本）&#x2F; Java Downloads(最新版本)-&gt;Windows系统下的 x64 Installer-&gt;点击下载</li>
+</ol>
+<h4 id="安装："><a href="#安装：" class="headerlink" title="安装："></a>安装：</h4><ol>
+<li><p>双击打开 点击下一步</p>
+<p><img src="/../images/%E5%AE%89%E8%A3%85001.png"></p>
+</li>
+<li><p>选择更改安装路径(安装路径不要有中文，空格，和特殊符号)</p>
+<p><img src="/../images/%E5%AE%89%E8%A3%85002.png"></p>
+</li>
+<li><p>安装成功,点击关闭</p>
+<p><img src="/../images/%E5%AE%89%E8%A3%85003.png"></p>
+</li>
+<li><p>JDK的安装目录及解释</p>
+<p><img src="/../images/%E5%AE%89%E8%A3%85004.png"></p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>StringBuilder</title>
     <url>/2024/02/05/java%E5%9F%BA%E7%A1%80-StringBuilder/</url>
     <content><![CDATA[<h1 id="StringBuilder"><a href="#StringBuilder" class="headerlink" title="StringBuilder"></a><strong>StringBuilder</strong></h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">    String s=<span class="string">&quot;&quot;</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">1000000</span>;i++)&#123;</span><br><span class="line">        s=s+<span class="string">&quot;abc&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println(s);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//数据量较大时，字符串拼接耗时长</span></span><br></pre></td></tr></table></figure>
@@ -697,66 +744,6 @@
       </tags>
   </entry>
   <entry>
-    <title>JDK的安装与下载</title>
-    <url>/2024/01/11/java%E5%9F%BA%E7%A1%80-JDK%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%B8%8B%E8%BD%BD/</url>
-    <content><![CDATA[<h1 id="JDK的安装与下载"><a href="#JDK的安装与下载" class="headerlink" title="JDK的安装与下载"></a>JDK的安装与下载</h1><h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><ol>
-<li>网址 <a href="http://www.oracle.com/">www.oracle.com</a>  ,找到Products -&gt; Hardware and Software -&gt; Java-&gt;Download Java -&gt;Java archive（历史版本）&#x2F; Java Downloads(最新版本)-&gt;Windows系统下的 x64 Installer-&gt;点击下载</li>
-</ol>
-<h4 id="安装："><a href="#安装：" class="headerlink" title="安装："></a>安装：</h4><ol>
-<li><p>双击打开 点击下一步</p>
-<p><img src="/../images/%E5%AE%89%E8%A3%85001.png"></p>
-</li>
-<li><p>选择更改安装路径(安装路径不要有中文，空格，和特殊符号)</p>
-<p><img src="/../images/%E5%AE%89%E8%A3%85002.png"></p>
-</li>
-<li><p>安装成功,点击关闭</p>
-<p><img src="/../images/%E5%AE%89%E8%A3%85003.png"></p>
-</li>
-<li><p>JDK的安装目录及解释</p>
-<p><img src="/../images/%E5%AE%89%E8%A3%85004.png"></p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>分支语句-if</title>
-    <url>/2024/01/16/java%E5%9F%BA%E7%A1%80-if%E8%AF%AD%E5%8F%A5/</url>
-    <content><![CDATA[<h1 id="流程控制语句"><a href="#流程控制语句" class="headerlink" title="流程控制语句"></a>流程控制语句</h1><ol>
-<li><p>顺序结构</p>
-<p>按照代码的先后顺序，从上往下依次执行的。</p>
-</li>
-<li><p>分支结构</p>
-<p>if语句：</p>
-<p>​     <strong>if-格式1</strong>：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(关系表达式)&#123;</span><br><span class="line">	语句体;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-
-<p>if的注意点:</p>
-<p>​      1.大括号的开头可以另起一行书写，但是建议写在第一行的末尾</p>
-<p>​      2.在语句体中，如果只有一句代码，大括号可以省略不写。</p>
-<p>​      3.如果对一个布尔类型的变量进行判断，不要用&#x3D;&#x3D;号。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">boolean</span> <span class="variable">flag</span> <span class="operator">=</span> <span class="literal">false</span>;</span><br><span class="line"><span class="keyword">if</span>(flag == <span class="literal">true</span>)&#123;  <span class="comment">//判断的方式定义容易误写成赋值等号型，建议直接写布尔类型的变量。</span></span><br><span class="line">    System.out.println(<span class="string">&quot;flag的值是true&quot;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>​      <strong>if-格式2:</strong>(二选一时使用)</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(关系表达式)&#123;</span><br><span class="line">	语句体<span class="number">1</span>;</span><br><span class="line"> &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">	语句体<span class="number">2</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-
-<p>​     <strong>if-格式3</strong>:(多条件判断)</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(关系表达式)&#123;</span><br><span class="line">	语句体<span class="number">1</span>;</span><br><span class="line"> &#125;<span class="keyword">else</span> <span class="keyword">if</span>&#123;</span><br><span class="line">	语句体<span class="number">2</span>;</span><br><span class="line"> &#125;</span><br><span class="line">.....</span><br><span class="line"> <span class="keyword">else</span>&#123;</span><br><span class="line">     语句体n+<span class="number">1</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>StringJoiner</title>
     <url>/2024/02/06/java%E5%9F%BA%E7%A1%80-StringJoiner/</url>
     <content><![CDATA[<h1 id="StringJoiner"><a href="#StringJoiner" class="headerlink" title="StringJoiner"></a>StringJoiner</h1><p>拼接速度快，代码又简单的方式</p>
@@ -809,6 +796,66 @@
       </tags>
   </entry>
   <entry>
+    <title>二维数组</title>
+    <url>/2024/01/25/java%E5%9F%BA%E7%A1%80-%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84/</url>
+    <content><![CDATA[<h1 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a>二维数组</h1><p><strong>应用场景</strong>:</p>
+<p>需要把数据分组管理的时候，需要用到二维数组。</p>
+<p><strong>初始化</strong>：</p>
+<p><img src="/../images/%E5%88%9D%E5%A7%8B%E5%8C%96.png"></p>
+<p>二维数组的内存图:</p>
+<p><img src="/../images/%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84.jpg"></p>
+<p>另外两种特殊的初始化:</p>
+<p>（1）一位数组的长度灵活</p>
+<p>​	int[ ] [ ] arr &#x3D; new int [2] [ ];</p>
+<p>​	int[] arr1 &#x3D; {11,22};</p>
+<p>​	int[] arr2 &#x3D; {44,55,66}; </p>
+<p>（2）覆盖</p>
+<p>​	int[ ] [ ] arr &#x3D; new int [2] [ 3];</p>
+<p>​	int[] arr1 &#x3D; {11,22};</p>
+<p>​	int[] arr2 &#x3D; {44,55,66}; </p>
+<p>​	arr[0] &#x3D; arr1;</p>
+<p>​	arr[1] &#x3D; arr2;</p>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>分支语句-if</title>
+    <url>/2024/01/16/java%E5%9F%BA%E7%A1%80-if%E8%AF%AD%E5%8F%A5/</url>
+    <content><![CDATA[<h1 id="流程控制语句"><a href="#流程控制语句" class="headerlink" title="流程控制语句"></a>流程控制语句</h1><ol>
+<li><p>顺序结构</p>
+<p>按照代码的先后顺序，从上往下依次执行的。</p>
+</li>
+<li><p>分支结构</p>
+<p>if语句：</p>
+<p>​     <strong>if-格式1</strong>：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(关系表达式)&#123;</span><br><span class="line">	语句体;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+<p>if的注意点:</p>
+<p>​      1.大括号的开头可以另起一行书写，但是建议写在第一行的末尾</p>
+<p>​      2.在语句体中，如果只有一句代码，大括号可以省略不写。</p>
+<p>​      3.如果对一个布尔类型的变量进行判断，不要用&#x3D;&#x3D;号。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">boolean</span> <span class="variable">flag</span> <span class="operator">=</span> <span class="literal">false</span>;</span><br><span class="line"><span class="keyword">if</span>(flag == <span class="literal">true</span>)&#123;  <span class="comment">//判断的方式定义容易误写成赋值等号型，建议直接写布尔类型的变量。</span></span><br><span class="line">    System.out.println(<span class="string">&quot;flag的值是true&quot;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>​      <strong>if-格式2:</strong>(二选一时使用)</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(关系表达式)&#123;</span><br><span class="line">	语句体<span class="number">1</span>;</span><br><span class="line"> &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">	语句体<span class="number">2</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+<p>​     <strong>if-格式3</strong>:(多条件判断)</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(关系表达式)&#123;</span><br><span class="line">	语句体<span class="number">1</span>;</span><br><span class="line"> &#125;<span class="keyword">else</span> <span class="keyword">if</span>&#123;</span><br><span class="line">	语句体<span class="number">2</span>;</span><br><span class="line"> &#125;</span><br><span class="line">.....</span><br><span class="line"> <span class="keyword">else</span>&#123;</span><br><span class="line">     语句体n+<span class="number">1</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>面向对象进阶-static静态变量</title>
     <url>/2024/02/19/java%E5%9F%BA%E7%A1%80-static/</url>
     <content><![CDATA[<p><strong>static</strong>：表示静态，是Java中的一个修饰符，可以修饰成员方法，成员变量。</p>
@@ -843,34 +890,6 @@
 <p><img src="/../images/java%E5%9F%BA%E7%A1%80-static/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240219221017.png"></p>
 <p>2.非静态方法<strong>可以</strong>访问静态变量或静态方法，<strong>也可以</strong>访问非静态的成员变量和非静态的成员方法(<strong>和调用方式有关</strong>)</p>
 <p><img src="/../images/java%E5%9F%BA%E7%A1%80-static/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240219221500.png"></p>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>二维数组</title>
-    <url>/2024/01/25/java%E5%9F%BA%E7%A1%80-%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84/</url>
-    <content><![CDATA[<h1 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a>二维数组</h1><p><strong>应用场景</strong>:</p>
-<p>需要把数据分组管理的时候，需要用到二维数组。</p>
-<p><strong>初始化</strong>：</p>
-<p><img src="/../images/%E5%88%9D%E5%A7%8B%E5%8C%96.png"></p>
-<p>二维数组的内存图:</p>
-<p><img src="/../images/%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84.jpg"></p>
-<p>另外两种特殊的初始化:</p>
-<p>（1）一位数组的长度灵活</p>
-<p>​	int[ ] [ ] arr &#x3D; new int [2] [ ];</p>
-<p>​	int[] arr1 &#x3D; {11,22};</p>
-<p>​	int[] arr2 &#x3D; {44,55,66}; </p>
-<p>（2）覆盖</p>
-<p>​	int[ ] [ ] arr &#x3D; new int [2] [ 3];</p>
-<p>​	int[] arr1 &#x3D; {11,22};</p>
-<p>​	int[] arr2 &#x3D; {44,55,66}; </p>
-<p>​	arr[0] &#x3D; arr1;</p>
-<p>​	arr[1] &#x3D; arr2;</p>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -971,26 +990,6 @@
       </tags>
   </entry>
   <entry>
-    <title>循环语句</title>
-    <url>/2024/01/18/java%E5%9F%BA%E7%A1%80-%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5(for&amp;while)/</url>
-    <content><![CDATA[<h1 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h1><h4 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(初始化语句;条件判断语句;条件控制语句)&#123;</span><br><span class="line">    循环体语句;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>初始化语句只执行一次，判断语句为true，循环继续，判断语句为false，循环结束。</p>
-<h4 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">初始化语句;</span><br><span class="line"><span class="keyword">while</span>(条件判断语句)&#123;</span><br><span class="line">	循环体语句;</span><br><span class="line">	条件控制语句;</span><br><span class="line">&#125;</span><br><span class="line">循环下面的其他语句;</span><br></pre></td></tr></table></figure>
-
-<h4 id="区别："><a href="#区别：" class="headerlink" title="区别："></a>区别：</h4><pre><code>1. 运行规则都是一样的
-1. for循环中，控制循环的变量，因为归属for循环的语法结构中 在for循环结束中，就不能再次被访问到了。**（已知循环次数或者范围）**
-1. while循环中，控制循环的变量，对于while循环来说不归属其语法结构中，在while循环结束后，该变量还可以继续使用。**(不知道循环次数和范围，只知道循环的结束条件 )**
-</code></pre>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>JAVA的数据类型-标识符-键盘录入</title>
     <url>/2024/01/14/java%E5%9F%BA%E7%A1%80-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B&amp;%E6%A0%87%E8%AF%86%E7%AC%A6&amp;%E9%94%AE%E7%9B%98%E5%BD%95%E5%85%A5/</url>
     <content><![CDATA[<h1 id="1-数据类型"><a href="#1-数据类型" class="headerlink" title="1. 数据类型"></a>1. 数据类型</h1><h4 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h4><table>
@@ -1050,6 +1049,26 @@
 <p>​	nextLine( ):接收字符串</p>
 <p>​	特点:可以接收空格，制表符，遇到回车才停止接收数据。</p>
 <p>弊端:先用nextInt,再用nextLine会导致下面的nextLine接收不到数据。</p>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>循环语句</title>
+    <url>/2024/01/18/java%E5%9F%BA%E7%A1%80-%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5(for&amp;while)/</url>
+    <content><![CDATA[<h1 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h1><h4 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(初始化语句;条件判断语句;条件控制语句)&#123;</span><br><span class="line">    循环体语句;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>初始化语句只执行一次，判断语句为true，循环继续，判断语句为false，循环结束。</p>
+<h4 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">初始化语句;</span><br><span class="line"><span class="keyword">while</span>(条件判断语句)&#123;</span><br><span class="line">	循环体语句;</span><br><span class="line">	条件控制语句;</span><br><span class="line">&#125;</span><br><span class="line">循环下面的其他语句;</span><br></pre></td></tr></table></figure>
+
+<h4 id="区别："><a href="#区别：" class="headerlink" title="区别："></a>区别：</h4><pre><code>1. 运行规则都是一样的
+1. for循环中，控制循环的变量，因为归属for循环的语法结构中 在for循环结束中，就不能再次被访问到了。**（已知循环次数或者范围）**
+1. while循环中，控制循环的变量，对于while循环来说不归属其语法结构中，在while循环结束后，该变量还可以继续使用。**(不知道循环次数和范围，只知道循环的结束条件 )**
+</code></pre>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -1276,6 +1295,23 @@
       </tags>
   </entry>
   <entry>
+    <title>生成随机数Random</title>
+    <url>/2024/01/20/java%E5%9F%BA%E7%A1%80-%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E6%95%B0Random/</url>
+    <content><![CDATA[<h1 id="生成随机数Random"><a href="#生成随机数Random" class="headerlink" title="生成随机数Random"></a>生成随机数Random</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//1.导包---Random这个类在哪里?</span></span><br><span class="line"><span class="keyword">import</span> java.util.Random<span class="comment">//导包的动作必须出现在类定义的上边</span></span><br><span class="line"><span class="comment">//2.创建对象---表示我要开始用Random这个类了</span></span><br><span class="line"><span class="type">Random</span> <span class="variable">r</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Random</span>();<span class="comment">//这个格式里面，只有r是变量名，可以变，其他的都不允许变</span></span><br><span class="line"><span class="comment">//3.生成随机数--真正开始干活了</span></span><br><span class="line"><span class="type">int</span> <span class="variable">number</span> <span class="operator">=</span> r.nextInt(随机数的范围)<span class="comment">//这个格式里面，只有number是变量名，可以变，其他的都不允许变</span></span><br></pre></td></tr></table></figure>
+
+<p><em>在3.小括号中，书写的是生成随机数的范围，这个范围<strong>一定是从0开始</strong>，到这个数减1结束(包头不包尾，包左不包右)</em></p>
+<p><em>生成任意数到<strong>任意数之间</strong>的随机数:</em><br>    1.让这个范围头尾都减去一个值，让这个范围从0开始<br>    2.尾巴＋1<br>    3.最终结果，再加上第一步减去的值</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//生成7~15之间的值</span></span><br><span class="line"><span class="type">Random</span> <span class="variable">r</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Random</span>();</span><br><span class="line"><span class="type">int</span> number= r.nextInt(<span class="number">9</span>)+<span class="number">7</span>;</span><br><span class="line">System.out.println(number);</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>环境变量的配置</title>
     <url>/2024/01/12/java%E5%9F%BA%E7%A1%80-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E7%9A%84%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<h1 id="环境变量的配置"><a href="#环境变量的配置" class="headerlink" title="环境变量的配置"></a>环境变量的配置</h1><ol>
@@ -1294,23 +1330,6 @@
 </ol>
 <p>​		法2-02： 引用JAVA_HOME变量</p>
 <p>​		<img src="/../images/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F003.png"></p>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>生成随机数Random</title>
-    <url>/2024/01/20/java%E5%9F%BA%E7%A1%80-%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E6%95%B0Random/</url>
-    <content><![CDATA[<h1 id="生成随机数Random"><a href="#生成随机数Random" class="headerlink" title="生成随机数Random"></a>生成随机数Random</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//1.导包---Random这个类在哪里?</span></span><br><span class="line"><span class="keyword">import</span> java.util.Random<span class="comment">//导包的动作必须出现在类定义的上边</span></span><br><span class="line"><span class="comment">//2.创建对象---表示我要开始用Random这个类了</span></span><br><span class="line"><span class="type">Random</span> <span class="variable">r</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Random</span>();<span class="comment">//这个格式里面，只有r是变量名，可以变，其他的都不允许变</span></span><br><span class="line"><span class="comment">//3.生成随机数--真正开始干活了</span></span><br><span class="line"><span class="type">int</span> <span class="variable">number</span> <span class="operator">=</span> r.nextInt(随机数的范围)<span class="comment">//这个格式里面，只有number是变量名，可以变，其他的都不允许变</span></span><br></pre></td></tr></table></figure>
-
-<p><em>在3.小括号中，书写的是生成随机数的范围，这个范围<strong>一定是从0开始</strong>，到这个数减1结束(包头不包尾，包左不包右)</em></p>
-<p><em>生成任意数到<strong>任意数之间</strong>的随机数:</em><br>    1.让这个范围头尾都减去一个值，让这个范围从0开始<br>    2.尾巴＋1<br>    3.最终结果，再加上第一步减去的值</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//生成7~15之间的值</span></span><br><span class="line"><span class="type">Random</span> <span class="variable">r</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Random</span>();</span><br><span class="line"><span class="type">int</span> number= r.nextInt(<span class="number">9</span>)+<span class="number">7</span>;</span><br><span class="line">System.out.println(number);</span><br></pre></td></tr></table></figure>
-
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -2035,11 +2054,10 @@
       </tags>
   </entry>
   <entry>
-    <title>求质数计算中的标记思想</title>
-    <url>/2024/01/20/%E6%A0%87%E8%AE%B0%E6%80%9D%E6%83%B3/</url>
-    <content><![CDATA[<h1 id="标记思想"><a href="#标记思想" class="headerlink" title="标记思想"></a>标记思想</h1><p>定义一个布尔变量，表示标记</p>
-<p>要在for循环外判断是否为质数，最初认为number是一个质数</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> com.itheima.jump;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">JumpDemo04</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">         * 键盘录入一个正整数x，判断该整数是否为一个质数</span></span><br><span class="line"><span class="comment">         * 质数的定义:一个大于1的自然数，除了1和它自身外，不能被其他自然数整除的数叫做质数</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">        <span class="type">boolean</span> <span class="variable">flag</span> <span class="operator">=</span> <span class="literal">true</span>;   <span class="comment">//***************************************************************</span></span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        System.out.println(<span class="string">&quot;录入一个正整数:&quot;</span>);</span><br><span class="line">        <span class="type">int</span> <span class="variable">number</span> <span class="operator">=</span> sc.nextInt();</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">2</span>; i &lt;number ; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (number % i == <span class="number">0</span>) &#123;</span><br><span class="line">                flag=<span class="literal">false</span>;   <span class="comment">//****************************************************************</span></span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (flag)&#123;			<span class="comment">//******************************************************************</span></span><br><span class="line">            System.out.println(number+<span class="string">&quot;是质数&quot;</span>);</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            System.out.println(number+<span class="string">&quot;不是质数&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+    <title>比较最值时提高效率(数组)</title>
+    <url>/2024/01/20/%E6%AF%94%E8%BE%83%E6%9C%80%E5%80%BC%E6%97%B6%E6%8F%90%E9%AB%98%E6%95%88%E7%8E%87(%E6%95%B0%E7%BB%84)/</url>
+    <content><![CDATA[<h1 id="数组循环比较最值时提高效率"><a href="#数组循环比较最值时提高效率" class="headerlink" title="数组循环比较最值时提高效率"></a>数组循环比较最值时提高效率</h1><p>循环中开始条件如果为0，那么第一次循环的时候是自己跟自己比了一下，对结果没有任何影响，但是效率偏低，为了提高效率，减少一次 循环的次数，循环开始的条件可以写1.</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> min=array[<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt; array.length; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (array[i]&lt;min)&#123;</span><br><span class="line">                min=array[i];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(min);</span><br></pre></td></tr></table></figure>
 
 ]]></content>
       <categories>
@@ -2050,10 +2068,11 @@
       </tags>
   </entry>
   <entry>
-    <title>比较最值时提高效率(数组)</title>
-    <url>/2024/01/20/%E6%AF%94%E8%BE%83%E6%9C%80%E5%80%BC%E6%97%B6%E6%8F%90%E9%AB%98%E6%95%88%E7%8E%87(%E6%95%B0%E7%BB%84)/</url>
-    <content><![CDATA[<h1 id="数组循环比较最值时提高效率"><a href="#数组循环比较最值时提高效率" class="headerlink" title="数组循环比较最值时提高效率"></a>数组循环比较最值时提高效率</h1><p>循环中开始条件如果为0，那么第一次循环的时候是自己跟自己比了一下，对结果没有任何影响，但是效率偏低，为了提高效率，减少一次 循环的次数，循环开始的条件可以写1.</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> min=array[<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt; array.length; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (array[i]&lt;min)&#123;</span><br><span class="line">                min=array[i];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(min);</span><br></pre></td></tr></table></figure>
+    <title>求质数计算中的标记思想</title>
+    <url>/2024/01/20/%E6%A0%87%E8%AE%B0%E6%80%9D%E6%83%B3/</url>
+    <content><![CDATA[<h1 id="标记思想"><a href="#标记思想" class="headerlink" title="标记思想"></a>标记思想</h1><p>定义一个布尔变量，表示标记</p>
+<p>要在for循环外判断是否为质数，最初认为number是一个质数</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> com.itheima.jump;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">JumpDemo04</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">         * 键盘录入一个正整数x，判断该整数是否为一个质数</span></span><br><span class="line"><span class="comment">         * 质数的定义:一个大于1的自然数，除了1和它自身外，不能被其他自然数整除的数叫做质数</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">        <span class="type">boolean</span> <span class="variable">flag</span> <span class="operator">=</span> <span class="literal">true</span>;   <span class="comment">//***************************************************************</span></span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        System.out.println(<span class="string">&quot;录入一个正整数:&quot;</span>);</span><br><span class="line">        <span class="type">int</span> <span class="variable">number</span> <span class="operator">=</span> sc.nextInt();</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">2</span>; i &lt;number ; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (number % i == <span class="number">0</span>) &#123;</span><br><span class="line">                flag=<span class="literal">false</span>;   <span class="comment">//****************************************************************</span></span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (flag)&#123;			<span class="comment">//******************************************************************</span></span><br><span class="line">            System.out.println(number+<span class="string">&quot;是质数&quot;</span>);</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            System.out.println(number+<span class="string">&quot;不是质数&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 ]]></content>
       <categories>
@@ -2095,6 +2114,18 @@
       </tags>
   </entry>
   <entry>
+    <title>登录错误时的次数限制</title>
+    <url>/2024/02/19/%E7%99%BB%E5%BD%95%E5%A4%B1%E8%AF%AF%E6%97%B6%E6%AC%A1%E6%95%B0%E7%9A%84%E9%99%90%E5%88%B6/</url>
+    <content><![CDATA[<p>day12</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">3</span>;i++) &#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;请输入用户名:&quot;</span>);</span><br><span class="line">    <span class="type">String</span> <span class="variable">username</span> <span class="operator">=</span> sc.next();</span><br><span class="line">    <span class="type">boolean</span> <span class="variable">flag</span> <span class="operator">=</span> contains(list, username);</span><br><span class="line">    <span class="keyword">if</span> (!flag) &#123;<span class="comment">//集合中没有该用户名</span></span><br><span class="line">        System.out.println(<span class="string">&quot;用户名未注册，请先注册&quot;</span>);</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println(<span class="string">&quot;请输入密码&quot;</span>);</span><br><span class="line">    <span class="type">String</span> <span class="variable">password</span> <span class="operator">=</span> sc.next();</span><br><span class="line">    <span class="keyword">while</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">        <span class="type">String</span> <span class="variable">vericode</span> <span class="operator">=</span> getVericode();</span><br><span class="line">        System.out.println(vericode);</span><br><span class="line">        System.out.println(<span class="string">&quot;请录入验证码:&quot;</span>);</span><br><span class="line">        <span class="type">String</span> <span class="variable">againcode</span> <span class="operator">=</span> sc.next();</span><br><span class="line">        <span class="keyword">if</span> (vericode.equalsIgnoreCase(againcode)) &#123;<span class="comment">//验证码正确</span></span><br><span class="line">            System.out.println(<span class="string">&quot;验证码录入成功&quot;</span>);</span><br><span class="line">            System.out.println(<span class="string">&quot;成功登录&quot;</span>);</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;请重新录入验证码:&quot;</span>);</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">Student</span> <span class="variable">stuInfo</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Student</span>(username, password, <span class="literal">null</span>, <span class="literal">null</span>);</span><br><span class="line">    <span class="type">boolean</span> result=checkstuInfo(list,stuInfo);</span><br><span class="line">    <span class="keyword">if</span> (result)&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;登录成功，可以使用你的学生管理系统了&quot;</span>);</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;登录失败，用户名或密码错误&quot;</span>);</span><br><span class="line">        <span class="keyword">if</span> (i==<span class="number">2</span>)&#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;当前账号&quot;</span>+username+<span class="string">&quot;被锁定&quot;</span>);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;用户名或密码错误，还剩下&quot;</span>+(<span class="number">2</span>-i)+<span class="string">&quot;次机会&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>经典算法思想</category>
+      </categories>
+      <tags>
+        <tag>算法思想</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>超出范围重新录入</title>
     <url>/2024/01/23/%E8%A7%84%E5%AE%9A%E8%8C%83%E5%9B%B4%E5%86%85%E5%BD%95%E5%85%A5%E6%95%B0%E6%8D%AE/</url>
     <content><![CDATA[<h1 id="规定范围内录入数据"><a href="#规定范围内录入数据" class="headerlink" title="规定范围内录入数据"></a>规定范围内录入数据</h1><p>1.多位时(for循环和i++)</p>
@@ -2117,18 +2148,6 @@
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">System.out.print(<span class="string">&quot;[&quot;</span>);</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; array.length; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (i==array.length-<span class="number">1</span>)&#123;</span><br><span class="line">                System.out.print(array[i]);</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                System.out.print(array[i]+<span class="string">&quot;,&quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(<span class="string">&quot;]&quot;</span>);</span><br></pre></td></tr></table></figure>
 
 ]]></content>
-      <categories>
-        <category>经典算法思想</category>
-      </categories>
-      <tags>
-        <tag>算法思想</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>登录错误时的次数限制</title>
-    <url>/2024/02/19/%E7%99%BB%E5%BD%95%E5%A4%B1%E8%AF%AF%E6%97%B6%E6%AC%A1%E6%95%B0%E7%9A%84%E9%99%90%E5%88%B6/</url>
-    <content><![CDATA[<p>day12</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">3</span>;i++) &#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;请输入用户名:&quot;</span>);</span><br><span class="line">    <span class="type">String</span> <span class="variable">username</span> <span class="operator">=</span> sc.next();</span><br><span class="line">    <span class="type">boolean</span> <span class="variable">flag</span> <span class="operator">=</span> contains(list, username);</span><br><span class="line">    <span class="keyword">if</span> (!flag) &#123;<span class="comment">//集合中没有该用户名</span></span><br><span class="line">        System.out.println(<span class="string">&quot;用户名未注册，请先注册&quot;</span>);</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println(<span class="string">&quot;请输入密码&quot;</span>);</span><br><span class="line">    <span class="type">String</span> <span class="variable">password</span> <span class="operator">=</span> sc.next();</span><br><span class="line">    <span class="keyword">while</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">        <span class="type">String</span> <span class="variable">vericode</span> <span class="operator">=</span> getVericode();</span><br><span class="line">        System.out.println(vericode);</span><br><span class="line">        System.out.println(<span class="string">&quot;请录入验证码:&quot;</span>);</span><br><span class="line">        <span class="type">String</span> <span class="variable">againcode</span> <span class="operator">=</span> sc.next();</span><br><span class="line">        <span class="keyword">if</span> (vericode.equalsIgnoreCase(againcode)) &#123;<span class="comment">//验证码正确</span></span><br><span class="line">            System.out.println(<span class="string">&quot;验证码录入成功&quot;</span>);</span><br><span class="line">            System.out.println(<span class="string">&quot;成功登录&quot;</span>);</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;请重新录入验证码:&quot;</span>);</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">Student</span> <span class="variable">stuInfo</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Student</span>(username, password, <span class="literal">null</span>, <span class="literal">null</span>);</span><br><span class="line">    <span class="type">boolean</span> result=checkstuInfo(list,stuInfo);</span><br><span class="line">    <span class="keyword">if</span> (result)&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;登录成功，可以使用你的学生管理系统了&quot;</span>);</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;登录失败，用户名或密码错误&quot;</span>);</span><br><span class="line">        <span class="keyword">if</span> (i==<span class="number">2</span>)&#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;当前账号&quot;</span>+username+<span class="string">&quot;被锁定&quot;</span>);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;用户名或密码错误，还剩下&quot;</span>+(<span class="number">2</span>-i)+<span class="string">&quot;次机会&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>经典算法思想</category>
       </categories>
