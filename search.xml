@@ -1,6 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>可行性研究</title>
+    <url>/2024/03/02/02%E5%8F%AF%E8%A1%8C%E6%80%A7%E7%A0%94%E7%A9%B6/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="left">考试内容</th>
+<th align="left">考试要求</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1. 可行性研究的任务</td>
+<td align="left">1.了解可行性研究的任务</td>
+</tr>
+<tr>
+<td align="left">2. 数据流图和数据字典</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">3.成本效益分析</td>
+<td align="left">3.了解什么是软件生命周期，了解生命周期各个阶段：可行性分析、需求分析、系统设计、详细设计、实现、测试的基本任务。</td>
+</tr>
+<tr>
+<td align="left">4. 需求分析的任务</td>
+<td align="left">4.了解需求分析的任务</td>
+</tr>
+<tr>
+<td align="left">5.实体联系图，状态转换图，层次方框图，IPO图</td>
+<td align="left">掌握可行性研究和需求分析的建模方法：数据流图，数据字典，实体联系图，状态转换图，层次方框图，IPO图</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>软件工程</category>
+      </categories>
+      <tags>
+        <tag>考研复试</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>软件危机/软件工程/软件生命周期/软件过程</title>
     <url>/2024/02/27/01%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%AD%A6%E6%A6%82%E8%BF%B0/</url>
     <content><![CDATA[<table>
@@ -101,45 +140,6 @@
 <p>​			    缺点：风险驱动型的特点会由于风险评估不准确给项目带来的风险。</p>
 <p>​	喷泉模型：是一种以用户需求为动力，以对象为驱动的模型，主要用于描述面向对象的软件开发过程。</p>
 <p>​			   体现了面向对象软件开发过程迭代和无缝的特性</p>
-]]></content>
-      <categories>
-        <category>软件工程</category>
-      </categories>
-      <tags>
-        <tag>考研复试</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>可行性研究</title>
-    <url>/2024/03/02/02%E5%8F%AF%E8%A1%8C%E6%80%A7%E7%A0%94%E7%A9%B6/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th align="left">考试内容</th>
-<th align="left">考试要求</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">1. 可行性研究的任务</td>
-<td align="left">1.了解可行性研究的任务</td>
-</tr>
-<tr>
-<td align="left">2. 数据流图和数据字典</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">3.成本效益分析</td>
-<td align="left">3.了解什么是软件生命周期，了解生命周期各个阶段：可行性分析、需求分析、系统设计、详细设计、实现、测试的基本任务。</td>
-</tr>
-<tr>
-<td align="left">4. 需求分析的任务</td>
-<td align="left">4.了解需求分析的任务</td>
-</tr>
-<tr>
-<td align="left">5.实体联系图，状态转换图，层次方框图，IPO图</td>
-<td align="left">掌握可行性研究和需求分析的建模方法：数据流图，数据字典，实体联系图，状态转换图，层次方框图，IPO图</td>
-</tr>
-</tbody></table>
 ]]></content>
       <categories>
         <category>软件工程</category>
@@ -317,9 +317,14 @@
 <p>​	nbib文件导入endNode的方式：</p>
 <p>​		(1):直接双击文件，文件就会自动导入到endNode.</p>
 <p>​                (2):通过文献过滤器导入，File-&gt;Import-&gt;File(&#x2F;import⬇),选择导入文件，导入选择选择其他过滤器-&gt;PubMed(NLM).</p>
-<p>​	<img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/pubmed%E4%BD%BF%E7%94%A8.png" alt=" "></p>
-<p>​	web of science</p>
-<p>​	2.2</p>
+<p><img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/pubmed%E4%BD%BF%E7%94%A8.png" alt=" "></p>
+<p>​	<strong>web of science</strong>(<a href="https://webofscience.clarivate.cn/wos/alldb/basic-search">Document Search - All Databases (clarivate.cn)</a>),输入关键词点击搜索，勾选你需要的文献，点击导出(export)–EndNode desktop,生成一个ciw文件，双击即可导入文件。</p>
+<p><img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/web-of-science.png"></p>
+<p>​	<strong>Google Scholar学术导入</strong>，在谷歌学术进行检索，点击引用–EndNote格式–会下载一个enw文件，双击即可导入(选择….XML这个选项)，批量导出需要先收藏–我的图书馆–全部导出。</p>
+<p>​	<strong>知网导入</strong>，勾选文献–导出与分析–EndNote格式–点击导出–生成TXT文件；点击Import⬇.</p>
+<p><img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/%E7%9F%A5%E7%BD%91.png"></p>
+<p>​			    《《<em>文献标题和期刊在一起的问题》》：</em>这是EndNote Import过滤器的问题，方法为Edit–Import Filters–Open Filter Manager–找到EndNote Import这个过滤器–点击编辑Edit–左侧的Templates–文件类型选择Journal Article–将Journal一行前的标签%B改成%J–关闭–是–重命名–重新导入–过滤器选择刚才修改的。</p>
+<p>2.2 </p>
 <p>3.管理文献</p>
 <p>4.引用文献</p>
 <p>5.国内期刊&#x2F;学位论文文献引用</p>
@@ -716,6 +721,38 @@
       </tags>
   </entry>
   <entry>
+    <title>分支语句-if</title>
+    <url>/2024/01/16/java%E5%9F%BA%E7%A1%80-if%E8%AF%AD%E5%8F%A5/</url>
+    <content><![CDATA[<h1 id="流程控制语句"><a href="#流程控制语句" class="headerlink" title="流程控制语句"></a>流程控制语句</h1><ol>
+<li><p>顺序结构</p>
+<p>按照代码的先后顺序，从上往下依次执行的。</p>
+</li>
+<li><p>分支结构</p>
+<p>if语句：</p>
+<p>​     <strong>if-格式1</strong>：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(关系表达式)&#123;</span><br><span class="line">	语句体;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+<p>if的注意点:</p>
+<p>​      1.大括号的开头可以另起一行书写，但是建议写在第一行的末尾</p>
+<p>​      2.在语句体中，如果只有一句代码，大括号可以省略不写。</p>
+<p>​      3.如果对一个布尔类型的变量进行判断，不要用&#x3D;&#x3D;号。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">boolean</span> <span class="variable">flag</span> <span class="operator">=</span> <span class="literal">false</span>;</span><br><span class="line"><span class="keyword">if</span>(flag == <span class="literal">true</span>)&#123;  <span class="comment">//判断的方式定义容易误写成赋值等号型，建议直接写布尔类型的变量。</span></span><br><span class="line">    System.out.println(<span class="string">&quot;flag的值是true&quot;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>​      <strong>if-格式2:</strong>(二选一时使用)</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(关系表达式)&#123;</span><br><span class="line">	语句体<span class="number">1</span>;</span><br><span class="line"> &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">	语句体<span class="number">2</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+<p>​     <strong>if-格式3</strong>:(多条件判断)</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(关系表达式)&#123;</span><br><span class="line">	语句体<span class="number">1</span>;</span><br><span class="line"> &#125;<span class="keyword">else</span> <span class="keyword">if</span>&#123;</span><br><span class="line">	语句体<span class="number">2</span>;</span><br><span class="line"> &#125;</span><br><span class="line">.....</span><br><span class="line"> <span class="keyword">else</span>&#123;</span><br><span class="line">     语句体n+<span class="number">1</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>StringJoiner</title>
     <url>/2024/02/06/java%E5%9F%BA%E7%A1%80-StringJoiner/</url>
     <content><![CDATA[<h1 id="StringJoiner"><a href="#StringJoiner" class="headerlink" title="StringJoiner"></a>StringJoiner</h1><p>拼接速度快，代码又简单的方式</p>
@@ -811,29 +848,25 @@
       </tags>
   </entry>
   <entry>
-    <title>分支语句-if</title>
-    <url>/2024/01/16/java%E5%9F%BA%E7%A1%80-if%E8%AF%AD%E5%8F%A5/</url>
-    <content><![CDATA[<h1 id="流程控制语句"><a href="#流程控制语句" class="headerlink" title="流程控制语句"></a>流程控制语句</h1><ol>
-<li><p>顺序结构</p>
-<p>按照代码的先后顺序，从上往下依次执行的。</p>
-</li>
-<li><p>分支结构</p>
-<p>if语句：</p>
-<p>​     <strong>if-格式1</strong>：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(关系表达式)&#123;</span><br><span class="line">	语句体;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-
-<p>if的注意点:</p>
-<p>​      1.大括号的开头可以另起一行书写，但是建议写在第一行的末尾</p>
-<p>​      2.在语句体中，如果只有一句代码，大括号可以省略不写。</p>
-<p>​      3.如果对一个布尔类型的变量进行判断，不要用&#x3D;&#x3D;号。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">boolean</span> <span class="variable">flag</span> <span class="operator">=</span> <span class="literal">false</span>;</span><br><span class="line"><span class="keyword">if</span>(flag == <span class="literal">true</span>)&#123;  <span class="comment">//判断的方式定义容易误写成赋值等号型，建议直接写布尔类型的变量。</span></span><br><span class="line">    System.out.println(<span class="string">&quot;flag的值是true&quot;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>​      <strong>if-格式2:</strong>(二选一时使用)</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(关系表达式)&#123;</span><br><span class="line">	语句体<span class="number">1</span>;</span><br><span class="line"> &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">	语句体<span class="number">2</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-
-<p>​     <strong>if-格式3</strong>:(多条件判断)</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(关系表达式)&#123;</span><br><span class="line">	语句体<span class="number">1</span>;</span><br><span class="line"> &#125;<span class="keyword">else</span> <span class="keyword">if</span>&#123;</span><br><span class="line">	语句体<span class="number">2</span>;</span><br><span class="line"> &#125;</span><br><span class="line">.....</span><br><span class="line"> <span class="keyword">else</span>&#123;</span><br><span class="line">     语句体n+<span class="number">1</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></li>
-</ol>
+    <title>二维数组</title>
+    <url>/2024/01/25/java%E5%9F%BA%E7%A1%80-%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84/</url>
+    <content><![CDATA[<h1 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a>二维数组</h1><p><strong>应用场景</strong>:</p>
+<p>需要把数据分组管理的时候，需要用到二维数组。</p>
+<p><strong>初始化</strong>：</p>
+<p><img src="/../images/%E5%88%9D%E5%A7%8B%E5%8C%96.png"></p>
+<p>二维数组的内存图:</p>
+<p><img src="/../images/%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84.jpg"></p>
+<p>另外两种特殊的初始化:</p>
+<p>（1）一位数组的长度灵活</p>
+<p>​	int[ ] [ ] arr &#x3D; new int [2] [ ];</p>
+<p>​	int[] arr1 &#x3D; {11,22};</p>
+<p>​	int[] arr2 &#x3D; {44,55,66}; </p>
+<p>（2）覆盖</p>
+<p>​	int[ ] [ ] arr &#x3D; new int [2] [ 3];</p>
+<p>​	int[] arr1 &#x3D; {11,22};</p>
+<p>​	int[] arr2 &#x3D; {44,55,66}; </p>
+<p>​	arr[0] &#x3D; arr1;</p>
+<p>​	arr[1] &#x3D; arr2;</p>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -854,34 +887,6 @@
 <p>计算结果跨零时(-5+6&#x3D;0),有可能存在误差。因为在反码中0有两种表现形式，**+0**(0000 0000),-<strong>0</strong>(1111 1111)</p>
 <p><strong>补码：</strong>屏蔽掉0的两种表现形式.使得+0和-0只有一种表现形式，实现方式是负数的反码加1.</p>
 <p><img src="/../images/3-01.png" alt="原反补"></p>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>二维数组</title>
-    <url>/2024/01/25/java%E5%9F%BA%E7%A1%80-%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84/</url>
-    <content><![CDATA[<h1 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a>二维数组</h1><p><strong>应用场景</strong>:</p>
-<p>需要把数据分组管理的时候，需要用到二维数组。</p>
-<p><strong>初始化</strong>：</p>
-<p><img src="/../images/%E5%88%9D%E5%A7%8B%E5%8C%96.png"></p>
-<p>二维数组的内存图:</p>
-<p><img src="/../images/%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84.jpg"></p>
-<p>另外两种特殊的初始化:</p>
-<p>（1）一位数组的长度灵活</p>
-<p>​	int[ ] [ ] arr &#x3D; new int [2] [ ];</p>
-<p>​	int[] arr1 &#x3D; {11,22};</p>
-<p>​	int[] arr2 &#x3D; {44,55,66}; </p>
-<p>（2）覆盖</p>
-<p>​	int[ ] [ ] arr &#x3D; new int [2] [ 3];</p>
-<p>​	int[] arr1 &#x3D; {11,22};</p>
-<p>​	int[] arr2 &#x3D; {44,55,66}; </p>
-<p>​	arr[0] &#x3D; arr1;</p>
-<p>​	arr[1] &#x3D; arr2;</p>
 ]]></content>
       <categories>
         <category>Java基础</category>
