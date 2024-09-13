@@ -6,7 +6,7 @@
   <link href="https://readmengk90.github.io/atom.xml" rel="self"/>
   
   <link href="https://readmengk90.github.io/"/>
-  <updated>2024-09-10T13:57:00.063Z</updated>
+  <updated>2024-09-13T09:41:46.398Z</updated>
   <id>https://readmengk90.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>大数据-处理有价值的数据</title>
+    <link href="https://readmengk90.github.io/2024/09/13/%E5%A4%A7%E6%95%B0%E6%8D%AE%E4%BB%8B%E7%BB%8D-%E5%A4%84%E7%90%86%E6%9C%89%E4%BB%B7%E5%80%BC%E7%9A%84%E6%95%B0%E6%8D%AE/"/>
+    <id>https://readmengk90.github.io/2024/09/13/%E5%A4%A7%E6%95%B0%E6%8D%AE%E4%BB%8B%E7%BB%8D-%E5%A4%84%E7%90%86%E6%9C%89%E4%BB%B7%E5%80%BC%E7%9A%84%E6%95%B0%E6%8D%AE/</id>
+    <published>2024-09-13T09:38:20.300Z</published>
+    <updated>2024-09-13T09:41:46.398Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>—–  有自觉才有自由   —–</strong></p><p>大数据解决海量数据的存储与计算</p>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;大数据介绍&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="大数据" scheme="https://readmengk90.github.io/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+    
+    
+    <category term="大数据" scheme="https://readmengk90.github.io/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+    
+  </entry>
   
   <entry>
     <title>endNode的使用</title>
@@ -412,27 +433,6 @@
     
     
     <category term="java" scheme="https://readmengk90.github.io/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>金额转换思想</title>
-    <link href="https://readmengk90.github.io/2024/02/04/%E9%87%91%E9%A2%9D%E8%BD%AC%E6%8D%A2%E6%80%9D%E6%83%B3/"/>
-    <id>https://readmengk90.github.io/2024/02/04/%E9%87%91%E9%A2%9D%E8%BD%AC%E6%8D%A2%E6%80%9D%E6%83%B3/</id>
-    <published>2024-02-04T12:42:51.453Z</published>
-    <updated>2024-02-05T01:39:45.748Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="金额转换思想："><a href="#金额转换思想：" class="headerlink" title="金额转换思想："></a>金额转换思想：</h1><p>​        2135</p><p>​             转大写：(查表法)1.取各位上的数–2.大写(数组)值的数组索引是各位的数</p><p>​    贰壹叁伍</p><p>​                    前面补0：</p><p>​零零零贰壹叁伍</p><p>​            插入单位:</p><p>零佰零拾零万贰仟壹佰叁拾伍元</p><p><strong>一：转大写</strong></p><p>1.得到money里面的每一位数字</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span>(<span class="literal">true</span>)&#123;<span class="comment">//159</span></span><br><span class="line">    <span class="comment">//从右往左获取数据，因为右侧是数据的个位</span></span><br><span class="line">    <span class="type">int</span> ge=money%<span class="number">10</span>;</span><br><span class="line">    <span class="comment">//去掉刚刚获取的数据</span></span><br><span class="line">    money=money/<span class="number">10</span>;</span><br><span class="line">    <span class="comment">//如果数字上的每一位全部获取到了，那么money记录的就是0，此时循环结束</span></span><br><span class="line">    <span class="keyword">if</span>(money==<span class="number">0</span>)&#123;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>2.创建大写数组</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title function_">getCapitalNumber</span><span class="params">(<span class="type">int</span> number)</span>&#123;</span><br><span class="line">    String[] arr=&#123;<span class="string">&quot;零&quot;</span>,<span class="string">&quot;壹&quot;</span>,<span class="string">&quot;贰&quot;</span>,<span class="string">&quot;叁&quot;</span>,<span class="string">&quot;肆&quot;</span>,<span class="string">&quot;伍&quot;</span>,<span class="string">&quot;陆&quot;</span>,<span class="string">&quot;柒&quot;</span>,<span class="string">&quot;捌&quot;</span>,<span class="string">&quot;玖&quot;</span>&#125;;</span><br><span class="line"><span class="keyword">return</span> arr[number];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>3.每位上的数就是大写数组的索引</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">String strMoney=<span class="string">&quot;&quot;</span>;</span><br><span class="line"><span class="keyword">while</span>(<span class="literal">true</span>)&#123;<span class="comment">//159</span></span><br><span class="line">    <span class="comment">//从右往左获取数据，因为右侧是数据的个位</span></span><br><span class="line">    <span class="type">int</span> ge=money%<span class="number">10</span>;</span><br><span class="line">    String capitalNumber=getCapitalNumber(ge);</span><br><span class="line">    <span class="comment">//反向拼接</span></span><br><span class="line">    strMoney=capitalNumber+strMoney;</span><br><span class="line">    <span class="comment">//去掉刚刚获取的数据</span></span><br><span class="line">    money=money/<span class="number">10</span>;</span><br><span class="line">    <span class="comment">//如果数字上的每一位全部获取到了，那么money记录的就是0，此时循环结束</span></span><br><span class="line">    <span class="keyword">if</span>(money==<span class="number">0</span>)&#123;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><strong>二:前面补零(补齐7位)</strong></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> ZeroCount=<span class="number">7</span>-strMoney.length;</span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;ZeroCount;i++)&#123;</span><br><span class="line">    strMoney=<span class="string">&quot;零&quot;</span>+strMoney;<span class="comment">//字符串拼接,前拼</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><strong>三:插入单位</strong></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1.定义数组单位</span></span><br><span class="line">String[] arr = &#123;<span class="string">&quot;佰&quot;</span>,<span class="string">&quot;拾&quot;</span>,<span class="string">&quot;万&quot;</span>,<span class="string">&quot;仟&quot;</span>,<span class="string">&quot;佰&quot;</span>,<span class="string">&quot;拾&quot;</span>,<span class="string">&quot;元&quot;</span>&#125;;</span><br><span class="line"><span class="comment">//2.遍历strMoney，然后把大写数字和单位拼接到字符串中</span></span><br><span class="line">String result=<span class="string">&quot;&quot;</span>;</span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;strMoney.length();i++)&#123;</span><br><span class="line">    <span class="type">char</span> c=strMoney.charAt(i);</span><br><span class="line">    result=result+c+arr[i];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;Java实现的数字中文大写（正写）转换&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="经典算法思想" scheme="https://readmengk90.github.io/categories/%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3/"/>
-    
-    
-    <category term="算法思想" scheme="https://readmengk90.github.io/tags/%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3/"/>
     
   </entry>
   
