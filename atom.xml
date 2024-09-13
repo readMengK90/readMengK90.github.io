@@ -6,7 +6,7 @@
   <link href="https://readmengk90.github.io/atom.xml" rel="self"/>
   
   <link href="https://readmengk90.github.io/"/>
-  <updated>2024-09-13T09:41:46.398Z</updated>
+  <updated>2024-09-13T10:36:33.151Z</updated>
   <id>https://readmengk90.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://readmengk90.github.io/2024/09/13/%E5%A4%A7%E6%95%B0%E6%8D%AE%E4%BB%8B%E7%BB%8D-%E5%A4%84%E7%90%86%E6%9C%89%E4%BB%B7%E5%80%BC%E7%9A%84%E6%95%B0%E6%8D%AE/"/>
     <id>https://readmengk90.github.io/2024/09/13/%E5%A4%A7%E6%95%B0%E6%8D%AE%E4%BB%8B%E7%BB%8D-%E5%A4%84%E7%90%86%E6%9C%89%E4%BB%B7%E5%80%BC%E7%9A%84%E6%95%B0%E6%8D%AE/</id>
     <published>2024-09-13T09:38:20.300Z</published>
-    <updated>2024-09-13T09:41:46.398Z</updated>
+    <updated>2024-09-13T10:36:33.151Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>—–  有自觉才有自由   —–</strong></p><p>大数据解决海量数据的存储与计算</p>]]></content>
+    <content type="html"><![CDATA[<p><strong>—–  有自觉才有自由   —–</strong></p><p>大数据解决海量<em><strong>数据的存储</strong></em>(存不下)与<em><strong>计算</strong></em>(查询慢)的问题。</p><p>大数据分析的业务流程：</p><ul><li><p><input disabled="" type="checkbox"> ​明确数据分析的目的和思路(搞清楚数据在哪，要做什么?)</p></li><li><p><input disabled="" type="checkbox"> ​ 数据收集(读数据)</p></li><li><p><input disabled="" type="checkbox"> ​                 数据处理：提取，清洗，转化，加载(Sqoop,kettle即对数据进行处理，过滤掉不需要的数据)</p></li><li><p><input disabled="" type="checkbox"> ​                 数据分析：统计，建模，挖掘，（Hive,Spark,Flik即指标统计，根据需求算出结果，存储结果）</p></li><li><p><input disabled="" type="checkbox"> ​                 数据可视化(Superset,Echarts),将结果放入一个查询非常快的数据库，例如hbse,redis,MySQL</p></li><li><p><input disabled="" type="checkbox"> ​                 报告撰写(如图所示，那个数据最明显)</p></li></ul>]]></content>
     
     
     <summary type="html">&lt;center&gt;大数据介绍&lt;/center&gt;</summary>
