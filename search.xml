@@ -218,6 +218,59 @@
       </tags>
   </entry>
   <entry>
+    <title>endNode的使用</title>
+    <url>/2024/09/08/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<p>1.endnode的下载和安装：</p>
+<p>​	<a href="https://mp.weixin.qq.com/s/dVgeXShxAsyfyVfzJkREMw">EndNote21.4安装教程 (qq.com)</a></p>
+<p>2.导入文献</p>
+<p>​	2.1数据库导入</p>
+<p>​	<strong>PubMed</strong>(<a href="https://pubmed.ncbi.nlm.nih.gov/">PubMed (nih.gov)</a>)是文摘型数据库，也就意味着PubMed的强项是<strong>检索</strong>，这与全文数据库是不同的，点击create file会生成一个nbib文件。</p>
+<p>​	nbib文件导入endNode的方式：</p>
+<p>​		(1):直接双击文件，文件就会自动导入到endNode.</p>
+<p>​                (2):通过文献过滤器导入，File-&gt;Import-&gt;File(&#x2F;import⬇),选择导入文件，导入选择选择其他过滤器-&gt;PubMed(NLM).</p>
+<p><img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/pubmed%E4%BD%BF%E7%94%A8.png" alt=" "></p>
+<p>​	<strong>web of science</strong>(<a href="https://webofscience.clarivate.cn/wos/alldb/basic-search">Document Search - All Databases (clarivate.cn)</a>),输入关键词点击搜索，勾选你需要的文献，点击导出(export)–EndNode desktop,生成一个ciw文件，双击即可导入文件。</p>
+<p><img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/web-of-science.png"></p>
+<p>​	<strong>Google Scholar学术导入</strong>，在谷歌学术进行检索，点击引用–EndNote格式–会下载一个enw文件，双击即可导入(选择….XML这个选项)，批量导出需要先收藏–我的图书馆–全部导出。</p>
+<p>​	<strong>知网导入</strong>，勾选文献–导出与分析–EndNote格式–点击导出–生成TXT文件；点击Import⬇.</p>
+<p><img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/%E7%9F%A5%E7%BD%91.png"></p>
+<p>​			    《《<em>文献标题和期刊在一起的问题》》：</em>这是EndNote Import过滤器的问题，方法为Edit–Import Filters–Open Filter Manager–找到EndNote Import这个过滤器–点击编辑Edit–左侧的Templates–文件类型选择Journal Article–将Journal一行前的标签%B改成%J–关闭–是–重命名–重新导入–过滤器选择刚才修改的。</p>
+<p>​			    《《<em>补充缺失信息</em>》》：因为某些原因，可能有些文件会缺失一些信息，按CTRL批量选择缺失信息的文献—鼠标右键—Find Reference Updates—Update All Files–Y.(只对英文文献有效，中文缺失双击手动添加)。</p>
+<p>​	<strong>PDF导入</strong>，通过识别PDF的DOI号，从而提取文献信息，不建议导入中文文献论文，从中文数据库中直接导入。</p>
+<p>​			    《《PDF导入英文文献信息缺失》》：主要是没检测到DOI号，方法：复制文件标题到浏览器搜索—复制DOI—-双击文献下拉到<strong>DOI</strong>–左上角查找全文更新—Update  Files</p>
+<p><img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/PDF.png"></p>
+<p>​			    《《导入文件夹所有PDF》》:File–import–文件夹</p>
+<p>3.管理文献</p>
+<p>​	<strong>3.1 分组</strong>    对导入的文件可以对其进行分组，只能有二级分类；在我的分组里点击–创建组，然后将同类型文献批量拖拽进组内.</p>
+<p>​	**3.2 文献去重 ** 从同一个研究主题，往往会从不同数据库导入文献，会涉及到文献重复，点击All Reference—Reference(导航栏)—Find Duplicates—cancle–在左侧会新增一个重复文献文件夹—里面的文献数量就代表重复数量2倍，有灰色阴影的文献就是重复的文献—-鼠标右键单击Move Reference to Trash</p>
+<p>​	<strong>3.3 文献排序</strong>  </p>
+<p>​		查找全文：全选文献—右键查找全文–查找全文–出现回形针表示能找到</p>
+<p>​		查找全文对于中文文献是不适用的，对于没有中文文献和没有查找到全文的英文文献，可以先将PDF下载到本地，这篇文献就会被链接到一个全文，该PDF文件会被自动存储到数据库文件夹中(删除后无影响)</p>
+<p>​	<strong>3.4 对文献做笔记</strong></p>
+<p>​		1,2步骤后 然后调出reserch Notes，保存。</p>
+<p>​		<img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/%E7%AC%94%E8%AE%B0.png"></p>
+<p>4.引用文献</p>
+<p>​	<strong>预览样式</strong>：在引用文献前，可以在EndNote预览参考文献样式</p>
+<p>​	<img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/%E9%A2%84%E8%A7%88%E6%A0%B7%E5%BC%8F.png"></p>
+<p>​	<strong>添加样式：</strong><a href="https://endnote.com/downloads/styles/?wpv_aux_current_post_id=12829&wpv_view_count=12764-TCPID12829">Output styles - EndNote</a></p>
+<p>​		下载后粘贴到endnote下载位置的Style中</p>
+<p>​	<strong>引入到word中</strong>：在word中EndNote(导航栏)—选择好style—在EndNote里选择好要导入的文件—在word里Insert Citation—Insert  selected Citation.</p>
+<p>​	<strong>去除参考文献域代码</strong>：域代码去除就无法恢复（Ctrl+A–Ctrl+Shift+F9）</p>
+<p>​	<img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/%E5%9F%9F%E4%BB%A3%E7%A0%81.png"></p>
+<p>​	<strong>更改作者数：</strong></p>
+<p>​	<img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/%E4%BD%9C%E8%80%85%E6%95%B0.png"></p>
+<p><img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/%E4%BD%9C%E8%80%85%E6%95%B02.png"></p>
+<p>​	<strong>引用网页文献的问题</strong>：</p>
+<p><img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/%E7%BD%91%E9%A1%B5%E6%96%87%E7%8C%AE.png"></p>
+]]></content>
+      <categories>
+        <category>科研软件</category>
+      </categories>
+      <tags>
+        <tag>科研软件</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Java API 和字符串</title>
     <url>/2024/02/03/Java%E5%9F%BA%E7%A1%80-API%E5%92%8C%E5%AD%97%E7%AC%A6%E4%B8%B2/</url>
     <content><![CDATA[<p>**API(**Application Programming Interface):应用程序编程接口</p>
@@ -304,59 +357,6 @@
       </categories>
       <tags>
         <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>endNode的使用</title>
-    <url>/2024/09/08/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<p>1.endnode的下载和安装：</p>
-<p>​	<a href="https://mp.weixin.qq.com/s/dVgeXShxAsyfyVfzJkREMw">EndNote21.4安装教程 (qq.com)</a></p>
-<p>2.导入文献</p>
-<p>​	2.1数据库导入</p>
-<p>​	<strong>PubMed</strong>(<a href="https://pubmed.ncbi.nlm.nih.gov/">PubMed (nih.gov)</a>)是文摘型数据库，也就意味着PubMed的强项是<strong>检索</strong>，这与全文数据库是不同的，点击create file会生成一个nbib文件。</p>
-<p>​	nbib文件导入endNode的方式：</p>
-<p>​		(1):直接双击文件，文件就会自动导入到endNode.</p>
-<p>​                (2):通过文献过滤器导入，File-&gt;Import-&gt;File(&#x2F;import⬇),选择导入文件，导入选择选择其他过滤器-&gt;PubMed(NLM).</p>
-<p><img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/pubmed%E4%BD%BF%E7%94%A8.png" alt=" "></p>
-<p>​	<strong>web of science</strong>(<a href="https://webofscience.clarivate.cn/wos/alldb/basic-search">Document Search - All Databases (clarivate.cn)</a>),输入关键词点击搜索，勾选你需要的文献，点击导出(export)–EndNode desktop,生成一个ciw文件，双击即可导入文件。</p>
-<p><img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/web-of-science.png"></p>
-<p>​	<strong>Google Scholar学术导入</strong>，在谷歌学术进行检索，点击引用–EndNote格式–会下载一个enw文件，双击即可导入(选择….XML这个选项)，批量导出需要先收藏–我的图书馆–全部导出。</p>
-<p>​	<strong>知网导入</strong>，勾选文献–导出与分析–EndNote格式–点击导出–生成TXT文件；点击Import⬇.</p>
-<p><img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/%E7%9F%A5%E7%BD%91.png"></p>
-<p>​			    《《<em>文献标题和期刊在一起的问题》》：</em>这是EndNote Import过滤器的问题，方法为Edit–Import Filters–Open Filter Manager–找到EndNote Import这个过滤器–点击编辑Edit–左侧的Templates–文件类型选择Journal Article–将Journal一行前的标签%B改成%J–关闭–是–重命名–重新导入–过滤器选择刚才修改的。</p>
-<p>​			    《《<em>补充缺失信息</em>》》：因为某些原因，可能有些文件会缺失一些信息，按CTRL批量选择缺失信息的文献—鼠标右键—Find Reference Updates—Update All Files–Y.(只对英文文献有效，中文缺失双击手动添加)。</p>
-<p>​	<strong>PDF导入</strong>，通过识别PDF的DOI号，从而提取文献信息，不建议导入中文文献论文，从中文数据库中直接导入。</p>
-<p>​			    《《PDF导入英文文献信息缺失》》：主要是没检测到DOI号，方法：复制文件标题到浏览器搜索—复制DOI—-双击文献下拉到<strong>DOI</strong>–左上角查找全文更新—Update  Files</p>
-<p><img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/PDF.png"></p>
-<p>​			    《《导入文件夹所有PDF》》:File–import–文件夹</p>
-<p>3.管理文献</p>
-<p>​	<strong>3.1 分组</strong>    对导入的文件可以对其进行分组，只能有二级分类；在我的分组里点击–创建组，然后将同类型文献批量拖拽进组内.</p>
-<p>​	**3.2 文献去重 ** 从同一个研究主题，往往会从不同数据库导入文献，会涉及到文献重复，点击All Reference—Reference(导航栏)—Find Duplicates—cancle–在左侧会新增一个重复文献文件夹—里面的文献数量就代表重复数量2倍，有灰色阴影的文献就是重复的文献—-鼠标右键单击Move Reference to Trash</p>
-<p>​	<strong>3.3 文献排序</strong>  </p>
-<p>​		查找全文：全选文献—右键查找全文–查找全文–出现回形针表示能找到</p>
-<p>​		查找全文对于中文文献是不适用的，对于没有中文文献和没有查找到全文的英文文献，可以先将PDF下载到本地，这篇文献就会被链接到一个全文，该PDF文件会被自动存储到数据库文件夹中(删除后无影响)</p>
-<p>​	<strong>3.4 对文献做笔记</strong></p>
-<p>​		1,2步骤后 然后调出reserch Notes，保存。</p>
-<p>​		<img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/%E7%AC%94%E8%AE%B0.png"></p>
-<p>4.引用文献</p>
-<p>​	<strong>预览样式</strong>：在引用文献前，可以在EndNote预览参考文献样式</p>
-<p>​	<img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/%E9%A2%84%E8%A7%88%E6%A0%B7%E5%BC%8F.png"></p>
-<p>​	<strong>添加样式：</strong><a href="https://endnote.com/downloads/styles/?wpv_aux_current_post_id=12829&wpv_view_count=12764-TCPID12829">Output styles - EndNote</a></p>
-<p>​		下载后粘贴到endnote下载位置的Style中</p>
-<p>​	<strong>引入到word中</strong>：在word中EndNote(导航栏)—选择好style—在EndNote里选择好要导入的文件—在word里Insert Citation—Insert  selected Citation.</p>
-<p>​	<strong>去除参考文献域代码</strong>：域代码去除就无法恢复（Ctrl+A–Ctrl+Shift+F9）</p>
-<p>​	<img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/%E5%9F%9F%E4%BB%A3%E7%A0%81.png"></p>
-<p>​	<strong>更改作者数：</strong></p>
-<p>​	<img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/%E4%BD%9C%E8%80%85%E6%95%B0.png"></p>
-<p><img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/%E4%BD%9C%E8%80%85%E6%95%B02.png"></p>
-<p>​	<strong>引用网页文献的问题</strong>：</p>
-<p><img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/%E7%BD%91%E9%A1%B5%E6%96%87%E7%8C%AE.png"></p>
-]]></content>
-      <categories>
-        <category>科研软件</category>
-      </categories>
-      <tags>
-        <tag>科研软件</tag>
       </tags>
   </entry>
   <entry>
@@ -682,6 +682,68 @@
       </tags>
   </entry>
   <entry>
+    <title>StringBuilder</title>
+    <url>/2024/02/05/java%E5%9F%BA%E7%A1%80-StringBuilder/</url>
+    <content><![CDATA[<h1 id="StringBuilder"><a href="#StringBuilder" class="headerlink" title="StringBuilder"></a><strong>StringBuilder</strong></h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">    String s=<span class="string">&quot;&quot;</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">1000000</span>;i++)&#123;</span><br><span class="line">        s=s+<span class="string">&quot;abc&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println(s);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//数据量较大时，字符串拼接耗时长</span></span><br></pre></td></tr></table></figure>
+
+<p>1.为什么要学习StringBuilder?:<strong>提高字符串的操作效率</strong></p>
+<p>   StringBuilder可以看成是一个容器，创建之后里面的<strong>内容是可变的</strong>,不像字符串一样是固定的。	</p>
+<p>2.StringBuilder的构造方法</p>
+<table>
+<thead>
+<tr>
+<th align="center">方法名</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">public StringBuilder()</td>
+<td align="center">创建一个空白可变字符，不含有任何内容</td>
+</tr>
+<tr>
+<td align="center">public StringBuilder(String str)</td>
+<td align="center">根据字符串的内容，来创建可变字符串对象</td>
+</tr>
+</tbody></table>
+<p>3.StringBuilder常用方法</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>public StringBuilder append(任意类型)</td>
+<td>添加数据，并返回对象本身</td>
+</tr>
+<tr>
+<td>public StringBuilder reverse()</td>
+<td>反转容器中的内容</td>
+</tr>
+<tr>
+<td>public int length()</td>
+<td>返回长度(字符出现的个数)</td>
+</tr>
+<tr>
+<td>public String toString()</td>
+<td>通过toString()就可以实现把StringBuilder转换成String</td>
+</tr>
+</tbody></table>
+<p><strong>StringBuilder是Java已经写好的类，Java在底层对它做了一些特殊处理，打印对象不是地址值而是属性值。</strong></p>
+<p>链式编程：当我们在调用一个方法的时候，不需要用变量接收他的结果，可以继续调用其他方法。</p>
+<p>使用StringBuilder的场景：</p>
+<p>​	1.字符串的拼接</p>
+<p>​	2.字符串的反转</p>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>StringJoiner</title>
     <url>/2024/02/06/java%E5%9F%BA%E7%A1%80-StringJoiner/</url>
     <content><![CDATA[<h1 id="StringJoiner"><a href="#StringJoiner" class="headerlink" title="StringJoiner"></a>StringJoiner</h1><p>拼接速度快，代码又简单的方式</p>
@@ -766,59 +828,25 @@
       </tags>
   </entry>
   <entry>
-    <title>StringBuilder</title>
-    <url>/2024/02/05/java%E5%9F%BA%E7%A1%80-StringBuilder/</url>
-    <content><![CDATA[<h1 id="StringBuilder"><a href="#StringBuilder" class="headerlink" title="StringBuilder"></a><strong>StringBuilder</strong></h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">    String s=<span class="string">&quot;&quot;</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">1000000</span>;i++)&#123;</span><br><span class="line">        s=s+<span class="string">&quot;abc&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println(s);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//数据量较大时，字符串拼接耗时长</span></span><br></pre></td></tr></table></figure>
-
-<p>1.为什么要学习StringBuilder?:<strong>提高字符串的操作效率</strong></p>
-<p>   StringBuilder可以看成是一个容器，创建之后里面的<strong>内容是可变的</strong>,不像字符串一样是固定的。	</p>
-<p>2.StringBuilder的构造方法</p>
-<table>
-<thead>
-<tr>
-<th align="center">方法名</th>
-<th align="center">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">public StringBuilder()</td>
-<td align="center">创建一个空白可变字符，不含有任何内容</td>
-</tr>
-<tr>
-<td align="center">public StringBuilder(String str)</td>
-<td align="center">根据字符串的内容，来创建可变字符串对象</td>
-</tr>
-</tbody></table>
-<p>3.StringBuilder常用方法</p>
-<table>
-<thead>
-<tr>
-<th>方法名</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>public StringBuilder append(任意类型)</td>
-<td>添加数据，并返回对象本身</td>
-</tr>
-<tr>
-<td>public StringBuilder reverse()</td>
-<td>反转容器中的内容</td>
-</tr>
-<tr>
-<td>public int length()</td>
-<td>返回长度(字符出现的个数)</td>
-</tr>
-<tr>
-<td>public String toString()</td>
-<td>通过toString()就可以实现把StringBuilder转换成String</td>
-</tr>
-</tbody></table>
-<p><strong>StringBuilder是Java已经写好的类，Java在底层对它做了一些特殊处理，打印对象不是地址值而是属性值。</strong></p>
-<p>链式编程：当我们在调用一个方法的时候，不需要用变量接收他的结果，可以继续调用其他方法。</p>
-<p>使用StringBuilder的场景：</p>
-<p>​	1.字符串的拼接</p>
-<p>​	2.字符串的反转</p>
+    <title>二维数组</title>
+    <url>/2024/01/25/java%E5%9F%BA%E7%A1%80-%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84/</url>
+    <content><![CDATA[<h1 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a>二维数组</h1><p><strong>应用场景</strong>:</p>
+<p>需要把数据分组管理的时候，需要用到二维数组。</p>
+<p><strong>初始化</strong>：</p>
+<p><img src="/../images/%E5%88%9D%E5%A7%8B%E5%8C%96.png"></p>
+<p>二维数组的内存图:</p>
+<p><img src="/../images/%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84.jpg"></p>
+<p>另外两种特殊的初始化:</p>
+<p>（1）一位数组的长度灵活</p>
+<p>​	int[ ] [ ] arr &#x3D; new int [2] [ ];</p>
+<p>​	int[] arr1 &#x3D; {11,22};</p>
+<p>​	int[] arr2 &#x3D; {44,55,66}; </p>
+<p>（2）覆盖</p>
+<p>​	int[ ] [ ] arr &#x3D; new int [2] [ 3];</p>
+<p>​	int[] arr1 &#x3D; {11,22};</p>
+<p>​	int[] arr2 &#x3D; {44,55,66}; </p>
+<p>​	arr[0] &#x3D; arr1;</p>
+<p>​	arr[1] &#x3D; arr2;</p>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -862,34 +890,6 @@
 <p><img src="/../images/java%E5%9F%BA%E7%A1%80-static/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240219221017.png"></p>
 <p>2.非静态方法<strong>可以</strong>访问静态变量或静态方法，<strong>也可以</strong>访问非静态的成员变量和非静态的成员方法(<strong>和调用方式有关</strong>)</p>
 <p><img src="/../images/java%E5%9F%BA%E7%A1%80-static/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240219221500.png"></p>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>二维数组</title>
-    <url>/2024/01/25/java%E5%9F%BA%E7%A1%80-%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84/</url>
-    <content><![CDATA[<h1 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a>二维数组</h1><p><strong>应用场景</strong>:</p>
-<p>需要把数据分组管理的时候，需要用到二维数组。</p>
-<p><strong>初始化</strong>：</p>
-<p><img src="/../images/%E5%88%9D%E5%A7%8B%E5%8C%96.png"></p>
-<p>二维数组的内存图:</p>
-<p><img src="/../images/%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84.jpg"></p>
-<p>另外两种特殊的初始化:</p>
-<p>（1）一位数组的长度灵活</p>
-<p>​	int[ ] [ ] arr &#x3D; new int [2] [ ];</p>
-<p>​	int[] arr1 &#x3D; {11,22};</p>
-<p>​	int[] arr2 &#x3D; {44,55,66}; </p>
-<p>（2）覆盖</p>
-<p>​	int[ ] [ ] arr &#x3D; new int [2] [ 3];</p>
-<p>​	int[] arr1 &#x3D; {11,22};</p>
-<p>​	int[] arr2 &#x3D; {44,55,66}; </p>
-<p>​	arr[0] &#x3D; arr1;</p>
-<p>​	arr[1] &#x3D; arr2;</p>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -990,26 +990,6 @@
       </tags>
   </entry>
   <entry>
-    <title>循环语句</title>
-    <url>/2024/01/18/java%E5%9F%BA%E7%A1%80-%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5(for&amp;while)/</url>
-    <content><![CDATA[<h1 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h1><h4 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(初始化语句;条件判断语句;条件控制语句)&#123;</span><br><span class="line">    循环体语句;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>初始化语句只执行一次，判断语句为true，循环继续，判断语句为false，循环结束。</p>
-<h4 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">初始化语句;</span><br><span class="line"><span class="keyword">while</span>(条件判断语句)&#123;</span><br><span class="line">	循环体语句;</span><br><span class="line">	条件控制语句;</span><br><span class="line">&#125;</span><br><span class="line">循环下面的其他语句;</span><br></pre></td></tr></table></figure>
-
-<h4 id="区别："><a href="#区别：" class="headerlink" title="区别："></a>区别：</h4><pre><code>1. 运行规则都是一样的
-1. for循环中，控制循环的变量，因为归属for循环的语法结构中 在for循环结束中，就不能再次被访问到了。**（已知循环次数或者范围）**
-1. while循环中，控制循环的变量，对于while循环来说不归属其语法结构中，在while循环结束后，该变量还可以继续使用。**(不知道循环次数和范围，只知道循环的结束条件 )**
-</code></pre>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>JAVA的数据类型-标识符-键盘录入</title>
     <url>/2024/01/14/java%E5%9F%BA%E7%A1%80-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B&amp;%E6%A0%87%E8%AF%86%E7%AC%A6&amp;%E9%94%AE%E7%9B%98%E5%BD%95%E5%85%A5/</url>
     <content><![CDATA[<h1 id="1-数据类型"><a href="#1-数据类型" class="headerlink" title="1. 数据类型"></a>1. 数据类型</h1><h4 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h4><table>
@@ -1069,6 +1049,26 @@
 <p>​	nextLine( ):接收字符串</p>
 <p>​	特点:可以接收空格，制表符，遇到回车才停止接收数据。</p>
 <p>弊端:先用nextInt,再用nextLine会导致下面的nextLine接收不到数据。</p>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>循环语句</title>
+    <url>/2024/01/18/java%E5%9F%BA%E7%A1%80-%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5(for&amp;while)/</url>
+    <content><![CDATA[<h1 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h1><h4 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(初始化语句;条件判断语句;条件控制语句)&#123;</span><br><span class="line">    循环体语句;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>初始化语句只执行一次，判断语句为true，循环继续，判断语句为false，循环结束。</p>
+<h4 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">初始化语句;</span><br><span class="line"><span class="keyword">while</span>(条件判断语句)&#123;</span><br><span class="line">	循环体语句;</span><br><span class="line">	条件控制语句;</span><br><span class="line">&#125;</span><br><span class="line">循环下面的其他语句;</span><br></pre></td></tr></table></figure>
+
+<h4 id="区别："><a href="#区别：" class="headerlink" title="区别："></a>区别：</h4><pre><code>1. 运行规则都是一样的
+1. for循环中，控制循环的变量，因为归属for循环的语法结构中 在for循环结束中，就不能再次被访问到了。**（已知循环次数或者范围）**
+1. while循环中，控制循环的变量，对于while循环来说不归属其语法结构中，在while循环结束后，该变量还可以继续使用。**(不知道循环次数和范围，只知道循环的结束条件 )**
+</code></pre>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -1372,100 +1372,6 @@
       </tags>
   </entry>
   <entry>
-    <title>集合ArrayList</title>
-    <url>/2024/02/10/java%E5%9F%BA%E7%A1%80-%E9%9B%86%E5%90%88ArrayList/</url>
-    <content><![CDATA[<h1 id="集合ArrayList"><a href="#集合ArrayList" class="headerlink" title="集合ArrayList"></a>集合ArrayList</h1><p>长度可变的容器(自动扩容)</p>
-<p>集合不能<strong>直接</strong>存基本数据类型–》包装类</p>
-<ol>
-<li><p>为什么要有集合?</p>
-<p>ArrayList:</p>
-<p>构造方法：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">ArrayList&lt;泛型&gt; list = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;可省略&gt;();</span><br><span class="line"><span class="comment">//此时我们创建的是ArrayList的对象，而ArrayList是Java已经写好的一个类，这个类在底层做了一些处理打印对象不是地址值，而是集合中存储数据的内容，在展示的时候会拿[]把所有的数据进行包裹。</span></span><br></pre></td></tr></table></figure>
-
-<p>成员方法：</p>
-<table>
-<thead>
-<tr>
-<th>方法名</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>boolean add(E,e)</td>
-<td>添加元素，返回值表示是否添加成功</td>
-</tr>
-<tr>
-<td>boolean remove(E,e)</td>
-<td>删除指定元素，返回值表示是否删除成功</td>
-</tr>
-<tr>
-<td>E remove(int index)</td>
-<td>删除指定索引的元素，返回被删除元素</td>
-</tr>
-<tr>
-<td>E set(int index,E,e)</td>
-<td>修改指定索引下的元素，返回原来的元素</td>
-</tr>
-<tr>
-<td>E get(int index)</td>
-<td>获取指定索引的元素</td>
-</tr>
-<tr>
-<td>int size()</td>
-<td>集合的长度，也就是集合中元素的个数</td>
-</tr>
-</tbody></table>
-</li>
-<li><p>泛型：限定集合中存储数据的类型，集合不能<strong>直接存储</strong>基本数据类型，可以存储引用数据类型。</p>
-</li>
-<li><p>基本数据类型对应的包装类</p>
-<table>
-<thead>
-<tr>
-<th align="center">byte</th>
-<th align="center">Byte</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">short</td>
-<td align="center">Short</td>
-</tr>
-<tr>
-<td align="center">char</td>
-<td align="center"><strong>Character</strong></td>
-</tr>
-<tr>
-<td align="center">int</td>
-<td align="center"><strong>Integer</strong></td>
-</tr>
-<tr>
-<td align="center">long</td>
-<td align="center">Long</td>
-</tr>
-<tr>
-<td align="center">float</td>
-<td align="center">Float</td>
-</tr>
-<tr>
-<td align="center">boolean</td>
-<td align="center">Boolean</td>
-</tr>
-</tbody></table>
-</li>
-<li><p>集合返回多个对象</p>
-<p>技巧：如果我们要返回多个数据，可以把这些数据先放到一个容器当中，再把容器返回(集合&#x2F;数组)</p>
-</li>
-<li></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Java的运算符</title>
     <url>/2024/01/15/java%E5%9F%BA%E7%A1%80-%E8%BF%90%E7%AE%97%E7%AC%A6/</url>
     <content><![CDATA[<h1 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h1><ol>
@@ -1603,6 +1509,100 @@
 </li>
 </ol>
 <p>​       </p>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>集合ArrayList</title>
+    <url>/2024/02/10/java%E5%9F%BA%E7%A1%80-%E9%9B%86%E5%90%88ArrayList/</url>
+    <content><![CDATA[<h1 id="集合ArrayList"><a href="#集合ArrayList" class="headerlink" title="集合ArrayList"></a>集合ArrayList</h1><p>长度可变的容器(自动扩容)</p>
+<p>集合不能<strong>直接</strong>存基本数据类型–》包装类</p>
+<ol>
+<li><p>为什么要有集合?</p>
+<p>ArrayList:</p>
+<p>构造方法：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">ArrayList&lt;泛型&gt; list = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;可省略&gt;();</span><br><span class="line"><span class="comment">//此时我们创建的是ArrayList的对象，而ArrayList是Java已经写好的一个类，这个类在底层做了一些处理打印对象不是地址值，而是集合中存储数据的内容，在展示的时候会拿[]把所有的数据进行包裹。</span></span><br></pre></td></tr></table></figure>
+
+<p>成员方法：</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>boolean add(E,e)</td>
+<td>添加元素，返回值表示是否添加成功</td>
+</tr>
+<tr>
+<td>boolean remove(E,e)</td>
+<td>删除指定元素，返回值表示是否删除成功</td>
+</tr>
+<tr>
+<td>E remove(int index)</td>
+<td>删除指定索引的元素，返回被删除元素</td>
+</tr>
+<tr>
+<td>E set(int index,E,e)</td>
+<td>修改指定索引下的元素，返回原来的元素</td>
+</tr>
+<tr>
+<td>E get(int index)</td>
+<td>获取指定索引的元素</td>
+</tr>
+<tr>
+<td>int size()</td>
+<td>集合的长度，也就是集合中元素的个数</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>泛型：限定集合中存储数据的类型，集合不能<strong>直接存储</strong>基本数据类型，可以存储引用数据类型。</p>
+</li>
+<li><p>基本数据类型对应的包装类</p>
+<table>
+<thead>
+<tr>
+<th align="center">byte</th>
+<th align="center">Byte</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">short</td>
+<td align="center">Short</td>
+</tr>
+<tr>
+<td align="center">char</td>
+<td align="center"><strong>Character</strong></td>
+</tr>
+<tr>
+<td align="center">int</td>
+<td align="center"><strong>Integer</strong></td>
+</tr>
+<tr>
+<td align="center">long</td>
+<td align="center">Long</td>
+</tr>
+<tr>
+<td align="center">float</td>
+<td align="center">Float</td>
+</tr>
+<tr>
+<td align="center">boolean</td>
+<td align="center">Boolean</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>集合返回多个对象</p>
+<p>技巧：如果我们要返回多个数据，可以把这些数据先放到一个容器当中，再把容器返回(集合&#x2F;数组)</p>
+</li>
+<li></li>
+</ol>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -2060,19 +2060,23 @@
 <li><p><input disabled="" type="checkbox"> 
 ​                 报告撰写(如图所示，那个数据最明显)</p>
 </li>
+<li><p>Linux文件系统的特点：</p>
+</li>
 </ul>
-<p>Linux文件系统的特点：</p>
 <p>​	Linux文件系统没有盘符的概念，所以的文件入口是从根目录开始的，系统自带的文件不要修改和删除。</p>
 <p>Linux命令：</p>
-<p>​	<strong>cd : change directory,切换目录</strong></p>
+<ul>
+<li><strong>cd : change directory,切换目录</strong></li>
+</ul>
 <p>​		cd .. ：返回上一级目录</p>
 <p>​        	cd -  :在临近的2个目录间切换</p>
 <p>​		cd :  返回登陆者的<strong>家目录</strong></p>
 <p>​		cd &#x2F; :切换到根目录</p>
 <p>​		     ~:&#x2F;root</p>
+<p>​		cd:切换到当前登陆用户的家目录，如果是itcast用户登陆的，就回到&#x2F;home&#x2F;itcast,如果     			     是root用户登陆的就回到&#x2F;root</p>
 <p>​       <strong>mkdir:  make directory,创建文件夹</strong></p>
-<p>​		 mkdir test1:没有层级的创建文件夹test1</p>
-<p>​                 mkdir -p aaa&#x2F;bbb&#x2F;ccc&#x2F;ddd:有层级的创建文件夹</p>
+<p>​		 mkdir test1:没有层级的创建文件夹test1,当前目录下创建。</p>
+<p>​                 mkdir -p aaa&#x2F;bbb&#x2F;ccc&#x2F;ddd:有层级的创建文件夹，绝对路径创建(-p先检查后创建文件夹)。</p>
 <p>​	<strong>rm:   remove的缩写，默认删除文件(-)，可以删除文件夹(d)</strong></p>
 <p>​		 rm a.txt : 删除文件会提示，以y开头都会被删除，其他都不会被删除。</p>
 <p>​		 -r: 递归,先进入最里的一层，然后从里向外删除</p>
@@ -2130,7 +2134,42 @@
 <p>​				 ls -a :查看(.)隐藏和非隐藏的文件(白色)和文件夹(蓝色),all</p>
 <p>​				 ls -l :list简写，列表显示，以列表形势显示指定目录下的文件和文件夹(简写ll)。</p>
 <p>​				 ls -h :显示大小，带单位(必须与-l结合使用 ls -l -h)</p>
-<p>​			</p>
+<p>​		<strong>clear:命令用来清屏，可以使用ctrl+l来替换</strong>。</p>
+<p>​		<strong>pwd:显示当前目录的绝对路径</strong>。</p>
+<p>​		<strong>reboot:重启命令</strong></p>
+<p>​		<strong>shutdown -h now:立刻关机(断电关机)</strong></p>
+<p>​		<strong>halt:立刻关机(不断电关机)</strong></p>
+<p>​		<strong>cd: change directory,切换目录</strong></p>
+<p>​			cd:切换到当前登陆用户的家目录，如果是itcast用户登陆的，就回到&#x2F;home&#x2F;itcast,如果     			     是root用户登陆的就回到&#x2F;root</p>
+<p>​		<strong>hostname: 查看主机名称</strong></p>
+<p>​		<strong>tar：压缩，打包，解包，解压缩命令</strong></p>
+<p>​			options:</p>
+<p>​				c:打包</p>
+<p>​				v:看过程</p>
+<p>​				f:打包成那个文件</p>
+<p>​				z:打包成压缩格式的文件.gzip格式</p>
+<p>​				x:解包，解压缩	</p>
+<p>打包：是指将一大堆文件或目录变成一个总的文件。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">tar -cvf test1.tar  test1</span><br></pre></td></tr></table></figure>
+
+<p>打压缩包：则是将一个大文件通过压缩算法变成一个小文件</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">tar -czvf test1.tar.gz test1</span><br></pre></td></tr></table></figure>
+
+<p>解包：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">tar -xvf test1.tar -c /big59/test3</span><br></pre></td></tr></table></figure>
+
+<p>解压缩包：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">tar -xzvf test1.tar.gz -C /big59/test2</span><br></pre></td></tr></table></figure>
+
+<p>​			<strong>grep:全文检索</strong>	</p>
+<p>​			grep hadoop a.txt: 在a.txt里面查找包含hadoop的内容。	</p>
+<p>​			grep -ir hadoop &#x2F;root:	</p>
+<p>​			<img src="/../images/%E5%A4%A7%E6%95%B0%E6%8D%AE%E4%BB%8B%E7%BB%8D-%E5%A4%84%E7%90%86%E6%9C%89%E4%BB%B7%E5%80%BC%E7%9A%84%E6%95%B0%E6%8D%AE/gerp-1.png"></p>
+<p>​			<strong>| :管道，将上一个命令的输出当成下一个命令的输入</strong></p>
+<p>​			<img src="/../images/%E5%A4%A7%E6%95%B0%E6%8D%AE%E4%BB%8B%E7%BB%8D-%E5%A4%84%E7%90%86%E6%9C%89%E4%BB%B7%E5%80%BC%E7%9A%84%E6%95%B0%E6%8D%AE/%E7%AE%A1%E9%81%93.png"></p>
+<p>​			<strong>which-查看系统命令</strong></p>
+<p>​			 查看执行命令的位置</p>
+<p>​			 <img src="/../images/%E5%A4%A7%E6%95%B0%E6%8D%AE%E4%BB%8B%E7%BB%8D-%E5%A4%84%E7%90%86%E6%9C%89%E4%BB%B7%E5%80%BC%E7%9A%84%E6%95%B0%E6%8D%AE/which.png"></p>
 ]]></content>
       <categories>
         <category>Linux命令</category>
@@ -2202,6 +2241,18 @@
       </tags>
   </entry>
   <entry>
+    <title>登录错误时的次数限制</title>
+    <url>/2024/02/19/%E7%99%BB%E5%BD%95%E5%A4%B1%E8%AF%AF%E6%97%B6%E6%AC%A1%E6%95%B0%E7%9A%84%E9%99%90%E5%88%B6/</url>
+    <content><![CDATA[<p>day12</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">3</span>;i++) &#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;请输入用户名:&quot;</span>);</span><br><span class="line">    <span class="type">String</span> <span class="variable">username</span> <span class="operator">=</span> sc.next();</span><br><span class="line">    <span class="type">boolean</span> <span class="variable">flag</span> <span class="operator">=</span> contains(list, username);</span><br><span class="line">    <span class="keyword">if</span> (!flag) &#123;<span class="comment">//集合中没有该用户名</span></span><br><span class="line">        System.out.println(<span class="string">&quot;用户名未注册，请先注册&quot;</span>);</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println(<span class="string">&quot;请输入密码&quot;</span>);</span><br><span class="line">    <span class="type">String</span> <span class="variable">password</span> <span class="operator">=</span> sc.next();</span><br><span class="line">    <span class="keyword">while</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">        <span class="type">String</span> <span class="variable">vericode</span> <span class="operator">=</span> getVericode();</span><br><span class="line">        System.out.println(vericode);</span><br><span class="line">        System.out.println(<span class="string">&quot;请录入验证码:&quot;</span>);</span><br><span class="line">        <span class="type">String</span> <span class="variable">againcode</span> <span class="operator">=</span> sc.next();</span><br><span class="line">        <span class="keyword">if</span> (vericode.equalsIgnoreCase(againcode)) &#123;<span class="comment">//验证码正确</span></span><br><span class="line">            System.out.println(<span class="string">&quot;验证码录入成功&quot;</span>);</span><br><span class="line">            System.out.println(<span class="string">&quot;成功登录&quot;</span>);</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;请重新录入验证码:&quot;</span>);</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">Student</span> <span class="variable">stuInfo</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Student</span>(username, password, <span class="literal">null</span>, <span class="literal">null</span>);</span><br><span class="line">    <span class="type">boolean</span> result=checkstuInfo(list,stuInfo);</span><br><span class="line">    <span class="keyword">if</span> (result)&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;登录成功，可以使用你的学生管理系统了&quot;</span>);</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;登录失败，用户名或密码错误&quot;</span>);</span><br><span class="line">        <span class="keyword">if</span> (i==<span class="number">2</span>)&#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;当前账号&quot;</span>+username+<span class="string">&quot;被锁定&quot;</span>);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;用户名或密码错误，还剩下&quot;</span>+(<span class="number">2</span>-i)+<span class="string">&quot;次机会&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>经典算法思想</category>
+      </categories>
+      <tags>
+        <tag>算法思想</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>生成验证码</title>
     <url>/2024/02/19/%E7%94%9F%E6%88%90%E9%AA%8C%E8%AF%81%E7%A0%81/</url>
     <content><![CDATA[<h4 id="验证码规则："><a href="#验证码规则：" class="headerlink" title="验证码规则："></a>验证码规则：</h4><p>​	长度为5</p>
@@ -2211,18 +2262,6 @@
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> String <span class="title function_">getVericode</span><span class="params">()</span> &#123;</span><br><span class="line">    	<span class="comment">//1.创建一个集合添加所有的大写和小写字母</span></span><br><span class="line">    	ArrayList&lt;Character&gt; list=<span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br><span class="line">    	<span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span> ; i&lt;<span class="number">26</span> ; i++)&#123;</span><br><span class="line">            list.add((<span class="type">char</span>)(<span class="string">&#x27;a&#x27;</span>+i));</span><br><span class="line">            list.add((<span class="type">char</span>)(<span class="string">&#x27;A&#x27;</span>+i));</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">StringBuffer</span> <span class="variable">sb</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">StringBuffer</span>();</span><br><span class="line">        <span class="type">Random</span> <span class="variable">rd</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Random</span>();</span><br><span class="line">        <span class="comment">//2.要随机抽取4个字符</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; <span class="number">4</span>; i++) &#123;</span><br><span class="line">            <span class="comment">//获取随机索引</span></span><br><span class="line">            <span class="type">int</span> index=rd.nextInt(list.size());</span><br><span class="line">            <span class="comment">//利用索引获取字符</span></span><br><span class="line">            <span class="type">char</span> c=list.get(index);</span><br><span class="line">            sb.append(c);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//3.生成1位随机数字</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">number</span> <span class="operator">=</span> rd.nextInt(<span class="number">10</span>); <span class="comment">// 生成0到9之间的随机数字</span></span><br><span class="line">    	sb.append(number);</span><br><span class="line">    	<span class="comment">//4.将字符串变成字符数组，然后再新建一个新的字符串</span></span><br><span class="line">    	<span class="type">char</span>[] arr=sb.toString().toCharArray();</span><br><span class="line">    	<span class="comment">//拿着最后一个索引，跟随机索引进行交换</span></span><br><span class="line">    	<span class="type">int</span> randomIndex=rd.nextInt(arr.length);</span><br><span class="line">        <span class="comment">//最大索引指向的元素，跟随机索引指向的元素交换</span></span><br><span class="line">    	<span class="type">char</span> temp=arr[randomIndex];</span><br><span class="line">        arr[randomIndex]=arr[arr.length-<span class="number">1</span>];</span><br><span class="line">    	arr[arr.length-<span class="number">1</span>]=temp;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">String</span>(arr);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 
 ]]></content>
-      <categories>
-        <category>经典算法思想</category>
-      </categories>
-      <tags>
-        <tag>算法思想</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>登录错误时的次数限制</title>
-    <url>/2024/02/19/%E7%99%BB%E5%BD%95%E5%A4%B1%E8%AF%AF%E6%97%B6%E6%AC%A1%E6%95%B0%E7%9A%84%E9%99%90%E5%88%B6/</url>
-    <content><![CDATA[<p>day12</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">3</span>;i++) &#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;请输入用户名:&quot;</span>);</span><br><span class="line">    <span class="type">String</span> <span class="variable">username</span> <span class="operator">=</span> sc.next();</span><br><span class="line">    <span class="type">boolean</span> <span class="variable">flag</span> <span class="operator">=</span> contains(list, username);</span><br><span class="line">    <span class="keyword">if</span> (!flag) &#123;<span class="comment">//集合中没有该用户名</span></span><br><span class="line">        System.out.println(<span class="string">&quot;用户名未注册，请先注册&quot;</span>);</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println(<span class="string">&quot;请输入密码&quot;</span>);</span><br><span class="line">    <span class="type">String</span> <span class="variable">password</span> <span class="operator">=</span> sc.next();</span><br><span class="line">    <span class="keyword">while</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">        <span class="type">String</span> <span class="variable">vericode</span> <span class="operator">=</span> getVericode();</span><br><span class="line">        System.out.println(vericode);</span><br><span class="line">        System.out.println(<span class="string">&quot;请录入验证码:&quot;</span>);</span><br><span class="line">        <span class="type">String</span> <span class="variable">againcode</span> <span class="operator">=</span> sc.next();</span><br><span class="line">        <span class="keyword">if</span> (vericode.equalsIgnoreCase(againcode)) &#123;<span class="comment">//验证码正确</span></span><br><span class="line">            System.out.println(<span class="string">&quot;验证码录入成功&quot;</span>);</span><br><span class="line">            System.out.println(<span class="string">&quot;成功登录&quot;</span>);</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;请重新录入验证码:&quot;</span>);</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">Student</span> <span class="variable">stuInfo</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Student</span>(username, password, <span class="literal">null</span>, <span class="literal">null</span>);</span><br><span class="line">    <span class="type">boolean</span> result=checkstuInfo(list,stuInfo);</span><br><span class="line">    <span class="keyword">if</span> (result)&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;登录成功，可以使用你的学生管理系统了&quot;</span>);</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;登录失败，用户名或密码错误&quot;</span>);</span><br><span class="line">        <span class="keyword">if</span> (i==<span class="number">2</span>)&#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;当前账号&quot;</span>+username+<span class="string">&quot;被锁定&quot;</span>);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;用户名或密码错误，还剩下&quot;</span>+(<span class="number">2</span>-i)+<span class="string">&quot;次机会&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>经典算法思想</category>
       </categories>
