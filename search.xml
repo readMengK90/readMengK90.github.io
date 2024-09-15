@@ -175,22 +175,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo+Next主题下的阅读全文设置</title>
-    <url>/2024/01/10/Hexo-%E6%98%BE%E7%A4%BA%E5%85%A8%E6%96%87%E7%9A%84%E8%AE%BE%E7%BD%AE/</url>
-    <content><![CDATA[<h1 id="Hexo-显示全文的设置"><a href="#Hexo-显示全文的设置" class="headerlink" title="Hexo-显示全文的设置"></a>Hexo-显示全文的设置</h1><h5 id="1-在文章中使用-more-手动进行截断"><a href="#1-在文章中使用-more-手动进行截断" class="headerlink" title="1.在文章中使用&lt; !--more--&gt; 手动进行截断"></a>1.在文章中使用<code>&lt; !--more--&gt;</code> 手动进行截断</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-01.png?raw=true" alt="image-20240110132555493"></p>
-<h5 id="2-添加描述信息的内容，会成为一种相关内容的提示信息"><a href="#2-添加描述信息的内容，会成为一种相关内容的提示信息" class="headerlink" title="2.添加描述信息的内容，会成为一种相关内容的提示信息"></a>2.添加描述信息的内容，会成为一种相关内容的提示信息</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-02.png?raw=true" alt="image-20240110132853566"></p>
-<h5 id="3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部"><a href="#3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部" class="headerlink" title="3.在主题配置文件中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部"></a>3.在<strong>主题配置文件</strong>中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部</h5><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">auto_excerpt:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">length:</span> <span class="number">150</span></span><br></pre></td></tr></table></figure>
-
-<h5 id="4-效果-展示"><a href="#4-效果-展示" class="headerlink" title="4.效果 展示"></a>4.效果 展示</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-03.png?raw=true" alt="image-20240110133302658"></p>
-]]></content>
-      <categories>
-        <category>Next主题配置</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>快捷键的妙用</title>
     <url>/2024/01/22/Idea%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9A%84%E5%A6%99%E7%94%A8/</url>
     <content><![CDATA[<h1 id="Idea快捷键的妙用"><a href="#Idea快捷键的妙用" class="headerlink" title="Idea快捷键的妙用"></a>Idea快捷键的妙用</h1><p>Ctrl+alt+M:自动抽取方法 </p>
@@ -215,6 +199,22 @@
       </categories>
       <tags>
         <tag>快捷方式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo+Next主题下的阅读全文设置</title>
+    <url>/2024/01/10/Hexo-%E6%98%BE%E7%A4%BA%E5%85%A8%E6%96%87%E7%9A%84%E8%AE%BE%E7%BD%AE/</url>
+    <content><![CDATA[<h1 id="Hexo-显示全文的设置"><a href="#Hexo-显示全文的设置" class="headerlink" title="Hexo-显示全文的设置"></a>Hexo-显示全文的设置</h1><h5 id="1-在文章中使用-more-手动进行截断"><a href="#1-在文章中使用-more-手动进行截断" class="headerlink" title="1.在文章中使用&lt; !--more--&gt; 手动进行截断"></a>1.在文章中使用<code>&lt; !--more--&gt;</code> 手动进行截断</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-01.png?raw=true" alt="image-20240110132555493"></p>
+<h5 id="2-添加描述信息的内容，会成为一种相关内容的提示信息"><a href="#2-添加描述信息的内容，会成为一种相关内容的提示信息" class="headerlink" title="2.添加描述信息的内容，会成为一种相关内容的提示信息"></a>2.添加描述信息的内容，会成为一种相关内容的提示信息</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-02.png?raw=true" alt="image-20240110132853566"></p>
+<h5 id="3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部"><a href="#3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部" class="headerlink" title="3.在主题配置文件中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部"></a>3.在<strong>主题配置文件</strong>中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部</h5><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">auto_excerpt:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">length:</span> <span class="number">150</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="4-效果-展示"><a href="#4-效果-展示" class="headerlink" title="4.效果 展示"></a>4.效果 展示</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-03.png?raw=true" alt="image-20240110133302658"></p>
+]]></content>
+      <categories>
+        <category>Next主题配置</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -307,6 +307,29 @@
       </tags>
   </entry>
   <entry>
+    <title>好好学习  天天向上</title>
+    <url>/2024/01/08/first-blog/</url>
+    <content><![CDATA[<h1 id="This-is-my-first-blog-路上只我一个人，背着手踱着。这一片天地好像是我的-我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静-爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜-niao-nuo-地开着旳，有羞涩地打着朵儿旳-正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉-mo-的流水，遮住了，不能见一些颜色-而叶子却更见风致了。"><a href="#This-is-my-first-blog-路上只我一个人，背着手踱着。这一片天地好像是我的-我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静-爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜-niao-nuo-地开着旳，有羞涩地打着朵儿旳-正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉-mo-的流水，遮住了，不能见一些颜色-而叶子却更见风致了。" class="headerlink" title="This is my first blog 路上只我一个人，背着手踱着。这一片天地好像是我的;我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静;爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜(niǎo,nuó)地开着旳，有羞涩地打着朵儿旳;正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉(mò)的流水，遮住了，不能见一些颜色;而叶子却更见风致了。"></a>This is my first blog 路上只我一个人，背着手踱着。这一片天地好像是我的;我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静;爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜(niǎo,nuó)地开着旳，有羞涩地打着朵儿旳;正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉(mò)的流水，遮住了，不能见一些颜色;而叶子却更见风致了。</h1><h2 id="welcome-to-you"><a href="#welcome-to-you" class="headerlink" title="welcome to you!"></a>welcome to you!</h2>]]></content>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2024/01/08/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.<br>&lt; !–more–&gt;</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>endNode的使用</title>
     <url>/2024/09/08/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<p>1.endnode的下载和安装：</p>
@@ -360,24 +383,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2024/01/08/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.<br>&lt; !–more–&gt;</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>idea插件集合</title>
     <url>/2024/01/25/idea%E6%8F%92%E4%BB%B6%E9%9B%86%E5%90%88/</url>
     <content><![CDATA[<p>idea插件集合:</p>
@@ -422,11 +427,6 @@
       <tags>
         <tag>java</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>好好学习  天天向上</title>
-    <url>/2024/01/08/first-blog/</url>
-    <content><![CDATA[<h1 id="This-is-my-first-blog-路上只我一个人，背着手踱着。这一片天地好像是我的-我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静-爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜-niao-nuo-地开着旳，有羞涩地打着朵儿旳-正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉-mo-的流水，遮住了，不能见一些颜色-而叶子却更见风致了。"><a href="#This-is-my-first-blog-路上只我一个人，背着手踱着。这一片天地好像是我的-我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静-爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜-niao-nuo-地开着旳，有羞涩地打着朵儿旳-正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉-mo-的流水，遮住了，不能见一些颜色-而叶子却更见风致了。" class="headerlink" title="This is my first blog 路上只我一个人，背着手踱着。这一片天地好像是我的;我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静;爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜(niǎo,nuó)地开着旳，有羞涩地打着朵儿旳;正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉(mò)的流水，遮住了，不能见一些颜色;而叶子却更见风致了。"></a>This is my first blog 路上只我一个人，背着手踱着。这一片天地好像是我的;我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静;爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜(niǎo,nuó)地开着旳，有羞涩地打着朵儿旳;正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉(mò)的流水，遮住了，不能见一些颜色;而叶子却更见风致了。</h1><h2 id="welcome-to-you"><a href="#welcome-to-you" class="headerlink" title="welcome to you!"></a>welcome to you!</h2>]]></content>
   </entry>
   <entry>
     <title>面向对象进阶-包-final-权限修饰符-代码块</title>
@@ -654,6 +654,38 @@
       </tags>
   </entry>
   <entry>
+    <title>分支语句-if</title>
+    <url>/2024/01/16/java%E5%9F%BA%E7%A1%80-if%E8%AF%AD%E5%8F%A5/</url>
+    <content><![CDATA[<h1 id="流程控制语句"><a href="#流程控制语句" class="headerlink" title="流程控制语句"></a>流程控制语句</h1><ol>
+<li><p>顺序结构</p>
+<p>按照代码的先后顺序，从上往下依次执行的。</p>
+</li>
+<li><p>分支结构</p>
+<p>if语句：</p>
+<p>​     <strong>if-格式1</strong>：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(关系表达式)&#123;</span><br><span class="line">	语句体;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+<p>if的注意点:</p>
+<p>​      1.大括号的开头可以另起一行书写，但是建议写在第一行的末尾</p>
+<p>​      2.在语句体中，如果只有一句代码，大括号可以省略不写。</p>
+<p>​      3.如果对一个布尔类型的变量进行判断，不要用&#x3D;&#x3D;号。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">boolean</span> <span class="variable">flag</span> <span class="operator">=</span> <span class="literal">false</span>;</span><br><span class="line"><span class="keyword">if</span>(flag == <span class="literal">true</span>)&#123;  <span class="comment">//判断的方式定义容易误写成赋值等号型，建议直接写布尔类型的变量。</span></span><br><span class="line">    System.out.println(<span class="string">&quot;flag的值是true&quot;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>​      <strong>if-格式2:</strong>(二选一时使用)</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(关系表达式)&#123;</span><br><span class="line">	语句体<span class="number">1</span>;</span><br><span class="line"> &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">	语句体<span class="number">2</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+<p>​     <strong>if-格式3</strong>:(多条件判断)</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(关系表达式)&#123;</span><br><span class="line">	语句体<span class="number">1</span>;</span><br><span class="line"> &#125;<span class="keyword">else</span> <span class="keyword">if</span>&#123;</span><br><span class="line">	语句体<span class="number">2</span>;</span><br><span class="line"> &#125;</span><br><span class="line">.....</span><br><span class="line"> <span class="keyword">else</span>&#123;</span><br><span class="line">     语句体n+<span class="number">1</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>JDK的安装与下载</title>
     <url>/2024/01/11/java%E5%9F%BA%E7%A1%80-JDK%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%B8%8B%E8%BD%BD/</url>
     <content><![CDATA[<h1 id="JDK的安装与下载"><a href="#JDK的安装与下载" class="headerlink" title="JDK的安装与下载"></a>JDK的安装与下载</h1><h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><ol>
@@ -673,6 +705,58 @@
 <p><img src="/../images/%E5%AE%89%E8%A3%85004.png"></p>
 </li>
 </ol>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>StringJoiner</title>
+    <url>/2024/02/06/java%E5%9F%BA%E7%A1%80-StringJoiner/</url>
+    <content><![CDATA[<h1 id="StringJoiner"><a href="#StringJoiner" class="headerlink" title="StringJoiner"></a>StringJoiner</h1><p>拼接速度快，代码又简单的方式</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">    <span class="type">int</span>[] arr=&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line">    StringJoiner sj=<span class="keyword">new</span> <span class="title class_">StringJoiner</span>(<span class="string">&quot;,&quot;</span>,<span class="string">&quot;[&quot;</span>,<span class="string">&quot;]&quot;</span>);</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">        sj.add(arr[i]+<span class="string">&quot;&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println(sj);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>构造方法：</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">方法名</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">public StringJoiner(间隔符)</td>
+<td align="center">创建一个StringJoiner对象，指定拼接时的间隔符号。</td>
+</tr>
+<tr>
+<td align="center">public StringJoiner(间隔符合，开始符号，结束符号)</td>
+<td align="center">创建一个StringJoiner对象，指定拼接时的间隔符号，开始符号，结束符号。</td>
+</tr>
+</tbody></table>
+<p><strong>成员方法：</strong></p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>public StringJoiner <strong>add(添加的内容)</strong></td>
+<td>添加数据，并返回对象本身</td>
+</tr>
+<tr>
+<td>public int <strong>length()</strong></td>
+<td>返回长度(字符出现的个数)</td>
+</tr>
+<tr>
+<td>public String <strong>toString()</strong></td>
+<td>返回一个字符串(该字符串就是拼接之后的结果)</td>
+</tr>
+</tbody></table>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -735,90 +819,6 @@
 <p>使用StringBuilder的场景：</p>
 <p>​	1.字符串的拼接</p>
 <p>​	2.字符串的反转</p>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>StringJoiner</title>
-    <url>/2024/02/06/java%E5%9F%BA%E7%A1%80-StringJoiner/</url>
-    <content><![CDATA[<h1 id="StringJoiner"><a href="#StringJoiner" class="headerlink" title="StringJoiner"></a>StringJoiner</h1><p>拼接速度快，代码又简单的方式</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">    <span class="type">int</span>[] arr=&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line">    StringJoiner sj=<span class="keyword">new</span> <span class="title class_">StringJoiner</span>(<span class="string">&quot;,&quot;</span>,<span class="string">&quot;[&quot;</span>,<span class="string">&quot;]&quot;</span>);</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">        sj.add(arr[i]+<span class="string">&quot;&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println(sj);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>构造方法：</strong></p>
-<table>
-<thead>
-<tr>
-<th align="center">方法名</th>
-<th align="center">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">public StringJoiner(间隔符)</td>
-<td align="center">创建一个StringJoiner对象，指定拼接时的间隔符号。</td>
-</tr>
-<tr>
-<td align="center">public StringJoiner(间隔符合，开始符号，结束符号)</td>
-<td align="center">创建一个StringJoiner对象，指定拼接时的间隔符号，开始符号，结束符号。</td>
-</tr>
-</tbody></table>
-<p><strong>成员方法：</strong></p>
-<table>
-<thead>
-<tr>
-<th>方法名</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>public StringJoiner <strong>add(添加的内容)</strong></td>
-<td>添加数据，并返回对象本身</td>
-</tr>
-<tr>
-<td>public int <strong>length()</strong></td>
-<td>返回长度(字符出现的个数)</td>
-</tr>
-<tr>
-<td>public String <strong>toString()</strong></td>
-<td>返回一个字符串(该字符串就是拼接之后的结果)</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>分支语句-if</title>
-    <url>/2024/01/16/java%E5%9F%BA%E7%A1%80-if%E8%AF%AD%E5%8F%A5/</url>
-    <content><![CDATA[<h1 id="流程控制语句"><a href="#流程控制语句" class="headerlink" title="流程控制语句"></a>流程控制语句</h1><ol>
-<li><p>顺序结构</p>
-<p>按照代码的先后顺序，从上往下依次执行的。</p>
-</li>
-<li><p>分支结构</p>
-<p>if语句：</p>
-<p>​     <strong>if-格式1</strong>：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(关系表达式)&#123;</span><br><span class="line">	语句体;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-
-<p>if的注意点:</p>
-<p>​      1.大括号的开头可以另起一行书写，但是建议写在第一行的末尾</p>
-<p>​      2.在语句体中，如果只有一句代码，大括号可以省略不写。</p>
-<p>​      3.如果对一个布尔类型的变量进行判断，不要用&#x3D;&#x3D;号。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">boolean</span> <span class="variable">flag</span> <span class="operator">=</span> <span class="literal">false</span>;</span><br><span class="line"><span class="keyword">if</span>(flag == <span class="literal">true</span>)&#123;  <span class="comment">//判断的方式定义容易误写成赋值等号型，建议直接写布尔类型的变量。</span></span><br><span class="line">    System.out.println(<span class="string">&quot;flag的值是true&quot;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>​      <strong>if-格式2:</strong>(二选一时使用)</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(关系表达式)&#123;</span><br><span class="line">	语句体<span class="number">1</span>;</span><br><span class="line"> &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">	语句体<span class="number">2</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-
-<p>​     <strong>if-格式3</strong>:(多条件判断)</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(关系表达式)&#123;</span><br><span class="line">	语句体<span class="number">1</span>;</span><br><span class="line"> &#125;<span class="keyword">else</span> <span class="keyword">if</span>&#123;</span><br><span class="line">	语句体<span class="number">2</span>;</span><br><span class="line"> &#125;</span><br><span class="line">.....</span><br><span class="line"> <span class="keyword">else</span>&#123;</span><br><span class="line">     语句体n+<span class="number">1</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></li>
-</ol>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -938,6 +938,74 @@
 <p>​	<img src="C:\Users\Administrator\Desktop\微信截图_20240207073607.png"></p>
 <p><strong>5.StringBuilder源码分析</strong></p>
 <p>默认创建一个长度为16的字节数组，添加的内容长度小于16，直接存，添加的内容大于16会扩容(原来的内容*2+2)，如果扩容之后还不够，以实际长度为准。</p>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JAVA的数据类型-标识符-键盘录入</title>
+    <url>/2024/01/14/java%E5%9F%BA%E7%A1%80-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B&amp;%E6%A0%87%E8%AF%86%E7%AC%A6&amp;%E9%94%AE%E7%9B%98%E5%BD%95%E5%85%A5/</url>
+    <content><![CDATA[<h1 id="1-数据类型"><a href="#1-数据类型" class="headerlink" title="1. 数据类型"></a>1. 数据类型</h1><h4 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h4><table>
+<thead>
+<tr>
+<th align="center">数据类型</th>
+<th align="left">关键字</th>
+<th align="left">取值范围</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">整数</td>
+<td align="left">byte<br/>short<br/>int<br/>long</td>
+<td align="left">-128~127(byte)</td>
+</tr>
+<tr>
+<td align="center">浮点数</td>
+<td align="left">float<br/>double</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">字符</td>
+<td align="left">char</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">布尔</td>
+<td align="left">boolean</td>
+<td align="left"></td>
+</tr>
+</tbody></table>
+<p>如果要定义long类型的变量，在数据值的后面需要加一个L作为后缀。float类型变量，数据值也需要加一个F作为后缀。</p>
+<p>整数和小数取值范围大小关系：double&gt;float&gt;long&gt;int&gt; short&gt;byte</p>
+<h1 id="2-标识符"><a href="#2-标识符" class="headerlink" title="2.标识符"></a>2.标识符</h1><p>定义：自定义的类，方法，变量的名字。</p>
+<p>规则： </p>
+<p>   硬性规则:</p>
+<p>​		由数字，字母，下划线(_)和美元$符组成，但是<strong>不能以数字开头</strong>，不能是关键字，<strong>区分大小写</strong>。(关键字是全部小写的)</p>
+<p>   软性建议:	</p>
+<p>​		小驼峰命名法: <strong>方法</strong>，<strong>变量</strong></p>
+<p>​				标识符是一个单词的时候，全部小写，例如:name.</p>
+<p>​				标识符由对个单词组成的时候，第一个单词首字母小写，其他单词首字母大写,例如：firstName.</p>
+<p>​		大驼峰命名法: <strong>类名</strong></p>
+<p>​				标识符是一个单词的时候，首字母大写，例如：Student.</p>
+<p>​				标识符由多个单词组成的时候，每个单词的首字母大写，例如：GoodStudent.</p>
+<h1 id="3-键盘录入"><a href="#3-键盘录入" class="headerlink" title="3.键盘录入"></a>3.键盘录入</h1><p>Scanner类: 接收键盘输入的<strong>整数</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//步骤一：导包</span></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"><span class="comment">//步骤二：创建对象</span></span><br><span class="line"><span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line"><span class="comment">//步骤三：接收数据</span></span><br><span class="line"><span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> sc.nextInt();   <span class="comment">//除了i可以修改，其他的均不能修改</span></span><br></pre></td></tr></table></figure>
+
+<p>多次录入–不知道录入次数(例如猜随机数)、</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span> (<span class="literal">true</span>)&#123;		</span><br><span class="line">            Scanner sc= <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">            System.out.println(<span class="string">&quot;输入你要猜的数字:&quot;</span>);</span><br><span class="line">            <span class="type">int</span> number2= sc.nextInt();</span><br><span class="line">            <span class="comment">//3.判断两个数字给出不同的提示</span></span><br><span class="line">            <span class="comment">//猜的数字大了，提示大了</span></span><br><span class="line">            <span class="comment">//猜的数字小了，提示小了</span></span><br><span class="line">            <span class="comment">//猜的数字正确，提示对了</span></span><br><span class="line">            <span class="keyword">if</span> (number1&lt;number2)&#123;</span><br><span class="line">                System.out.println(<span class="string">&quot;猜数大了&quot;</span>);</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (number1&gt;number2) &#123;</span><br><span class="line">                System.out.println(<span class="string">&quot;猜数小了&quot;</span>);</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                System.out.println(<span class="string">&quot;数字相等&quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+
+<p>第一套体系：</p>
+<p>​	nextInt( ):接收整数</p>
+<p>​	nextDouble( ):接收小数</p>
+<p>​	next( ):接收字符串</p>
+<p>​        特点：遇到空格，制表符，回车就停止接收，这些符号后的数据本次就不会接收(空格后的内容进入内存用于下一次接收)。</p>
+<p>第二套体系：</p>
+<p>​	nextLine( ):接收字符串</p>
+<p>​	特点:可以接收空格，制表符，遇到回车才停止接收数据。</p>
+<p>弊端:先用nextInt,再用nextLine会导致下面的nextLine接收不到数据。</p>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -1145,74 +1213,6 @@
       </tags>
   </entry>
   <entry>
-    <title>JAVA的数据类型-标识符-键盘录入</title>
-    <url>/2024/01/14/java%E5%9F%BA%E7%A1%80-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B&amp;%E6%A0%87%E8%AF%86%E7%AC%A6&amp;%E9%94%AE%E7%9B%98%E5%BD%95%E5%85%A5/</url>
-    <content><![CDATA[<h1 id="1-数据类型"><a href="#1-数据类型" class="headerlink" title="1. 数据类型"></a>1. 数据类型</h1><h4 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h4><table>
-<thead>
-<tr>
-<th align="center">数据类型</th>
-<th align="left">关键字</th>
-<th align="left">取值范围</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">整数</td>
-<td align="left">byte<br/>short<br/>int<br/>long</td>
-<td align="left">-128~127(byte)</td>
-</tr>
-<tr>
-<td align="center">浮点数</td>
-<td align="left">float<br/>double</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="center">字符</td>
-<td align="left">char</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="center">布尔</td>
-<td align="left">boolean</td>
-<td align="left"></td>
-</tr>
-</tbody></table>
-<p>如果要定义long类型的变量，在数据值的后面需要加一个L作为后缀。float类型变量，数据值也需要加一个F作为后缀。</p>
-<p>整数和小数取值范围大小关系：double&gt;float&gt;long&gt;int&gt; short&gt;byte</p>
-<h1 id="2-标识符"><a href="#2-标识符" class="headerlink" title="2.标识符"></a>2.标识符</h1><p>定义：自定义的类，方法，变量的名字。</p>
-<p>规则： </p>
-<p>   硬性规则:</p>
-<p>​		由数字，字母，下划线(_)和美元$符组成，但是<strong>不能以数字开头</strong>，不能是关键字，<strong>区分大小写</strong>。(关键字是全部小写的)</p>
-<p>   软性建议:	</p>
-<p>​		小驼峰命名法: <strong>方法</strong>，<strong>变量</strong></p>
-<p>​				标识符是一个单词的时候，全部小写，例如:name.</p>
-<p>​				标识符由对个单词组成的时候，第一个单词首字母小写，其他单词首字母大写,例如：firstName.</p>
-<p>​		大驼峰命名法: <strong>类名</strong></p>
-<p>​				标识符是一个单词的时候，首字母大写，例如：Student.</p>
-<p>​				标识符由多个单词组成的时候，每个单词的首字母大写，例如：GoodStudent.</p>
-<h1 id="3-键盘录入"><a href="#3-键盘录入" class="headerlink" title="3.键盘录入"></a>3.键盘录入</h1><p>Scanner类: 接收键盘输入的<strong>整数</strong></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//步骤一：导包</span></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"><span class="comment">//步骤二：创建对象</span></span><br><span class="line"><span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line"><span class="comment">//步骤三：接收数据</span></span><br><span class="line"><span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> sc.nextInt();   <span class="comment">//除了i可以修改，其他的均不能修改</span></span><br></pre></td></tr></table></figure>
-
-<p>多次录入–不知道录入次数(例如猜随机数)、</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span> (<span class="literal">true</span>)&#123;		</span><br><span class="line">            Scanner sc= <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">            System.out.println(<span class="string">&quot;输入你要猜的数字:&quot;</span>);</span><br><span class="line">            <span class="type">int</span> number2= sc.nextInt();</span><br><span class="line">            <span class="comment">//3.判断两个数字给出不同的提示</span></span><br><span class="line">            <span class="comment">//猜的数字大了，提示大了</span></span><br><span class="line">            <span class="comment">//猜的数字小了，提示小了</span></span><br><span class="line">            <span class="comment">//猜的数字正确，提示对了</span></span><br><span class="line">            <span class="keyword">if</span> (number1&lt;number2)&#123;</span><br><span class="line">                System.out.println(<span class="string">&quot;猜数大了&quot;</span>);</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (number1&gt;number2) &#123;</span><br><span class="line">                System.out.println(<span class="string">&quot;猜数小了&quot;</span>);</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                System.out.println(<span class="string">&quot;数字相等&quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
-
-<p>第一套体系：</p>
-<p>​	nextInt( ):接收整数</p>
-<p>​	nextDouble( ):接收小数</p>
-<p>​	next( ):接收字符串</p>
-<p>​        特点：遇到空格，制表符，回车就停止接收，这些符号后的数据本次就不会接收(空格后的内容进入内存用于下一次接收)。</p>
-<p>第二套体系：</p>
-<p>​	nextLine( ):接收字符串</p>
-<p>​	特点:可以接收空格，制表符，遇到回车才停止接收数据。</p>
-<p>弊端:先用nextInt,再用nextLine会导致下面的nextLine接收不到数据。</p>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>方法的相关介绍</title>
     <url>/2024/01/21/java%E5%9F%BA%E7%A1%80-%E6%96%B9%E6%B3%95%E7%9A%84%E7%9B%B8%E5%85%B3%E4%BB%8B%E7%BB%8D/</url>
     <content><![CDATA[<h1 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h1><ol>
@@ -1372,6 +1372,100 @@
       </tags>
   </entry>
   <entry>
+    <title>集合ArrayList</title>
+    <url>/2024/02/10/java%E5%9F%BA%E7%A1%80-%E9%9B%86%E5%90%88ArrayList/</url>
+    <content><![CDATA[<h1 id="集合ArrayList"><a href="#集合ArrayList" class="headerlink" title="集合ArrayList"></a>集合ArrayList</h1><p>长度可变的容器(自动扩容)</p>
+<p>集合不能<strong>直接</strong>存基本数据类型–》包装类</p>
+<ol>
+<li><p>为什么要有集合?</p>
+<p>ArrayList:</p>
+<p>构造方法：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">ArrayList&lt;泛型&gt; list = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;可省略&gt;();</span><br><span class="line"><span class="comment">//此时我们创建的是ArrayList的对象，而ArrayList是Java已经写好的一个类，这个类在底层做了一些处理打印对象不是地址值，而是集合中存储数据的内容，在展示的时候会拿[]把所有的数据进行包裹。</span></span><br></pre></td></tr></table></figure>
+
+<p>成员方法：</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>boolean add(E,e)</td>
+<td>添加元素，返回值表示是否添加成功</td>
+</tr>
+<tr>
+<td>boolean remove(E,e)</td>
+<td>删除指定元素，返回值表示是否删除成功</td>
+</tr>
+<tr>
+<td>E remove(int index)</td>
+<td>删除指定索引的元素，返回被删除元素</td>
+</tr>
+<tr>
+<td>E set(int index,E,e)</td>
+<td>修改指定索引下的元素，返回原来的元素</td>
+</tr>
+<tr>
+<td>E get(int index)</td>
+<td>获取指定索引的元素</td>
+</tr>
+<tr>
+<td>int size()</td>
+<td>集合的长度，也就是集合中元素的个数</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>泛型：限定集合中存储数据的类型，集合不能<strong>直接存储</strong>基本数据类型，可以存储引用数据类型。</p>
+</li>
+<li><p>基本数据类型对应的包装类</p>
+<table>
+<thead>
+<tr>
+<th align="center">byte</th>
+<th align="center">Byte</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">short</td>
+<td align="center">Short</td>
+</tr>
+<tr>
+<td align="center">char</td>
+<td align="center"><strong>Character</strong></td>
+</tr>
+<tr>
+<td align="center">int</td>
+<td align="center"><strong>Integer</strong></td>
+</tr>
+<tr>
+<td align="center">long</td>
+<td align="center">Long</td>
+</tr>
+<tr>
+<td align="center">float</td>
+<td align="center">Float</td>
+</tr>
+<tr>
+<td align="center">boolean</td>
+<td align="center">Boolean</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>集合返回多个对象</p>
+<p>技巧：如果我们要返回多个数据，可以把这些数据先放到一个容器当中，再把容器返回(集合&#x2F;数组)</p>
+</li>
+<li></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Java的运算符</title>
     <url>/2024/01/15/java%E5%9F%BA%E7%A1%80-%E8%BF%90%E7%AE%97%E7%AC%A6/</url>
     <content><![CDATA[<h1 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h1><ol>
@@ -1509,100 +1603,6 @@
 </li>
 </ol>
 <p>​       </p>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>集合ArrayList</title>
-    <url>/2024/02/10/java%E5%9F%BA%E7%A1%80-%E9%9B%86%E5%90%88ArrayList/</url>
-    <content><![CDATA[<h1 id="集合ArrayList"><a href="#集合ArrayList" class="headerlink" title="集合ArrayList"></a>集合ArrayList</h1><p>长度可变的容器(自动扩容)</p>
-<p>集合不能<strong>直接</strong>存基本数据类型–》包装类</p>
-<ol>
-<li><p>为什么要有集合?</p>
-<p>ArrayList:</p>
-<p>构造方法：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">ArrayList&lt;泛型&gt; list = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;可省略&gt;();</span><br><span class="line"><span class="comment">//此时我们创建的是ArrayList的对象，而ArrayList是Java已经写好的一个类，这个类在底层做了一些处理打印对象不是地址值，而是集合中存储数据的内容，在展示的时候会拿[]把所有的数据进行包裹。</span></span><br></pre></td></tr></table></figure>
-
-<p>成员方法：</p>
-<table>
-<thead>
-<tr>
-<th>方法名</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>boolean add(E,e)</td>
-<td>添加元素，返回值表示是否添加成功</td>
-</tr>
-<tr>
-<td>boolean remove(E,e)</td>
-<td>删除指定元素，返回值表示是否删除成功</td>
-</tr>
-<tr>
-<td>E remove(int index)</td>
-<td>删除指定索引的元素，返回被删除元素</td>
-</tr>
-<tr>
-<td>E set(int index,E,e)</td>
-<td>修改指定索引下的元素，返回原来的元素</td>
-</tr>
-<tr>
-<td>E get(int index)</td>
-<td>获取指定索引的元素</td>
-</tr>
-<tr>
-<td>int size()</td>
-<td>集合的长度，也就是集合中元素的个数</td>
-</tr>
-</tbody></table>
-</li>
-<li><p>泛型：限定集合中存储数据的类型，集合不能<strong>直接存储</strong>基本数据类型，可以存储引用数据类型。</p>
-</li>
-<li><p>基本数据类型对应的包装类</p>
-<table>
-<thead>
-<tr>
-<th align="center">byte</th>
-<th align="center">Byte</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">short</td>
-<td align="center">Short</td>
-</tr>
-<tr>
-<td align="center">char</td>
-<td align="center"><strong>Character</strong></td>
-</tr>
-<tr>
-<td align="center">int</td>
-<td align="center"><strong>Integer</strong></td>
-</tr>
-<tr>
-<td align="center">long</td>
-<td align="center">Long</td>
-</tr>
-<tr>
-<td align="center">float</td>
-<td align="center">Float</td>
-</tr>
-<tr>
-<td align="center">boolean</td>
-<td align="center">Boolean</td>
-</tr>
-</tbody></table>
-</li>
-<li><p>集合返回多个对象</p>
-<p>技巧：如果我们要返回多个数据，可以把这些数据先放到一个容器当中，再把容器返回(集合&#x2F;数组)</p>
-</li>
-<li></li>
-</ol>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -1756,28 +1756,6 @@
       </tags>
   </entry>
   <entry>
-    <title>面向对象进阶-抽象类和抽象方法</title>
-    <url>/2024/02/23/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E6%8A%BD%E8%B1%A1%E7%B1%BB%E5%92%8C%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<p>抽象类：抽象方法所在的类叫做抽象类，子类必须强制重写，否则子类代码直接报错</p>
-<p>定义格式：public abstract class 类名{}</p>
-<p>抽象方法：将共性的行为抽取到父类之后，由于每一个子类执行的内容是不一样，所以，<strong>在父类中不能确定具体的方法体</strong>，该方法就可以定义为抽象方法。</p>
-<p>定义格式：public abstract 返回值类型 方法名(参数列表)；alt+回车</p>
-<p>注意事项：1.抽象类不能实例化-不能创建对象</p>
-<p>​		   2.抽象类中不一定有抽象方法，但是抽象方法的类一定是抽象类</p>
-<p>​		   3.可能有构造方法</p>
-<p>​		   4.<strong>抽象类的子类</strong></p>
-<p>​				<strong>要么重写抽象类中的所有抽象方法</strong>(推荐使用)</p>
-<p>​				要么是抽象类</p>
-<p>意义：强制子类必须按照统一格式书写</p>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>面向对象进阶-接口</title>
     <url>/2024/02/23/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E6%8E%A5%E5%8F%A3/</url>
     <content><![CDATA[<p><strong>接口：</strong>就是一种规则，对行为的抽象。</p>
@@ -1825,6 +1803,28 @@
 <p>​	适配器设计模式：解决接口与接口实现类之间的矛盾问题</p>
 <p>​			1.当接口中抽象方法较多，而你执行操作其他一个，这时在实现类，就需要重写全部方法，影响阅读和操作，可以新建一个抽象类来存储所有的重写方法(空实现，即方法体空着)，然后让实现类来继承这个类，这时实现类就可以任意重写某一个方法。</p>
 <p>（为了避免其他类创建适配器类的对象，中间的适配器类用abstract进行修饰）</p>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>面向对象进阶-抽象类和抽象方法</title>
+    <url>/2024/02/23/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E6%8A%BD%E8%B1%A1%E7%B1%BB%E5%92%8C%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<p>抽象类：抽象方法所在的类叫做抽象类，子类必须强制重写，否则子类代码直接报错</p>
+<p>定义格式：public abstract class 类名{}</p>
+<p>抽象方法：将共性的行为抽取到父类之后，由于每一个子类执行的内容是不一样，所以，<strong>在父类中不能确定具体的方法体</strong>，该方法就可以定义为抽象方法。</p>
+<p>定义格式：public abstract 返回值类型 方法名(参数列表)；alt+回车</p>
+<p>注意事项：1.抽象类不能实例化-不能创建对象</p>
+<p>​		   2.抽象类中不一定有抽象方法，但是抽象方法的类一定是抽象类</p>
+<p>​		   3.可能有构造方法</p>
+<p>​		   4.<strong>抽象类的子类</strong></p>
+<p>​				<strong>要么重写抽象类中的所有抽象方法</strong>(推荐使用)</p>
+<p>​				要么是抽象类</p>
+<p>意义：强制子类必须按照统一格式书写</p>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -1950,28 +1950,6 @@
       </tags>
   </entry>
   <entry>
-    <title>面向对象进阶main()方法的进一步理解</title>
-    <url>/2024/02/19/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6main()%E6%96%B9%E6%B3%95%E7%9A%84%E8%BF%9B%E4%B8%80%E6%AD%A5%E7%90%86%E8%A7%A3/</url>
-    <content><![CDATA[<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">public:被JVM(虚拟机)调用，访问权限足够大</span></span><br><span class="line"><span class="comment">static:被JVM调用，不用创建对象，直接类名访问，因为main()方法是静态的，所以测试类中其他方法也需要是静态的</span></span><br><span class="line"><span class="comment">void:被JVM调用，不需要给JVM返回值</span></span><br><span class="line"><span class="comment">main:一个通用的名称，虽然不是关键字，但是被JVM识别</span></span><br><span class="line"><span class="comment">String[] args:以前用于接收键盘录入数据的，现在没用。</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>回文数的计算</title>
-    <url>/2024/01/18/%E5%9B%9E%E6%96%87%E6%95%B0/</url>
-    <content><![CDATA[<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> com.itheima.struct;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">PalindromeNumber</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="comment">//需求:给你一个整数x</span></span><br><span class="line">        <span class="comment">//如果x是一个回文整数，打印true，否则，返回false。</span></span><br><span class="line">        <span class="comment">//解释：回文数是指正序(从左向右)和倒序(从右向左)读都是一样的整数。</span></span><br><span class="line">        <span class="comment">//例如，121是回文，而123不是</span></span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        System.out.println(<span class="string">&quot;请输入一个整数&quot;</span>);</span><br><span class="line">        <span class="type">int</span> <span class="variable">number</span> <span class="operator">=</span> sc.nextInt();</span><br><span class="line">        <span class="type">int</span> reverse=<span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> origin=number;</span><br><span class="line">        <span class="type">int</span> k;</span><br><span class="line">        <span class="comment">//思路：翻转后的数字等于翻转前的数字</span></span><br><span class="line">        <span class="keyword">while</span> (number != <span class="number">0</span>)&#123;</span><br><span class="line">            k=number%<span class="number">10</span>;</span><br><span class="line">            reverse=reverse*<span class="number">10</span>+k;</span><br><span class="line">            number/=<span class="number">10</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (origin==reverse)&#123;</span><br><span class="line">            System.out.println(origin+<span class="string">&quot;是回文数&quot;</span>);</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            System.out.println(origin+<span class="string">&quot;不是回文数&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>经典算法思想</category>
-      </categories>
-      <tags>
-        <tag>算法思想</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>面向对象进阶-多态</title>
     <url>/2024/02/21/java%E7%BB%A7%E6%89%BF-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E5%A4%9A%E6%80%81/</url>
     <content><![CDATA[<p><strong>多态</strong>：多种形态，即，同种类型的对象，表现出得不太形态</p>
@@ -2022,6 +2000,28 @@
       </tags>
   </entry>
   <entry>
+    <title>面向对象进阶main()方法的进一步理解</title>
+    <url>/2024/02/19/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6main()%E6%96%B9%E6%B3%95%E7%9A%84%E8%BF%9B%E4%B8%80%E6%AD%A5%E7%90%86%E8%A7%A3/</url>
+    <content><![CDATA[<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">public:被JVM(虚拟机)调用，访问权限足够大</span></span><br><span class="line"><span class="comment">static:被JVM调用，不用创建对象，直接类名访问，因为main()方法是静态的，所以测试类中其他方法也需要是静态的</span></span><br><span class="line"><span class="comment">void:被JVM调用，不需要给JVM返回值</span></span><br><span class="line"><span class="comment">main:一个通用的名称，虽然不是关键字，但是被JVM识别</span></span><br><span class="line"><span class="comment">String[] args:以前用于接收键盘录入数据的，现在没用。</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>回文数的计算</title>
+    <url>/2024/01/18/%E5%9B%9E%E6%96%87%E6%95%B0/</url>
+    <content><![CDATA[<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> com.itheima.struct;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">PalindromeNumber</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="comment">//需求:给你一个整数x</span></span><br><span class="line">        <span class="comment">//如果x是一个回文整数，打印true，否则，返回false。</span></span><br><span class="line">        <span class="comment">//解释：回文数是指正序(从左向右)和倒序(从右向左)读都是一样的整数。</span></span><br><span class="line">        <span class="comment">//例如，121是回文，而123不是</span></span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        System.out.println(<span class="string">&quot;请输入一个整数&quot;</span>);</span><br><span class="line">        <span class="type">int</span> <span class="variable">number</span> <span class="operator">=</span> sc.nextInt();</span><br><span class="line">        <span class="type">int</span> reverse=<span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> origin=number;</span><br><span class="line">        <span class="type">int</span> k;</span><br><span class="line">        <span class="comment">//思路：翻转后的数字等于翻转前的数字</span></span><br><span class="line">        <span class="keyword">while</span> (number != <span class="number">0</span>)&#123;</span><br><span class="line">            k=number%<span class="number">10</span>;</span><br><span class="line">            reverse=reverse*<span class="number">10</span>+k;</span><br><span class="line">            number/=<span class="number">10</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (origin==reverse)&#123;</span><br><span class="line">            System.out.println(origin+<span class="string">&quot;是回文数&quot;</span>);</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            System.out.println(origin+<span class="string">&quot;不是回文数&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>经典算法思想</category>
+      </categories>
+      <tags>
+        <tag>算法思想</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>大小写字母放进数组</title>
     <url>/2024/01/23/%E5%A4%A7%E5%B0%8F%E5%86%99%E5%AD%97%E6%AF%8D%E6%94%BE%E8%BF%9B%E6%95%B0%E7%BB%84/</url>
     <content><![CDATA[<h1 id="大小写字母都放进数组内"><a href="#大小写字母都放进数组内" class="headerlink" title="大小写字母都放进数组内"></a>大小写字母都放进数组内</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">char</span>[] array = <span class="keyword">new</span> <span class="title class_">char</span>[<span class="number">52</span>];<span class="comment">//26+26=52</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; array.length; i++) &#123;</span><br><span class="line">            <span class="type">int</span> <span class="variable">number3</span> <span class="operator">=</span> r.nextInt(<span class="number">9</span>);</span><br><span class="line">            <span class="keyword">if</span> (i &lt; array.length / <span class="number">2</span>) &#123;</span><br><span class="line">                array[i] = (<span class="type">char</span>) (<span class="number">97</span> + i);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                array[i] = (<span class="type">char</span>) (<span class="number">65</span> + j);</span><br><span class="line">                j++;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
@@ -2035,10 +2035,11 @@
       </tags>
   </entry>
   <entry>
-    <title>大数据-处理有价值的数据</title>
+    <title>Linux命令</title>
     <url>/2024/09/13/%E5%A4%A7%E6%95%B0%E6%8D%AE%E4%BB%8B%E7%BB%8D-%E5%A4%84%E7%90%86%E6%9C%89%E4%BB%B7%E5%80%BC%E7%9A%84%E6%95%B0%E6%8D%AE/</url>
     <content><![CDATA[<p><strong>—–  有自觉才有自由   —–</strong></p>
 <p>大数据解决海量<em><strong>数据的存储</strong></em>(存不下)与<em><strong>计算</strong></em>(查询慢)的问题。</p>
+<p>大数据：处理出有价值的数据</p>
 <p>大数据分析的业务流程：</p>
 <ul>
 <li><p><input disabled="" type="checkbox"> 
@@ -2068,6 +2069,7 @@
 <p>​        	cd -  :在临近的2个目录间切换</p>
 <p>​		cd :  返回登陆者的<strong>家目录</strong></p>
 <p>​		cd &#x2F; :切换到根目录</p>
+<p>​		     ~:&#x2F;root</p>
 <p>​       <strong>mkdir:  make directory,创建文件夹</strong></p>
 <p>​		 mkdir test1:没有层级的创建文件夹test1</p>
 <p>​                 mkdir -p aaa&#x2F;bbb&#x2F;ccc&#x2F;ddd:有层级的创建文件夹</p>
@@ -2085,18 +2087,75 @@
 <p>​		 mv  a.txt  b.txt :    当b.txt存在和不存在都是重命名，a的内容<strong>覆盖</strong>b的内容(a的名字变成b的名字)，即b变成了a的内容(覆盖：把b杯子先清空，然后把a被子里的水倒入b中，不同于追加0)。</p>
 <p>​		 mv test1 test2 : 当test2存在：将test1整个文件夹<strong>移动到</strong>test2目录下</p>
 <p>​			                     当test2不存在：重命名</p>
-<p>​		 mv a.txt  test1 :移动文件到指定目录test1下面</p>
+<p>​		 mv a.txt  test1 :移动文件到指定目录test1下面a</p>
 <p>​	<strong>cat : 查看 整个<em>文件</em> 内容</strong></p>
 <p>​                  cat  a.txt :查看文件内容</p>
-<p>​	more :查看文件部分内容</p>
+<p>​	<strong>more :查看文件部分内容</strong></p>
 <p>​		 enter：多查一行数据</p>
 <p>​		 空 格 ： 查看新的一屏幕数据</p>
+<p>​	<strong>cp : copy , 复制粘贴</strong></p>
+<p>​		 cp a.txt  b.txt  </p>
+<p>​		  a.txt 内容存在  b.txt 内容不存在—复制a内容到b里。</p>
+<p>​			<img src="/../images/%E5%A4%A7%E6%95%B0%E6%8D%AE%E4%BB%8B%E7%BB%8D-%E5%A4%84%E7%90%86%E6%9C%89%E4%BB%B7%E5%80%BC%E7%9A%84%E6%95%B0%E6%8D%AE/cp01.png"></p>
+<p>​		 a.txt 内容存在  b.txt内容存在———将a的内容覆盖到b里。</p>
+<p>​                 cp test1 test2 -r</p>
+<p>​		当test2文件夹不存在：将test1下面的内容复制一份，写到test2目录下。</p>
+<p>​			<img src="/../images/%E5%A4%A7%E6%95%B0%E6%8D%AE%E4%BB%8B%E7%BB%8D-%E5%A4%84%E7%90%86%E6%9C%89%E4%BB%B7%E5%80%BC%E7%9A%84%E6%95%B0%E6%8D%AE/cp-9.png"></p>
+<p>​		当test2文件夹存在：将test1整个复制一份到test2目录中</p>
+<p>​		        test1内容存在    test2内容为空。—复制test1整体复制到test2中</p>
+<p>​			<img src="/../images/%E5%A4%A7%E6%95%B0%E6%8D%AE%E4%BB%8B%E7%BB%8D-%E5%A4%84%E7%90%86%E6%9C%89%E4%BB%B7%E5%80%BC%E7%9A%84%E6%95%B0%E6%8D%AE/cp-32.png"></p>
+<p>​		         test1内容存在    test2内容存在. —-将test1整体到test2目录中</p>
+<p>​			<img src="/../images/%E5%A4%A7%E6%95%B0%E6%8D%AE%E4%BB%8B%E7%BB%8D-%E5%A4%84%E7%90%86%E6%9C%89%E4%BB%B7%E5%80%BC%E7%9A%84%E6%95%B0%E6%8D%AE/cp-6.png"></p>
+<p>​		cp a.txt test2 :复制a.txt并写入到 test2 目录中</p>
+<p>​			<img src="/../images/%E5%A4%A7%E6%95%B0%E6%8D%AE%E4%BB%8B%E7%BB%8D-%E5%A4%84%E7%90%86%E6%9C%89%E4%BB%B7%E5%80%BC%E7%9A%84%E6%95%B0%E6%8D%AE/cp-24.png"></p>
+<p>​	<strong>ps: process status ,进程状态</strong>	</p>
+<p>​			ps -ef : 查看当前正在允许的进程</p>
+<p>​	<img src="/../images/%E5%A4%A7%E6%95%B0%E6%8D%AE%E4%BB%8B%E7%BB%8D-%E5%A4%84%E7%90%86%E6%9C%89%E4%BB%B7%E5%80%BC%E7%9A%84%E6%95%B0%E6%8D%AE/ps-1.png"></p>
+<p>​		UID：进程是谁执行的</p>
+<p>​		PID:   进程的ID</p>
+<p>​		PPID：进程的父ID</p>
+<p>​	<strong>kill : 终止</strong></p>
+<p>​		kill 进程ID，终止进程，有时候不一定会终止进程。</p>
+<p>​		kill -9 进程ID,一定能杀死进程。（9：kill,双杀）</p>
+<p>​		kill -1:查看kill命令的所以信号。</p>
+<p>​	<strong>ifconfig: 查看虚拟机的网络配置信息</strong></p>
+<p>​		Windows：ipconfig</p>
+<p>​	<strong>Linux命令(重点)</strong></p>
+<p>​		命令格式： command -options paramaters</p>
+<p>​		绝对路径：从根目录开始。</p>
+<p>​		相对路径：从当前目录开始。</p>
+<p>​		<strong>ls : list简写，列出当前目录下的内容(文件+文件夹)。</strong></p>
+<p>​			ls &#x2F;root:查看指定目录&#x2F;root里面的内容。</p>
+<p>​			<strong>-options:</strong></p>
+<p>​				 ls -a :查看(.)隐藏和非隐藏的文件(白色)和文件夹(蓝色),all</p>
+<p>​				 ls -l :list简写，列表显示，以列表形势显示指定目录下的文件和文件夹(简写ll)。</p>
+<p>​				 ls -h :显示大小，带单位(必须与-l结合使用 ls -l -h)</p>
+<p>​			</p>
 ]]></content>
       <categories>
-        <category>大数据</category>
+        <category>Linux命令</category>
       </categories>
       <tags>
         <tag>大数据</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>把整数中的每一位都添加到数组中</title>
+    <url>/2024/01/23/%E6%8A%8A%E6%95%B4%E6%95%B0%E4%B8%AD%E7%9A%84%E6%AF%8F%E4%B8%80%E4%BD%8D%E9%83%BD%E6%B7%BB%E5%8A%A0%E5%88%B0%E6%95%B0%E7%BB%84%E4%B8%AD/</url>
+    <content><![CDATA[<h1 id="把整数中的每一位都添加到数组中"><a href="#把整数中的每一位都添加到数组中" class="headerlink" title="把整数中的每一位都添加到数组中"></a>把整数中的每一位都添加到数组中</h1><p>反向推导：</p>
+<ol>
+<li><p>计算数组的长度(新建数组)-定义数组-把整数上的每一位都添加到数组上</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="type">int</span>[] getInts(<span class="type">int</span> number) &#123;</span><br><span class="line">        <span class="type">int</span> temp= number;</span><br><span class="line">        <span class="comment">//1.1求数字的长度充当数组的长度</span></span><br><span class="line">        <span class="type">int</span> count=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (number !=<span class="number">0</span>)&#123;</span><br><span class="line">            number = number /<span class="number">10</span>;</span><br><span class="line">            count++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//1.2定义数组</span></span><br><span class="line">        <span class="type">int</span> [] array=<span class="keyword">new</span> <span class="title class_">int</span>[count];</span><br><span class="line">        <span class="comment">//1.3得到每一位</span></span><br><span class="line">        <span class="type">int</span> index= array.length-<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span>(temp!=<span class="number">0</span>)&#123;</span><br><span class="line">            <span class="type">int</span> ge=temp%<span class="number">10</span>;</span><br><span class="line">            temp=temp/<span class="number">10</span>;</span><br><span class="line">            array[index]=ge;</span><br><span class="line">            index--;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> array;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p>day07-TestDemo06</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>经典算法思想</category>
+      </categories>
+      <tags>
+        <tag>算法思想</tag>
       </tags>
   </entry>
   <entry>
@@ -2129,16 +2188,14 @@
       </tags>
   </entry>
   <entry>
-    <title>把整数中的每一位都添加到数组中</title>
-    <url>/2024/01/23/%E6%8A%8A%E6%95%B4%E6%95%B0%E4%B8%AD%E7%9A%84%E6%AF%8F%E4%B8%80%E4%BD%8D%E9%83%BD%E6%B7%BB%E5%8A%A0%E5%88%B0%E6%95%B0%E7%BB%84%E4%B8%AD/</url>
-    <content><![CDATA[<h1 id="把整数中的每一位都添加到数组中"><a href="#把整数中的每一位都添加到数组中" class="headerlink" title="把整数中的每一位都添加到数组中"></a>把整数中的每一位都添加到数组中</h1><p>反向推导：</p>
-<ol>
-<li><p>计算数组的长度(新建数组)-定义数组-把整数上的每一位都添加到数组上</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="type">int</span>[] getInts(<span class="type">int</span> number) &#123;</span><br><span class="line">        <span class="type">int</span> temp= number;</span><br><span class="line">        <span class="comment">//1.1求数字的长度充当数组的长度</span></span><br><span class="line">        <span class="type">int</span> count=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (number !=<span class="number">0</span>)&#123;</span><br><span class="line">            number = number /<span class="number">10</span>;</span><br><span class="line">            count++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//1.2定义数组</span></span><br><span class="line">        <span class="type">int</span> [] array=<span class="keyword">new</span> <span class="title class_">int</span>[count];</span><br><span class="line">        <span class="comment">//1.3得到每一位</span></span><br><span class="line">        <span class="type">int</span> index= array.length-<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span>(temp!=<span class="number">0</span>)&#123;</span><br><span class="line">            <span class="type">int</span> ge=temp%<span class="number">10</span>;</span><br><span class="line">            temp=temp/<span class="number">10</span>;</span><br><span class="line">            array[index]=ge;</span><br><span class="line">            index--;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> array;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+    <title>生成验证码</title>
+    <url>/2024/02/19/%E7%94%9F%E6%88%90%E9%AA%8C%E8%AF%81%E7%A0%81/</url>
+    <content><![CDATA[<h4 id="验证码规则："><a href="#验证码规则：" class="headerlink" title="验证码规则："></a>验证码规则：</h4><p>​	长度为5</p>
+<p>​	由4位大写或者小写字母和1位数字组成，同一个字母可重复</p>
+<p>​	数字可以出现在任意位置</p>
+<p>比如：aQa1K</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> String <span class="title function_">getVericode</span><span class="params">()</span> &#123;</span><br><span class="line">    	<span class="comment">//1.创建一个集合添加所有的大写和小写字母</span></span><br><span class="line">    	ArrayList&lt;Character&gt; list=<span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br><span class="line">    	<span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span> ; i&lt;<span class="number">26</span> ; i++)&#123;</span><br><span class="line">            list.add((<span class="type">char</span>)(<span class="string">&#x27;a&#x27;</span>+i));</span><br><span class="line">            list.add((<span class="type">char</span>)(<span class="string">&#x27;A&#x27;</span>+i));</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">StringBuffer</span> <span class="variable">sb</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">StringBuffer</span>();</span><br><span class="line">        <span class="type">Random</span> <span class="variable">rd</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Random</span>();</span><br><span class="line">        <span class="comment">//2.要随机抽取4个字符</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; <span class="number">4</span>; i++) &#123;</span><br><span class="line">            <span class="comment">//获取随机索引</span></span><br><span class="line">            <span class="type">int</span> index=rd.nextInt(list.size());</span><br><span class="line">            <span class="comment">//利用索引获取字符</span></span><br><span class="line">            <span class="type">char</span> c=list.get(index);</span><br><span class="line">            sb.append(c);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//3.生成1位随机数字</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">number</span> <span class="operator">=</span> rd.nextInt(<span class="number">10</span>); <span class="comment">// 生成0到9之间的随机数字</span></span><br><span class="line">    	sb.append(number);</span><br><span class="line">    	<span class="comment">//4.将字符串变成字符数组，然后再新建一个新的字符串</span></span><br><span class="line">    	<span class="type">char</span>[] arr=sb.toString().toCharArray();</span><br><span class="line">    	<span class="comment">//拿着最后一个索引，跟随机索引进行交换</span></span><br><span class="line">    	<span class="type">int</span> randomIndex=rd.nextInt(arr.length);</span><br><span class="line">        <span class="comment">//最大索引指向的元素，跟随机索引指向的元素交换</span></span><br><span class="line">    	<span class="type">char</span> temp=arr[randomIndex];</span><br><span class="line">        arr[randomIndex]=arr[arr.length-<span class="number">1</span>];</span><br><span class="line">    	arr[arr.length-<span class="number">1</span>]=temp;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">String</span>(arr);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 
-<p>day07-TestDemo06</p>
-</li>
-</ol>
 ]]></content>
       <categories>
         <category>经典算法思想</category>
@@ -2154,23 +2211,6 @@
 <h1 id="1-判断随机数字在数组中是否存在"><a href="#1-判断随机数字在数组中是否存在" class="headerlink" title="1.判断随机数字在数组中是否存在"></a>1.判断随机数字在数组中是否存在</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">boolean</span> <span class="title function_">contain</span><span class="params">(<span class="type">int</span> [] arr,<span class="type">int</span> number)</span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (arr[i]==number)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h1 id="2-当产生的随机数和数组中的元素没有重复的时候，放入数组"><a href="#2-当产生的随机数和数组中的元素没有重复的时候，放入数组" class="headerlink" title="2.当产生的随机数和数组中的元素没有重复的时候，放入数组"></a>2.当产生的随机数和数组中的元素没有重复的时候，放入数组</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span>[] createNumber()&#123;</span><br><span class="line">    <span class="comment">//1.创建数组用于添加中奖号码，六个红球1个蓝球，数组长度为7</span></span><br><span class="line">    <span class="type">int</span>[] arr=<span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">7</span>];</span><br><span class="line">    <span class="comment">//2.生成随机数字，红球的号码不能重复，蓝球的号码可以和红球重复</span></span><br><span class="line">    <span class="type">Random</span> <span class="variable">r</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Random</span>();</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; <span class="number">6</span>;) &#123;</span><br><span class="line">        <span class="type">int</span>  <span class="variable">red</span> <span class="operator">=</span> r.nextInt(<span class="number">33</span>)+<span class="number">1</span>;<span class="comment">//红球号码从1-33中选择，且不能重复。</span></span><br><span class="line">        <span class="type">boolean</span> <span class="variable">flag</span> <span class="operator">=</span> contain(arr, red);</span><br><span class="line">        <span class="keyword">if</span> (!flag)&#123;</span><br><span class="line">            arr[i]=red;</span><br><span class="line">            i++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; <span class="number">6</span>; i++) &#123;</span><br><span class="line">        System.out.println(arr[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> arr;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>经典算法思想</category>
-      </categories>
-      <tags>
-        <tag>算法思想</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>生成验证码</title>
-    <url>/2024/02/19/%E7%94%9F%E6%88%90%E9%AA%8C%E8%AF%81%E7%A0%81/</url>
-    <content><![CDATA[<h4 id="验证码规则："><a href="#验证码规则：" class="headerlink" title="验证码规则："></a>验证码规则：</h4><p>​	长度为5</p>
-<p>​	由4位大写或者小写字母和1位数字组成，同一个字母可重复</p>
-<p>​	数字可以出现在任意位置</p>
-<p>比如：aQa1K</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> String <span class="title function_">getVericode</span><span class="params">()</span> &#123;</span><br><span class="line">    	<span class="comment">//1.创建一个集合添加所有的大写和小写字母</span></span><br><span class="line">    	ArrayList&lt;Character&gt; list=<span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br><span class="line">    	<span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span> ; i&lt;<span class="number">26</span> ; i++)&#123;</span><br><span class="line">            list.add((<span class="type">char</span>)(<span class="string">&#x27;a&#x27;</span>+i));</span><br><span class="line">            list.add((<span class="type">char</span>)(<span class="string">&#x27;A&#x27;</span>+i));</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">StringBuffer</span> <span class="variable">sb</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">StringBuffer</span>();</span><br><span class="line">        <span class="type">Random</span> <span class="variable">rd</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Random</span>();</span><br><span class="line">        <span class="comment">//2.要随机抽取4个字符</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; <span class="number">4</span>; i++) &#123;</span><br><span class="line">            <span class="comment">//获取随机索引</span></span><br><span class="line">            <span class="type">int</span> index=rd.nextInt(list.size());</span><br><span class="line">            <span class="comment">//利用索引获取字符</span></span><br><span class="line">            <span class="type">char</span> c=list.get(index);</span><br><span class="line">            sb.append(c);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//3.生成1位随机数字</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">number</span> <span class="operator">=</span> rd.nextInt(<span class="number">10</span>); <span class="comment">// 生成0到9之间的随机数字</span></span><br><span class="line">    	sb.append(number);</span><br><span class="line">    	<span class="comment">//4.将字符串变成字符数组，然后再新建一个新的字符串</span></span><br><span class="line">    	<span class="type">char</span>[] arr=sb.toString().toCharArray();</span><br><span class="line">    	<span class="comment">//拿着最后一个索引，跟随机索引进行交换</span></span><br><span class="line">    	<span class="type">int</span> randomIndex=rd.nextInt(arr.length);</span><br><span class="line">        <span class="comment">//最大索引指向的元素，跟随机索引指向的元素交换</span></span><br><span class="line">    	<span class="type">char</span> temp=arr[randomIndex];</span><br><span class="line">        arr[randomIndex]=arr[arr.length-<span class="number">1</span>];</span><br><span class="line">    	arr[arr.length-<span class="number">1</span>]=temp;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">String</span>(arr);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-]]></content>
       <categories>
         <category>经典算法思想</category>
       </categories>
