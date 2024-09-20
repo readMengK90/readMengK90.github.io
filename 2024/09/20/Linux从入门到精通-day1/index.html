@@ -28,8 +28,19 @@
 <meta property="og:description" content="Linux">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://readmengk90.github.io/images/Linux%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A-day1/Linux%E7%A8%8B%E5%BA%8F%E8%BF%90%E8%A1%8C%E6%96%B9%E5%BC%8F.png">
+<meta property="og:image" content="https://readmengk90.github.io/images/Linux%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A-day1/cpp-1.png">
+<meta property="og:image" content="https://readmengk90.github.io/images/Linux%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A-day1/cpp-2.png">
+<meta property="og:image" content="https://readmengk90.github.io/images/Linux%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A-day1/cpp-3.png">
+<meta property="og:image" content="https://readmengk90.github.io/images/Linux%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A-day1/cpp-4.png">
+<meta property="og:image" content="https://readmengk90.github.io/images/Linux%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A-day1/cpp-5.png">
+<meta property="og:image" content="https://readmengk90.github.io/images/Linux%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A-day1/mv-001.png">
+<meta property="og:image" content="https://readmengk90.github.io/images/Linux%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A-day1/mv-002.png">
+<meta property="og:image" content="https://readmengk90.github.io/images/Linux%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A-day1/mv-003.png">
+<meta property="og:image" content="https://readmengk90.github.io/images/Linux%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A-day1/mv-004.png">
+<meta property="og:image" content="https://readmengk90.github.io/images/Linux%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A-day1/gerp001.png">
+<meta property="og:image" content="https://readmengk90.github.io/images/Linux%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A-day1/vi%E7%BC%96%E8%BE%91.png">
 <meta property="article:published_time" content="2024-09-20T00:11:45.071Z">
-<meta property="article:modified_time" content="2024-09-20T02:28:05.020Z">
+<meta property="article:modified_time" content="2024-09-20T09:26:31.730Z">
 <meta property="article:author" content="Amber">
 <meta property="article:tag" content="Linux">
 <meta name="twitter:card" content="summary">
@@ -230,7 +241,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2024-09-20 08:11:45 / 修改时间：10:28:05" itemprop="dateCreated datePublished" datetime="2024-09-20T08:11:45+08:00">2024-09-20</time>
+              <time title="创建时间：2024-09-20 08:11:45 / 修改时间：17:26:31" itemprop="dateCreated datePublished" datetime="2024-09-20T08:11:45+08:00">2024-09-20</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -255,14 +266,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.3k</span>
+              <span>4.5k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 分钟</span>
+              <span>8 分钟</span>
             </span>
             <div class="post-description"><center>Linux</center></div>
 
@@ -300,11 +311,134 @@
 <p>​		使用第三方软件(finalShell)操作Linux的必要性：在VM中操作Linux命令行不太方便，内容的复制粘贴，文件的上传下载跨越VM都不太方便</p>
 <figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://dl.hostbuf.com/finalshell3/finalshell_windows_x64.exe</span><br></pre></td></tr></table></figure>
 
+<p>​		Linux桌面进入命令行：桌面右键点击：open in terminal</p>
 <p>​		查询Linux系统的IP地址：当前登陆用户~下输入ifconfig,ens3里的inet就是IP地址</p>
 <p>​		打开FinalShell–左上角文件夹–白色+号–ssh连接(Linux)–主机：linux的IP地址–双击连接管理器的链接–接受并保存–连接成功。</p>
 <p>​		<strong>注意</strong>：Linux虚拟机如果重启，有可能IP地址发生改变，如果改变需要在FinalShell中修该连接的地址。</p>
 <p>​		固定IP地址的方法：</p>
-<h3 id="2-Linux基础命令"><a href="#2-Linux基础命令" class="headerlink" title="2.Linux基础命令"></a>2.Linux基础命令</h3><h3 id="3-Linux权限管控"><a href="#3-Linux权限管控" class="headerlink" title="3.Linux权限管控"></a>3.Linux权限管控</h3><h3 id="4-Linux实用操作"><a href="#4-Linux实用操作" class="headerlink" title="4.Linux实用操作"></a>4.Linux实用操作</h3><h3 id="5-实战软件部署"><a href="#5-实战软件部署" class="headerlink" title="5.实战软件部署"></a>5.实战软件部署</h3><h3 id="6-脚本＆自动化"><a href="#6-脚本＆自动化" class="headerlink" title="6.脚本＆自动化"></a>6.脚本＆自动化</h3><h3 id="7-项目实战"><a href="#7-项目实战" class="headerlink" title="7.项目实战"></a>7.项目实战</h3><h3 id="8-云平台技术"><a href="#8-云平台技术" class="headerlink" title="8.云平台技术"></a>8.云平台技术</h3>
+<h4 id="1-7-使用WSL获得Ubuntu系统环境-拓展"><a href="#1-7-使用WSL获得Ubuntu系统环境-拓展" class="headerlink" title="1.7 使用WSL获得Ubuntu系统环境(拓展)"></a>1.7 使用WSL获得Ubuntu系统环境(拓展)</h4><p>​		WSL是Window10系统的新特性，可以以非常轻量化的方式，得到Linux系统环境，这种环境是完全直连我们计算机硬件的，并不需要通过虚拟机去虚拟硬件，不会影响Window系统本身的运行。</p>
+<p>​		WSL的部署：win键-右键-应用和功能-程序和功能-启用或关闭Windows功能-勾选适用于Linux的Windows子系统-立即重启自动。	</p>
+<p>​		安装WSL的操作系统：搜索Miscrosoft Store-搜索ubuntu–下载第一个-获取安装-打开-设置用户名和密码。</p>
+<p>​		安装Windows Terminal软件：Ubuntu自带的终端窗口不太好用，可以直接在应用商店下载Terminal，</p>
+<h4 id="1-8-虚拟机快照的制作和还原-Windows"><a href="#1-8-虚拟机快照的制作和还原-Windows" class="headerlink" title="1.8 虚拟机快照的制作和还原(Windows)"></a>1.8 虚拟机快照的制作和还原(Windows)</h4><p>​		功能：为了避免由于系统损坏重装Linux操作系统的麻烦，可以通过快照功能将当前虚拟机的状态保存下来，在以后可以通过快照恢复虚拟机到保存的状态。</p>
+<p>​		制作：(确保虚拟机关机)右键虚拟机-快照-快照管理器-拍摄快照</p>
+<p>​		还原：测试快照-转到-是</p>
+<h3 id="2-Linux基础命令"><a href="#2-Linux基础命令" class="headerlink" title="2.Linux基础命令"></a>2.Linux基础命令</h3><h4 id="2-1-Linux的目录结构"><a href="#2-1-Linux的目录结构" class="headerlink" title="2.1 Linux的目录结构"></a>2.1 Linux的目录结构</h4><p>​		Linux没有盘符这个概念，只有一个根目录**&#x2F;<strong>，所以文件都在它下面，在Linux系统中，路径直接的层级关系用 &#x2F; 表示(</strong>&#x2F;**usr&#x2F;local&#x2F;hello.txt)。</p>
+<h4 id="2-2-Linux的命令"><a href="#2-2-Linux的命令" class="headerlink" title="2.2 Linux的命令"></a>2.2 Linux的命令</h4><p>​			命令的通用格式： command [options] [parameter]	</p>
+<h5 id="2-2-1-ls-列出内容"><a href="#2-2-1-ls-列出内容" class="headerlink" title="2.2.1 ls 列出内容"></a>2.2.1 ls 列出内容</h5><p>​			<strong>ls : list简写，列出当前工作目录下&#x2F;home的内容(文件+文件夹)。</strong></p>
+<pre><code>         ls /root:查看指定目录/root里面的内容。
+</code></pre>
+<p>​			 <strong>-options:</strong></p>
+<pre><code>         ls -a :查看(.)隐藏和非隐藏的文件(白色)和文件夹(蓝色),all
+</code></pre>
+<p>​                         ls -l :list简写，列表显示，以列表形势显示指定目录下的文件和文件夹(<strong>简写ll</strong>)。</p>
+<p>​                         ls -h :显示大小，带单位(必须与-l结合使用 ls -l -h)</p>
+<h5 id="2-22-cd-切换目录"><a href="#2-22-cd-切换目录" class="headerlink" title="2.22 cd 切换目录"></a>2.22 cd 切换目录</h5><p>​		 	cd : change directory,切换目录**</p>
+<pre><code>         cd .. ：返回上一级目录
+
+         cd - :在临近的2个目录间切换
+
+         cd . : 返回登陆者的当前目录
+
+         cd / :切换到根目录
+</code></pre>
+<p>​			 cd或cd ~: 到达家目录</p>
+<pre><code>         cd:切换到当前登陆用户的家目录，如果是itcast用户登陆的，就回到/home/itcast,如果 是root用户登陆的就回到/root
+</code></pre>
+<h5 id="2-23-pwd"><a href="#2-23-pwd" class="headerlink" title="2.23  pwd"></a>2.23  pwd</h5><p>​			pwd(print work directory)显示当前所在的工作目录的<strong>绝对路径</strong>。</p>
+<h5 id="2-24-相对-绝对路径"><a href="#2-24-相对-绝对路径" class="headerlink" title="2.24 相对&#x2F;绝对路径"></a>2.24 相对&#x2F;绝对路径</h5><p>​			 绝对路径：从根目录&#x2F;开始。</p>
+<pre><code>         相对路径：从当前目录开始，不需要以/开头。
+</code></pre>
+<h5 id="2-25-mkdir"><a href="#2-25-mkdir" class="headerlink" title="2.25 mkdir"></a>2.25 mkdir</h5><p>​			<strong>mkdir: make directory,创建文件夹</strong></p>
+<pre><code>            mkdir test1:没有层级的创建文件夹test1,当前目录下创建。
+</code></pre>
+<p>​                        mkdir [<strong>-p</strong> ]  aaa&#x2F;bbb&#x2F;ccc&#x2F;ddd:有层级的创建文件夹，绝对路径创建(-p先检查后创建文件夹)。</p>
+<h5 id="2-26-touch"><a href="#2-26-touch" class="headerlink" title="2.26 touch"></a>2.26 touch</h5><p>​			<strong>touch: 创建空文件</strong></p>
+<pre><code>         touch a.txt #在当前目录创建a.txt文件
+
+         touch /root/a.txt #在/root目录创建a.txt文件
+</code></pre>
+<h5 id="2-27-cat"><a href="#2-27-cat" class="headerlink" title="2.27 cat"></a>2.27 cat</h5><p>​			cat Linux路径</p>
+<p>​			<strong>cat : 查看 整个文件内容</strong></p>
+<p>​			cat a.txt :查看文件全部内容</p>
+<h5 id="2-28-more"><a href="#2-28-more" class="headerlink" title="2.28 more"></a>2.28 more</h5><p>​			more Linux路径</p>
+<p>​			<strong>more :查看文件部分内容</strong></p>
+<pre><code>         enter：多查一行数据
+
+         空 格 ： 查看新的一屏幕数据，翻页
+</code></pre>
+<p>​			 q：退出查看 </p>
+<h5 id="2-29-cp-copy-复制粘贴"><a href="#2-29-cp-copy-复制粘贴" class="headerlink" title="2.29 cp  copy , 复制粘贴"></a>2.29 cp  <strong>copy , 复制粘贴</strong></h5><p>​			语法：cp [-r]  参数1 参数2</p>
+<p>​			<strong>针对文件</strong></p>
+<p>​			cp a.txt b.txt</p>
+<pre><code>            a.txt 内容存在 b.txt 文件存在内容不存在—复制a内容到b里。
+</code></pre>
+<p>​			<img src="/../images/Linux%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A-day1/cpp-1.png"></p>
+<p>​			a.txt 内容存在 b.txt 文件存在内容不存在—复制a内容到b里。</p>
+<p>​			<img src="/../images/Linux%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A-day1/cpp-2.png"></p>
+<p>​			【无论有没有创建后一个空文件，都会把前一个文件的内容复制过去】</p>
+<p>​			a.txt 内容存在 b.txt<strong>内容存在</strong>———将a的内容覆盖到b里。</p>
+<p>​			(覆盖：把b杯子先清空，然后把a被子里的水倒入b中，不同于追加)。</p>
+<p>​			<strong>针对文件夹</strong></p>
+<p>​			【 当test2文件夹存在：将test1整个复制一份到test2目录中】</p>
+<p>​			 cp test1 test2 -r</p>
+<p>​			当test2文件夹和内容不存在：将test1下面的内容复制一份，写到test2目录下。			<img src="/../images/Linux%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A-day1/cpp-3.png"></p>
+<p>​			test1内容存在 test2内容存在. —-将test1目录整体复制到test2目录中		<img src="/../images/Linux%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A-day1/cpp-4.png"></p>
+<p>​			<strong>针对文件文件夹</strong></p>
+<p>​			cp a.txt test2 :复制a.txt并写入到 test2 目录中	<img src="/../images/Linux%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A-day1/cpp-5.png"></p>
+<h5 id="2-30-mv移动文件或者文件夹"><a href="#2-30-mv移动文件或者文件夹" class="headerlink" title="2.30 mv移动文件或者文件夹"></a>2.30 mv移动文件或者文件夹</h5><p>​			mv:文件,目录的移动和重命名</p>
+<p>​			<strong>mv:  move用于文件，目录的移动和重命名(剪切粘贴，重命名和移动功能)</strong></p>
+<p>​		 	mv  a.txt  b.txt :    当b.txt存在和不存在都是重命名，a的内容<strong>覆盖</strong>b的内容(a的名字变成b的名字)，即b变成了a的内容(覆			盖：把b杯子先清空，然后把a被子里的水倒入b中，不同于追加)。</p>
+<p>​			<img src="/../images/Linux%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A-day1/mv-001.png"></p>
+<p>​		 	mv test1 test2 : 当test2存在：将test1整个文件夹<strong>移动到</strong>test2目录下</p>
+<p>​			<img src="/../images/Linux%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A-day1/mv-002.png"></p>
+<p>​			                     	当test2不存在：重命名</p>
+<p>​			<img src="/../images/Linux%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A-day1/mv-003.png"></p>
+<p>​		 	mv a.txt  test1 :移动文件到指定目录test1下面</p>
+<p>​			<img src="/../images/Linux%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A-day1/mv-004.png"></p>
+<h5 id="2-31-rm-用于文件和文件夹的删除"><a href="#2-31-rm-用于文件和文件夹的删除" class="headerlink" title="2.31 rm 用于文件和文件夹的删除"></a>2.31 rm 用于文件和文件夹的删除</h5><p>​			<strong>rm:   remove的缩写，默认删除文件(-)，可以删除文件夹(d)</strong></p>
+<p>​		  rm a.txt : 删除文件会提示，输入以y开头都会被删除，其他都不会被删除。</p>
+<p>​		 -r: 递归,先进入最里的一层，然后从里向外删除</p>
+<p>​			rm -r test1：删除<em><strong>文件夹</strong></em> test1,但是会提示。</p>
+<p>​	         -f: force,强制</p>
+<p>​			rm a.txt -f  :    强制删除**文件 **a.txt, 并且不提示。</p>
+<p>​			rm -rf test1 :   强制删除<em><strong>文件夹</strong></em> test1不提示</p>
+<h5 id="2-32-which和find查找命令"><a href="#2-32-which和find查找命令" class="headerlink" title="2.32  which和find查找命令"></a>2.32  which和find查找命令</h5><p>​			which：通过which命令，查看所使用的一系列命令的程序文件放在那里(which  cd)。</p>
+<p>​			find: </p>
+<p>​			【按文件名查找文件语法】:<strong>find 起始路径  -name  “被查找文件名”</strong></p>
+<p>​			可以搭配通配符*进行模糊搜索</p>
+<p>​			【按文件大小查找文件语法】:<strong>find 起始路径 -size | -n[KMG]</strong></p>
+<p>​			示例：查找小于10KB的文件：find &#x2F; -size -10k</p>
+<p>​				   查找大于100MB的文件：find &#x2F; -size +100M</p>
+<h5 id="2-33-grep-wc和管道"><a href="#2-33-grep-wc和管道" class="headerlink" title="2.33 grep ,wc和管道|"></a>2.33 grep ,wc和管道|</h5><p>​			grep关键字过滤:通过grep命令，从文件中<strong>通过关键字过滤文件行</strong>。</p>
+<p>​			语法：grep [-n] 关键字 关键路径</p>
+<p>​				-n,可选项，表示在结果中显示匹配的行的行号</p>
+<p>​			 grep -ir hadoop &#x2F;root:不区分大小写。</p>
+<p>​			<img src="/../images/Linux%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A-day1/gerp001.png"></p>
+<p>​			wc:通过wc命令统计文件的行数，单词数量等</p>
+<p>​			语法：wc [-c -m -l -w ]  <strong>文件路径</strong>(输入)</p>
+<p>​			-c:统计bytes数量</p>
+<p>​			-m:统计字符数量</p>
+<p>​			-l:统计行数</p>
+<p>​			-w:统计单词数量</p>
+<p>​			管道符|：将管道符左边命令的结果，作为右边命令的输入</p>
+<p>​				管道符可以嵌套。</p>
+<h5 id="2-34-echo-tail和重定向符"><a href="#2-34-echo-tail和重定向符" class="headerlink" title="2.34 echo,tail和重定向符"></a>2.34 echo,tail和重定向符</h5><p>​			echo:在命令行输出指定内容，类似编程语言的print</p>
+<p>​				语法：echo  “输出的内容”&#x2F;输出的内容</p>
+<p>​				反引号’ ‘:被它包围的内容会被作为命令去执行而不是普通字符。</p>
+<p>​			重定向符：</p>
+<p>​				&gt;:将左侧命令的结果，<strong>覆盖</strong>写入到符号右侧指定的文件中</p>
+<p>​				&gt;&gt;:将左侧命令的结果，<strong>追加</strong>写入符号右侧指定的文件中</p>
+<p>​			tail:可以查看文件尾部内容，跟踪文件的最新更改**(从后向前看)**</p>
+<p>​				语法：tail [-f -num] Linux路径</p>
+<p>​				Linux路径，表示被跟踪的文件路径</p>
+<p>​				-f:表示持续跟踪，程序一直运行(ctrl+c终止运行)</p>
+<p>​				-num:表示，查看尾部多少行，不填写默认10行(-5)</p>
+<h5 id="2-35-vi编辑器"><a href="#2-35-vi编辑器" class="headerlink" title="2.35 vi编辑器"></a>2.35 vi编辑器</h5><p>​			命令模式：vi  a.txt回车进入命令模式。</p>
+<p>​			编辑模式： 输入i,o,O,a,s都可以从命令模式进入编辑模式，输入esc进入命令模式。</p>
+<p>​			保持退出： 输入：进入末行模式，再输入wq保存退出。</p>
+<p>​			<img src="/../images/Linux%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A-day1/vi%E7%BC%96%E8%BE%91.png"></p>
+<h3 id="3-Linux权限管控"><a href="#3-Linux权限管控" class="headerlink" title="3.Linux权限管控"></a>3.Linux权限管控</h3><h3 id="4-Linux实用操作"><a href="#4-Linux实用操作" class="headerlink" title="4.Linux实用操作"></a>4.Linux实用操作</h3><h3 id="5-实战软件部署"><a href="#5-实战软件部署" class="headerlink" title="5.实战软件部署"></a>5.实战软件部署</h3><h3 id="6-脚本＆自动化"><a href="#6-脚本＆自动化" class="headerlink" title="6.脚本＆自动化"></a>6.脚本＆自动化</h3><h3 id="7-项目实战"><a href="#7-项目实战" class="headerlink" title="7.项目实战"></a>7.项目实战</h3><h3 id="8-云平台技术"><a href="#8-云平台技术" class="headerlink" title="8.云平台技术"></a>8.云平台技术</h3>
     </div>
 
     
@@ -421,7 +555,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%88%9D%E8%AF%86Linux"><span class="nav-number">1.</span> <span class="nav-text">1.初识Linux</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 操作系统概述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-Linux%E5%86%85%E6%A0%B8"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 Linux内核</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-3-%E4%BA%86%E8%A7%A3%E8%99%9A%E6%8B%9F%E6%9C%BA"><span class="nav-number">1.3.</span> <span class="nav-text">1.3 了解虚拟机</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-4-%E5%A6%82%E4%BD%95%E6%9E%84%E5%BB%BA%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%8E%AF%E5%A2%83"><span class="nav-number">1.4.</span> <span class="nav-text">1.4 如何构建虚拟机环境</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-5-%E5%9C%A8VMware%E4%B8%8A%E5%AE%89%E8%A3%85Linux%E8%99%9A%E6%8B%9F%E6%9C%BA-Windows-%E5%9B%BE%E5%BD%A2%E5%8C%96"><span class="nav-number">1.5.</span> <span class="nav-text">1.5 在VMware上安装Linux虚拟机(Windows)-图形化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-6-%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5Linux%E7%B3%BB%E7%BB%9F"><span class="nav-number">1.6.</span> <span class="nav-text">1.6 远程连接Linux系统</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4"><span class="nav-number">2.</span> <span class="nav-text">2.Linux基础命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Linux%E6%9D%83%E9%99%90%E7%AE%A1%E6%8E%A7"><span class="nav-number">3.</span> <span class="nav-text">3.Linux权限管控</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Linux%E5%AE%9E%E7%94%A8%E6%93%8D%E4%BD%9C"><span class="nav-number">4.</span> <span class="nav-text">4.Linux实用操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E5%AE%9E%E6%88%98%E8%BD%AF%E4%BB%B6%E9%83%A8%E7%BD%B2"><span class="nav-number">5.</span> <span class="nav-text">5.实战软件部署</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-%E8%84%9A%E6%9C%AC%EF%BC%86%E8%87%AA%E5%8A%A8%E5%8C%96"><span class="nav-number">6.</span> <span class="nav-text">6.脚本＆自动化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98"><span class="nav-number">7.</span> <span class="nav-text">7.项目实战</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-%E4%BA%91%E5%B9%B3%E5%8F%B0%E6%8A%80%E6%9C%AF"><span class="nav-number">8.</span> <span class="nav-text">8.云平台技术</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%88%9D%E8%AF%86Linux"><span class="nav-number">1.</span> <span class="nav-text">1.初识Linux</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 操作系统概述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-Linux%E5%86%85%E6%A0%B8"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 Linux内核</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-3-%E4%BA%86%E8%A7%A3%E8%99%9A%E6%8B%9F%E6%9C%BA"><span class="nav-number">1.3.</span> <span class="nav-text">1.3 了解虚拟机</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-4-%E5%A6%82%E4%BD%95%E6%9E%84%E5%BB%BA%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%8E%AF%E5%A2%83"><span class="nav-number">1.4.</span> <span class="nav-text">1.4 如何构建虚拟机环境</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-5-%E5%9C%A8VMware%E4%B8%8A%E5%AE%89%E8%A3%85Linux%E8%99%9A%E6%8B%9F%E6%9C%BA-Windows-%E5%9B%BE%E5%BD%A2%E5%8C%96"><span class="nav-number">1.5.</span> <span class="nav-text">1.5 在VMware上安装Linux虚拟机(Windows)-图形化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-6-%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5Linux%E7%B3%BB%E7%BB%9F"><span class="nav-number">1.6.</span> <span class="nav-text">1.6 远程连接Linux系统</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-7-%E4%BD%BF%E7%94%A8WSL%E8%8E%B7%E5%BE%97Ubuntu%E7%B3%BB%E7%BB%9F%E7%8E%AF%E5%A2%83-%E6%8B%93%E5%B1%95"><span class="nav-number">1.7.</span> <span class="nav-text">1.7 使用WSL获得Ubuntu系统环境(拓展)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-8-%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%BF%AB%E7%85%A7%E7%9A%84%E5%88%B6%E4%BD%9C%E5%92%8C%E8%BF%98%E5%8E%9F-Windows"><span class="nav-number">1.8.</span> <span class="nav-text">1.8 虚拟机快照的制作和还原(Windows)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4"><span class="nav-number">2.</span> <span class="nav-text">2.Linux基础命令</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-Linux%E7%9A%84%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 Linux的目录结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-Linux%E7%9A%84%E5%91%BD%E4%BB%A4"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 Linux的命令</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#2-2-1-ls-%E5%88%97%E5%87%BA%E5%86%85%E5%AE%B9"><span class="nav-number">2.2.1.</span> <span class="nav-text">2.2.1 ls 列出内容</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-22-cd-%E5%88%87%E6%8D%A2%E7%9B%AE%E5%BD%95"><span class="nav-number">2.2.2.</span> <span class="nav-text">2.22 cd 切换目录</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-23-pwd"><span class="nav-number">2.2.3.</span> <span class="nav-text">2.23  pwd</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-24-%E7%9B%B8%E5%AF%B9-%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84"><span class="nav-number">2.2.4.</span> <span class="nav-text">2.24 相对&#x2F;绝对路径</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-25-mkdir"><span class="nav-number">2.2.5.</span> <span class="nav-text">2.25 mkdir</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-26-touch"><span class="nav-number">2.2.6.</span> <span class="nav-text">2.26 touch</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-27-cat"><span class="nav-number">2.2.7.</span> <span class="nav-text">2.27 cat</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-28-more"><span class="nav-number">2.2.8.</span> <span class="nav-text">2.28 more</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-29-cp-copy-%E5%A4%8D%E5%88%B6%E7%B2%98%E8%B4%B4"><span class="nav-number">2.2.9.</span> <span class="nav-text">2.29 cp  copy , 复制粘贴</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-30-mv%E7%A7%BB%E5%8A%A8%E6%96%87%E4%BB%B6%E6%88%96%E8%80%85%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="nav-number">2.2.10.</span> <span class="nav-text">2.30 mv移动文件或者文件夹</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-31-rm-%E7%94%A8%E4%BA%8E%E6%96%87%E4%BB%B6%E5%92%8C%E6%96%87%E4%BB%B6%E5%A4%B9%E7%9A%84%E5%88%A0%E9%99%A4"><span class="nav-number">2.2.11.</span> <span class="nav-text">2.31 rm 用于文件和文件夹的删除</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-32-which%E5%92%8Cfind%E6%9F%A5%E6%89%BE%E5%91%BD%E4%BB%A4"><span class="nav-number">2.2.12.</span> <span class="nav-text">2.32  which和find查找命令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-33-grep-wc%E5%92%8C%E7%AE%A1%E9%81%93"><span class="nav-number">2.2.13.</span> <span class="nav-text">2.33 grep ,wc和管道|</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-34-echo-tail%E5%92%8C%E9%87%8D%E5%AE%9A%E5%90%91%E7%AC%A6"><span class="nav-number">2.2.14.</span> <span class="nav-text">2.34 echo,tail和重定向符</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-35-vi%E7%BC%96%E8%BE%91%E5%99%A8"><span class="nav-number">2.2.15.</span> <span class="nav-text">2.35 vi编辑器</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Linux%E6%9D%83%E9%99%90%E7%AE%A1%E6%8E%A7"><span class="nav-number">3.</span> <span class="nav-text">3.Linux权限管控</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Linux%E5%AE%9E%E7%94%A8%E6%93%8D%E4%BD%9C"><span class="nav-number">4.</span> <span class="nav-text">4.Linux实用操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E5%AE%9E%E6%88%98%E8%BD%AF%E4%BB%B6%E9%83%A8%E7%BD%B2"><span class="nav-number">5.</span> <span class="nav-text">5.实战软件部署</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-%E8%84%9A%E6%9C%AC%EF%BC%86%E8%87%AA%E5%8A%A8%E5%8C%96"><span class="nav-number">6.</span> <span class="nav-text">6.脚本＆自动化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98"><span class="nav-number">7.</span> <span class="nav-text">7.项目实战</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-%E4%BA%91%E5%B9%B3%E5%8F%B0%E6%8A%80%E6%9C%AF"><span class="nav-number">8.</span> <span class="nav-text">8.云平台技术</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -501,13 +635,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">44k</span>
+    <span title="站点总字数">47k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">1:19</span>
+    <span title="站点阅读时长">1:25</span>
 </div>
   <div class="powered-by">
     
