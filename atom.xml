@@ -6,7 +6,7 @@
   <link href="https://readmengk90.github.io/atom.xml" rel="self"/>
   
   <link href="https://readmengk90.github.io/"/>
-  <updated>2024-09-18T02:36:46.631Z</updated>
+  <updated>2024-09-20T00:23:35.280Z</updated>
   <id>https://readmengk90.github.io/</id>
   
   <author>
@@ -18,11 +18,38 @@
   
   <entry>
     <title></title>
+    <link href="https://readmengk90.github.io/2024/09/20/Linux%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A-day1/"/>
+    <id>https://readmengk90.github.io/2024/09/20/Linux%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A-day1/</id>
+    <published>2024-09-20T00:11:45.071Z</published>
+    <updated>2024-09-20T00:23:35.280Z</updated>
+    
+    <content type="html"><![CDATA[<p>课程设计：</p><h3 id="1-初识Linux"><a href="#1-初识Linux" class="headerlink" title="1.初识Linux"></a>1.初识Linux</h3><p>​</p><h3 id="2-Linux基础命令"><a href="#2-Linux基础命令" class="headerlink" title="2.Linux基础命令"></a>2.Linux基础命令</h3><h3 id="3-Linux权限管控"><a href="#3-Linux权限管控" class="headerlink" title="3.Linux权限管控"></a>3.Linux权限管控</h3><h3 id="4-Linux实用操作"><a href="#4-Linux实用操作" class="headerlink" title="4.Linux实用操作"></a>4.Linux实用操作</h3><h3 id="5-实战软件部署"><a href="#5-实战软件部署" class="headerlink" title="5.实战软件部署"></a>5.实战软件部署</h3><h3 id="6-脚本＆自动化"><a href="#6-脚本＆自动化" class="headerlink" title="6.脚本＆自动化"></a>6.脚本＆自动化</h3><h3 id="7-项目实战"><a href="#7-项目实战" class="headerlink" title="7.项目实战"></a>7.项目实战</h3><h3 id="8-云平台技术"><a href="#8-云平台技术" class="headerlink" title="8.云平台技术"></a>8.云平台技术</h3>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;课程设计：&lt;/p&gt;
+&lt;h3 id=&quot;1-初识Linux&quot;&gt;&lt;a href=&quot;#1-初识Linux&quot; class=&quot;headerlink&quot; title=&quot;1.初识Linux&quot;&gt;&lt;/a&gt;1.初识Linux&lt;/h3&gt;&lt;p&gt;​			&lt;/p&gt;
+&lt;h3 id=&quot;2-Linux基础命令&quot;&gt;&lt;a href=&quot;#2-Linux基础命令&quot; class=&quot;headerlink&quot; title=&quot;2.Linux基础命令&quot;&gt;&lt;/a&gt;2.Linux基础命令&lt;/h3&gt;&lt;h3 id=&quot;3-Linux权限管控&quot;&gt;&lt;a href=&quot;#3-Linux权限管控&quot; class=&quot;headerlink&quot; title=&quot;3.Linux权限管控&quot;&gt;&lt;/a&gt;3.Linux权限管控&lt;/h3&gt;&lt;h3 id=&quot;4-Linux实用操作&quot;&gt;&lt;a href=&quot;#4-Linux实用操作&quot; class=&quot;headerlink&quot; title=&quot;4.Linux实用操作&quot;&gt;&lt;/a&gt;4.Linux实用操作&lt;/h3&gt;&lt;h3 id=&quot;5-实战软件部署&quot;&gt;&lt;a href=&quot;#5-实战软件部署&quot; class=&quot;headerlink&quot; title=&quot;5.实战软件部署&quot;&gt;&lt;/a&gt;5.实战软件部署&lt;/h3&gt;&lt;h3 id=&quot;6-脚本＆自动化&quot;&gt;&lt;a href=&quot;#6-脚本＆自动化&quot; class=&quot;headerlink&quot; title=&quot;6.脚本＆自动化&quot;&gt;&lt;/a&gt;6.脚本＆自动化&lt;/h3&gt;&lt;h3 id=&quot;7-项目实战&quot;&gt;&lt;a href=&quot;#7-项目实战&quot; class=&quot;headerlink&quot; title=&quot;7.项目实战&quot;&gt;&lt;/a&gt;7.项目实战&lt;/h3&gt;&lt;h3 id=&quot;8-云平台技术&quot;&gt;&lt;a href=&quot;#8-云平台技术&quot; class=&quot;headerlink&quot; title=&quot;8.云平台技术&quot;&gt;&lt;/a&gt;8.云平台技术&lt;/h3&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
     <link href="https://readmengk90.github.io/2024/09/18/%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%9F%BA%E7%A1%80-MySQL%E5%9F%BA%E7%A1%80/"/>
     <id>https://readmengk90.github.io/2024/09/18/%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%9F%BA%E7%A1%80-MySQL%E5%9F%BA%E7%A1%80/</id>
     <published>2024-09-18T02:35:26.908Z</published>
-    <updated>2024-09-18T02:36:46.631Z</updated>
+    <updated>2024-09-19T06:57:01.450Z</updated>
     
+    <content type="html"><![CDATA[<h3 id="数据定义语言-DDL-："><a href="#数据定义语言-DDL-：" class="headerlink" title="数据定义语言(DDL)："></a>数据定义语言(DDL)：</h3><ul><li>DDL 之数据库定义</li></ul><p>​</p>]]></content>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;数据定义语言-DDL-：&quot;&gt;&lt;a href=&quot;#数据定义语言-DDL-：&quot; class=&quot;headerlink&quot; title=&quot;数据定义语言(DDL)：&quot;&gt;&lt;/a&gt;数据定义语言(DDL)：&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;DDL 之数据库定义&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;​	&lt;/p&gt;
+</summary>
     
     
     
@@ -397,27 +424,6 @@
     
     
     <summary type="html">&lt;center&gt;字符串相关类的底层原理&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="Java基础" scheme="https://readmengk90.github.io/categories/Java%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="java" scheme="https://readmengk90.github.io/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>StringJoiner</title>
-    <link href="https://readmengk90.github.io/2024/02/06/java%E5%9F%BA%E7%A1%80-StringJoiner/"/>
-    <id>https://readmengk90.github.io/2024/02/06/java%E5%9F%BA%E7%A1%80-StringJoiner/</id>
-    <published>2024-02-06T13:18:34.058Z</published>
-    <updated>2024-02-06T14:41:24.136Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="StringJoiner"><a href="#StringJoiner" class="headerlink" title="StringJoiner"></a>StringJoiner</h1><p>拼接速度快，代码又简单的方式</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">    <span class="type">int</span>[] arr=&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line">    StringJoiner sj=<span class="keyword">new</span> <span class="title class_">StringJoiner</span>(<span class="string">&quot;,&quot;</span>,<span class="string">&quot;[&quot;</span>,<span class="string">&quot;]&quot;</span>);</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">        sj.add(arr[i]+<span class="string">&quot;&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println(sj);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><strong>构造方法：</strong></p><table><thead><tr><th align="center">方法名</th><th align="center">说明</th></tr></thead><tbody><tr><td align="center">public StringJoiner(间隔符)</td><td align="center">创建一个StringJoiner对象，指定拼接时的间隔符号。</td></tr><tr><td align="center">public StringJoiner(间隔符合，开始符号，结束符号)</td><td align="center">创建一个StringJoiner对象，指定拼接时的间隔符号，开始符号，结束符号。</td></tr></tbody></table><p><strong>成员方法：</strong></p><table><thead><tr><th>方法名</th><th>说明</th></tr></thead><tbody><tr><td>public StringJoiner <strong>add(添加的内容)</strong></td><td>添加数据，并返回对象本身</td></tr><tr><td>public int <strong>length()</strong></td><td>返回长度(字符出现的个数)</td></tr><tr><td>public String <strong>toString()</strong></td><td>返回一个字符串(该字符串就是拼接之后的结果)</td></tr></tbody></table>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;StringBuilder的升级StringJoiner&lt;/center&gt;</summary>
     
     
     
