@@ -324,7 +324,20 @@
 <p>​			1.软件安装：无脑下一步</p>
 <p>​			2.检测网络适配器</p>
 <p>​			通用的更改适配器打开方式: win+R输入ncpa.cpl，查看VM1和VM8是否存在，如果不存在建议删除VM,重启后重新安装。			</p>
-<h4 id="1-5-在VMware上安装Linux虚拟机"><a href="#1-5-在VMware上安装Linux虚拟机" class="headerlink" title="1.5 在VMware上安装Linux虚拟机"></a>1.5 在VMware上安装Linux虚拟机</h4><p>​		</p>
+<h4 id="1-5-在VMware上安装Linux虚拟机-Windows-图形化"><a href="#1-5-在VMware上安装Linux虚拟机-Windows-图形化" class="headerlink" title="1.5 在VMware上安装Linux虚拟机(Windows)-图形化"></a>1.5 在VMware上安装Linux虚拟机(Windows)-图形化</h4><p>​		下载DVD-1810.iso</p>
+<figure class="highlight http"><table><tr><td class="code"><pre><span class="line">https://vault.centos.org/7.6.1810/isos/x86_64/</span><br></pre></td></tr></table></figure>
+
+<p>​		打开VM,点击创建新的虚拟机-打开向导-典型-安装程序光盘映像文件浏览选择刚下载好的文件-配置账户名,用户名,密码-更改虚拟 		机的名称和位置(可选)-40GB-自定义硬件(可选)-<strong>勾选</strong>后点击完成。</p>
+<p>​		漫长的等待………………………</p>
+<p>​		输入用户名和密码，就可以体验Linux系统了</p>
+<h4 id="1-6-远程连接Linux系统"><a href="#1-6-远程连接Linux系统" class="headerlink" title="1.6 远程连接Linux系统"></a>1.6 远程连接Linux系统</h4><p>​		Linux系统中多数情况下使用的命令行，因为Linux系统图形化界面不好用，不稳定。</p>
+<p>​		使用第三方软件(finalShell)操作Linux的必要性：在VM中操作Linux命令行不太方便，内容的复制粘贴，文件的上传下载跨越VM都不太方便</p>
+<figure class="highlight http"><table><tr><td class="code"><pre><span class="line">https://dl.hostbuf.com/finalshell3/finalshell_windows_x64.exe</span><br></pre></td></tr></table></figure>
+
+<p>​		查询Linux系统的IP地址：当前登陆用户~下输入ifconfig,ens3里的inet就是IP地址</p>
+<p>​		打开FinalShell–左上角文件夹–白色+号–ssh连接(Linux)–主机：linux的IP地址–双击连接管理器的链接–接受并保存–连接成功。</p>
+<p>​		<strong>注意</strong>：Linux虚拟机如果重启，有可能IP地址发生改变，如果改变需要在FinalShell中修该连接的地址。</p>
+<p>​		固定IP地址的方法：</p>
 <h3 id="2-Linux基础命令"><a href="#2-Linux基础命令" class="headerlink" title="2.Linux基础命令"></a>2.Linux基础命令</h3><h3 id="3-Linux权限管控"><a href="#3-Linux权限管控" class="headerlink" title="3.Linux权限管控"></a>3.Linux权限管控</h3><h3 id="4-Linux实用操作"><a href="#4-Linux实用操作" class="headerlink" title="4.Linux实用操作"></a>4.Linux实用操作</h3><h3 id="5-实战软件部署"><a href="#5-实战软件部署" class="headerlink" title="5.实战软件部署"></a>5.实战软件部署</h3><h3 id="6-脚本＆自动化"><a href="#6-脚本＆自动化" class="headerlink" title="6.脚本＆自动化"></a>6.脚本＆自动化</h3><h3 id="7-项目实战"><a href="#7-项目实战" class="headerlink" title="7.项目实战"></a>7.项目实战</h3><h3 id="8-云平台技术"><a href="#8-云平台技术" class="headerlink" title="8.云平台技术"></a>8.云平台技术</h3>]]></content>
       <categories>
         <category>Linux</category>
@@ -656,34 +669,6 @@
       </tags>
   </entry>
   <entry>
-    <title>JDK的安装与下载</title>
-    <url>/2024/01/11/java%E5%9F%BA%E7%A1%80-JDK%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%B8%8B%E8%BD%BD/</url>
-    <content><![CDATA[<h1 id="JDK的安装与下载"><a href="#JDK的安装与下载" class="headerlink" title="JDK的安装与下载"></a>JDK的安装与下载</h1><h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><ol>
-<li>网址 <a href="http://www.oracle.com/">www.oracle.com</a>  ,找到Products -&gt; Hardware and Software -&gt; Java-&gt;Download Java -&gt;Java archive（历史版本）&#x2F; Java Downloads(最新版本)-&gt;Windows系统下的 x64 Installer-&gt;点击下载</li>
-</ol>
-<h4 id="安装："><a href="#安装：" class="headerlink" title="安装："></a>安装：</h4><ol>
-<li><p>双击打开 点击下一步</p>
-<p><img src="/../images/%E5%AE%89%E8%A3%85001.png"></p>
-</li>
-<li><p>选择更改安装路径(安装路径不要有中文，空格，和特殊符号)</p>
-<p><img src="/../images/%E5%AE%89%E8%A3%85002.png"></p>
-</li>
-<li><p>安装成功,点击关闭</p>
-<p><img src="/../images/%E5%AE%89%E8%A3%85003.png"></p>
-</li>
-<li><p>JDK的安装目录及解释</p>
-<p><img src="/../images/%E5%AE%89%E8%A3%85004.png"></p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>JDK&amp;JRE&amp;JVM</title>
     <url>/2024/01/12/java%E5%9F%BA%E7%A1%80-JAVA%E8%AF%AD%E8%A8%80%E7%9A%84%E7%89%B9%E7%82%B9/</url>
     <content><![CDATA[<h1 id="JAVA语言的特点"><a href="#JAVA语言的特点" class="headerlink" title="JAVA语言的特点"></a>JAVA语言的特点</h1><ol>
@@ -762,6 +747,34 @@
 <p>使用StringBuilder的场景：</p>
 <p>​	1.字符串的拼接</p>
 <p>​	2.字符串的反转</p>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JDK的安装与下载</title>
+    <url>/2024/01/11/java%E5%9F%BA%E7%A1%80-JDK%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%B8%8B%E8%BD%BD/</url>
+    <content><![CDATA[<h1 id="JDK的安装与下载"><a href="#JDK的安装与下载" class="headerlink" title="JDK的安装与下载"></a>JDK的安装与下载</h1><h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><ol>
+<li>网址 <a href="http://www.oracle.com/">www.oracle.com</a>  ,找到Products -&gt; Hardware and Software -&gt; Java-&gt;Download Java -&gt;Java archive（历史版本）&#x2F; Java Downloads(最新版本)-&gt;Windows系统下的 x64 Installer-&gt;点击下载</li>
+</ol>
+<h4 id="安装："><a href="#安装：" class="headerlink" title="安装："></a>安装：</h4><ol>
+<li><p>双击打开 点击下一步</p>
+<p><img src="/../images/%E5%AE%89%E8%A3%85001.png"></p>
+</li>
+<li><p>选择更改安装路径(安装路径不要有中文，空格，和特殊符号)</p>
+<p><img src="/../images/%E5%AE%89%E8%A3%85002.png"></p>
+</li>
+<li><p>安装成功,点击关闭</p>
+<p><img src="/../images/%E5%AE%89%E8%A3%85003.png"></p>
+</li>
+<li><p>JDK的安装目录及解释</p>
+<p><img src="/../images/%E5%AE%89%E8%A3%85004.png"></p>
+</li>
+</ol>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -1155,48 +1168,6 @@
       </tags>
   </entry>
   <entry>
-    <title>方法的相关介绍</title>
-    <url>/2024/01/21/java%E5%9F%BA%E7%A1%80-%E6%96%B9%E6%B3%95%E7%9A%84%E7%9B%B8%E5%85%B3%E4%BB%8B%E7%BB%8D/</url>
-    <content><![CDATA[<h1 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h1><ol>
-<li><p>什么是方法</p>
-<p>方法：程序中最小的执行单元。</p>
-<p>场景：重复的代码，具有 独立功能的代码可以抽取到方法中。</p>
-<p>作用：提高代码的复用性&amp;提高代码的可维护性。</p>
-</li>
-<li><p>方法的格式</p>
-<p>方法不调用就执行；</p>
-<p>方法间是平级关系，不能互相嵌套定义；</p>
-<p>方法的编写顺序和执行顺序无关(与调用顺序有关)；</p>
-<p>方法的返回值类型是void，表示该方法没有返回值，如果要编写return，后面不能跟具体的数据。</p>
-<p>return语句的下面，不能编写代码，因为永远执行不到，属于无效代码。</p>
-<p>​	方法没有返回值：可以省略不写，如果书写，表示结束方法。</p>
-<p>​	方法有返回值：必须要写，表示结束方法<strong>和</strong>返回结果。</p>
-<p>方法的定义：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//1.最简单的方法定义和调用格式</span></span><br><span class="line"><span class="comment">//定义</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> 方法名()&#123;</span><br><span class="line">    方法体(就是打包起来的代码)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//掉头</span></span><br><span class="line">方法名();</span><br><span class="line"><span class="comment">//2带参的方法定义和调用格式</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> 方法名(参数<span class="number">1</span>,参数<span class="number">2</span>,.....)&#123;</span><br><span class="line">    方法体</span><br><span class="line">&#125;</span><br><span class="line">方法名(实参)</span><br><span class="line"><span class="comment">//方法调用时，参数的数量与类型必须与方法定义中小括号里面的变量一一对应，否则程序会报错</span></span><br><span class="line"><span class="comment">//3.带返回值方法的定义和调用</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> 返回值类型 方法名(参数)&#123;</span><br><span class="line">    方法体;</span><br><span class="line">    <span class="keyword">return</span> 返回值;</span><br><span class="line">&#125;</span><br><span class="line">调用：</span><br><span class="line">    直接调用：方法名(实参);</span><br><span class="line">    赋值调用：整数类型 变量名 = 方法名(实参);</span><br><span class="line">    输出调用：System.out.println(方法名(实参));</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>方法的重载</p>
-<p>概念：在<strong>同一个类</strong>中，定义了多个<strong>同名的方法</strong>，这些同名的方法具有<strong>同种的功能</strong>，每一个方法具有<strong>不同的参数类型</strong>或<strong>参数个数</strong>(个数，类型，顺序)，这些同名的方法，就构成了重载关系，与返回值无关。</p>
-</li>
-<li><p>方法的内存</p>
-<p>方法被调用之后就会进栈执行</p>
-<p><strong>基本数据类型&amp;引用数据类型</strong>：</p>
-<p>​	基本数据类型变量中存储的是真实的数据。（数据值是存储在自己的空间中）</p>
-<p>​	只要是new出来的都是引用数据类型(数组)  （数据值存储在其他空间，自己空间存储的是地址值）</p>
-<p><img src="/../images/Screenshot_20240122_195710.jpg"></p>
-</li>
-</ol>
-<p>​	<strong>方法传递基本数据类型的内存原理</strong></p>
-<p>​	传递基本数据类型(4类8种)时，传递的是真实的数据，形参的改变，不影响实际参数的值。</p>
-<p>​	传递引用数据类型(int[] arr)时，传递的是地址值，形参的改变 ，影响的是地址的值。</p>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>数组相关介绍</title>
     <url>/2024/01/20/java%E5%9F%BA%E7%A1%80-%E6%95%B0%E7%BB%84%E7%9A%84%E6%A6%82%E8%BF%B0&amp;%E9%9D%99%E6%80%81%E5%88%9D%E5%A7%8B%E5%8C%96/</url>
     <content><![CDATA[<h1 id="1-数组的概述"><a href="#1-数组的概述" class="headerlink" title="1. 数组的概述"></a>1. 数组的概述</h1><p>数组是指一种容器，可以用来存储<strong>同种类型</strong>的多个值，数组容器再存储数据的时候，需要结合隐式转换考虑。</p>
@@ -1273,6 +1244,48 @@
 <td align="left">寄存器：给CPU使用，和开发无关</td>
 </tr>
 </tbody></table>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>方法的相关介绍</title>
+    <url>/2024/01/21/java%E5%9F%BA%E7%A1%80-%E6%96%B9%E6%B3%95%E7%9A%84%E7%9B%B8%E5%85%B3%E4%BB%8B%E7%BB%8D/</url>
+    <content><![CDATA[<h1 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h1><ol>
+<li><p>什么是方法</p>
+<p>方法：程序中最小的执行单元。</p>
+<p>场景：重复的代码，具有 独立功能的代码可以抽取到方法中。</p>
+<p>作用：提高代码的复用性&amp;提高代码的可维护性。</p>
+</li>
+<li><p>方法的格式</p>
+<p>方法不调用就执行；</p>
+<p>方法间是平级关系，不能互相嵌套定义；</p>
+<p>方法的编写顺序和执行顺序无关(与调用顺序有关)；</p>
+<p>方法的返回值类型是void，表示该方法没有返回值，如果要编写return，后面不能跟具体的数据。</p>
+<p>return语句的下面，不能编写代码，因为永远执行不到，属于无效代码。</p>
+<p>​	方法没有返回值：可以省略不写，如果书写，表示结束方法。</p>
+<p>​	方法有返回值：必须要写，表示结束方法<strong>和</strong>返回结果。</p>
+<p>方法的定义：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//1.最简单的方法定义和调用格式</span></span><br><span class="line"><span class="comment">//定义</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> 方法名()&#123;</span><br><span class="line">    方法体(就是打包起来的代码)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//掉头</span></span><br><span class="line">方法名();</span><br><span class="line"><span class="comment">//2带参的方法定义和调用格式</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> 方法名(参数<span class="number">1</span>,参数<span class="number">2</span>,.....)&#123;</span><br><span class="line">    方法体</span><br><span class="line">&#125;</span><br><span class="line">方法名(实参)</span><br><span class="line"><span class="comment">//方法调用时，参数的数量与类型必须与方法定义中小括号里面的变量一一对应，否则程序会报错</span></span><br><span class="line"><span class="comment">//3.带返回值方法的定义和调用</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> 返回值类型 方法名(参数)&#123;</span><br><span class="line">    方法体;</span><br><span class="line">    <span class="keyword">return</span> 返回值;</span><br><span class="line">&#125;</span><br><span class="line">调用：</span><br><span class="line">    直接调用：方法名(实参);</span><br><span class="line">    赋值调用：整数类型 变量名 = 方法名(实参);</span><br><span class="line">    输出调用：System.out.println(方法名(实参));</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>方法的重载</p>
+<p>概念：在<strong>同一个类</strong>中，定义了多个<strong>同名的方法</strong>，这些同名的方法具有<strong>同种的功能</strong>，每一个方法具有<strong>不同的参数类型</strong>或<strong>参数个数</strong>(个数，类型，顺序)，这些同名的方法，就构成了重载关系，与返回值无关。</p>
+</li>
+<li><p>方法的内存</p>
+<p>方法被调用之后就会进栈执行</p>
+<p><strong>基本数据类型&amp;引用数据类型</strong>：</p>
+<p>​	基本数据类型变量中存储的是真实的数据。（数据值是存储在自己的空间中）</p>
+<p>​	只要是new出来的都是引用数据类型(数组)  （数据值存储在其他空间，自己空间存储的是地址值）</p>
+<p><img src="/../images/Screenshot_20240122_195710.jpg"></p>
+</li>
+</ol>
+<p>​	<strong>方法传递基本数据类型的内存原理</strong></p>
+<p>​	传递基本数据类型(4类8种)时，传递的是真实的数据，形参的改变，不影响实际参数的值。</p>
+<p>​	传递引用数据类型(int[] arr)时，传递的是地址值，形参的改变 ，影响的是地址的值。</p>
 ]]></content>
       <categories>
         <category>Java基础</category>
