@@ -43,7 +43,7 @@
 <meta property="og:image" content="https://readmengk90.github.io/images/Linux%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A-day1/problem1.png">
 <meta property="og:image" content="https://readmengk90.github.io/images/Linux%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A-day1/yum%E6%97%B6%E7%9A%84%E5%91%BD%E4%BB%A4.png">
 <meta property="article:published_time" content="2024-09-20T00:11:45.071Z">
-<meta property="article:modified_time" content="2024-09-22T05:26:17.655Z">
+<meta property="article:modified_time" content="2024-09-22T09:25:48.621Z">
 <meta property="article:author" content="Amber">
 <meta property="article:tag" content="Linux">
 <meta name="twitter:card" content="summary">
@@ -250,7 +250,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2024-09-22 13:26:17" itemprop="dateModified" datetime="2024-09-22T13:26:17+08:00">2024-09-22</time>
+                <time title="修改时间：2024-09-22 17:25:48" itemprop="dateModified" datetime="2024-09-22T17:25:48+08:00">2024-09-22</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -275,14 +275,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>8.9k</span>
+              <span>9.1k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>16 分钟</span>
+              <span>17 分钟</span>
             </span>
             <div class="post-description"><center>Linux</center></div>
 
@@ -593,6 +593,8 @@
 <p>​		<strong>解决方案</strong>：使用root用户登录，再home目录中创建用户对应的文件夹，mkdir &#x2F;home&#x2F;user，这里的user是用户的名字，然后执行如下两个命令：		<img src="/../images/Linux%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A-day1/problem1.png"></p>
 <p>​		执行成功后，再次使用su命令切换用户，发现一切正常。</p>
 <h4 id="9-2-使用yum命令时的问题-Cannot-find-a-valid-baseurl-for-repo-base-7-x86-64"><a href="#9-2-使用yum命令时的问题-Cannot-find-a-valid-baseurl-for-repo-base-7-x86-64" class="headerlink" title="9.2 使用yum命令时的问题(Cannot find a valid baseurl for repo: base&#x2F;7&#x2F;x86_64)"></a>9.2 使用yum命令时的问题(Cannot find a valid baseurl for repo: base&#x2F;7&#x2F;x86_64)</h4><p><img src="/../images/Linux%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A-day1/yum%E6%97%B6%E7%9A%84%E5%91%BD%E4%BB%A4.png"></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">第一步</span></span><br><span class="line">sudo sed -i &#x27;s/mirrorlist/#mirrorlist/g&#x27; /etc/yum.repos.d/CentOS-*</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">第二步</span></span><br><span class="line">sudo sed -i &#x27;s|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g&#x27; /etc/yum.repos.d/CentOS-*</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">鸣谢：https://blog.csdn.net/kitesxian/article/details/142356833</span></span><br></pre></td></tr></table></figure>
+
 
     </div>
 
@@ -790,13 +792,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">51k</span>
+    <span title="站点总字数">52k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">1:33</span>
+    <span title="站点阅读时长">1:34</span>
 </div>
   <div class="powered-by">
     
