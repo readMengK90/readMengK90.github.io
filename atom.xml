@@ -6,7 +6,7 @@
   <link href="https://readmengk90.github.io/atom.xml" rel="self"/>
   
   <link href="https://readmengk90.github.io/"/>
-  <updated>2024-09-27T07:17:09.402Z</updated>
+  <updated>2024-09-27T08:28:09.824Z</updated>
   <id>https://readmengk90.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://readmengk90.github.io/2024/09/27/Python%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/"/>
     <id>https://readmengk90.github.io/2024/09/27/Python%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/</id>
     <published>2024-09-27T06:44:45.830Z</published>
-    <updated>2024-09-27T07:17:09.402Z</updated>
+    <updated>2024-09-27T08:28:09.824Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>有退路就是胜利之路</strong></p><h3 id="1-Python语言基础入门"><a href="#1-Python语言基础入门" class="headerlink" title="1.Python语言基础入门"></a>1.Python语言基础入门</h3><p>day01-</p><p>下载安装：<a href="http://www.python.org/downloads">www.python.org/downloads</a></p><h3 id="2-Python语言高阶加强"><a href="#2-Python语言高阶加强" class="headerlink" title="2.Python语言高阶加强"></a>2.Python语言高阶加强</h3><h3 id="3-大数据分析PySpark"><a href="#3-大数据分析PySpark" class="headerlink" title="3.大数据分析PySpark"></a>3.大数据分析PySpark</h3>]]></content>
+    <content type="html"><![CDATA[<p><strong>有退路就是胜利之路</strong></p><h3 id="1-Python语言基础入门"><a href="#1-Python语言基础入门" class="headerlink" title="1.Python语言基础入门"></a>1.Python语言基础入门</h3><h4 id="下载安装Python解释器"><a href="#下载安装Python解释器" class="headerlink" title="下载安装Python解释器"></a>下载安装Python解释器</h4><p>下载安装：<a href="http://www.python.org/downloads">www.python.org/downloads</a></p><h4 id="安装和配置PyCharm软件"><a href="#安装和配置PyCharm软件" class="headerlink" title="安装和配置PyCharm软件"></a>安装和配置PyCharm软件</h4><p>修改软件颜色背景：File-Settings-Appearence&amp;behavior-appearence-theme(Intellig Light)</p><p>修改默认字体大小:File-Settings-Editor-font-选择字体和默认大小的设置。</p><p>通过设置快捷键设置字体大小：File-Settings-Keymap-Editor Actions-Increase Font Size(右键)&#x2F;decrease Font Size-Add Mouse Shortcut,按住ctrl+鼠标滚轮向上&#x2F;向下。</p><h4 id="字面量"><a href="#字面量" class="headerlink" title="字面量"></a>字面量</h4><p>​定义: 代码中被写下来的固定的值，称为字面量。</p><h4 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h4><h4 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h4><h4 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h4><h4 id="数据类型变换"><a href="#数据类型变换" class="headerlink" title="数据类型变换"></a>数据类型变换</h4><h4 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h4><h4 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h4><h4 id="字符串拓展"><a href="#字符串拓展" class="headerlink" title="字符串拓展"></a>字符串拓展</h4><h4 id="数据输入"><a href="#数据输入" class="headerlink" title="数据输入"></a>数据输入</h4><h3 id="2-Python语言高阶加强"><a href="#2-Python语言高阶加强" class="headerlink" title="2.Python语言高阶加强"></a>2.Python语言高阶加强</h3><h3 id="3-大数据分析PySpark"><a href="#3-大数据分析PySpark" class="headerlink" title="3.大数据分析PySpark"></a>3.大数据分析PySpark</h3>]]></content>
     
     
     <summary type="html">&lt;center&gt;基础入门&lt;/center&gt;</summary>
