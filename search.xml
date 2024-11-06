@@ -110,48 +110,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo+Next主题下的阅读全文设置</title>
-    <url>/2024/01/10/Hexo-%E6%98%BE%E7%A4%BA%E5%85%A8%E6%96%87%E7%9A%84%E8%AE%BE%E7%BD%AE/</url>
-    <content><![CDATA[<h1 id="Hexo-显示全文的设置"><a href="#Hexo-显示全文的设置" class="headerlink" title="Hexo-显示全文的设置"></a>Hexo-显示全文的设置</h1><h5 id="1-在文章中使用-more-手动进行截断"><a href="#1-在文章中使用-more-手动进行截断" class="headerlink" title="1.在文章中使用&lt; !--more--&gt; 手动进行截断"></a>1.在文章中使用<code>&lt; !--more--&gt;</code> 手动进行截断</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-01.png?raw=true" alt="image-20240110132555493"></p>
-<h5 id="2-添加描述信息的内容，会成为一种相关内容的提示信息"><a href="#2-添加描述信息的内容，会成为一种相关内容的提示信息" class="headerlink" title="2.添加描述信息的内容，会成为一种相关内容的提示信息"></a>2.添加描述信息的内容，会成为一种相关内容的提示信息</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-02.png?raw=true" alt="image-20240110132853566"></p>
-<h5 id="3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部"><a href="#3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部" class="headerlink" title="3.在主题配置文件中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部"></a>3.在<strong>主题配置文件</strong>中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部</h5><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">auto_excerpt:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">length:</span> <span class="number">150</span></span><br></pre></td></tr></table></figure>
-
-<h5 id="4-效果-展示"><a href="#4-效果-展示" class="headerlink" title="4.效果 展示"></a>4.效果 展示</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-03.png?raw=true" alt="image-20240110133302658"></p>
-]]></content>
-      <categories>
-        <category>Next主题配置</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo+Mext设置主页文章添加边框阴影效果</title>
-    <url>/2024/01/10/Hexo+Next%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%BB%E9%A1%B5%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E8%BE%B9%E6%A1%86%E9%98%B4%E5%BD%B1%E6%95%88%E6%9E%9C/</url>
-    <content><![CDATA[<h1 id="设置主页文章添加边框阴影效果"><a href="#设置主页文章添加边框阴影效果" class="headerlink" title="设置主页文章添加边框阴影效果"></a>设置主页文章添加边框阴影效果</h1><ol>
-<li><p>打开主题文件夹下的post：</p>
-<p>MyBlog\themes\next\source\css\ _common\components\post\post.styl文件</p>
-</li>
-<li><p>ctrl+F查找.use-motion{},修改后的内容如下方所示</p>
-</li>
-</ol>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.use-motion</span> &#123;</span><br><span class="line"> if (hexo-config(&#x27;motion<span class="selector-class">.transition</span><span class="selector-class">.post_block</span>&#x27;)) &#123;</span><br><span class="line">    <span class="selector-class">.post-block</span>, <span class="selector-class">.pagination</span>, <span class="selector-class">.comments</span> &#123;</span><br><span class="line">      <span class="attribute">opacity</span>: <span class="number">0</span>;</span><br><span class="line">      <span class="attribute">margin-top</span>: <span class="number">3px</span>;</span><br><span class="line">      <span class="attribute">margin-bottom</span>: <span class="number">30px</span>;</span><br><span class="line">      <span class="attribute">padding</span>: <span class="number">25px</span>;</span><br><span class="line">      -webkit-<span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">5px</span> <span class="built_in">rgba</span>(<span class="number">202</span>, <span class="number">203</span>, <span class="number">203</span>, .<span class="number">5</span>);</span><br><span class="line">      -moz-<span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">5px</span> <span class="built_in">rgba</span>(<span class="number">202</span>, <span class="number">203</span>, <span class="number">204</span>, .<span class="number">5</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<ol>
-<li><p>重启</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo+clean</span><br><span class="line"></span><br><span class="line">hexo+g</span><br><span class="line"></span><br><span class="line">hexo+d</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Next主题配置</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>可行性研究</title>
     <url>/2024/03/02/02%E5%8F%AF%E8%A1%8C%E6%80%A7%E7%A0%94%E7%A9%B6/</url>
     <content><![CDATA[<table>
@@ -188,6 +146,48 @@
       </categories>
       <tags>
         <tag>考研复试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo+Mext设置主页文章添加边框阴影效果</title>
+    <url>/2024/01/10/Hexo+Next%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%BB%E9%A1%B5%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E8%BE%B9%E6%A1%86%E9%98%B4%E5%BD%B1%E6%95%88%E6%9E%9C/</url>
+    <content><![CDATA[<h1 id="设置主页文章添加边框阴影效果"><a href="#设置主页文章添加边框阴影效果" class="headerlink" title="设置主页文章添加边框阴影效果"></a>设置主页文章添加边框阴影效果</h1><ol>
+<li><p>打开主题文件夹下的post：</p>
+<p>MyBlog\themes\next\source\css\ _common\components\post\post.styl文件</p>
+</li>
+<li><p>ctrl+F查找.use-motion{},修改后的内容如下方所示</p>
+</li>
+</ol>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.use-motion</span> &#123;</span><br><span class="line"> if (hexo-config(&#x27;motion<span class="selector-class">.transition</span><span class="selector-class">.post_block</span>&#x27;)) &#123;</span><br><span class="line">    <span class="selector-class">.post-block</span>, <span class="selector-class">.pagination</span>, <span class="selector-class">.comments</span> &#123;</span><br><span class="line">      <span class="attribute">opacity</span>: <span class="number">0</span>;</span><br><span class="line">      <span class="attribute">margin-top</span>: <span class="number">3px</span>;</span><br><span class="line">      <span class="attribute">margin-bottom</span>: <span class="number">30px</span>;</span><br><span class="line">      <span class="attribute">padding</span>: <span class="number">25px</span>;</span><br><span class="line">      -webkit-<span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">5px</span> <span class="built_in">rgba</span>(<span class="number">202</span>, <span class="number">203</span>, <span class="number">203</span>, .<span class="number">5</span>);</span><br><span class="line">      -moz-<span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">5px</span> <span class="built_in">rgba</span>(<span class="number">202</span>, <span class="number">203</span>, <span class="number">204</span>, .<span class="number">5</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<ol>
+<li><p>重启</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo+clean</span><br><span class="line"></span><br><span class="line">hexo+g</span><br><span class="line"></span><br><span class="line">hexo+d</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Next主题配置</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo+Next主题下的阅读全文设置</title>
+    <url>/2024/01/10/Hexo-%E6%98%BE%E7%A4%BA%E5%85%A8%E6%96%87%E7%9A%84%E8%AE%BE%E7%BD%AE/</url>
+    <content><![CDATA[<h1 id="Hexo-显示全文的设置"><a href="#Hexo-显示全文的设置" class="headerlink" title="Hexo-显示全文的设置"></a>Hexo-显示全文的设置</h1><h5 id="1-在文章中使用-more-手动进行截断"><a href="#1-在文章中使用-more-手动进行截断" class="headerlink" title="1.在文章中使用&lt; !--more--&gt; 手动进行截断"></a>1.在文章中使用<code>&lt; !--more--&gt;</code> 手动进行截断</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-01.png?raw=true" alt="image-20240110132555493"></p>
+<h5 id="2-添加描述信息的内容，会成为一种相关内容的提示信息"><a href="#2-添加描述信息的内容，会成为一种相关内容的提示信息" class="headerlink" title="2.添加描述信息的内容，会成为一种相关内容的提示信息"></a>2.添加描述信息的内容，会成为一种相关内容的提示信息</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-02.png?raw=true" alt="image-20240110132853566"></p>
+<h5 id="3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部"><a href="#3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部" class="headerlink" title="3.在主题配置文件中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部"></a>3.在<strong>主题配置文件</strong>中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部</h5><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">auto_excerpt:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">length:</span> <span class="number">150</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="4-效果-展示"><a href="#4-效果-展示" class="headerlink" title="4.效果 展示"></a>4.效果 展示</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-03.png?raw=true" alt="image-20240110133302658"></p>
+]]></content>
+      <categories>
+        <category>Next主题配置</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -763,278 +763,9 @@
       </tags>
   </entry>
   <entry>
-    <title>Python从入门到精通</title>
-    <url>/2024/09/27/Python%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/</url>
-    <content><![CDATA[<p><strong>没有退路就是胜利之路</strong></p>
-<h3 id="1-Python语言基础入门"><a href="#1-Python语言基础入门" class="headerlink" title="1.Python语言基础入门"></a>1.Python语言基础入门</h3><h4 id="下载安装Python解释器"><a href="#下载安装Python解释器" class="headerlink" title="下载安装Python解释器"></a>下载安装Python解释器</h4><p>下载安装：<a href="http://www.python.org/downloads">www.python.org/downloads</a></p>
-<h4 id="安装和配置PyCharm软件"><a href="#安装和配置PyCharm软件" class="headerlink" title="安装和配置PyCharm软件"></a>安装和配置PyCharm软件</h4><p>修改软件颜色背景：File-Settings-Appearence&amp;behavior-appearence-theme(Intellig Light)</p>
-<p>修改默认字体大小:File-Settings-Editor-font-选择字体和默认大小的设置。</p>
-<p>通过设置快捷键设置字体大小：File-Settings-Keymap-Editor Actions-Increase Font Size(右键)&#x2F;decrease Font Size-Add Mouse Shortcut,按住ctrl+鼠标滚轮向上&#x2F;向下。</p>
-<h4 id="字面量"><a href="#字面量" class="headerlink" title="字面量"></a>字面量</h4><p>定义: 代码中被写下来的固定的值，称为字面量。<img src="/../images/Python%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/6%E7%A7%8D%E5%80%BC.png"></p>
-<p>​		字符串：是由任意数量的字符如中文，英文，各类符号，各自等组成。所以叫字符串。</p>
-<p>​				Python种，字符串需要用双引号””包围起来，被引号包围起来的，都是字符串。</p>
-<h4 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h4><p>​	1.注释的作用</p>
-<p>​		注释:是在程序代码种对程序代码进行解释说明的文字.</p>
-<p>​		作用:注释不是程序，不能被执行，只是对程序代码进行解释说明，让别人可以看懂程序代码的作用，能够大大增强程序的可读性。</p>
-<p>​	2.使用单行注释和多行注释</p>
-<p>​		单行注释:以#开头，#右边 的所以文字当作说明，而不是真正执行的程序，起辅助说明作用。注意，#号和注释内容一般建议以一个空格隔开。</p>
-<p>​		多行注释:以一对三个双引号引起来(“””注释内容”””)来解释说明一段代码的作用使用方法。</p>
-<h4 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h4><p>​	1.变量的作用和特征</p>
-<p>​		变量：在程序允许时，能存储计算结果或能表示值的抽象概念，简单的说，变量就是在程序运行时，记录数据用的。</p>
-<p>​	2.变量的定义方式</p>
-<p>​		格式： 变量名词 &#x3D; 变量的值</p>
-<p>​        3.变量的特征</p>
-<p>​		变量的值是可以改变的</p>
-<h4 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h4><p>​	1.掌握使用type()语句查看数据的类a型</p>
-<p>​		在print语句中，直接输出类型信息:print(type(被查看类型的数据))</p>
-<p>​		用变量存储type()的结果</p>
-<p>​		不仅可以使用自变量类型也可以查看变量中存储的数据类型</p>
-<p>​	2.理解变量无类型而数据有类型的概念</p>
-<p>​		在Python中变量是没有类型的，但变量存储的数据是有类型的。只表示变量存储了数据</p>
-<p>​		<img src="/../images/Python%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/%E5%8F%98%E9%87%8F%E5%92%8C%E6%95%B0%E6%8D%AE.png"></p>
-<h4 id="数据类型变换"><a href="#数据类型变换" class="headerlink" title="数据类型变换"></a>数据类型变换</h4><p>​	1.如何在字符串，整数，浮点数之间进行相互转换</p>
-<p>​	<img src="/../images/Python%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2.png"></p>
-<p>​	2.了解转换的注意事项</p>
-<p>​	想要将字符串转换成数字，必须要求字符串内的内容都是数字。</p>
-<p>​	浮点数转整数时可能回丢失精度。</p>
-<h4 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h4><p>​	1.什么是标识符</p>
-<p>​	变量&#x2F;方法&#x2F;类的名字等，拔它统一的称之为标识符，用来做内容的标识。所以，标识符是用户在编程的时候所使用的一系列名字，用于给变量，类，方法等命名。</p>
-<p>​	2.标识符的命名规则</p>
-<p>​	内容限定：命名只允许出现英文，中文，数字，下划线这四类元素，其他任何内容都不被允许</p>
-<p>​			    (不推荐使用中文，不能以数字开头)</p>
-<p>​	大小写敏感：</p>
-<p>​	不可使用关键字：</p>
-<p>​	3.掌握变量的命名规范：见名知意，下划线命名法(间隔)，全部小写。</p>
-<h4 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h4><p>​	1.算术运算符<img src="/../images/Python%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97%E7%AC%A6.png"></p>
-<p>​	2.赋值运算符:&#x3D;,+&#x3D;,-&#x3D;,*&#x3D;,&#x2F;&#x3D;,%&#x3D;,**&#x3D;,&#x2F;&#x2F;&#x3D;</p>
-<h4 id="字符串拓展"><a href="#字符串拓展" class="headerlink" title="字符串拓展"></a>字符串拓展</h4><p>​	字符串的三种定义方式</p>
-<p>​		1.单引号定义法</p>
-<p>​		2.双引号定义法</p>
-<p>​		3.三引号定义法：和多行注释的写法意义，同样支持换行操作。当使用变量接收它，它就算字符串，不使用变量接收它，就可以作为多行注释使用。</p>
-<p>​		引号的嵌套：</p>
-<p>​			1.可以使用: \来进行转义</p>
-<p>​			2.单引号内可以写双引号或双引号内可以写单引号</p>
-<p>​	字符串拼接</p>
-<p>​		1.如何拼接字符串</p>
-<p>​			一般用于字符串字面量和变量或变量和变量之间会使用拼接。+号拼接，而且无法和非字符串类型进行拼接。</p>
-<p>​	字符串格式化1</p>
-<p>​		拼接的缺点：1.变量太多，拼接起来实在是太麻烦了</p>
-<p>​				       2.字符串无法和数字或其他类型完成拼接</p>
-<p>​		格式化：%s，其中%表示我要占位，s表示将变量变成字符串放入占位的地方。</p>
-<p>​				多个变量占位，变量要用括号括起来，并按照占位的顺序填入。	<img src="/../images/Python%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/%E5%8D%A0%E4%BD%8D.png">	<img src="/../images/Python%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/%E4%BB%A3%E7%A0%81%E6%98%BE%E7%A4%BA.png"></p>
-<p>​	格式化的精度控制</p>
-<p>​		1.掌握格式化字符串的过程中做数字的精度控制</p>
-<p>​		  可以使用辅助符号”m.n”来控制数据的宽度和精度</p>
-<p>​			m,控制宽度，要求是数字(很少使用)，设置的宽度小于数字自身，不生效</p>
-<p>​			.n,控制小数点精度，要求是数字，会进行小数的四舍五入</p>
-<p>​			%5d:表示将整数的宽度控制在五位，前面补空格</p>
-<p>​			%5.2f:表示将宽度控制为5，将小数点精度设置为2</p>
-<p>​	字符串格式化方式2</p>
-<p>​		1.快速字符串格式化的方式</p>
-<p>​		语法：f”内容{变量}”的格式来快速格式化</p>
-<p>​		<img src="/../images/Python%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/%E4%BB%A3%E7%A0%81%E6%98%BE%E7%A4%BA2.png">		不理会类型，不做精度控制，适合对精度没有要求的适合快速使用。</p>
-<p>​	对表达式进行格式化</p>
-<p>​		1.什么是表达式：一条具有明确执行结果的代码语句。</p>
-<p>​		2.对表达式进行字符串格式化</p>
-<p>​		  <img src="/../images/Python%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%BB%A3%E7%A0%81.png"></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">name = <span class="string">&quot;传智播客&quot;</span></span><br><span class="line">stock_price = <span class="number">19.99</span></span><br><span class="line">stock_code = 003032</span><br><span class="line">stock_price_daily_growth_factor = <span class="number">1.2</span></span><br><span class="line">growth_day = <span class="number">7</span></span><br><span class="line">printf(<span class="string">&quot;公司%s,股票代码%s,当前股价%.2f&quot;</span> % (name,stock_code,stock_price))</span><br><span class="line">printf(<span class="string">&quot;每日的增长系数是:%.2f,经过%d天的增长后,股价达到了%2f&quot;</span> % (stock_price_daily_growth_factor,growth_day,(<span class="number">19.99</span>*<span class="number">1.2</span>)))</span><br></pre></td></tr></table></figure>
-
-<h4 id="数据输入"><a href="#数据输入" class="headerlink" title="数据输入"></a>数据输入</h4><p>​	使用input()语句可以从键盘获取输入</p>
-<p>​	使用一个变量接收input语句获取的键盘输入数据</p>
-<p>​	要注意，无论键盘输入什么类型的数据，获取到的数据永远都是字符串类型，如需其他类型可以进行数据类型转换。	</p>
-<h3 id="Python判断语句的学习"><a href="#Python判断语句的学习" class="headerlink" title="Python判断语句的学习"></a>Python判断语句的学习</h3><p>​	布尔类型和比较运算符</p>
-<p>​		布尔运算符:</p>
-<p>​		比较运算符：&#x3D;&#x3D;，!&#x3D;,&gt;,&lt;,&gt;&#x3D;,&lt;&#x3D;,通过比较运算得到布尔类型的结果。</p>
-<p>​	if语句的基本格式</p>
-<p>​		if   要判断的条件:</p>
-<p>​			 条件成立时，要做的事</p>
-<p>​		if语句的注意事项:</p>
-<p>​			判断条件的结果一定要是布尔类型</p>
-<p>​			不要忘记判断条件后的: 冒号</p>
-<p>​			归属于if语句的代码块，需在前方填充4个空格缩进</p>
-<p>​	if else 语句</p>
-<p>​		 if   要判断的条件:</p>
-<p>​			 条件成立时，要做的事</p>
-<p>​		else:</p>
-<p>​			不满足条件时要做的事情</p>
-<p>​	if elif else语句</p>
-<p>​		 if   要判断的条件:</p>
-<p>​			 条件成立时，要做的事</p>
-<p>​		 elif  条件2：</p>
-<p>​			  条件成立时，要做的事</p>
-<p>​		 elif  条件2：</p>
-<p>​			  条件成立时，要做的事</p>
-<p>​		   …………..</p>
-<p>​		else:</p>
-<p>​			不满足条件时要做的事情</p>
-<p>​		elif可以写多个。</p>
-<p>​		判断是互斥且有序的，上一个满足后面就不会判断了。</p>
-<p>​		可以在条件判断中，直接写input语句，节省代码量。</p>
-<p>​	判断语句的嵌套</p>
-<p><img src="/../images/Python%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/%E5%B5%8C%E5%A5%97.png"></p>
-<p>​	实战案例</p>
-<h3 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h3><p>​	while循环：</p>
-<p>​		while循环的基础语法：		</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span> 条件:</span><br><span class="line">    条件满足时，做的事情<span class="number">1</span></span><br><span class="line">    条件满足时，做的事情<span class="number">2</span></span><br><span class="line">    条件满足时，做的事情<span class="number">3</span></span><br><span class="line">    ........(省略)....</span><br><span class="line"><span class="comment"># 只要条件满足，会无限循环执行</span></span><br><span class="line"><span class="comment"># 条件需提供布尔类型结果，True继续，False停止</span></span><br><span class="line"><span class="comment"># 空格缩进不能忘</span></span><br><span class="line"><span class="comment"># 请规划好循环终止条件，否则将无限循环</span></span><br></pre></td></tr></table></figure>
-
-<p>​		while循环的嵌套应用</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span> 条件<span class="number">1</span>:</span><br><span class="line">    条件<span class="number">1</span>满足时，做的事情<span class="number">1</span></span><br><span class="line">    条件<span class="number">1</span>满足时，做的事情<span class="number">2</span></span><br><span class="line">    条件<span class="number">1</span>满足时，做的事情<span class="number">3</span></span><br><span class="line">    ........(省略)....</span><br><span class="line">    <span class="keyword">while</span> 条件<span class="number">2</span>:</span><br><span class="line">    条件<span class="number">2</span>满足时，做的事情<span class="number">1</span></span><br><span class="line">    条件<span class="number">2</span>满足时，做的事情<span class="number">2</span></span><br><span class="line">    条件<span class="number">2</span>满足时，做的事情<span class="number">3</span></span><br><span class="line">    ........(省略)....</span><br><span class="line"><span class="comment"># 注意条件控制，避免出现无限循环(除非真的需要无限循环)</span></span><br></pre></td></tr></table></figure>
-
-<p>​		while循环的嵌套案例</p>
-<p>​		print( )输出不换行：print(“不换行”，end&#x3D;’ ‘)</p>
-<p>​		在字符串中，有一个特殊符号\t,效果如同在键盘按下:tab键</p>
-<p>​		打印九九乘法表</p>
-<p>​	for循环:</p>
-<p>​		for循环的基础语法</p>
-<p>​			基础语法： 			</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> 临时变量 <span class="keyword">in</span> 待处理数据集/序列类型:</span><br><span class="line">	循环满足条件时执行的代码</span><br><span class="line">   <span class="comment"># 同while循环不同，for循环是无法定义循环条件的 ，只能从被处理的数据集中，依次取			出内容进行处理。</span></span><br></pre></td></tr></table></figure>
-
-<p>​			range语句</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">语法<span class="number">1</span>：</span><br><span class="line"><span class="built_in">range</span>(num)</span><br><span class="line"><span class="comment"># 获取一个从0开始，到num结束的数字序列(不含num本身)</span></span><br><span class="line">语法<span class="number">2</span>：</span><br><span class="line"><span class="built_in">range</span>(num1,num2)</span><br><span class="line"><span class="comment"># 获得一个从num1开始，到num2结束的数字序列(不含num2本身)</span></span><br><span class="line">语法<span class="number">3</span>：</span><br><span class="line"><span class="built_in">range</span>(num1,num2,step)</span><br><span class="line"><span class="comment"># 获得一个从num1开始，到num2结束的数字序列(不含num2本身)，数字之间的步长，以step为准(step默认为1)</span></span><br></pre></td></tr></table></figure>
-
-<p>​			变量作用域</p>
-<p>​			如果在for循环外部访问临时变量:</p>
-<p>​				实际上是可以访问到的</p>
-<p>​				在编程规范上，是不允许，不建议这么做的(可以预先在循环外定义它)</p>
-<p>​		for循环的嵌套应用</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> 临时变量 <span class="keyword">in</span> 待处理数据集(序列):</span><br><span class="line">    循环满足要做的事情<span class="number">1</span></span><br><span class="line">    循环满足要做的事情<span class="number">2</span></span><br><span class="line">    循环满足要做的事情N</span><br><span class="line">    <span class="keyword">for</span> 临时变量 <span class="keyword">in</span> 待处理数据集(序列):</span><br><span class="line">        循环满足要做的事情<span class="number">1</span></span><br><span class="line">    	循环满足要做的事情<span class="number">2</span></span><br><span class="line">    	循环满足要做的事情N</span><br></pre></td></tr></table></figure>
-
-<p>​	循环控制: break和continue	</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">特殊情况：暂时跳出某次循环，直接进行下一次/提前退出循环，不在继续</span><br><span class="line"></span><br><span class="line">​	continue关键字用于:中断本次循环，直接进入下一次循环//临时中断，作用范围在所在循环无法对上层循环起作用。</span><br><span class="line"></span><br><span class="line">​	continue可以用于：for循环和while循环，效果一致</span><br><span class="line"></span><br><span class="line">​	break关键字用于：直接结束循环//永久中断，作用范围在所在循环，无法对上层起作用</span><br><span class="line"></span><br><span class="line">​	break可以用于：for循环和while循环，效果一致</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="函数："><a href="#函数：" class="headerlink" title="函数："></a>函数：</h3><p>函数介绍</p>
-<p>​	函数：是组织好的，可重复使用的，用来实现特定功能的代码段。</p>
-<p>​	为什么使用函数：为了得到一个针对特定需求，可供重复利用的代码段，以提高程序的复用性，减少重复性代码，提高开发效率。</p>
-<p>函数基础定义语法：		</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">函数名</span>(<span class="params">传入参数</span>)：</span><br><span class="line">	函数体</span><br><span class="line">	<span class="keyword">return</span> 返回值</span><br></pre></td></tr></table></figure>
-
-<p>函数的参数</p>
-<p>​	传入参数的功能是:在函数进行计算的时候，接受外部(调用时)提供的数据。</p>
-<p>函数的返回值</p>
-<p>​	什么是返回值:程序中函数完成事情后，最后给调用者的结果</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">函数名</span>(<span class="params">传入参数</span>)：</span><br><span class="line">	函数体</span><br><span class="line">	<span class="keyword">return</span> 返回值 <span class="comment">#函数体在遇到return后就结束了</span></span><br><span class="line">变量 = 函数(参数)</span><br></pre></td></tr></table></figure>
-
-<p>​         None类型：</p>
-<p>​		如果函数没有使用return语句返回数据，那么函数有返回值吗?  实际上是有的，Python中有一个特殊的字面量:None,其类型是:&lt;class ‘NoneType&gt; 无返回值的函数，实际上就算返回了:None这个字面量。</p>
-<p>​		None表示：空的，无实际意义的意思，函数返回了None，就表示这个函数没有返回什么有意义的内容，也就是返回了空的意思。</p>
-<p>​		None类型的应用场景：</p>
-<p>​			1.用在函数无返回值</p>
-<p>​			2.用在if判断上</p>
-<p>​				在if判断中，None等同于False,一般用于在函数中主动返回None，配合if判断做相关处理。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">check_age</span>(<span class="params">age</span>)</span><br><span class="line">	<span class="keyword">if</span> age&gt;<span class="number">18</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;SUCESS&quot;</span></span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    	<span class="keyword">return</span> <span class="literal">None</span></span><br><span class="line">result = check_age(<span class="number">16</span>)</span><br><span class="line"><span class="keyword">if</span> <span class="keyword">not</span> result:</span><br><span class="line">    <span class="comment">#进入if表示result是None，也就是False</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;未成年，不可进入&quot;</span>)</span><br><span class="line">	</span><br></pre></td></tr></table></figure>
-
-<p>​			3.用在声明无内容的变量上</p>
-<p>​				定义变量，但暂时不需要变量有具体值，可以用None来代替。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">name=<span class="literal">None</span></span><br></pre></td></tr></table></figure>
-
-<p>函数的说明文档</p>
-<p>​	通过注释对函数进行解释说明</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">func</span>(<span class="params">x,y</span>):</span><br><span class="line">	<span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">	函数说明</span></span><br><span class="line"><span class="string">	:param x:形参x的说明</span></span><br><span class="line"><span class="string">	:return 返回值</span></span><br><span class="line"><span class="string">	函数体</span></span><br><span class="line"><span class="string">	return 返回值</span></span><br><span class="line"><span class="string">	&quot;&quot;&quot;</span></span><br><span class="line"><span class="comment"># 调用时悬停可以出现说明文档</span></span><br></pre></td></tr></table></figure>
-
-<p>函数的嵌套调用</p>
-<p>​	所谓函数嵌套调用指的是一个函数里面又调用了另一个函数。</p>
-<p>​	如果函数A中，调用了另一个函数B，那么先把函数B中得任务都执行完毕之后才会回到上次函数A执行的位置。</p>
-<p>变量在函数的作用域</p>
-<p>​	局部变量:定义在函数体内部的变量，即只在函数体内部生效。</p>
-<p>​	全局变量:指的是在函数体内外都能生效的变量</p>
-<p>​	在函数体内改全局变量:</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># global关键字</span></span><br><span class="line">num=<span class="number">200</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">test_a</span>():</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;test_a:<span class="subst">&#123;num&#125;</span>&quot;</span>)</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">test_b</span>():</span><br><span class="line">    num=<span class="number">500</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;test_b:&quot;</span>&#123;num&#125;)</span><br><span class="line">test_a()  <span class="comment">#200</span></span><br><span class="line">test_b()  <span class="comment">#500</span></span><br><span class="line"><span class="built_in">print</span>(num) <span class="comment">#200</span></span><br><span class="line"><span class="comment">#-----------------------------------</span></span><br><span class="line">num=<span class="number">200</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">test_a</span>():</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;test_a:<span class="subst">&#123;num&#125;</span>&quot;</span>)</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">test_b</span>():</span><br><span class="line">    <span class="keyword">global</span> num=<span class="number">500</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;test_b:&quot;</span>&#123;num&#125;)</span><br><span class="line">test_a()  <span class="comment">#200</span></span><br><span class="line">test_b()  <span class="comment">#500</span></span><br><span class="line"><span class="built_in">print</span>(num) <span class="comment">#500</span></span><br></pre></td></tr></table></figure>
-
-<p>综合案例</p>
-<h3 id="数据容器"><a href="#数据容器" class="headerlink" title="数据容器"></a>数据容器</h3><p>​	目的是批量存储或者批量使用多份数据。</p>
-<p>​	数据容器:一种可以容纳多份数据的数据类型，容纳的每一份数据称之为1个元素，每一个元素，可以是任意类型的数据，如字符串，数字，布尔等。</p>
-<p>​	数据容器根据特点的不同，如:</p>
-<p>​	   是否支持重复元素</p>
-<p>​	   是否可以修改</p>
-<p>​	   是否有序，等</p>
-<p>​	   分为5类，分别是:列表(list),元组(tuple),字符串(str),集合(set),字典(dict)</p>
-<h5 id="数据容器-list列表"><a href="#数据容器-list列表" class="headerlink" title="数据容器:list列表"></a>数据容器:list列表</h5><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 1.基本语法</span></span><br><span class="line"><span class="comment">#字面量</span></span><br><span class="line">[元素<span class="number">1</span>，元素<span class="number">2</span>，元素<span class="number">3</span>，元素<span class="number">4</span>，...]</span><br><span class="line"><span class="comment">#定义变量</span></span><br><span class="line">变量名称 = [元素<span class="number">1</span>,元素<span class="number">2</span>，元素<span class="number">3</span>，元素<span class="number">4</span>，....]</span><br><span class="line"><span class="comment">#定义空列表</span></span><br><span class="line">变量名称 = []</span><br><span class="line">变量名称 = <span class="built_in">list</span>()</span><br><span class="line"><span class="comment"># 列表内的每一个数据，称之为元素，以[]作为标识，列表内每一个元素之间用，逗号隔开</span></span><br><span class="line"><span class="comment"># 列表可以一次存储多个数据，且可以为不同的数据类型，支持嵌套[[1,2,3],666,&#x27;itheima&#x27;]。</span></span><br></pre></td></tr></table></figure>
-
-<p>​	2.使用列表的下标索引从列表中取出元素</p>
-<p><img src="/../images/Python%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/list.png"></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 语法: 列表[下标索引]</span></span><br><span class="line">name_list = [<span class="string">&#x27;Tom&#x27;</span>,<span class="string">&#x27;Lily&#x27;</span>,<span class="string">&#x27;Rose&#x27;</span>]</span><br><span class="line"><span class="built_in">print</span>(name_list[<span class="number">0</span>]) <span class="comment">#结果:Tom</span></span><br><span class="line"><span class="built_in">print</span>(name_list[<span class="number">1</span>]) <span class="comment">#结果:Lily</span></span><br><span class="line"><span class="built_in">print</span>(name_list[<span class="number">2</span>]) <span class="comment">#结果:Rose</span></span><br></pre></td></tr></table></figure>
-
-<p>反向索引：</p>
-<p><img src="/../images/Python%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/list02.png"></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">##### 	语法: 列表[下标索引]</span></span><br><span class="line">name_list = [<span class="string">&#x27;Tom&#x27;</span>,<span class="string">&#x27;Lily&#x27;</span>,<span class="string">&#x27;Rose&#x27;</span>]</span><br><span class="line"><span class="built_in">print</span>(name_list[-<span class="number">1</span>]) <span class="comment">#结果:Rose</span></span><br><span class="line"><span class="built_in">print</span>(name_list[-<span class="number">2</span>]) <span class="comment">#结果:Lily</span></span><br><span class="line"><span class="built_in">print</span>(name_list[-<span class="number">3</span>]) <span class="comment">#结果:Tom</span></span><br></pre></td></tr></table></figure>
-
-<p>嵌套索引的下标：</p>
-<p><img src="/../images/Python%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/list03.png"></p>
-<h5 id="要注意下标索引的取值范围，超出范围无法取出元素，并且会报错。"><a href="#要注意下标索引的取值范围，超出范围无法取出元素，并且会报错。" class="headerlink" title="# 要注意下标索引的取值范围，超出范围无法取出元素，并且会报错。"></a># 要注意下标索引的取值范围，超出范围无法取出元素，并且会报错。</h5><p>​	3.列表的常用操作:</p>
-<p>​	在Python中，如果将函数定义为class(类)的成员，那么函数会称之为:方法</p>
-<p>​        # 方法和函数功能一样，有传入参数，有返回值，只是方法的使用格式不同</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#函数的使用</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">add</span>(<span class="params">x,y</span>):</span><br><span class="line">    <span class="keyword">return</span> x+y</span><br><span class="line">num = add(<span class="number">1</span>,<span class="number">2</span>)</span><br><span class="line"><span class="comment">#方法的使用</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Student</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">add</span>(<span class="params">self,x,y</span>):</span><br><span class="line">    <span class="keyword">return</span> x+y</span><br><span class="line">student = Student()</span><br><span class="line">num = student.add(<span class="number">1</span>,<span class="number">2</span>)</span><br></pre></td></tr></table></figure>
-
-<p>​	<strong>3.1 查询某元素下标的功能</strong> : 列表.index(元素)</p>
-<p>​	功能:查找指定元素在列表的下标，如果找不到，报错ValueError</p>
-<p>​	index就是列表对象(变量)内置的方法(函数)</p>
-<p>​	<strong>3.2 修改特定下标的元素值:</strong> 列表[下标]&#x3D;值</p>
-<p>​	可以使用如上语法，直接对指定下标(正向，反向下标均可)的值进行:重新赋值(修改)</p>
-<p>​	<strong>3.3 插入元素</strong>  ：列表.insert(下标，元素)，在指定的下标位置，插入指定的元素。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">my_list = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">my_list.insert(<span class="number">1</span>,<span class="string">&quot;itheima&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(my_list) <span class="comment">#结果: [1,&quot;itheima&quot;,2,3]</span></span><br></pre></td></tr></table></figure>
-
-<p>​	<strong>3.4 追加元素:</strong> 列表.append(),将指定元素，追加到列表的尾部</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 追加单个元素</span></span><br><span class="line">my_list = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line"><span class="built_in">print</span>(my_list) <span class="comment">#结果: [1,2,3]</span></span><br><span class="line">my_list.append(<span class="string">&quot;itheima&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(my_list) <span class="comment">#结果: [1,2,3,&quot;itheima&quot;]</span></span><br><span class="line"><span class="comment"># 追加一批元素 </span></span><br><span class="line">my_list = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">my_list.extend([<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>])</span><br><span class="line"><span class="built_in">print</span>(my_list)  <span class="comment"># 结果：[1,2,3,4,5,6]</span></span><br></pre></td></tr></table></figure>
-
-<p>​	<strong>3.5 删除元素，清空列表</strong>：del 列表[下标] &#x2F; 列表.pop(下标)</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">mylist = [<span class="string">&quot;itcast&quot;</span>,<span class="string">&quot;itheima&quot;</span>,<span class="string">&quot;python&quot;</span>]</span><br><span class="line"><span class="keyword">del</span> mylist[<span class="number">2</span>]</span><br><span class="line"><span class="built_in">print</span>(mylist)<span class="comment"># &#x27;itcast&#x27;,&#x27;itheima&#x27;,</span></span><br><span class="line"><span class="comment"># --------------------------------------------</span></span><br><span class="line">element=mylist.pop[<span class="number">1</span>]</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;<span class="subst">&#123;my_list&#125;</span>,取出的元素是<span class="subst">&#123;element&#125;</span>&quot;</span>) <span class="comment"># &#x27;itcast&#x27;</span></span><br></pre></td></tr></table></figure>
-
-<p>​	<strong>3.6 指定元素内容删除</strong>： 列表.remove(元素)</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">my_list = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">my_list.remove(<span class="number">2</span>) <span class="comment"># 从前到后去搜索这个元素，找到的第一个被删除。</span></span><br><span class="line"><span class="built_in">print</span>(my_list) <span class="comment">#结果[1,3,2,3]</span></span><br></pre></td></tr></table></figure>
-
-<p>​	<strong>3.7 清空列表:</strong> 列表.clear( )</p>
-<p>​	**3.8 统计某元素在列表内的数量: ** 列表.count(元素)</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">my_list = [<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line"><span class="built_in">print</span>(my_list.count(<span class="number">1</span>)) <span class="comment">#结果3</span></span><br></pre></td></tr></table></figure>
-
-<p>​	<strong>3.9 统计类别中全部元素的数量:</strong> len(列表)</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">列表的特点：</span><br><span class="line"></span><br><span class="line">​		可以容纳多个元素</span><br><span class="line"></span><br><span class="line">​		可以容纳不同类型的元素</span><br><span class="line"></span><br><span class="line">​		数据是有序存储的</span><br><span class="line"></span><br><span class="line">​		允许重复数据存在</span><br><span class="line"></span><br><span class="line">​		可以修改</span><br></pre></td></tr></table></figure>
-
-<p><img src="/../images/Python%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/list%E8%A1%A8%E6%A0%BC.png"></p>
-<h5 id="list列表的遍历"><a href="#list列表的遍历" class="headerlink" title="list列表的遍历"></a>list列表的遍历</h5><p>​	掌握while循环遍历列表</p>
-<p>​		while循环可以自定循环条件，并自行控制。</p>
-<p>​		while循环可以通过控制条件控制做到无限循环。</p>
-<p>​		while循环适用于任何想要循环的场景。	</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span> 下标索引变量&lt;列表的元素数量：</span><br><span class="line">		下标索引变量+=<span class="number">1</span></span><br></pre></td></tr></table></figure>
-
-<p>​	掌握for循环遍历列表</p>
-<p>​		for循环不可以自定循环条件，只可以一个个从容器内取出数据。</p>
-<p>​		for循环理论上不可以无限循环，因为被遍历的容器容量不是无限的。</p>
-<p>​		for循环适用于，遍历数据容器的场景或简单的固定次数循环场景。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> 临时变量 <span class="keyword">in</span> 数据容器:</span><br><span class="line">	对临时变量进行处理</span><br></pre></td></tr></table></figure>
-
-<h5 id="数据容器-tuple-元组"><a href="#数据容器-tuple-元组" class="headerlink" title="数据容器:tuple(元组)"></a>数据容器:tuple(元组)</h5><p>​		列表是可以修改的，不适用于不被篡改的信息。</p>
-<p>​		元组同列表一样，都是可以封装多个，不同类型的元素在内</p>
-<p>​		格式:</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 定义元组字面量</span></span><br><span class="line">(元素，元素，元素)</span><br><span class="line"><span class="comment"># 定义元组变量</span></span><br><span class="line">变量名称=(元素，元素，元素)</span><br><span class="line"><span class="comment"># 定义空元组</span></span><br><span class="line">变量名称 = () <span class="comment">#方式1</span></span><br><span class="line">变量名称 = <span class="built_in">tuple</span>() <span class="comment">#方式2</span></span><br><span class="line"><span class="comment"># !!!注意!!!：定义的元组只有一个数据，这个数据后面要添加逗号</span></span><br><span class="line">t1 = (<span class="string">&#x27;Hello&#x27;</span>,)</span><br></pre></td></tr></table></figure>
-
-<p>​		特点:</p>
-<p>​		元组也支持嵌套</p>
-<p>​		操作:</p>
-<p>​		<strong>1.下标索引取出元组内容</strong>		</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">t5=((<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>),(<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>))</span><br><span class="line">t5[<span class="number">1</span>][<span class="number">2</span>] <span class="comment"># 6</span></span><br></pre></td></tr></table></figure>
-
-<p>​		<strong>2.index查找方法：元组.index(元素)</strong></p>
-<p>​		<strong>3.count统计方法:   元组.count(元素)</strong></p>
-<p>​		<strong>4.len函数统计元组元素数量: len(元组)</strong></p>
-<p>​		元组的遍历：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">index=<span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> 下标索引变量index&lt;元组的元素数量：</span><br><span class="line">	元组[index]</span><br><span class="line">	下标索引变量+=<span class="number">1</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> element <span class="keyword">in</span> 元组:</span><br><span class="line">       <span class="built_in">print</span>(element)</span><br></pre></td></tr></table></figure>
-
-<p><em>特列：元组内嵌套的列表是可以修改的。</em></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">info=(<span class="string">&#x27;周杰伦&#x27;</span>,<span class="number">11</span>,[<span class="string">&#x27;football&#x27;</span>,<span class="string">&#x27;music&#x27;</span>])</span><br><span class="line"><span class="comment"># 查询其年龄所在的下标位置</span></span><br><span class="line">index=info.index(<span class="number">11</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;11岁所在的下标位置是:<span class="subst">&#123;index&#125;</span>&quot;</span>)</span><br><span class="line"><span class="comment"># 查询学生的姓名</span></span><br><span class="line">name=info[<span class="number">0</span>]</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;学生的姓名是:<span class="subst">&#123;name&#125;</span>&quot;</span>)</span><br><span class="line"><span class="comment"># 删除学生爱好中的football</span></span><br><span class="line">info[<span class="number">2</span>].pop(<span class="number">0</span>)</span><br><span class="line"><span class="built_in">print</span>(info)</span><br><span class="line"><span class="comment"># 增加爱好：coding到爱好内</span></span><br><span class="line">info[<span class="number">2</span>].append(<span class="string">&#x27;coding&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(info)</span><br></pre></td></tr></table></figure>
-
-<h5 id="数据容器-str-字符串"><a href="#数据容器-str-字符串" class="headerlink" title="数据容器:str(字符串)"></a>数据容器:str(字符串)</h5><h5 id="数据容器的切片"><a href="#数据容器的切片" class="headerlink" title="数据容器的切片"></a>数据容器的切片</h5><h5 id="数据容器-set-集合"><a href="#数据容器-set-集合" class="headerlink" title="数据容器:set(集合)"></a>数据容器:set(集合)</h5><h5 id="数据容器-dict-字典-映射"><a href="#数据容器-dict-字典-映射" class="headerlink" title="数据容器:dict(字典,映射)"></a>数据容器:dict(字典,映射)</h5><h5 id="数据容器的通用操作"><a href="#数据容器的通用操作" class="headerlink" title="数据容器的通用操作"></a>数据容器的通用操作</h5><p>​	</p>
-<p>​	</p>
-<h3 id="3-大数据分析PySpark"><a href="#3-大数据分析PySpark" class="headerlink" title="3.大数据分析PySpark"></a>3.大数据分析PySpark</h3>]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
+    <title>好好学习  天天向上</title>
+    <url>/2024/01/08/first-blog/</url>
+    <content><![CDATA[<h1 id="This-is-my-first-blog-路上只我一个人，背着手踱着。这一片天地好像是我的-我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静-爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜-niao-nuo-地开着旳，有羞涩地打着朵儿旳-正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉-mo-的流水，遮住了，不能见一些颜色-而叶子却更见风致了。"><a href="#This-is-my-first-blog-路上只我一个人，背着手踱着。这一片天地好像是我的-我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静-爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜-niao-nuo-地开着旳，有羞涩地打着朵儿旳-正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉-mo-的流水，遮住了，不能见一些颜色-而叶子却更见风致了。" class="headerlink" title="This is my first blog 路上只我一个人，背着手踱着。这一片天地好像是我的;我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静;爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜(niǎo,nuó)地开着旳，有羞涩地打着朵儿旳;正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉(mò)的流水，遮住了，不能见一些颜色;而叶子却更见风致了。"></a>This is my first blog 路上只我一个人，背着手踱着。这一片天地好像是我的;我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静;爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜(niǎo,nuó)地开着旳，有羞涩地打着朵儿旳;正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉(mò)的流水，遮住了，不能见一些颜色;而叶子却更见风致了。</h1><h2 id="welcome-to-you"><a href="#welcome-to-you" class="headerlink" title="welcome to you!"></a>welcome to you!</h2>]]></content>
   </entry>
   <entry>
     <title>Linu上部署各类软件</title>
@@ -2260,53 +1991,339 @@
       </tags>
   </entry>
   <entry>
-    <title>好好学习  天天向上</title>
-    <url>/2024/01/08/first-blog/</url>
-    <content><![CDATA[<h1 id="This-is-my-first-blog-路上只我一个人，背着手踱着。这一片天地好像是我的-我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静-爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜-niao-nuo-地开着旳，有羞涩地打着朵儿旳-正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉-mo-的流水，遮住了，不能见一些颜色-而叶子却更见风致了。"><a href="#This-is-my-first-blog-路上只我一个人，背着手踱着。这一片天地好像是我的-我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静-爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜-niao-nuo-地开着旳，有羞涩地打着朵儿旳-正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉-mo-的流水，遮住了，不能见一些颜色-而叶子却更见风致了。" class="headerlink" title="This is my first blog 路上只我一个人，背着手踱着。这一片天地好像是我的;我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静;爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜(niǎo,nuó)地开着旳，有羞涩地打着朵儿旳;正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉(mò)的流水，遮住了，不能见一些颜色;而叶子却更见风致了。"></a>This is my first blog 路上只我一个人，背着手踱着。这一片天地好像是我的;我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静;爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜(niǎo,nuó)地开着旳，有羞涩地打着朵儿旳;正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉(mò)的流水，遮住了，不能见一些颜色;而叶子却更见风致了。</h1><h2 id="welcome-to-you"><a href="#welcome-to-you" class="headerlink" title="welcome to you!"></a>welcome to you!</h2>]]></content>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2024/01/08/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.<br>&lt; !–more–&gt;</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+    <title>Python从入门到精通</title>
+    <url>/2024/09/27/Python%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/</url>
+    <content><![CDATA[<p><strong>没有退路就是胜利之路</strong></p>
+<h3 id="1-Python语言基础入门"><a href="#1-Python语言基础入门" class="headerlink" title="1.Python语言基础入门"></a>1.Python语言基础入门</h3><h4 id="下载安装Python解释器"><a href="#下载安装Python解释器" class="headerlink" title="下载安装Python解释器"></a>下载安装Python解释器</h4><p>下载安装：<a href="http://www.python.org/downloads">www.python.org/downloads</a></p>
+<h4 id="安装和配置PyCharm软件"><a href="#安装和配置PyCharm软件" class="headerlink" title="安装和配置PyCharm软件"></a>安装和配置PyCharm软件</h4><p>修改软件颜色背景：File-Settings-Appearence&amp;behavior-appearence-theme(Intellig Light)</p>
+<p>修改默认字体大小:File-Settings-Editor-font-选择字体和默认大小的设置。</p>
+<p>通过设置快捷键设置字体大小：File-Settings-Keymap-Editor Actions-Increase Font Size(右键)&#x2F;decrease Font Size-Add Mouse Shortcut,按住ctrl+鼠标滚轮向上&#x2F;向下。</p>
+<h4 id="字面量"><a href="#字面量" class="headerlink" title="字面量"></a>字面量</h4><p>定义: 代码中被写下来的固定的值，称为字面量。<img src="/../images/Python%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/6%E7%A7%8D%E5%80%BC.png"></p>
+<p>​		字符串：是由任意数量的字符如中文，英文，各类符号，各自等组成。所以叫字符串。</p>
+<p>​				Python种，字符串需要用双引号””包围起来，被引号包围起来的，都是字符串。</p>
+<h4 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h4><p>​	1.注释的作用</p>
+<p>​		注释:是在程序代码种对程序代码进行解释说明的文字.</p>
+<p>​		作用:注释不是程序，不能被执行，只是对程序代码进行解释说明，让别人可以看懂程序代码的作用，能够大大增强程序的可读性。</p>
+<p>​	2.使用单行注释和多行注释</p>
+<p>​		单行注释:以#开头，#右边 的所以文字当作说明，而不是真正执行的程序，起辅助说明作用。注意，#号和注释内容一般建议以一个空格隔开。</p>
+<p>​		多行注释:以一对三个双引号引起来(“””注释内容”””)来解释说明一段代码的作用使用方法。</p>
+<h4 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h4><p>​	1.变量的作用和特征</p>
+<p>​		变量：在程序允许时，能存储计算结果或能表示值的抽象概念，简单的说，变量就是在程序运行时，记录数据用的。</p>
+<p>​	2.变量的定义方式</p>
+<p>​		格式： 变量名词 &#x3D; 变量的值</p>
+<p>​        3.变量的特征</p>
+<p>​		变量的值是可以改变的</p>
+<h4 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h4><p>​	1.掌握使用type()语句查看数据的类a型</p>
+<p>​		在print语句中，直接输出类型信息:print(type(被查看类型的数据))</p>
+<p>​		用变量存储type()的结果</p>
+<p>​		不仅可以使用自变量类型也可以查看变量中存储的数据类型</p>
+<p>​	2.理解变量无类型而数据有类型的概念</p>
+<p>​		在Python中变量是没有类型的，但变量存储的数据是有类型的。只表示变量存储了数据</p>
+<p>​		<img src="/../images/Python%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/%E5%8F%98%E9%87%8F%E5%92%8C%E6%95%B0%E6%8D%AE.png"></p>
+<h4 id="数据类型变换"><a href="#数据类型变换" class="headerlink" title="数据类型变换"></a>数据类型变换</h4><p>​	1.如何在字符串，整数，浮点数之间进行相互转换</p>
+<p>​	<img src="/../images/Python%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2.png"></p>
+<p>​	2.了解转换的注意事项</p>
+<p>​	想要将字符串转换成数字，必须要求字符串内的内容都是数字。</p>
+<p>​	浮点数转整数时可能回丢失精度。</p>
+<h4 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h4><p>​	1.什么是标识符</p>
+<p>​	变量&#x2F;方法&#x2F;类的名字等，拔它统一的称之为标识符，用来做内容的标识。所以，标识符是用户在编程的时候所使用的一系列名字，用于给变量，类，方法等命名。</p>
+<p>​	2.标识符的命名规则</p>
+<p>​	内容限定：命名只允许出现英文，中文，数字，下划线这四类元素，其他任何内容都不被允许</p>
+<p>​			    (不推荐使用中文，不能以数字开头)</p>
+<p>​	大小写敏感：</p>
+<p>​	不可使用关键字：</p>
+<p>​	3.掌握变量的命名规范：见名知意，下划线命名法(间隔)，全部小写。</p>
+<h4 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h4><p>​	1.算术运算符<img src="/../images/Python%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97%E7%AC%A6.png"></p>
+<p>​	2.赋值运算符:&#x3D;,+&#x3D;,-&#x3D;,*&#x3D;,&#x2F;&#x3D;,%&#x3D;,**&#x3D;,&#x2F;&#x2F;&#x3D;</p>
+<h4 id="字符串拓展"><a href="#字符串拓展" class="headerlink" title="字符串拓展"></a>字符串拓展</h4><p>​	字符串的三种定义方式</p>
+<p>​		1.单引号定义法</p>
+<p>​		2.双引号定义法</p>
+<p>​		3.三引号定义法：和多行注释的写法意义，同样支持换行操作。当使用变量接收它，它就算字符串，不使用变量接收它，就可以作为多行注释使用。</p>
+<p>​		引号的嵌套：</p>
+<p>​			1.可以使用: \来进行转义</p>
+<p>​			2.单引号内可以写双引号或双引号内可以写单引号</p>
+<p>​	字符串拼接</p>
+<p>​		1.如何拼接字符串</p>
+<p>​			一般用于字符串字面量和变量或变量和变量之间会使用拼接。+号拼接，而且无法和非字符串类型进行拼接。</p>
+<p>​	字符串格式化1</p>
+<p>​		拼接的缺点：1.变量太多，拼接起来实在是太麻烦了</p>
+<p>​				       2.字符串无法和数字或其他类型完成拼接</p>
+<p>​		格式化：%s，其中%表示我要占位，s表示将变量变成字符串放入占位的地方。</p>
+<p>​				多个变量占位，变量要用括号括起来，并按照占位的顺序填入。	<img src="/../images/Python%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/%E5%8D%A0%E4%BD%8D.png">	<img src="/../images/Python%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/%E4%BB%A3%E7%A0%81%E6%98%BE%E7%A4%BA.png"></p>
+<p>​	格式化的精度控制</p>
+<p>​		1.掌握格式化字符串的过程中做数字的精度控制</p>
+<p>​		  可以使用辅助符号”m.n”来控制数据的宽度和精度</p>
+<p>​			m,控制宽度，要求是数字(很少使用)，设置的宽度小于数字自身，不生效</p>
+<p>​			.n,控制小数点精度，要求是数字，会进行小数的四舍五入</p>
+<p>​			%5d:表示将整数的宽度控制在五位，前面补空格</p>
+<p>​			%5.2f:表示将宽度控制为5，将小数点精度设置为2</p>
+<p>​	字符串格式化方式2</p>
+<p>​		1.快速字符串格式化的方式</p>
+<p>​		语法：f”内容{变量}”的格式来快速格式化</p>
+<p>​		<img src="/../images/Python%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/%E4%BB%A3%E7%A0%81%E6%98%BE%E7%A4%BA2.png">		不理会类型，不做精度控制，适合对精度没有要求的适合快速使用。</p>
+<p>​	对表达式进行格式化</p>
+<p>​		1.什么是表达式：一条具有明确执行结果的代码语句。</p>
+<p>​		2.对表达式进行字符串格式化</p>
+<p>​		  <img src="/../images/Python%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%BB%A3%E7%A0%81.png"></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">name = <span class="string">&quot;传智播客&quot;</span></span><br><span class="line">stock_price = <span class="number">19.99</span></span><br><span class="line">stock_code = 003032</span><br><span class="line">stock_price_daily_growth_factor = <span class="number">1.2</span></span><br><span class="line">growth_day = <span class="number">7</span></span><br><span class="line">printf(<span class="string">&quot;公司%s,股票代码%s,当前股价%.2f&quot;</span> % (name,stock_code,stock_price))</span><br><span class="line">printf(<span class="string">&quot;每日的增长系数是:%.2f,经过%d天的增长后,股价达到了%2f&quot;</span> % (stock_price_daily_growth_factor,growth_day,(<span class="number">19.99</span>*<span class="number">1.2</span>)))</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h4 id="数据输入"><a href="#数据输入" class="headerlink" title="数据输入"></a>数据输入</h4><p>​	使用input()语句可以从键盘获取输入</p>
+<p>​	使用一个变量接收input语句获取的键盘输入数据</p>
+<p>​	要注意，无论键盘输入什么类型的数据，获取到的数据永远都是字符串类型，如需其他类型可以进行数据类型转换。	</p>
+<h3 id="Python判断语句的学习"><a href="#Python判断语句的学习" class="headerlink" title="Python判断语句的学习"></a>Python判断语句的学习</h3><p>​	布尔类型和比较运算符</p>
+<p>​		布尔运算符:</p>
+<p>​		比较运算符：&#x3D;&#x3D;，!&#x3D;,&gt;,&lt;,&gt;&#x3D;,&lt;&#x3D;,通过比较运算得到布尔类型的结果。</p>
+<p>​	if语句的基本格式</p>
+<p>​		if   要判断的条件:</p>
+<p>​			 条件成立时，要做的事</p>
+<p>​		if语句的注意事项:</p>
+<p>​			判断条件的结果一定要是布尔类型</p>
+<p>​			不要忘记判断条件后的: 冒号</p>
+<p>​			归属于if语句的代码块，需在前方填充4个空格缩进</p>
+<p>​	if else 语句</p>
+<p>​		 if   要判断的条件:</p>
+<p>​			 条件成立时，要做的事</p>
+<p>​		else:</p>
+<p>​			不满足条件时要做的事情</p>
+<p>​	if elif else语句</p>
+<p>​		 if   要判断的条件:</p>
+<p>​			 条件成立时，要做的事</p>
+<p>​		 elif  条件2：</p>
+<p>​			  条件成立时，要做的事</p>
+<p>​		 elif  条件2：</p>
+<p>​			  条件成立时，要做的事</p>
+<p>​		   …………..</p>
+<p>​		else:</p>
+<p>​			不满足条件时要做的事情</p>
+<p>​		elif可以写多个。</p>
+<p>​		判断是互斥且有序的，上一个满足后面就不会判断了。</p>
+<p>​		可以在条件判断中，直接写input语句，节省代码量。</p>
+<p>​	判断语句的嵌套</p>
+<p><img src="/../images/Python%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/%E5%B5%8C%E5%A5%97.png"></p>
+<p>​	实战案例</p>
+<h3 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h3><p>​	while循环：</p>
+<p>​		while循环的基础语法：		</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span> 条件:</span><br><span class="line">    条件满足时，做的事情<span class="number">1</span></span><br><span class="line">    条件满足时，做的事情<span class="number">2</span></span><br><span class="line">    条件满足时，做的事情<span class="number">3</span></span><br><span class="line">    ........(省略)....</span><br><span class="line"><span class="comment"># 只要条件满足，会无限循环执行</span></span><br><span class="line"><span class="comment"># 条件需提供布尔类型结果，True继续，False停止</span></span><br><span class="line"><span class="comment"># 空格缩进不能忘</span></span><br><span class="line"><span class="comment"># 请规划好循环终止条件，否则将无限循环</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>​		while循环的嵌套应用</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span> 条件<span class="number">1</span>:</span><br><span class="line">    条件<span class="number">1</span>满足时，做的事情<span class="number">1</span></span><br><span class="line">    条件<span class="number">1</span>满足时，做的事情<span class="number">2</span></span><br><span class="line">    条件<span class="number">1</span>满足时，做的事情<span class="number">3</span></span><br><span class="line">    ........(省略)....</span><br><span class="line">    <span class="keyword">while</span> 条件<span class="number">2</span>:</span><br><span class="line">    条件<span class="number">2</span>满足时，做的事情<span class="number">1</span></span><br><span class="line">    条件<span class="number">2</span>满足时，做的事情<span class="number">2</span></span><br><span class="line">    条件<span class="number">2</span>满足时，做的事情<span class="number">3</span></span><br><span class="line">    ........(省略)....</span><br><span class="line"><span class="comment"># 注意条件控制，避免出现无限循环(除非真的需要无限循环)</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>​		while循环的嵌套案例</p>
+<p>​		print( )输出不换行：print(“不换行”，end&#x3D;’ ‘)</p>
+<p>​		在字符串中，有一个特殊符号\t,效果如同在键盘按下:tab键</p>
+<p>​		打印九九乘法表</p>
+<p>​	for循环:</p>
+<p>​		for循环的基础语法</p>
+<p>​			基础语法： 			</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> 临时变量 <span class="keyword">in</span> 待处理数据集/序列类型:</span><br><span class="line">	循环满足条件时执行的代码</span><br><span class="line">   <span class="comment"># 同while循环不同，for循环是无法定义循环条件的 ，只能从被处理的数据集中，依次取			出内容进行处理。</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>分支语句-switch</title>
-    <url>/2024/01/17/java-Switch%E8%AF%AD%E5%8F%A5/</url>
-    <content><![CDATA[<h1 id="Switch的语句格式"><a href="#Switch的语句格式" class="headerlink" title="Switch的语句格式"></a>Switch的语句格式</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">switch</span>(表达式) &#123;					<span class="comment">//	表达式的值==case的值</span></span><br><span class="line">	<span class="keyword">case</span> 值<span class="number">1</span>：					<span class="comment">//表达式：取值为byte,short,int,char,枚举(jdk5以后)，String(jdk7以后)</span></span><br><span class="line">		语句体<span class="number">1</span>;				   <span class="comment">// case后面的值只能表示字面量，不能是变量。</span></span><br><span class="line">        <span class="keyword">break</span>;					 <span class="comment">//当switch里面的内容得到一个结果，可以将switch赋值给一个变量</span></span><br><span class="line">    <span class="keyword">case</span> 值<span class="number">2</span>：</span><br><span class="line">		语句体<span class="number">2</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    ......</span><br><span class="line">     <span class="keyword">default</span>:</span><br><span class="line">        语句体n+<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>​			range语句</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">语法<span class="number">1</span>：</span><br><span class="line"><span class="built_in">range</span>(num)</span><br><span class="line"><span class="comment"># 获取一个从0开始，到num结束的数字序列(不含num本身)</span></span><br><span class="line">语法<span class="number">2</span>：</span><br><span class="line"><span class="built_in">range</span>(num1,num2)</span><br><span class="line"><span class="comment"># 获得一个从num1开始，到num2结束的数字序列(不含num2本身)</span></span><br><span class="line">语法<span class="number">3</span>：</span><br><span class="line"><span class="built_in">range</span>(num1,num2,step)</span><br><span class="line"><span class="comment"># 获得一个从num1开始，到num2结束的数字序列(不含num2本身)，数字之间的步长，以step为准(step默认为1)</span></span><br></pre></td></tr></table></figure>
 
-<ol>
-<li><p>default的位置和省略</p>
-<p>位置：default位置随意，习惯写在最下面。</p>
-<p>省略：default可以省略，语法不出差，但不建议。</p>
-</li>
-<li><p>case穿透</p>
-<p>省略break会引起case穿透。</p>
-<p>使用场景：多个case的语句体重复了，那么我们考虑利用case穿透去简化代码。</p>
-</li>
-<li><p>switch的新特性(jdk12)</p>
-<p><strong>case 值1 -&gt;{</strong>	<em>&#x2F;&#x2F;消除了case穿透，大括号里面<strong>只有一行代码</strong>时，可以省略大括号</em></p>
-<p><strong>}</strong></p>
-</li>
-</ol>
-]]></content>
+<p>​			变量作用域</p>
+<p>​			如果在for循环外部访问临时变量:</p>
+<p>​				实际上是可以访问到的</p>
+<p>​				在编程规范上，是不允许，不建议这么做的(可以预先在循环外定义它)</p>
+<p>​		for循环的嵌套应用</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> 临时变量 <span class="keyword">in</span> 待处理数据集(序列):</span><br><span class="line">    循环满足要做的事情<span class="number">1</span></span><br><span class="line">    循环满足要做的事情<span class="number">2</span></span><br><span class="line">    循环满足要做的事情N</span><br><span class="line">    <span class="keyword">for</span> 临时变量 <span class="keyword">in</span> 待处理数据集(序列):</span><br><span class="line">        循环满足要做的事情<span class="number">1</span></span><br><span class="line">    	循环满足要做的事情<span class="number">2</span></span><br><span class="line">    	循环满足要做的事情N</span><br></pre></td></tr></table></figure>
+
+<p>​	循环控制: break和continue	</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">特殊情况：暂时跳出某次循环，直接进行下一次/提前退出循环，不在继续</span><br><span class="line"></span><br><span class="line">​	continue关键字用于:中断本次循环，直接进入下一次循环//临时中断，作用范围在所在循环无法对上层循环起作用。</span><br><span class="line"></span><br><span class="line">​	continue可以用于：for循环和while循环，效果一致</span><br><span class="line"></span><br><span class="line">​	break关键字用于：直接结束循环//永久中断，作用范围在所在循环，无法对上层起作用</span><br><span class="line"></span><br><span class="line">​	break可以用于：for循环和while循环，效果一致</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="函数："><a href="#函数：" class="headerlink" title="函数："></a>函数：</h3><p>函数介绍</p>
+<p>​	函数：是组织好的，可重复使用的，用来实现特定功能的代码段。</p>
+<p>​	为什么使用函数：为了得到一个针对特定需求，可供重复利用的代码段，以提高程序的复用性，减少重复性代码，提高开发效率。</p>
+<p>函数基础定义语法：		</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">函数名</span>(<span class="params">传入参数</span>)：</span><br><span class="line">	函数体</span><br><span class="line">	<span class="keyword">return</span> 返回值</span><br></pre></td></tr></table></figure>
+
+<p>函数的参数</p>
+<p>​	传入参数的功能是:在函数进行计算的时候，接受外部(调用时)提供的数据。</p>
+<p>函数的返回值</p>
+<p>​	什么是返回值:程序中函数完成事情后，最后给调用者的结果</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">函数名</span>(<span class="params">传入参数</span>)：</span><br><span class="line">	函数体</span><br><span class="line">	<span class="keyword">return</span> 返回值 <span class="comment">#函数体在遇到return后就结束了</span></span><br><span class="line">变量 = 函数(参数)</span><br></pre></td></tr></table></figure>
+
+<p>​         None类型：</p>
+<p>​		如果函数没有使用return语句返回数据，那么函数有返回值吗?  实际上是有的，Python中有一个特殊的字面量:None,其类型是:&lt;class ‘NoneType&gt; 无返回值的函数，实际上就算返回了:None这个字面量。</p>
+<p>​		None表示：空的，无实际意义的意思，函数返回了None，就表示这个函数没有返回什么有意义的内容，也就是返回了空的意思。</p>
+<p>​		None类型的应用场景：</p>
+<p>​			1.用在函数无返回值</p>
+<p>​			2.用在if判断上</p>
+<p>​				在if判断中，None等同于False,一般用于在函数中主动返回None，配合if判断做相关处理。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">check_age</span>(<span class="params">age</span>)</span><br><span class="line">	<span class="keyword">if</span> age&gt;<span class="number">18</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;SUCESS&quot;</span></span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    	<span class="keyword">return</span> <span class="literal">None</span></span><br><span class="line">result = check_age(<span class="number">16</span>)</span><br><span class="line"><span class="keyword">if</span> <span class="keyword">not</span> result:</span><br><span class="line">    <span class="comment">#进入if表示result是None，也就是False</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;未成年，不可进入&quot;</span>)</span><br><span class="line">	</span><br></pre></td></tr></table></figure>
+
+<p>​			3.用在声明无内容的变量上</p>
+<p>​				定义变量，但暂时不需要变量有具体值，可以用None来代替。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">name=<span class="literal">None</span></span><br></pre></td></tr></table></figure>
+
+<p>函数的说明文档</p>
+<p>​	通过注释对函数进行解释说明</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">func</span>(<span class="params">x,y</span>):</span><br><span class="line">	<span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">	函数说明</span></span><br><span class="line"><span class="string">	:param x:形参x的说明</span></span><br><span class="line"><span class="string">	:return 返回值</span></span><br><span class="line"><span class="string">	函数体</span></span><br><span class="line"><span class="string">	return 返回值</span></span><br><span class="line"><span class="string">	&quot;&quot;&quot;</span></span><br><span class="line"><span class="comment"># 调用时悬停可以出现说明文档</span></span><br></pre></td></tr></table></figure>
+
+<p>函数的嵌套调用</p>
+<p>​	所谓函数嵌套调用指的是一个函数里面又调用了另一个函数。</p>
+<p>​	如果函数A中，调用了另一个函数B，那么先把函数B中得任务都执行完毕之后才会回到上次函数A执行的位置。</p>
+<p>变量在函数的作用域</p>
+<p>​	局部变量:定义在函数体内部的变量，即只在函数体内部生效。</p>
+<p>​	全局变量:指的是在函数体内外都能生效的变量</p>
+<p>​	在函数体内改全局变量:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># global关键字</span></span><br><span class="line">num=<span class="number">200</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">test_a</span>():</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;test_a:<span class="subst">&#123;num&#125;</span>&quot;</span>)</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">test_b</span>():</span><br><span class="line">    num=<span class="number">500</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;test_b:&quot;</span>&#123;num&#125;)</span><br><span class="line">test_a()  <span class="comment">#200</span></span><br><span class="line">test_b()  <span class="comment">#500</span></span><br><span class="line"><span class="built_in">print</span>(num) <span class="comment">#200</span></span><br><span class="line"><span class="comment">#-----------------------------------</span></span><br><span class="line">num=<span class="number">200</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">test_a</span>():</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;test_a:<span class="subst">&#123;num&#125;</span>&quot;</span>)</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">test_b</span>():</span><br><span class="line">    <span class="keyword">global</span> num=<span class="number">500</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;test_b:&quot;</span>&#123;num&#125;)</span><br><span class="line">test_a()  <span class="comment">#200</span></span><br><span class="line">test_b()  <span class="comment">#500</span></span><br><span class="line"><span class="built_in">print</span>(num) <span class="comment">#500</span></span><br></pre></td></tr></table></figure>
+
+<p>综合案例</p>
+<h3 id="数据容器"><a href="#数据容器" class="headerlink" title="数据容器"></a>数据容器</h3><p>​	目的是批量存储或者批量使用多份数据。</p>
+<p>​	数据容器:一种可以容纳多份数据的数据类型，容纳的每一份数据称之为1个元素，每一个元素，可以是任意类型的数据，如字符串，数字，布尔等。</p>
+<p>​	数据容器根据特点的不同，如:</p>
+<p>​	   是否支持重复元素</p>
+<p>​	   是否可以修改</p>
+<p>​	   是否有序，等</p>
+<p>​	   分为5类，分别是:列表(list),元组(tuple),字符串(str),集合(set),字典(dict)</p>
+<h5 id="数据容器-list列表"><a href="#数据容器-list列表" class="headerlink" title="数据容器:list列表"></a>数据容器:list列表</h5><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 1.基本语法</span></span><br><span class="line"><span class="comment">#字面量</span></span><br><span class="line">[元素<span class="number">1</span>，元素<span class="number">2</span>，元素<span class="number">3</span>，元素<span class="number">4</span>，...]</span><br><span class="line"><span class="comment">#定义变量</span></span><br><span class="line">变量名称 = [元素<span class="number">1</span>,元素<span class="number">2</span>，元素<span class="number">3</span>，元素<span class="number">4</span>，....]</span><br><span class="line"><span class="comment">#定义空列表</span></span><br><span class="line">变量名称 = []</span><br><span class="line">变量名称 = <span class="built_in">list</span>()</span><br><span class="line"><span class="comment"># 列表内的每一个数据，称之为元素，以[]作为标识，列表内每一个元素之间用，逗号隔开</span></span><br><span class="line"><span class="comment"># 列表可以一次存储多个数据，且可以为不同的数据类型，支持嵌套[[1,2,3],666,&#x27;itheima&#x27;]。</span></span><br></pre></td></tr></table></figure>
+
+<p>​	2.使用列表的下标索引从列表中取出元素</p>
+<p><img src="/../images/Python%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/list.png"></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 语法: 列表[下标索引]</span></span><br><span class="line">name_list = [<span class="string">&#x27;Tom&#x27;</span>,<span class="string">&#x27;Lily&#x27;</span>,<span class="string">&#x27;Rose&#x27;</span>]</span><br><span class="line"><span class="built_in">print</span>(name_list[<span class="number">0</span>]) <span class="comment">#结果:Tom</span></span><br><span class="line"><span class="built_in">print</span>(name_list[<span class="number">1</span>]) <span class="comment">#结果:Lily</span></span><br><span class="line"><span class="built_in">print</span>(name_list[<span class="number">2</span>]) <span class="comment">#结果:Rose</span></span><br></pre></td></tr></table></figure>
+
+<p>反向索引：</p>
+<p><img src="/../images/Python%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/list02.png"></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">##### 	语法: 列表[下标索引]</span></span><br><span class="line">name_list = [<span class="string">&#x27;Tom&#x27;</span>,<span class="string">&#x27;Lily&#x27;</span>,<span class="string">&#x27;Rose&#x27;</span>]</span><br><span class="line"><span class="built_in">print</span>(name_list[-<span class="number">1</span>]) <span class="comment">#结果:Rose</span></span><br><span class="line"><span class="built_in">print</span>(name_list[-<span class="number">2</span>]) <span class="comment">#结果:Lily</span></span><br><span class="line"><span class="built_in">print</span>(name_list[-<span class="number">3</span>]) <span class="comment">#结果:Tom</span></span><br></pre></td></tr></table></figure>
+
+<p>嵌套索引的下标：</p>
+<p><img src="/../images/Python%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/list03.png"></p>
+<h5 id="要注意下标索引的取值范围，超出范围无法取出元素，并且会报错。"><a href="#要注意下标索引的取值范围，超出范围无法取出元素，并且会报错。" class="headerlink" title="# 要注意下标索引的取值范围，超出范围无法取出元素，并且会报错。"></a># 要注意下标索引的取值范围，超出范围无法取出元素，并且会报错。</h5><p>​	3.列表的常用操作:</p>
+<p>​	在Python中，如果将函数定义为class(类)的成员，那么函数会称之为:方法</p>
+<p>​        # 方法和函数功能一样，有传入参数，有返回值，只是方法的使用格式不同</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#函数的使用</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">add</span>(<span class="params">x,y</span>):</span><br><span class="line">    <span class="keyword">return</span> x+y</span><br><span class="line">num = add(<span class="number">1</span>,<span class="number">2</span>)</span><br><span class="line"><span class="comment">#方法的使用</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Student</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">add</span>(<span class="params">self,x,y</span>):</span><br><span class="line">    <span class="keyword">return</span> x+y</span><br><span class="line">student = Student()</span><br><span class="line">num = student.add(<span class="number">1</span>,<span class="number">2</span>)</span><br></pre></td></tr></table></figure>
+
+<p>​	<strong>3.1 查询某元素下标的功能</strong> : 列表.index(元素)</p>
+<p>​	功能:查找指定元素在列表的下标，如果找不到，报错ValueError</p>
+<p>​	index就是列表对象(变量)内置的方法(函数)</p>
+<p>​	<strong>3.2 修改特定下标的元素值:</strong> 列表[下标]&#x3D;值</p>
+<p>​	可以使用如上语法，直接对指定下标(正向，反向下标均可)的值进行:重新赋值(修改)</p>
+<p>​	<strong>3.3 插入元素</strong>  ：列表.insert(下标，元素)，在指定的下标位置，插入指定的元素。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">my_list = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">my_list.insert(<span class="number">1</span>,<span class="string">&quot;itheima&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(my_list) <span class="comment">#结果: [1,&quot;itheima&quot;,2,3]</span></span><br></pre></td></tr></table></figure>
+
+<p>​	<strong>3.4 追加元素:</strong> 列表.append(),将指定元素，追加到列表的尾部</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 追加单个元素</span></span><br><span class="line">my_list = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line"><span class="built_in">print</span>(my_list) <span class="comment">#结果: [1,2,3]</span></span><br><span class="line">my_list.append(<span class="string">&quot;itheima&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(my_list) <span class="comment">#结果: [1,2,3,&quot;itheima&quot;]</span></span><br><span class="line"><span class="comment"># 追加一批元素 </span></span><br><span class="line">my_list = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">my_list.extend([<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>])</span><br><span class="line"><span class="built_in">print</span>(my_list)  <span class="comment"># 结果：[1,2,3,4,5,6]</span></span><br></pre></td></tr></table></figure>
+
+<p>​	<strong>3.5 删除元素，清空列表</strong>：del 列表[下标] &#x2F; 列表.pop(下标)</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">mylist = [<span class="string">&quot;itcast&quot;</span>,<span class="string">&quot;itheima&quot;</span>,<span class="string">&quot;python&quot;</span>]</span><br><span class="line"><span class="keyword">del</span> mylist[<span class="number">2</span>]</span><br><span class="line"><span class="built_in">print</span>(mylist)<span class="comment"># &#x27;itcast&#x27;,&#x27;itheima&#x27;,</span></span><br><span class="line"><span class="comment"># --------------------------------------------</span></span><br><span class="line">element=mylist.pop[<span class="number">1</span>]</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;<span class="subst">&#123;my_list&#125;</span>,取出的元素是<span class="subst">&#123;element&#125;</span>&quot;</span>) <span class="comment"># &#x27;itcast&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>​	<strong>3.6 指定元素内容删除</strong>： 列表.remove(元素)</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">my_list = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">my_list.remove(<span class="number">2</span>) <span class="comment"># 从前到后去搜索这个元素，找到的第一个被删除。</span></span><br><span class="line"><span class="built_in">print</span>(my_list) <span class="comment">#结果[1,3,2,3]</span></span><br></pre></td></tr></table></figure>
+
+<p>​	<strong>3.7 清空列表:</strong> 列表.clear( )</p>
+<p>​	**3.8 统计某元素在列表内的数量: ** 列表.count(元素)</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">my_list = [<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line"><span class="built_in">print</span>(my_list.count(<span class="number">1</span>)) <span class="comment">#结果3</span></span><br></pre></td></tr></table></figure>
+
+<p>​	<strong>3.9 统计类别中全部元素的数量:</strong> len(列表)</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">列表的特点：</span><br><span class="line"></span><br><span class="line">​		可以容纳多个元素</span><br><span class="line"></span><br><span class="line">​		可以容纳不同类型的元素</span><br><span class="line"></span><br><span class="line">​		数据是有序存储的</span><br><span class="line"></span><br><span class="line">​		允许重复数据存在</span><br><span class="line"></span><br><span class="line">​		可以修改</span><br></pre></td></tr></table></figure>
+
+<p><img src="/../images/Python%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/list%E8%A1%A8%E6%A0%BC.png"></p>
+<h5 id="list列表的遍历"><a href="#list列表的遍历" class="headerlink" title="list列表的遍历"></a>list列表的遍历</h5><p>​	掌握while循环遍历列表</p>
+<p>​		while循环可以自定循环条件，并自行控制。</p>
+<p>​		while循环可以通过控制条件控制做到无限循环。</p>
+<p>​		while循环适用于任何想要循环的场景。	</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span> 下标索引变量&lt;列表的元素数量：</span><br><span class="line">		下标索引变量+=<span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<p>​	掌握for循环遍历列表</p>
+<p>​		for循环不可以自定循环条件，只可以一个个从容器内取出数据。</p>
+<p>​		for循环理论上不可以无限循环，因为被遍历的容器容量不是无限的。</p>
+<p>​		for循环适用于，遍历数据容器的场景或简单的固定次数循环场景。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> 临时变量 <span class="keyword">in</span> 数据容器:</span><br><span class="line">	对临时变量进行处理</span><br></pre></td></tr></table></figure>
+
+<h5 id="数据容器-tuple-元组"><a href="#数据容器-tuple-元组" class="headerlink" title="数据容器:tuple(元组)"></a>数据容器:tuple(元组)</h5><p>​		列表是可以修改的，不适用于不被篡改的信息。</p>
+<p>​		元组同列表一样，都是可以封装多个，不同类型的元素在内</p>
+<p>​		格式:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 定义元组字面量</span></span><br><span class="line">(元素，元素，元素)</span><br><span class="line"><span class="comment"># 定义元组变量</span></span><br><span class="line">变量名称=(元素，元素，元素)</span><br><span class="line"><span class="comment"># 定义空元组</span></span><br><span class="line">变量名称 = () <span class="comment">#方式1</span></span><br><span class="line">变量名称 = <span class="built_in">tuple</span>() <span class="comment">#方式2</span></span><br><span class="line"><span class="comment"># !!!注意!!!：定义的元组只有一个数据，这个数据后面要添加逗号</span></span><br><span class="line">t1 = (<span class="string">&#x27;Hello&#x27;</span>,)</span><br></pre></td></tr></table></figure>
+
+<p>​		特点:</p>
+<p>​		元组也支持嵌套</p>
+<p>​		操作:</p>
+<p>​		<strong>1.下标索引取出元组内容</strong>		</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">t5=((<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>),(<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>))</span><br><span class="line">t5[<span class="number">1</span>][<span class="number">2</span>] <span class="comment"># 6</span></span><br></pre></td></tr></table></figure>
+
+<p>​		<strong>2.index查找方法：元组.index(元素)</strong></p>
+<p>​		<strong>3.count统计方法:   元组.count(元素)</strong></p>
+<p>​		<strong>4.len函数统计元组元素数量: len(元组)</strong></p>
+<p>​		元组的遍历：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">index=<span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> 下标索引变量index&lt;元组的元素数量：</span><br><span class="line">	元组[index]</span><br><span class="line">	下标索引变量+=<span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> element <span class="keyword">in</span> 元组:</span><br><span class="line">       <span class="built_in">print</span>(element)</span><br></pre></td></tr></table></figure>
+
+<p><em>特列：元组内嵌套的列表是可以修改的。</em></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">info=(<span class="string">&#x27;周杰伦&#x27;</span>,<span class="number">11</span>,[<span class="string">&#x27;football&#x27;</span>,<span class="string">&#x27;music&#x27;</span>])</span><br><span class="line"><span class="comment"># 查询其年龄所在的下标位置</span></span><br><span class="line">index=info.index(<span class="number">11</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;11岁所在的下标位置是:<span class="subst">&#123;index&#125;</span>&quot;</span>)</span><br><span class="line"><span class="comment"># 查询学生的姓名</span></span><br><span class="line">name=info[<span class="number">0</span>]</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;学生的姓名是:<span class="subst">&#123;name&#125;</span>&quot;</span>)</span><br><span class="line"><span class="comment"># 删除学生爱好中的football</span></span><br><span class="line">info[<span class="number">2</span>].pop(<span class="number">0</span>)</span><br><span class="line"><span class="built_in">print</span>(info)</span><br><span class="line"><span class="comment"># 增加爱好：coding到爱好内</span></span><br><span class="line">info[<span class="number">2</span>].append(<span class="string">&#x27;coding&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(info)</span><br></pre></td></tr></table></figure>
+
+<h5 id="数据容器-str-字符串"><a href="#数据容器-str-字符串" class="headerlink" title="数据容器:str(字符串)"></a>数据容器:str(字符串)</h5><p>​	字符串是字符的容器，一个字符串可以存放任意数量的字符。</p>
+<p><img src="/../images/Python%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/%E5%AD%97%E7%AC%A6%E4%B8%B2.png"></p>
+<p>​	和其他容器一样如 : 列表，元组一样，字符串也可以通过下标进行访问。</p>
+<p>​		从前向后，下标从0开始；从后向前，下标从-1开始。</p>
+<p>​		同元组一样，字符串是一个无法修改的数据容器。</p>
+<p>​	字符串常用操作：</p>
+<p>​		1.查找特定字符串的下标索引值</p>
+<p>​		   语法: 字符串.index(字符串)</p>
+<p>​		2.字符串替换</p>
+<p>​		   语法:字符串.replace(字符串1，字符串2)：将字符串内的全部字符串1替换为字符串2</p>
+<p>​		   注意：不是修改字符串本身，而是得到了一个新字符串。</p>
+<p>​		3.字符串的分割</p>
+<p>​		    语法：字符串.split(分隔符字符串)：按照指定的分隔符字符串，将字符串划分为多个字符串，并存入列表对象中。</p>
+<p>​		     注意:  字符串本身不变，而是得到了一个<strong>列表对象</strong>。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="string">&quot;hello python itheima itcast&quot;</span></span><br><span class="line">[<span class="string">&quot;hello&quot;</span>,<span class="string">&quot;python&quot;</span>,<span class="string">&quot;itheima&quot;</span>,<span class="string">&quot;itcast&quot;</span>]</span><br></pre></td></tr></table></figure>
+
+<p>​		4.字符串的规整操作(去除前后空格)</p>
+<p>​			语法: 字符串.strip()</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">my_str = <span class="string">&quot;   itheima and itheima  &quot;</span></span><br><span class="line">new_my_str=my_str_strip()<span class="comment">#不传入参数，去除首位空格</span></span><br></pre></td></tr></table></figure>
+
+<p>​		    字符串的规整操作(去除前后指定字符串)</p>
+<p>​			语法：字符串.strip(字符串)</p>
+<p>​		     注意:是按照单个字符串移除的</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">my_str = <span class="string">&quot;   12itheima and itheima21  &quot;</span></span><br><span class="line">new_my_str=my_str_strip(‘<span class="number">12</span>’)<span class="comment">#不传入参数，去除首位空格</span></span><br></pre></td></tr></table></figure>
+
+<p>​		5.统计字符串中某字符串出现的次数：count( )</p>
+<p>​		6.统计字符串的长度，len( )</p>
+<p>​		7.字符串遍历</p>
+<p><img src="/../images/Python%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/%E5%AD%97%E7%AC%A6%E4%B8%B202.png"></p>
+<h5 id="数据容器-序列-的切片"><a href="#数据容器-序列-的切片" class="headerlink" title="数据容器(序列)的切片:"></a>数据容器(序列)的切片:</h5><p>​		序列:内容连续，有序，可使用下标索引的一类数据容器；列表，元组，字符串，均可以视为序列。</p>
+<p>​		序列操作-切片:从一个序列中，去除一个子序列</p>
+<p>​		切片的语法：序列[起始下:结束下标:步长]</p>
+<p>​			起始下标表示从何处开始，可以留空，留空视作从头开始</p>
+<p>​			结束下标表示何处结束，可以留空，留空视作截取到结尾</p>
+<p>​			步长表示，依次取元素的间隔(1:表示一个个取元素，2:跳过1个元素取，步长为负数表示反向去，起始下标和结束下标也要反向标记)</p>
+<p>​		注意：此操作不会影响序列本身，而是会得到一个新的序列。</p>
+<p>​			包头不包尾	</p>
+<h5 id="数据容器-set-集合"><a href="#数据容器-set-集合" class="headerlink" title="数据容器:set(集合)"></a>数据容器:set(集合)</h5><p>​	如果场景需要对内容做去重处理，列表，元组，字符串就不方便了。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 基本语法:</span></span><br><span class="line"><span class="comment"># 定义集合字面量</span></span><br><span class="line">&#123;元素,元素,......,元素&#125;</span><br><span class="line"><span class="comment"># 定义集合变量</span></span><br><span class="line">变量名称 = &#123;元素,元素,......,元素&#125;</span><br><span class="line"><span class="comment"># 定义空集合</span></span><br><span class="line">变量名称 = <span class="built_in">set</span>()</span><br></pre></td></tr></table></figure>
+
+<p>集合的常用操作-修改：</p>
+<p>​	首先，因为集合是无序的，所以集合不支持：下标索引访问，但是集合和列表一样，是允许修改的。</p>
+<p>​	1.添加新元素：**集合.add(元素)**。将指定元素，添加到集合内。结果集合被修改，添加了新元素。</p>
+<p>​	2.移除元素：**集合.remove(元素)**。将指定元素，从集合内移除，结果集合本身被修改，移除了元素。</p>
+<p>​	3.从集合中随机取出元素:<strong>集合.pop()</strong>,功能是从集合中<strong>随机取出</strong>一个元素，结果会得到一个元素的结果。同时集合本身被修改，元素被移除。</p>
+<p>​	4.清空集合：<strong>集合.clear()</strong>,直接清空集合。</p>
+<p>​	5.取两个集合的差集：**集合1.difference(集合2)**，功能是取出集合1和集合2的差集(集合1有而集合2没有)，结果得到一个新集合，集合1和集合2不变</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">set1=&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125; </span><br><span class="line">set2=&#123;<span class="number">1</span>,<span class="number">5</span>,<span class="number">6</span>&#125;</span><br><span class="line">set3=set1.difference(set2)</span><br><span class="line"><span class="built_in">print</span>(set3) <span class="comment">#&#123;2,3&#125;</span></span><br><span class="line"><span class="built_in">print</span>(set1)	<span class="comment">#&#123;1,2,3&#125;</span></span><br><span class="line"><span class="built_in">print</span>(set2) <span class="comment">#&#123;1,5,6&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>​	6.消除两集合的差集：**集合1.difference_update(集合2)**，对比集合1和集合2，在集合1内，删除和集合2相同的元素，结果集合1被修改，集合2不变。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">set1=&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125; </span><br><span class="line">set2=&#123;<span class="number">1</span>,<span class="number">5</span>,<span class="number">6</span>&#125;</span><br><span class="line">set1.difference_update(set2)</span><br><span class="line"><span class="built_in">print</span>(set1)	<span class="comment">#&#123;2,3&#125;</span></span><br><span class="line"><span class="built_in">print</span>(set2) <span class="comment">#&#123;1,5,6&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>​	7.两个集合合并成一个:**集合1.union(集合2)**，将集合1和集合2组合成新集合，结果得到新集合，集合1和集合2不变。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">set1=&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125; </span><br><span class="line">set2=&#123;<span class="number">1</span>,<span class="number">5</span>,<span class="number">6</span>&#125;</span><br><span class="line">set3=set1.union(set2)</span><br><span class="line"><span class="built_in">print</span>(set3) <span class="comment">#&#123;1,2,3,5,6&#125;</span></span><br><span class="line"><span class="built_in">print</span>(set1)	<span class="comment">#&#123;1,2,3&#125;</span></span><br><span class="line"><span class="built_in">print</span>(set2) <span class="comment">#&#123;1,5,6&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>​	8.统计集合元素数量：len(集合)</p>
+<p>​	9.集合的遍历：不支持下标索引，不能适用while循环，可以使用for循环。</p>
+<h5 id="数据容器-dict-字典-映射"><a href="#数据容器-dict-字典-映射" class="headerlink" title="数据容器:dict(字典,映射)"></a>数据容器:dict(字典,映射)</h5><p>​	通过key去找到对应的value(例如通过学生姓名检索学生的成绩)</p>
+<p>​	字典的定义，同样使用{},不过存储的元素是一个个的:键值对，如下语法</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 定义字典字面量</span></span><br><span class="line">&#123;key:value,key:value,.......,key:value&#125;</span><br><span class="line"><span class="comment"># 定义字典变量</span></span><br><span class="line">my_dict=&#123;key:value,key:value,.......,key:value&#125;</span><br><span class="line"><span class="comment"># 定义空字典</span></span><br><span class="line">my_dict=&#123;&#125;</span><br><span class="line">mydict = <span class="built_in">dict</span>()</span><br></pre></td></tr></table></figure>
+
+<p>​	定义重复key的字典(<strong>错×</strong>，后者覆盖前者)</p>
+<h5 id="数据容器的通用操作"><a href="#数据容器的通用操作" class="headerlink" title="数据容器的通用操作"></a>数据容器的通用操作</h5><p>​	</p>
+<p>​	</p>
+<h3 id="3-大数据分析PySpark"><a href="#3-大数据分析PySpark" class="headerlink" title="3.大数据分析PySpark"></a>3.大数据分析PySpark</h3>]]></content>
       <categories>
-        <category>Java基础</category>
+        <category>Python</category>
       </categories>
       <tags>
-        <tag>java</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -2409,6 +2426,24 @@
       <tags>
         <tag>java</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2024/01/08/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.<br>&lt; !–more–&gt;</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
   </entry>
   <entry>
     <title>GUI图形化用户界面</title>
@@ -2535,34 +2570,6 @@
       </tags>
   </entry>
   <entry>
-    <title>JDK的安装与下载</title>
-    <url>/2024/01/11/java%E5%9F%BA%E7%A1%80-JDK%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%B8%8B%E8%BD%BD/</url>
-    <content><![CDATA[<h1 id="JDK的安装与下载"><a href="#JDK的安装与下载" class="headerlink" title="JDK的安装与下载"></a>JDK的安装与下载</h1><h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><ol>
-<li>网址 <a href="http://www.oracle.com/">www.oracle.com</a>  ,找到Products -&gt; Hardware and Software -&gt; Java-&gt;Download Java -&gt;Java archive（历史版本）&#x2F; Java Downloads(最新版本)-&gt;Windows系统下的 x64 Installer-&gt;点击下载</li>
-</ol>
-<h4 id="安装："><a href="#安装：" class="headerlink" title="安装："></a>安装：</h4><ol>
-<li><p>双击打开 点击下一步</p>
-<p><img src="/../images/%E5%AE%89%E8%A3%85001.png"></p>
-</li>
-<li><p>选择更改安装路径(安装路径不要有中文，空格，和特殊符号)</p>
-<p><img src="/../images/%E5%AE%89%E8%A3%85002.png"></p>
-</li>
-<li><p>安装成功,点击关闭</p>
-<p><img src="/../images/%E5%AE%89%E8%A3%85003.png"></p>
-</li>
-<li><p>JDK的安装目录及解释</p>
-<p><img src="/../images/%E5%AE%89%E8%A3%85004.png"></p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>StringBuilder</title>
     <url>/2024/02/05/java%E5%9F%BA%E7%A1%80-StringBuilder/</url>
     <content><![CDATA[<h1 id="StringBuilder"><a href="#StringBuilder" class="headerlink" title="StringBuilder"></a><strong>StringBuilder</strong></h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">    String s=<span class="string">&quot;&quot;</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">1000000</span>;i++)&#123;</span><br><span class="line">        s=s+<span class="string">&quot;abc&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println(s);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//数据量较大时，字符串拼接耗时长</span></span><br></pre></td></tr></table></figure>
@@ -2616,6 +2623,34 @@
 <p>使用StringBuilder的场景：</p>
 <p>​	1.字符串的拼接</p>
 <p>​	2.字符串的反转</p>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JDK的安装与下载</title>
+    <url>/2024/01/11/java%E5%9F%BA%E7%A1%80-JDK%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%B8%8B%E8%BD%BD/</url>
+    <content><![CDATA[<h1 id="JDK的安装与下载"><a href="#JDK的安装与下载" class="headerlink" title="JDK的安装与下载"></a>JDK的安装与下载</h1><h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><ol>
+<li>网址 <a href="http://www.oracle.com/">www.oracle.com</a>  ,找到Products -&gt; Hardware and Software -&gt; Java-&gt;Download Java -&gt;Java archive（历史版本）&#x2F; Java Downloads(最新版本)-&gt;Windows系统下的 x64 Installer-&gt;点击下载</li>
+</ol>
+<h4 id="安装："><a href="#安装：" class="headerlink" title="安装："></a>安装：</h4><ol>
+<li><p>双击打开 点击下一步</p>
+<p><img src="/../images/%E5%AE%89%E8%A3%85001.png"></p>
+</li>
+<li><p>选择更改安装路径(安装路径不要有中文，空格，和特殊符号)</p>
+<p><img src="/../images/%E5%AE%89%E8%A3%85002.png"></p>
+</li>
+<li><p>安装成功,点击关闭</p>
+<p><img src="/../images/%E5%AE%89%E8%A3%85003.png"></p>
+</li>
+<li><p>JDK的安装目录及解释</p>
+<p><img src="/../images/%E5%AE%89%E8%A3%85004.png"></p>
+</li>
+</ol>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -2699,6 +2734,33 @@
 
 <p>​     <strong>if-格式3</strong>:(多条件判断)</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(关系表达式)&#123;</span><br><span class="line">	语句体<span class="number">1</span>;</span><br><span class="line"> &#125;<span class="keyword">else</span> <span class="keyword">if</span>&#123;</span><br><span class="line">	语句体<span class="number">2</span>;</span><br><span class="line"> &#125;</span><br><span class="line">.....</span><br><span class="line"> <span class="keyword">else</span>&#123;</span><br><span class="line">     语句体n+<span class="number">1</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>分支语句-switch</title>
+    <url>/2024/01/17/java-Switch%E8%AF%AD%E5%8F%A5/</url>
+    <content><![CDATA[<h1 id="Switch的语句格式"><a href="#Switch的语句格式" class="headerlink" title="Switch的语句格式"></a>Switch的语句格式</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">switch</span>(表达式) &#123;					<span class="comment">//	表达式的值==case的值</span></span><br><span class="line">	<span class="keyword">case</span> 值<span class="number">1</span>：					<span class="comment">//表达式：取值为byte,short,int,char,枚举(jdk5以后)，String(jdk7以后)</span></span><br><span class="line">		语句体<span class="number">1</span>;				   <span class="comment">// case后面的值只能表示字面量，不能是变量。</span></span><br><span class="line">        <span class="keyword">break</span>;					 <span class="comment">//当switch里面的内容得到一个结果，可以将switch赋值给一个变量</span></span><br><span class="line">    <span class="keyword">case</span> 值<span class="number">2</span>：</span><br><span class="line">		语句体<span class="number">2</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    ......</span><br><span class="line">     <span class="keyword">default</span>:</span><br><span class="line">        语句体n+<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li><p>default的位置和省略</p>
+<p>位置：default位置随意，习惯写在最下面。</p>
+<p>省略：default可以省略，语法不出差，但不建议。</p>
+</li>
+<li><p>case穿透</p>
+<p>省略break会引起case穿透。</p>
+<p>使用场景：多个case的语句体重复了，那么我们考虑利用case穿透去简化代码。</p>
+</li>
+<li><p>switch的新特性(jdk12)</p>
+<p><strong>case 值1 -&gt;{</strong>	<em>&#x2F;&#x2F;消除了case穿透，大括号里面<strong>只有一行代码</strong>时，可以省略大括号</em></p>
+<p><strong>}</strong></p>
+</li>
 </ol>
 ]]></content>
       <categories>
@@ -3009,6 +3071,48 @@
       </tags>
   </entry>
   <entry>
+    <title>方法的相关介绍</title>
+    <url>/2024/01/21/java%E5%9F%BA%E7%A1%80-%E6%96%B9%E6%B3%95%E7%9A%84%E7%9B%B8%E5%85%B3%E4%BB%8B%E7%BB%8D/</url>
+    <content><![CDATA[<h1 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h1><ol>
+<li><p>什么是方法</p>
+<p>方法：程序中最小的执行单元。</p>
+<p>场景：重复的代码，具有 独立功能的代码可以抽取到方法中。</p>
+<p>作用：提高代码的复用性&amp;提高代码的可维护性。</p>
+</li>
+<li><p>方法的格式</p>
+<p>方法不调用就执行；</p>
+<p>方法间是平级关系，不能互相嵌套定义；</p>
+<p>方法的编写顺序和执行顺序无关(与调用顺序有关)；</p>
+<p>方法的返回值类型是void，表示该方法没有返回值，如果要编写return，后面不能跟具体的数据。</p>
+<p>return语句的下面，不能编写代码，因为永远执行不到，属于无效代码。</p>
+<p>​	方法没有返回值：可以省略不写，如果书写，表示结束方法。</p>
+<p>​	方法有返回值：必须要写，表示结束方法<strong>和</strong>返回结果。</p>
+<p>方法的定义：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//1.最简单的方法定义和调用格式</span></span><br><span class="line"><span class="comment">//定义</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> 方法名()&#123;</span><br><span class="line">    方法体(就是打包起来的代码)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//掉头</span></span><br><span class="line">方法名();</span><br><span class="line"><span class="comment">//2带参的方法定义和调用格式</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> 方法名(参数<span class="number">1</span>,参数<span class="number">2</span>,.....)&#123;</span><br><span class="line">    方法体</span><br><span class="line">&#125;</span><br><span class="line">方法名(实参)</span><br><span class="line"><span class="comment">//方法调用时，参数的数量与类型必须与方法定义中小括号里面的变量一一对应，否则程序会报错</span></span><br><span class="line"><span class="comment">//3.带返回值方法的定义和调用</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> 返回值类型 方法名(参数)&#123;</span><br><span class="line">    方法体;</span><br><span class="line">    <span class="keyword">return</span> 返回值;</span><br><span class="line">&#125;</span><br><span class="line">调用：</span><br><span class="line">    直接调用：方法名(实参);</span><br><span class="line">    赋值调用：整数类型 变量名 = 方法名(实参);</span><br><span class="line">    输出调用：System.out.println(方法名(实参));</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>方法的重载</p>
+<p>概念：在<strong>同一个类</strong>中，定义了多个<strong>同名的方法</strong>，这些同名的方法具有<strong>同种的功能</strong>，每一个方法具有<strong>不同的参数类型</strong>或<strong>参数个数</strong>(个数，类型，顺序)，这些同名的方法，就构成了重载关系，与返回值无关。</p>
+</li>
+<li><p>方法的内存</p>
+<p>方法被调用之后就会进栈执行</p>
+<p><strong>基本数据类型&amp;引用数据类型</strong>：</p>
+<p>​	基本数据类型变量中存储的是真实的数据。（数据值是存储在自己的空间中）</p>
+<p>​	只要是new出来的都是引用数据类型(数组)  （数据值存储在其他空间，自己空间存储的是地址值）</p>
+<p><img src="/../images/Screenshot_20240122_195710.jpg"></p>
+</li>
+</ol>
+<p>​	<strong>方法传递基本数据类型的内存原理</strong></p>
+<p>​	传递基本数据类型(4类8种)时，传递的是真实的数据，形参的改变，不影响实际参数的值。</p>
+<p>​	传递引用数据类型(int[] arr)时，传递的是地址值，形参的改变 ，影响的是地址的值。</p>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>数组相关介绍</title>
     <url>/2024/01/20/java%E5%9F%BA%E7%A1%80-%E6%95%B0%E7%BB%84%E7%9A%84%E6%A6%82%E8%BF%B0&amp;%E9%9D%99%E6%80%81%E5%88%9D%E5%A7%8B%E5%8C%96/</url>
     <content><![CDATA[<h1 id="1-数组的概述"><a href="#1-数组的概述" class="headerlink" title="1. 数组的概述"></a>1. 数组的概述</h1><p>数组是指一种容器，可以用来存储<strong>同种类型</strong>的多个值，数组容器再存储数据的时候，需要结合隐式转换考虑。</p>
@@ -3094,50 +3198,8 @@
       </tags>
   </entry>
   <entry>
-    <title>方法的相关介绍</title>
-    <url>/2024/01/21/java%E5%9F%BA%E7%A1%80-%E6%96%B9%E6%B3%95%E7%9A%84%E7%9B%B8%E5%85%B3%E4%BB%8B%E7%BB%8D/</url>
-    <content><![CDATA[<h1 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h1><ol>
-<li><p>什么是方法</p>
-<p>方法：程序中最小的执行单元。</p>
-<p>场景：重复的代码，具有 独立功能的代码可以抽取到方法中。</p>
-<p>作用：提高代码的复用性&amp;提高代码的可维护性。</p>
-</li>
-<li><p>方法的格式</p>
-<p>方法不调用就执行；</p>
-<p>方法间是平级关系，不能互相嵌套定义；</p>
-<p>方法的编写顺序和执行顺序无关(与调用顺序有关)；</p>
-<p>方法的返回值类型是void，表示该方法没有返回值，如果要编写return，后面不能跟具体的数据。</p>
-<p>return语句的下面，不能编写代码，因为永远执行不到，属于无效代码。</p>
-<p>​	方法没有返回值：可以省略不写，如果书写，表示结束方法。</p>
-<p>​	方法有返回值：必须要写，表示结束方法<strong>和</strong>返回结果。</p>
-<p>方法的定义：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//1.最简单的方法定义和调用格式</span></span><br><span class="line"><span class="comment">//定义</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> 方法名()&#123;</span><br><span class="line">    方法体(就是打包起来的代码)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//掉头</span></span><br><span class="line">方法名();</span><br><span class="line"><span class="comment">//2带参的方法定义和调用格式</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> 方法名(参数<span class="number">1</span>,参数<span class="number">2</span>,.....)&#123;</span><br><span class="line">    方法体</span><br><span class="line">&#125;</span><br><span class="line">方法名(实参)</span><br><span class="line"><span class="comment">//方法调用时，参数的数量与类型必须与方法定义中小括号里面的变量一一对应，否则程序会报错</span></span><br><span class="line"><span class="comment">//3.带返回值方法的定义和调用</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> 返回值类型 方法名(参数)&#123;</span><br><span class="line">    方法体;</span><br><span class="line">    <span class="keyword">return</span> 返回值;</span><br><span class="line">&#125;</span><br><span class="line">调用：</span><br><span class="line">    直接调用：方法名(实参);</span><br><span class="line">    赋值调用：整数类型 变量名 = 方法名(实参);</span><br><span class="line">    输出调用：System.out.println(方法名(实参));</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>方法的重载</p>
-<p>概念：在<strong>同一个类</strong>中，定义了多个<strong>同名的方法</strong>，这些同名的方法具有<strong>同种的功能</strong>，每一个方法具有<strong>不同的参数类型</strong>或<strong>参数个数</strong>(个数，类型，顺序)，这些同名的方法，就构成了重载关系，与返回值无关。</p>
-</li>
-<li><p>方法的内存</p>
-<p>方法被调用之后就会进栈执行</p>
-<p><strong>基本数据类型&amp;引用数据类型</strong>：</p>
-<p>​	基本数据类型变量中存储的是真实的数据。（数据值是存储在自己的空间中）</p>
-<p>​	只要是new出来的都是引用数据类型(数组)  （数据值存储在其他空间，自己空间存储的是地址值）</p>
-<p><img src="/../images/Screenshot_20240122_195710.jpg"></p>
-</li>
-</ol>
-<p>​	<strong>方法传递基本数据类型的内存原理</strong></p>
-<p>​	传递基本数据类型(4类8种)时，传递的是真实的数据，形参的改变，不影响实际参数的值。</p>
-<p>​	传递引用数据类型(int[] arr)时，传递的是地址值，形参的改变 ，影响的是地址的值。</p>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>无限循环和跳转控制语句</title>
-    <url>/2024/01/19/java%E5%9F%BA%E7%A1%80-%E6%97%A0%E9%99%90%E5%BE%AA%E7%8E%AF/</url>
+    <url>/2024/01/22/java%E5%9F%BA%E7%A1%80-%E6%97%A0%E9%99%90%E5%BE%AA%E7%8E%AF%E5%92%8C%E8%B7%B3%E8%BD%AC%E6%8E%A7%E5%88%B6%E8%AF%AD%E5%8F%A5/</url>
     <content><![CDATA[<h1 id="无限循环"><a href="#无限循环" class="headerlink" title="无限循环"></a>无限循环</h1><p>格式：</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(;;)&#123;</span><br><span class="line">	System.out.println(<span class="string">&quot;学习&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">while</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">	System.out.println(<span class="string">&quot;学习&quot;</span>);<span class="comment">//常用</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">do</span>&#123;</span><br><span class="line">	System.out.println(<span class="string">&quot;学习&quot;</span>);</span><br><span class="line">&#125;<span class="keyword">while</span>(<span class="literal">true</span>)</span><br></pre></td></tr></table></figure>
 
@@ -3157,7 +3219,7 @@
   </entry>
   <entry>
     <title>无限循环和跳转控制语句</title>
-    <url>/2024/01/22/java%E5%9F%BA%E7%A1%80-%E6%97%A0%E9%99%90%E5%BE%AA%E7%8E%AF%E5%92%8C%E8%B7%B3%E8%BD%AC%E6%8E%A7%E5%88%B6%E8%AF%AD%E5%8F%A5/</url>
+    <url>/2024/01/19/java%E5%9F%BA%E7%A1%80-%E6%97%A0%E9%99%90%E5%BE%AA%E7%8E%AF/</url>
     <content><![CDATA[<h1 id="无限循环"><a href="#无限循环" class="headerlink" title="无限循环"></a>无限循环</h1><p>格式：</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(;;)&#123;</span><br><span class="line">	System.out.println(<span class="string">&quot;学习&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">while</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">	System.out.println(<span class="string">&quot;学习&quot;</span>);<span class="comment">//常用</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">do</span>&#123;</span><br><span class="line">	System.out.println(<span class="string">&quot;学习&quot;</span>);</span><br><span class="line">&#125;<span class="keyword">while</span>(<span class="literal">true</span>)</span><br></pre></td></tr></table></figure>
 
@@ -3244,6 +3306,100 @@
     <content><![CDATA[<p>loop:while (true) {<br>Scanner sc &#x3D; new Scanner(System.in);<br>System.out.println(“请输入您的选择:”);<br>String result &#x3D; sc.next();<br>switch (result){<br>    case “5”-&gt; {<br>                    System.out.println(“退出”);<br>                    break loop;<br>                }<br>}</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">停止虚拟机运行</span><br><span class="line"></span><br><span class="line">```java</span><br><span class="line">while (true) &#123;</span><br><span class="line">Scanner sc = new Scanner(System.in);</span><br><span class="line">System.out.println(&quot;请输入您的选择:&quot;);</span><br><span class="line">String result = sc.next();</span><br><span class="line">switch (result)&#123;</span><br><span class="line">	case &quot;5&quot;-&gt; &#123;</span><br><span class="line">                    System.out.println(&quot;退出&quot;);</span><br><span class="line">                    System.exit(0);</span><br><span class="line">                &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>集合ArrayList</title>
+    <url>/2024/02/10/java%E5%9F%BA%E7%A1%80-%E9%9B%86%E5%90%88ArrayList/</url>
+    <content><![CDATA[<h1 id="集合ArrayList"><a href="#集合ArrayList" class="headerlink" title="集合ArrayList"></a>集合ArrayList</h1><p>长度可变的容器(自动扩容)</p>
+<p>集合不能<strong>直接</strong>存基本数据类型–》包装类</p>
+<ol>
+<li><p>为什么要有集合?</p>
+<p>ArrayList:</p>
+<p>构造方法：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">ArrayList&lt;泛型&gt; list = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;可省略&gt;();</span><br><span class="line"><span class="comment">//此时我们创建的是ArrayList的对象，而ArrayList是Java已经写好的一个类，这个类在底层做了一些处理打印对象不是地址值，而是集合中存储数据的内容，在展示的时候会拿[]把所有的数据进行包裹。</span></span><br></pre></td></tr></table></figure>
+
+<p>成员方法：</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>boolean add(E,e)</td>
+<td>添加元素，返回值表示是否添加成功</td>
+</tr>
+<tr>
+<td>boolean remove(E,e)</td>
+<td>删除指定元素，返回值表示是否删除成功</td>
+</tr>
+<tr>
+<td>E remove(int index)</td>
+<td>删除指定索引的元素，返回被删除元素</td>
+</tr>
+<tr>
+<td>E set(int index,E,e)</td>
+<td>修改指定索引下的元素，返回原来的元素</td>
+</tr>
+<tr>
+<td>E get(int index)</td>
+<td>获取指定索引的元素</td>
+</tr>
+<tr>
+<td>int size()</td>
+<td>集合的长度，也就是集合中元素的个数</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>泛型：限定集合中存储数据的类型，集合不能<strong>直接存储</strong>基本数据类型，可以存储引用数据类型。</p>
+</li>
+<li><p>基本数据类型对应的包装类</p>
+<table>
+<thead>
+<tr>
+<th align="center">byte</th>
+<th align="center">Byte</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">short</td>
+<td align="center">Short</td>
+</tr>
+<tr>
+<td align="center">char</td>
+<td align="center"><strong>Character</strong></td>
+</tr>
+<tr>
+<td align="center">int</td>
+<td align="center"><strong>Integer</strong></td>
+</tr>
+<tr>
+<td align="center">long</td>
+<td align="center">Long</td>
+</tr>
+<tr>
+<td align="center">float</td>
+<td align="center">Float</td>
+</tr>
+<tr>
+<td align="center">boolean</td>
+<td align="center">Boolean</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>集合返回多个对象</p>
+<p>技巧：如果我们要返回多个数据，可以把这些数据先放到一个容器当中，再把容器返回(集合&#x2F;数组)</p>
+</li>
+<li></li>
+</ol>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -3399,91 +3555,61 @@
       </tags>
   </entry>
   <entry>
-    <title>集合ArrayList</title>
-    <url>/2024/02/10/java%E5%9F%BA%E7%A1%80-%E9%9B%86%E5%90%88ArrayList/</url>
-    <content><![CDATA[<h1 id="集合ArrayList"><a href="#集合ArrayList" class="headerlink" title="集合ArrayList"></a>集合ArrayList</h1><p>长度可变的容器(自动扩容)</p>
-<p>集合不能<strong>直接</strong>存基本数据类型–》包装类</p>
-<ol>
-<li><p>为什么要有集合?</p>
-<p>ArrayList:</p>
-<p>构造方法：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">ArrayList&lt;泛型&gt; list = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;可省略&gt;();</span><br><span class="line"><span class="comment">//此时我们创建的是ArrayList的对象，而ArrayList是Java已经写好的一个类，这个类在底层做了一些处理打印对象不是地址值，而是集合中存储数据的内容，在展示的时候会拿[]把所有的数据进行包裹。</span></span><br></pre></td></tr></table></figure>
+    <title>面向对象进阶-内部类</title>
+    <url>/2024/02/23/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E5%86%85%E9%83%A8%E7%B1%BB/</url>
+    <content><![CDATA[<p>内部类–是类的五大成员之一(属性，方法，构造方法，内部类)，在一个类的里面，在定义一个类。</p>
+<p><strong>应用场景</strong>：</p>
+<p>​	需求：写一个javabean类描述汽车</p>
+<p>​	属性：汽车的品牌，车龄，颜色，发动机的品牌，使用年限。(汽车和发动机属于两个类，又有联系)</p>
+<p>内部类表示的事物是外部类的一部分，内部类单独出现没有任何意义</p>
+<p><strong>访问特点</strong>：</p>
+<p>​	内部类可以直接访问外部类的成员，包括私有&#x2F;&#x2F;Outer.this.变量名</p>
+<p>​	外部类要访问内部类的成员，必须创建对象</p>
+<p><strong>成员内部类</strong>：</p>
+<p>​	如何书写？：写在成员位置(类中方法外)，属于外部类的成员。</p>
+<p>​				成员内部类可以被一些修饰符所修饰，比如：private(本类)，默认(本包)，protected(本包其他类，其他包的子类)，public(所有地方)，static(静态的)等。</p>
+<p>​				在成员内部类里面，JDK16之前不能定义<strong>静态变量</strong>，JDK16开始才可以定义<strong>静态变量</strong>。</p>
+<p>​	如何创建成员内部类的对象？：</p>
+<p>​			 <strong>方式一</strong>：在外部类中编写方法，对外提供内部类的对象</p>
+<p>​			&#x2F;&#x2F;使用场景：用在private修饰内部类的</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Outer</span>&#123;</span><br><span class="line">	String name;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">class</span> <span class="title class_">Inner</span>&#123;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">public</span> Inner <span class="title function_">getInstance</span><span class="params">()</span>&#123;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//测试类</span></span><br><span class="line"><span class="type">Outer</span> <span class="variable">o</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Outer</span>();</span><br><span class="line"><span class="type">Object</span> <span class="variable">ob</span> <span class="operator">=</span> o.getInstance();<span class="comment">//获取内部类对象</span></span><br></pre></td></tr></table></figure>
 
-<p>成员方法：</p>
-<table>
-<thead>
-<tr>
-<th>方法名</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>boolean add(E,e)</td>
-<td>添加元素，返回值表示是否添加成功</td>
-</tr>
-<tr>
-<td>boolean remove(E,e)</td>
-<td>删除指定元素，返回值表示是否删除成功</td>
-</tr>
-<tr>
-<td>E remove(int index)</td>
-<td>删除指定索引的元素，返回被删除元素</td>
-</tr>
-<tr>
-<td>E set(int index,E,e)</td>
-<td>修改指定索引下的元素，返回原来的元素</td>
-</tr>
-<tr>
-<td>E get(int index)</td>
-<td>获取指定索引的元素</td>
-</tr>
-<tr>
-<td>int size()</td>
-<td>集合的长度，也就是集合中元素的个数</td>
-</tr>
-</tbody></table>
-</li>
-<li><p>泛型：限定集合中存储数据的类型，集合不能<strong>直接存储</strong>基本数据类型，可以存储引用数据类型。</p>
-</li>
-<li><p>基本数据类型对应的包装类</p>
-<table>
-<thead>
-<tr>
-<th align="center">byte</th>
-<th align="center">Byte</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">short</td>
-<td align="center">Short</td>
-</tr>
-<tr>
-<td align="center">char</td>
-<td align="center"><strong>Character</strong></td>
-</tr>
-<tr>
-<td align="center">int</td>
-<td align="center"><strong>Integer</strong></td>
-</tr>
-<tr>
-<td align="center">long</td>
-<td align="center">Long</td>
-</tr>
-<tr>
-<td align="center">float</td>
-<td align="center">Float</td>
-</tr>
-<tr>
-<td align="center">boolean</td>
-<td align="center">Boolean</td>
-</tr>
-</tbody></table>
-</li>
-<li><p>集合返回多个对象</p>
-<p>技巧：如果我们要返回多个数据，可以把这些数据先放到一个容器当中，再把容器返回(集合&#x2F;数组)</p>
-</li>
-<li></li>
-</ol>
+<p>​			 <strong>方式二</strong>：直接创建格式：外部类名.内部类名  对象名 &#x3D; 外部类对象.内部类对象；范例：Outer.Inner oi &#x3D; new Outer().new Inner();	   &#x2F;&#x2F;使用场景：不是用private修饰内部类的</p>
+<p><strong>静态内部类</strong>：静态内部类只能访问外部类中的静态变量和静态方法，如果想要访问非静态的需要创建外部类的对象</p>
+<p>​	<strong>创建静态内部类对象的格式</strong>：外部类名.内部类名  <em>对象</em>名 &#x3D;  new  外部类名.内部类名( );</p>
+<p>​	<strong>调用非静态方法的格式</strong>：先创建对象，用<em>对象</em>调用</p>
+<p>​	<strong>调用静态方法的格式</strong>：外部类名.内部类名.方法名();</p>
+<p>​	静态内部类是一种特殊的成员内部类</p>
+<p><strong>局部内部类</strong>：1.将内部类定义在方法里面就叫做局部内部类，类似于方法里面的局部变量，</p>
+<p>​		       2.外界是无法直接使用，需要在方法内部创建对象并使用。</p>
+<p>​		       3.该类可以直接访问外部类的成员，也可以访问方法内的局部变量</p>
+<p><strong>匿名内部类</strong>(重点)：本质就是隐藏了名字的内部类，可以写在成员位置，也可以写在局部位置</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//格式</span></span><br><span class="line"><span class="keyword">new</span> 类名或接口名()&#123;</span><br><span class="line">    重写方法;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">//包含了继承或实现，方法重写，创建对象</span></span><br><span class="line"><span class="comment">//整体就是一个类的子类对象或者接口的实现类对象</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="/../images/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E5%86%85%E9%83%A8%E7%B1%BB/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240225202806.png" alt="接口"></p>
+<p>使用场景：当方法的参数是接口或类时，以接口为例，可以传递这个接口的实现类对象，如果实现类只要使用一次，就可以用匿名内部类简化代码。</p>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>面向对象进阶-抽象类和抽象方法</title>
+    <url>/2024/02/23/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E6%8A%BD%E8%B1%A1%E7%B1%BB%E5%92%8C%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<p>抽象类：抽象方法所在的类叫做抽象类，子类必须强制重写，否则子类代码直接报错</p>
+<p>定义格式：public abstract class 类名{}</p>
+<p>抽象方法：将共性的行为抽取到父类之后，由于每一个子类执行的内容是不一样，所以，<strong>在父类中不能确定具体的方法体</strong>，该方法就可以定义为抽象方法。</p>
+<p>定义格式：public abstract 返回值类型 方法名(参数列表)；alt+回车</p>
+<p>注意事项：1.抽象类不能实例化-不能创建对象</p>
+<p>​		   2.抽象类中不一定有抽象方法，但是抽象方法的类一定是抽象类</p>
+<p>​		   3.可能有构造方法</p>
+<p>​		   4.<strong>抽象类的子类</strong></p>
+<p>​				<strong>要么重写抽象类中的所有抽象方法</strong>(推荐使用)</p>
+<p>​				要么是抽象类</p>
+<p>意义：强制子类必须按照统一格式书写</p>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -3586,70 +3712,6 @@
 <p>​	局部变量：方法中的变量，（栈里面的局部变量没有默认值，是要给个初始化值才能用的）</p>
 </li>
 </ol>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>面向对象进阶-内部类</title>
-    <url>/2024/02/23/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E5%86%85%E9%83%A8%E7%B1%BB/</url>
-    <content><![CDATA[<p>内部类–是类的五大成员之一(属性，方法，构造方法，内部类)，在一个类的里面，在定义一个类。</p>
-<p><strong>应用场景</strong>：</p>
-<p>​	需求：写一个javabean类描述汽车</p>
-<p>​	属性：汽车的品牌，车龄，颜色，发动机的品牌，使用年限。(汽车和发动机属于两个类，又有联系)</p>
-<p>内部类表示的事物是外部类的一部分，内部类单独出现没有任何意义</p>
-<p><strong>访问特点</strong>：</p>
-<p>​	内部类可以直接访问外部类的成员，包括私有&#x2F;&#x2F;Outer.this.变量名</p>
-<p>​	外部类要访问内部类的成员，必须创建对象</p>
-<p><strong>成员内部类</strong>：</p>
-<p>​	如何书写？：写在成员位置(类中方法外)，属于外部类的成员。</p>
-<p>​				成员内部类可以被一些修饰符所修饰，比如：private(本类)，默认(本包)，protected(本包其他类，其他包的子类)，public(所有地方)，static(静态的)等。</p>
-<p>​				在成员内部类里面，JDK16之前不能定义<strong>静态变量</strong>，JDK16开始才可以定义<strong>静态变量</strong>。</p>
-<p>​	如何创建成员内部类的对象？：</p>
-<p>​			 <strong>方式一</strong>：在外部类中编写方法，对外提供内部类的对象</p>
-<p>​			&#x2F;&#x2F;使用场景：用在private修饰内部类的</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Outer</span>&#123;</span><br><span class="line">	String name;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">class</span> <span class="title class_">Inner</span>&#123;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">public</span> Inner <span class="title function_">getInstance</span><span class="params">()</span>&#123;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//测试类</span></span><br><span class="line"><span class="type">Outer</span> <span class="variable">o</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Outer</span>();</span><br><span class="line"><span class="type">Object</span> <span class="variable">ob</span> <span class="operator">=</span> o.getInstance();<span class="comment">//获取内部类对象</span></span><br></pre></td></tr></table></figure>
-
-<p>​			 <strong>方式二</strong>：直接创建格式：外部类名.内部类名  对象名 &#x3D; 外部类对象.内部类对象；范例：Outer.Inner oi &#x3D; new Outer().new Inner();	   &#x2F;&#x2F;使用场景：不是用private修饰内部类的</p>
-<p><strong>静态内部类</strong>：静态内部类只能访问外部类中的静态变量和静态方法，如果想要访问非静态的需要创建外部类的对象</p>
-<p>​	<strong>创建静态内部类对象的格式</strong>：外部类名.内部类名  <em>对象</em>名 &#x3D;  new  外部类名.内部类名( );</p>
-<p>​	<strong>调用非静态方法的格式</strong>：先创建对象，用<em>对象</em>调用</p>
-<p>​	<strong>调用静态方法的格式</strong>：外部类名.内部类名.方法名();</p>
-<p>​	静态内部类是一种特殊的成员内部类</p>
-<p><strong>局部内部类</strong>：1.将内部类定义在方法里面就叫做局部内部类，类似于方法里面的局部变量，</p>
-<p>​		       2.外界是无法直接使用，需要在方法内部创建对象并使用。</p>
-<p>​		       3.该类可以直接访问外部类的成员，也可以访问方法内的局部变量</p>
-<p><strong>匿名内部类</strong>(重点)：本质就是隐藏了名字的内部类，可以写在成员位置，也可以写在局部位置</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//格式</span></span><br><span class="line"><span class="keyword">new</span> 类名或接口名()&#123;</span><br><span class="line">    重写方法;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">//包含了继承或实现，方法重写，创建对象</span></span><br><span class="line"><span class="comment">//整体就是一个类的子类对象或者接口的实现类对象</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="/../images/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E5%86%85%E9%83%A8%E7%B1%BB/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240225202806.png" alt="接口"></p>
-<p>使用场景：当方法的参数是接口或类时，以接口为例，可以传递这个接口的实现类对象，如果实现类只要使用一次，就可以用匿名内部类简化代码。</p>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>面向对象进阶-抽象类和抽象方法</title>
-    <url>/2024/02/23/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E6%8A%BD%E8%B1%A1%E7%B1%BB%E5%92%8C%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<p>抽象类：抽象方法所在的类叫做抽象类，子类必须强制重写，否则子类代码直接报错</p>
-<p>定义格式：public abstract class 类名{}</p>
-<p>抽象方法：将共性的行为抽取到父类之后，由于每一个子类执行的内容是不一样，所以，<strong>在父类中不能确定具体的方法体</strong>，该方法就可以定义为抽象方法。</p>
-<p>定义格式：public abstract 返回值类型 方法名(参数列表)；alt+回车</p>
-<p>注意事项：1.抽象类不能实例化-不能创建对象</p>
-<p>​		   2.抽象类中不一定有抽象方法，但是抽象方法的类一定是抽象类</p>
-<p>​		   3.可能有构造方法</p>
-<p>​		   4.<strong>抽象类的子类</strong></p>
-<p>​				<strong>要么重写抽象类中的所有抽象方法</strong>(推荐使用)</p>
-<p>​				要么是抽象类</p>
-<p>意义：强制子类必须按照统一格式书写</p>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -3903,19 +3965,6 @@
       </tags>
   </entry>
   <entry>
-    <title>大小写字母放进数组</title>
-    <url>/2024/01/23/%E5%A4%A7%E5%B0%8F%E5%86%99%E5%AD%97%E6%AF%8D%E6%94%BE%E8%BF%9B%E6%95%B0%E7%BB%84/</url>
-    <content><![CDATA[<h1 id="大小写字母都放进数组内"><a href="#大小写字母都放进数组内" class="headerlink" title="大小写字母都放进数组内"></a>大小写字母都放进数组内</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">char</span>[] array = <span class="keyword">new</span> <span class="title class_">char</span>[<span class="number">52</span>];<span class="comment">//26+26=52</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; array.length; i++) &#123;</span><br><span class="line">            <span class="type">int</span> <span class="variable">number3</span> <span class="operator">=</span> r.nextInt(<span class="number">9</span>);</span><br><span class="line">            <span class="keyword">if</span> (i &lt; array.length / <span class="number">2</span>) &#123;</span><br><span class="line">                array[i] = (<span class="type">char</span>) (<span class="number">97</span> + i);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                array[i] = (<span class="type">char</span>) (<span class="number">65</span> + j);</span><br><span class="line">                j++;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>经典算法思想</category>
-      </categories>
-      <tags>
-        <tag>算法思想</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Linux命令</title>
     <url>/2024/09/18/%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%9F%BA%E7%A1%80-Linux%E5%91%BD%E4%BB%A4/</url>
     <content><![CDATA[<p><strong>—–  有自觉才有自由   —–</strong></p>
@@ -4072,6 +4121,38 @@
       </tags>
   </entry>
   <entry>
+    <title>大小写字母放进数组</title>
+    <url>/2024/01/23/%E5%A4%A7%E5%B0%8F%E5%86%99%E5%AD%97%E6%AF%8D%E6%94%BE%E8%BF%9B%E6%95%B0%E7%BB%84/</url>
+    <content><![CDATA[<h1 id="大小写字母都放进数组内"><a href="#大小写字母都放进数组内" class="headerlink" title="大小写字母都放进数组内"></a>大小写字母都放进数组内</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">char</span>[] array = <span class="keyword">new</span> <span class="title class_">char</span>[<span class="number">52</span>];<span class="comment">//26+26=52</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; array.length; i++) &#123;</span><br><span class="line">            <span class="type">int</span> <span class="variable">number3</span> <span class="operator">=</span> r.nextInt(<span class="number">9</span>);</span><br><span class="line">            <span class="keyword">if</span> (i &lt; array.length / <span class="number">2</span>) &#123;</span><br><span class="line">                array[i] = (<span class="type">char</span>) (<span class="number">97</span> + i);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                array[i] = (<span class="type">char</span>) (<span class="number">65</span> + j);</span><br><span class="line">                j++;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>经典算法思想</category>
+      </categories>
+      <tags>
+        <tag>算法思想</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>把整数中的每一位都添加到数组中</title>
+    <url>/2024/01/23/%E6%8A%8A%E6%95%B4%E6%95%B0%E4%B8%AD%E7%9A%84%E6%AF%8F%E4%B8%80%E4%BD%8D%E9%83%BD%E6%B7%BB%E5%8A%A0%E5%88%B0%E6%95%B0%E7%BB%84%E4%B8%AD/</url>
+    <content><![CDATA[<h1 id="把整数中的每一位都添加到数组中"><a href="#把整数中的每一位都添加到数组中" class="headerlink" title="把整数中的每一位都添加到数组中"></a>把整数中的每一位都添加到数组中</h1><p>反向推导：</p>
+<ol>
+<li><p>计算数组的长度(新建数组)-定义数组-把整数上的每一位都添加到数组上</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="type">int</span>[] getInts(<span class="type">int</span> number) &#123;</span><br><span class="line">        <span class="type">int</span> temp= number;</span><br><span class="line">        <span class="comment">//1.1求数字的长度充当数组的长度</span></span><br><span class="line">        <span class="type">int</span> count=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (number !=<span class="number">0</span>)&#123;</span><br><span class="line">            number = number /<span class="number">10</span>;</span><br><span class="line">            count++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//1.2定义数组</span></span><br><span class="line">        <span class="type">int</span> [] array=<span class="keyword">new</span> <span class="title class_">int</span>[count];</span><br><span class="line">        <span class="comment">//1.3得到每一位</span></span><br><span class="line">        <span class="type">int</span> index= array.length-<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span>(temp!=<span class="number">0</span>)&#123;</span><br><span class="line">            <span class="type">int</span> ge=temp%<span class="number">10</span>;</span><br><span class="line">            temp=temp/<span class="number">10</span>;</span><br><span class="line">            array[index]=ge;</span><br><span class="line">            index--;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> array;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p>day07-TestDemo06</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>经典算法思想</category>
+      </categories>
+      <tags>
+        <tag>算法思想</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>endNode的使用</title>
     <url>/2024/09/08/%E5%B7%A5%E5%85%B7_endNode%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<p>1.endnode的下载和安装：</p>
@@ -4170,16 +4251,11 @@
       </tags>
   </entry>
   <entry>
-    <title>把整数中的每一位都添加到数组中</title>
-    <url>/2024/01/23/%E6%8A%8A%E6%95%B4%E6%95%B0%E4%B8%AD%E7%9A%84%E6%AF%8F%E4%B8%80%E4%BD%8D%E9%83%BD%E6%B7%BB%E5%8A%A0%E5%88%B0%E6%95%B0%E7%BB%84%E4%B8%AD/</url>
-    <content><![CDATA[<h1 id="把整数中的每一位都添加到数组中"><a href="#把整数中的每一位都添加到数组中" class="headerlink" title="把整数中的每一位都添加到数组中"></a>把整数中的每一位都添加到数组中</h1><p>反向推导：</p>
-<ol>
-<li><p>计算数组的长度(新建数组)-定义数组-把整数上的每一位都添加到数组上</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="type">int</span>[] getInts(<span class="type">int</span> number) &#123;</span><br><span class="line">        <span class="type">int</span> temp= number;</span><br><span class="line">        <span class="comment">//1.1求数字的长度充当数组的长度</span></span><br><span class="line">        <span class="type">int</span> count=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (number !=<span class="number">0</span>)&#123;</span><br><span class="line">            number = number /<span class="number">10</span>;</span><br><span class="line">            count++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//1.2定义数组</span></span><br><span class="line">        <span class="type">int</span> [] array=<span class="keyword">new</span> <span class="title class_">int</span>[count];</span><br><span class="line">        <span class="comment">//1.3得到每一位</span></span><br><span class="line">        <span class="type">int</span> index= array.length-<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span>(temp!=<span class="number">0</span>)&#123;</span><br><span class="line">            <span class="type">int</span> ge=temp%<span class="number">10</span>;</span><br><span class="line">            temp=temp/<span class="number">10</span>;</span><br><span class="line">            array[index]=ge;</span><br><span class="line">            index--;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> array;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+    <title>比较最值时提高效率(数组)</title>
+    <url>/2024/01/20/%E6%AF%94%E8%BE%83%E6%9C%80%E5%80%BC%E6%97%B6%E6%8F%90%E9%AB%98%E6%95%88%E7%8E%87(%E6%95%B0%E7%BB%84)/</url>
+    <content><![CDATA[<h1 id="数组循环比较最值时提高效率"><a href="#数组循环比较最值时提高效率" class="headerlink" title="数组循环比较最值时提高效率"></a>数组循环比较最值时提高效率</h1><p>循环中开始条件如果为0，那么第一次循环的时候是自己跟自己比了一下，对结果没有任何影响，但是效率偏低，为了提高效率，减少一次 循环的次数，循环开始的条件可以写1.</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> min=array[<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt; array.length; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (array[i]&lt;min)&#123;</span><br><span class="line">                min=array[i];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(min);</span><br></pre></td></tr></table></figure>
 
-<p>day07-TestDemo06</p>
-</li>
-</ol>
 ]]></content>
       <categories>
         <category>经典算法思想</category>
@@ -4194,20 +4270,6 @@
     <content><![CDATA[<h1 id="标记思想"><a href="#标记思想" class="headerlink" title="标记思想"></a>标记思想</h1><p>定义一个布尔变量，表示标记</p>
 <p>要在for循环外判断是否为质数，最初认为number是一个质数</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> com.itheima.jump;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">JumpDemo04</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">         * 键盘录入一个正整数x，判断该整数是否为一个质数</span></span><br><span class="line"><span class="comment">         * 质数的定义:一个大于1的自然数，除了1和它自身外，不能被其他自然数整除的数叫做质数</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">        <span class="type">boolean</span> <span class="variable">flag</span> <span class="operator">=</span> <span class="literal">true</span>;   <span class="comment">//***************************************************************</span></span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        System.out.println(<span class="string">&quot;录入一个正整数:&quot;</span>);</span><br><span class="line">        <span class="type">int</span> <span class="variable">number</span> <span class="operator">=</span> sc.nextInt();</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">2</span>; i &lt;number ; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (number % i == <span class="number">0</span>) &#123;</span><br><span class="line">                flag=<span class="literal">false</span>;   <span class="comment">//****************************************************************</span></span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (flag)&#123;			<span class="comment">//******************************************************************</span></span><br><span class="line">            System.out.println(number+<span class="string">&quot;是质数&quot;</span>);</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            System.out.println(number+<span class="string">&quot;不是质数&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>经典算法思想</category>
-      </categories>
-      <tags>
-        <tag>算法思想</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>比较最值时提高效率(数组)</title>
-    <url>/2024/01/20/%E6%AF%94%E8%BE%83%E6%9C%80%E5%80%BC%E6%97%B6%E6%8F%90%E9%AB%98%E6%95%88%E7%8E%87(%E6%95%B0%E7%BB%84)/</url>
-    <content><![CDATA[<h1 id="数组循环比较最值时提高效率"><a href="#数组循环比较最值时提高效率" class="headerlink" title="数组循环比较最值时提高效率"></a>数组循环比较最值时提高效率</h1><p>循环中开始条件如果为0，那么第一次循环的时候是自己跟自己比了一下，对结果没有任何影响，但是效率偏低，为了提高效率，减少一次 循环的次数，循环开始的条件可以写1.</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> min=array[<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt; array.length; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (array[i]&lt;min)&#123;</span><br><span class="line">                min=array[i];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(min);</span><br></pre></td></tr></table></figure>
 
 ]]></content>
       <categories>
