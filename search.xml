@@ -110,6 +110,45 @@
       </tags>
   </entry>
   <entry>
+    <title>可行性研究</title>
+    <url>/2024/03/02/02%E5%8F%AF%E8%A1%8C%E6%80%A7%E7%A0%94%E7%A9%B6/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="left">考试内容</th>
+<th align="left">考试要求</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1. 可行性研究的任务</td>
+<td align="left">1.了解可行性研究的任务</td>
+</tr>
+<tr>
+<td align="left">2. 数据流图和数据字典</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">3.成本效益分析</td>
+<td align="left">3.了解什么是软件生命周期，了解生命周期各个阶段：可行性分析、需求分析、系统设计、详细设计、实现、测试的基本任务。</td>
+</tr>
+<tr>
+<td align="left">4. 需求分析的任务</td>
+<td align="left">4.了解需求分析的任务</td>
+</tr>
+<tr>
+<td align="left">5.实体联系图，状态转换图，层次方框图，IPO图</td>
+<td align="left">掌握可行性研究和需求分析的建模方法：数据流图，数据字典，实体联系图，状态转换图，层次方框图，IPO图</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>软件工程</category>
+      </categories>
+      <tags>
+        <tag>考研复试</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo+Mext设置主页文章添加边框阴影效果</title>
     <url>/2024/01/10/Hexo+Next%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%BB%E9%A1%B5%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E8%BE%B9%E6%A1%86%E9%98%B4%E5%BD%B1%E6%95%88%E6%9E%9C/</url>
     <content><![CDATA[<h1 id="设置主页文章添加边框阴影效果"><a href="#设置主页文章添加边框阴影效果" class="headerlink" title="设置主页文章添加边框阴影效果"></a>设置主页文章添加边框阴影效果</h1><ol>
@@ -176,45 +215,6 @@
       </categories>
       <tags>
         <tag>快捷方式</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>可行性研究</title>
-    <url>/2024/03/02/02%E5%8F%AF%E8%A1%8C%E6%80%A7%E7%A0%94%E7%A9%B6/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th align="left">考试内容</th>
-<th align="left">考试要求</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">1. 可行性研究的任务</td>
-<td align="left">1.了解可行性研究的任务</td>
-</tr>
-<tr>
-<td align="left">2. 数据流图和数据字典</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">3.成本效益分析</td>
-<td align="left">3.了解什么是软件生命周期，了解生命周期各个阶段：可行性分析、需求分析、系统设计、详细设计、实现、测试的基本任务。</td>
-</tr>
-<tr>
-<td align="left">4. 需求分析的任务</td>
-<td align="left">4.了解需求分析的任务</td>
-</tr>
-<tr>
-<td align="left">5.实体联系图，状态转换图，层次方框图，IPO图</td>
-<td align="left">掌握可行性研究和需求分析的建模方法：数据流图，数据字典，实体联系图，状态转换图，层次方框图，IPO图</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>软件工程</category>
-      </categories>
-      <tags>
-        <tag>考研复试</tag>
       </tags>
   </entry>
   <entry>
@@ -756,71 +756,11 @@
 <p>鸣谢：<a href="https://blog.csdn.net/m0_61399406/article/details/132536144">登录rabbitMQ管理界面时浏览器显示要求进行身份验证，与此站点连接不安全解决办法_登录以访问此站点 要求进行身份验证-CSDN博客</a></p>
 ]]></content>
       <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python基础综合案例</title>
-    <url>/2024/11/09/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/</url>
-    <content><![CDATA[<h3 id="JSON数据格式"><a href="#JSON数据格式" class="headerlink" title="JSON数据格式:"></a>JSON数据格式:</h3><p>​	JSON是一种轻量级的数据交互格式。可以按照JSON指定的格式去组织和封装数据。</p>
-<p>​	JSON本质上是一个带有特定格式的字符串</p>
-<p>​	主要功能: json就是一种在各个编程语言中流通的数据格式，负责不同编程语言中的数据传递和交互。类似于:国际通用语言-英语，中国官方语言-普通话</p>
-<p>​	<img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/Json.png"></p>
-<p>JSON数据的格式：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># json数据的格式可以是(json是Python的列表(内嵌字典的列表)或者字典)</span></span><br><span class="line">&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;admin&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">18</span>&#125; <span class="comment">#</span></span><br><span class="line"><span class="comment"># 也可以是</span></span><br><span class="line">[&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;admin&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">18</span>&#125;,&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;root&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">16</span>&#125;,&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;张三&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">20</span>&#125;]</span><br></pre></td></tr></table></figure>
-
-<p>Python数据和Json数据的相互转换:</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 导入json模块</span></span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="comment">#准备符合json格式要求的Python数据</span></span><br><span class="line">data = [&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;admin&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">18</span>&#125;,&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;张三&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">20</span>&#125;]</span><br><span class="line"><span class="comment">#通过json.dunps(data)方法把python数据转化为了json字符串数据</span></span><br><span class="line">data = json.dumps(data)</span><br><span class="line"><span class="comment"># data = json.dumps(data,ensure_ascii=False),解决中文乱码的问题 </span></span><br><span class="line"><span class="comment">#通过json.loads(data)方法把json数据转化为了python字符串数据</span></span><br><span class="line">data = <span class="string">&#x27;[&#123;&quot;name&quot;:&quot;admin&quot;,&quot;age&quot;:18&#125;,&#123;&quot;name&quot;:&quot;张三&quot;,&quot;age&quot;:20&#125;]&#x27;</span></span><br><span class="line">data = json.loads(data)</span><br></pre></td></tr></table></figure>
-
-<h3 id="pyecharts模块"><a href="#pyecharts模块" class="headerlink" title="pyecharts模块"></a>pyecharts模块</h3><p>pyecharts是帮助我们做出数据可视化效果图的一个模块。它的本体是echarts框架。</p>
-<p>Echarts是由百度开源的数据可视化，凭借着良好的交互性，精巧的图表设计，得到了众多开发者的认可，而Python是门富有表达能力的语言，很适合用于数据处理，当数据分析遇上数据可视化时pycharts诞生了。</p>
-<figure class="highlight http"><table><tr><td class="code"><pre><span class="line">中文文档:pyecharts.org</span><br><span class="line">画廊官网:https://gallery.pyecharts.org/#/README</span><br></pre></td></tr></table></figure>
-
-<p>安装：</p>
-<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt; pip install pyecharts</span><br><span class="line"># 检查安装效果</span><br><span class="line"># 进入Python导入模块</span><br><span class="line">&gt;&gt;&gt; python</span><br><span class="line">&gt;&gt;&gt; import pyecharts</span><br></pre></td></tr></table></figure>
-
-<h3 id="pyecharts入门使用"><a href="#pyecharts入门使用" class="headerlink" title="pyecharts入门使用"></a>pyecharts入门使用</h3><p>pycharts有那些配置选项:</p>
-<p>​	全局配置选项:针对整个图像进行设置，图像的标题，图例，工具箱等</p>
-<p>​	全局配置可以通过一个set_global_opts方法进行配置，相应的选项和选项的功能如下:<img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/%E5%85%A8%E5%B1%80%E9%85%8D%E7%BD%AE.png"></p>
-<p>​	<img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/%E5%85%A8%E5%B1%80%E9%85%8D%E7%BD%AE01.png"></p>
-<p>​	系列配置选项:针对具体的轴数据进行配置</p>
-<h3 id="数据处理"><a href="#数据处理" class="headerlink" title="数据处理"></a>数据处理</h3><p>​	通过json模块对数据进行处理</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">在线json格式化分析:ab173.com</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 构建图表</span></span><br><span class="line"><span class="comment"># 导包</span></span><br><span class="line"><span class="keyword">from</span> pyecharts.charts <span class="keyword">import</span> Line</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建一个折线图对象</span></span><br><span class="line">l=Line()</span><br><span class="line"><span class="comment"># 给折线图对象添加x轴的数据</span></span><br><span class="line">l.add_xaxis([<span class="string">&quot;中国&quot;</span>,<span class="string">&quot;美国&quot;</span>,<span class="string">&quot;英国&quot;</span>])</span><br><span class="line"><span class="comment"># 给折线图对象添加y轴的数据</span></span><br><span class="line">l.add_yaxis(<span class="string">&quot;GDP&quot;</span>,[<span class="number">30</span>,<span class="number">20</span>,<span class="number">10</span>])</span><br><span class="line"><span class="comment"># 通过render方法，将代码生成为图像</span></span><br><span class="line">l.render()</span><br><span class="line"><span class="comment"># 设置全局配置项</span></span><br></pre></td></tr></table></figure>
-
-<p>地图可视化</p>
-<p>使用pyecharts构建基础的全国地图可视化图表。</p>
-<p>基础柱状图开发</p>
-<p><img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/%E6%9F%B1%E7%8A%B6%E5%9B%BE.png"></p>
-<p><img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/%E6%9F%B1%E7%8A%B6%E5%9B%BE_%E6%97%B6%E9%97%B4%E7%BA%BF.png"></p>
-<p>创建自动播放:</p>
-<p><img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/%E8%87%AA%E5%8A%A8%E6%92%AD%E6%94%BE.png"></p>
-<p>修改柱状颜色</p>
-<p><img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/%E9%A2%9C%E8%89%B2.png"></p>
-<p>GDP动态柱状图绘制</p>
-<p>1.掌握列表的sort方法并配合lambda匿名函数完成列表排序</p>
-<p>​	sort方法 : **列表.sort(key&#x3D;选择排序依据的函数,reverse&#x3D;True|False)**。</p>
-<p>​	参数key,是要求传入一个函数，表示将列表的每一个元素都传入函数中，返回排序的依据。</p>
-<p>​	参数reverse，是否反转排序结果，True表示降序，False表示升序。</p>
-<p><img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/sort%E6%96%B9%E6%B3%95.png"></p>
-<p>2.完成图表所需的数据处理</p>
-<p>3.完成GDP动态图表绘制</p>
-]]></content>
-      <categories>
         <category>Python</category>
       </categories>
       <tags>
         <tag>Python</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>好好学习  天天向上</title>
-    <url>/2024/01/08/first-blog/</url>
-    <content><![CDATA[<h1 id="This-is-my-first-blog-路上只我一个人，背着手踱着。这一片天地好像是我的-我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静-爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜-niao-nuo-地开着旳，有羞涩地打着朵儿旳-正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉-mo-的流水，遮住了，不能见一些颜色-而叶子却更见风致了。"><a href="#This-is-my-first-blog-路上只我一个人，背着手踱着。这一片天地好像是我的-我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静-爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜-niao-nuo-地开着旳，有羞涩地打着朵儿旳-正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉-mo-的流水，遮住了，不能见一些颜色-而叶子却更见风致了。" class="headerlink" title="This is my first blog 路上只我一个人，背着手踱着。这一片天地好像是我的;我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静;爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜(niǎo,nuó)地开着旳，有羞涩地打着朵儿旳;正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉(mò)的流水，遮住了，不能见一些颜色;而叶子却更见风致了。"></a>This is my first blog 路上只我一个人，背着手踱着。这一片天地好像是我的;我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静;爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜(niǎo,nuó)地开着旳，有羞涩地打着朵儿旳;正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉(mò)的流水，遮住了，不能见一些颜色;而叶子却更见风致了。</h1><h2 id="welcome-to-you"><a href="#welcome-to-you" class="headerlink" title="welcome to you!"></a>welcome to you!</h2>]]></content>
   </entry>
   <entry>
     <title>Linu上部署各类软件</title>
@@ -2027,41 +1967,59 @@
       </tags>
   </entry>
   <entry>
-    <title>idea插件集合</title>
-    <url>/2024/01/25/idea%E6%8F%92%E4%BB%B6%E9%9B%86%E5%90%88/</url>
-    <content><![CDATA[<p>idea插件集合:</p>
-<p>1:<strong>一秒生成标准JavaBean–插件PTG</strong></p>
-<ol>
-<li>电脑连接外网</li>
-<li>idea-file-settings-Plugins-Marketplace-搜索ptg-install</li>
-<li>idea右键-选择Ptg To JavaBean</li>
-</ol>
-<p><img src="/images/idea%E6%8F%92%E4%BB%B6%E9%9B%86%E5%90%88/%E6%8F%92%E4%BB%B61.png"></p>
+    <title>Python基础综合案例</title>
+    <url>/2024/11/09/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/</url>
+    <content><![CDATA[<h3 id="JSON数据格式"><a href="#JSON数据格式" class="headerlink" title="JSON数据格式:"></a>JSON数据格式:</h3><p>​	JSON是一种轻量级的数据交互格式。可以按照JSON指定的格式去组织和封装数据。</p>
+<p>​	JSON本质上是一个带有特定格式的字符串</p>
+<p>​	主要功能: json就是一种在各个编程语言中流通的数据格式，负责不同编程语言中的数据传递和交互。类似于:国际通用语言-英语，中国官方语言-普通话</p>
+<p>​	<img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/Json.png"></p>
+<p>JSON数据的格式：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># json数据的格式可以是(json是Python的列表(内嵌字典的列表)或者字典)</span></span><br><span class="line">&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;admin&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">18</span>&#125; <span class="comment">#</span></span><br><span class="line"><span class="comment"># 也可以是</span></span><br><span class="line">[&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;admin&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">18</span>&#125;,&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;root&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">16</span>&#125;,&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;张三&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">20</span>&#125;]</span><br></pre></td></tr></table></figure>
+
+<p>Python数据和Json数据的相互转换:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 导入json模块</span></span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="comment">#准备符合json格式要求的Python数据</span></span><br><span class="line">data = [&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;admin&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">18</span>&#125;,&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;张三&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">20</span>&#125;]</span><br><span class="line"><span class="comment">#通过json.dunps(data)方法把python数据转化为了json字符串数据</span></span><br><span class="line">data = json.dumps(data)</span><br><span class="line"><span class="comment"># data = json.dumps(data,ensure_ascii=False),解决中文乱码的问题 </span></span><br><span class="line"><span class="comment">#通过json.loads(data)方法把json数据转化为了python字符串数据</span></span><br><span class="line">data = <span class="string">&#x27;[&#123;&quot;name&quot;:&quot;admin&quot;,&quot;age&quot;:18&#125;,&#123;&quot;name&quot;:&quot;张三&quot;,&quot;age&quot;:20&#125;]&#x27;</span></span><br><span class="line">data = json.loads(data)</span><br></pre></td></tr></table></figure>
+
+<h3 id="pyecharts模块"><a href="#pyecharts模块" class="headerlink" title="pyecharts模块"></a>pyecharts模块</h3><p>pyecharts是帮助我们做出数据可视化效果图的一个模块。它的本体是echarts框架。</p>
+<p>Echarts是由百度开源的数据可视化，凭借着良好的交互性，精巧的图表设计，得到了众多开发者的认可，而Python是门富有表达能力的语言，很适合用于数据处理，当数据分析遇上数据可视化时pycharts诞生了。</p>
+<figure class="highlight http"><table><tr><td class="code"><pre><span class="line">中文文档:pyecharts.org</span><br><span class="line">画廊官网:https://gallery.pyecharts.org/#/README</span><br></pre></td></tr></table></figure>
+
+<p>安装：</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt; pip install pyecharts</span><br><span class="line"># 检查安装效果</span><br><span class="line"># 进入Python导入模块</span><br><span class="line">&gt;&gt;&gt; python</span><br><span class="line">&gt;&gt;&gt; import pyecharts</span><br></pre></td></tr></table></figure>
+
+<h3 id="pyecharts入门使用"><a href="#pyecharts入门使用" class="headerlink" title="pyecharts入门使用"></a>pyecharts入门使用</h3><p>pycharts有那些配置选项:</p>
+<p>​	全局配置选项:针对整个图像进行设置，图像的标题，图例，工具箱等</p>
+<p>​	全局配置可以通过一个set_global_opts方法进行配置，相应的选项和选项的功能如下:<img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/%E5%85%A8%E5%B1%80%E9%85%8D%E7%BD%AE.png"></p>
+<p>​	<img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/%E5%85%A8%E5%B1%80%E9%85%8D%E7%BD%AE01.png"></p>
+<p>​	系列配置选项:针对具体的轴数据进行配置</p>
+<h3 id="数据处理"><a href="#数据处理" class="headerlink" title="数据处理"></a>数据处理</h3><p>​	通过json模块对数据进行处理</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">在线json格式化分析:ab173.com</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 构建图表</span></span><br><span class="line"><span class="comment"># 导包</span></span><br><span class="line"><span class="keyword">from</span> pyecharts.charts <span class="keyword">import</span> Line</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建一个折线图对象</span></span><br><span class="line">l=Line()</span><br><span class="line"><span class="comment"># 给折线图对象添加x轴的数据</span></span><br><span class="line">l.add_xaxis([<span class="string">&quot;中国&quot;</span>,<span class="string">&quot;美国&quot;</span>,<span class="string">&quot;英国&quot;</span>])</span><br><span class="line"><span class="comment"># 给折线图对象添加y轴的数据</span></span><br><span class="line">l.add_yaxis(<span class="string">&quot;GDP&quot;</span>,[<span class="number">30</span>,<span class="number">20</span>,<span class="number">10</span>])</span><br><span class="line"><span class="comment"># 通过render方法，将代码生成为图像</span></span><br><span class="line">l.render()</span><br><span class="line"><span class="comment"># 设置全局配置项</span></span><br></pre></td></tr></table></figure>
+
+<p>地图可视化</p>
+<p>使用pyecharts构建基础的全国地图可视化图表。</p>
+<p>基础柱状图开发</p>
+<p><img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/%E6%9F%B1%E7%8A%B6%E5%9B%BE.png"></p>
+<p><img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/%E6%9F%B1%E7%8A%B6%E5%9B%BE_%E6%97%B6%E9%97%B4%E7%BA%BF.png"></p>
+<p>创建自动播放:</p>
+<p><img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/%E8%87%AA%E5%8A%A8%E6%92%AD%E6%94%BE.png"></p>
+<p>修改柱状颜色</p>
+<p><img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/%E9%A2%9C%E8%89%B2.png"></p>
+<p>GDP动态柱状图绘制</p>
+<p>1.掌握列表的sort方法并配合lambda匿名函数完成列表排序</p>
+<p>​	sort方法 : **列表.sort(key&#x3D;选择排序依据的函数,reverse&#x3D;True|False)**。</p>
+<p>​	参数key,是要求传入一个函数，表示将列表的每一个元素都传入函数中，返回排序的依据。</p>
+<p>​	参数reverse，是否反转排序结果，True表示降序，False表示升序。</p>
+<p><img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/sort%E6%96%B9%E6%B3%95.png"></p>
+<p>2.完成图表所需的数据处理</p>
+<p>3.完成GDP动态图表绘制</p>
 ]]></content>
       <categories>
-        <category>插件库</category>
+        <category>Python</category>
       </categories>
       <tags>
-        <tag>插件库</tag>
+        <tag>Python</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2024/01/08/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.<br>&lt; !–more–&gt;</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
   </entry>
   <entry>
     <title>Python从入门到精通</title>
@@ -2550,6 +2508,75 @@
       </tags>
   </entry>
   <entry>
+    <title>好好学习  天天向上</title>
+    <url>/2024/01/08/first-blog/</url>
+    <content><![CDATA[<h1 id="This-is-my-first-blog-路上只我一个人，背着手踱着。这一片天地好像是我的-我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静-爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜-niao-nuo-地开着旳，有羞涩地打着朵儿旳-正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉-mo-的流水，遮住了，不能见一些颜色-而叶子却更见风致了。"><a href="#This-is-my-first-blog-路上只我一个人，背着手踱着。这一片天地好像是我的-我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静-爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜-niao-nuo-地开着旳，有羞涩地打着朵儿旳-正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉-mo-的流水，遮住了，不能见一些颜色-而叶子却更见风致了。" class="headerlink" title="This is my first blog 路上只我一个人，背着手踱着。这一片天地好像是我的;我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静;爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜(niǎo,nuó)地开着旳，有羞涩地打着朵儿旳;正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉(mò)的流水，遮住了，不能见一些颜色;而叶子却更见风致了。"></a>This is my first blog 路上只我一个人，背着手踱着。这一片天地好像是我的;我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静;爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜(niǎo,nuó)地开着旳，有羞涩地打着朵儿旳;正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉(mò)的流水，遮住了，不能见一些颜色;而叶子却更见风致了。</h1><h2 id="welcome-to-you"><a href="#welcome-to-you" class="headerlink" title="welcome to you!"></a>welcome to you!</h2>]]></content>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2024/01/08/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.<br>&lt; !–more–&gt;</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>idea插件集合</title>
+    <url>/2024/01/25/idea%E6%8F%92%E4%BB%B6%E9%9B%86%E5%90%88/</url>
+    <content><![CDATA[<p>idea插件集合:</p>
+<p>1:<strong>一秒生成标准JavaBean–插件PTG</strong></p>
+<ol>
+<li>电脑连接外网</li>
+<li>idea-file-settings-Plugins-Marketplace-搜索ptg-install</li>
+<li>idea右键-选择Ptg To JavaBean</li>
+</ol>
+<p><img src="/images/idea%E6%8F%92%E4%BB%B6%E9%9B%86%E5%90%88/%E6%8F%92%E4%BB%B61.png"></p>
+]]></content>
+      <categories>
+        <category>插件库</category>
+      </categories>
+      <tags>
+        <tag>插件库</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>分支语句-switch</title>
+    <url>/2024/01/17/java-Switch%E8%AF%AD%E5%8F%A5/</url>
+    <content><![CDATA[<h1 id="Switch的语句格式"><a href="#Switch的语句格式" class="headerlink" title="Switch的语句格式"></a>Switch的语句格式</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">switch</span>(表达式) &#123;					<span class="comment">//	表达式的值==case的值</span></span><br><span class="line">	<span class="keyword">case</span> 值<span class="number">1</span>：					<span class="comment">//表达式：取值为byte,short,int,char,枚举(jdk5以后)，String(jdk7以后)</span></span><br><span class="line">		语句体<span class="number">1</span>;				   <span class="comment">// case后面的值只能表示字面量，不能是变量。</span></span><br><span class="line">        <span class="keyword">break</span>;					 <span class="comment">//当switch里面的内容得到一个结果，可以将switch赋值给一个变量</span></span><br><span class="line">    <span class="keyword">case</span> 值<span class="number">2</span>：</span><br><span class="line">		语句体<span class="number">2</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    ......</span><br><span class="line">     <span class="keyword">default</span>:</span><br><span class="line">        语句体n+<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li><p>default的位置和省略</p>
+<p>位置：default位置随意，习惯写在最下面。</p>
+<p>省略：default可以省略，语法不出差，但不建议。</p>
+</li>
+<li><p>case穿透</p>
+<p>省略break会引起case穿透。</p>
+<p>使用场景：多个case的语句体重复了，那么我们考虑利用case穿透去简化代码。</p>
+</li>
+<li><p>switch的新特性(jdk12)</p>
+<p><strong>case 值1 -&gt;{</strong>	<em>&#x2F;&#x2F;消除了case穿透，大括号里面<strong>只有一行代码</strong>时，可以省略大括号</em></p>
+<p><strong>}</strong></p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>面向对象进阶-包-final-权限修饰符-代码块</title>
     <url>/2024/02/23/java-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E5%8C%85-final-%E6%9D%83%E9%99%90%E4%BF%AE%E9%A5%B0%E7%AC%A6-%E4%BB%A3%E7%A0%81%E5%9D%97/</url>
     <content><![CDATA[<p><strong>包：</strong></p>
@@ -2659,33 +2686,6 @@
 <p>​	JLabel:管理文字和图片的容器</p>
 <p>​	IMageIcon</p>
 <p>​	取消隐藏容器中居中的默认方式：setLayout(null)</p>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>分支语句-switch</title>
-    <url>/2024/01/17/java-Switch%E8%AF%AD%E5%8F%A5/</url>
-    <content><![CDATA[<h1 id="Switch的语句格式"><a href="#Switch的语句格式" class="headerlink" title="Switch的语句格式"></a>Switch的语句格式</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">switch</span>(表达式) &#123;					<span class="comment">//	表达式的值==case的值</span></span><br><span class="line">	<span class="keyword">case</span> 值<span class="number">1</span>：					<span class="comment">//表达式：取值为byte,short,int,char,枚举(jdk5以后)，String(jdk7以后)</span></span><br><span class="line">		语句体<span class="number">1</span>;				   <span class="comment">// case后面的值只能表示字面量，不能是变量。</span></span><br><span class="line">        <span class="keyword">break</span>;					 <span class="comment">//当switch里面的内容得到一个结果，可以将switch赋值给一个变量</span></span><br><span class="line">    <span class="keyword">case</span> 值<span class="number">2</span>：</span><br><span class="line">		语句体<span class="number">2</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    ......</span><br><span class="line">     <span class="keyword">default</span>:</span><br><span class="line">        语句体n+<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li><p>default的位置和省略</p>
-<p>位置：default位置随意，习惯写在最下面。</p>
-<p>省略：default可以省略，语法不出差，但不建议。</p>
-</li>
-<li><p>case穿透</p>
-<p>省略break会引起case穿透。</p>
-<p>使用场景：多个case的语句体重复了，那么我们考虑利用case穿透去简化代码。</p>
-</li>
-<li><p>switch的新特性(jdk12)</p>
-<p><strong>case 值1 -&gt;{</strong>	<em>&#x2F;&#x2F;消除了case穿透，大括号里面<strong>只有一行代码</strong>时，可以省略大括号</em></p>
-<p><strong>}</strong></p>
-</li>
-</ol>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -3019,6 +3019,26 @@
       </tags>
   </entry>
   <entry>
+    <title>源码-反码-补码</title>
+    <url>/2024/01/16/java%E5%9F%BA%E7%A1%80-%E5%8E%9F%E7%A0%81%E5%8F%8D%E7%A0%81%E8%A1%A5%E7%A0%81/</url>
+    <content><![CDATA[<h1 id="原码-反码-补码"><a href="#原码-反码-补码" class="headerlink" title="原码&#x2F;反码&#x2F;补码"></a>原码&#x2F;反码&#x2F;补码</h1><p>符号位：0正1负</p>
+<p>计算机中数字的存储和计算都是以补码的形式进行的。</p>
+<p><strong>原码</strong>：十进制数据的二进制表现形式，最左边的是符号位，0为正，1为负。</p>
+<p>​	    利用原码对正数进行计算是不会有问题的，但是如果是<strong>负数计算，结果就会出错</strong>，实际运算的结果，跟我们预期的结果是相反的。</p>
+<p><strong>反码</strong>：为了解决原码不能计算负数的问题而出现的。</p>
+<p>计算规则：正数的反码不变，负数的反码在原码的基础上，符号位不变。数值取反，0变1，1变0；</p>
+<p>计算结果跨零时(-5+6&#x3D;0),有可能存在误差。因为在反码中0有两种表现形式，**+0**(0000 0000),-<strong>0</strong>(1111 1111)</p>
+<p><strong>补码：</strong>屏蔽掉0的两种表现形式.使得+0和-0只有一种表现形式，实现方式是负数的反码加1.</p>
+<p><img src="/../images/3-01.png" alt="原反补"></p>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>二维数组</title>
     <url>/2024/01/25/java%E5%9F%BA%E7%A1%80-%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84/</url>
     <content><![CDATA[<h1 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a>二维数组</h1><p><strong>应用场景</strong>:</p>
@@ -3047,26 +3067,6 @@
       </tags>
   </entry>
   <entry>
-    <title>源码-反码-补码</title>
-    <url>/2024/01/16/java%E5%9F%BA%E7%A1%80-%E5%8E%9F%E7%A0%81%E5%8F%8D%E7%A0%81%E8%A1%A5%E7%A0%81/</url>
-    <content><![CDATA[<h1 id="原码-反码-补码"><a href="#原码-反码-补码" class="headerlink" title="原码&#x2F;反码&#x2F;补码"></a>原码&#x2F;反码&#x2F;补码</h1><p>符号位：0正1负</p>
-<p>计算机中数字的存储和计算都是以补码的形式进行的。</p>
-<p><strong>原码</strong>：十进制数据的二进制表现形式，最左边的是符号位，0为正，1为负。</p>
-<p>​	    利用原码对正数进行计算是不会有问题的，但是如果是<strong>负数计算，结果就会出错</strong>，实际运算的结果，跟我们预期的结果是相反的。</p>
-<p><strong>反码</strong>：为了解决原码不能计算负数的问题而出现的。</p>
-<p>计算规则：正数的反码不变，负数的反码在原码的基础上，符号位不变。数值取反，0变1，1变0；</p>
-<p>计算结果跨零时(-5+6&#x3D;0),有可能存在误差。因为在反码中0有两种表现形式，**+0**(0000 0000),-<strong>0</strong>(1111 1111)</p>
-<p><strong>补码：</strong>屏蔽掉0的两种表现形式.使得+0和-0只有一种表现形式，实现方式是负数的反码加1.</p>
-<p><img src="/../images/3-01.png" alt="原反补"></p>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>字符串相关类的底层原理</title>
     <url>/2024/02/07/java%E5%9F%BA%E7%A1%80-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9B%B8%E5%85%B3%E7%B1%BB%E7%9A%84%E5%BA%95%E5%B1%82%E5%8E%9F%E7%90%86/</url>
     <content><![CDATA[<h1 id="字符串相关类的底层原理："><a href="#字符串相关类的底层原理：" class="headerlink" title="字符串相关类的底层原理："></a>字符串相关类的底层原理：</h1><p><strong>1.字符串存储的内存原理</strong></p>
@@ -3086,26 +3086,6 @@
 <p>​	<img src="C:\Users\Administrator\Desktop\微信截图_20240207073607.png"></p>
 <p><strong>5.StringBuilder源码分析</strong></p>
 <p>默认创建一个长度为16的字节数组，添加的内容长度小于16，直接存，添加的内容大于16会扩容(原来的内容*2+2)，如果扩容之后还不够，以实际长度为准。</p>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>循环语句</title>
-    <url>/2024/01/18/java%E5%9F%BA%E7%A1%80-%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5(for&amp;while)/</url>
-    <content><![CDATA[<h1 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h1><h4 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(初始化语句;条件判断语句;条件控制语句)&#123;</span><br><span class="line">    循环体语句;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>初始化语句只执行一次，判断语句为true，循环继续，判断语句为false，循环结束。</p>
-<h4 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">初始化语句;</span><br><span class="line"><span class="keyword">while</span>(条件判断语句)&#123;</span><br><span class="line">	循环体语句;</span><br><span class="line">	条件控制语句;</span><br><span class="line">&#125;</span><br><span class="line">循环下面的其他语句;</span><br></pre></td></tr></table></figure>
-
-<h4 id="区别："><a href="#区别：" class="headerlink" title="区别："></a>区别：</h4><pre><code>1. 运行规则都是一样的
-1. for循环中，控制循环的变量，因为归属for循环的语法结构中 在for循环结束中，就不能再次被访问到了。**（已知循环次数或者范围）**
-1. while循环中，控制循环的变量，对于while循环来说不归属其语法结构中，在while循环结束后，该变量还可以继续使用。**(不知道循环次数和范围，只知道循环的结束条件 )**
-</code></pre>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -3149,6 +3129,26 @@
 </li>
 </ul>
 <p>​		</p>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>循环语句</title>
+    <url>/2024/01/18/java%E5%9F%BA%E7%A1%80-%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5(for&amp;while)/</url>
+    <content><![CDATA[<h1 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h1><h4 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(初始化语句;条件判断语句;条件控制语句)&#123;</span><br><span class="line">    循环体语句;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>初始化语句只执行一次，判断语句为true，循环继续，判断语句为false，循环结束。</p>
+<h4 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">初始化语句;</span><br><span class="line"><span class="keyword">while</span>(条件判断语句)&#123;</span><br><span class="line">	循环体语句;</span><br><span class="line">	条件控制语句;</span><br><span class="line">&#125;</span><br><span class="line">循环下面的其他语句;</span><br></pre></td></tr></table></figure>
+
+<h4 id="区别："><a href="#区别：" class="headerlink" title="区别："></a>区别：</h4><pre><code>1. 运行规则都是一样的
+1. for循环中，控制循环的变量，因为归属for循环的语法结构中 在for循环结束中，就不能再次被访问到了。**（已知循环次数或者范围）**
+1. while循环中，控制循环的变量，对于while循环来说不归属其语法结构中，在while循环结束后，该变量还可以继续使用。**(不知道循环次数和范围，只知道循环的结束条件 )**
+</code></pre>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -3506,6 +3506,20 @@
       </tags>
   </entry>
   <entry>
+    <title>跳出多重循环</title>
+    <url>/2024/02/11/java%E5%9F%BA%E7%A1%80-%E8%B7%B3%E5%87%BA%E5%A4%9A%E9%87%8D%E5%BE%AA%E7%8E%AF/</url>
+    <content><![CDATA[<p>loop:while (true) {<br>Scanner sc &#x3D; new Scanner(System.in);<br>System.out.println(“请输入您的选择:”);<br>String result &#x3D; sc.next();<br>switch (result){<br>    case “5”-&gt; {<br>                    System.out.println(“退出”);<br>                    break loop;<br>                }<br>}</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">停止虚拟机运行</span><br><span class="line"></span><br><span class="line">```java</span><br><span class="line">while (true) &#123;</span><br><span class="line">Scanner sc = new Scanner(System.in);</span><br><span class="line">System.out.println(&quot;请输入您的选择:&quot;);</span><br><span class="line">String result = sc.next();</span><br><span class="line">switch (result)&#123;</span><br><span class="line">	case &quot;5&quot;-&gt; &#123;</span><br><span class="line">                    System.out.println(&quot;退出&quot;);</span><br><span class="line">                    System.exit(0);</span><br><span class="line">                &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Java的运算符</title>
     <url>/2024/01/15/java%E5%9F%BA%E7%A1%80-%E8%BF%90%E7%AE%97%E7%AC%A6/</url>
     <content><![CDATA[<h1 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h1><ol>
@@ -3643,20 +3657,6 @@
 </li>
 </ol>
 <p>​       </p>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>跳出多重循环</title>
-    <url>/2024/02/11/java%E5%9F%BA%E7%A1%80-%E8%B7%B3%E5%87%BA%E5%A4%9A%E9%87%8D%E5%BE%AA%E7%8E%AF/</url>
-    <content><![CDATA[<p>loop:while (true) {<br>Scanner sc &#x3D; new Scanner(System.in);<br>System.out.println(“请输入您的选择:”);<br>String result &#x3D; sc.next();<br>switch (result){<br>    case “5”-&gt; {<br>                    System.out.println(“退出”);<br>                    break loop;<br>                }<br>}</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">停止虚拟机运行</span><br><span class="line"></span><br><span class="line">```java</span><br><span class="line">while (true) &#123;</span><br><span class="line">Scanner sc = new Scanner(System.in);</span><br><span class="line">System.out.println(&quot;请输入您的选择:&quot;);</span><br><span class="line">String result = sc.next();</span><br><span class="line">switch (result)&#123;</span><br><span class="line">	case &quot;5&quot;-&gt; &#123;</span><br><span class="line">                    System.out.println(&quot;退出&quot;);</span><br><span class="line">                    System.exit(0);</span><br><span class="line">                &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -4170,19 +4170,6 @@
       </tags>
   </entry>
   <entry>
-    <title>大小写字母放进数组</title>
-    <url>/2024/01/23/%E5%A4%A7%E5%B0%8F%E5%86%99%E5%AD%97%E6%AF%8D%E6%94%BE%E8%BF%9B%E6%95%B0%E7%BB%84/</url>
-    <content><![CDATA[<h1 id="大小写字母都放进数组内"><a href="#大小写字母都放进数组内" class="headerlink" title="大小写字母都放进数组内"></a>大小写字母都放进数组内</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">char</span>[] array = <span class="keyword">new</span> <span class="title class_">char</span>[<span class="number">52</span>];<span class="comment">//26+26=52</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; array.length; i++) &#123;</span><br><span class="line">            <span class="type">int</span> <span class="variable">number3</span> <span class="operator">=</span> r.nextInt(<span class="number">9</span>);</span><br><span class="line">            <span class="keyword">if</span> (i &lt; array.length / <span class="number">2</span>) &#123;</span><br><span class="line">                array[i] = (<span class="type">char</span>) (<span class="number">97</span> + i);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                array[i] = (<span class="type">char</span>) (<span class="number">65</span> + j);</span><br><span class="line">                j++;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>经典算法思想</category>
-      </categories>
-      <tags>
-        <tag>算法思想</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Linux命令</title>
     <url>/2024/09/18/%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%9F%BA%E7%A1%80-Linux%E5%91%BD%E4%BB%A4/</url>
     <content><![CDATA[<p><strong>—–  有自觉才有自由   —–</strong></p>
@@ -4339,6 +4326,72 @@
       </tags>
   </entry>
   <entry>
+    <title>大小写字母放进数组</title>
+    <url>/2024/01/23/%E5%A4%A7%E5%B0%8F%E5%86%99%E5%AD%97%E6%AF%8D%E6%94%BE%E8%BF%9B%E6%95%B0%E7%BB%84/</url>
+    <content><![CDATA[<h1 id="大小写字母都放进数组内"><a href="#大小写字母都放进数组内" class="headerlink" title="大小写字母都放进数组内"></a>大小写字母都放进数组内</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">char</span>[] array = <span class="keyword">new</span> <span class="title class_">char</span>[<span class="number">52</span>];<span class="comment">//26+26=52</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; array.length; i++) &#123;</span><br><span class="line">            <span class="type">int</span> <span class="variable">number3</span> <span class="operator">=</span> r.nextInt(<span class="number">9</span>);</span><br><span class="line">            <span class="keyword">if</span> (i &lt; array.length / <span class="number">2</span>) &#123;</span><br><span class="line">                array[i] = (<span class="type">char</span>) (<span class="number">97</span> + i);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                array[i] = (<span class="type">char</span>) (<span class="number">65</span> + j);</span><br><span class="line">                j++;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>经典算法思想</category>
+      </categories>
+      <tags>
+        <tag>算法思想</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>endNode的使用</title>
+    <url>/2024/09/08/%E5%B7%A5%E5%85%B7_endNode%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<p>1.endnode的下载和安装：</p>
+<p>​	<a href="https://mp.weixin.qq.com/s/dVgeXShxAsyfyVfzJkREMw">EndNote21.4安装教程 (qq.com)</a></p>
+<p>2.导入文献</p>
+<p>​	2.1数据库导入</p>
+<p>​	<strong>PubMed</strong>(<a href="https://pubmed.ncbi.nlm.nih.gov/">PubMed (nih.gov)</a>)是文摘型数据库，也就意味着PubMed的强项是<strong>检索</strong>，这与全文数据库是不同的，点击create file会生成一个nbib文件。</p>
+<p>​	nbib文件导入endNode的方式：</p>
+<p>​		(1):直接双击文件，文件就会自动导入到endNode.</p>
+<p>​                (2):通过文献过滤器导入，File-&gt;Import-&gt;File(&#x2F;import⬇),选择导入文件，导入选择选择其他过滤器-&gt;PubMed(NLM).</p>
+<p><img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/pubmed%E4%BD%BF%E7%94%A8.png" alt=" "></p>
+<p>​	<strong>web of science</strong>(<a href="https://webofscience.clarivate.cn/wos/alldb/basic-search">Document Search - All Databases (clarivate.cn)</a>),输入关键词点击搜索，勾选你需要的文献，点击导出(export)–EndNode desktop,生成一个ciw文件，双击即可导入文件。</p>
+<p><img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/web-of-science.png"></p>
+<p>​	<strong>Google Scholar学术导入</strong>，在谷歌学术进行检索，点击引用–EndNote格式–会下载一个enw文件，双击即可导入(选择….XML这个选项)，批量导出需要先收藏–我的图书馆–全部导出。</p>
+<p>​	<strong>知网导入</strong>，勾选文献–导出与分析–EndNote格式–点击导出–生成TXT文件；点击Import⬇.</p>
+<p><img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/%E7%9F%A5%E7%BD%91.png"></p>
+<p>​			    《《<em>文献标题和期刊在一起的问题》》：</em>这是EndNote Import过滤器的问题，方法为Edit–Import Filters–Open Filter Manager–找到EndNote Import这个过滤器–点击编辑Edit–左侧的Templates–文件类型选择Journal Article–将Journal一行前的标签%B改成%J–关闭–是–重命名–重新导入–过滤器选择刚才修改的。</p>
+<p>​			    《《<em>补充缺失信息</em>》》：因为某些原因，可能有些文件会缺失一些信息，按CTRL批量选择缺失信息的文献—鼠标右键—Find Reference Updates—Update All Files–Y.(只对英文文献有效，中文缺失双击手动添加)。</p>
+<p>​	<strong>PDF导入</strong>，通过识别PDF的DOI号，从而提取文献信息，不建议导入中文文献论文，从中文数据库中直接导入。</p>
+<p>​			    《《PDF导入英文文献信息缺失》》：主要是没检测到DOI号，方法：复制文件标题到浏览器搜索—复制DOI—-双击文献下拉到<strong>DOI</strong>–左上角查找全文更新—Update  Files</p>
+<p><img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/PDF.png"></p>
+<p>​			    《《导入文件夹所有PDF》》:File–import–文件夹</p>
+<p>3.管理文献</p>
+<p>​	<strong>3.1 分组</strong>    对导入的文件可以对其进行分组，只能有二级分类；在我的分组里点击–创建组，然后将同类型文献批量拖拽进组内.</p>
+<p>​	**3.2 文献去重 ** 从同一个研究主题，往往会从不同数据库导入文献，会涉及到文献重复，点击All Reference—Reference(导航栏)—Find Duplicates—cancle–在左侧会新增一个重复文献文件夹—里面的文献数量就代表重复数量2倍，有灰色阴影的文献就是重复的文献—-鼠标右键单击Move Reference to Trash</p>
+<p>​	<strong>3.3 文献排序</strong>  </p>
+<p>​		查找全文：全选文献—右键查找全文–查找全文–出现回形针表示能找到</p>
+<p>​		查找全文对于中文文献是不适用的，对于没有中文文献和没有查找到全文的英文文献，可以先将PDF下载到本地，这篇文献就会被链接到一个全文，该PDF文件会被自动存储到数据库文件夹中(删除后无影响)</p>
+<p>​	<strong>3.4 对文献做笔记</strong></p>
+<p>​		1,2步骤后 然后调出reserch Notes，保存。</p>
+<p>​		<img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/%E7%AC%94%E8%AE%B0.png"></p>
+<p>4.引用文献</p>
+<p>​	<strong>预览样式</strong>：在引用文献前，可以在EndNote预览参考文献样式</p>
+<p>​	<img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/%E9%A2%84%E8%A7%88%E6%A0%B7%E5%BC%8F.png"></p>
+<p>​	<strong>添加样式：</strong><a href="https://endnote.com/downloads/styles/?wpv_aux_current_post_id=12829&wpv_view_count=12764-TCPID12829">Output styles - EndNote</a></p>
+<p>​		下载后粘贴到endnote下载位置的Style中</p>
+<p>​	<strong>引入到word中</strong>：在word中EndNote(导航栏)—选择好style—在EndNote里选择好要导入的文件—在word里Insert Citation—Insert  selected Citation.</p>
+<p>​	<strong>去除参考文献域代码</strong>：域代码去除就无法恢复（Ctrl+A–Ctrl+Shift+F9）</p>
+<p>​	<img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/%E5%9F%9F%E4%BB%A3%E7%A0%81.png"></p>
+<p>​	<strong>更改作者数：</strong></p>
+<p>​	<img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/%E4%BD%9C%E8%80%85%E6%95%B0.png"></p>
+<p><img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/%E4%BD%9C%E8%80%85%E6%95%B02.png"></p>
+<p>​	<strong>引用网页文献的问题</strong>：</p>
+<p><img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/%E7%BD%91%E9%A1%B5%E6%96%87%E7%8C%AE.png"></p>
+]]></content>
+      <categories>
+        <category>科研软件</category>
+      </categories>
+      <tags>
+        <tag>科研软件</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>科研文献检索与论文写作</title>
     <url>/2024/11/01/%E5%B7%A5%E5%85%B7_%E7%A7%91%E7%A0%94%E6%96%87%E7%8C%AE%E6%A3%80%E7%B4%A2/</url>
     <content><![CDATA[<h2 id="中文标点符号的规范使用"><a href="#中文标点符号的规范使用" class="headerlink" title="中文标点符号的规范使用"></a>中文标点符号的规范使用</h2><p><strong>句号的错误用法：</strong></p>
@@ -4403,59 +4456,6 @@
       </tags>
   </entry>
   <entry>
-    <title>endNode的使用</title>
-    <url>/2024/09/08/%E5%B7%A5%E5%85%B7_endNode%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<p>1.endnode的下载和安装：</p>
-<p>​	<a href="https://mp.weixin.qq.com/s/dVgeXShxAsyfyVfzJkREMw">EndNote21.4安装教程 (qq.com)</a></p>
-<p>2.导入文献</p>
-<p>​	2.1数据库导入</p>
-<p>​	<strong>PubMed</strong>(<a href="https://pubmed.ncbi.nlm.nih.gov/">PubMed (nih.gov)</a>)是文摘型数据库，也就意味着PubMed的强项是<strong>检索</strong>，这与全文数据库是不同的，点击create file会生成一个nbib文件。</p>
-<p>​	nbib文件导入endNode的方式：</p>
-<p>​		(1):直接双击文件，文件就会自动导入到endNode.</p>
-<p>​                (2):通过文献过滤器导入，File-&gt;Import-&gt;File(&#x2F;import⬇),选择导入文件，导入选择选择其他过滤器-&gt;PubMed(NLM).</p>
-<p><img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/pubmed%E4%BD%BF%E7%94%A8.png" alt=" "></p>
-<p>​	<strong>web of science</strong>(<a href="https://webofscience.clarivate.cn/wos/alldb/basic-search">Document Search - All Databases (clarivate.cn)</a>),输入关键词点击搜索，勾选你需要的文献，点击导出(export)–EndNode desktop,生成一个ciw文件，双击即可导入文件。</p>
-<p><img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/web-of-science.png"></p>
-<p>​	<strong>Google Scholar学术导入</strong>，在谷歌学术进行检索，点击引用–EndNote格式–会下载一个enw文件，双击即可导入(选择….XML这个选项)，批量导出需要先收藏–我的图书馆–全部导出。</p>
-<p>​	<strong>知网导入</strong>，勾选文献–导出与分析–EndNote格式–点击导出–生成TXT文件；点击Import⬇.</p>
-<p><img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/%E7%9F%A5%E7%BD%91.png"></p>
-<p>​			    《《<em>文献标题和期刊在一起的问题》》：</em>这是EndNote Import过滤器的问题，方法为Edit–Import Filters–Open Filter Manager–找到EndNote Import这个过滤器–点击编辑Edit–左侧的Templates–文件类型选择Journal Article–将Journal一行前的标签%B改成%J–关闭–是–重命名–重新导入–过滤器选择刚才修改的。</p>
-<p>​			    《《<em>补充缺失信息</em>》》：因为某些原因，可能有些文件会缺失一些信息，按CTRL批量选择缺失信息的文献—鼠标右键—Find Reference Updates—Update All Files–Y.(只对英文文献有效，中文缺失双击手动添加)。</p>
-<p>​	<strong>PDF导入</strong>，通过识别PDF的DOI号，从而提取文献信息，不建议导入中文文献论文，从中文数据库中直接导入。</p>
-<p>​			    《《PDF导入英文文献信息缺失》》：主要是没检测到DOI号，方法：复制文件标题到浏览器搜索—复制DOI—-双击文献下拉到<strong>DOI</strong>–左上角查找全文更新—Update  Files</p>
-<p><img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/PDF.png"></p>
-<p>​			    《《导入文件夹所有PDF》》:File–import–文件夹</p>
-<p>3.管理文献</p>
-<p>​	<strong>3.1 分组</strong>    对导入的文件可以对其进行分组，只能有二级分类；在我的分组里点击–创建组，然后将同类型文献批量拖拽进组内.</p>
-<p>​	**3.2 文献去重 ** 从同一个研究主题，往往会从不同数据库导入文献，会涉及到文献重复，点击All Reference—Reference(导航栏)—Find Duplicates—cancle–在左侧会新增一个重复文献文件夹—里面的文献数量就代表重复数量2倍，有灰色阴影的文献就是重复的文献—-鼠标右键单击Move Reference to Trash</p>
-<p>​	<strong>3.3 文献排序</strong>  </p>
-<p>​		查找全文：全选文献—右键查找全文–查找全文–出现回形针表示能找到</p>
-<p>​		查找全文对于中文文献是不适用的，对于没有中文文献和没有查找到全文的英文文献，可以先将PDF下载到本地，这篇文献就会被链接到一个全文，该PDF文件会被自动存储到数据库文件夹中(删除后无影响)</p>
-<p>​	<strong>3.4 对文献做笔记</strong></p>
-<p>​		1,2步骤后 然后调出reserch Notes，保存。</p>
-<p>​		<img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/%E7%AC%94%E8%AE%B0.png"></p>
-<p>4.引用文献</p>
-<p>​	<strong>预览样式</strong>：在引用文献前，可以在EndNote预览参考文献样式</p>
-<p>​	<img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/%E9%A2%84%E8%A7%88%E6%A0%B7%E5%BC%8F.png"></p>
-<p>​	<strong>添加样式：</strong><a href="https://endnote.com/downloads/styles/?wpv_aux_current_post_id=12829&wpv_view_count=12764-TCPID12829">Output styles - EndNote</a></p>
-<p>​		下载后粘贴到endnote下载位置的Style中</p>
-<p>​	<strong>引入到word中</strong>：在word中EndNote(导航栏)—选择好style—在EndNote里选择好要导入的文件—在word里Insert Citation—Insert  selected Citation.</p>
-<p>​	<strong>去除参考文献域代码</strong>：域代码去除就无法恢复（Ctrl+A–Ctrl+Shift+F9）</p>
-<p>​	<img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/%E5%9F%9F%E4%BB%A3%E7%A0%81.png"></p>
-<p>​	<strong>更改作者数：</strong></p>
-<p>​	<img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/%E4%BD%9C%E8%80%85%E6%95%B0.png"></p>
-<p><img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/%E4%BD%9C%E8%80%85%E6%95%B02.png"></p>
-<p>​	<strong>引用网页文献的问题</strong>：</p>
-<p><img src="/../images/endNode%E7%9A%84%E4%BD%BF%E7%94%A8/%E7%BD%91%E9%A1%B5%E6%96%87%E7%8C%AE.png"></p>
-]]></content>
-      <categories>
-        <category>科研软件</category>
-      </categories>
-      <tags>
-        <tag>科研软件</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>求质数计算中的标记思想</title>
     <url>/2024/01/20/%E6%A0%87%E8%AE%B0%E6%80%9D%E6%83%B3/</url>
     <content><![CDATA[<h1 id="标记思想"><a href="#标记思想" class="headerlink" title="标记思想"></a>标记思想</h1><p>定义一个布尔变量，表示标记</p>
@@ -4485,6 +4485,20 @@
       </tags>
   </entry>
   <entry>
+    <title>生成随机且不重复的数据</title>
+    <url>/2024/01/24/%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E4%B8%94%E4%B8%8D%E9%87%8D%E5%A4%8D%E7%9A%84%E6%95%B0%E6%8D%AE/</url>
+    <content><![CDATA[<p>创建大小为 x的 int 的空数组；<br>调用 random 产生随机数字；<br>当产生的随机数和数组中的元素没有重复的时候，放进去，即可；</p>
+<h1 id="1-判断随机数字在数组中是否存在"><a href="#1-判断随机数字在数组中是否存在" class="headerlink" title="1.判断随机数字在数组中是否存在"></a>1.判断随机数字在数组中是否存在</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">boolean</span> <span class="title function_">contain</span><span class="params">(<span class="type">int</span> [] arr,<span class="type">int</span> number)</span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (arr[i]==number)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="2-当产生的随机数和数组中的元素没有重复的时候，放入数组"><a href="#2-当产生的随机数和数组中的元素没有重复的时候，放入数组" class="headerlink" title="2.当产生的随机数和数组中的元素没有重复的时候，放入数组"></a>2.当产生的随机数和数组中的元素没有重复的时候，放入数组</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span>[] createNumber()&#123;</span><br><span class="line">    <span class="comment">//1.创建数组用于添加中奖号码，六个红球1个蓝球，数组长度为7</span></span><br><span class="line">    <span class="type">int</span>[] arr=<span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">7</span>];</span><br><span class="line">    <span class="comment">//2.生成随机数字，红球的号码不能重复，蓝球的号码可以和红球重复</span></span><br><span class="line">    <span class="type">Random</span> <span class="variable">r</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Random</span>();</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; <span class="number">6</span>;) &#123;</span><br><span class="line">        <span class="type">int</span>  <span class="variable">red</span> <span class="operator">=</span> r.nextInt(<span class="number">33</span>)+<span class="number">1</span>;<span class="comment">//红球号码从1-33中选择，且不能重复。</span></span><br><span class="line">        <span class="type">boolean</span> <span class="variable">flag</span> <span class="operator">=</span> contain(arr, red);</span><br><span class="line">        <span class="keyword">if</span> (!flag)&#123;</span><br><span class="line">            arr[i]=red;</span><br><span class="line">            i++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; <span class="number">6</span>; i++) &#123;</span><br><span class="line">        System.out.println(arr[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> arr;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>经典算法思想</category>
+      </categories>
+      <tags>
+        <tag>算法思想</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>生成验证码</title>
     <url>/2024/02/19/%E7%94%9F%E6%88%90%E9%AA%8C%E8%AF%81%E7%A0%81/</url>
     <content><![CDATA[<h4 id="验证码规则："><a href="#验证码规则：" class="headerlink" title="验证码规则："></a>验证码规则：</h4><p>​	长度为5</p>
@@ -4502,20 +4516,6 @@
       </tags>
   </entry>
   <entry>
-    <title>生成随机且不重复的数据</title>
-    <url>/2024/01/24/%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E4%B8%94%E4%B8%8D%E9%87%8D%E5%A4%8D%E7%9A%84%E6%95%B0%E6%8D%AE/</url>
-    <content><![CDATA[<p>创建大小为 x的 int 的空数组；<br>调用 random 产生随机数字；<br>当产生的随机数和数组中的元素没有重复的时候，放进去，即可；</p>
-<h1 id="1-判断随机数字在数组中是否存在"><a href="#1-判断随机数字在数组中是否存在" class="headerlink" title="1.判断随机数字在数组中是否存在"></a>1.判断随机数字在数组中是否存在</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">boolean</span> <span class="title function_">contain</span><span class="params">(<span class="type">int</span> [] arr,<span class="type">int</span> number)</span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (arr[i]==number)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="2-当产生的随机数和数组中的元素没有重复的时候，放入数组"><a href="#2-当产生的随机数和数组中的元素没有重复的时候，放入数组" class="headerlink" title="2.当产生的随机数和数组中的元素没有重复的时候，放入数组"></a>2.当产生的随机数和数组中的元素没有重复的时候，放入数组</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span>[] createNumber()&#123;</span><br><span class="line">    <span class="comment">//1.创建数组用于添加中奖号码，六个红球1个蓝球，数组长度为7</span></span><br><span class="line">    <span class="type">int</span>[] arr=<span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">7</span>];</span><br><span class="line">    <span class="comment">//2.生成随机数字，红球的号码不能重复，蓝球的号码可以和红球重复</span></span><br><span class="line">    <span class="type">Random</span> <span class="variable">r</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Random</span>();</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; <span class="number">6</span>;) &#123;</span><br><span class="line">        <span class="type">int</span>  <span class="variable">red</span> <span class="operator">=</span> r.nextInt(<span class="number">33</span>)+<span class="number">1</span>;<span class="comment">//红球号码从1-33中选择，且不能重复。</span></span><br><span class="line">        <span class="type">boolean</span> <span class="variable">flag</span> <span class="operator">=</span> contain(arr, red);</span><br><span class="line">        <span class="keyword">if</span> (!flag)&#123;</span><br><span class="line">            arr[i]=red;</span><br><span class="line">            i++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; <span class="number">6</span>; i++) &#123;</span><br><span class="line">        System.out.println(arr[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> arr;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>经典算法思想</category>
-      </categories>
-      <tags>
-        <tag>算法思想</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>登录错误时的次数限制</title>
     <url>/2024/02/19/%E7%99%BB%E5%BD%95%E5%A4%B1%E8%AF%AF%E6%97%B6%E6%AC%A1%E6%95%B0%E7%9A%84%E9%99%90%E5%88%B6/</url>
     <content><![CDATA[<p>day12</p>
@@ -4525,6 +4525,17 @@
       </categories>
       <tags>
         <tag>算法思想</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>决策树算法</title>
+    <url>/2024/11/01/%E7%AE%97%E6%B3%95_%E5%86%B3%E7%AD%96%E6%A0%91%E7%AE%97%E6%B3%95/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
       </tags>
   </entry>
   <entry>
@@ -4568,17 +4579,6 @@
       </categories>
       <tags>
         <tag>算法思想</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>决策树算法</title>
-    <url>/2024/11/01/%E7%AE%97%E6%B3%95_%E5%86%B3%E7%AD%96%E6%A0%91%E7%AE%97%E6%B3%95/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
       </tags>
   </entry>
   <entry>
