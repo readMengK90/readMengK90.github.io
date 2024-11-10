@@ -6,7 +6,7 @@
   <link href="https://readmengk90.github.io/atom.xml" rel="self"/>
   
   <link href="https://readmengk90.github.io/"/>
-  <updated>2024-11-10T06:56:54.358Z</updated>
+  <updated>2024-11-10T07:30:01.884Z</updated>
   <id>https://readmengk90.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python高阶加强</title>
+    <link href="https://readmengk90.github.io/2024/11/10/Python%E9%AB%98%E9%98%B6%E5%8A%A0%E5%BC%BA/"/>
+    <id>https://readmengk90.github.io/2024/11/10/Python%E9%AB%98%E9%98%B6%E5%8A%A0%E5%BC%BA/</id>
+    <published>2024-11-10T06:57:36.776Z</published>
+    <updated>2024-11-10T07:30:01.884Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="1-初识对象"><a href="#1-初识对象" class="headerlink" title="1.初识对象"></a>1.初识对象</h3><p>​希望数据的组织可以达到简洁统一。</p><table><thead><tr><th align="center">生活中</th><th align="center">程序中</th></tr></thead><tbody><tr><td align="center">设计表格</td><td align="center">设计类</td></tr><tr><td align="center">打印生产表格</td><td align="center">创建对象</td></tr><tr><td align="center">填写表格</td><td align="center">对象属性赋值</td></tr></tbody></table><p><img src="/../images/Python%E9%AB%98%E9%98%B6%E5%8A%A0%E5%BC%BA/%E7%B1%BB.png"></p><h3 id="2-成员方法"><a href="#2-成员方法" class="headerlink" title="2.成员方法"></a>2.成员方法</h3><p><img src="/../images/Python%E9%AB%98%E9%98%B6%E5%8A%A0%E5%BC%BA/%E7%B1%BB2.png"></p><p>​定义在类内部的函数称之为方法</p><p>在类中定义成员方法和定义函数基本一致，但仍有细微区别:</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">方法体</span>(<span class="params">self,形参<span class="number">1</span>,.....,形参N</span>):</span><br><span class="line">    方法体</span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">可以看到，在方法定义的参数列表中，有一个:self关键字</span></span><br><span class="line"><span class="string">self关键字是成员方法定义的时候，必须填写的。</span></span><br><span class="line"><span class="string">它用来表示类对象自身的意思。</span></span><br><span class="line"><span class="string">当我们使用类对象调用方法时，self会自动被python传入</span></span><br><span class="line"><span class="string">在方法内部，想要方法类的成员变量，必须使用self</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure><h3 id="3-类和对象"><a href="#3-类和对象" class="headerlink" title="3.类和对象"></a>3.类和对象</h3><h3 id="4-构造方法"><a href="#4-构造方法" class="headerlink" title="4.构造方法"></a>4.构造方法</h3><h3 id="5-其他内置方法"><a href="#5-其他内置方法" class="headerlink" title="5.其他内置方法"></a>5.其他内置方法</h3><h3 id="6-封装"><a href="#6-封装" class="headerlink" title="6.封装"></a>6.封装</h3><h3 id="7-继承"><a href="#7-继承" class="headerlink" title="7.继承"></a>7.继承</h3><h3 id="8-类型注解"><a href="#8-类型注解" class="headerlink" title="8.类型注解"></a>8.类型注解</h3><h3 id="9-多态"><a href="#9-多态" class="headerlink" title="9.多态"></a>9.多态</h3><h3 id="10-综合案例"><a href="#10-综合案例" class="headerlink" title="10.综合案例"></a>10.综合案例</h3>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;高阶加强&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="Python" scheme="https://readmengk90.github.io/categories/Python/"/>
+    
+    
+    <category term="Python" scheme="https://readmengk90.github.io/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title>Python基础综合案例</title>
@@ -400,27 +421,6 @@
     <updated>2024-02-19T14:34:14.036Z</updated>
     
     <content type="html"><![CDATA[<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">public:被JVM(虚拟机)调用，访问权限足够大</span></span><br><span class="line"><span class="comment">static:被JVM调用，不用创建对象，直接类名访问，因为main()方法是静态的，所以测试类中其他方法也需要是静态的</span></span><br><span class="line"><span class="comment">void:被JVM调用，不需要给JVM返回值</span></span><br><span class="line"><span class="comment">main:一个通用的名称，虽然不是关键字，但是被JVM识别</span></span><br><span class="line"><span class="comment">String[] args:以前用于接收键盘录入数据的，现在没用。</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;静态变量&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="Java基础" scheme="https://readmengk90.github.io/categories/Java%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="java" scheme="https://readmengk90.github.io/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>面向对象进阶-static静态变量</title>
-    <link href="https://readmengk90.github.io/2024/02/19/java%E5%9F%BA%E7%A1%80-static/"/>
-    <id>https://readmengk90.github.io/2024/02/19/java%E5%9F%BA%E7%A1%80-static/</id>
-    <published>2024-02-19T07:50:51.004Z</published>
-    <updated>2024-02-19T14:16:30.191Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>static</strong>：表示静态，是Java中的一个修饰符，可以修饰成员方法，成员变量。</p><p>学生对象共享同一个老师</p><p>public static String treachName;</p><p>类名调用，对象调用均可</p><table><thead><tr><th>被static修饰的成员变量，叫做静态变量</th><th>被static修饰的成员方法，叫做静态方法</th></tr></thead><tbody><tr><td>特点：被这个类所有对象共享<br>调用方式:<br>               类名调用(推荐)<br>               对象名调用<br>静态变量是随着类的加载而加载的，优先于对象出现的<br><img src="/../images/java%E5%9F%BA%E7%A1%80-static/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240219162328.png"></td><td>特点：多用在测试类和工具类，javabean类中很少会用。<br>调用方式:<br/>               类名调用(推荐)<br/>               对象名调用<br/><strong>工具类</strong>：帮助我们做一些事情，但是不描述任何事物的类<br>1.类名见名知意<br>2.私有化构造方法<br>3.方法都定义为静态的<br><strong>javabean类</strong>：用来描述一类事物的类。比如student，teacher.<br><strong>测试类</strong>：用来坚持其他类是否书写正确，带有main方法的类，是程序的入口</td></tr></tbody></table><p>那些属性可以被定义为静态—-具有共享性质的</p><p><strong>static的注意事项</strong></p><p>1.静态方法<strong>只能</strong>访问静态变量和静态方法(和this有关)</p><p>2.非静态方法<strong>可以</strong>访问静态变量或静态方法，<strong>也可以</strong>访问非静态的成员变量和非静态的成员方法(<strong>和调用方式有关</strong>)</p><p>3.静态方法中<strong>没有</strong>this关键字</p><p><strong>this:表示当前方法调用者的地址值，这个this是由虚拟机赋值的</strong>，<strong>方法内调用成员变量的时候就可以区分不太的对象</strong></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">show1</span><span class="params">(Student <span class="built_in">this</span>)</span>&#123; <span class="comment">//Student this在非静态方法中是隐藏的</span></span><br><span class="line">System.out.println(name+<span class="string">&quot;,&quot;</span>+age+<span class="string">&quot;,&quot;</span>+teachernaem)<span class="comment">//this.name  this.age  this.teachername</span></span><br><span class="line">    <span class="comment">//调用其他方法</span></span><br><span class="line">    show2<span class="comment">//this.show2();</span></span><br><span class="line">&#125;</span><br><span class="line">s1.show1/s2.show2</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>为什么非静态方法设计没有this?</p><p>​和某一个对象没有关系，共享思想。</p><p>静态(变量&#x2F;方法)随着类的加载而加载，非静态(变量&#x2F;方法)跟对象有关。</p><p>1.静态方法<strong>只能</strong>访问静态变量和静态方法(和this有关)</p><p><img src="/../images/java%E5%9F%BA%E7%A1%80-static/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240219220725.png"></p><p><img src="/../images/java%E5%9F%BA%E7%A1%80-static/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240219221017.png"></p><p>2.非静态方法<strong>可以</strong>访问静态变量或静态方法，<strong>也可以</strong>访问非静态的成员变量和非静态的成员方法(<strong>和调用方式有关</strong>)</p><p><img src="/../images/java%E5%9F%BA%E7%A1%80-static/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240219221500.png"></p>]]></content>
     
     
     <summary type="html">&lt;center&gt;静态变量&lt;/center&gt;</summary>
