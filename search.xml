@@ -136,6 +136,22 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo+Next主题下的阅读全文设置</title>
+    <url>/2024/01/10/Hexo-%E6%98%BE%E7%A4%BA%E5%85%A8%E6%96%87%E7%9A%84%E8%AE%BE%E7%BD%AE/</url>
+    <content><![CDATA[<h1 id="Hexo-显示全文的设置"><a href="#Hexo-显示全文的设置" class="headerlink" title="Hexo-显示全文的设置"></a>Hexo-显示全文的设置</h1><h5 id="1-在文章中使用-more-手动进行截断"><a href="#1-在文章中使用-more-手动进行截断" class="headerlink" title="1.在文章中使用&lt; !--more--&gt; 手动进行截断"></a>1.在文章中使用<code>&lt; !--more--&gt;</code> 手动进行截断</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-01.png?raw=true" alt="image-20240110132555493"></p>
+<h5 id="2-添加描述信息的内容，会成为一种相关内容的提示信息"><a href="#2-添加描述信息的内容，会成为一种相关内容的提示信息" class="headerlink" title="2.添加描述信息的内容，会成为一种相关内容的提示信息"></a>2.添加描述信息的内容，会成为一种相关内容的提示信息</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-02.png?raw=true" alt="image-20240110132853566"></p>
+<h5 id="3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部"><a href="#3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部" class="headerlink" title="3.在主题配置文件中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部"></a>3.在<strong>主题配置文件</strong>中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部</h5><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">auto_excerpt:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">length:</span> <span class="number">150</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="4-效果-展示"><a href="#4-效果-展示" class="headerlink" title="4.效果 展示"></a>4.效果 展示</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-03.png?raw=true" alt="image-20240110133302658"></p>
+]]></content>
+      <categories>
+        <category>Next主题配置</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>快捷键的妙用</title>
     <url>/2024/01/22/Idea%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9A%84%E5%A6%99%E7%94%A8/</url>
     <content><![CDATA[<h1 id="Idea快捷键的妙用"><a href="#Idea快捷键的妙用" class="headerlink" title="Idea快捷键的妙用"></a>Idea快捷键的妙用</h1><p>Ctrl+alt+M:自动抽取方法 </p>
@@ -202,19 +218,92 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo+Next主题下的阅读全文设置</title>
-    <url>/2024/01/10/Hexo-%E6%98%BE%E7%A4%BA%E5%85%A8%E6%96%87%E7%9A%84%E8%AE%BE%E7%BD%AE/</url>
-    <content><![CDATA[<h1 id="Hexo-显示全文的设置"><a href="#Hexo-显示全文的设置" class="headerlink" title="Hexo-显示全文的设置"></a>Hexo-显示全文的设置</h1><h5 id="1-在文章中使用-more-手动进行截断"><a href="#1-在文章中使用-more-手动进行截断" class="headerlink" title="1.在文章中使用&lt; !--more--&gt; 手动进行截断"></a>1.在文章中使用<code>&lt; !--more--&gt;</code> 手动进行截断</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-01.png?raw=true" alt="image-20240110132555493"></p>
-<h5 id="2-添加描述信息的内容，会成为一种相关内容的提示信息"><a href="#2-添加描述信息的内容，会成为一种相关内容的提示信息" class="headerlink" title="2.添加描述信息的内容，会成为一种相关内容的提示信息"></a>2.添加描述信息的内容，会成为一种相关内容的提示信息</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-02.png?raw=true" alt="image-20240110132853566"></p>
-<h5 id="3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部"><a href="#3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部" class="headerlink" title="3.在主题配置文件中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部"></a>3.在<strong>主题配置文件</strong>中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部</h5><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">auto_excerpt:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">length:</span> <span class="number">150</span></span><br></pre></td></tr></table></figure>
+    <title>Java API 和字符串</title>
+    <url>/2024/02/03/Java%E5%9F%BA%E7%A1%80-API%E5%92%8C%E5%AD%97%E7%AC%A6%E4%B8%B2/</url>
+    <content><![CDATA[<p>**API(**Application Programming Interface):应用程序编程接口</p>
+<p>简单理解：API就是别人已经写好的东西，我们不需要自己编写，直接使用即可.</p>
+<p>Java API:指的就是JDK中提供得各种功能得Java类，这些类将底层的实现封装起来，我们不需要关心这些类是如何实现的，只需要学习这些类如何使用即可。</p>
+<p>API帮助文档：帮助开发人员更好的使用API和查询API的一个工具</p>
+<p>链接：<a href="https://pan.baidu.com/s/1DXJGNchknR_VgQVxbqzQig?pwd=rqei">https://pan.baidu.com/s/1DXJGNchknR_VgQVxbqzQig?pwd=rqei</a><br>提取码：rqei </p>
+<p>如何使用帮助文档：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">java.io包：读取文件的内容，或者把数据写到文件中去</span><br><span class="line">java.lang包：</span><br></pre></td></tr></table></figure>
 
-<h5 id="4-效果-展示"><a href="#4-效果-展示" class="headerlink" title="4.效果 展示"></a>4.效果 展示</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-03.png?raw=true" alt="image-20240110133302658"></p>
+<p><strong>字符串：</strong>JAVA不会字符串，开发就会凉一半</p>
+<p>String：定义在java.lang.String包内，代表字符串，Java程序中的所有字符串(“abc”)文字都为此类的对象。</p>
+<p>​		字符串的内容是不会发生改变的，它的对象在创建后不能被更改</p>
+<p><em>创建String对象的两种方式</em>：</p>
+<p>1.<strong>直接赋值</strong>：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">String</span> <span class="variable">name</span> <span class="operator">=</span> <span class="string">&quot;abc&quot;</span>;</span><br></pre></td></tr></table></figure>
+
+<p>2.<strong>使用new关键字使用不同的构造方法去创建字符串对象</strong>:</p>
+<table>
+<thead>
+<tr>
+<th align="center">构造方法</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">public String（）</td>
+<td align="center">创建空白字符串，不含任何内容<br>String s0 &#x3D; new String( );</td>
+</tr>
+<tr>
+<td align="center">public String(String original)</td>
+<td align="center">根据传入的字符串，创建字符串对象<br>String s1 &#x3D; new String(“abc”)</td>
+</tr>
+<tr>
+<td align="center">public String(char[ ] chs)</td>
+<td align="center">根据传入字符数组，创建字符串对象<br>char[] chs &#x3D; {‘a’,’b’,’c’,’d’}<br>String s2 &#x3D; new String(chs)</td>
+</tr>
+<tr>
+<td align="center">public String(byte[ ] chs)</td>
+<td align="center">根据传入字节数组，创建字符串对象<br>byte[] bytes&#x3D; {97,98,99,100}<br>String s3 &#x3D; new String(bytes)</td>
+</tr>
+</tbody></table>
+<p>字符串-字符数组-字符串：(应用场景:修改字符串的内容)</p>
+<p>字节数组-字符串：(应用场景：网络中传输的数据其实都是字节信息)</p>
+<p><em>字符串在内存中是如何创建的</em></p>
+<p>StringTable(<strong>字符串常量池</strong>)：直接赋值的方式获取的字符串放在串次中，串池在<strong>堆内存</strong>中</p>
+<p>当时有双引号直接赋值时，系统会坚持该字符串在串池中是否存在，不存在，创建新的，<strong>存在，复用。</strong></p>
+<p>Java的常用方法1-<strong>字符串的比较</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">String</span> <span class="variable">s1</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">String</span>(<span class="string">&quot;abc&quot;</span>);</span><br><span class="line"><span class="type">String</span> <span class="variable">s2</span> <span class="operator">=</span> <span class="string">&quot;abc&quot;</span>;</span><br><span class="line">System.out.println(s1==s2);<span class="comment">//这种比较可以吗？</span></span><br></pre></td></tr></table></figure>
+
+<p><em>&#x3D;&#x3D;号比较的原理？</em>（String属于引用数据类型）</p>
+<p>基本数据类型：&#x3D;&#x3D;号比较基本数据类型比较的是<strong>数据值</strong></p>
+<p>引用数据类型：&#x3D;&#x3D;号比较引用数据类型比较的是<strong>地址值</strong></p>
+<p><em>字符串的比较？</em></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">String</span> <span class="variable">s1</span> <span class="operator">=</span> <span class="string">&quot;abc&quot;</span>;<span class="comment">//记录串池里的地址</span></span><br><span class="line"><span class="type">String</span> <span class="variable">s2</span> <span class="operator">=</span> <span class="string">&quot;abc&quot;</span>;<span class="comment">//串池中存在该字符串，复用，地址值相同</span></span><br><span class="line">System.out.println(s1==s2);</span><br><span class="line"><span class="comment">//----------------------------------------------------------</span></span><br><span class="line"><span class="type">String</span> <span class="variable">s1</span> <span class="operator">=</span> <span class="string">&quot;abc&quot;</span>;<span class="comment">//记录串池里面的地址</span></span><br><span class="line"><span class="type">String</span> <span class="variable">s2</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">String</span>(<span class="string">&quot;abc&quot;</span>);<span class="comment">//记录堆里面的地址</span></span><br><span class="line">System.out.println(s1==s2);</span><br></pre></td></tr></table></figure>
+
+<p>字符串比较：</p>
+<p><strong>boolean equals方法(要比较的字符串)</strong> &#x2F;&#x2F;完全一样的结果才是true，否则为false.</p>
+<p><strong>boolean equalsIgnoreCase(要比较的字符串)</strong>  &#x2F;&#x2F;忽略(<strong>英文状态下的</strong>)大小写的比较,适用于验证码校验</p>
+<p><strong>&#x2F;&#x2F;键盘录入得到的字符串是new出来的</strong>，只有想比较字符串的内容，就必须要用String里面的方法。</p>
+<p>Java常用的方法2-<strong>遍历字符串</strong></p>
+<table>
+<thead>
+<tr>
+<th>public char charAt(int index):根据索引返回字符</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>public int length():返回此字符串的长度，字符串的长度：字符串对象.length()</strong></td>
+</tr>
+</tbody></table>
+<p>Java常用的方法3-<strong>字符串拼接和反转</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">String newStr=<span class="string">&quot;&quot;</span>;<span class="comment">//-------------------------------拼接--------------</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">L</span> <span class="operator">=</span> str.length();</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> L-<span class="number">1</span>; i &gt;=<span class="number">0</span>; i--) &#123;</span><br><span class="line">            <span class="type">char</span> <span class="variable">c</span> <span class="operator">=</span> str.charAt(i);</span><br><span class="line">            newStr=newStr+c;----------------------思想--------------</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> newStr;</span><br></pre></td></tr></table></figure>
+
+<p>Java常用的方法4-<strong>字符串的截取</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">String <span class="title function_">subString</span><span class="params">(<span class="type">int</span> beginIndex,<span class="type">int</span> endIndex)</span>   <span class="comment">//截取---包头不包围，包左不包右</span></span><br><span class="line">    <span class="comment">//只有返回值才是截取的小串，对原来的字符串没有任何影响，字符串本身不能发生变化。</span></span><br><span class="line">String <span class="title function_">subString</span><span class="params">(<span class="type">int</span> beginIndex)</span>  <span class="comment">//截取到末尾</span></span><br></pre></td></tr></table></figure>
+
+<p> Java常用的方法5-<strong>新旧值替换</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">String <span class="title function_">replace</span><span class="params">(旧值,新值)</span><span class="comment">//替换</span></span><br><span class="line"><span class="comment">//注意点：只有返回值才是替换之后的结果</span></span><br></pre></td></tr></table></figure>
+
 ]]></content>
       <categories>
-        <category>Next主题配置</category>
+        <category>Java基础</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
+        <tag>java</tag>
       </tags>
   </entry>
   <entry>
@@ -674,93 +763,64 @@
       </tags>
   </entry>
   <entry>
-    <title>Java API 和字符串</title>
-    <url>/2024/02/03/Java%E5%9F%BA%E7%A1%80-API%E5%92%8C%E5%AD%97%E7%AC%A6%E4%B8%B2/</url>
-    <content><![CDATA[<p>**API(**Application Programming Interface):应用程序编程接口</p>
-<p>简单理解：API就是别人已经写好的东西，我们不需要自己编写，直接使用即可.</p>
-<p>Java API:指的就是JDK中提供得各种功能得Java类，这些类将底层的实现封装起来，我们不需要关心这些类是如何实现的，只需要学习这些类如何使用即可。</p>
-<p>API帮助文档：帮助开发人员更好的使用API和查询API的一个工具</p>
-<p>链接：<a href="https://pan.baidu.com/s/1DXJGNchknR_VgQVxbqzQig?pwd=rqei">https://pan.baidu.com/s/1DXJGNchknR_VgQVxbqzQig?pwd=rqei</a><br>提取码：rqei </p>
-<p>如何使用帮助文档：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">java.io包：读取文件的内容，或者把数据写到文件中去</span><br><span class="line">java.lang包：</span><br></pre></td></tr></table></figure>
+    <title>Python基础综合案例</title>
+    <url>/2024/11/09/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/</url>
+    <content><![CDATA[<h3 id="JSON数据格式"><a href="#JSON数据格式" class="headerlink" title="JSON数据格式:"></a>JSON数据格式:</h3><p>​	JSON是一种轻量级的数据交互格式。可以按照JSON指定的格式去组织和封装数据。</p>
+<p>​	JSON本质上是一个带有特定格式的字符串</p>
+<p>​	主要功能: json就是一种在各个编程语言中流通的数据格式，负责不同编程语言中的数据传递和交互。类似于:国际通用语言-英语，中国官方语言-普通话</p>
+<p>​	<img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/Json.png"></p>
+<p>JSON数据的格式：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># json数据的格式可以是(json是Python的列表(内嵌字典的列表)或者字典)</span></span><br><span class="line">&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;admin&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">18</span>&#125; <span class="comment">#</span></span><br><span class="line"><span class="comment"># 也可以是</span></span><br><span class="line">[&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;admin&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">18</span>&#125;,&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;root&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">16</span>&#125;,&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;张三&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">20</span>&#125;]</span><br></pre></td></tr></table></figure>
 
-<p><strong>字符串：</strong>JAVA不会字符串，开发就会凉一半</p>
-<p>String：定义在java.lang.String包内，代表字符串，Java程序中的所有字符串(“abc”)文字都为此类的对象。</p>
-<p>​		字符串的内容是不会发生改变的，它的对象在创建后不能被更改</p>
-<p><em>创建String对象的两种方式</em>：</p>
-<p>1.<strong>直接赋值</strong>：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">String</span> <span class="variable">name</span> <span class="operator">=</span> <span class="string">&quot;abc&quot;</span>;</span><br></pre></td></tr></table></figure>
+<p>Python数据和Json数据的相互转换:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 导入json模块</span></span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="comment">#准备符合json格式要求的Python数据</span></span><br><span class="line">data = [&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;admin&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">18</span>&#125;,&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;张三&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">20</span>&#125;]</span><br><span class="line"><span class="comment">#通过json.dunps(data)方法把python数据转化为了json字符串数据</span></span><br><span class="line">data = json.dumps(data)</span><br><span class="line"><span class="comment"># data = json.dumps(data,ensure_ascii=False),解决中文乱码的问题 </span></span><br><span class="line"><span class="comment">#通过json.loads(data)方法把json数据转化为了python字符串数据</span></span><br><span class="line">data = <span class="string">&#x27;[&#123;&quot;name&quot;:&quot;admin&quot;,&quot;age&quot;:18&#125;,&#123;&quot;name&quot;:&quot;张三&quot;,&quot;age&quot;:20&#125;]&#x27;</span></span><br><span class="line">data = json.loads(data)</span><br></pre></td></tr></table></figure>
 
-<p>2.<strong>使用new关键字使用不同的构造方法去创建字符串对象</strong>:</p>
-<table>
-<thead>
-<tr>
-<th align="center">构造方法</th>
-<th align="center">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">public String（）</td>
-<td align="center">创建空白字符串，不含任何内容<br>String s0 &#x3D; new String( );</td>
-</tr>
-<tr>
-<td align="center">public String(String original)</td>
-<td align="center">根据传入的字符串，创建字符串对象<br>String s1 &#x3D; new String(“abc”)</td>
-</tr>
-<tr>
-<td align="center">public String(char[ ] chs)</td>
-<td align="center">根据传入字符数组，创建字符串对象<br>char[] chs &#x3D; {‘a’,’b’,’c’,’d’}<br>String s2 &#x3D; new String(chs)</td>
-</tr>
-<tr>
-<td align="center">public String(byte[ ] chs)</td>
-<td align="center">根据传入字节数组，创建字符串对象<br>byte[] bytes&#x3D; {97,98,99,100}<br>String s3 &#x3D; new String(bytes)</td>
-</tr>
-</tbody></table>
-<p>字符串-字符数组-字符串：(应用场景:修改字符串的内容)</p>
-<p>字节数组-字符串：(应用场景：网络中传输的数据其实都是字节信息)</p>
-<p><em>字符串在内存中是如何创建的</em></p>
-<p>StringTable(<strong>字符串常量池</strong>)：直接赋值的方式获取的字符串放在串次中，串池在<strong>堆内存</strong>中</p>
-<p>当时有双引号直接赋值时，系统会坚持该字符串在串池中是否存在，不存在，创建新的，<strong>存在，复用。</strong></p>
-<p>Java的常用方法1-<strong>字符串的比较</strong></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">String</span> <span class="variable">s1</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">String</span>(<span class="string">&quot;abc&quot;</span>);</span><br><span class="line"><span class="type">String</span> <span class="variable">s2</span> <span class="operator">=</span> <span class="string">&quot;abc&quot;</span>;</span><br><span class="line">System.out.println(s1==s2);<span class="comment">//这种比较可以吗？</span></span><br></pre></td></tr></table></figure>
+<h3 id="pyecharts模块"><a href="#pyecharts模块" class="headerlink" title="pyecharts模块"></a>pyecharts模块</h3><p>pyecharts是帮助我们做出数据可视化效果图的一个模块。它的本体是echarts框架。</p>
+<p>Echarts是由百度开源的数据可视化，凭借着良好的交互性，精巧的图表设计，得到了众多开发者的认可，而Python是门富有表达能力的语言，很适合用于数据处理，当数据分析遇上数据可视化时pycharts诞生了。</p>
+<figure class="highlight http"><table><tr><td class="code"><pre><span class="line">中文文档:pyecharts.org</span><br><span class="line">画廊官网:https://gallery.pyecharts.org/#/README</span><br></pre></td></tr></table></figure>
 
-<p><em>&#x3D;&#x3D;号比较的原理？</em>（String属于引用数据类型）</p>
-<p>基本数据类型：&#x3D;&#x3D;号比较基本数据类型比较的是<strong>数据值</strong></p>
-<p>引用数据类型：&#x3D;&#x3D;号比较引用数据类型比较的是<strong>地址值</strong></p>
-<p><em>字符串的比较？</em></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">String</span> <span class="variable">s1</span> <span class="operator">=</span> <span class="string">&quot;abc&quot;</span>;<span class="comment">//记录串池里的地址</span></span><br><span class="line"><span class="type">String</span> <span class="variable">s2</span> <span class="operator">=</span> <span class="string">&quot;abc&quot;</span>;<span class="comment">//串池中存在该字符串，复用，地址值相同</span></span><br><span class="line">System.out.println(s1==s2);</span><br><span class="line"><span class="comment">//----------------------------------------------------------</span></span><br><span class="line"><span class="type">String</span> <span class="variable">s1</span> <span class="operator">=</span> <span class="string">&quot;abc&quot;</span>;<span class="comment">//记录串池里面的地址</span></span><br><span class="line"><span class="type">String</span> <span class="variable">s2</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">String</span>(<span class="string">&quot;abc&quot;</span>);<span class="comment">//记录堆里面的地址</span></span><br><span class="line">System.out.println(s1==s2);</span><br></pre></td></tr></table></figure>
+<p>安装：</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt; pip install pyecharts</span><br><span class="line"># 检查安装效果</span><br><span class="line"># 进入Python导入模块</span><br><span class="line">&gt;&gt;&gt; python</span><br><span class="line">&gt;&gt;&gt; import pyecharts</span><br></pre></td></tr></table></figure>
 
-<p>字符串比较：</p>
-<p><strong>boolean equals方法(要比较的字符串)</strong> &#x2F;&#x2F;完全一样的结果才是true，否则为false.</p>
-<p><strong>boolean equalsIgnoreCase(要比较的字符串)</strong>  &#x2F;&#x2F;忽略(<strong>英文状态下的</strong>)大小写的比较,适用于验证码校验</p>
-<p><strong>&#x2F;&#x2F;键盘录入得到的字符串是new出来的</strong>，只有想比较字符串的内容，就必须要用String里面的方法。</p>
-<p>Java常用的方法2-<strong>遍历字符串</strong></p>
-<table>
-<thead>
-<tr>
-<th>public char charAt(int index):根据索引返回字符</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>public int length():返回此字符串的长度，字符串的长度：字符串对象.length()</strong></td>
-</tr>
-</tbody></table>
-<p>Java常用的方法3-<strong>字符串拼接和反转</strong></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">String newStr=<span class="string">&quot;&quot;</span>;<span class="comment">//-------------------------------拼接--------------</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">L</span> <span class="operator">=</span> str.length();</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> L-<span class="number">1</span>; i &gt;=<span class="number">0</span>; i--) &#123;</span><br><span class="line">            <span class="type">char</span> <span class="variable">c</span> <span class="operator">=</span> str.charAt(i);</span><br><span class="line">            newStr=newStr+c;----------------------思想--------------</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> newStr;</span><br></pre></td></tr></table></figure>
+<h3 id="pyecharts入门使用"><a href="#pyecharts入门使用" class="headerlink" title="pyecharts入门使用"></a>pyecharts入门使用</h3><p>pycharts有那些配置选项:</p>
+<p>​	全局配置选项:针对整个图像进行设置，图像的标题，图例，工具箱等</p>
+<p>​	全局配置可以通过一个set_global_opts方法进行配置，相应的选项和选项的功能如下:<img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/%E5%85%A8%E5%B1%80%E9%85%8D%E7%BD%AE.png"></p>
+<p>​	<img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/%E5%85%A8%E5%B1%80%E9%85%8D%E7%BD%AE01.png"></p>
+<p>​	系列配置选项:针对具体的轴数据进行配置</p>
+<h3 id="数据处理"><a href="#数据处理" class="headerlink" title="数据处理"></a>数据处理</h3><p>​	通过json模块对数据进行处理</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">在线json格式化分析:ab173.com</span><br></pre></td></tr></table></figure>
 
-<p>Java常用的方法4-<strong>字符串的截取</strong></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">String <span class="title function_">subString</span><span class="params">(<span class="type">int</span> beginIndex,<span class="type">int</span> endIndex)</span>   <span class="comment">//截取---包头不包围，包左不包右</span></span><br><span class="line">    <span class="comment">//只有返回值才是截取的小串，对原来的字符串没有任何影响，字符串本身不能发生变化。</span></span><br><span class="line">String <span class="title function_">subString</span><span class="params">(<span class="type">int</span> beginIndex)</span>  <span class="comment">//截取到末尾</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 构建图表</span></span><br><span class="line"><span class="comment"># 导包</span></span><br><span class="line"><span class="keyword">from</span> pyecharts.charts <span class="keyword">import</span> Line</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建一个折线图对象</span></span><br><span class="line">l=Line()</span><br><span class="line"><span class="comment"># 给折线图对象添加x轴的数据</span></span><br><span class="line">l.add_xaxis([<span class="string">&quot;中国&quot;</span>,<span class="string">&quot;美国&quot;</span>,<span class="string">&quot;英国&quot;</span>])</span><br><span class="line"><span class="comment"># 给折线图对象添加y轴的数据</span></span><br><span class="line">l.add_yaxis(<span class="string">&quot;GDP&quot;</span>,[<span class="number">30</span>,<span class="number">20</span>,<span class="number">10</span>])</span><br><span class="line"><span class="comment"># 通过render方法，将代码生成为图像</span></span><br><span class="line">l.render()</span><br><span class="line"><span class="comment"># 设置全局配置项</span></span><br></pre></td></tr></table></figure>
 
-<p> Java常用的方法5-<strong>新旧值替换</strong></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">String <span class="title function_">replace</span><span class="params">(旧值,新值)</span><span class="comment">//替换</span></span><br><span class="line"><span class="comment">//注意点：只有返回值才是替换之后的结果</span></span><br></pre></td></tr></table></figure>
-
+<p>地图可视化</p>
+<p>使用pyecharts构建基础的全国地图可视化图表。</p>
+<p>基础柱状图开发</p>
+<p><img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/%E6%9F%B1%E7%8A%B6%E5%9B%BE.png"></p>
+<p><img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/%E6%9F%B1%E7%8A%B6%E5%9B%BE_%E6%97%B6%E9%97%B4%E7%BA%BF.png"></p>
+<p>创建自动播放:</p>
+<p><img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/%E8%87%AA%E5%8A%A8%E6%92%AD%E6%94%BE.png"></p>
+<p>修改柱状颜色</p>
+<p><img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/%E9%A2%9C%E8%89%B2.png"></p>
+<p>GDP动态柱状图绘制</p>
+<p>1.掌握列表的sort方法并配合lambda匿名函数完成列表排序</p>
+<p>​	sort方法 : **列表.sort(key&#x3D;选择排序依据的函数,reverse&#x3D;True|False)**。</p>
+<p>​	参数key,是要求传入一个函数，表示将列表的每一个元素都传入函数中，返回排序的依据。</p>
+<p>​	参数reverse，是否反转排序结果，True表示降序，False表示升序。</p>
+<p><img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/sort%E6%96%B9%E6%B3%95.png"></p>
+<p>2.完成图表所需的数据处理</p>
+<p>3.完成GDP动态图表绘制</p>
 ]]></content>
       <categories>
-        <category>Java基础</category>
+        <category>Python</category>
       </categories>
       <tags>
-        <tag>java</tag>
+        <tag>Python</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>好好学习  天天向上</title>
+    <url>/2024/01/08/first-blog/</url>
+    <content><![CDATA[<h1 id="This-is-my-first-blog-路上只我一个人，背着手踱着。这一片天地好像是我的-我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静-爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜-niao-nuo-地开着旳，有羞涩地打着朵儿旳-正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉-mo-的流水，遮住了，不能见一些颜色-而叶子却更见风致了。"><a href="#This-is-my-first-blog-路上只我一个人，背着手踱着。这一片天地好像是我的-我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静-爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜-niao-nuo-地开着旳，有羞涩地打着朵儿旳-正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉-mo-的流水，遮住了，不能见一些颜色-而叶子却更见风致了。" class="headerlink" title="This is my first blog 路上只我一个人，背着手踱着。这一片天地好像是我的;我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静;爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜(niǎo,nuó)地开着旳，有羞涩地打着朵儿旳;正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉(mò)的流水，遮住了，不能见一些颜色;而叶子却更见风致了。"></a>This is my first blog 路上只我一个人，背着手踱着。这一片天地好像是我的;我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静;爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜(niǎo,nuó)地开着旳，有羞涩地打着朵儿旳;正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉(mò)的流水，遮住了，不能见一些颜色;而叶子却更见风致了。</h1><h2 id="welcome-to-you"><a href="#welcome-to-you" class="headerlink" title="welcome to you!"></a>welcome to you!</h2>]]></content>
   </entry>
   <entry>
     <title>Linu上部署各类软件</title>
@@ -1967,6 +2027,43 @@
       </tags>
   </entry>
   <entry>
+    <title>idea插件集合</title>
+    <url>/2024/01/25/idea%E6%8F%92%E4%BB%B6%E9%9B%86%E5%90%88/</url>
+    <content><![CDATA[<p>idea插件集合:</p>
+<p>1:<strong>一秒生成标准JavaBean–插件PTG</strong></p>
+<ol>
+<li>电脑连接外网</li>
+<li>idea-file-settings-Plugins-Marketplace-搜索ptg-install</li>
+<li>idea右键-选择Ptg To JavaBean</li>
+</ol>
+<p><img src="/images/idea%E6%8F%92%E4%BB%B6%E9%9B%86%E5%90%88/%E6%8F%92%E4%BB%B61.png"></p>
+]]></content>
+      <categories>
+        <category>插件库</category>
+      </categories>
+      <tags>
+        <tag>插件库</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2024/01/08/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.<br>&lt; !–more–&gt;</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>Python从入门到精通</title>
     <url>/2024/09/27/Python%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/</url>
     <content><![CDATA[<p><strong>没有退路就是胜利之路</strong></p>
@@ -2451,59 +2548,6 @@
       <tags>
         <tag>Python</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Python从入门到精通</title>
-    <url>/2024/11/09/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>好好学习  天天向上</title>
-    <url>/2024/01/08/first-blog/</url>
-    <content><![CDATA[<h1 id="This-is-my-first-blog-路上只我一个人，背着手踱着。这一片天地好像是我的-我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静-爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜-niao-nuo-地开着旳，有羞涩地打着朵儿旳-正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉-mo-的流水，遮住了，不能见一些颜色-而叶子却更见风致了。"><a href="#This-is-my-first-blog-路上只我一个人，背着手踱着。这一片天地好像是我的-我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静-爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜-niao-nuo-地开着旳，有羞涩地打着朵儿旳-正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉-mo-的流水，遮住了，不能见一些颜色-而叶子却更见风致了。" class="headerlink" title="This is my first blog 路上只我一个人，背着手踱着。这一片天地好像是我的;我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静;爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜(niǎo,nuó)地开着旳，有羞涩地打着朵儿旳;正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉(mò)的流水，遮住了，不能见一些颜色;而叶子却更见风致了。"></a>This is my first blog 路上只我一个人，背着手踱着。这一片天地好像是我的;我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静;爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜(niǎo,nuó)地开着旳，有羞涩地打着朵儿旳;正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉(mò)的流水，遮住了，不能见一些颜色;而叶子却更见风致了。</h1><h2 id="welcome-to-you"><a href="#welcome-to-you" class="headerlink" title="welcome to you!"></a>welcome to you!</h2>]]></content>
-  </entry>
-  <entry>
-    <title>idea插件集合</title>
-    <url>/2024/01/25/idea%E6%8F%92%E4%BB%B6%E9%9B%86%E5%90%88/</url>
-    <content><![CDATA[<p>idea插件集合:</p>
-<p>1:<strong>一秒生成标准JavaBean–插件PTG</strong></p>
-<ol>
-<li>电脑连接外网</li>
-<li>idea-file-settings-Plugins-Marketplace-搜索ptg-install</li>
-<li>idea右键-选择Ptg To JavaBean</li>
-</ol>
-<p><img src="/images/idea%E6%8F%92%E4%BB%B6%E9%9B%86%E5%90%88/%E6%8F%92%E4%BB%B61.png"></p>
-]]></content>
-      <categories>
-        <category>插件库</category>
-      </categories>
-      <tags>
-        <tag>插件库</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2024/01/08/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.<br>&lt; !–more–&gt;</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
   </entry>
   <entry>
     <title>面向对象进阶-包-final-权限修饰符-代码块</title>
@@ -3023,49 +3067,6 @@
       </tags>
   </entry>
   <entry>
-    <title>常用的CMD命令</title>
-    <url>/2024/01/11/java%E5%9F%BA%E7%A1%80-%E5%B8%B8%E7%94%A8%E7%9A%84CMD%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<h1 id="1-常用的CMD命令"><a href="#1-常用的CMD命令" class="headerlink" title="1. 常用的CMD命令"></a>1. 常用的CMD命令</h1><ol>
-<li><p>Ctrl+R打开CMD命令窗口，<strong>同时可以按住ctrl键不松，拖动滚轮放大或缩小CMD窗口大小</strong></p>
-</li>
-<li><p><em>盘符名称+冒号</em> (C:,D:,E:),表示切换到指定盘符</p>
-</li>
-<li><p><em>dir</em> 查看当前路径下的内容，就是该目录列表(显示所有的文件和文件夹，<strong>包含隐藏的文件和文件夹</strong>)</p>
-</li>
-<li><p><em>cd 目录</em>  ， <strong>进入单极目录</strong>，(目录名可以写出部分内容，按住tab键关联出目录名称)</p>
-</li>
-<li><p><em>cd..</em> 回退到上一级目录，<strong>单级回退</strong></p>
-</li>
-<li><p>cd 目录1\目录2…     <strong>进入多级目录</strong></p>
-</li>
-<li><p>cd \    回退到盘符目录,<strong>多级回退</strong></p>
-</li>
-<li><p>cls 清屏(Clear screen)</p>
-</li>
-<li><p>exit  退出命令提示符窗口</p>
-<h1 id="2-命令窗口打开应用程序"><a href="#2-命令窗口打开应用程序" class="headerlink" title="2. 命令窗口打开应用程序"></a>2. 命令窗口打开应用程序</h1></li>
-<li><p>方法一: 进入应用程序所处的文件夹，输入程序的名称(qq.exe)</p>
-</li>
-<li><p>方法二: 把程序的路径记录在电脑的某个地方(<strong>环境变量</strong>)</p>
-</li>
-</ol>
-<ul>
-<li>环境变量的配置方式：<ul>
-<li>打开<em>此电脑</em>-&gt;右键选择<em>属性</em>-&gt;左侧边栏选择<em>高级系统设置</em>-&gt;打开<em>系统属性</em>对话框-&gt;在<em>高级</em>选项卡中选择“<em>环境变量</em>”-&gt;选择系统变量(s)中的Path-&gt;.编辑路径信息</li>
-<li>配置环境变量的作用：用于实现任意目录下打开指定文件。</li>
-</ul>
-</li>
-</ul>
-<p>​		</p>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>字符串相关类的底层原理</title>
     <url>/2024/02/07/java%E5%9F%BA%E7%A1%80-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9B%B8%E5%85%B3%E7%B1%BB%E7%9A%84%E5%BA%95%E5%B1%82%E5%8E%9F%E7%90%86/</url>
     <content><![CDATA[<h1 id="字符串相关类的底层原理："><a href="#字符串相关类的底层原理：" class="headerlink" title="字符串相关类的底层原理："></a>字符串相关类的底层原理：</h1><p><strong>1.字符串存储的内存原理</strong></p>
@@ -3105,6 +3106,49 @@
 1. for循环中，控制循环的变量，因为归属for循环的语法结构中 在for循环结束中，就不能再次被访问到了。**（已知循环次数或者范围）**
 1. while循环中，控制循环的变量，对于while循环来说不归属其语法结构中，在while循环结束后，该变量还可以继续使用。**(不知道循环次数和范围，只知道循环的结束条件 )**
 </code></pre>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>常用的CMD命令</title>
+    <url>/2024/01/11/java%E5%9F%BA%E7%A1%80-%E5%B8%B8%E7%94%A8%E7%9A%84CMD%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h1 id="1-常用的CMD命令"><a href="#1-常用的CMD命令" class="headerlink" title="1. 常用的CMD命令"></a>1. 常用的CMD命令</h1><ol>
+<li><p>Ctrl+R打开CMD命令窗口，<strong>同时可以按住ctrl键不松，拖动滚轮放大或缩小CMD窗口大小</strong></p>
+</li>
+<li><p><em>盘符名称+冒号</em> (C:,D:,E:),表示切换到指定盘符</p>
+</li>
+<li><p><em>dir</em> 查看当前路径下的内容，就是该目录列表(显示所有的文件和文件夹，<strong>包含隐藏的文件和文件夹</strong>)</p>
+</li>
+<li><p><em>cd 目录</em>  ， <strong>进入单极目录</strong>，(目录名可以写出部分内容，按住tab键关联出目录名称)</p>
+</li>
+<li><p><em>cd..</em> 回退到上一级目录，<strong>单级回退</strong></p>
+</li>
+<li><p>cd 目录1\目录2…     <strong>进入多级目录</strong></p>
+</li>
+<li><p>cd \    回退到盘符目录,<strong>多级回退</strong></p>
+</li>
+<li><p>cls 清屏(Clear screen)</p>
+</li>
+<li><p>exit  退出命令提示符窗口</p>
+<h1 id="2-命令窗口打开应用程序"><a href="#2-命令窗口打开应用程序" class="headerlink" title="2. 命令窗口打开应用程序"></a>2. 命令窗口打开应用程序</h1></li>
+<li><p>方法一: 进入应用程序所处的文件夹，输入程序的名称(qq.exe)</p>
+</li>
+<li><p>方法二: 把程序的路径记录在电脑的某个地方(<strong>环境变量</strong>)</p>
+</li>
+</ol>
+<ul>
+<li>环境变量的配置方式：<ul>
+<li>打开<em>此电脑</em>-&gt;右键选择<em>属性</em>-&gt;左侧边栏选择<em>高级系统设置</em>-&gt;打开<em>系统属性</em>对话框-&gt;在<em>高级</em>选项卡中选择“<em>环境变量</em>”-&gt;选择系统变量(s)中的Path-&gt;.编辑路径信息</li>
+<li>配置环境变量的作用：用于实现任意目录下打开指定文件。</li>
+</ul>
+</li>
+</ul>
+<p>​		</p>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -3716,48 +3760,6 @@
       </tags>
   </entry>
   <entry>
-    <title>面向对象进阶-内部类</title>
-    <url>/2024/02/23/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E5%86%85%E9%83%A8%E7%B1%BB/</url>
-    <content><![CDATA[<p>内部类–是类的五大成员之一(属性，方法，构造方法，内部类)，在一个类的里面，在定义一个类。</p>
-<p><strong>应用场景</strong>：</p>
-<p>​	需求：写一个javabean类描述汽车</p>
-<p>​	属性：汽车的品牌，车龄，颜色，发动机的品牌，使用年限。(汽车和发动机属于两个类，又有联系)</p>
-<p>内部类表示的事物是外部类的一部分，内部类单独出现没有任何意义</p>
-<p><strong>访问特点</strong>：</p>
-<p>​	内部类可以直接访问外部类的成员，包括私有&#x2F;&#x2F;Outer.this.变量名</p>
-<p>​	外部类要访问内部类的成员，必须创建对象</p>
-<p><strong>成员内部类</strong>：</p>
-<p>​	如何书写？：写在成员位置(类中方法外)，属于外部类的成员。</p>
-<p>​				成员内部类可以被一些修饰符所修饰，比如：private(本类)，默认(本包)，protected(本包其他类，其他包的子类)，public(所有地方)，static(静态的)等。</p>
-<p>​				在成员内部类里面，JDK16之前不能定义<strong>静态变量</strong>，JDK16开始才可以定义<strong>静态变量</strong>。</p>
-<p>​	如何创建成员内部类的对象？：</p>
-<p>​			 <strong>方式一</strong>：在外部类中编写方法，对外提供内部类的对象</p>
-<p>​			&#x2F;&#x2F;使用场景：用在private修饰内部类的</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Outer</span>&#123;</span><br><span class="line">	String name;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">class</span> <span class="title class_">Inner</span>&#123;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">public</span> Inner <span class="title function_">getInstance</span><span class="params">()</span>&#123;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//测试类</span></span><br><span class="line"><span class="type">Outer</span> <span class="variable">o</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Outer</span>();</span><br><span class="line"><span class="type">Object</span> <span class="variable">ob</span> <span class="operator">=</span> o.getInstance();<span class="comment">//获取内部类对象</span></span><br></pre></td></tr></table></figure>
-
-<p>​			 <strong>方式二</strong>：直接创建格式：外部类名.内部类名  对象名 &#x3D; 外部类对象.内部类对象；范例：Outer.Inner oi &#x3D; new Outer().new Inner();	   &#x2F;&#x2F;使用场景：不是用private修饰内部类的</p>
-<p><strong>静态内部类</strong>：静态内部类只能访问外部类中的静态变量和静态方法，如果想要访问非静态的需要创建外部类的对象</p>
-<p>​	<strong>创建静态内部类对象的格式</strong>：外部类名.内部类名  <em>对象</em>名 &#x3D;  new  外部类名.内部类名( );</p>
-<p>​	<strong>调用非静态方法的格式</strong>：先创建对象，用<em>对象</em>调用</p>
-<p>​	<strong>调用静态方法的格式</strong>：外部类名.内部类名.方法名();</p>
-<p>​	静态内部类是一种特殊的成员内部类</p>
-<p><strong>局部内部类</strong>：1.将内部类定义在方法里面就叫做局部内部类，类似于方法里面的局部变量，</p>
-<p>​		       2.外界是无法直接使用，需要在方法内部创建对象并使用。</p>
-<p>​		       3.该类可以直接访问外部类的成员，也可以访问方法内的局部变量</p>
-<p><strong>匿名内部类</strong>(重点)：本质就是隐藏了名字的内部类，可以写在成员位置，也可以写在局部位置</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//格式</span></span><br><span class="line"><span class="keyword">new</span> 类名或接口名()&#123;</span><br><span class="line">    重写方法;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">//包含了继承或实现，方法重写，创建对象</span></span><br><span class="line"><span class="comment">//整体就是一个类的子类对象或者接口的实现类对象</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="/../images/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E5%86%85%E9%83%A8%E7%B1%BB/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240225202806.png" alt="接口"></p>
-<p>使用场景：当方法的参数是接口或类时，以接口为例，可以传递这个接口的实现类对象，如果实现类只要使用一次，就可以用匿名内部类简化代码。</p>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>面向对象</title>
     <url>/2024/01/25/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</url>
     <content><![CDATA[<p>面向对象</p>
@@ -3860,6 +3862,70 @@
       </tags>
   </entry>
   <entry>
+    <title>面向对象进阶-内部类</title>
+    <url>/2024/02/23/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E5%86%85%E9%83%A8%E7%B1%BB/</url>
+    <content><![CDATA[<p>内部类–是类的五大成员之一(属性，方法，构造方法，内部类)，在一个类的里面，在定义一个类。</p>
+<p><strong>应用场景</strong>：</p>
+<p>​	需求：写一个javabean类描述汽车</p>
+<p>​	属性：汽车的品牌，车龄，颜色，发动机的品牌，使用年限。(汽车和发动机属于两个类，又有联系)</p>
+<p>内部类表示的事物是外部类的一部分，内部类单独出现没有任何意义</p>
+<p><strong>访问特点</strong>：</p>
+<p>​	内部类可以直接访问外部类的成员，包括私有&#x2F;&#x2F;Outer.this.变量名</p>
+<p>​	外部类要访问内部类的成员，必须创建对象</p>
+<p><strong>成员内部类</strong>：</p>
+<p>​	如何书写？：写在成员位置(类中方法外)，属于外部类的成员。</p>
+<p>​				成员内部类可以被一些修饰符所修饰，比如：private(本类)，默认(本包)，protected(本包其他类，其他包的子类)，public(所有地方)，static(静态的)等。</p>
+<p>​				在成员内部类里面，JDK16之前不能定义<strong>静态变量</strong>，JDK16开始才可以定义<strong>静态变量</strong>。</p>
+<p>​	如何创建成员内部类的对象？：</p>
+<p>​			 <strong>方式一</strong>：在外部类中编写方法，对外提供内部类的对象</p>
+<p>​			&#x2F;&#x2F;使用场景：用在private修饰内部类的</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Outer</span>&#123;</span><br><span class="line">	String name;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">class</span> <span class="title class_">Inner</span>&#123;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">public</span> Inner <span class="title function_">getInstance</span><span class="params">()</span>&#123;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//测试类</span></span><br><span class="line"><span class="type">Outer</span> <span class="variable">o</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Outer</span>();</span><br><span class="line"><span class="type">Object</span> <span class="variable">ob</span> <span class="operator">=</span> o.getInstance();<span class="comment">//获取内部类对象</span></span><br></pre></td></tr></table></figure>
+
+<p>​			 <strong>方式二</strong>：直接创建格式：外部类名.内部类名  对象名 &#x3D; 外部类对象.内部类对象；范例：Outer.Inner oi &#x3D; new Outer().new Inner();	   &#x2F;&#x2F;使用场景：不是用private修饰内部类的</p>
+<p><strong>静态内部类</strong>：静态内部类只能访问外部类中的静态变量和静态方法，如果想要访问非静态的需要创建外部类的对象</p>
+<p>​	<strong>创建静态内部类对象的格式</strong>：外部类名.内部类名  <em>对象</em>名 &#x3D;  new  外部类名.内部类名( );</p>
+<p>​	<strong>调用非静态方法的格式</strong>：先创建对象，用<em>对象</em>调用</p>
+<p>​	<strong>调用静态方法的格式</strong>：外部类名.内部类名.方法名();</p>
+<p>​	静态内部类是一种特殊的成员内部类</p>
+<p><strong>局部内部类</strong>：1.将内部类定义在方法里面就叫做局部内部类，类似于方法里面的局部变量，</p>
+<p>​		       2.外界是无法直接使用，需要在方法内部创建对象并使用。</p>
+<p>​		       3.该类可以直接访问外部类的成员，也可以访问方法内的局部变量</p>
+<p><strong>匿名内部类</strong>(重点)：本质就是隐藏了名字的内部类，可以写在成员位置，也可以写在局部位置</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//格式</span></span><br><span class="line"><span class="keyword">new</span> 类名或接口名()&#123;</span><br><span class="line">    重写方法;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">//包含了继承或实现，方法重写，创建对象</span></span><br><span class="line"><span class="comment">//整体就是一个类的子类对象或者接口的实现类对象</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="/../images/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E5%86%85%E9%83%A8%E7%B1%BB/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240225202806.png" alt="接口"></p>
+<p>使用场景：当方法的参数是接口或类时，以接口为例，可以传递这个接口的实现类对象，如果实现类只要使用一次，就可以用匿名内部类简化代码。</p>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>面向对象进阶-抽象类和抽象方法</title>
+    <url>/2024/02/23/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E6%8A%BD%E8%B1%A1%E7%B1%BB%E5%92%8C%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<p>抽象类：抽象方法所在的类叫做抽象类，子类必须强制重写，否则子类代码直接报错</p>
+<p>定义格式：public abstract class 类名{}</p>
+<p>抽象方法：将共性的行为抽取到父类之后，由于每一个子类执行的内容是不一样，所以，<strong>在父类中不能确定具体的方法体</strong>，该方法就可以定义为抽象方法。</p>
+<p>定义格式：public abstract 返回值类型 方法名(参数列表)；alt+回车</p>
+<p>注意事项：1.抽象类不能实例化-不能创建对象</p>
+<p>​		   2.抽象类中不一定有抽象方法，但是抽象方法的类一定是抽象类</p>
+<p>​		   3.可能有构造方法</p>
+<p>​		   4.<strong>抽象类的子类</strong></p>
+<p>​				<strong>要么重写抽象类中的所有抽象方法</strong>(推荐使用)</p>
+<p>​				要么是抽象类</p>
+<p>意义：强制子类必须按照统一格式书写</p>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>面向对象进阶-接口</title>
     <url>/2024/02/23/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E6%8E%A5%E5%8F%A3/</url>
     <content><![CDATA[<p><strong>接口：</strong>就是一种规则，对行为的抽象。</p>
@@ -3907,28 +3973,6 @@
 <p>​	适配器设计模式：解决接口与接口实现类之间的矛盾问题</p>
 <p>​			1.当接口中抽象方法较多，而你执行操作其他一个，这时在实现类，就需要重写全部方法，影响阅读和操作，可以新建一个抽象类来存储所有的重写方法(空实现，即方法体空着)，然后让实现类来继承这个类，这时实现类就可以任意重写某一个方法。</p>
 <p>（为了避免其他类创建适配器类的对象，中间的适配器类用abstract进行修饰）</p>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>面向对象进阶-抽象类和抽象方法</title>
-    <url>/2024/02/23/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E6%8A%BD%E8%B1%A1%E7%B1%BB%E5%92%8C%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<p>抽象类：抽象方法所在的类叫做抽象类，子类必须强制重写，否则子类代码直接报错</p>
-<p>定义格式：public abstract class 类名{}</p>
-<p>抽象方法：将共性的行为抽取到父类之后，由于每一个子类执行的内容是不一样，所以，<strong>在父类中不能确定具体的方法体</strong>，该方法就可以定义为抽象方法。</p>
-<p>定义格式：public abstract 返回值类型 方法名(参数列表)；alt+回车</p>
-<p>注意事项：1.抽象类不能实例化-不能创建对象</p>
-<p>​		   2.抽象类中不一定有抽象方法，但是抽象方法的类一定是抽象类</p>
-<p>​		   3.可能有构造方法</p>
-<p>​		   4.<strong>抽象类的子类</strong></p>
-<p>​				<strong>要么重写抽象类中的所有抽象方法</strong>(推荐使用)</p>
-<p>​				要么是抽象类</p>
-<p>意义：强制子类必须按照统一格式书写</p>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -4295,6 +4339,70 @@
       </tags>
   </entry>
   <entry>
+    <title>科研文献检索与论文写作</title>
+    <url>/2024/11/01/%E5%B7%A5%E5%85%B7_%E7%A7%91%E7%A0%94%E6%96%87%E7%8C%AE%E6%A3%80%E7%B4%A2/</url>
+    <content><![CDATA[<h2 id="中文标点符号的规范使用"><a href="#中文标点符号的规范使用" class="headerlink" title="中文标点符号的规范使用"></a>中文标点符号的规范使用</h2><p><strong>句号的错误用法：</strong></p>
+<p><strong>顿号的错误用法：</strong></p>
+<p><strong>冒号的错误用法：</strong></p>
+<p>(1)冒号与“即”“也就是”一类的词语同时使用。</p>
+<p><em>错误示例1</em>：血液中的白细胞有5种：<strong>即</strong>淋巴细胞、嗜碱粒细胞、中性粒细胞、单核细胞和嗜酸细胞。</p>
+<p>正确的用法1：血液中的白细胞有5种：淋巴细胞、嗜碱粒细胞、中性粒细胞、单核细胞和嗜酸细胞。</p>
+<p>正确的用法2：血液中的白细胞有5种，淋巴细胞、嗜碱粒细胞、中性粒细胞、单核细胞和嗜酸细胞。</p>
+<p>(2)冒号误用在不需要停顿的地方。</p>
+<p><em>错误示例2</em>：这台高效液相色谱仪的配置主要包括：一个四元泵、一个自动进样器<br>两个检测器。</p>
+<p>正确用法：这台高效液相色谱仪的配置主要包括一个四元泵、一个自动进样器<br>两个检测器。</p>
+<p>(3)在冒号之后再次用冒号。为了避免结构混乱，造成歧义令人难以解读，一<br>般不使用双重冒号或者多重冒号</p>
+<p><em>错误示例3</em>：X射线检查：I型：共5例；II型：共1例。</p>
+<p>正确用法：X射线检查：I型，共5例；II型，共1例。</p>
+<p>4)注意区分冒号“:”和数学符号的比号”:”要正确使用，不能相混用。</p>
+<p><strong>引号的错误用法：</strong></p>
+<p>(1)引号缺失或滥用。</p>
+<p>错用示例1:《食品安全法》之新不在于条目“更新”，而在于内容的“变化”。</p>
+<p>正确示例:《食品安全法》之新不在于条目更新，而在于内容的变化。</p>
+<p>(2)引号末尾标点使用不当</p>
+<p>错用示例2:《GB&#x2F;T 15834-2011标点符号用法》规定:“当引号中还需要使用引号时，外面一层用双引号，里面一层用单引号”。<br>正确用法:《GB&#x2F;T 15834-2011标点符号用法》规定:“当引号中还需要使用引号时，外面一层用双引号，里面一层用单引号。”</p>
+<h2 id="英文标点符号的使用"><a href="#英文标点符号的使用" class="headerlink" title="英文标点符号的使用"></a>英文标点符号的使用</h2><p>中英文标点符号的使用区别主要表现在以下几个方面，</p>
+<p>1.中英文在表示句意结束时所用符号不同。</p>
+<p>2.英文标点符号中无顿号，表示词语、阿拉伯数字、百分号等并列时均使用逗号</p>
+<p>3.英文标点符号中无中文书名号。</p>
+<p>4.英文标点符号中也有分号，但在现代英语中的使用极少</p>
+<p>5.中英文中的省略号写法有所不同</p>
+<p>6.英文标点符号中的破折号与中文不同。</p>
+<h2 id="数字形式的规范使用"><a href="#数字形式的规范使用" class="headerlink" title="数字形式的规范使用"></a>数字形式的规范使用</h2><p>2)数字的书写形式<br><strong>在表示数值范围时</strong>，前后两个数值的附加符号或计量单位相同时，<strong>在不造成歧义的情况下</strong>，前一个数值的附加符号或计量单位可省略，否则不可省略</p>
+<p>正确书写：12<del>35°C、50</del>60 mg</p>
+<p>正确书写: 大概400</p>
+<p>错误书写：12<del>35万、50</del>60亿</p>
+<p><strong>数值相乘时</strong>，附带长度单位的数值相乘，当表示面积和体积时，长度单位符不得省略，否则容易被误认为是长度的倍数。<br><strong>一组计量单位相同的数值并列书写时</strong>，可以只在最末一个数值后写出单位</p>
+<p><strong>参量与其公差的单位相同时</strong>，可以将两者放在括号内只写共同单位。</p>
+<p>以下单位的书写形式正确的有()<br>A 7.9 km      B 2.45 mHz           C 6.8 us<br>D 2.8 Mw     E 3.5 KJ&#x2F;Kg             F 10.5 kmol&#x2F;mL</p>
+]]></content>
+      <categories>
+        <category>科研软件</category>
+      </categories>
+      <tags>
+        <tag>科研软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>把整数中的每一位都添加到数组中</title>
+    <url>/2024/01/23/%E6%8A%8A%E6%95%B4%E6%95%B0%E4%B8%AD%E7%9A%84%E6%AF%8F%E4%B8%80%E4%BD%8D%E9%83%BD%E6%B7%BB%E5%8A%A0%E5%88%B0%E6%95%B0%E7%BB%84%E4%B8%AD/</url>
+    <content><![CDATA[<h1 id="把整数中的每一位都添加到数组中"><a href="#把整数中的每一位都添加到数组中" class="headerlink" title="把整数中的每一位都添加到数组中"></a>把整数中的每一位都添加到数组中</h1><p>反向推导：</p>
+<ol>
+<li><p>计算数组的长度(新建数组)-定义数组-把整数上的每一位都添加到数组上</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="type">int</span>[] getInts(<span class="type">int</span> number) &#123;</span><br><span class="line">        <span class="type">int</span> temp= number;</span><br><span class="line">        <span class="comment">//1.1求数字的长度充当数组的长度</span></span><br><span class="line">        <span class="type">int</span> count=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (number !=<span class="number">0</span>)&#123;</span><br><span class="line">            number = number /<span class="number">10</span>;</span><br><span class="line">            count++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//1.2定义数组</span></span><br><span class="line">        <span class="type">int</span> [] array=<span class="keyword">new</span> <span class="title class_">int</span>[count];</span><br><span class="line">        <span class="comment">//1.3得到每一位</span></span><br><span class="line">        <span class="type">int</span> index= array.length-<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span>(temp!=<span class="number">0</span>)&#123;</span><br><span class="line">            <span class="type">int</span> ge=temp%<span class="number">10</span>;</span><br><span class="line">            temp=temp/<span class="number">10</span>;</span><br><span class="line">            array[index]=ge;</span><br><span class="line">            index--;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> array;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p>day07-TestDemo06</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>经典算法思想</category>
+      </categories>
+      <tags>
+        <tag>算法思想</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>endNode的使用</title>
     <url>/2024/09/08/%E5%B7%A5%E5%85%B7_endNode%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<p>1.endnode的下载和安装：</p>
@@ -4348,51 +4456,6 @@
       </tags>
   </entry>
   <entry>
-    <title>科研文献检索与论文写作</title>
-    <url>/2024/11/01/%E5%B7%A5%E5%85%B7_%E7%A7%91%E7%A0%94%E6%96%87%E7%8C%AE%E6%A3%80%E7%B4%A2/</url>
-    <content><![CDATA[<h2 id="中文标点符号的规范使用"><a href="#中文标点符号的规范使用" class="headerlink" title="中文标点符号的规范使用"></a>中文标点符号的规范使用</h2><p><strong>句号的错误用法：</strong></p>
-<p><strong>顿号的错误用法：</strong></p>
-<p><strong>冒号的错误用法：</strong></p>
-<p>(1)冒号与“即”“也就是”一类的词语同时使用。</p>
-<p><em>错误示例1</em>：血液中的白细胞有5种：<strong>即</strong>淋巴细胞、嗜碱粒细胞、中性粒细胞、单核细胞和嗜酸细胞。</p>
-<p>正确的用法1：血液中的白细胞有5种：淋巴细胞、嗜碱粒细胞、中性粒细胞、单核细胞和嗜酸细胞。</p>
-<p>正确的用法2：血液中的白细胞有5种，淋巴细胞、嗜碱粒细胞、中性粒细胞、单核细胞和嗜酸细胞。</p>
-<p>(2)冒号误用在不需要停顿的地方。</p>
-<p><em>错误示例2</em>：这台高效液相色谱仪的配置主要包括：一个四元泵、一个自动进样器<br>两个检测器。</p>
-<p>正确用法：这台高效液相色谱仪的配置主要包括一个四元泵、一个自动进样器<br>两个检测器。</p>
-<p>(3)在冒号之后再次用冒号。为了避免结构混乱，造成歧义令人难以解读，一<br>般不使用双重冒号或者多重冒号</p>
-<p><em>错误示例3</em>：X射线检查：I型：共5例；II型：共1例。</p>
-<p>正确用法：X射线检查：I型，共5例；II型，共1例。</p>
-<p>4)注意区分冒号“:”和数学符号的比号”:”要正确使用，不能相混用。</p>
-<p><strong>引号的错误用法：</strong></p>
-<p>(1)引号缺失或滥用。</p>
-<p>错用示例1:《食品安全法》之新不在于条目“更新”，而在于内容的“变化”。</p>
-<p>正确示例:《食品安全法》之新不在于条目更新，而在于内容的变化。</p>
-<p>(2)引号末尾标点使用不当</p>
-<p>错用示例2:《GB&#x2F;T 15834-2011标点符号用法》规定:“当引号中还需要使用引号时，外面一层用双引号，里面一层用单引号”。<br>正确用法:《GB&#x2F;T 15834-2011标点符号用法》规定:“当引号中还需要使用引号时，外面一层用双引号，里面一层用单引号。”</p>
-<h2 id="英文标点符号的使用"><a href="#英文标点符号的使用" class="headerlink" title="英文标点符号的使用"></a>英文标点符号的使用</h2><p>中英文标点符号的使用区别主要表现在以下几个方面，</p>
-<p>1.中英文在表示句意结束时所用符号不同。</p>
-<p>2.英文标点符号中无顿号，表示词语、阿拉伯数字、百分号等并列时均使用逗号</p>
-<p>3.英文标点符号中无中文书名号。</p>
-<p>4.英文标点符号中也有分号，但在现代英语中的使用极少</p>
-<p>5.中英文中的省略号写法有所不同</p>
-<p>6.英文标点符号中的破折号与中文不同。</p>
-<h2 id="数字形式的规范使用"><a href="#数字形式的规范使用" class="headerlink" title="数字形式的规范使用"></a>数字形式的规范使用</h2><p>2)数字的书写形式<br><strong>在表示数值范围时</strong>，前后两个数值的附加符号或计量单位相同时，<strong>在不造成歧义的情况下</strong>，前一个数值的附加符号或计量单位可省略，否则不可省略</p>
-<p>正确书写：12<del>35°C、50</del>60 mg</p>
-<p>正确书写: 大概400</p>
-<p>错误书写：12<del>35万、50</del>60亿</p>
-<p><strong>数值相乘时</strong>，附带长度单位的数值相乘，当表示面积和体积时，长度单位符不得省略，否则容易被误认为是长度的倍数。<br><strong>一组计量单位相同的数值并列书写时</strong>，可以只在最末一个数值后写出单位</p>
-<p><strong>参量与其公差的单位相同时</strong>，可以将两者放在括号内只写共同单位。</p>
-<p>以下单位的书写形式正确的有()<br>A 7.9 km      B 2.45 mHz           C 6.8 us<br>D 2.8 Mw     E 3.5 KJ&#x2F;Kg             F 10.5 kmol&#x2F;mL</p>
-]]></content>
-      <categories>
-        <category>科研软件</category>
-      </categories>
-      <tags>
-        <tag>科研软件</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>求质数计算中的标记思想</title>
     <url>/2024/01/20/%E6%A0%87%E8%AE%B0%E6%80%9D%E6%83%B3/</url>
     <content><![CDATA[<h1 id="标记思想"><a href="#标记思想" class="headerlink" title="标记思想"></a>标记思想</h1><p>定义一个布尔变量，表示标记</p>
@@ -4408,45 +4471,12 @@
       </tags>
   </entry>
   <entry>
-    <title>把整数中的每一位都添加到数组中</title>
-    <url>/2024/01/23/%E6%8A%8A%E6%95%B4%E6%95%B0%E4%B8%AD%E7%9A%84%E6%AF%8F%E4%B8%80%E4%BD%8D%E9%83%BD%E6%B7%BB%E5%8A%A0%E5%88%B0%E6%95%B0%E7%BB%84%E4%B8%AD/</url>
-    <content><![CDATA[<h1 id="把整数中的每一位都添加到数组中"><a href="#把整数中的每一位都添加到数组中" class="headerlink" title="把整数中的每一位都添加到数组中"></a>把整数中的每一位都添加到数组中</h1><p>反向推导：</p>
-<ol>
-<li><p>计算数组的长度(新建数组)-定义数组-把整数上的每一位都添加到数组上</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="type">int</span>[] getInts(<span class="type">int</span> number) &#123;</span><br><span class="line">        <span class="type">int</span> temp= number;</span><br><span class="line">        <span class="comment">//1.1求数字的长度充当数组的长度</span></span><br><span class="line">        <span class="type">int</span> count=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (number !=<span class="number">0</span>)&#123;</span><br><span class="line">            number = number /<span class="number">10</span>;</span><br><span class="line">            count++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//1.2定义数组</span></span><br><span class="line">        <span class="type">int</span> [] array=<span class="keyword">new</span> <span class="title class_">int</span>[count];</span><br><span class="line">        <span class="comment">//1.3得到每一位</span></span><br><span class="line">        <span class="type">int</span> index= array.length-<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span>(temp!=<span class="number">0</span>)&#123;</span><br><span class="line">            <span class="type">int</span> ge=temp%<span class="number">10</span>;</span><br><span class="line">            temp=temp/<span class="number">10</span>;</span><br><span class="line">            array[index]=ge;</span><br><span class="line">            index--;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> array;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-<p>day07-TestDemo06</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>经典算法思想</category>
-      </categories>
-      <tags>
-        <tag>算法思想</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>比较最值时提高效率(数组)</title>
     <url>/2024/01/20/%E6%AF%94%E8%BE%83%E6%9C%80%E5%80%BC%E6%97%B6%E6%8F%90%E9%AB%98%E6%95%88%E7%8E%87(%E6%95%B0%E7%BB%84)/</url>
     <content><![CDATA[<h1 id="数组循环比较最值时提高效率"><a href="#数组循环比较最值时提高效率" class="headerlink" title="数组循环比较最值时提高效率"></a>数组循环比较最值时提高效率</h1><p>循环中开始条件如果为0，那么第一次循环的时候是自己跟自己比了一下，对结果没有任何影响，但是效率偏低，为了提高效率，减少一次 循环的次数，循环开始的条件可以写1.</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> min=array[<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt; array.length; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (array[i]&lt;min)&#123;</span><br><span class="line">                min=array[i];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(min);</span><br></pre></td></tr></table></figure>
 
 ]]></content>
-      <categories>
-        <category>经典算法思想</category>
-      </categories>
-      <tags>
-        <tag>算法思想</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>生成随机且不重复的数据</title>
-    <url>/2024/01/24/%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E4%B8%94%E4%B8%8D%E9%87%8D%E5%A4%8D%E7%9A%84%E6%95%B0%E6%8D%AE/</url>
-    <content><![CDATA[<p>创建大小为 x的 int 的空数组；<br>调用 random 产生随机数字；<br>当产生的随机数和数组中的元素没有重复的时候，放进去，即可；</p>
-<h1 id="1-判断随机数字在数组中是否存在"><a href="#1-判断随机数字在数组中是否存在" class="headerlink" title="1.判断随机数字在数组中是否存在"></a>1.判断随机数字在数组中是否存在</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">boolean</span> <span class="title function_">contain</span><span class="params">(<span class="type">int</span> [] arr,<span class="type">int</span> number)</span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (arr[i]==number)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="2-当产生的随机数和数组中的元素没有重复的时候，放入数组"><a href="#2-当产生的随机数和数组中的元素没有重复的时候，放入数组" class="headerlink" title="2.当产生的随机数和数组中的元素没有重复的时候，放入数组"></a>2.当产生的随机数和数组中的元素没有重复的时候，放入数组</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span>[] createNumber()&#123;</span><br><span class="line">    <span class="comment">//1.创建数组用于添加中奖号码，六个红球1个蓝球，数组长度为7</span></span><br><span class="line">    <span class="type">int</span>[] arr=<span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">7</span>];</span><br><span class="line">    <span class="comment">//2.生成随机数字，红球的号码不能重复，蓝球的号码可以和红球重复</span></span><br><span class="line">    <span class="type">Random</span> <span class="variable">r</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Random</span>();</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; <span class="number">6</span>;) &#123;</span><br><span class="line">        <span class="type">int</span>  <span class="variable">red</span> <span class="operator">=</span> r.nextInt(<span class="number">33</span>)+<span class="number">1</span>;<span class="comment">//红球号码从1-33中选择，且不能重复。</span></span><br><span class="line">        <span class="type">boolean</span> <span class="variable">flag</span> <span class="operator">=</span> contain(arr, red);</span><br><span class="line">        <span class="keyword">if</span> (!flag)&#123;</span><br><span class="line">            arr[i]=red;</span><br><span class="line">            i++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; <span class="number">6</span>; i++) &#123;</span><br><span class="line">        System.out.println(arr[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> arr;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>经典算法思想</category>
       </categories>
@@ -4472,6 +4502,20 @@
       </tags>
   </entry>
   <entry>
+    <title>生成随机且不重复的数据</title>
+    <url>/2024/01/24/%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E4%B8%94%E4%B8%8D%E9%87%8D%E5%A4%8D%E7%9A%84%E6%95%B0%E6%8D%AE/</url>
+    <content><![CDATA[<p>创建大小为 x的 int 的空数组；<br>调用 random 产生随机数字；<br>当产生的随机数和数组中的元素没有重复的时候，放进去，即可；</p>
+<h1 id="1-判断随机数字在数组中是否存在"><a href="#1-判断随机数字在数组中是否存在" class="headerlink" title="1.判断随机数字在数组中是否存在"></a>1.判断随机数字在数组中是否存在</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">boolean</span> <span class="title function_">contain</span><span class="params">(<span class="type">int</span> [] arr,<span class="type">int</span> number)</span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (arr[i]==number)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="2-当产生的随机数和数组中的元素没有重复的时候，放入数组"><a href="#2-当产生的随机数和数组中的元素没有重复的时候，放入数组" class="headerlink" title="2.当产生的随机数和数组中的元素没有重复的时候，放入数组"></a>2.当产生的随机数和数组中的元素没有重复的时候，放入数组</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span>[] createNumber()&#123;</span><br><span class="line">    <span class="comment">//1.创建数组用于添加中奖号码，六个红球1个蓝球，数组长度为7</span></span><br><span class="line">    <span class="type">int</span>[] arr=<span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">7</span>];</span><br><span class="line">    <span class="comment">//2.生成随机数字，红球的号码不能重复，蓝球的号码可以和红球重复</span></span><br><span class="line">    <span class="type">Random</span> <span class="variable">r</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Random</span>();</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; <span class="number">6</span>;) &#123;</span><br><span class="line">        <span class="type">int</span>  <span class="variable">red</span> <span class="operator">=</span> r.nextInt(<span class="number">33</span>)+<span class="number">1</span>;<span class="comment">//红球号码从1-33中选择，且不能重复。</span></span><br><span class="line">        <span class="type">boolean</span> <span class="variable">flag</span> <span class="operator">=</span> contain(arr, red);</span><br><span class="line">        <span class="keyword">if</span> (!flag)&#123;</span><br><span class="line">            arr[i]=red;</span><br><span class="line">            i++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; <span class="number">6</span>; i++) &#123;</span><br><span class="line">        System.out.println(arr[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> arr;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>经典算法思想</category>
+      </categories>
+      <tags>
+        <tag>算法思想</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>登录错误时的次数限制</title>
     <url>/2024/02/19/%E7%99%BB%E5%BD%95%E5%A4%B1%E8%AF%AF%E6%97%B6%E6%AC%A1%E6%95%B0%E7%9A%84%E9%99%90%E5%88%B6/</url>
     <content><![CDATA[<p>day12</p>
@@ -4481,17 +4525,6 @@
       </categories>
       <tags>
         <tag>算法思想</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>决策树算法</title>
-    <url>/2024/11/01/%E7%AE%97%E6%B3%95_%E5%86%B3%E7%AD%96%E6%A0%91%E7%AE%97%E6%B3%95/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
       </tags>
   </entry>
   <entry>
@@ -4535,6 +4568,17 @@
       </categories>
       <tags>
         <tag>算法思想</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>决策树算法</title>
+    <url>/2024/11/01/%E7%AE%97%E6%B3%95_%E5%86%B3%E7%AD%96%E6%A0%91%E7%AE%97%E6%B3%95/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
       </tags>
   </entry>
   <entry>
