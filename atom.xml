@@ -6,7 +6,7 @@
   <link href="https://readmengk90.github.io/atom.xml" rel="self"/>
   
   <link href="https://readmengk90.github.io/"/>
-  <updated>2024-11-12T11:32:54.178Z</updated>
+  <updated>2024-11-14T13:44:59.189Z</updated>
   <id>https://readmengk90.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python数据分析</title>
+    <link href="https://readmengk90.github.io/2024/11/14/Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+    <id>https://readmengk90.github.io/2024/11/14/Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/</id>
+    <published>2024-11-14T13:07:27.232Z</published>
+    <updated>2024-11-14T13:44:59.189Z</updated>
+    
+    <content type="html"><![CDATA[<p>matplotlib：帮助我们进行画图</p><p>numpy：处理数值型数组</p><p>pandas：在numpy基础之上，除了能处理数值型的数组之外，还能帮助处理字符串，时间序列，列表，字典等</p><ol><li><p>为什么要学习数据分析</p><p>能够非常方便的帮助我们从一堆数据里面找出直观的结论供来使用。</p><p>是Python数据科学的基础。</p><p>是机器学习课程的基础。</p></li><li><p>什么是数据分析</p><p>数据分析是用适当的方法对收集来的大量数据进行分析，帮助人们作出判断，以便采取适当行动。</p><p>数据分析流程：提出问题——准备数据——<strong>分析数据</strong>——获得结论——成果可视化</p></li><li><p>环境安装</p><p>CONDA环境安装:</p><p>CONDA集成了各种平台下所需要的环境对应的依赖，安装CONDA,对那种装不上的模块问题都可以轻松解决。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">conda: data science package &amp; environment manager</span><br><span class="line">创建环境</span><br><span class="line">conda create ——name python3 python=3</span><br><span class="line">切换环境</span><br><span class="line">windows:activate python3</span><br><span class="line">linux/macos:source activate python3</span><br><span class="line">官方地址：https://www.anaconda.com/download/</span><br></pre></td></tr></table></figure></li><li><p>认识jupyter notebook</p></li></ol>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;numpy-pandas-matplotlib&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="Python" scheme="https://readmengk90.github.io/categories/Python/"/>
+    
+    
+    <category term="Python" scheme="https://readmengk90.github.io/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title>Origin的使用</title>
@@ -398,27 +419,6 @@
     <updated>2024-02-23T15:06:25.969Z</updated>
     
     <content type="html"><![CDATA[<p><strong>接口：</strong>就是一种规则，对行为的抽象。</p><p><img src="C:\Users\Administrator\Desktop\MyBlog\source\images\微信截图_20240223135234.png"></p><p><strong>如何定义</strong>：</p><p>​接口用关键字interface来定义，<strong>public interface 接口名{ }</strong></p><p>​<strong>接口不能实例化</strong></p><p>​接口和类之间是实现关系，通过<strong>implements</strong>关键字表示，<strong>public class 类名 implements 接口名{}</strong></p><p>​接口的子类称为实现类</p><p>​<strong>要么重写接口中的所有抽象方法。</strong></p><p>​要么是抽象类。</p><p><strong>注意点1</strong>：接口和类的实现关系，可以单实现，也可以多实现。<strong>pubic class 类名 implements 接口名1 ，接口名2{ }</strong></p><p><strong>注意到2</strong>：实现类还可以在继承一个类的同时实现多个接口。<strong>public class 类名 extends 父类 implements 接口名1，接口名2{}</strong></p><p><strong>如何使用：</strong></p><p>​方法可以是抽象类，默认类，静态类</p><p><strong>成员特点：</strong></p><p>​成员变量：接口中的成员变量只能是常量，默认修饰符：public static final</p><p>​构造方法：没有，因为接口不能创建对象，而且接口当中也不需要给子类去赋值。</p><p>​成员方法：只能是抽象方法，默认修饰符：public abstract</p><p>​  JDK7以前：接口中只能定义抽象方法。</p><p>​  JDK8的新特性：接口中可以定义有方法体的方法(<strong>默认，静态</strong>)。</p><p>​<strong>默认</strong></p><p>​作用：加新规则and代码不报错，解决接口升级问题</p><p>​<strong>注意事项</strong>：默认方法不是抽象方法，所以不强制被重写，但是如果被重写，重写的时候去掉default关键字。</p><p>​   public可以省略，default不能省略。</p><p>​   如果实现了多个接口，<em>多个接口中</em>存在相同名字的默认方法，子类就必须对该方法进行重写。</p><p>​<strong>静态</strong></p><p>​作用：运行在接口中定义静态方法，需要用static修饰</p><p>​接口中静态方法的定义格式：public static 返回值类型 方法名(参数列表){    }</p><p>​<strong>注意事项</strong>：静态方法只能通过接口名调用，不能通过实现类名或者对象名调用。</p><p>​   public可以省略，static不能省略。</p><p>​  JDK9的新特性：接口中可以定义私有方法。</p><p>​需求：抽取出来的<strong>重复代码</strong>无需被外界调用，可以设置为私有方法，此方法只为Inter接口提供服务，不需要外类访问。&#x2F;&#x2F;普通的私有方法，给默认方法服务，，静态的私有方法，给静态方法服务</p><p>​格式1：private 返回值类型 方法名(参数列表){}</p><p>​格式2：private static 返回值类型 方法名(参数列表){}</p><p><strong>接口和类之间的关系：</strong></p><p>​类和类的关系：继承关系，只能单继承，不能多继承，但是可以多层继承</p><p>​类和接口的关系：实现关系，可以单实现，也可以多实现，还可以在继承一个类的同时实现多个接口</p><p>​接口和接口的关系：继承关系，可以单继承，也可以多继承。</p><p><strong>接口的应用：</strong></p><p>​1.接口代表规则，是行为的抽象。想要让哪一个类拥有一个行为，就让这个类实现对应的接口就可以了。</p><p>​2.当一个方法的参数是接口时，可以传递接口所有实现类的对象，这种方式称为接口多态。</p><p><strong>适配器设计模式</strong>：</p><p>​设计模式是一套被反复使用，多数人知晓的，经过分类编目的，代码设计经验的总结。使用设计模式是为了可重用代码，让代码更容易被他人理解，保证代码可靠性，程序的重用性。简单来说，设计模式就是各种套路。</p><p>​适配器设计模式：解决接口与接口实现类之间的矛盾问题</p><p>​1.当接口中抽象方法较多，而你执行操作其他一个，这时在实现类，就需要重写全部方法，影响阅读和操作，可以新建一个抽象类来存储所有的重写方法(空实现，即方法体空着)，然后让实现类来继承这个类，这时实现类就可以任意重写某一个方法。</p><p>（为了避免其他类创建适配器类的对象，中间的适配器类用abstract进行修饰）</p>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;抽象类和抽象方法&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="Java基础" scheme="https://readmengk90.github.io/categories/Java%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="java" scheme="https://readmengk90.github.io/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>面向对象进阶-抽象类和抽象方法</title>
-    <link href="https://readmengk90.github.io/2024/02/23/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E6%8A%BD%E8%B1%A1%E7%B1%BB%E5%92%8C%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95/"/>
-    <id>https://readmengk90.github.io/2024/02/23/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E6%8A%BD%E8%B1%A1%E7%B1%BB%E5%92%8C%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95/</id>
-    <published>2024-02-23T02:04:42.634Z</published>
-    <updated>2024-02-23T03:25:43.451Z</updated>
-    
-    <content type="html"><![CDATA[<p>抽象类：抽象方法所在的类叫做抽象类，子类必须强制重写，否则子类代码直接报错</p><p>定义格式：public abstract class 类名{}</p><p>抽象方法：将共性的行为抽取到父类之后，由于每一个子类执行的内容是不一样，所以，<strong>在父类中不能确定具体的方法体</strong>，该方法就可以定义为抽象方法。</p><p>定义格式：public abstract 返回值类型 方法名(参数列表)；alt+回车</p><p>注意事项：1.抽象类不能实例化-不能创建对象</p><p>​   2.抽象类中不一定有抽象方法，但是抽象方法的类一定是抽象类</p><p>​   3.可能有构造方法</p><p>​   4.<strong>抽象类的子类</strong></p><p>​<strong>要么重写抽象类中的所有抽象方法</strong>(推荐使用)</p><p>​要么是抽象类</p><p>意义：强制子类必须按照统一格式书写</p>]]></content>
     
     
     <summary type="html">&lt;center&gt;抽象类和抽象方法&lt;/center&gt;</summary>
