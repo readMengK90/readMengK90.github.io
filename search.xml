@@ -2453,6 +2453,62 @@
       </tags>
   </entry>
   <entry>
+    <title>Python基础综合案例</title>
+    <url>/2024/11/09/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/</url>
+    <content><![CDATA[<h3 id="JSON数据格式"><a href="#JSON数据格式" class="headerlink" title="JSON数据格式:"></a>JSON数据格式:</h3><p>​	JSON是一种轻量级的数据交互格式。可以按照JSON指定的格式去组织和封装数据。</p>
+<p>​	JSON本质上是一个带有特定格式的字符串</p>
+<p>​	主要功能: json就是一种在各个编程语言中流通的数据格式，负责不同编程语言中的数据传递和交互。类似于:国际通用语言-英语，中国官方语言-普通话</p>
+<p>​	<img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/Json.png"></p>
+<p>JSON数据的格式：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># json数据的格式可以是(json是Python的列表(内嵌字典的列表)或者字典)</span></span><br><span class="line">&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;admin&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">18</span>&#125; <span class="comment">#</span></span><br><span class="line"><span class="comment"># 也可以是</span></span><br><span class="line">[&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;admin&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">18</span>&#125;,&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;root&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">16</span>&#125;,&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;张三&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">20</span>&#125;]</span><br></pre></td></tr></table></figure>
+
+<p>Python数据和Json数据的相互转换:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 导入json模块</span></span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="comment">#准备符合json格式要求的Python数据</span></span><br><span class="line">data = [&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;admin&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">18</span>&#125;,&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;张三&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">20</span>&#125;]</span><br><span class="line"><span class="comment">#通过json.dunps(data)方法把python数据转化为了json字符串数据</span></span><br><span class="line">data = json.dumps(data)</span><br><span class="line"><span class="comment"># data = json.dumps(data,ensure_ascii=False),解决中文乱码的问题 </span></span><br><span class="line"><span class="comment">#通过json.loads(data)方法把json数据转化为了python字符串数据</span></span><br><span class="line">data = <span class="string">&#x27;[&#123;&quot;name&quot;:&quot;admin&quot;,&quot;age&quot;:18&#125;,&#123;&quot;name&quot;:&quot;张三&quot;,&quot;age&quot;:20&#125;]&#x27;</span></span><br><span class="line">data = json.loads(data)</span><br></pre></td></tr></table></figure>
+
+<h3 id="pyecharts模块"><a href="#pyecharts模块" class="headerlink" title="pyecharts模块"></a>pyecharts模块</h3><p>pyecharts是帮助我们做出数据可视化效果图的一个模块。它的本体是echarts框架。</p>
+<p>Echarts是由百度开源的数据可视化，凭借着良好的交互性，精巧的图表设计，得到了众多开发者的认可，而Python是门富有表达能力的语言，很适合用于数据处理，当数据分析遇上数据可视化时pycharts诞生了。</p>
+<figure class="highlight http"><table><tr><td class="code"><pre><span class="line">中文文档:pyecharts.org</span><br><span class="line">画廊官网:https://gallery.pyecharts.org/#/README</span><br></pre></td></tr></table></figure>
+
+<p>安装：</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt; pip install pyecharts</span><br><span class="line"># 检查安装效果</span><br><span class="line"># 进入Python导入模块</span><br><span class="line">&gt;&gt;&gt; python</span><br><span class="line">&gt;&gt;&gt; import pyecharts</span><br></pre></td></tr></table></figure>
+
+<h3 id="pyecharts入门使用"><a href="#pyecharts入门使用" class="headerlink" title="pyecharts入门使用"></a>pyecharts入门使用</h3><p>pycharts有那些配置选项:</p>
+<p>​	全局配置选项:针对整个图像进行设置，图像的标题，图例，工具箱等</p>
+<p>​	全局配置可以通过一个set_global_opts方法进行配置，相应的选项和选项的功能如下:<img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/%E5%85%A8%E5%B1%80%E9%85%8D%E7%BD%AE.png"></p>
+<p>​	<img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/%E5%85%A8%E5%B1%80%E9%85%8D%E7%BD%AE01.png"></p>
+<p>​	系列配置选项:针对具体的轴数据进行配置</p>
+<h3 id="数据处理"><a href="#数据处理" class="headerlink" title="数据处理"></a>数据处理</h3><p>​	通过json模块对数据进行处理</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">在线json格式化分析:ab173.com</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 构建图表</span></span><br><span class="line"><span class="comment"># 导包</span></span><br><span class="line"><span class="keyword">from</span> pyecharts.charts <span class="keyword">import</span> Line</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建一个折线图对象</span></span><br><span class="line">l=Line()</span><br><span class="line"><span class="comment"># 给折线图对象添加x轴的数据</span></span><br><span class="line">l.add_xaxis([<span class="string">&quot;中国&quot;</span>,<span class="string">&quot;美国&quot;</span>,<span class="string">&quot;英国&quot;</span>])</span><br><span class="line"><span class="comment"># 给折线图对象添加y轴的数据</span></span><br><span class="line">l.add_yaxis(<span class="string">&quot;GDP&quot;</span>,[<span class="number">30</span>,<span class="number">20</span>,<span class="number">10</span>])</span><br><span class="line"><span class="comment"># 通过render方法，将代码生成为图像</span></span><br><span class="line">l.render()</span><br><span class="line"><span class="comment"># 设置全局配置项</span></span><br></pre></td></tr></table></figure>
+
+<p>地图可视化</p>
+<p>使用pyecharts构建基础的全国地图可视化图表。</p>
+<p>基础柱状图开发</p>
+<p><img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/%E6%9F%B1%E7%8A%B6%E5%9B%BE.png"></p>
+<p><img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/%E6%9F%B1%E7%8A%B6%E5%9B%BE_%E6%97%B6%E9%97%B4%E7%BA%BF.png"></p>
+<p>创建自动播放:</p>
+<p><img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/%E8%87%AA%E5%8A%A8%E6%92%AD%E6%94%BE.png"></p>
+<p>修改柱状颜色</p>
+<p><img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/%E9%A2%9C%E8%89%B2.png"></p>
+<p>GDP动态柱状图绘制</p>
+<p>1.掌握列表的sort方法并配合lambda匿名函数完成列表排序</p>
+<p>​	sort方法 : **列表.sort(key&#x3D;选择排序依据的函数,reverse&#x3D;True|False)**。</p>
+<p>​	参数key,是要求传入一个函数，表示将列表的每一个元素都传入函数中，返回排序的依据。</p>
+<p>​	参数reverse，是否反转排序结果，True表示降序，False表示升序。</p>
+<p><img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/sort%E6%96%B9%E6%B3%95.png"></p>
+<p>2.完成图表所需的数据处理</p>
+<p>​	</p>
+<p>3.完成GDP动态图表绘制</p>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Python数据分析</title>
     <url>/2024/11/14/Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/</url>
     <content><![CDATA[<p><strong>想要和得到中间还有两个字就是要做到</strong></p>
@@ -2818,62 +2874,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Python基础综合案例</title>
-    <url>/2024/11/09/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/</url>
-    <content><![CDATA[<h3 id="JSON数据格式"><a href="#JSON数据格式" class="headerlink" title="JSON数据格式:"></a>JSON数据格式:</h3><p>​	JSON是一种轻量级的数据交互格式。可以按照JSON指定的格式去组织和封装数据。</p>
-<p>​	JSON本质上是一个带有特定格式的字符串</p>
-<p>​	主要功能: json就是一种在各个编程语言中流通的数据格式，负责不同编程语言中的数据传递和交互。类似于:国际通用语言-英语，中国官方语言-普通话</p>
-<p>​	<img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/Json.png"></p>
-<p>JSON数据的格式：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># json数据的格式可以是(json是Python的列表(内嵌字典的列表)或者字典)</span></span><br><span class="line">&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;admin&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">18</span>&#125; <span class="comment">#</span></span><br><span class="line"><span class="comment"># 也可以是</span></span><br><span class="line">[&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;admin&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">18</span>&#125;,&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;root&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">16</span>&#125;,&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;张三&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">20</span>&#125;]</span><br></pre></td></tr></table></figure>
-
-<p>Python数据和Json数据的相互转换:</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 导入json模块</span></span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="comment">#准备符合json格式要求的Python数据</span></span><br><span class="line">data = [&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;admin&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">18</span>&#125;,&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;张三&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">20</span>&#125;]</span><br><span class="line"><span class="comment">#通过json.dunps(data)方法把python数据转化为了json字符串数据</span></span><br><span class="line">data = json.dumps(data)</span><br><span class="line"><span class="comment"># data = json.dumps(data,ensure_ascii=False),解决中文乱码的问题 </span></span><br><span class="line"><span class="comment">#通过json.loads(data)方法把json数据转化为了python字符串数据</span></span><br><span class="line">data = <span class="string">&#x27;[&#123;&quot;name&quot;:&quot;admin&quot;,&quot;age&quot;:18&#125;,&#123;&quot;name&quot;:&quot;张三&quot;,&quot;age&quot;:20&#125;]&#x27;</span></span><br><span class="line">data = json.loads(data)</span><br></pre></td></tr></table></figure>
-
-<h3 id="pyecharts模块"><a href="#pyecharts模块" class="headerlink" title="pyecharts模块"></a>pyecharts模块</h3><p>pyecharts是帮助我们做出数据可视化效果图的一个模块。它的本体是echarts框架。</p>
-<p>Echarts是由百度开源的数据可视化，凭借着良好的交互性，精巧的图表设计，得到了众多开发者的认可，而Python是门富有表达能力的语言，很适合用于数据处理，当数据分析遇上数据可视化时pycharts诞生了。</p>
-<figure class="highlight http"><table><tr><td class="code"><pre><span class="line">中文文档:pyecharts.org</span><br><span class="line">画廊官网:https://gallery.pyecharts.org/#/README</span><br></pre></td></tr></table></figure>
-
-<p>安装：</p>
-<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt; pip install pyecharts</span><br><span class="line"># 检查安装效果</span><br><span class="line"># 进入Python导入模块</span><br><span class="line">&gt;&gt;&gt; python</span><br><span class="line">&gt;&gt;&gt; import pyecharts</span><br></pre></td></tr></table></figure>
-
-<h3 id="pyecharts入门使用"><a href="#pyecharts入门使用" class="headerlink" title="pyecharts入门使用"></a>pyecharts入门使用</h3><p>pycharts有那些配置选项:</p>
-<p>​	全局配置选项:针对整个图像进行设置，图像的标题，图例，工具箱等</p>
-<p>​	全局配置可以通过一个set_global_opts方法进行配置，相应的选项和选项的功能如下:<img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/%E5%85%A8%E5%B1%80%E9%85%8D%E7%BD%AE.png"></p>
-<p>​	<img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/%E5%85%A8%E5%B1%80%E9%85%8D%E7%BD%AE01.png"></p>
-<p>​	系列配置选项:针对具体的轴数据进行配置</p>
-<h3 id="数据处理"><a href="#数据处理" class="headerlink" title="数据处理"></a>数据处理</h3><p>​	通过json模块对数据进行处理</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">在线json格式化分析:ab173.com</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 构建图表</span></span><br><span class="line"><span class="comment"># 导包</span></span><br><span class="line"><span class="keyword">from</span> pyecharts.charts <span class="keyword">import</span> Line</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建一个折线图对象</span></span><br><span class="line">l=Line()</span><br><span class="line"><span class="comment"># 给折线图对象添加x轴的数据</span></span><br><span class="line">l.add_xaxis([<span class="string">&quot;中国&quot;</span>,<span class="string">&quot;美国&quot;</span>,<span class="string">&quot;英国&quot;</span>])</span><br><span class="line"><span class="comment"># 给折线图对象添加y轴的数据</span></span><br><span class="line">l.add_yaxis(<span class="string">&quot;GDP&quot;</span>,[<span class="number">30</span>,<span class="number">20</span>,<span class="number">10</span>])</span><br><span class="line"><span class="comment"># 通过render方法，将代码生成为图像</span></span><br><span class="line">l.render()</span><br><span class="line"><span class="comment"># 设置全局配置项</span></span><br></pre></td></tr></table></figure>
-
-<p>地图可视化</p>
-<p>使用pyecharts构建基础的全国地图可视化图表。</p>
-<p>基础柱状图开发</p>
-<p><img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/%E6%9F%B1%E7%8A%B6%E5%9B%BE.png"></p>
-<p><img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/%E6%9F%B1%E7%8A%B6%E5%9B%BE_%E6%97%B6%E9%97%B4%E7%BA%BF.png"></p>
-<p>创建自动播放:</p>
-<p><img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/%E8%87%AA%E5%8A%A8%E6%92%AD%E6%94%BE.png"></p>
-<p>修改柱状颜色</p>
-<p><img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/%E9%A2%9C%E8%89%B2.png"></p>
-<p>GDP动态柱状图绘制</p>
-<p>1.掌握列表的sort方法并配合lambda匿名函数完成列表排序</p>
-<p>​	sort方法 : **列表.sort(key&#x3D;选择排序依据的函数,reverse&#x3D;True|False)**。</p>
-<p>​	参数key,是要求传入一个函数，表示将列表的每一个元素都传入函数中，返回排序的依据。</p>
-<p>​	参数reverse，是否反转排序结果，True表示降序，False表示升序。</p>
-<p><img src="/../images/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/sort%E6%96%B9%E6%B3%95.png"></p>
-<p>2.完成图表所需的数据处理</p>
-<p>​	</p>
-<p>3.完成GDP动态图表绘制</p>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Python机器学习</title>
     <url>/2024/11/25/Python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95/</url>
     <content><![CDATA[<p><img src="/../images/Python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95/%E8%B7%AF%E7%BA%BF.png"></p>
@@ -2983,8 +2983,7 @@
 <p><img src="/../images/Python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95/%E5%AD%97%E5%85%B8%E6%95%B0%E6%8D%AE%E6%8A%BD%E5%8F%96.png"></p>
 <p><code>one-hot编码分析</code></p>
 <p><img src="/../images/Python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95/onehot-1732519551080-11.png"></p>
-<p><strong>文本特征抽取</strong>1:</p>
-<p>导包:<code>from sklearn.feature_extraction.text import CountVectorizer</code></p>
+<h5 id="文本特征抽取1"><a href="#文本特征抽取1" class="headerlink" title="文本特征抽取1:"></a><strong>文本特征抽取</strong>1:</h5><p>导包:<code>from sklearn.feature_extraction.text import CountVectorizer</code></p>
 <p>​	作用:对<code>文本数据</code>进行特征值化</p>
 <p>​	类: <code>sklearn.feature_extraction.text.CountVectorizer</code></p>
 <table>
@@ -3030,8 +3029,7 @@
 <p><code>使用</code>: import jieba</p>
 <p>​	   jieba.cut(“我是一个好程序员”)</p>
 <p><code>注意</code>: 返回值:词语生成器</p>
-<p><strong>文本特征抽取方式2:</strong></p>
-<p><strong>tf_idf重要性程度：</strong></p>
+<h5 id="文本特征抽取方式2"><a href="#文本特征抽取方式2" class="headerlink" title="文本特征抽取方式2:"></a><strong>文本特征抽取方式2:</strong></h5><p><strong>tf_idf重要性程度：</strong></p>
 <p>类：<code>sklearn.feature_extraction.text.TfidfVectorizer</code></p>
 <p>Tf:<code>term frequency</code> :词的频率-&gt;统计每篇文章在这个词的列表中出现的次数</p>
 <p>idf:<code>inversedocument frequency</code>：逆文档频率-&gt;log(总文档数量&#x2F;该词出现的文档数量)</p>
@@ -3039,6 +3037,11 @@
 <p>语法:</p>
 <p><code>TfidfVectorizer(stop_word=None,.....)</code></p>
 <p><img src="/../images/Python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95/tf_idf.png"></p>
+<h4 id="数据的特征预处理"><a href="#数据的特征预处理" class="headerlink" title="数据的特征预处理:"></a>数据的特征预处理:</h4><p>特征预处理：通过特定的统计方法(数学方法)将数据转换成算法要求的数据。</p>
+<p>针对的数值型数据:标准缩放(归一化，标准化，缺失值)</p>
+<p>类别型数据：one-hot编码</p>
+<p>时间类型：时间的切分</p>
+<p>特征预处理API:<code>sklearn.preprofessing</code></p>
 <h5 id="归一化："><a href="#归一化：" class="headerlink" title="归一化："></a>归一化：</h5><p>特点：通过对原始数据进行变换把数据映射到(默认为[0,1])之间</p>
 <p><img src="/../images/Python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95/%E5%BD%92%E4%B8%80%E5%8C%96.png"></p>
 <p><img src="/../images/Python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95/%E8%A7%84%E5%88%92%E8%AE%A1%E7%AE%97%E8%BF%87%E7%A8%8B.png"></p>
@@ -3058,9 +3061,35 @@
 <p>归一化总结:</p>
 <p>注意在特定场景下最大值最小值是变化的，另外，最大值与最小值非常容易受到异常点的影响，所以，这种方法</p>
 <p>的<code>鲁棒性</code>(稳定性)较差，只适合传统精确小数据场景。</p>
-<h5 id="标准化："><a href="#标准化：" class="headerlink" title="标准化："></a>标准化：</h5><p>特点：通过对原始数据进行变换把数据变换到均值为0，方差为1的范围内</p>
-<p>公式:</p>
-<h4 id="数据的特征预处理"><a href="#数据的特征预处理" class="headerlink" title="数据的特征预处理:"></a>数据的特征预处理:</h4><h4 id="数据的降维"><a href="#数据的降维" class="headerlink" title="数据的降维:"></a>数据的降维:</h4>]]></content>
+<h5 id="标准化："><a href="#标准化：" class="headerlink" title="标准化："></a>标准化：</h5><p>特点：通过对原始数据进行变换把数据变换到<code>均值为0</code>，<code>标准差为1</code>的范围内</p>
+<p><img src="/../images/Python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95/%E6%A0%87%E5%87%86%E5%8C%96.png"></p>
+<p><img src="/../images/Python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95/%E6%B1%82%E6%96%B9%E5%B7%AE.png"></p>
+<p>var&#x3D;[(90-75)^2+(60-75)^2+(75-75)^2]&#x2F;3&#x3D;150</p>
+<p>σ&#x3D;√150</p>
+<p>异常的对平均值的影响很小</p>
+<p>方差考量了数据的稳定性，方差小表示数据比较集中，方差大表示数据比较分散。</p>
+<p><img src="/../images/Python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95/%E6%A0%87%E5%87%86%E5%8C%96%E5%9B%BE.png"></p>
+<p>结合归一化来谈标准化：</p>
+<p>​	对于归一化来说：如果出现异常点，影响了最大值和最小值，那么结果显然会发生改变</p>
+<p>​	对于标准化来说：如果出现异常点，由于具有一定数据量，少量的异常点对于平均值的影响并不大，从而方差改变较小。</p>
+<p><code>标准差的API:</code></p>
+<p>​	<code>scikit-learn.preprocessing.StandardScaler</code></p>
+<p><img src="/../images/Python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95/StandardScaler%E8%AF%AD%E6%B3%95-1732623439506-8.png"></p>
+<p><code>标准化步骤</code></p>
+<ol>
+<li>实例化<code>StandardScaler</code></li>
+<li>通过fit_transform转换</li>
+</ol>
+<p>标准化总结：在已有样本足够多的情况下比较稳定，适合限制嘈杂大数据场景。</p>
+<p>数值型数据标准缩放的方法：1.归一化；2.标准化；3.缺失值</p>
+<p>类别型数据:one-hot编码</p>
+<p>时间类型：时间的切分</p>
+<h5 id="缺失值处理方法"><a href="#缺失值处理方法" class="headerlink" title="缺失值处理方法:"></a>缺失值处理方法:</h5><p>删除：如果每列或者行数据缺失值达到一定的比例，建议放弃整行或者整列</p>
+<p>插补：可以通过缺失值每行或者<strong>每列</strong>的平均值，中位值来填充。</p>
+<p>缺失值API:<code>sklearn.processing.Imputer</code></p>
+<p>数据当中的缺失值:np.nan(float类型）</p>
+<p><img src="/../images/Python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95/%E7%BC%BA%E5%A4%B1%E5%80%BC.png"></p>
+<h4 id="数据的降维"><a href="#数据的降维" class="headerlink" title="数据的降维:"></a>数据的降维:</h4>]]></content>
       <categories>
         <category>Python</category>
       </categories>
@@ -3571,31 +3600,6 @@
       </tags>
   </entry>
   <entry>
-    <title>JDK&amp;JRE&amp;JVM</title>
-    <url>/2024/01/12/java%E5%9F%BA%E7%A1%80-JAVA%E8%AF%AD%E8%A8%80%E7%9A%84%E7%89%B9%E7%82%B9/</url>
-    <content><![CDATA[<h1 id="JAVA语言的特点"><a href="#JAVA语言的特点" class="headerlink" title="JAVA语言的特点"></a>JAVA语言的特点</h1><ol>
-<li>跨平台的原理：<ol>
-<li>Java语言的跨平台是通过虚拟机(<strong>JVM</strong>)实现的</li>
-<li>Java语言不是直接运行在操作系统里面的，而是运行在虚拟机中的</li>
-<li>因此，针对于不同的操作系统，安装不同的虚拟机就可以了</li>
-</ol>
-</li>
-<li><strong>JDK</strong> 和 <strong>JRE</strong><ol>
-<li><strong>JDK</strong>(Java Development kit):Java开发工具包，由 <strong>JVM</strong>, <strong>核心类库</strong>，<strong>开发工具</strong>组成。</li>
-<li><strong>JER</strong> (JAVA Runtime Environment):Java的运行环境，把<strong>JVM</strong>和核心类库以及<strong>运行时所用到的开发工具</strong>单独抽离出来所组成的。</li>
-</ol>
-</li>
-</ol>
-<p>​	 </p>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>JDK的安装与下载</title>
     <url>/2024/01/11/java%E5%9F%BA%E7%A1%80-JDK%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%B8%8B%E8%BD%BD/</url>
     <content><![CDATA[<h1 id="JDK的安装与下载"><a href="#JDK的安装与下载" class="headerlink" title="JDK的安装与下载"></a>JDK的安装与下载</h1><h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><ol>
@@ -3615,6 +3619,31 @@
 <p><img src="/../images/%E5%AE%89%E8%A3%85004.png"></p>
 </li>
 </ol>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JDK&amp;JRE&amp;JVM</title>
+    <url>/2024/01/12/java%E5%9F%BA%E7%A1%80-JAVA%E8%AF%AD%E8%A8%80%E7%9A%84%E7%89%B9%E7%82%B9/</url>
+    <content><![CDATA[<h1 id="JAVA语言的特点"><a href="#JAVA语言的特点" class="headerlink" title="JAVA语言的特点"></a>JAVA语言的特点</h1><ol>
+<li>跨平台的原理：<ol>
+<li>Java语言的跨平台是通过虚拟机(<strong>JVM</strong>)实现的</li>
+<li>Java语言不是直接运行在操作系统里面的，而是运行在虚拟机中的</li>
+<li>因此，针对于不同的操作系统，安装不同的虚拟机就可以了</li>
+</ol>
+</li>
+<li><strong>JDK</strong> 和 <strong>JRE</strong><ol>
+<li><strong>JDK</strong>(Java Development kit):Java开发工具包，由 <strong>JVM</strong>, <strong>核心类库</strong>，<strong>开发工具</strong>组成。</li>
+<li><strong>JER</strong> (JAVA Runtime Environment):Java的运行环境，把<strong>JVM</strong>和核心类库以及<strong>运行时所用到的开发工具</strong>单独抽离出来所组成的。</li>
+</ol>
+</li>
+</ol>
+<p>​	 </p>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -3861,6 +3890,34 @@
       </tags>
   </entry>
   <entry>
+    <title>字符串相关类的底层原理</title>
+    <url>/2024/02/07/java%E5%9F%BA%E7%A1%80-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9B%B8%E5%85%B3%E7%B1%BB%E7%9A%84%E5%BA%95%E5%B1%82%E5%8E%9F%E7%90%86/</url>
+    <content><![CDATA[<h1 id="字符串相关类的底层原理："><a href="#字符串相关类的底层原理：" class="headerlink" title="字符串相关类的底层原理："></a>字符串相关类的底层原理：</h1><p><strong>1.字符串存储的内存原理</strong></p>
+<p>​	直接赋值会复用字符串常量池</p>
+<p>​	new出来不会复用，而是开辟一个新空间</p>
+<p><strong>2.&#x3D;&#x3D;号比较的到底是什么？</strong></p>
+<p>​	基本数据类型比较数据值</p>
+<p>​	引用数据类型比较地址值</p>
+<p><strong>3.字符串拼接的底层原理</strong></p>
+<p>​	<strong>等号右边没有变量参与：</strong></p>
+<p>如果没有变量参与，都是字符串直接相加，编译之后就是拼接之后的结果，会复用串次中的字符串。		</p>
+<p>​	<strong>等号右边有变量参与：</strong></p>
+<p>JDK8以前：系统底层会自动创建一个StringBuilder对象，然后再调用其append方法完成拼接。拼接后，再调用其toString方法转换为String类型，而toString方法的底层是直接new了一个字符串对象。</p>
+<p>JDK8版本：系统会预估字符串拼接后的总大小，把要拼接的内容都放在数组中，此时也是产生一个新的字符串。</p>
+<p><strong>4.StringBuilder提高效率原理图</strong></p>
+<p>所有要拼接的内容都会往String Builder中放，不会创建很多无用的空间，节约内存。</p>
+<p>​	<img src="C:\Users\Administrator\Desktop\微信截图_20240207073607.png"></p>
+<p><strong>5.StringBuilder源码分析</strong></p>
+<p>默认创建一个长度为16的字节数组，添加的内容长度小于16，直接存，添加的内容大于16会扩容(原来的内容*2+2)，如果扩容之后还不够，以实际长度为准。</p>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>常用的CMD命令</title>
     <url>/2024/01/11/java%E5%9F%BA%E7%A1%80-%E5%B8%B8%E7%94%A8%E7%9A%84CMD%E5%91%BD%E4%BB%A4/</url>
     <content><![CDATA[<h1 id="1-常用的CMD命令"><a href="#1-常用的CMD命令" class="headerlink" title="1. 常用的CMD命令"></a>1. 常用的CMD命令</h1><ol>
@@ -3895,34 +3952,6 @@
 </li>
 </ul>
 <p>​		</p>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>字符串相关类的底层原理</title>
-    <url>/2024/02/07/java%E5%9F%BA%E7%A1%80-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9B%B8%E5%85%B3%E7%B1%BB%E7%9A%84%E5%BA%95%E5%B1%82%E5%8E%9F%E7%90%86/</url>
-    <content><![CDATA[<h1 id="字符串相关类的底层原理："><a href="#字符串相关类的底层原理：" class="headerlink" title="字符串相关类的底层原理："></a>字符串相关类的底层原理：</h1><p><strong>1.字符串存储的内存原理</strong></p>
-<p>​	直接赋值会复用字符串常量池</p>
-<p>​	new出来不会复用，而是开辟一个新空间</p>
-<p><strong>2.&#x3D;&#x3D;号比较的到底是什么？</strong></p>
-<p>​	基本数据类型比较数据值</p>
-<p>​	引用数据类型比较地址值</p>
-<p><strong>3.字符串拼接的底层原理</strong></p>
-<p>​	<strong>等号右边没有变量参与：</strong></p>
-<p>如果没有变量参与，都是字符串直接相加，编译之后就是拼接之后的结果，会复用串次中的字符串。		</p>
-<p>​	<strong>等号右边有变量参与：</strong></p>
-<p>JDK8以前：系统底层会自动创建一个StringBuilder对象，然后再调用其append方法完成拼接。拼接后，再调用其toString方法转换为String类型，而toString方法的底层是直接new了一个字符串对象。</p>
-<p>JDK8版本：系统会预估字符串拼接后的总大小，把要拼接的内容都放在数组中，此时也是产生一个新的字符串。</p>
-<p><strong>4.StringBuilder提高效率原理图</strong></p>
-<p>所有要拼接的内容都会往String Builder中放，不会创建很多无用的空间，节约内存。</p>
-<p>​	<img src="C:\Users\Administrator\Desktop\微信截图_20240207073607.png"></p>
-<p><strong>5.StringBuilder源码分析</strong></p>
-<p>默认创建一个长度为16的字节数组，添加的内容长度小于16，直接存，添加的内容大于16会扩容(原来的内容*2+2)，如果扩容之后还不够，以实际长度为准。</p>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -5133,17 +5162,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Origin的使用</title>
-    <url>/2024/11/12/%E5%B7%A5%E5%85%B7_Origin%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>科研软件</category>
-      </categories>
-      <tags>
-        <tag>科研软件</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Mendeley Desktop的使用</title>
     <url>/2024/11/12/%E5%B7%A5%E5%85%B7_Mendeley%20Desktop/</url>
     <content><![CDATA[<h3 id="界面布局"><a href="#界面布局" class="headerlink" title="界面布局"></a>界面布局</h3><p>![](..&#x2F;images&#x2F;工具_Mendeley Desktop&#x2F;界面介绍.png)</p>
@@ -5167,6 +5185,17 @@
 <li>更改引文样式：View—-Citation Style —选择所需参考文献引用样式。</li>
 </ol>
 ]]></content>
+      <categories>
+        <category>科研软件</category>
+      </categories>
+      <tags>
+        <tag>科研软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Origin的使用</title>
+    <url>/2024/11/12/%E5%B7%A5%E5%85%B7_Origin%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[]]></content>
       <categories>
         <category>科研软件</category>
       </categories>
@@ -5625,6 +5654,22 @@
       </tags>
   </entry>
   <entry>
+    <title>超出范围重新录入</title>
+    <url>/2024/01/23/%E8%A7%84%E5%AE%9A%E8%8C%83%E5%9B%B4%E5%86%85%E5%BD%95%E5%85%A5%E6%95%B0%E6%8D%AE/</url>
+    <content><![CDATA[<h1 id="规定范围内录入数据"><a href="#规定范围内录入数据" class="headerlink" title="规定范围内录入数据"></a>规定范围内录入数据</h1><p>1.多位时(for循环和i++)</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="comment">//输入规定范围的整数：0-100之间</span></span><br><span class="line">        <span class="type">int</span>[] scores = <span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">6</span>];</span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span><span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; scores.length;) &#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;请输入评分:&quot;</span>);</span><br><span class="line">            <span class="type">int</span> score=sc.nextInt();</span><br><span class="line">            <span class="keyword">if</span> (score&gt;=<span class="number">0</span>&amp;&amp;score&lt;=<span class="number">100</span>)&#123;</span><br><span class="line">                scores[i]=score;</span><br><span class="line">                i++;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                System.out.println(<span class="string">&quot;超出范围，继续录入，当前的i为:&quot;</span>+i);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p>2.一位时(while和break)</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;输入蓝色球号:&quot;</span>);</span><br><span class="line">    <span class="type">int</span> <span class="variable">number</span> <span class="operator">=</span> number = sc.nextInt();</span><br><span class="line">    <span class="keyword">if</span> (number &gt;= <span class="number">1</span> &amp;&amp; number &lt;= <span class="number">16</span>) &#123;</span><br><span class="line">        newArr[newArr.length-<span class="number">1</span>] = number;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;蓝球码超出范围，重新输入:&quot;</span>);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>经典算法思想</category>
+      </categories>
+      <tags>
+        <tag>算法思想</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>边界抽取算法</title>
     <url>/2024/10/31/%E7%AE%97%E6%B3%95_%E8%BE%B9%E7%95%8C%E8%B7%9F%E8%B8%AA%E7%AE%97%E6%B3%95/</url>
     <content><![CDATA[<p>边界和形状:彩色的像素图通过数字图像处理的方法的到二值图，通过边界抽取获得边界图.</p>
@@ -5691,22 +5736,6 @@
 <p><strong>三:插入单位</strong></p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//1.定义数组单位</span></span><br><span class="line">String[] arr = &#123;<span class="string">&quot;佰&quot;</span>,<span class="string">&quot;拾&quot;</span>,<span class="string">&quot;万&quot;</span>,<span class="string">&quot;仟&quot;</span>,<span class="string">&quot;佰&quot;</span>,<span class="string">&quot;拾&quot;</span>,<span class="string">&quot;元&quot;</span>&#125;;</span><br><span class="line"><span class="comment">//2.遍历strMoney，然后把大写数字和单位拼接到字符串中</span></span><br><span class="line">String result=<span class="string">&quot;&quot;</span>;</span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;strMoney.length();i++)&#123;</span><br><span class="line">    <span class="type">char</span> c=strMoney.charAt(i);</span><br><span class="line">    result=result+c+arr[i];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-]]></content>
-      <categories>
-        <category>经典算法思想</category>
-      </categories>
-      <tags>
-        <tag>算法思想</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>超出范围重新录入</title>
-    <url>/2024/01/23/%E8%A7%84%E5%AE%9A%E8%8C%83%E5%9B%B4%E5%86%85%E5%BD%95%E5%85%A5%E6%95%B0%E6%8D%AE/</url>
-    <content><![CDATA[<h1 id="规定范围内录入数据"><a href="#规定范围内录入数据" class="headerlink" title="规定范围内录入数据"></a>规定范围内录入数据</h1><p>1.多位时(for循环和i++)</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="comment">//输入规定范围的整数：0-100之间</span></span><br><span class="line">        <span class="type">int</span>[] scores = <span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">6</span>];</span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span><span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; scores.length;) &#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;请输入评分:&quot;</span>);</span><br><span class="line">            <span class="type">int</span> score=sc.nextInt();</span><br><span class="line">            <span class="keyword">if</span> (score&gt;=<span class="number">0</span>&amp;&amp;score&lt;=<span class="number">100</span>)&#123;</span><br><span class="line">                scores[i]=score;</span><br><span class="line">                i++;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                System.out.println(<span class="string">&quot;超出范围，继续录入，当前的i为:&quot;</span>+i);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-<p>2.一位时(while和break)</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;输入蓝色球号:&quot;</span>);</span><br><span class="line">    <span class="type">int</span> <span class="variable">number</span> <span class="operator">=</span> number = sc.nextInt();</span><br><span class="line">    <span class="keyword">if</span> (number &gt;= <span class="number">1</span> &amp;&amp; number &lt;= <span class="number">16</span>) &#123;</span><br><span class="line">        newArr[newArr.length-<span class="number">1</span>] = number;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;蓝球码超出范围，重新输入:&quot;</span>);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>经典算法思想</category>
