@@ -282,77 +282,66 @@
         <h1 id="1-数组的概述"><a href="#1-数组的概述" class="headerlink" title="1. 数组的概述"></a>1. 数组的概述</h1><p>数组是指一种容器，可以用来存储<strong>同种类型</strong>的多个值，数组容器再存储数据的时候，需要结合隐式转换考虑。</p>
 <p><strong>定义</strong>：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//格式1:</span></span><br><span class="line">数据类型 [ ] 数组名</span><br><span class="line"><span class="comment">//格式2:</span></span><br><span class="line">数据类型 数组名[ ]</span><br></pre></td></tr></table></figure>
-
 <p><strong>初始化</strong>：就是在内存中，为数组容器开辟空间，并将数据存入容器中的过程。</p>
 <ol>
-<li><p>静态初始化： 数据类型[ ] 数组名 &#x3D; new 数据类型[ ]{元素1，元素2，元素3…};</p>
-<p><strong>简写样式： 数据类型[ ] 数组名 &#x3D; {元素1，元素2，元素3…};</strong></p>
+<li><p>静态初始化： 数据类型[ ] 数组名 = new 数据类型[ ]{元素1，元素2，元素3…};</p>
+<p><strong>简写样式： 数据类型[ ] 数组名 = {元素1，元素2，元素3…};</strong></p>
 </li>
 <li><p>动态初始化:初始化时只指定数组长度，由系统为数组分配初始值。</p>
-<p><strong>格式:数据类型[ ] 数组名 &#x3D; new 数据类型[数组长度]；</strong></p>
+<p><strong>格式:数据类型[ ] 数组名 = new 数据类型[数组长度]；</strong></p>
 <p>在创建的时候，由我们自己指定数组的长度，有虚拟机给出默认的初始化值。</p>
 <p>数组默认初始化值的规律:</p>
-<p>​	整数类型的默认初始值为0</p>
-<p>​	小数类型的默认初始值为0.0</p>
-<p>​	字符类型的默认初始值为’&#x2F;u0000’空格</p>
-<p>​	布尔类型的默认初始值为false</p>
-<p>​	引用数据类型的默认初始值为null</p>
+<p>​    整数类型的默认初始值为0</p>
+<p>​    小数类型的默认初始值为0.0</p>
+<p>​    字符类型的默认初始值为’/u0000’空格</p>
+<p>​    布尔类型的默认初始值为false</p>
+<p>​    引用数据类型的默认初始值为null</p>
 </li>
 <li><p>动态初始化和静态初始化的区别</p>
-<table>
-<thead>
-<tr>
-<th align="center">动态初始化</th>
-<th align="center">静态初始化</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">只明确元素个数，不明确具体数值，推荐使用动态初始化</td>
-<td align="center">需求中已经明确了要操作的具体数据，直接静态初始化即可</td>
-</tr>
-</tbody></table>
+<p>|                     动态初始化                     |                      静态初始化                      |<br>| :————————————————————————: | :—————————————————————————: |<br>| 只明确元素个数，不明确具体数值，推荐使用动态初始化 | 需求中已经明确了要操作的具体数据，直接静态初始化即可 |</p>
 </li>
 </ol>
 <h1 id="2-数组的地址值和元素访问"><a href="#2-数组的地址值和元素访问" class="headerlink" title="2.数组的地址值和元素访问"></a>2.数组的地址值和元素访问</h1><p><strong>地址值</strong>：表示数组在内存中的位置([I@4eec7777)</p>
-<p>​		[ :表示当前是一个数组</p>
-<p>​		I :表示当前数组里面的元素都是int类型</p>
-<p>​	       @:表示一个间隔符号。固定格式</p>
+<p>​        [ :表示当前是一个数组</p>
+<p>​        I :表示当前数组里面的元素都是int类型</p>
+<p>​           @:表示一个间隔符号。固定格式</p>
 <p>​               4eec7777:数组真正的地址值(16进制)</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[I@<span class="number">4</span>eec7777</span><br></pre></td></tr></table></figure>
-
 <p><strong>数组元素访问</strong>:</p>
-<p>​		格式: 数组名[索引]，数组的索引<strong>从0开始</strong>。</p>
+<p>​        格式: 数组名[索引]，数组的索引<strong>从0开始</strong>。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">a</span> <span class="operator">=</span> arr[<span class="number">0</span>];</span><br></pre></td></tr></table></figure>
-
 <h1 id="3-数组的遍历"><a href="#3-数组的遍历" class="headerlink" title="3.数组的遍历"></a>3.数组的遍历</h1><p>数组遍历:将数组中所有的内容取出来，取出来之后可以进行打印，判断，求和…………</p>
 <p>遍历是指取出数据的整个过程，不要局限的理解为，遍历就是打印。</p>
 <p>获取数组的长度:<strong>数组名.length</strong></p>
 <p>拓展：Idea中自动地快速生成数组的遍历方式：数组名.fori回车</p>
-<h1 id="4-数值中常见问题"><a href="#4-数值中常见问题" class="headerlink" title="4.数值中常见问题"></a>4.数值中常见问题</h1><p>1.索引越界问题**(最小索引:0,最大索引:数组长度-1)**</p>
+<h1 id="4-数值中常见问题"><a href="#4-数值中常见问题" class="headerlink" title="4.数值中常见问题"></a>4.数值中常见问题</h1><p>1.索引越界问题<strong>(最小索引:0,最大索引:数组长度-1)</strong></p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Exception <span class="keyword">in</span> thread &quot;main&quot; java.lang.ArrayIndexOutOfBoundsException: Index <span class="number">50</span> out of bounds <span class="keyword">for</span> length <span class="number">50</span></span><br><span class="line">	<span class="built_in">at</span> com.itheima.array.ArrayDemo07.main(ArrayDemo07.java:<span class="number">10</span>)</span><br><span class="line">// Exception(异常),ArrayIndexOutOfBoundsException(数组索引超出范围异常)--访问了不存在的索引</span><br></pre></td></tr></table></figure>
-
-<h1 id="5-数组的内存图"><a href="#5-数组的内存图" class="headerlink" title="5.数组的内存图"></a>5.数组的内存图</h1><table>
+<h1 id="5-数组的内存图"><a href="#5-数组的内存图" class="headerlink" title="5.数组的内存图"></a>5.数组的内存图</h1><div class="table-container">
+<table>
 <thead>
 <tr>
-<th align="left">JAVA内存空间</th>
+<th style="text-align:left">JAVA内存空间</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="left">栈：方法运行时使用的内存，比如main方法运行，进行方法栈中执行。</td>
+<tbody>
+<tr>
+<td style="text-align:left">栈：方法运行时使用的内存，比如main方法运行，进行方法栈中执行。</td>
 </tr>
 <tr>
-<td align="left">堆：存储对象或者数组，new来创建的，都存储在堆内存</td>
+<td style="text-align:left">堆：存储对象或者数组，new来创建的，都存储在堆内存</td>
 </tr>
 <tr>
-<td align="left">方法区：存储可以运行的class文件</td>
+<td style="text-align:left">方法区：存储可以运行的class文件</td>
 </tr>
 <tr>
-<td align="left">本地方法栈：JVM在使用操作系统功能时使用，与开发无关</td>
+<td style="text-align:left">本地方法栈：JVM在使用操作系统功能时使用，与开发无关</td>
 </tr>
 <tr>
-<td align="left">寄存器：给CPU使用，和开发无关</td>
+<td style="text-align:left">寄存器：给CPU使用，和开发无关</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 
     </div>
 
@@ -553,13 +542,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">160k</span>
+    <span title="站点总字数">158k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">4:51</span>
+    <span title="站点阅读时长">4:47</span>
 </div>
   <div class="powered-by">
     

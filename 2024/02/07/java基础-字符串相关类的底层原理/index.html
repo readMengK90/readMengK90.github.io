@@ -255,7 +255,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>509</span>
+              <span>499</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -276,20 +276,20 @@
 
       
         <h1 id="字符串相关类的底层原理："><a href="#字符串相关类的底层原理：" class="headerlink" title="字符串相关类的底层原理："></a>字符串相关类的底层原理：</h1><p><strong>1.字符串存储的内存原理</strong></p>
-<p>​	直接赋值会复用字符串常量池</p>
-<p>​	new出来不会复用，而是开辟一个新空间</p>
-<p><strong>2.&#x3D;&#x3D;号比较的到底是什么？</strong></p>
-<p>​	基本数据类型比较数据值</p>
-<p>​	引用数据类型比较地址值</p>
+<p>​    直接赋值会复用字符串常量池</p>
+<p>​    new出来不会复用，而是开辟一个新空间</p>
+<p><strong>2.==号比较的到底是什么？</strong></p>
+<p>​    基本数据类型比较数据值</p>
+<p>​    引用数据类型比较地址值</p>
 <p><strong>3.字符串拼接的底层原理</strong></p>
-<p>​	<strong>等号右边没有变量参与：</strong></p>
-<p>如果没有变量参与，都是字符串直接相加，编译之后就是拼接之后的结果，会复用串次中的字符串。		</p>
-<p>​	<strong>等号右边有变量参与：</strong></p>
+<p>​    <strong>等号右边没有变量参与：</strong></p>
+<p>如果没有变量参与，都是字符串直接相加，编译之后就是拼接之后的结果，会复用串次中的字符串。        </p>
+<p>​    <strong>等号右边有变量参与：</strong></p>
 <p>JDK8以前：系统底层会自动创建一个StringBuilder对象，然后再调用其append方法完成拼接。拼接后，再调用其toString方法转换为String类型，而toString方法的底层是直接new了一个字符串对象。</p>
 <p>JDK8版本：系统会预估字符串拼接后的总大小，把要拼接的内容都放在数组中，此时也是产生一个新的字符串。</p>
 <p><strong>4.StringBuilder提高效率原理图</strong></p>
 <p>所有要拼接的内容都会往String Builder中放，不会创建很多无用的空间，节约内存。</p>
-<p>​	<img src="C:\Users\Administrator\Desktop\微信截图_20240207073607.png"></p>
+<p>​    <img src="C:\Users\Administrator\Desktop\微信截图_20240207073607.png" alt=""></p>
 <p><strong>5.StringBuilder源码分析</strong></p>
 <p>默认创建一个长度为16的字节数组，添加的内容长度小于16，直接存，添加的内容大于16会扩容(原来的内容*2+2)，如果扩容之后还不够，以实际长度为准。</p>
 
@@ -492,13 +492,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">160k</span>
+    <span title="站点总字数">158k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">4:51</span>
+    <span title="站点阅读时长">4:47</span>
 </div>
   <div class="powered-by">
     

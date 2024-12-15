@@ -27,13 +27,13 @@
 <meta property="og:site_name" content="东瓶西镜">
 <meta property="og:description" content="SQL从入门到实战">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://readmengk90.github.io/images/SQL%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/%E7%A1%AE%E8%AE%A4%E6%9B%B4%E6%94%B9.png">
+<meta property="og:image" content="https://readmengk90.github.io/2024/11/11/images/SQL%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/%E7%A1%AE%E8%AE%A4%E6%9B%B4%E6%94%B9.png">
 <meta property="article:published_time" content="2024-11-11T02:21:53.794Z">
 <meta property="article:modified_time" content="2024-11-11T10:29:17.425Z">
 <meta property="article:author" content="Amber">
 <meta property="article:tag" content="Python">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://readmengk90.github.io/images/SQL%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/%E7%A1%AE%E8%AE%A4%E6%9B%B4%E6%94%B9.png">
+<meta name="twitter:image" content="https://readmengk90.github.io/2024/11/11/images/SQL%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/%E7%A1%AE%E8%AE%A4%E6%9B%B4%E6%94%B9.png">
 
 <link rel="canonical" href="https://readmengk90.github.io/2024/11/11/SQL%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/">
 
@@ -298,41 +298,31 @@
 <p>使用数据库软件去获得<code>库-&gt;表-&gt;数据</code>，这种数据组织，存储的能力。</p>
 <p>并借助<code>SQL</code>语言，完成对数据的增删改查等操作。</p>
 <p>SQL语法特征:</p>
-<p>​	SQL大小写不敏感</p>
-<p>​	SQL可以单行或多行书写，最后以<code>;</code>号结束</p>
-<p>​	SQL支持注释:</p>
-<p>​		单行注释: – 注释内容(–后面一定要有一个空格)</p>
-<p>​		单行注释: # 注释内容(# 后面可以不加空格)</p>
+<p>​    SQL大小写不敏感</p>
+<p>​    SQL可以单行或多行书写，最后以<code>;</code>号结束</p>
+<p>​    SQL支持注释:</p>
+<p>​        单行注释: — 注释内容(—后面一定要有一个空格)</p>
+<p>​        单行注释: # 注释内容(# 后面可以不加空格)</p>
 <h3 id="DDL-数据定义-库的创建删除，表的创建删除"><a href="#DDL-数据定义-库的创建删除，表的创建删除" class="headerlink" title="DDL:数据定义(库的创建删除，表的创建删除)"></a>DDL:数据定义(库的创建删除，表的创建删除)</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">-- 针对库的操作</span><br><span class="line">-- 查看数据库</span><br><span class="line">SHOW DATABASES;</span><br><span class="line">-- 使用数据库</span><br><span class="line">USE 数据库名称;</span><br><span class="line">-- 创建数据库</span><br><span class="line">CREATE DATABASE 数据库名称 [CHARSET UTF8];</span><br><span class="line">-- 删除数据库</span><br><span class="line">DROP DATABASE 数据库名称;</span><br><span class="line">-- 查看当前使用的数据库</span><br><span class="line">SELECT DATABASE();</span><br><span class="line">-- -----------------------------------------</span><br><span class="line">-- 针对表的管理</span><br><span class="line">-- 需要先选择数据库</span><br><span class="line">-- 查看有那些表</span><br><span class="line">SHOW TABLES;</span><br><span class="line">-- 删除表</span><br><span class="line">DROP TABLE 表名称;</span><br><span class="line">DROP TABLE IF EXISTS 表名称;</span><br><span class="line">-- 创建表</span><br><span class="line">CREATE TABLE 表名称(</span><br><span class="line">    列名称 列类型,</span><br><span class="line">    列名称 列类型,</span><br><span class="line">    ..........</span><br><span class="line">);</span><br><span class="line">-- 列类型有</span><br><span class="line">int 	-- 整数</span><br><span class="line">float	-- 浮点数</span><br><span class="line">varchar(长度)	-- 文本,长度为文字，做最大长度限制</span><br><span class="line">date	-- 日期类型</span><br><span class="line">timetamp	-- 时间戳类型</span><br></pre></td></tr></table></figure>
-
 <h3 id="DML-数据操纵-新增数据，删除数据，修改数据"><a href="#DML-数据操纵-新增数据，删除数据，修改数据" class="headerlink" title="DML:数据操纵(新增数据，删除数据，修改数据)"></a>DML:数据操纵(新增数据，删除数据，修改数据)</h3><p>SQL只支持<code>单引号</code>对字符串</p>
 <p>INSERT数据插入:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INSERT INTO 表[(列1,列2,列3....,列N)] VALUES(值1,值2,..,值N)[,(值1,值2,..,值N),(值1,值2,..,值N)] -- []表示可选</span><br></pre></td></tr></table></figure>
-
 <p>DELETE数据删除:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">DELETE FROM 表名称 [WHERE 条件判断]</span><br><span class="line">-- 条件判断: 列 操作符 值</span><br><span class="line">-- 操作符:=,&gt;, &lt;,&lt;=,&gt;=,!=等等</span><br></pre></td></tr></table></figure>
-
 <p>UPDATE数据更新:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">UPDATE 表名 SET 列=值 [WHERE 条件判断];</span><br><span class="line">-- 条件判断: 列 操作符 值</span><br><span class="line">-- 操作符:=,&gt;, &lt;,&lt;=,&gt;=,!=等等</span><br></pre></td></tr></table></figure>
-
 <h3 id="DCL-数据控制-新增用户-删除用户-密码修改-权限管理"><a href="#DCL-数据控制-新增用户-删除用户-密码修改-权限管理" class="headerlink" title="DCL:数据控制(新增用户,删除用户,密码修改,权限管理)"></a>DCL:数据控制(新增用户,删除用户,密码修改,权限管理)</h3><h3 id="DQL-数据查询-基于需求查询和计算数据"><a href="#DQL-数据查询-基于需求查询和计算数据" class="headerlink" title="DQL:数据查询(基于需求查询和计算数据)"></a>DQL:数据查询(基于需求查询和计算数据)</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT 字段列表|* FROM 表 -- 从(FROM)表中，选择(SELECT)某些列进行展示</span><br><span class="line">SELECT 字段列表|* FROM 表 WHERE 条件判断 </span><br></pre></td></tr></table></figure>
-
 <p>分组聚合:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">SELECT 字段(与后面列有关)|聚合函数 FROM 表 [WHERE 条件] GROUP BY 列</span><br><span class="line">-- 聚合函数有：</span><br><span class="line">-- SUM(列) 求和</span><br><span class="line">-- AVG(列) 求平均值</span><br><span class="line">-- MIN(列) 求最小值</span><br><span class="line">-- MAX(列) 求最大值</span><br><span class="line">-- COUNT(列|*) 求数量</span><br></pre></td></tr></table></figure>
-
 <p>GROUP BY 中出现了那个列，那个列才能出现在SELECT中的非聚合中。</p>
 <p>排序分页：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">-- 结果排序</span><br><span class="line">SELECT 列|聚合函数|* FROM 表</span><br><span class="line">WHERE ...</span><br><span class="line">GROUP BY ...</span><br><span class="line">ORDER BY ...[ASC | DESC]  -- ASC升 DESC降</span><br></pre></td></tr></table></figure>
-
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">-- 结果分页限制</span><br><span class="line">-- 可以使用LIMIT关键字，对查询结果进行数量限制或分页显示</span><br><span class="line">SELECT 列|聚合函数|* FROM 表</span><br><span class="line">WHERE ...</span><br><span class="line">GROUP BY ...</span><br><span class="line">ORDER BY ... [ASC|DESC]</span><br><span class="line">LIMIT n[,m] -- n,m 跳过n条取m条</span><br><span class="line">-- 讲究顺序的</span><br></pre></td></tr></table></figure>
-
 <p>Python创建到MySQL的数据库链接：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">pip install pymysql <span class="comment"># 按照pymysql库</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> pymysql <span class="keyword">import</span> Connection <span class="comment"># 获取到MySQL数据库的链接对象</span></span><br><span class="line">	conn = Connection(</span><br><span class="line">        host=<span class="string">&#x27;localhost&#x27;</span>,</span><br><span class="line">        port=<span class="number">3306</span>,</span><br><span class="line">        user=<span class="string">&#x27;root&#x27;</span>,</span><br><span class="line">        password=<span class="string">&#x27;123456&#x27;</span></span><br><span class="line">    )</span><br><span class="line">    <span class="comment"># 打印MySQL数据库软件信息</span></span><br><span class="line">    <span class="built_in">print</span>(conn.get_server_info())</span><br><span class="line">    <span class="comment"># 执行非查询性质的SQL语句--------------------</span></span><br><span class="line">    cursor=conn.cursor() <span class="comment"># 获取到游标对象</span></span><br><span class="line">    conn.select_db(<span class="string">&quot;test&quot;</span>) <span class="comment"># 选择数据库</span></span><br><span class="line">    cursor.execute(<span class="string">&quot;create table test_pymysql(id int);&quot;</span>) <span class="comment"># 执行sql</span></span><br><span class="line">    <span class="comment"># 执行查询性质的SQL语句----------------------</span></span><br><span class="line">    cursor=conn.cursor() <span class="comment"># 获取到游标对象</span></span><br><span class="line">    conn.select_db(<span class="string">&quot;test&quot;</span>) <span class="comment"># 选择数据库</span></span><br><span class="line">    cursor.execute(<span class="string">&quot;select * from student&quot;</span>) <span class="comment"># 执行sql</span></span><br><span class="line">    <span class="comment"># 获取查询结果</span></span><br><span class="line">    results:<span class="built_in">tuple</span>=cursor.fetchall()</span><br><span class="line">    <span class="keyword">for</span> r <span class="keyword">in</span> results:</span><br><span class="line">        <span class="built_in">print</span>(r)</span><br><span class="line">    <span class="comment"># 关闭到数据库的链接</span></span><br><span class="line">    conn.close()</span><br></pre></td></tr></table></figure>
-
 <p>Python执行SQL语句<code>插入</code>数据到MySQL</p>
-<p><img src="/../images/SQL%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A/%E7%A1%AE%E8%AE%A4%E6%9B%B4%E6%94%B9.png"></p>
+<p><img src="../images/SQL从入门到精通/确认更改.png" alt=""></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">conn.commit</span><br><span class="line"><span class="comment"># 如果不想手动commit确认，可以在构建链接对象的时候，设置自动commit的属性</span></span><br><span class="line">conn = Connection(</span><br><span class="line">        host=<span class="string">&#x27;localhost&#x27;</span>,</span><br><span class="line">        port=<span class="number">3306</span>,</span><br><span class="line">        user=<span class="string">&#x27;root&#x27;</span>,</span><br><span class="line">        password=<span class="string">&#x27;123456&#x27;</span></span><br><span class="line">    	autocommit=<span class="literal">True</span> <span class="comment"># 设置自动提交</span></span><br><span class="line">    )</span><br></pre></td></tr></table></figure>
-
 
     </div>
 
@@ -533,13 +523,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">160k</span>
+    <span title="站点总字数">158k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">4:51</span>
+    <span title="站点阅读时长">4:47</span>
 </div>
   <div class="powered-by">
     

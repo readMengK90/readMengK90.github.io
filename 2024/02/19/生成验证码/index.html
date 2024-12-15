@@ -273,12 +273,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h4 id="验证码规则："><a href="#验证码规则：" class="headerlink" title="验证码规则："></a>验证码规则：</h4><p>​	长度为5</p>
-<p>​	由4位大写或者小写字母和1位数字组成，同一个字母可重复</p>
-<p>​	数字可以出现在任意位置</p>
+        <h4 id="验证码规则："><a href="#验证码规则：" class="headerlink" title="验证码规则："></a>验证码规则：</h4><p>​    长度为5</p>
+<p>​    由4位大写或者小写字母和1位数字组成，同一个字母可重复</p>
+<p>​    数字可以出现在任意位置</p>
 <p>比如：aQa1K</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> String <span class="title function_">getVericode</span><span class="params">()</span> &#123;</span><br><span class="line">    	<span class="comment">//1.创建一个集合添加所有的大写和小写字母</span></span><br><span class="line">    	ArrayList&lt;Character&gt; list=<span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br><span class="line">    	<span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span> ; i&lt;<span class="number">26</span> ; i++)&#123;</span><br><span class="line">            list.add((<span class="type">char</span>)(<span class="string">&#x27;a&#x27;</span>+i));</span><br><span class="line">            list.add((<span class="type">char</span>)(<span class="string">&#x27;A&#x27;</span>+i));</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">StringBuffer</span> <span class="variable">sb</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">StringBuffer</span>();</span><br><span class="line">        <span class="type">Random</span> <span class="variable">rd</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Random</span>();</span><br><span class="line">        <span class="comment">//2.要随机抽取4个字符</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; <span class="number">4</span>; i++) &#123;</span><br><span class="line">            <span class="comment">//获取随机索引</span></span><br><span class="line">            <span class="type">int</span> index=rd.nextInt(list.size());</span><br><span class="line">            <span class="comment">//利用索引获取字符</span></span><br><span class="line">            <span class="type">char</span> c=list.get(index);</span><br><span class="line">            sb.append(c);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//3.生成1位随机数字</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">number</span> <span class="operator">=</span> rd.nextInt(<span class="number">10</span>); <span class="comment">// 生成0到9之间的随机数字</span></span><br><span class="line">    	sb.append(number);</span><br><span class="line">    	<span class="comment">//4.将字符串变成字符数组，然后再新建一个新的字符串</span></span><br><span class="line">    	<span class="type">char</span>[] arr=sb.toString().toCharArray();</span><br><span class="line">    	<span class="comment">//拿着最后一个索引，跟随机索引进行交换</span></span><br><span class="line">    	<span class="type">int</span> randomIndex=rd.nextInt(arr.length);</span><br><span class="line">        <span class="comment">//最大索引指向的元素，跟随机索引指向的元素交换</span></span><br><span class="line">    	<span class="type">char</span> temp=arr[randomIndex];</span><br><span class="line">        arr[randomIndex]=arr[arr.length-<span class="number">1</span>];</span><br><span class="line">    	arr[arr.length-<span class="number">1</span>]=temp;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">String</span>(arr);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
 
     </div>
 
@@ -479,13 +478,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">160k</span>
+    <span title="站点总字数">158k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">4:51</span>
+    <span title="站点阅读时长">4:47</span>
 </div>
   <div class="powered-by">
     

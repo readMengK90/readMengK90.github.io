@@ -280,27 +280,31 @@
 
       
         <h1 id="StringBuilder"><a href="#StringBuilder" class="headerlink" title="StringBuilder"></a><strong>StringBuilder</strong></h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">    String s=<span class="string">&quot;&quot;</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">1000000</span>;i++)&#123;</span><br><span class="line">        s=s+<span class="string">&quot;abc&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println(s);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//数据量较大时，字符串拼接耗时长</span></span><br></pre></td></tr></table></figure>
-
 <p>1.为什么要学习StringBuilder?:<strong>提高字符串的操作效率</strong></p>
-<p>   StringBuilder可以看成是一个容器，创建之后里面的<strong>内容是可变的</strong>,不像字符串一样是固定的。	</p>
+<p>   StringBuilder可以看成是一个容器，创建之后里面的<strong>内容是可变的</strong>,不像字符串一样是固定的。    </p>
 <p>2.StringBuilder的构造方法</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
-<th align="center">方法名</th>
-<th align="center">说明</th>
+<th style="text-align:center">方法名</th>
+<th style="text-align:center">说明</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">public StringBuilder()</td>
-<td align="center">创建一个空白可变字符，不含有任何内容</td>
+<tbody>
+<tr>
+<td style="text-align:center">public StringBuilder()</td>
+<td style="text-align:center">创建一个空白可变字符，不含有任何内容</td>
 </tr>
 <tr>
-<td align="center">public StringBuilder(String str)</td>
-<td align="center">根据字符串的内容，来创建可变字符串对象</td>
+<td style="text-align:center">public StringBuilder(String str)</td>
+<td style="text-align:center">根据字符串的内容，来创建可变字符串对象</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <p>3.StringBuilder常用方法</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -308,7 +312,8 @@
 <th>说明</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>public StringBuilder append(任意类型)</td>
 <td>添加数据，并返回对象本身</td>
 </tr>
@@ -324,12 +329,14 @@
 <td>public String toString()</td>
 <td>通过toString()就可以实现把StringBuilder转换成String</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <p><strong>StringBuilder是Java已经写好的类，Java在底层对它做了一些特殊处理，打印对象不是地址值而是属性值。</strong></p>
 <p>链式编程：当我们在调用一个方法的时候，不需要用变量接收他的结果，可以继续调用其他方法。</p>
 <p>使用StringBuilder的场景：</p>
-<p>​	1.字符串的拼接</p>
-<p>​	2.字符串的反转</p>
+<p>​    1.字符串的拼接</p>
+<p>​    2.字符串的反转</p>
 
     </div>
 
@@ -530,13 +537,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">160k</span>
+    <span title="站点总字数">158k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">4:51</span>
+    <span title="站点阅读时长">4:47</span>
 </div>
   <div class="powered-by">
     

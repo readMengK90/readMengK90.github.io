@@ -276,11 +276,12 @@
 <p>定义：包就是文件夹，用来管理各种不同功能的Java类，方便后期代码维护</p>
 <p>规则：公司域名反写+包的作用名，需要全部英文小写，见名知意，com.itheima.domain</p>
 <p>使用其他类的规则：</p>
-<p>​	1.使用同一个包中的类时，不需要导包</p>
-<p>​	2.使用java.lang包中的类时，不需要导包 </p>
-<p>​	3.其他情况都需要导包</p>
-<p>​	4.如果同时使用两个包中的同类名，需要用全类名 </p>
+<p>​    1.使用同一个包中的类时，不需要导包</p>
+<p>​    2.使用java.lang包中的类时，不需要导包 </p>
+<p>​    3.其他情况都需要导包</p>
+<p>​    4.如果同时使用两个包中的同类名，需要用全类名 </p>
 <p><strong>final:</strong></p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -288,7 +289,8 @@
 <th></th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>方法</td>
 <td>表明该方法是最终方法，不能被重写</td>
 </tr>
@@ -300,11 +302,13 @@
 <td>变量</td>
 <td>叫做常量，只能被赋值一次</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <p>常量：在实际开发中，常量一般作为系统的配置信息，方便维护，提高可读性</p>
 <p>常量的命名规则：</p>
-<p>​	单个单词：全部大写</p>
-<p>​	多个单词：全部大写，单词之间用下划线隔开</p>
+<p>​    单个单词：全部大写</p>
+<p>​    多个单词：全部大写，单词之间用下划线隔开</p>
 <p>细节：</p>
 <p>final修饰的变量是基本类型：那么变量存储的数据值不能发生改变</p>
 <p>final修饰的变量是引用类型：那么变量存储的地址值不能发生改变，对象内部的可以改变。</p>
@@ -312,45 +316,49 @@
 <p>权限修饰符：是用来控制一个成员能够被访问的范围的。</p>
 <p>可以修饰成员变量，方法，构造方法，内部类。</p>
 <p>分类：有四种作用范围从小到大(private&lt;缺省&lt;protected&lt;public)</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
-<th align="center">修饰符</th>
-<th align="center">同一个类</th>
-<th align="center">同一个包中其他类</th>
-<th align="center">不同包下的子类</th>
-<th align="center">不同包下的无关类</th>
+<th style="text-align:center">修饰符</th>
+<th style="text-align:center">同一个类</th>
+<th style="text-align:center">同一个包中其他类</th>
+<th style="text-align:center">不同包下的子类</th>
+<th style="text-align:center">不同包下的无关类</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">private</td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<tbody>
+<tr>
+<td style="text-align:center">private</td>
+<td style="text-align:center">√</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="center">空着不写</td>
-<td align="center">√</td>
-<td align="center">√</td>
-<td align="center"></td>
-<td align="center"></td>
+<td style="text-align:center">空着不写</td>
+<td style="text-align:center">√</td>
+<td style="text-align:center">√</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="center">protected</td>
-<td align="center">√</td>
-<td align="center">√</td>
-<td align="center">√</td>
-<td align="center"></td>
+<td style="text-align:center">protected</td>
+<td style="text-align:center">√</td>
+<td style="text-align:center">√</td>
+<td style="text-align:center">√</td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="center">public</td>
-<td align="center">√</td>
-<td align="center">√</td>
-<td align="center">√</td>
-<td align="center">√</td>
+<td style="text-align:center">public</td>
+<td style="text-align:center">√</td>
+<td style="text-align:center">√</td>
+<td style="text-align:center">√</td>
+<td style="text-align:center">√</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <p>规则：实际开发中，一般只用private和public</p>
 <p>成员变量私有</p>
 <p>方法公开</p>
@@ -359,9 +367,9 @@
 <p>局部代码块：写在方法里面的一对单独的{}，提前结束变量的生命周期。</p>
 <p>构造代码块：写在成员位置的代码块，可以把多个构造方法中重复的代码抽取出来，在创建本类对象的时候会优先于构造方法执行。</p>
 <p><strong>静态代码块</strong>：格式:static{}</p>
-<p>​			特点：需要通过static关键字修饰，随着类的加载而加载，并且自动触发，只执行一次</p>
-<p>​			使用场景：在类加载的时候，做一些数据初始化的时候使用。</p>
-<p>​			应用场景：程序刚开始时进行数据的初始化</p>
+<p>​            特点：需要通过static关键字修饰，随着类的加载而加载，并且自动触发，只执行一次</p>
+<p>​            使用场景：在类加载的时候，做一些数据初始化的时候使用。</p>
+<p>​            应用场景：程序刚开始时进行数据的初始化</p>
 
     </div>
 
@@ -561,13 +569,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">160k</span>
+    <span title="站点总字数">158k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">4:51</span>
+    <span title="站点阅读时长">4:47</span>
 </div>
   <div class="powered-by">
     

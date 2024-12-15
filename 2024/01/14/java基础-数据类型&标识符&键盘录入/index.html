@@ -279,62 +279,63 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="1-数据类型"><a href="#1-数据类型" class="headerlink" title="1. 数据类型"></a>1. 数据类型</h1><h4 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h4><table>
+        <h1 id="1-数据类型"><a href="#1-数据类型" class="headerlink" title="1. 数据类型"></a>1. 数据类型</h1><h4 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h4><div class="table-container">
+<table>
 <thead>
 <tr>
-<th align="center">数据类型</th>
-<th align="left">关键字</th>
-<th align="left">取值范围</th>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:left">关键字</th>
+<th style="text-align:left">取值范围</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">整数</td>
-<td align="left">byte<br/>short<br/>int<br/>long</td>
-<td align="left">-128~127(byte)</td>
+<tbody>
+<tr>
+<td style="text-align:center">整数</td>
+<td style="text-align:left">byte<br/>short<br/>int<br/>long</td>
+<td style="text-align:left">-128~127(byte)</td>
 </tr>
 <tr>
-<td align="center">浮点数</td>
-<td align="left">float<br/>double</td>
-<td align="left"></td>
+<td style="text-align:center">浮点数</td>
+<td style="text-align:left">float<br/>double</td>
+<td style="text-align:left"></td>
 </tr>
 <tr>
-<td align="center">字符</td>
-<td align="left">char</td>
-<td align="left"></td>
+<td style="text-align:center">字符</td>
+<td style="text-align:left">char</td>
+<td style="text-align:left"></td>
 </tr>
 <tr>
-<td align="center">布尔</td>
-<td align="left">boolean</td>
-<td align="left"></td>
+<td style="text-align:center">布尔</td>
+<td style="text-align:left">boolean</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <p>如果要定义long类型的变量，在数据值的后面需要加一个L作为后缀。float类型变量，数据值也需要加一个F作为后缀。</p>
 <p>整数和小数取值范围大小关系：double&gt;float&gt;long&gt;int&gt; short&gt;byte</p>
 <h1 id="2-标识符"><a href="#2-标识符" class="headerlink" title="2.标识符"></a>2.标识符</h1><p>定义：自定义的类，方法，变量的名字。</p>
 <p>规则： </p>
 <p>   硬性规则:</p>
-<p>​		由数字，字母，下划线(_)和美元$符组成，但是<strong>不能以数字开头</strong>，不能是关键字，<strong>区分大小写</strong>。(关键字是全部小写的)</p>
-<p>   软性建议:	</p>
-<p>​		小驼峰命名法: <strong>方法</strong>，<strong>变量</strong></p>
-<p>​				标识符是一个单词的时候，全部小写，例如:name.</p>
-<p>​				标识符由对个单词组成的时候，第一个单词首字母小写，其他单词首字母大写,例如：firstName.</p>
-<p>​		大驼峰命名法: <strong>类名</strong></p>
-<p>​				标识符是一个单词的时候，首字母大写，例如：Student.</p>
-<p>​				标识符由多个单词组成的时候，每个单词的首字母大写，例如：GoodStudent.</p>
+<p>​        由数字，字母，下划线(_)和美元$符组成，但是<strong>不能以数字开头</strong>，不能是关键字，<strong>区分大小写</strong>。(关键字是全部小写的)</p>
+<p>   软性建议:    </p>
+<p>​        小驼峰命名法: <strong>方法</strong>，<strong>变量</strong></p>
+<p>​                标识符是一个单词的时候，全部小写，例如:name.</p>
+<p>​                标识符由对个单词组成的时候，第一个单词首字母小写，其他单词首字母大写,例如：firstName.</p>
+<p>​        大驼峰命名法: <strong>类名</strong></p>
+<p>​                标识符是一个单词的时候，首字母大写，例如：Student.</p>
+<p>​                标识符由多个单词组成的时候，每个单词的首字母大写，例如：GoodStudent.</p>
 <h1 id="3-键盘录入"><a href="#3-键盘录入" class="headerlink" title="3.键盘录入"></a>3.键盘录入</h1><p>Scanner类: 接收键盘输入的<strong>整数</strong></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//步骤一：导包</span></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"><span class="comment">//步骤二：创建对象</span></span><br><span class="line"><span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line"><span class="comment">//步骤三：接收数据</span></span><br><span class="line"><span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> sc.nextInt();   <span class="comment">//除了i可以修改，其他的均不能修改</span></span><br></pre></td></tr></table></figure>
-
-<p>多次录入–不知道录入次数(例如猜随机数)、</p>
+<p>多次录入—不知道录入次数(例如猜随机数)、</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> (<span class="literal">true</span>)&#123;		</span><br><span class="line">            Scanner sc= <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">            System.out.println(<span class="string">&quot;输入你要猜的数字:&quot;</span>);</span><br><span class="line">            <span class="type">int</span> number2= sc.nextInt();</span><br><span class="line">            <span class="comment">//3.判断两个数字给出不同的提示</span></span><br><span class="line">            <span class="comment">//猜的数字大了，提示大了</span></span><br><span class="line">            <span class="comment">//猜的数字小了，提示小了</span></span><br><span class="line">            <span class="comment">//猜的数字正确，提示对了</span></span><br><span class="line">            <span class="keyword">if</span> (number1&lt;number2)&#123;</span><br><span class="line">                System.out.println(<span class="string">&quot;猜数大了&quot;</span>);</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (number1&gt;number2) &#123;</span><br><span class="line">                System.out.println(<span class="string">&quot;猜数小了&quot;</span>);</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                System.out.println(<span class="string">&quot;数字相等&quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
-
 <p>第一套体系：</p>
-<p>​	nextInt( ):接收整数</p>
-<p>​	nextDouble( ):接收小数</p>
-<p>​	next( ):接收字符串</p>
+<p>​    nextInt( ):接收整数</p>
+<p>​    nextDouble( ):接收小数</p>
+<p>​    next( ):接收字符串</p>
 <p>​        特点：遇到空格，制表符，回车就停止接收，这些符号后的数据本次就不会接收(空格后的内容进入内存用于下一次接收)。</p>
 <p>第二套体系：</p>
-<p>​	nextLine( ):接收字符串</p>
-<p>​	特点:可以接收空格，制表符，遇到回车才停止接收数据。</p>
+<p>​    nextLine( ):接收字符串</p>
+<p>​    特点:可以接收空格，制表符，遇到回车才停止接收数据。</p>
 <p>弊端:先用nextInt,再用nextLine会导致下面的nextLine接收不到数据。</p>
 
     </div>
@@ -536,13 +537,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">160k</span>
+    <span title="站点总字数">158k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">4:51</span>
+    <span title="站点阅读时长">4:47</span>
 </div>
   <div class="powered-by">
     

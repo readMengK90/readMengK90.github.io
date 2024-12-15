@@ -27,13 +27,13 @@
 <meta property="og:site_name" content="东瓶西镜">
 <meta property="og:description" content="内部类">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://readmengk90.github.io/images/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E5%86%85%E9%83%A8%E7%B1%BB/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240225202806.png">
+<meta property="og:image" content="https://readmengk90.github.io/2024/02/23/images/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E5%86%85%E9%83%A8%E7%B1%BB/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240225202806.png">
 <meta property="article:published_time" content="2024-02-23T15:55:18.010Z">
 <meta property="article:modified_time" content="2024-02-25T13:05:30.243Z">
 <meta property="article:author" content="Amber">
 <meta property="article:tag" content="java">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://readmengk90.github.io/images/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E5%86%85%E9%83%A8%E7%B1%BB/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240225202806.png">
+<meta name="twitter:image" content="https://readmengk90.github.io/2024/02/23/images/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E5%86%85%E9%83%A8%E7%B1%BB/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240225202806.png">
 
 <link rel="canonical" href="https://readmengk90.github.io/2024/02/23/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E5%86%85%E9%83%A8%E7%B1%BB/">
 
@@ -281,36 +281,34 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>内部类–是类的五大成员之一(属性，方法，构造方法，内部类)，在一个类的里面，在定义一个类。</p>
+        <p>内部类—是类的五大成员之一(属性，方法，构造方法，内部类)，在一个类的里面，在定义一个类。</p>
 <p><strong>应用场景</strong>：</p>
-<p>​	需求：写一个javabean类描述汽车</p>
-<p>​	属性：汽车的品牌，车龄，颜色，发动机的品牌，使用年限。(汽车和发动机属于两个类，又有联系)</p>
+<p>​    需求：写一个javabean类描述汽车</p>
+<p>​    属性：汽车的品牌，车龄，颜色，发动机的品牌，使用年限。(汽车和发动机属于两个类，又有联系)</p>
 <p>内部类表示的事物是外部类的一部分，内部类单独出现没有任何意义</p>
 <p><strong>访问特点</strong>：</p>
-<p>​	内部类可以直接访问外部类的成员，包括私有&#x2F;&#x2F;Outer.this.变量名</p>
-<p>​	外部类要访问内部类的成员，必须创建对象</p>
+<p>​    内部类可以直接访问外部类的成员，包括私有//Outer.this.变量名</p>
+<p>​    外部类要访问内部类的成员，必须创建对象</p>
 <p><strong>成员内部类</strong>：</p>
-<p>​	如何书写？：写在成员位置(类中方法外)，属于外部类的成员。</p>
-<p>​				成员内部类可以被一些修饰符所修饰，比如：private(本类)，默认(本包)，protected(本包其他类，其他包的子类)，public(所有地方)，static(静态的)等。</p>
-<p>​				在成员内部类里面，JDK16之前不能定义<strong>静态变量</strong>，JDK16开始才可以定义<strong>静态变量</strong>。</p>
-<p>​	如何创建成员内部类的对象？：</p>
-<p>​			 <strong>方式一</strong>：在外部类中编写方法，对外提供内部类的对象</p>
-<p>​			&#x2F;&#x2F;使用场景：用在private修饰内部类的</p>
+<p>​    如何书写？：写在成员位置(类中方法外)，属于外部类的成员。</p>
+<p>​                成员内部类可以被一些修饰符所修饰，比如：private(本类)，默认(本包)，protected(本包其他类，其他包的子类)，public(所有地方)，static(静态的)等。</p>
+<p>​                在成员内部类里面，JDK16之前不能定义<strong>静态变量</strong>，JDK16开始才可以定义<strong>静态变量</strong>。</p>
+<p>​    如何创建成员内部类的对象？：</p>
+<p>​             <strong>方式一</strong>：在外部类中编写方法，对外提供内部类的对象</p>
+<p>​            //使用场景：用在private修饰内部类的</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Outer</span>&#123;</span><br><span class="line">	String name;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">class</span> <span class="title class_">Inner</span>&#123;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">public</span> Inner <span class="title function_">getInstance</span><span class="params">()</span>&#123;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//测试类</span></span><br><span class="line"><span class="type">Outer</span> <span class="variable">o</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Outer</span>();</span><br><span class="line"><span class="type">Object</span> <span class="variable">ob</span> <span class="operator">=</span> o.getInstance();<span class="comment">//获取内部类对象</span></span><br></pre></td></tr></table></figure>
-
-<p>​			 <strong>方式二</strong>：直接创建格式：外部类名.内部类名  对象名 &#x3D; 外部类对象.内部类对象；范例：Outer.Inner oi &#x3D; new Outer().new Inner();	   &#x2F;&#x2F;使用场景：不是用private修饰内部类的</p>
+<p>​             <strong>方式二</strong>：直接创建格式：外部类名.内部类名  对象名 = 外部类对象.内部类对象；范例：Outer.Inner oi = new Outer().new Inner();       //使用场景：不是用private修饰内部类的</p>
 <p><strong>静态内部类</strong>：静态内部类只能访问外部类中的静态变量和静态方法，如果想要访问非静态的需要创建外部类的对象</p>
-<p>​	<strong>创建静态内部类对象的格式</strong>：外部类名.内部类名  <em>对象</em>名 &#x3D;  new  外部类名.内部类名( );</p>
-<p>​	<strong>调用非静态方法的格式</strong>：先创建对象，用<em>对象</em>调用</p>
-<p>​	<strong>调用静态方法的格式</strong>：外部类名.内部类名.方法名();</p>
-<p>​	静态内部类是一种特殊的成员内部类</p>
+<p>​    <strong>创建静态内部类对象的格式</strong>：外部类名.内部类名  <em>对象</em>名 =  new  外部类名.内部类名( );</p>
+<p>​    <strong>调用非静态方法的格式</strong>：先创建对象，用<em>对象</em>调用</p>
+<p>​    <strong>调用静态方法的格式</strong>：外部类名.内部类名.方法名();</p>
+<p>​    静态内部类是一种特殊的成员内部类</p>
 <p><strong>局部内部类</strong>：1.将内部类定义在方法里面就叫做局部内部类，类似于方法里面的局部变量，</p>
-<p>​		       2.外界是无法直接使用，需要在方法内部创建对象并使用。</p>
-<p>​		       3.该类可以直接访问外部类的成员，也可以访问方法内的局部变量</p>
+<p>​               2.外界是无法直接使用，需要在方法内部创建对象并使用。</p>
+<p>​               3.该类可以直接访问外部类的成员，也可以访问方法内的局部变量</p>
 <p><strong>匿名内部类</strong>(重点)：本质就是隐藏了名字的内部类，可以写在成员位置，也可以写在局部位置</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//格式</span></span><br><span class="line"><span class="keyword">new</span> 类名或接口名()&#123;</span><br><span class="line">    重写方法;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">//包含了继承或实现，方法重写，创建对象</span></span><br><span class="line"><span class="comment">//整体就是一个类的子类对象或者接口的实现类对象</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="/../images/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E5%86%85%E9%83%A8%E7%B1%BB/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240225202806.png" alt="接口"></p>
+<p><img src="../images/java基础-面向对象进阶-内部类/微信截图_20240225202806.png" alt="接口"></p>
 <p>使用场景：当方法的参数是接口或类时，以接口为例，可以传递这个接口的实现类对象，如果实现类只要使用一次，就可以用匿名内部类简化代码。</p>
 
     </div>
@@ -511,13 +509,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">160k</span>
+    <span title="站点总字数">158k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">4:51</span>
+    <span title="站点阅读时长">4:47</span>
 </div>
   <div class="powered-by">
     

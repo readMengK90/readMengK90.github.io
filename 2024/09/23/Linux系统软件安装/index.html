@@ -323,14 +323,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>46k</span>
+              <span>45k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1:23</span>
+              <span>1:22</span>
             </span>
             <div class="post-description"><center>Linux</center></div>
 
@@ -363,7 +363,7 @@
 <li><p>对于有基础或已从业的学员，本章节讲解的软件涵盖了大多数IT从业者所能接触到的，特别是大数据开发、后端开发两个主流方向，可以作为参考资料，以便在工作中有所帮助。</p>
 </li>
 </ul>
-<p>本章节内的各类软件安装，&#x3D;&#x3D;不强制要求全部学习&#x3D;&#x3D;</p>
+<p>本章节内的各类软件安装，==不强制要求全部学习==</p>
 <ol>
 <li>零基础学员，建议全部学习，作为前面学习内容的总结和实战</li>
 <li>IT从业者、有经验学员，可以按需选择，选择工作中需要用到的进行学习</li>
@@ -385,7 +385,7 @@
 <p>一举两得</p>
 </blockquote>
 <h2 id="前置要求"><a href="#前置要求" class="headerlink" title="前置要求"></a>前置要求</h2><ol>
-<li>实战章节要求同学们&#x3D;&#x3D;务必全部学习前面的知识点&#x3D;&#x3D;，即：初识Linux、Linux基础命令、Linux权限管理、Linux高阶技巧这4个章节，请勿跳过前面的章节学习实战章节。</li>
+<li>实战章节要求同学们==务必全部学习前面的知识点==，即：初识Linux、Linux基础命令、Linux权限管理、Linux高阶技巧这4个章节，请勿跳过前面的章节学习实战章节。</li>
 <li>实战章节中会开启多台虚拟机，请尽量确保电脑的内存在：8GB（包含8GB）以上。如内存不足可以扩充内存条或购买阿里云、UCloud等云服务器临时使用（1个月多台低配服务器几十块左右）</li>
 </ol>
 <blockquote>
@@ -419,7 +419,6 @@
 <h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><ol>
 <li><p>配置yum仓库</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">更新密钥</span></span><br><span class="line">rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2022</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">安装Mysql yum库</span></span><br><span class="line">rpm -Uvh http://repo.mysql.com//mysql57-community-release-el7-7.noarch.rpm</span><br></pre></td></tr></table></figure>
-
 <p><img src="https://image-set.oss-cn-zhangjiakou.aliyuncs.com/img-out/2022/10/12/20221012182514.png" alt="image-20221012182514865"></p>
 <blockquote>
 <p>由于MySQL并不在CentOS的官方仓库中，所以我们通过上述rpm命令：</p>
@@ -431,19 +430,16 @@
 </li>
 <li><p>使用yum安装MySQL</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">yum安装Mysql</span></span><br><span class="line">yum -y install mysql-community-server</span><br></pre></td></tr></table></figure>
-
 <p><img src="https://image-set.oss-cn-zhangjiakou.aliyuncs.com/img-out/2022/10/12/20221012182556.png" alt="image-20221012182555420"></p>
 </li>
 <li><p>安装完成后，启动MySQL并配置开机自启动</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl start mysqld		# 启动</span><br><span class="line">systemctl enable mysqld		# 开机自启</span><br></pre></td></tr></table></figure>
-
 <blockquote>
 <p>MySQL安装完成后，会自动配置为名称叫做：<code>mysqld</code>的服务，可以被systemctl所管理</p>
 </blockquote>
 </li>
 <li><p>检查MySQL的运行状态</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status mysqld</span><br></pre></td></tr></table></figure>
-
 <p><img src="https://image-set.oss-cn-zhangjiakou.aliyuncs.com/img-out/2022/10/12/20221012182716.png" alt="image-20221012182716598"></p>
 </li>
 </ol>
@@ -451,12 +447,10 @@
 <ol>
 <li><p>获取MySQL的初始密码</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">通过grep命令，在/var/log/mysqld.log文件中，过滤temporary password关键字，得到初始密码</span></span><br><span class="line">grep &#x27;temporary password&#x27; /var/log/mysqld.log</span><br></pre></td></tr></table></figure>
-
 <p><img src="https://image-set.oss-cn-zhangjiakou.aliyuncs.com/img-out/2022/10/12/20221012182744.png" alt="image-20221012182744115"></p>
 </li>
 <li><p>登陆MySQL数据库系统</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">执行</span></span><br><span class="line">mysql -uroot -p</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">解释</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">-u，登陆的用户，MySQL数据库的管理员用户同Linux一样，是root</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">-p，表示使用密码登陆</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">执行完毕后输入刚刚得到的初始密码，即可进入MySQL数据库</span></span><br></pre></td></tr></table></figure>
-
 <p><img src="https://image-set.oss-cn-zhangjiakou.aliyuncs.com/img-out/2022/10/12/20221012182806.png" alt="image-20221012182805966"></p>
 </li>
 <li><p>修改root用户密码</p>
@@ -482,7 +476,6 @@
 <li><p>检查端口</p>
 <p>MySQL默认绑定了3306端口，可以通过端口占用检查MySQL的网络状态</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netstat -anp | grep 3306</span><br></pre></td></tr></table></figure>
-
 <p><img src="https://image-set.oss-cn-zhangjiakou.aliyuncs.com/img-out/2022/10/12/20221012183746.png" alt="image-20221012183746802"></p>
 </li>
 </ol>
@@ -499,13 +492,13 @@
 </li>
 <li><p>安装完成后，启动MySQL并配置开机自启动</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl start mysqld		# 启动</span><br><span class="line">systemctl enable mysqld		# 开机自启</span><br></pre></td></tr></table></figure>
-
 <blockquote>
 <p>MySQL安装完成后，会自动配置为名称叫做：<code>mysqld</code>的服务，可以被systemctl所管理</p>
 </blockquote>
 </li>
 <li><p>检查MySQL的运行状态</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status mysqld</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status mysqld</span><br></pre></td></tr></table></figure>
+</li>
 </ol>
 <h3 id="配置-1"><a href="#配置-1" class="headerlink" title="配置"></a>配置</h3><p>主要修改root密码和允许root远程登录</p>
 <ol>
@@ -524,9 +517,9 @@
 <p>请注意，此配置仅仅是用于测试环境或学习环境的MySQL，如果是正式使用，请勿设置简单密码</p>
 </blockquote>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">set</span> <span class="keyword">global</span> validate_password.policy<span class="operator">=</span><span class="number">0</span>;		# 密码安全级别低</span><br><span class="line"><span class="keyword">set</span> <span class="keyword">global</span> validate_password.length<span class="operator">=</span><span class="number">4</span>;		# 密码长度最低<span class="number">4</span>位即可</span><br></pre></td></tr></table></figure>
-
-
 </li>
+</ol>
+<ol>
 <li><p>允许root远程登录，并设置远程登录密码</p>
 <blockquote>
 <p>默认情况下，root用户是不运行远程登录的，只允许在MySQL所在的Linux服务器登陆MySQL系统</p>
@@ -540,7 +533,6 @@
 <li><p>检查端口</p>
 <p>MySQL默认绑定了3306端口，可以通过端口占用检查MySQL的网络状态</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netstat -anp | grep 3306</span><br></pre></td></tr></table></figure>
-
 <p><img src="https://image-set.oss-cn-zhangjiakou.aliyuncs.com/img-out/2022/10/12/20221012192303.png" alt="image-20221012192303607"></p>
 </li>
 </ol>
@@ -562,12 +554,10 @@
 <h3 id="安装-2"><a href="#安装-2" class="headerlink" title="安装"></a>安装</h3><ol>
 <li><p>下载apt仓库文件</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">下载apt仓库的安装包，Ubuntu的安装包是.deb文件</span></span><br><span class="line">wget https://dev.mysql.com/get/mysql-apt-config_0.8.12-1_all.deb</span><br></pre></td></tr></table></figure>
-
 <p><img src="https://image-set.oss-cn-zhangjiakou.aliyuncs.com/img-out/2022/10/16/20221016094103.png" alt="image-20221016094103315"></p>
 </li>
 <li><p>配置apt仓库</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">使用dpkg命令安装仓库</span></span><br><span class="line">dpkg -i mysql-apt-config_0.8.12-1_all.deb</span><br></pre></td></tr></table></figure>
-
 <p>弹出框中选择：<code>ubuntu bionic</code> （Ubuntu18.04系统的代号是bionic，选择18.04的版本库用来安装）</p>
 <p><img src="https://image-set.oss-cn-zhangjiakou.aliyuncs.com/img-out/2022/10/16/20221016094142.png" alt="image-20221016094142343"></p>
 <p>弹出框中选择：<code>MySQL Server &amp; Cluster</code></p>
@@ -582,13 +572,11 @@
 </li>
 <li><p>检查是否成功配置MySQL5.7的仓库</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-cache policy mysql-server</span><br></pre></td></tr></table></figure>
-
 <p><img src="https://image-set.oss-cn-zhangjiakou.aliyuncs.com/img-out/2022/10/16/20221016094546.png" alt="image-20221016094546943"></p>
 <p>看到如图所示字样，即成功</p>
 </li>
 <li><p>安装MySQL5.7</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">使用apt安装mysql客户端和mysql服务端</span></span><br><span class="line">apt install -f -y mysql-client=5.7* mysql-community-server=5.7*</span><br></pre></td></tr></table></figure>
-
 <p>弹出框中输入root密码并选择ok，密码任意，课程中以123456代替</p>
 <p><img src="https://image-set.oss-cn-zhangjiakou.aliyuncs.com/img-out/2022/10/16/20221016094941.png" alt="image-20221016094941439"></p>
 <p>再次输入root密码确认</p>
@@ -596,12 +584,10 @@
 </li>
 <li><p>启动MySQL</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">/etc/init.d/mysql start			# 启动</span><br><span class="line">/etc/init.d/mysql stop			# 停止</span><br><span class="line">/etc/init.d/mysql status		# 查看状态</span><br></pre></td></tr></table></figure>
-
 <p><img src="https://image-set.oss-cn-zhangjiakou.aliyuncs.com/img-out/2022/10/16/20221016095259.png" alt="image-20221016095259172"></p>
 </li>
 <li><p>对MySQL进行初始化</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">执行如下命令，此命令是MySQL安装后自带的配置程序</span></span><br><span class="line">mysql_secure_installation</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">可以通过<span class="built_in">which</span>命令查看到这个自带程序所在的位置</span></span><br><span class="line">root@DESKTOP-Q89USRE:~# which mysql_secure_installation</span><br><span class="line">/usr/bin/mysql_secure_installation</span><br></pre></td></tr></table></figure>
-
 <ol>
 <li><p>输入密码：</p>
 <p><img src="https://image-set.oss-cn-zhangjiakou.aliyuncs.com/img-out/2022/10/16/20221016095458.png" alt="image-20221016095458755"></p>
@@ -628,7 +614,6 @@
 </li>
 <li><p>登陆MySQL</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mysql -uroot -p</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">输入密码即可登陆成功</span></span><br></pre></td></tr></table></figure>
-
 <p><img src="https://image-set.oss-cn-zhangjiakou.aliyuncs.com/img-out/2022/10/16/20221016101524.png" alt="image-20221016101524498"></p>
 </li>
 </ol>
@@ -636,10 +621,8 @@
 <h2 id="MySQL8-0版本在Ubuntu（WSL环境）系统安装"><a href="#MySQL8-0版本在Ubuntu（WSL环境）系统安装" class="headerlink" title="MySQL8.0版本在Ubuntu（WSL环境）系统安装"></a>MySQL8.0版本在Ubuntu（WSL环境）系统安装</h2><blockquote>
 <p>课程中配置的WSL环境是最新的Ubuntu22.04版本，这个版本的软件商店内置的MySQL是8.0版本</p>
 <p>所以直接可以通过apt安装即可</p>
-</blockquote>
-<blockquote>
 <p>注意，课程是以WSL获得的Ubuntu操作系统环境。</p>
-<p>如果你通过VMware虚拟机的方式获得了Ubuntu操作系统环境，操作步骤不用担心，和课程中使用WSL环境是&#x3D;&#x3D;完全一致的&#x3D;&#x3D;</p>
+<p>如果你通过VMware虚拟机的方式获得了Ubuntu操作系统环境，操作步骤不用担心，和课程中使用WSL环境是==完全一致的==</p>
 </blockquote>
 <p>安装操作需root权限，你可以：</p>
 <ol>
@@ -675,7 +658,6 @@
 </li>
 <li><p>对MySQL进行初始化</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">执行如下命令，此命令是MySQL安装后自带的配置程序</span></span><br><span class="line">mysql_secure_installation</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">可以通过<span class="built_in">which</span>命令查看到这个自带程序所在的位置</span></span><br><span class="line">root@DESKTOP-Q89USRE:~# which mysql_secure_installation</span><br><span class="line">/usr/bin/mysql_secure_installation</span><br></pre></td></tr></table></figure>
-
 <ol>
 <li><p>输入密码：</p>
 <p><img src="https://image-set.oss-cn-zhangjiakou.aliyuncs.com/img-out/2022/10/16/20221016095458.png" alt="image-20221016095458755"></p>
@@ -702,7 +684,6 @@
 </li>
 <li><p>重新登陆MySQL（用更改后的密码）</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -uroot -p</span><br></pre></td></tr></table></figure>
-
 <p><img src="https://image-set.oss-cn-zhangjiakou.aliyuncs.com/img-out/2022/10/16/20221016110414.png" alt="image-20221016110414182"></p>
 </li>
 </ol>
@@ -725,19 +706,18 @@
 <li><p>下载JDK软件</p>
 <p><a target="_blank" rel="noopener" href="https://www.oracle.com/java/technologies/downloads">https://www.oracle.com/java/technologies/downloads</a></p>
 <p>在页面下方找到：</p>
-<img src="https://image-set.oss-cn-zhangjiakou.aliyuncs.com/img-out/2022/10/17/20221017163411.png" alt="image-20221017163411651" style="zoom: 67%;" />
-
+<p><img src="https://image-set.oss-cn-zhangjiakou.aliyuncs.com/img-out/2022/10/17/20221017163411.png" alt="image-20221017163411651" style="zoom: 67%;" /></p>
 <p>下载<code>jdk-8u351-linux-x64.tar.gz</code></p>
 <p><img src="https://image-set.oss-cn-zhangjiakou.aliyuncs.com/img-out/2022/10/17/20221017163440.png" alt="image-20221017163440491"></p>
-<p>&#x3D;&#x3D;在弹出的页面中输入Oracle的账户密码即可下载（如无账户，请自行注册，注册是免费的）&#x3D;&#x3D;</p>
+<p>==在弹出的页面中输入Oracle的账户密码即可下载（如无账户，请自行注册，注册是免费的）==</p>
 </li>
 <li><p>登陆Linux系统，切换到root用户</p>
-<p><img src="https://image-set.oss-cn-zhangjiakou.aliyuncs.com/img-out/2022/10/17/20221017163607.png"></p>
+<p><img src="https://image-set.oss-cn-zhangjiakou.aliyuncs.com/img-out/2022/10/17/20221017163607.png" alt=""></p>
 </li>
 <li><p>通过FinalShell，上传下载好的JDK安装包</p>
 <p><img src="https://image-set.oss-cn-zhangjiakou.aliyuncs.com/img-out/2022/10/17/20221017163706.png" alt="image-20221017163706026"></p>
 </li>
-<li><p>创建文件夹，用来部署JDK，将JDK和Tomcat都安装部署到：&#x2F;export&#x2F;server 内</p>
+<li><p>创建文件夹，用来部署JDK，将JDK和Tomcat都安装部署到：/export/server 内</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p /export/server </span><br></pre></td></tr></table></figure>
 </li>
 <li><p>解压缩JDK安装文件</p>
@@ -746,7 +726,7 @@
 <li><p>配置JDK的软链接</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -s /export/server/jdk1.8.0_351 /export/server/jdk</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>配置JAVA_HOME环境变量，以及将$JAVA_HOME&#x2F;bin文件夹加入PATH环境变量中</p>
+<li><p>配置JAVA_HOME环境变量，以及将$JAVA_HOME/bin文件夹加入PATH环境变量中</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">编辑/etc/profile文件</span></span><br><span class="line">export JAVA_HOME=/export/server/jdk</span><br><span class="line">export PATH=$PATH:$JAVA_HOME/bin</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>生效环境变量</p>
@@ -756,7 +736,8 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">删除系统自带的java程序</span></span><br><span class="line">rm -f /usr/bin/java</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">软链接我们自己安装的java程序</span></span><br><span class="line">ln -s /export/server/jdk/bin/java /usr/bin/java</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>执行验证：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">java -version</span><br><span class="line">javac -version</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">java -version</span><br><span class="line">javac -version</span><br></pre></td></tr></table></figure>
+</li>
 </ol>
 <h3 id="解压并部署Tomcat"><a href="#解压并部署Tomcat" class="headerlink" title="解压并部署Tomcat"></a>解压并部署Tomcat</h3><blockquote>
 <p>Tomcat建议使用非Root用户安装并启动</p>
@@ -774,7 +755,6 @@
 </ol>
 </blockquote>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">以下操作2选一即可</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">方式1：关闭防火墙</span></span><br><span class="line">systemctl stop firewalld		# 关闭防火墙</span><br><span class="line">systemctl disable firewalld		# 停止防火墙开机自启</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">方式2：放行8080端口的外部访问</span></span><br><span class="line"><span class="meta prompt_">		# </span><span class="language-bash">--add-port=8080/tcp表示放行8080端口的tcp访问，--permanent表示永久生效</span></span><br><span class="line">firewall-cmd --reload								# 重新载入防火墙规则使其生效</span><br></pre></td></tr></table></figure>
-
 <blockquote>
 <p>方便起见，建议同学们选择方式1，直接关闭防火墙一劳永逸</p>
 <p>防火墙的配置非常复杂，后面会视情况独立出一集防火墙配置规则的章节。</p>
@@ -785,7 +765,6 @@
 </li>
 <li><p>下载Tomcat安装包</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">使用root用户操作</span></span><br><span class="line">wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.0.27/bin/apache-tomcat-10.0.27.tar.gz</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">如果出现https相关错误，可以使用--no-check-certificate选项</span></span><br><span class="line">wget --no-check-certificate https://dlcdn.apache.org/tomcat/tomcat-10/v10.0.27/bin/apache-tomcat-10.0.27.tar.gz</span><br></pre></td></tr></table></figure>
-
 <blockquote>
 <p>如果Linux内下载过慢，可以复制下载链接在Windows系统中使用迅雷等软件加速下载然后上传到Linux内即可</p>
 <p>或者使用课程资料中提供的安装包</p>
@@ -808,7 +787,6 @@
 </li>
 <li><p>tomcat启动在8080端口，可以检查是否正常启动成功</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netstat -anp | grep 8080</span><br></pre></td></tr></table></figure>
-
 <p><img src="https://image-set.oss-cn-zhangjiakou.aliyuncs.com/img-out/2022/10/17/20221017223814.png" alt="image-20221017223814737"></p>
 </li>
 <li><p>打开浏览器，输入：</p>
@@ -818,7 +796,7 @@
 </li>
 </ol>
 <p>至此，Tomcat安装配置完成。</p>
-<h1 id="Nginx安装部署【简单】"><a href="#Nginx安装部署【简单】" class="headerlink" title="Nginx安装部署【简单】"></a>Nginx安装部署【简单】</h1><h2 id="简介-2"><a href="#简介-2" class="headerlink" title="简介"></a>简介</h2><p><em>Nginx</em> (engine x) 是一个高性能的HTTP和反向代理web服务器，同时也提供了IMAP&#x2F;POP3&#x2F;SMTP服务。</p>
+<h1 id="Nginx安装部署【简单】"><a href="#Nginx安装部署【简单】" class="headerlink" title="Nginx安装部署【简单】"></a>Nginx安装部署【简单】</h1><h2 id="简介-2"><a href="#简介-2" class="headerlink" title="简介"></a>简介</h2><p><em>Nginx</em> (engine x) 是一个高性能的HTTP和反向代理web服务器，同时也提供了IMAP/POP3/SMTP服务。</p>
 <p>同Tomcat一样，Nginx可以托管用户编写的WEB应用程序成为可访问的网页服务，同时也可以作为流量代理服务器，控制流量的中转。</p>
 <p>Nginx在WEB开发领域，基本上也是必备组件之一了。</p>
 <h2 id="安装-5"><a href="#安装-5" class="headerlink" title="安装"></a>安装</h2><p>Nginx同样需要配置额外的yum仓库，才可以使用yum安装</p>
@@ -832,7 +810,6 @@
 <li><p>手动添加，nginx的yum仓库</p>
 <p>yum程序使用的仓库配置文件，存放在：<code>/etc/yum.repo.d</code>内。</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">root执行</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">创建文件使用vim编辑</span></span><br><span class="line">vim /etc/yum.repos.d/nginx.repo</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">填入如下内容并保存退出</span></span><br><span class="line">[nginx-stable]</span><br><span class="line">name=nginx stable repo</span><br><span class="line">baseurl=http://nginx.org/packages/centos/$releasever/$basearch/</span><br><span class="line">gpgcheck=1</span><br><span class="line">enabled=1</span><br><span class="line">gpgkey=https://nginx.org/keys/nginx_signing.key</span><br><span class="line">module_hotfixes=true</span><br><span class="line"></span><br><span class="line">[nginx-mainline]</span><br><span class="line">name=nginx mainline repo</span><br><span class="line">baseurl=http://nginx.org/packages/mainline/centos/$releasever/$basearch/</span><br><span class="line">gpgcheck=1</span><br><span class="line">enabled=0</span><br><span class="line">gpgkey=https://nginx.org/keys/nginx_signing.key</span><br><span class="line">module_hotfixes=true</span><br></pre></td></tr></table></figure>
-
 <blockquote>
 <p>通过如上操作，我们手动添加了nginx的yum仓库</p>
 </blockquote>
@@ -848,13 +825,13 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">方式1（推荐），关闭防火墙</span></span><br><span class="line">systemctl stop firewalld		# 关闭</span><br><span class="line">systemctl disable firewalld		# 关闭开机自启</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">方式2，放行80端口</span></span><br><span class="line">firewall-cmd --add-port=80/tcp --permanent		# 放行tcp规则下的80端口，永久生效</span><br><span class="line">firewall-cmd --reload							# 重新加载防火墙规则</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>启动后浏览器输入Linux服务器的IP地址或主机名即可访问</p>
-<p><a target="_blank" rel="noopener" href="http://192.168.88.130/">http://192.168.88.130</a> 或 <a target="_blank" rel="noopener" href="http://centos/">http://centos</a></p>
+<p><a target="_blank" rel="noopener" href="http://192.168.88.130">http://192.168.88.130</a> 或 <a target="_blank" rel="noopener" href="http://centos">http://centos</a></p>
 <blockquote>
 <p>ps：80端口是访问网站的默认端口，所以后面无需跟随端口号</p>
 <p>显示的指定端口也是可以的比如：</p>
 <ul>
-<li><strong><a target="_blank" rel="noopener" href="http://192.168.88.130/">http://192.168.88.130:80</a></strong></li>
-<li><a target="_blank" rel="noopener" href="http://centos/">http://centos:80</a></li>
+<li><strong><a target="_blank" rel="noopener" href="http://192.168.88.130:80">http://192.168.88.130:80</a></strong></li>
+<li><a target="_blank" rel="noopener" href="http://centos:80">http://centos:80</a></li>
 </ul>
 </blockquote>
 </li>
@@ -872,7 +849,6 @@
 </li>
 <li><p>安装RabbitMQ</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">root执行</span></span><br><span class="line">yum install erlang rabbitmq-server -y</span><br></pre></td></tr></table></figure>
-
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Installed:</span><br><span class="line">  erlang.x86_64 0:23.3.4.11-1.el7           rabbitmq-server.noarch 0:3.10.0-1.el7</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>启动</p>
@@ -886,11 +862,11 @@
 </li>
 <li><p>添加admin用户，并赋予权限</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rabbitmqctl add_user admin &#x27;Itheima66^&#x27;</span><br><span class="line">rabbitmqctl set_permissions -p &quot;/&quot; &quot;admin&quot; &quot;.*&quot; &quot;.*&quot; &quot;.*&quot;</span><br><span class="line">rabbitmqctl set_user_tags admin administrator</span><br></pre></td></tr></table></figure>
-
-
 </li>
+</ol>
+<ol>
 <li><p>浏览器打开管理控制台</p>
-<p><a target="_blank" rel="noopener" href="http://192.168.88.130:15672/">http://192.168.88.130:15672</a></p>
+<p><a target="_blank" rel="noopener" href="http://192.168.88.130:15672">http://192.168.88.130:15672</a></p>
 <p><img src="https://image-set.oss-cn-zhangjiakou.aliyuncs.com/img-out/2022/10/18/20221018154824.png" alt="image-20221018154823983"></p>
 </li>
 </ol>
@@ -915,10 +891,11 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">方式1（推荐），关闭防火墙</span></span><br><span class="line">systemctl stop firewalld		# 关闭</span><br><span class="line">systemctl disable firewalld		# 关闭开机自启</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">方式2，放行6379端口</span></span><br><span class="line">firewall-cmd --add-port=6379/tcp --permanent		# 放行tcp规则下的6379端口，永久生效</span><br><span class="line">firewall-cmd --reload	</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>进入redis服务</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">执行redis-cli</span></span><br><span class="line">[root@centos ~]# redis-cli</span><br><span class="line">127.0.0.1:6379&gt; set mykey hello</span><br><span class="line">OK</span><br><span class="line">127.0.0.1:6379&gt; get mykey</span><br><span class="line">&quot;hello&quot;</span><br><span class="line">127.0.0.1:6379&gt; </span><br></pre></td></tr></table></figure></li>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">执行redis-cli</span></span><br><span class="line">[root@centos ~]# redis-cli</span><br><span class="line">127.0.0.1:6379&gt; set mykey hello</span><br><span class="line">OK</span><br><span class="line">127.0.0.1:6379&gt; get mykey</span><br><span class="line">&quot;hello&quot;</span><br><span class="line">127.0.0.1:6379&gt; </span><br></pre></td></tr></table></figure>
+</li>
 </ol>
 <p>至此，redis安装完成。</p>
-<h1 id="ElasticSearch安装部署"><a href="#ElasticSearch安装部署" class="headerlink" title="ElasticSearch安装部署"></a>ElasticSearch安装部署</h1><h2 id="简介-5"><a href="#简介-5" class="headerlink" title="简介"></a>简介</h2><p><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%85%A8%E6%96%87%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E">全文搜索</a>属于最常见的需求，开源的 <a target="_blank" rel="noopener" href="https://www.elastic.co/">Elasticsearch</a> （以下简称 es）是目前全文搜索引擎的首选。</p>
+<h1 id="ElasticSearch安装部署"><a href="#ElasticSearch安装部署" class="headerlink" title="ElasticSearch安装部署"></a>ElasticSearch安装部署</h1><h2 id="简介-5"><a href="#简介-5" class="headerlink" title="简介"></a>简介</h2><p><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/全文搜索引擎">全文搜索</a>属于最常见的需求，开源的 <a target="_blank" rel="noopener" href="https://www.elastic.co/">Elasticsearch</a> （以下简称 es）是目前全文搜索引擎的首选。</p>
 <p>它可以快速地储存、搜索和分析海量数据。维基百科、Stack Overflow、Github 都采用它。</p>
 <p>Elasticsearch简称es，在企业内同样是一款应用非常广泛的搜索引擎服务。</p>
 <p>很多服务中的搜索功能，都是基于es来实现的。</p>
@@ -987,13 +964,14 @@
 <p>如果同学们使用MacOS系统，请：</p>
 <ol>
 <li>sudo su -，切换到root</li>
-<li>修改&#x2F;etc&#x2F;hosts文件</li>
+<li>修改/etc/hosts文件</li>
 </ol>
 </blockquote>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">192.168.88.131 node1</span><br><span class="line">192.168.88.132 node2</span><br><span class="line">192.168.88.133 node3</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>在3台Linux的&#x2F;etc&#x2F;hosts文件中，填入如下内容（&#x3D;&#x3D;3台都要添加&#x3D;&#x3D;）</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">192.168.88.131 node1</span><br><span class="line">192.168.88.132 node2</span><br><span class="line">192.168.88.133 node3</span><br></pre></td></tr></table></figure></li>
+<li><p>在3台Linux的/etc/hosts文件中，填入如下内容（==3台都要添加==）</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">192.168.88.131 node1</span><br><span class="line">192.168.88.132 node2</span><br><span class="line">192.168.88.133 node3</span><br></pre></td></tr></table></figure>
+</li>
 </ol>
 <h3 id="配置SSH免密登录"><a href="#配置SSH免密登录" class="headerlink" title="配置SSH免密登录"></a>配置SSH免密登录</h3><h4 id="简介-6"><a href="#简介-6" class="headerlink" title="简介"></a>简介</h4><p>SSH服务是一种用于远程登录的安全认证协议。</p>
 <p>我们通过FinalShell远程连接到Linux，就是使用的SSH服务。</p>
@@ -1015,25 +993,17 @@
 <li><p>执行完毕后，node1、node2、node3之间将完成root用户之间的免密互通</p>
 </li>
 </ol>
-<h3 id="配置JDK环境"><a href="#配置JDK环境" class="headerlink" title="配置JDK环境"></a>配置JDK环境</h3><p>后续的大数据集群软件，多数是需要Java运行环境的，所以我们为&#x3D;&#x3D;每一台&#x3D;&#x3D;机器都配置JDK环境。</p>
+<h3 id="配置JDK环境"><a href="#配置JDK环境" class="headerlink" title="配置JDK环境"></a>配置JDK环境</h3><p>后续的大数据集群软件，多数是需要Java运行环境的，所以我们为==每一台==机器都配置JDK环境。</p>
 <p>JDK配置参阅：<code>Tomcat</code>安装部署环节。</p>
 <h3 id="关闭防火墙和SELinux"><a href="#关闭防火墙和SELinux" class="headerlink" title="关闭防火墙和SELinux"></a>关闭防火墙和SELinux</h3><p>集群化软件之间需要通过端口互相通讯，为了避免出现网络不通的问题，我们可以简单的在集群内部关闭防火墙。</p>
-<p>&#x3D;&#x3D;在每一台机器都执行&#x3D;&#x3D;</p>
+<p>==在每一台机器都执行==</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl stop firewalld</span><br><span class="line">systemctl disable firewalld</span><br></pre></td></tr></table></figure>
-
-
-
 <p>Linux有一个安全模块：SELinux，用以限制用户和程序的相关权限，来确保系统的安全稳定。</p>
 <p>SELinux的配置同防火墙一样，非常复杂，课程中不多涉及，后续视情况可以出一章SELinux的配置课程。</p>
 <p>在当前，我们只需要关闭SELinux功能，避免导致后面的软件运行出现问题即可，</p>
-<p>&#x3D;&#x3D;在每一台机器都执行&#x3D;&#x3D;</p>
+<p>==在每一台机器都执行==</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/sysconfig/selinux</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">将第七行，SELINUX=enforcing 改为</span></span><br><span class="line">SELINUX=disabled</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">保存退出后，重启虚拟机即可，千万要注意disabled单词不要写错，不然无法启动系统</span></span><br></pre></td></tr></table></figure>
-
-
-
-
-
-<h3 id="添加快照"><a href="#添加快照" class="headerlink" title="添加快照"></a>添加快照</h3><p>为了避免后续出现问题，在完成上述设置后，为&#x3D;&#x3D;每一台虚拟机&#x3D;&#x3D;都制作快照，留待使用。</p>
+<h3 id="添加快照"><a href="#添加快照" class="headerlink" title="添加快照"></a>添加快照</h3><p>为了避免后续出现问题，在完成上述设置后，为==每一台虚拟机==都制作快照，留待使用。</p>
 <h2 id="补充命令-scp"><a href="#补充命令-scp" class="headerlink" title="补充命令 - scp"></a>补充命令 - scp</h2><p>后续的安装部署操作，我们将会频繁的在多台服务器之间相互传输数据。</p>
 <p>为了更加方面的互相传输，我们补充一个命令：scp</p>
 <p>scp命令是cp命令的升级版，即：ssh cp，通过SSH协议完成文件的复制。</p>
@@ -1041,18 +1011,7 @@
 <p>只要知晓服务器的账户和密码（或密钥），即可通过SCP互传文件。</p>
 <p>语法：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">scp [-r] 参数1 参数2</span><br><span class="line">- -r选项用于复制文件夹使用，如果复制文件夹，必须使用-r</span><br><span class="line">- 参数1：本机路径 或 远程目标路径</span><br><span class="line">- 参数2：远程目标路径 或 本机路径</span><br><span class="line"></span><br><span class="line">如：</span><br><span class="line">scp -r /export/server/jdk root@node2:/export/server/</span><br><span class="line">将本机上的jdk文件夹， 以root的身份复制到node2的/export/server/内</span><br><span class="line">同SSH登陆一样，账户名可以省略（使用本机当前的同名账户登陆）</span><br><span class="line"></span><br><span class="line">如：</span><br><span class="line">scp -r node2:/export/server/jdk /export/server/</span><br><span class="line">将远程node2的jdk文件夹，复制到本机的/export/server/内</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">scp命令的高级用法</span></span><br><span class="line">cd /export/server</span><br><span class="line">scp -r jdk node2:`pwd`/    # 将本机当前路径的jdk文件夹，复制到node2服务器的同名路径下</span><br><span class="line">scp -r jdk node2:$PWD      # 将本机当前路径的jdk文件夹，复制到node2服务器的同名路径下</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-
-
-
-
-
-
-<h1 id="Zookeeper集群安装部署"><a href="#Zookeeper集群安装部署" class="headerlink" title="Zookeeper集群安装部署"></a>Zookeeper集群安装部署</h1><h2 id="简介-7"><a href="#简介-7" class="headerlink" title="简介"></a>简介</h2><p>ZooKeeper是一个<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%88%86%E5%B8%83%E5%BC%8F/19276232?fromModule=lemma_inlink">分布式</a>的，开放源码的<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%88%86%E5%B8%83%E5%BC%8F%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/9854429?fromModule=lemma_inlink">分布式应用程序</a>协调服务，是Hadoop和<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/Hbase/7670213?fromModule=lemma_inlink">Hbase</a>的重要组件。它是一个为分布式应用提供一致性服务的软件，提供的功能包括：配置维护、域名服务、分布式同步、组服务等。</p>
+<h1 id="Zookeeper集群安装部署"><a href="#Zookeeper集群安装部署" class="headerlink" title="Zookeeper集群安装部署"></a>Zookeeper集群安装部署</h1><h2 id="简介-7"><a href="#简介-7" class="headerlink" title="简介"></a>简介</h2><p>ZooKeeper是一个<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/分布式/19276232?fromModule=lemma_inlink">分布式</a>的，开放源码的<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/分布式应用程序/9854429?fromModule=lemma_inlink">分布式应用程序</a>协调服务，是Hadoop和<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/Hbase/7670213?fromModule=lemma_inlink">Hbase</a>的重要组件。它是一个为分布式应用提供一致性服务的软件，提供的功能包括：配置维护、域名服务、分布式同步、组服务等。</p>
 <p>除了为Hadoop和HBase提供协调服务外，Zookeeper也被其它许多软件采用作为其分布式状态一致性的依赖，比如Kafka，又或者一些软件项目中，也经常能见到Zookeeper作为一致性协调服务存在。</p>
 <p>Zookeeper不论是大数据领域亦或是其它服务器开发领域，涉及到分布式状态一致性的场景，总有它的身影存在。</p>
 <h2 id="安装-9"><a href="#安装-9" class="headerlink" title="安装"></a>安装</h2><p>Zookeeper是一款分布式的集群化软件，可以在多台服务器上部署，并协同组成分布式集群一起工作。</p>
@@ -1090,7 +1049,8 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">jps</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">结果中找到有：QuorumPeerMain 进程即可</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>【node1上操作】验证Zookeeper</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">/export/server/zookeeper/zkCli.sh</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">进入到Zookeeper控制台中后，执行</span></span><br><span class="line">ls /</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">如无报错即配置成功</span></span><br></pre></td></tr></table></figure></li>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">/export/server/zookeeper/zkCli.sh</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">进入到Zookeeper控制台中后，执行</span></span><br><span class="line">ls /</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">如无报错即配置成功</span></span><br></pre></td></tr></table></figure>
+</li>
 </ol>
 <p>至此Zookeeper安装完成</p>
 <h1 id="Kafka集群安装部署"><a href="#Kafka集群安装部署" class="headerlink" title="Kafka集群安装部署"></a>Kafka集群安装部署</h1><h2 id="简介-8"><a href="#简介-8" class="headerlink" title="简介"></a>简介</h2><p>Kafka是一款<code>分布式的、去中心化的、高吞吐低延迟、订阅模式</code>的消息队列系统。</p>
@@ -1126,7 +1086,6 @@
 </li>
 <li><p>验证Kafka启动</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">在每一台服务器执行</span></span><br><span class="line">jps</span><br></pre></td></tr></table></figure>
-
 <p><img src="https://image-set.oss-cn-zhangjiakou.aliyuncs.com/img-out/2022/10/25/20221025174522.png" alt="image-20221025174522487"></p>
 </li>
 </ol>
@@ -1134,16 +1093,10 @@
 <li>创建测试主题</li>
 </ol>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">在node1执行，创建一个主题</span></span><br><span class="line">/export/server/kafka_2.12-2.4.1/bin/kafka-topics.sh --create --zookeeper node1:2181 --replication-factor 1 --partitions 3 --topic test</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
+<ol>
 <li>运行测试，请在FinalShell中打开2个node1的终端页面</li>
 </ol>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">打开一个终端页面，启动一个模拟的数据生产者</span></span><br><span class="line">/export/server/kafka_2.12-2.4.1/bin/kafka-console-producer.sh --broker-list node1:9092 --topic test</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">再打开一个新的终端页面，在启动一个模拟的数据消费者</span></span><br><span class="line">/export/server/kafka_2.12-2.4.1/bin/kafka-console-consumer.sh --bootstrap-server node1:9092 --topic test --from-beginning</span><br></pre></td></tr></table></figure>
-
-
-
-
-
 <h1 id="大数据集群（Hadoop生态）安装部署"><a href="#大数据集群（Hadoop生态）安装部署" class="headerlink" title="大数据集群（Hadoop生态）安装部署"></a>大数据集群（Hadoop生态）安装部署</h1><h2 id="简介-9"><a href="#简介-9" class="headerlink" title="简介"></a>简介</h2><p>1）Hadoop是一个由Apache基金会所开发的分布式系统基础架构。<br>2）主要解决，海量数据的存储和海量数据的分析计算问题。</p>
 <p>Hadoop HDFS 提供分布式海量数据存储能力</p>
 <p>Hadoop YARN 提供分布式集群资源管理能力</p>
@@ -1189,12 +1142,12 @@
 <blockquote>
 <p>Hadoop的配置文件要修改的地方很多，请细心</p>
 </blockquote>
-<p>cd 进入到&#x2F;export&#x2F;server&#x2F;hadoop&#x2F;etc&#x2F;hadoop，文件夹中，配置文件都在这里</p>
+<p>cd 进入到/export/server/hadoop/etc/hadoop，文件夹中，配置文件都在这里</p>
 <p>修改hadoop-env.sh文件</p>
 <blockquote>
 <p>此文件是配置一些Hadoop用到的环境变量</p>
 <p>这些是临时变量，在Hadoop运行时有用</p>
-<p>如果要永久生效，需要写到&#x2F;etc&#x2F;profile中</p>
+<p>如果要永久生效，需要写到/etc/profile中</p>
 </blockquote>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">在文件开头加入：</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">配置Java安装路径</span></span><br><span class="line">export JAVA_HOME=/export/server/jdk</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">配置Hadoop安装路径</span></span><br><span class="line">export HADOOP_HOME=/export/server/hadoop</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Hadoop hdfs配置文件路径</span></span><br><span class="line">export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Hadoop YARN配置文件路径</span></span><br><span class="line">export YARN_CONF_DIR=$HADOOP_HOME/etc/hadoop</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Hadoop YARN 日志文件夹</span></span><br><span class="line">export YARN_LOG_DIR=$HADOOP_HOME/logs/yarn</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Hadoop hdfs 日志文件夹</span></span><br><span class="line">export HADOOP_LOG_DIR=$HADOOP_HOME/logs/hdfs</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Hadoop的使用启动用户配置</span></span><br><span class="line">export HDFS_NAMENODE_USER=root</span><br><span class="line">export HDFS_DATANODE_USER=root</span><br><span class="line">export HDFS_SECONDARYNAMENODE_USER=root</span><br><span class="line">export YARN_RESOURCEMANAGER_USER=root</span><br><span class="line">export YARN_NODEMANAGER_USER=root</span><br><span class="line">export YARN_PROXYSERVER_USER=root</span><br></pre></td></tr></table></figure>
 </li>
@@ -1221,11 +1174,8 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">全部内容如下</span></span><br><span class="line">node1</span><br><span class="line">node2</span><br><span class="line">node3</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>分发hadoop到其它机器</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">在node1执行</span></span><br><span class="line">cd /export/server</span><br><span class="line"></span><br><span class="line">scp -r hadoop-3.3.0 node2:`pwd`/</span><br><span class="line">scp -r hadoop-3.3.0 node2:`pwd`/</span><br></pre></td></tr></table></figure>
 </li>
-</ol>
-   <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">在node1执行</span></span><br><span class="line">cd /export/server</span><br><span class="line"></span><br><span class="line">scp -r hadoop-3.3.0 node2:`pwd`/</span><br><span class="line">scp -r hadoop-3.3.0 node2:`pwd`/</span><br></pre></td></tr></table></figure>
-
-<ol start="11">
 <li><p>在node2、node3执行</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">创建软链接</span></span><br><span class="line">ln -s /export/server/hadoop-3.3.0 /export/server/hadoop</span><br></pre></td></tr></table></figure>
 </li>
@@ -1238,28 +1188,26 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p /data/dn</span><br><span class="line">mkdir -p /data/nm-log</span><br><span class="line">mkdir -p /data/nm-local</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>在node3执行：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p /data/dn</span><br><span class="line">mkdir -p /data/nm-log</span><br><span class="line">mkdir -p /data/nm-local</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p /data/dn</span><br><span class="line">mkdir -p /data/nm-log</span><br><span class="line">mkdir -p /data/nm-local</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
 </li>
 <li><p>配置环境变量</p>
-<p>在node1、node2、node3修改&#x2F;etc&#x2F;profile</p>
+<p>在node1、node2、node3修改/etc/profile</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export HADOOP_HOME=/export/server/hadoop</span><br><span class="line">export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin</span><br></pre></td></tr></table></figure>
-
 <p>执行<code>source /etc/profile</code>生效</p>
 </li>
 <li><p>格式化NameNode，在node1执行</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hadoop namenode -format</span><br></pre></td></tr></table></figure>
-
 <blockquote>
-<p>hadoop这个命令来自于：$HADOOP_HOME&#x2F;bin中的程序</p>
+<p>hadoop这个命令来自于：$HADOOP_HOME/bin中的程序</p>
 <p>由于配置了环境变量PATH，所以可以在任意位置执行hadoop命令哦</p>
 </blockquote>
 </li>
 <li><p>启动hadoop的hdfs集群，在node1执行即可</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">start-dfs.sh</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">如需停止可以执行</span></span><br><span class="line">stop-dfs.sh</span><br></pre></td></tr></table></figure>
-
 <blockquote>
-<p>start-dfs.sh这个命令来自于：$HADOOP_HOME&#x2F;sbin中的程序</p>
+<p>start-dfs.sh这个命令来自于：$HADOOP_HOME/sbin中的程序</p>
 <p>由于配置了环境变量PATH，所以可以在任意位置执行start-dfs.sh命令哦</p>
 </blockquote>
 </li>
@@ -1270,20 +1218,22 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mapred --daemon start historyserver</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">如需停止将start更换为stop</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>启动web代理服务器</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yarn-daemon.sh start proxyserver</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">如需停止将start更换为stop</span></span><br></pre></td></tr></table></figure></li>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yarn-daemon.sh start proxyserver</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">如需停止将start更换为stop</span></span><br></pre></td></tr></table></figure>
+</li>
 </ol>
 <h4 id="验证Hadoop集群运行情况"><a href="#验证Hadoop集群运行情况" class="headerlink" title="验证Hadoop集群运行情况"></a>验证Hadoop集群运行情况</h4><ol>
 <li><p>在node1、node2、node3上通过jps验证进程是否都启动成功</p>
 </li>
-<li><p>验证HDFS，浏览器打开：<a target="_blank" rel="noopener" href="http://node1:9870/">http://node1:9870</a></p>
+<li><p>验证HDFS，浏览器打开：<a target="_blank" rel="noopener" href="http://node1:9870">http://node1:9870</a></p>
 <p>创建文件test.txt，随意填入内容，并执行：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hadoop fs -put test.txt /test.txt</span><br><span class="line"></span><br><span class="line">hadoop fs -cat /test.txt</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>验证YARN，浏览器打开：<a target="_blank" rel="noopener" href="http://node1:8088/">http://node1:8088</a></p>
+<li><p>验证YARN，浏览器打开：<a target="_blank" rel="noopener" href="http://node1:8088">http://node1:8088</a></p>
 <p>执行：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">创建文件words.txt，填入如下内容</span></span><br><span class="line">itheima itcast hadoop</span><br><span class="line">itheima hadoop hadoop</span><br><span class="line">itheima itcast</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">将文件上传到HDFS中</span></span><br><span class="line">hadoop fs -put words.txt /words.txt</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">执行如下命令验证YARN是否正常</span></span><br><span class="line">hadoop jar /export/server/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.0.jar wordcount -Dmapred.job.queue.name=root.root /words.txt /output</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">创建文件words.txt，填入如下内容</span></span><br><span class="line">itheima itcast hadoop</span><br><span class="line">itheima hadoop hadoop</span><br><span class="line">itheima itcast</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">将文件上传到HDFS中</span></span><br><span class="line">hadoop fs -put words.txt /words.txt</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">执行如下命令验证YARN是否正常</span></span><br><span class="line">hadoop jar /export/server/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.0.jar wordcount -Dmapred.job.queue.name=root.root /words.txt /output</span><br></pre></td></tr></table></figure>
+</li>
 </ol>
-<h1 id="大数据NoSQL数据库HBase集群部署"><a href="#大数据NoSQL数据库HBase集群部署" class="headerlink" title="大数据NoSQL数据库HBase集群部署"></a>大数据NoSQL数据库HBase集群部署</h1><h2 id="简介-10"><a href="#简介-10" class="headerlink" title="简介"></a>简介</h2><p>HBase 是一种<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=%E5%88%86%E5%B8%83%E5%BC%8F&spm=1001.2101.3001.7020">分布式</a>、可扩展、支持海量数据存储的 NoSQL 数据库。</p>
+<h1 id="大数据NoSQL数据库HBase集群部署"><a href="#大数据NoSQL数据库HBase集群部署" class="headerlink" title="大数据NoSQL数据库HBase集群部署"></a>大数据NoSQL数据库HBase集群部署</h1><h2 id="简介-10"><a href="#简介-10" class="headerlink" title="简介"></a>简介</h2><p>HBase 是一种<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=分布式&amp;spm=1001.2101.3001.7020">分布式</a>、可扩展、支持海量数据存储的 NoSQL 数据库。</p>
 <p>和Redis一样，HBase是一款KeyValue型存储的数据库。</p>
 <p>不过和Redis设计方向不同</p>
 <ul>
@@ -1326,10 +1276,9 @@
 <p>请确保：Hadoop HDFS、Zookeeper是已经启动了的</p>
 </blockquote>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">start-hbase.sh</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">如需停止可使用</span></span><br><span class="line">stop-hbase.sh</span><br></pre></td></tr></table></figure>
-
 <blockquote>
-<p>由于我们配置了环境变量export PATH&#x3D;$PATH:$HBASE_HOME&#x2F;bin</p>
-<p>start-hbase.sh即在$HBASE_HOME&#x2F;bin内，所以可以无论当前目录在哪，均可直接执行</p>
+<p>由于我们配置了环境变量export PATH=$PATH:$HBASE_HOME/bin</p>
+<p>start-hbase.sh即在$HBASE_HOME/bin内，所以可以无论当前目录在哪，均可直接执行</p>
 </blockquote>
 </li>
 <li><p>验证HBase</p>
@@ -1337,7 +1286,8 @@
 </li>
 <li><p>简单测试使用HBase</p>
 <p>【node1执行】</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">hbase shell</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">创建表</span></span><br><span class="line">create &#x27;test&#x27;, &#x27;cf&#x27;</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">插入数据</span></span><br><span class="line">put &#x27;test&#x27;, &#x27;rk001&#x27;, &#x27;cf:info&#x27;, &#x27;itheima&#x27;</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">查询数据</span></span><br><span class="line">get &#x27;test&#x27;, &#x27;rk001&#x27;</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">扫描表数据</span></span><br><span class="line">scan &#x27;test&#x27;</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">hbase shell</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">创建表</span></span><br><span class="line">create &#x27;test&#x27;, &#x27;cf&#x27;</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">插入数据</span></span><br><span class="line">put &#x27;test&#x27;, &#x27;rk001&#x27;, &#x27;cf:info&#x27;, &#x27;itheima&#x27;</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">查询数据</span></span><br><span class="line">get &#x27;test&#x27;, &#x27;rk001&#x27;</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">扫描表数据</span></span><br><span class="line">scan &#x27;test&#x27;</span><br></pre></td></tr></table></figure>
+</li>
 </ol>
 <h1 id="分布式内存计算Spark环境部署"><a href="#分布式内存计算Spark环境部署" class="headerlink" title="分布式内存计算Spark环境部署"></a>分布式内存计算Spark环境部署</h1><h2 id="注意-2"><a href="#注意-2" class="headerlink" title="注意"></a>注意</h2><p>本小节的操作，基于：<code>大数据集群（Hadoop生态）安装部署</code>环节中所构建的Hadoop集群</p>
 <p>如果没有Hadoop集群，请参阅前置内容，部署好环境。</p>
@@ -1367,10 +1317,11 @@
 <li><p>【node1执行】启动Spark集群</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">/export/server/spark/sbin/start-all.sh</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">如需停止，可以</span></span><br><span class="line">/export/server/spark/sbin/stop-all.sh</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>打开Spark监控页面，浏览器打开：<a target="_blank" rel="noopener" href="http://node1:8081/">http://node1:8081</a></p>
+<li><p>打开Spark监控页面，浏览器打开：<a target="_blank" rel="noopener" href="http://node1:8081">http://node1:8081</a></p>
 </li>
 <li><p>【node1执行】提交测试任务</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/export/server/spark/bin/spark-submit --master spark://node1:7077 --class org.apache.spark.examples.SparkPi /export/server/spark/examples/jars/spark-examples_2.11-2.4.5.jar</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/export/server/spark/bin/spark-submit --master spark://node1:7077 --class org.apache.spark.examples.SparkPi /export/server/spark/examples/jars/spark-examples_2.11-2.4.5.jar</span><br></pre></td></tr></table></figure>
+</li>
 </ol>
 <h1 id="分布式内存计算Flink环境部署"><a href="#分布式内存计算Flink环境部署" class="headerlink" title="分布式内存计算Flink环境部署"></a>分布式内存计算Flink环境部署</h1><h2 id="注意-3"><a href="#注意-3" class="headerlink" title="注意"></a>注意</h2><p>本小节的操作，基于：<code>大数据集群（Hadoop生态）安装部署</code>环节中所构建的Hadoop集群</p>
 <p>如果没有Hadoop集群，请参阅前置内容，部署好环境。</p>
@@ -1403,11 +1354,12 @@
 </li>
 <li><p>提交测试任务</p>
 <p>【node1执行】</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/export/server/flink/bin/flink run /export/server/flink-1.10.0/examples/batch/WordCount.jar</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/export/server/flink/bin/flink run /export/server/flink-1.10.0/examples/batch/WordCount.jar</span><br></pre></td></tr></table></figure>
+</li>
 </ol>
 <h1 id="运维监控Zabbix部署"><a href="#运维监控Zabbix部署" class="headerlink" title="运维监控Zabbix部署"></a>运维监控Zabbix部署</h1><h2 id="简介-13"><a href="#简介-13" class="headerlink" title="简介"></a>简介</h2><p>Zabbix 由 Alexei Vladishev 创建，目前由其成立的公司—— Zabbix SIA 积极的持续开发更新维护， 并为用户提供技术支持服务。</p>
-<p>Zabbix 是一个&#x3D;&#x3D;企业级分布式开源监控解决方案&#x3D;&#x3D;。</p>
-<p>Zabbix 软件能够&#x3D;&#x3D;监控&#x3D;&#x3D;众多网络参数和服务器的&#x3D;&#x3D;健康度、完整性&#x3D;&#x3D;。Zabbix 使用灵活的告警机制，允许用户为几乎任何事件配置基于邮件的告警。这样用户可以快速响应服务器问题。Zabbix 基于存储的数据提供出色的报表和数据可视化功能。这些功能使得 Zabbix 成为容量规划的理想选择。</p>
+<p>Zabbix 是一个==企业级分布式开源监控解决方案==。</p>
+<p>Zabbix 软件能够==监控==众多网络参数和服务器的==健康度、完整性==。Zabbix 使用灵活的告警机制，允许用户为几乎任何事件配置基于邮件的告警。这样用户可以快速响应服务器问题。Zabbix 基于存储的数据提供出色的报表和数据可视化功能。这些功能使得 Zabbix 成为容量规划的理想选择。</p>
 <h2 id="安装-15"><a href="#安装-15" class="headerlink" title="安装"></a>安装</h2><blockquote>
 <p> 安装整体步骤:</p>
 </blockquote>
@@ -1424,41 +1376,30 @@
 <p>课程使用<code>Mysql 5.7</code></p>
 <p>安装步骤：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">安装Mysql yum库</span></span><br><span class="line">rpm -Uvh http://repo.mysql.com//mysql57-community-release-el7-7.noarch.rpm</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">yum安装Mysql</span></span><br><span class="line">yum -y install mysql-community-server</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">启动Mysql设置开机启动</span></span><br><span class="line">systemctl start mysqld</span><br><span class="line">systemctl enable mysqld</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">检查Mysql服务状态</span></span><br><span class="line">systemctl status mysqld</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">第一次启动mysql，会在日志文件中生成root用户的一个随机密码，使用下面命令查看该密码</span></span><br><span class="line">grep &#x27;temporary password&#x27; /var/log/mysqld.log</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">修改root用户密码</span></span><br><span class="line">mysql -u root -p -h localhost</span><br><span class="line">Enter password:</span><br><span class="line"><span class="meta prompt_"> </span></span><br><span class="line"><span class="meta prompt_">mysql&gt; </span><span class="language-bash">ALTER USER <span class="string">&#x27;root&#x27;</span>@<span class="string">&#x27;localhost&#x27;</span> IDENTIFIED BY <span class="string">&#x27;Root!@#$&#x27;</span>;</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">如果你想设置简单密码，需要降低Mysql的密码安全级别</span></span><br><span class="line">set global validate_password_policy=LOW; # 密码安全级别低</span><br><span class="line">set global validate_password_length=4;	 # 密码长度最低4位即可</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">然后就可以用简单密码了（课程中使用简单密码，为了方便，生产中不要这样）</span></span><br><span class="line">ALTER USER &#x27;root&#x27;@&#x27;localhost&#x27; IDENTIFIED BY &#x27;root&#x27;;</span><br><span class="line"><span class="meta prompt_">mysql&gt; </span><span class="language-bash">grant all privileges on *.* to root@<span class="string">&#x27;%&#x27;</span> identified by <span class="string">&#x27;root&#x27;</span>;</span></span><br></pre></td></tr></table></figure>
-
-
-
-
-
 <h3 id="安装Zabbix-Server-和-Zabbix-Agent"><a href="#安装Zabbix-Server-和-Zabbix-Agent" class="headerlink" title="安装Zabbix Server 和 Zabbix Agent"></a>安装Zabbix Server 和 Zabbix Agent</h3><blockquote>
 <p>初始安装，我们先安装ZabbixServer以及在Server本机安装Agent。</p>
 </blockquote>
-<p>打开官网下载页面：<a target="_blank" rel="noopener" href="https://www.zabbix.com/download?zabbix=4.0&os_distribution=centos&os_version=7&db=mysql">https://www.zabbix.com/download?zabbix=4.0&amp;os_distribution=centos&amp;os_version=7&amp;db=mysql</a></p>
+<p>打开官网下载页面：<a target="_blank" rel="noopener" href="https://www.zabbix.com/download?zabbix=4.0&amp;os_distribution=centos&amp;os_version=7&amp;db=mysql">https://www.zabbix.com/download?zabbix=4.0&amp;os_distribution=centos&amp;os_version=7&amp;db=mysql</a></p>
 <p><img src="https://image-set.oss-cn-zhangjiakou.aliyuncs.com/img-out/2022/10/26/20221026175330.png" alt="1571981197131"></p>
 <p>选择对应的版本，然后再下面官网给出了具体的安装命令，使用<code>rpm</code>和<code>yum</code>来进行安装。</p>
 <p>需要有网络。</p>
 <p><code>以下内容来自官方页面</code></p>
 <h4 id="a-安装Zabbix-yum库"><a href="#a-安装Zabbix-yum库" class="headerlink" title="a. 安装Zabbix yum库"></a>a. 安装Zabbix yum库</h4><p><a target="_blank" rel="noopener" href="https://www.zabbix.com/documentation/4.0/manual/installation/install_from_packages">documentation</a></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rpm -Uvh https://repo.zabbix.com/zabbix/4.0/rhel/7/x86_64/zabbix-release-4.0-2.el7.noarch.rpm</span><br><span class="line">yum clean all</span><br></pre></td></tr></table></figure>
-
 <h4 id="b-安装Zabbix-Server、前端、Agent"><a href="#b-安装Zabbix-Server、前端、Agent" class="headerlink" title="b. 安装Zabbix Server、前端、Agent"></a>b. 安装Zabbix Server、前端、Agent</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yum -y install zabbix-server-mysql zabbix-web-mysql zabbix-agent</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">如果只需要安装Agent的话</span></span><br><span class="line">yum -y install zabbix-agent</span><br></pre></td></tr></table></figure>
-
 <h4 id="c-初始化Mysql数据库"><a href="#c-初始化Mysql数据库" class="headerlink" title="c. 初始化Mysql数据库"></a>c. 初始化Mysql数据库</h4><p><a target="_blank" rel="noopener" href="https://www.zabbix.com/documentation/4.0/manual/appendix/install/db_scripts">documentation</a></p>
 <blockquote>
 <p>在Mysql中操作</p>
 </blockquote>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">登录Mysql 数据库</span></span><br><span class="line">mysql -uroot -pYourPassword</span><br><span class="line"><span class="meta prompt_">mysql&gt; </span><span class="language-bash">create database zabbix character <span class="built_in">set</span> utf8 collate utf8_bin;</span></span><br><span class="line"><span class="meta prompt_">mysql&gt; </span><span class="language-bash">grant all privileges on zabbix.* to zabbix@localhost identified by <span class="string">&#x27;zabbix&#x27;</span>;</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">或者: grant all privileges on zabbix.* to zabbix@<span class="string">&#x27;%&#x27;</span> identified by <span class="string">&#x27;zabbix&#x27;</span>;</span></span><br><span class="line"><span class="meta prompt_">mysql&gt; </span><span class="language-bash">quit;</span></span><br></pre></td></tr></table></figure>
-
 <p>测试在Zabbix Server服务器上能否远程登录Mysql，如果可以登录继续向下走。</p>
 <p>Import initial schema and data. You will be prompted to enter your newly created password.</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">zcat /usr/share/doc/zabbix-server-mysql*/create.sql.gz | mysql -uzabbix -p zabbix</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="d-为Zabbix-Server配置数据库"><a href="#d-为Zabbix-Server配置数据库" class="headerlink" title="d. 为Zabbix Server配置数据库"></a>d. 为Zabbix Server配置数据库</h4><p>Edit file &#x2F;etc&#x2F;zabbix&#x2F;zabbix_server.conf</p>
+<h4 id="d-为Zabbix-Server配置数据库"><a href="#d-为Zabbix-Server配置数据库" class="headerlink" title="d. 为Zabbix Server配置数据库"></a>d. 为Zabbix Server配置数据库</h4><p>Edit file /etc/zabbix/zabbix_server.conf</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">DBPassword=password</span><br><span class="line">DBHost=mysql-host-ip-or-hostname</span><br></pre></td></tr></table></figure>
-
 <h4 id="e-配置Zabbix的PHP前端"><a href="#e-配置Zabbix的PHP前端" class="headerlink" title="e. 配置Zabbix的PHP前端"></a>e. 配置Zabbix的PHP前端</h4><p>Edit file <code>/etc/httpd/conf.d/zabbix.conf</code>, uncomment and set the right timezone for you.<code># php_value date.timezone Asia/Shanghai</code></p>
 <p>Start Zabbix server and agent processes and make it start at system boot:</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart zabbix-server zabbix-agent httpd # 启动、重启</span><br><span class="line">systemctl enable zabbix-server zabbix-agent httpd  # 开机自启</span><br></pre></td></tr></table></figure>
-
 <p>Now your Zabbix server is up and running!</p>
 <h3 id="配置zabbix-前端（WEB-UI）"><a href="#配置zabbix-前端（WEB-UI）" class="headerlink" title="配置zabbix 前端（WEB UI）"></a>配置zabbix 前端（WEB UI）</h3><p><strong>打开:<code>http://192.168.88.131/zabbix</code></strong></p>
 <p>即可进入Zabbix页面，在首次打开的时候，会进入设置页面，如图：</p>
@@ -1493,12 +1434,9 @@
 <p>对<code>windows</code> <code>mac</code>系统 或 <code>docker</code>部署有兴趣的同学, 请参考:  <a target="_blank" rel="noopener" href="https://grafana.com/grafana/download">https://grafana.com/grafana/download</a></p>
 <p>我们部署<code>Grafana</code>可以使用<code>YUM</code>来进行部署.</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">创建一个文件</span></span><br><span class="line">vim /etc/yum.repos.d/grafana.repo</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">将下面的内容复制进去</span></span><br><span class="line">[grafana]</span><br><span class="line">name=grafana</span><br><span class="line">baseurl=https://packages.grafana.com/oss/rpm</span><br><span class="line">repo_gpgcheck=1</span><br><span class="line">enabled=1</span><br><span class="line">gpgcheck=1</span><br><span class="line">gpgkey=https://packages.grafana.com/gpg.key</span><br><span class="line">sslverify=1</span><br><span class="line">sslcacert=/etc/pki/tls/certs/ca-bundle.crt</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">最后安装</span></span><br><span class="line">yum install grafana</span><br></pre></td></tr></table></figure>
-
-
-
 <h3 id="配置说明"><a href="#配置说明" class="headerlink" title="配置说明"></a>配置说明</h3><p><code>grafana-server</code>具有许多配置选项，这些选项可以在<code>.ini</code>配置文件中指定，也可以使用环境变量指定。</p>
 <blockquote>
-<p> <strong>Note.</strong> <code>Grafana </code> needs to be restarted for any configuration changes to take effect. </p>
+<p> <strong>Note.</strong> <code>Grafana</code> needs to be restarted for any configuration changes to take effect. </p>
 </blockquote>
 <h4 id="配置文件注释"><a href="#配置文件注释" class="headerlink" title="配置文件注释"></a>配置文件注释</h4><p><code>;</code>符号在<code>.ini</code>文件中全局表示注释 ()</p>
 <h4 id="配置文件路径"><a href="#配置文件路径" class="headerlink" title="配置文件路径"></a>配置文件路径</h4><p>如果是自己解压安装, 或者自行编译的方式安装, 配置文件在:</p>
@@ -1512,15 +1450,10 @@
 </blockquote>
 <h4 id="使用环境变量"><a href="#使用环境变量" class="headerlink" title="使用环境变量"></a>使用环境变量</h4><p>可以使用以下语法使用环境变量来覆盖配置文件中的所有选项：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GF_&lt;SectionName&gt;_&lt;KeyName&gt;</span><br></pre></td></tr></table></figure>
-
 <p>其中<code>SectionName</code>是方括号内的文本。一切都应为大写，<code>.</code>应替换为<code>_</code> 例如，给定以下配置设置：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># default section</span></span><br><span class="line">instance_name = <span class="variable">$&#123;HOSTNAME&#125;</span></span><br><span class="line"></span><br><span class="line">[security]</span><br><span class="line">admin_user = admin</span><br><span class="line"></span><br><span class="line">[auth.google]</span><br><span class="line">client_secret = 0ldS3cretKey</span><br></pre></td></tr></table></figure>
-
 <p>Then you can override them using:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> GF_DEFAULT_INSTANCE_NAME=my-instance</span><br><span class="line"><span class="built_in">export</span> GF_SECURITY_ADMIN_USER=<span class="literal">true</span>	<span class="comment"># GF_ 固定 SECURITY 是SectionName ADMIN_USER 是配置的key 转大写 . 转 _</span></span><br><span class="line"><span class="built_in">export</span> GF_AUTH_GOOGLE_CLIENT_SECRET=newS3cretKey</span><br></pre></td></tr></table></figure>
-
-
-
 <h3 id="开始配置"><a href="#开始配置" class="headerlink" title="开始配置"></a>开始配置</h3><p><code>Grafana</code>支持使用<code>Sqlite3</code> <code>Postgresql</code> <code>Mysql</code>这三种数据库作为其<code>元数据</code>的存储.</p>
 <p>我们课程使用<code>Mysql</code>. 和<code>zabbix</code>的元数据mysql共用一个实例</p>
 <p>只需要配置如下内容即可:</p>
@@ -1529,13 +1462,8 @@
 <p><code>create database grafana CHARACTER SET utf8 COLLATE utf8_general_ci;</code></p>
 <p>创建<code>Grafana</code>使用的数据库作为元数据存储.</p>
 <h3 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">systemctl daemon-reload</span><br><span class="line">systemctl start grafana-server</span><br><span class="line">systemctl <span class="built_in">enable</span> grafana-server</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-<p>浏览器打开：<a target="_blank" rel="noopener" href="http://node1:3000/">http://node1:3000</a></p>
-<p>默认账户密码：admin&#x2F;admin</p>
+<p>浏览器打开：<a target="_blank" rel="noopener" href="http://node1:3000">http://node1:3000</a></p>
+<p>默认账户密码：admin/admin</p>
 
     </div>
 
@@ -1736,13 +1664,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">160k</span>
+    <span title="站点总字数">158k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">4:51</span>
+    <span title="站点阅读时长">4:47</span>
 </div>
   <div class="powered-by">
     
