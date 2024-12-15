@@ -6,7 +6,7 @@
   <link href="https://readmengk90.github.io/atom.xml" rel="self"/>
   
   <link href="https://readmengk90.github.io/"/>
-  <updated>2024-12-10T11:29:09.160Z</updated>
+  <updated>2024-12-15T04:21:43.523Z</updated>
   <id>https://readmengk90.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo+Next的Typora数学公式的显示问题</title>
+    <link href="https://readmengk90.github.io/2024/12/15/Hexo+Next%E7%9A%84Typora%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/"/>
+    <id>https://readmengk90.github.io/2024/12/15/Hexo+Next%E7%9A%84Typora%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</id>
+    <published>2024-12-15T04:12:39.057Z</published>
+    <updated>2024-12-15T04:21:43.523Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="在Hexo中渲染MathJax数学公式"><a href="#在Hexo中渲染MathJax数学公式" class="headerlink" title="在Hexo中渲染MathJax数学公式"></a>在Hexo中渲染MathJax数学公式</h1><p>在用markdown写技术文档时，免不了会碰到数学公式。常用的Markdown编辑器都会集成<a href="https://link.jianshu.com?t=https%3A%2F%2Fwww.mathjax.org%2F">Mathjax</a>，用来渲染文档中的类Latex格式书写的数学公式。基于Hexo搭建的个人博客，默认情况下渲染数学公式却会出现各种各样的问题。</p><h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>Hexo默认使用”hexo-renderer-marked”引擎渲染网页，该引擎会把一些特殊的markdown符号转换为相应的html标签，比如在markdown语法中，下划线’_’代表斜体，会被渲染引擎处理为<code>&lt;em&gt;</code>标签。</p><p>因为类Latex格式书写的数学公式下划线 ‘_’ 表示下标，有特殊的含义，如果被强制转换为<code>&lt;em&gt;</code>标签，那么MathJax引擎在渲染数学公式的时候就会出错。例如，$x_i$在开始被渲染的时候，处理为$x<code>&lt;em&gt;</code>i<code>&lt;/em&gt;</code>$，这样MathJax引擎就认为该公式有语法错误，因为不会渲染。</p><p>类似的语义冲突的符号还包括’*’, ‘{‘, ‘}’, ‘\’等。</p><h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>解决方案有很多，可以网上搜下，为了节省大家的时间，这里只提供亲身测试过的最靠谱的方法。</p><p>更换Hexo的markdown渲染引擎，<a href="https://link.jianshu.com?t=https%3A%2F%2Fgithub.com%2Fsun11%2Fhexo-renderer-kramed">hexo-renderer-kramed</a>引擎是在默认的渲染引擎<a href="https://link.jianshu.com?t=https%3A%2F%2Fgithub.com%2Fhexojs%2Fhexo-renderer-marked">hexo-renderer-marked</a>的基础上修改了一些bug，两者比较接近，也比较轻量级。</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked --save</span><br><span class="line">npm install hexo-renderer-kramed --save</span><br><span class="line"><span class="comment"># 在原文件夹上修改</span></span><br></pre></td></tr></table></figure><p>执行上面的命令即可，先卸载原来的渲染引擎，再安装新的。</p><p>然后，跟换引擎后行间公式可以正确渲染了，但是这样还没有完全解决问题，行内公式的渲染还是有问题，因为<a href="https://link.jianshu.com?t=https%3A%2F%2Fgithub.com%2Fsun11%2Fhexo-renderer-kramed">hexo-renderer-kramed</a>引擎也有语义冲突的问题。接下来到博客根目录下，找到node_modules\kramed\lib\rules\inline.js，把第11行的escape变量的值做相应的修改：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//  escape: /^\\([\\`*&#123;&#125;\[\]()<span class="comment">#$+\-.!_&gt;])/,</span></span><br><span class="line">  escape: /^\\([`*\[\]()<span class="comment">#$+\-.!_&gt;])/</span></span><br></pre></td></tr></table></figure><p>这一步是在原基础上取消了对\,{,}的转义(escape)。<br>同时把第20行的em变量也要做相应的修改。</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//  em: /^\b_((?:__|[\s\S])+?)_\b|^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,</span><br><span class="line">  em: /^\*((?:\*\*|[\s\S])+?)\*(?!\*)/</span><br></pre></td></tr></table></figure><h2 id="在主题中开启mathjax开关"><a href="#在主题中开启mathjax开关" class="headerlink" title="在主题中开启mathjax开关"></a>在主题中开启mathjax开关</h2><p>如何使用了主题了，别忘了在主题（Theme）中开启mathjax开关，下面以next主题为例，介绍下如何打开mathjax开关。</p><p>进入到主题目录，找到_config.yml配置问题，把mathjax默认的false修改为true，具体如下：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># MathJax</span></span><br><span class="line">mathjax:</span><br><span class="line">  enable: true</span><br><span class="line">  per_page: true</span><br></pre></td></tr></table></figure><p>这样还不够，还需要在文章的Front-matter里打开mathjax开关，如下：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: index.html</span><br><span class="line">date: <span class="number">2016</span>-<span class="number">12</span>-<span class="number">28</span> <span class="number">21</span>:01:<span class="number">30</span></span><br><span class="line">tags:</span><br><span class="line">mathjax: true</span><br><span class="line">--</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">&lt;center&gt;Typora数学公式的显示问题&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="Next数学公式" scheme="https://readmengk90.github.io/categories/Next%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/"/>
+    
+    
+    <category term="hexo" scheme="https://readmengk90.github.io/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>科研文献检索</title>
@@ -408,27 +429,6 @@
     
     
     <category term="考研复试" scheme="https://readmengk90.github.io/tags/%E8%80%83%E7%A0%94%E5%A4%8D%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>GUI图形化用户界面</title>
-    <link href="https://readmengk90.github.io/2024/02/25/java%E5%9F%BA%E7%A1%80-GUI%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2/"/>
-    <id>https://readmengk90.github.io/2024/02/25/java%E5%9F%BA%E7%A1%80-GUI%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2/</id>
-    <published>2024-02-25T15:44:18.430Z</published>
-    <updated>2024-02-27T02:07:59.913Z</updated>
-    
-    <content type="html"><![CDATA[<p>GUI</p><p>​    JFrame:最外层的窗体</p><p>​    JMenuBar:最上层的菜单</p><p>​    JLabel:管理文字和图片的容器</p><p>​    IMageIcon</p><p>​    取消隐藏容器中居中的默认方式：setLayout(null)</p>]]></content>
-    
-    
-    <summary type="html">&lt;center&gt;GUI&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="Java基础" scheme="https://readmengk90.github.io/categories/Java%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="java" scheme="https://readmengk90.github.io/tags/java/"/>
     
   </entry>
   
