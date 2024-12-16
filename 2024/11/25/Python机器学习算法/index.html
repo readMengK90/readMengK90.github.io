@@ -89,8 +89,12 @@
 <meta property="og:image" content="https://readmengk90.github.io/2024/11/25/images/Python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95/%E6%8B%9F%E5%90%88.png">
 <meta property="og:image" content="https://readmengk90.github.io/2024/11/25/images/Python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95/%E6%8B%9F%E5%90%8801.png">
 <meta property="og:image" content="https://readmengk90.github.io/2024/11/25/images/Python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95/%E5%B2%AD%E5%9B%9E%E5%BD%92.png">
+<meta property="og:image" content="https://readmengk90.github.io/2024/11/25/images/Python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95/sigmoid%E5%87%BD%E6%95%B0.png">
+<meta property="og:image" content="https://readmengk90.github.io/2024/11/25/images/Python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95/%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92%E5%AE%8C%E6%95%B4%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0.png">
+<meta property="og:image" content="https://readmengk90.github.io/2024/11/25/images/Python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95/%E8%81%9A%E7%B1%BB01.png">
+<meta property="og:image" content="https://readmengk90.github.io/2024/11/25/images/Python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95/%E8%81%9A%E7%B1%BB%E6%A0%B7%E6%9C%AC%E5%88%86%E6%9E%90.png">
 <meta property="article:published_time" content="2024-11-25T01:55:10.924Z">
-<meta property="article:modified_time" content="2024-12-15T11:26:30.513Z">
+<meta property="article:modified_time" content="2024-12-16T08:52:25.824Z">
 <meta property="article:author" content="Amber">
 <meta property="article:tag" content="Python">
 <meta name="twitter:card" content="summary">
@@ -297,7 +301,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2024-12-15 19:26:30" itemprop="dateModified" datetime="2024-12-15T19:26:30+08:00">2024-12-15</time>
+                <time title="修改时间：2024-12-16 16:52:25" itemprop="dateModified" datetime="2024-12-16T16:52:25+08:00">2024-12-16</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -322,14 +326,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>13k</span>
+              <span>15k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>23 分钟</span>
+              <span>27 分钟</span>
             </span>
             <div class="post-description"><center>特征工程-k近邻算法-线性回归-逻辑回归-聚类-朴素贝叶斯</center></div>
 
@@ -956,7 +960,138 @@ MSK=\frac{1}{m}\sum_{m=1}^m(y^i-\overline y)^2
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">joblib.dump(rf,<span class="string">&#x27;test.pkl&#x27;</span>)</span><br></pre></td></tr></table></figure>
 <p>加载：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">estimator=joblib.load(<span class="string">&#x27;test.pkl&#x27;</span>)</span><br></pre></td></tr></table></figure>
-<h4 id="分类算法-逻辑回归"><a href="#分类算法-逻辑回归" class="headerlink" title="分类算法-逻辑回归"></a>分类算法-逻辑回归</h4><h4 id="聚类算法-kmeans"><a href="#聚类算法-kmeans" class="headerlink" title="聚类算法-kmeans"></a>聚类算法-kmeans</h4><h4 id="k-means实列"><a href="#k-means实列" class="headerlink" title="k-means实列"></a>k-means实列</h4><h5 id="支持向量机"><a href="#支持向量机" class="headerlink" title="支持向量机"></a>支持向量机</h5><h5 id="神经网络"><a href="#神经网络" class="headerlink" title="神经网络"></a>神经网络</h5>
+<h4 id="分类算法-逻辑回归"><a href="#分类算法-逻辑回归" class="headerlink" title="分类算法-逻辑回归"></a>分类算法-逻辑回归</h4><ol>
+<li><code>定义介绍</code></li>
+</ol>
+<p>逻辑回归：线性回归的式子作为输入，逻辑回归是解决二分类问题的利器。</p>
+<script type="math/tex; mode=display">
+输入:Z(w)=w_0+w_1x_1+w_2x_2+.....=w^Tx 
+\\
+(单个样本)</script><p>应用：广告点击率，是否为垃圾邮件，是否患病，金融诈骗，虚假账号</p>
+<ol>
+<li><p><code>sigmoid函数</code></p>
+<script type="math/tex; mode=display">
+数学表达式:g(z)=\frac{1}{1+e^{-z}}
+\\
+这个函数会将输入的实数值(x轴)映射到(0, 1)区间(y轴)内，其图像呈现出一个S形曲线
+\\
+Sigmoid函数的输出范围是(0, 1)，这使得它非常适合用来表示概率</script><p><img src="../images/Python机器学习算法/sigmoid函数.png" alt=""></p>
+</li>
+<li><p><code>逻辑回归-损失函数的定义与优化过程</code></p>
+<p>与线性回归的原理相同，但由于是分类问题，损失函数不一样，只能通过梯度下降求解</p>
+<script type="math/tex; mode=display">
+对数似然损失函数：
+\\
+cost(h_\Theta(x),y)=\begin{cases} -log(h_\Theta(x)), & \text {if $y$ = 1} \\ -log(1-h_\Theta(x)), & \text{if $y$ = 0}\end{cases}</script><p><img src="../images/Python机器学习算法/逻辑回归完整损失函数.png" alt=""></p>
+<p>cost损失的值越小，那么预测的类别准确度越高</p>
+<p>|   算法   |    策略(损失函数)     |       优化        |<br>| :———: | :—————————-: | :———————-: |<br>| 逻辑回归 |     对数似然损失      |     梯度下降      |<br>| 线性回归 | 误差平方和/最小二乘法 | 正规方程&amp;梯度下降 |</p>
+<p>损失函数：</p>
+<p>均方误差：不存在多个局部最低点，只有一个最小值</p>
+<p>对数似然损失：多个局部最小值，尽管没有全局最低点，但是效果都是不错的</p>
+<p>​    1.多次随机初始化，多次比较最小值结果</p>
+<p>​    2.求解过程中，调整学习率</p>
+</li>
+<li><p><code>逻辑回归API</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sklearn.linear_model.LogisticRegression</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<ul>
+<li>sklearn.linear_model.LogisticRegression(penalty=’l2’,C=1.0)<ul>
+<li>Logistic回归分类器</li>
+<li>coef_:回归系数</li>
+</ul>
+</li>
+</ul>
+<p>良/恶性乳腺癌肿瘤数据</p>
+<figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/breast-cancer-wisconsin.data</span><br></pre></td></tr></table></figure>
+<p>数据描述：</p>
+<p>(1)699条样本，共11列数据，第一列用语检索的id,后9列分别是与肿瘤相关的医学特征，最后一列表示肿瘤类型的数值。</p>
+<p>(2)包含16个缺失值，用“?”标出。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center">逻辑回归</th>
+<th style="text-align:center">朴素贝叶斯</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">解决问题</td>
+<td style="text-align:center">二分类</td>
+<td style="text-align:center">多分类问题</td>
+</tr>
+<tr>
+<td style="text-align:center">应用场景</td>
+<td style="text-align:center">癌症，二分类需要概率</td>
+<td style="text-align:center">文本分类</td>
+</tr>
+<tr>
+<td style="text-align:center">参数</td>
+<td style="text-align:center">正则化力度</td>
+<td style="text-align:center">没有</td>
+</tr>
+<tr>
+<td style="text-align:center">结果</td>
+<td style="text-align:center">判别模型</td>
+<td style="text-align:center">生成模型(先验)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="聚类算法-kmeans原理"><a href="#聚类算法-kmeans原理" class="headerlink" title="聚类算法-kmeans原理"></a>聚类算法-kmeans原理</h4><p><code>1.背景介绍</code></p>
+<p>监督学习依赖于带有正确答案的数据集来训练模型，</p>
+<p>非监督学习旨在从未标记的数据中发现隐藏的结构或模式。</p>
+<p><strong>聚类</strong>：一种常见的非监督学习任务是聚类，即根据某些相似性度量将数据点分组到不同的簇中。只知道特征，根据一些指标进行聚类。</p>
+<p><img src="../images/Python机器学习算法/聚类01.png" alt=""></p>
+<p><code>2.聚类的过程</code></p>
+<p>K：把数据划分成多少个类别(k=3)</p>
+<ul>
+<li><p>```mathematica<br>1.随机在数据当中抽取三个样本，当作三个类别的中心点</p>
+<p>2.计算其余的点分别到这三个中心点的距离，每一个样本有三个距离(a,b,c),从中选出距离最近的一个点作为自己的标记。形成三个族群</p>
+<p>3.分别计算这三个族群的平均值，把三个平均值与之前的三个旧中心点进行比较</p>
+<ul>
+<li>如果相同：结束聚类</li>
+<li>如果不相同：把这三个平均值当新的中心点，重复第二步    <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">`3.k-means API`</span><br><span class="line"></span><br><span class="line">```apl</span><br><span class="line">sklearn.cluster.KMeans</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>sklearn.cluster.KMeans(n_clusters=8,init=’k-means++’)</p>
+<ul>
+<li>k-means聚类</li>
+<li>n_clusters:开始的聚类中心数量</li>
+<li>init：初始化方法，默认为‘k-means ++’</li>
+<li>labels_:默认标记的类型，可以和真实值比较(不是值比较)</li>
+</ul>
+</li>
+</ul>
+<p>聚类做在分类之前.</p>
+<p><code>4.聚类评估标准-轮廓系数</code></p>
+<script type="math/tex; mode=display">
+轮廓系数计算公式：SC_i=\frac{b_i-a_i}{max(b_ia_i)}</script><script type="math/tex; mode=display">
+注:对于每个点i为已聚类数据中的样本,b_i为i到其他族群的所有样本的距离最小值，a_i为i到本身簇的距离平均值
+\\
+最终计算出所有的样本点的轮廓系数平均值</script><p><img src="../images/Python机器学习算法/聚类样本分析.png" alt=""></p>
+<p>对于每一个样本都有一个轮廓系数[-1,1]</p>
+<p>1.计算蓝1到自身类别的点距离的平均值a_i</p>
+<p>2.计算栏1分别到红色类别，绿色类别所有的点的距离，求出平均值b1,b2,取其中最小值当中b_i</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">极端情况：</span><br><span class="line">b_i&gt;&gt;a_i   1  完美</span><br><span class="line">a_i&gt;&gt;b_i   -1 最差</span><br><span class="line">得出轮廓系数的范围:[-1,1]</span><br></pre></td></tr></table></figure>
+<p>性能评估指标API:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sklearn.metrics.silhouette_score</span><br></pre></td></tr></table></figure>
+<ul>
+<li>sklearn.metrics.silhouette_score(X,labels)<ul>
+<li>计算所有样本的平均轮廓系数</li>
+<li>X：特征值</li>
+<li>labels：被聚类标记的目标值</li>
+</ul>
+</li>
+</ul>
+<p><code>5.kmeans特点分析</code></p>
+<p>特点分析：采用迭代式算法，直观易懂并且非常实用</p>
+<p>缺点：容易收敛到局部最优解(多次聚类)</p>
+<p>注意:聚类一般做在分类之前</p>
+<h5 id="支持向量机"><a href="#支持向量机" class="headerlink" title="支持向量机"></a>支持向量机</h5><h5 id="神经网络"><a href="#神经网络" class="headerlink" title="神经网络"></a>神经网络</h5>
     </div>
 
     
@@ -1076,7 +1211,7 @@ MSK=\frac{1}{m}\sum_{m=1}^m(y^i-\overline y)^2
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%80%E4%BB%8B"><span class="nav-number">1.</span> <span class="nav-text">机器学习简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#day01-%E6%95%B0%E6%8D%AE%E7%9A%84%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B"><span class="nav-number">2.</span> <span class="nav-text">day01:数据的特征工程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%A6%82%E8%BF%B0"><span class="nav-number">2.1.</span> <span class="nav-text">机器学习概述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E9%9B%86%E7%9A%84%E6%9E%84%E6%88%90"><span class="nav-number">2.2.</span> <span class="nav-text">数据集的构成</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E9%9B%86%E7%9A%84%E7%BB%93%E6%9E%84%E7%BB%84%E6%88%90"><span class="nav-number">2.3.</span> <span class="nav-text">数据集的结构组成</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%AF%B9%E7%89%B9%E5%BE%81%E7%9A%84%E5%A4%84%E7%90%86"><span class="nav-number">2.4.</span> <span class="nav-text">数据中对特征的处理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B%E7%9A%84%E6%84%8F%E4%B9%89"><span class="nav-number">2.5.</span> <span class="nav-text">特征工程的意义:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#scikit-learn%E5%BA%93%E7%9A%84%E4%BB%8B%E7%BB%8D%EF%BC%9A"><span class="nav-number">2.6.</span> <span class="nav-text">scikit-learn库的介绍：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%9A%84%E7%89%B9%E5%BE%81%E6%8A%BD%E5%8F%96"><span class="nav-number">2.7.</span> <span class="nav-text">数据的特征抽取:</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%96%87%E6%9C%AC%E7%89%B9%E5%BE%81%E6%8A%BD%E5%8F%961"><span class="nav-number">2.7.1.</span> <span class="nav-text">文本特征抽取1:</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%96%87%E6%9C%AC%E7%89%B9%E5%BE%81%E6%8A%BD%E5%8F%96%E6%96%B9%E5%BC%8F2"><span class="nav-number">2.7.2.</span> <span class="nav-text">文本特征抽取方式2:</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%9A%84%E7%89%B9%E5%BE%81%E9%A2%84%E5%A4%84%E7%90%86"><span class="nav-number">2.8.</span> <span class="nav-text">数据的特征预处理:</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%BD%92%E4%B8%80%E5%8C%96%EF%BC%9A"><span class="nav-number">2.8.1.</span> <span class="nav-text">归一化：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%A0%87%E5%87%86%E5%8C%96%EF%BC%9A"><span class="nav-number">2.8.2.</span> <span class="nav-text">标准化：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%BC%BA%E5%A4%B1%E5%80%BC%E5%A4%84%E7%90%86%E6%96%B9%E6%B3%95"><span class="nav-number">2.8.3.</span> <span class="nav-text">缺失值处理方法:</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%9A%84%E9%99%8D%E7%BB%B4"><span class="nav-number">2.9.</span> <span class="nav-text">数据的降维:</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%89%B9%E5%BE%81%E9%80%89%E6%8B%A9"><span class="nav-number">2.9.1.</span> <span class="nav-text">特征选择</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%B8%BB%E6%88%90%E5%88%86%E5%88%86%E6%9E%90-PCA"><span class="nav-number">2.9.2.</span> <span class="nav-text">主成分分析(PCA)</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#day02-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%BA%8C%E5%A4%A9"><span class="nav-number">3.</span> <span class="nav-text">day02 课程第二天</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#sklearn%E6%95%B0%E6%8D%AE%E9%9B%86%E4%B8%8E%E4%BC%B0%E8%AE%A1%E5%99%A8"><span class="nav-number">3.1.</span> <span class="nav-text">sklearn数据集与估计器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80"><span class="nav-number">3.2.</span> <span class="nav-text">机器学习基础</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%86%E7%B1%BB%E7%AE%97%E6%B3%95-k%E8%BF%91%E9%82%BB%E7%AE%97%E6%B3%95-%E5%BD%92%E4%B8%80%E5%8C%96%E5%A4%84%E7%90%86"><span class="nav-number">3.3.</span> <span class="nav-text">分类算法-k近邻算法(归一化处理)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B%E7%9A%84%E8%AF%84%E4%BC%B0%EF%BC%9A%E7%9B%AE%E6%A0%87%E5%80%BC%E6%98%AF%E7%A6%BB%E6%95%A3%E5%9E%8B"><span class="nav-number">3.4.</span> <span class="nav-text">分类模型的评估：目标值是离散型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%86%E7%B1%BB%E7%AE%97%E6%B3%95-%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF%E7%AE%97%E6%B3%95"><span class="nav-number">3.5.</span> <span class="nav-text">分类算法-朴素贝叶斯算法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF%E7%AE%97%E6%B3%95%E5%AE%9E%E5%88%97"><span class="nav-number">3.6.</span> <span class="nav-text">朴素贝叶斯算法实列</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A8%A1%E5%9E%8B%E7%9A%84%E9%80%89%E6%8B%A9%E4%B8%8E%E8%B0%83%E4%BC%98"><span class="nav-number">3.7.</span> <span class="nav-text">模型的选择与调优</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81-cross-validation"><span class="nav-number">3.7.1.</span> <span class="nav-text">交叉验证(cross validation)</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#K%E6%8A%98%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81%EF%BC%88k-fold-cross-validation%EF%BC%89"><span class="nav-number"></span> <span class="nav-text">K折交叉验证（k-fold cross validation）</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%BD%91%E6%A0%BC%E6%90%9C%E7%B4%A2-Grid-Search-%EF%BC%9A"><span class="nav-number">0.0.1.</span> <span class="nav-text">网格搜索(Grid Search)：</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%86%E7%B1%BB%E7%AE%97%E6%B3%95-%E5%86%B3%E7%AD%96%E6%A0%91"><span class="nav-number">0.1.</span> <span class="nav-text">分类算法-决策树</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%86%E7%B1%BB%E7%AE%97%E6%B3%95-%E9%9A%8F%E6%9C%BA%E6%A3%AE%E6%9E%97%EF%BC%88%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%EF%BC%89"><span class="nav-number">0.2.</span> <span class="nav-text">分类算法-随机森林（集成学习方法）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%89%E5%A4%A9"><span class="nav-number">1.</span> <span class="nav-text">课程第三天</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9B%9E%E5%BD%92%E7%AE%97%E6%B3%95-%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%E5%88%86%E6%9E%90"><span class="nav-number">1.1.</span> <span class="nav-text">回归算法-线性回归分析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%E5%AE%9E%E4%BE%8B-%E9%9C%80%E8%A6%81%E5%81%9A%E6%A0%87%E5%87%86%E5%8C%96%E5%A4%84%E7%90%86%E3%80%90K%E8%BF%91%E9%82%BB-%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%E3%80%91"><span class="nav-number">1.2.</span> <span class="nav-text">线性回归实例(需要做标准化处理【K近邻+线性回归】)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9B%9E%E9%A1%BE%E6%80%A7%E8%83%BD%E8%AF%84%E4%BC%B0"><span class="nav-number">1.3.</span> <span class="nav-text">回顾性能评估</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%86%E7%B1%BB%E7%AE%97%E6%B3%95-%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92"><span class="nav-number">1.4.</span> <span class="nav-text">分类算法-逻辑回归</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95-kmeans"><span class="nav-number">1.5.</span> <span class="nav-text">聚类算法-kmeans</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#k-means%E5%AE%9E%E5%88%97"><span class="nav-number">1.6.</span> <span class="nav-text">k-means实列</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%94%AF%E6%8C%81%E5%90%91%E9%87%8F%E6%9C%BA"><span class="nav-number">1.6.1.</span> <span class="nav-text">支持向量机</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C"><span class="nav-number">1.6.2.</span> <span class="nav-text">神经网络</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%80%E4%BB%8B"><span class="nav-number">1.</span> <span class="nav-text">机器学习简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#day01-%E6%95%B0%E6%8D%AE%E7%9A%84%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B"><span class="nav-number">2.</span> <span class="nav-text">day01:数据的特征工程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%A6%82%E8%BF%B0"><span class="nav-number">2.1.</span> <span class="nav-text">机器学习概述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E9%9B%86%E7%9A%84%E6%9E%84%E6%88%90"><span class="nav-number">2.2.</span> <span class="nav-text">数据集的构成</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E9%9B%86%E7%9A%84%E7%BB%93%E6%9E%84%E7%BB%84%E6%88%90"><span class="nav-number">2.3.</span> <span class="nav-text">数据集的结构组成</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%AF%B9%E7%89%B9%E5%BE%81%E7%9A%84%E5%A4%84%E7%90%86"><span class="nav-number">2.4.</span> <span class="nav-text">数据中对特征的处理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B%E7%9A%84%E6%84%8F%E4%B9%89"><span class="nav-number">2.5.</span> <span class="nav-text">特征工程的意义:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#scikit-learn%E5%BA%93%E7%9A%84%E4%BB%8B%E7%BB%8D%EF%BC%9A"><span class="nav-number">2.6.</span> <span class="nav-text">scikit-learn库的介绍：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%9A%84%E7%89%B9%E5%BE%81%E6%8A%BD%E5%8F%96"><span class="nav-number">2.7.</span> <span class="nav-text">数据的特征抽取:</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%96%87%E6%9C%AC%E7%89%B9%E5%BE%81%E6%8A%BD%E5%8F%961"><span class="nav-number">2.7.1.</span> <span class="nav-text">文本特征抽取1:</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%96%87%E6%9C%AC%E7%89%B9%E5%BE%81%E6%8A%BD%E5%8F%96%E6%96%B9%E5%BC%8F2"><span class="nav-number">2.7.2.</span> <span class="nav-text">文本特征抽取方式2:</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%9A%84%E7%89%B9%E5%BE%81%E9%A2%84%E5%A4%84%E7%90%86"><span class="nav-number">2.8.</span> <span class="nav-text">数据的特征预处理:</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%BD%92%E4%B8%80%E5%8C%96%EF%BC%9A"><span class="nav-number">2.8.1.</span> <span class="nav-text">归一化：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%A0%87%E5%87%86%E5%8C%96%EF%BC%9A"><span class="nav-number">2.8.2.</span> <span class="nav-text">标准化：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%BC%BA%E5%A4%B1%E5%80%BC%E5%A4%84%E7%90%86%E6%96%B9%E6%B3%95"><span class="nav-number">2.8.3.</span> <span class="nav-text">缺失值处理方法:</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%9A%84%E9%99%8D%E7%BB%B4"><span class="nav-number">2.9.</span> <span class="nav-text">数据的降维:</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%89%B9%E5%BE%81%E9%80%89%E6%8B%A9"><span class="nav-number">2.9.1.</span> <span class="nav-text">特征选择</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%B8%BB%E6%88%90%E5%88%86%E5%88%86%E6%9E%90-PCA"><span class="nav-number">2.9.2.</span> <span class="nav-text">主成分分析(PCA)</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#day02-%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%BA%8C%E5%A4%A9"><span class="nav-number">3.</span> <span class="nav-text">day02 课程第二天</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#sklearn%E6%95%B0%E6%8D%AE%E9%9B%86%E4%B8%8E%E4%BC%B0%E8%AE%A1%E5%99%A8"><span class="nav-number">3.1.</span> <span class="nav-text">sklearn数据集与估计器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80"><span class="nav-number">3.2.</span> <span class="nav-text">机器学习基础</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%86%E7%B1%BB%E7%AE%97%E6%B3%95-k%E8%BF%91%E9%82%BB%E7%AE%97%E6%B3%95-%E5%BD%92%E4%B8%80%E5%8C%96%E5%A4%84%E7%90%86"><span class="nav-number">3.3.</span> <span class="nav-text">分类算法-k近邻算法(归一化处理)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B%E7%9A%84%E8%AF%84%E4%BC%B0%EF%BC%9A%E7%9B%AE%E6%A0%87%E5%80%BC%E6%98%AF%E7%A6%BB%E6%95%A3%E5%9E%8B"><span class="nav-number">3.4.</span> <span class="nav-text">分类模型的评估：目标值是离散型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%86%E7%B1%BB%E7%AE%97%E6%B3%95-%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF%E7%AE%97%E6%B3%95"><span class="nav-number">3.5.</span> <span class="nav-text">分类算法-朴素贝叶斯算法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF%E7%AE%97%E6%B3%95%E5%AE%9E%E5%88%97"><span class="nav-number">3.6.</span> <span class="nav-text">朴素贝叶斯算法实列</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A8%A1%E5%9E%8B%E7%9A%84%E9%80%89%E6%8B%A9%E4%B8%8E%E8%B0%83%E4%BC%98"><span class="nav-number">3.7.</span> <span class="nav-text">模型的选择与调优</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81-cross-validation"><span class="nav-number">3.7.1.</span> <span class="nav-text">交叉验证(cross validation)</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#K%E6%8A%98%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81%EF%BC%88k-fold-cross-validation%EF%BC%89"><span class="nav-number"></span> <span class="nav-text">K折交叉验证（k-fold cross validation）</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%BD%91%E6%A0%BC%E6%90%9C%E7%B4%A2-Grid-Search-%EF%BC%9A"><span class="nav-number">0.0.1.</span> <span class="nav-text">网格搜索(Grid Search)：</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%86%E7%B1%BB%E7%AE%97%E6%B3%95-%E5%86%B3%E7%AD%96%E6%A0%91"><span class="nav-number">0.1.</span> <span class="nav-text">分类算法-决策树</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%86%E7%B1%BB%E7%AE%97%E6%B3%95-%E9%9A%8F%E6%9C%BA%E6%A3%AE%E6%9E%97%EF%BC%88%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%EF%BC%89"><span class="nav-number">0.2.</span> <span class="nav-text">分类算法-随机森林（集成学习方法）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%89%E5%A4%A9"><span class="nav-number">1.</span> <span class="nav-text">课程第三天</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9B%9E%E5%BD%92%E7%AE%97%E6%B3%95-%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%E5%88%86%E6%9E%90"><span class="nav-number">1.1.</span> <span class="nav-text">回归算法-线性回归分析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%E5%AE%9E%E4%BE%8B-%E9%9C%80%E8%A6%81%E5%81%9A%E6%A0%87%E5%87%86%E5%8C%96%E5%A4%84%E7%90%86%E3%80%90K%E8%BF%91%E9%82%BB-%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%E3%80%91"><span class="nav-number">1.2.</span> <span class="nav-text">线性回归实例(需要做标准化处理【K近邻+线性回归】)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9B%9E%E9%A1%BE%E6%80%A7%E8%83%BD%E8%AF%84%E4%BC%B0"><span class="nav-number">1.3.</span> <span class="nav-text">回顾性能评估</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%86%E7%B1%BB%E7%AE%97%E6%B3%95-%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92"><span class="nav-number">1.4.</span> <span class="nav-text">分类算法-逻辑回归</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%81%9A%E7%B1%BB%E7%AE%97%E6%B3%95-kmeans%E5%8E%9F%E7%90%86"><span class="nav-number">1.5.</span> <span class="nav-text">聚类算法-kmeans原理</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%94%AF%E6%8C%81%E5%90%91%E9%87%8F%E6%9C%BA"><span class="nav-number">1.5.1.</span> <span class="nav-text">支持向量机</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C"><span class="nav-number">1.5.2.</span> <span class="nav-text">神经网络</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -1156,13 +1291,13 @@ MSK=\frac{1}{m}\sum_{m=1}^m(y^i-\overline y)^2
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">161k</span>
+    <span title="站点总字数">163k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">4:53</span>
+    <span title="站点阅读时长">4:57</span>
 </div>
   <div class="powered-by">
     
