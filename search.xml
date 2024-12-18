@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hexo+Mext设置主页文章添加边框阴影效果</title>
+    <url>/2024/01/10/Hexo+Next%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%BB%E9%A1%B5%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E8%BE%B9%E6%A1%86%E9%98%B4%E5%BD%B1%E6%95%88%E6%9E%9C/</url>
+    <content><![CDATA[<h1 id="设置主页文章添加边框阴影效果"><a href="#设置主页文章添加边框阴影效果" class="headerlink" title="设置主页文章添加边框阴影效果"></a>设置主页文章添加边框阴影效果</h1><ol>
+<li><p>打开主题文件夹下的post：</p>
+<p>MyBlog\themes\next\source\css\\ _common\components\post\post.styl文件</p>
+</li>
+<li><p>ctrl+F查找.use-motion{},修改后的内容如下方所示</p>
+</li>
+</ol>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.use-motion</span> &#123;</span><br><span class="line"> if (hexo-config(&#x27;motion<span class="selector-class">.transition</span><span class="selector-class">.post_block</span>&#x27;)) &#123;</span><br><span class="line">    <span class="selector-class">.post-block</span>, <span class="selector-class">.pagination</span>, <span class="selector-class">.comments</span> &#123;</span><br><span class="line">      <span class="attribute">opacity</span>: <span class="number">0</span>;</span><br><span class="line">      <span class="attribute">margin-top</span>: <span class="number">3px</span>;</span><br><span class="line">      <span class="attribute">margin-bottom</span>: <span class="number">30px</span>;</span><br><span class="line">      <span class="attribute">padding</span>: <span class="number">25px</span>;</span><br><span class="line">      -webkit-<span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">5px</span> <span class="built_in">rgba</span>(<span class="number">202</span>, <span class="number">203</span>, <span class="number">203</span>, .<span class="number">5</span>);</span><br><span class="line">      -moz-<span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">5px</span> <span class="built_in">rgba</span>(<span class="number">202</span>, <span class="number">203</span>, <span class="number">204</span>, .<span class="number">5</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<ol>
+<li><p>重启</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo+clean</span><br><span class="line"></span><br><span class="line">hexo+g</span><br><span class="line"></span><br><span class="line">hexo+d</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Next主题配置</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>可行性研究</title>
     <url>/2024/03/02/02%E5%8F%AF%E8%A1%8C%E6%80%A7%E7%A0%94%E7%A9%B6/</url>
     <content><![CDATA[<div class="table-container">
@@ -161,30 +185,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo+Mext设置主页文章添加边框阴影效果</title>
-    <url>/2024/01/10/Hexo+Next%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%BB%E9%A1%B5%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E8%BE%B9%E6%A1%86%E9%98%B4%E5%BD%B1%E6%95%88%E6%9E%9C/</url>
-    <content><![CDATA[<h1 id="设置主页文章添加边框阴影效果"><a href="#设置主页文章添加边框阴影效果" class="headerlink" title="设置主页文章添加边框阴影效果"></a>设置主页文章添加边框阴影效果</h1><ol>
-<li><p>打开主题文件夹下的post：</p>
-<p>MyBlog\themes\next\source\css\\ _common\components\post\post.styl文件</p>
-</li>
-<li><p>ctrl+F查找.use-motion{},修改后的内容如下方所示</p>
-</li>
-</ol>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.use-motion</span> &#123;</span><br><span class="line"> if (hexo-config(&#x27;motion<span class="selector-class">.transition</span><span class="selector-class">.post_block</span>&#x27;)) &#123;</span><br><span class="line">    <span class="selector-class">.post-block</span>, <span class="selector-class">.pagination</span>, <span class="selector-class">.comments</span> &#123;</span><br><span class="line">      <span class="attribute">opacity</span>: <span class="number">0</span>;</span><br><span class="line">      <span class="attribute">margin-top</span>: <span class="number">3px</span>;</span><br><span class="line">      <span class="attribute">margin-bottom</span>: <span class="number">30px</span>;</span><br><span class="line">      <span class="attribute">padding</span>: <span class="number">25px</span>;</span><br><span class="line">      -webkit-<span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">5px</span> <span class="built_in">rgba</span>(<span class="number">202</span>, <span class="number">203</span>, <span class="number">203</span>, .<span class="number">5</span>);</span><br><span class="line">      -moz-<span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">5px</span> <span class="built_in">rgba</span>(<span class="number">202</span>, <span class="number">203</span>, <span class="number">204</span>, .<span class="number">5</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
-<ol>
-<li><p>重启</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo+clean</span><br><span class="line"></span><br><span class="line">hexo+g</span><br><span class="line"></span><br><span class="line">hexo+d</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Next主题配置</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo+Next的Typora数学公式的显示问题</title>
     <url>/2024/12/15/Hexo+Next%E7%9A%84Typora%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<h1 id="在Hexo中渲染MathJax数学公式"><a href="#在Hexo中渲染MathJax数学公式" class="headerlink" title="在Hexo中渲染MathJax数学公式"></a>在Hexo中渲染MathJax数学公式</h1><p>在用markdown写技术文档时，免不了会碰到数学公式。常用的Markdown编辑器都会集成<a href="https://link.jianshu.com?t=https%3A%2F%2Fwww.mathjax.org%2F">Mathjax</a>，用来渲染文档中的类Latex格式书写的数学公式。基于Hexo搭建的个人博客，默认情况下渲染数学公式却会出现各种各样的问题。</p>
@@ -207,21 +207,6 @@
 ]]></content>
       <categories>
         <category>Next数学公式</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo+Next主题下的阅读全文设置</title>
-    <url>/2024/01/10/Hexo-%E6%98%BE%E7%A4%BA%E5%85%A8%E6%96%87%E7%9A%84%E8%AE%BE%E7%BD%AE/</url>
-    <content><![CDATA[<h1 id="Hexo-显示全文的设置"><a href="#Hexo-显示全文的设置" class="headerlink" title="Hexo-显示全文的设置"></a>Hexo-显示全文的设置</h1><h5 id="1-在文章中使用-lt-more-gt-手动进行截断"><a href="#1-在文章中使用-lt-more-gt-手动进行截断" class="headerlink" title="1.在文章中使用&lt; !--more--&gt; 手动进行截断"></a>1.在文章中使用<code>&lt; !--more--&gt;</code> 手动进行截断</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-01.png?raw=true" alt="image-20240110132555493"></p>
-<h5 id="2-添加描述信息的内容，会成为一种相关内容的提示信息"><a href="#2-添加描述信息的内容，会成为一种相关内容的提示信息" class="headerlink" title="2.添加描述信息的内容，会成为一种相关内容的提示信息"></a>2.添加描述信息的内容，会成为一种相关内容的提示信息</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-02.png?raw=true" alt="image-20240110132853566"></p>
-<h5 id="3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部"><a href="#3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部" class="headerlink" title="3.在主题配置文件中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部"></a>3.在<strong>主题配置文件</strong>中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部</h5><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">auto_excerpt:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">length:</span> <span class="number">150</span></span><br></pre></td></tr></table></figure>
-<h5 id="4-效果-展示"><a href="#4-效果-展示" class="headerlink" title="4.效果 展示"></a>4.效果 展示</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-03.png?raw=true" alt="image-20240110133302658"></p>
-]]></content>
-      <categories>
-        <category>Next主题配置</category>
       </categories>
       <tags>
         <tag>hexo</tag>
@@ -342,6 +327,21 @@
       </categories>
       <tags>
         <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo+Next主题下的阅读全文设置</title>
+    <url>/2024/01/10/Hexo-%E6%98%BE%E7%A4%BA%E5%85%A8%E6%96%87%E7%9A%84%E8%AE%BE%E7%BD%AE/</url>
+    <content><![CDATA[<h1 id="Hexo-显示全文的设置"><a href="#Hexo-显示全文的设置" class="headerlink" title="Hexo-显示全文的设置"></a>Hexo-显示全文的设置</h1><h5 id="1-在文章中使用-lt-more-gt-手动进行截断"><a href="#1-在文章中使用-lt-more-gt-手动进行截断" class="headerlink" title="1.在文章中使用&lt; !--more--&gt; 手动进行截断"></a>1.在文章中使用<code>&lt; !--more--&gt;</code> 手动进行截断</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-01.png?raw=true" alt="image-20240110132555493"></p>
+<h5 id="2-添加描述信息的内容，会成为一种相关内容的提示信息"><a href="#2-添加描述信息的内容，会成为一种相关内容的提示信息" class="headerlink" title="2.添加描述信息的内容，会成为一种相关内容的提示信息"></a>2.添加描述信息的内容，会成为一种相关内容的提示信息</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-02.png?raw=true" alt="image-20240110132853566"></p>
+<h5 id="3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部"><a href="#3-在主题配置文件中添加-，默认截取的长度为-150-字符，可以根据需要自行设定-直接复制到-config-文件的底部" class="headerlink" title="3.在主题配置文件中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部"></a>3.在<strong>主题配置文件</strong>中添加 ，默认截取的长度为 150 字符，可以根据需要自行设定,直接复制到  _config  文件的底部</h5><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">auto_excerpt:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">length:</span> <span class="number">150</span></span><br></pre></td></tr></table></figure>
+<h5 id="4-效果-展示"><a href="#4-效果-展示" class="headerlink" title="4.效果 展示"></a>4.效果 展示</h5><p><img src="https://github.com/readMengK90/readMengK90.github.io/blob/master/images/1-03.png?raw=true" alt="image-20240110133302658"></p>
+]]></content>
+      <categories>
+        <category>Next主题配置</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -2320,6 +2320,56 @@
       </tags>
   </entry>
   <entry>
+    <title>Python基础综合案例</title>
+    <url>/2024/11/09/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/</url>
+    <content><![CDATA[<h3 id="JSON数据格式"><a href="#JSON数据格式" class="headerlink" title="JSON数据格式:"></a>JSON数据格式:</h3><p>​    JSON是一种轻量级的数据交互格式。可以按照JSON指定的格式去组织和封装数据。</p>
+<p>​    JSON本质上是一个带有特定格式的字符串</p>
+<p>​    主要功能: json就是一种在各个编程语言中流通的数据格式，负责不同编程语言中的数据传递和交互。类似于:国际通用语言-英语，中国官方语言-普通话</p>
+<p>​    <img src="../images/Python基础综合案例/Json.png" alt=""></p>
+<p>JSON数据的格式：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># json数据的格式可以是(json是Python的列表(内嵌字典的列表)或者字典)</span></span><br><span class="line">&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;admin&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">18</span>&#125; <span class="comment">#</span></span><br><span class="line"><span class="comment"># 也可以是</span></span><br><span class="line">[&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;admin&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">18</span>&#125;,&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;root&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">16</span>&#125;,&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;张三&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">20</span>&#125;]</span><br></pre></td></tr></table></figure>
+<p>Python数据和Json数据的相互转换:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 导入json模块</span></span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="comment">#准备符合json格式要求的Python数据</span></span><br><span class="line">data = [&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;admin&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">18</span>&#125;,&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;张三&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">20</span>&#125;]</span><br><span class="line"><span class="comment">#通过json.dunps(data)方法把python数据转化为了json字符串数据</span></span><br><span class="line">data = json.dumps(data)</span><br><span class="line"><span class="comment"># data = json.dumps(data,ensure_ascii=False),解决中文乱码的问题 </span></span><br><span class="line"><span class="comment">#通过json.loads(data)方法把json数据转化为了python字符串数据</span></span><br><span class="line">data = <span class="string">&#x27;[&#123;&quot;name&quot;:&quot;admin&quot;,&quot;age&quot;:18&#125;,&#123;&quot;name&quot;:&quot;张三&quot;,&quot;age&quot;:20&#125;]&#x27;</span></span><br><span class="line">data = json.loads(data)</span><br></pre></td></tr></table></figure>
+<h3 id="pyecharts模块"><a href="#pyecharts模块" class="headerlink" title="pyecharts模块"></a>pyecharts模块</h3><p>pyecharts是帮助我们做出数据可视化效果图的一个模块。它的本体是echarts框架。</p>
+<p>Echarts是由百度开源的数据可视化，凭借着良好的交互性，精巧的图表设计，得到了众多开发者的认可，而Python是门富有表达能力的语言，很适合用于数据处理，当数据分析遇上数据可视化时pycharts诞生了。</p>
+<figure class="highlight http"><table><tr><td class="code"><pre><span class="line">中文文档:pyecharts.org</span><br><span class="line">画廊官网:https://gallery.pyecharts.org/#/README</span><br></pre></td></tr></table></figure>
+<p>安装：</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt; pip install pyecharts</span><br><span class="line"># 检查安装效果</span><br><span class="line"># 进入Python导入模块</span><br><span class="line">&gt;&gt;&gt; python</span><br><span class="line">&gt;&gt;&gt; import pyecharts</span><br></pre></td></tr></table></figure>
+<h3 id="pyecharts入门使用"><a href="#pyecharts入门使用" class="headerlink" title="pyecharts入门使用"></a>pyecharts入门使用</h3><p>pycharts有那些配置选项:</p>
+<p>​    全局配置选项:针对整个图像进行设置，图像的标题，图例，工具箱等</p>
+<p>​    全局配置可以通过一个set_global_opts方法进行配置，相应的选项和选项的功能如下:<img src="../images/Python基础综合案例/全局配置.png" alt=""></p>
+<p>​    <img src="../images/Python基础综合案例/全局配置01.png" alt=""></p>
+<p>​    系列配置选项:针对具体的轴数据进行配置</p>
+<h3 id="数据处理"><a href="#数据处理" class="headerlink" title="数据处理"></a>数据处理</h3><p>​    通过json模块对数据进行处理</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">在线json格式化分析:ab173.com</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 构建图表</span></span><br><span class="line"><span class="comment"># 导包</span></span><br><span class="line"><span class="keyword">from</span> pyecharts.charts <span class="keyword">import</span> Line</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建一个折线图对象</span></span><br><span class="line">l=Line()</span><br><span class="line"><span class="comment"># 给折线图对象添加x轴的数据</span></span><br><span class="line">l.add_xaxis([<span class="string">&quot;中国&quot;</span>,<span class="string">&quot;美国&quot;</span>,<span class="string">&quot;英国&quot;</span>])</span><br><span class="line"><span class="comment"># 给折线图对象添加y轴的数据</span></span><br><span class="line">l.add_yaxis(<span class="string">&quot;GDP&quot;</span>,[<span class="number">30</span>,<span class="number">20</span>,<span class="number">10</span>])</span><br><span class="line"><span class="comment"># 通过render方法，将代码生成为图像</span></span><br><span class="line">l.render()</span><br><span class="line"><span class="comment"># 设置全局配置项</span></span><br></pre></td></tr></table></figure>
+<p>地图可视化</p>
+<p>使用pyecharts构建基础的全国地图可视化图表。</p>
+<p>基础柱状图开发</p>
+<p><img src="../images/Python基础综合案例/柱状图.png" alt=""></p>
+<p><img src="../images/Python基础综合案例/柱状图_时间线.png" alt=""></p>
+<p>创建自动播放:</p>
+<p><img src="../images/Python基础综合案例/自动播放.png" alt=""></p>
+<p>修改柱状颜色</p>
+<p><img src="../images/Python基础综合案例/颜色.png" alt=""></p>
+<p>GDP动态柱状图绘制</p>
+<p>1.掌握列表的sort方法并配合lambda匿名函数完成列表排序</p>
+<p>​    sort方法 : <strong>列表.sort(key=选择排序依据的函数,reverse=True|False)</strong>。</p>
+<p>​    参数key,是要求传入一个函数，表示将列表的每一个元素都传入函数中，返回排序的依据。</p>
+<p>​    参数reverse，是否反转排序结果，True表示降序，False表示升序。</p>
+<p><img src="../images/Python基础综合案例/sort方法.png" alt=""></p>
+<p>2.完成图表所需的数据处理</p>
+<p>​    </p>
+<p>3.完成GDP动态图表绘制</p>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Python数据分析</title>
     <url>/2024/11/14/Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/</url>
     <content><![CDATA[<p><strong>想要和得到中间还有两个字就是要做到</strong></p>
@@ -2639,56 +2689,6 @@
 <h4 id="pandas重采样"><a href="#pandas重采样" class="headerlink" title="pandas重采样"></a>pandas重采样</h4><p>重采样：指的是将时间序列<code>从一个频率转化为另一个频率</code>进行处理的过程，将高频率数据转化为低频率数据为<code>降采样</code>，低频率转化为高频率为<code>升采样</code></p>
 <p>pandas提供了一个<code>resample</code>的方法来帮助我们实现频率转化,它通常与聚合函数（如 <code>sum()</code>、<code>mean()</code>）一起使用。假设你的数据是按天记录的，你可以将其转换为按月统计的形式。</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 按月重采样并计算每个月的总和</span></span><br><span class="line">monthly_data = df.resample(<span class="string">&quot;M&quot;</span>).<span class="built_in">sum</span>()</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python基础综合案例</title>
-    <url>/2024/11/09/Python%E5%9F%BA%E7%A1%80%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/</url>
-    <content><![CDATA[<h3 id="JSON数据格式"><a href="#JSON数据格式" class="headerlink" title="JSON数据格式:"></a>JSON数据格式:</h3><p>​    JSON是一种轻量级的数据交互格式。可以按照JSON指定的格式去组织和封装数据。</p>
-<p>​    JSON本质上是一个带有特定格式的字符串</p>
-<p>​    主要功能: json就是一种在各个编程语言中流通的数据格式，负责不同编程语言中的数据传递和交互。类似于:国际通用语言-英语，中国官方语言-普通话</p>
-<p>​    <img src="../images/Python基础综合案例/Json.png" alt=""></p>
-<p>JSON数据的格式：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># json数据的格式可以是(json是Python的列表(内嵌字典的列表)或者字典)</span></span><br><span class="line">&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;admin&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">18</span>&#125; <span class="comment">#</span></span><br><span class="line"><span class="comment"># 也可以是</span></span><br><span class="line">[&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;admin&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">18</span>&#125;,&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;root&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">16</span>&#125;,&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;张三&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">20</span>&#125;]</span><br></pre></td></tr></table></figure>
-<p>Python数据和Json数据的相互转换:</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 导入json模块</span></span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="comment">#准备符合json格式要求的Python数据</span></span><br><span class="line">data = [&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;admin&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">18</span>&#125;,&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;张三&quot;</span>,<span class="string">&quot;age&quot;</span>:<span class="number">20</span>&#125;]</span><br><span class="line"><span class="comment">#通过json.dunps(data)方法把python数据转化为了json字符串数据</span></span><br><span class="line">data = json.dumps(data)</span><br><span class="line"><span class="comment"># data = json.dumps(data,ensure_ascii=False),解决中文乱码的问题 </span></span><br><span class="line"><span class="comment">#通过json.loads(data)方法把json数据转化为了python字符串数据</span></span><br><span class="line">data = <span class="string">&#x27;[&#123;&quot;name&quot;:&quot;admin&quot;,&quot;age&quot;:18&#125;,&#123;&quot;name&quot;:&quot;张三&quot;,&quot;age&quot;:20&#125;]&#x27;</span></span><br><span class="line">data = json.loads(data)</span><br></pre></td></tr></table></figure>
-<h3 id="pyecharts模块"><a href="#pyecharts模块" class="headerlink" title="pyecharts模块"></a>pyecharts模块</h3><p>pyecharts是帮助我们做出数据可视化效果图的一个模块。它的本体是echarts框架。</p>
-<p>Echarts是由百度开源的数据可视化，凭借着良好的交互性，精巧的图表设计，得到了众多开发者的认可，而Python是门富有表达能力的语言，很适合用于数据处理，当数据分析遇上数据可视化时pycharts诞生了。</p>
-<figure class="highlight http"><table><tr><td class="code"><pre><span class="line">中文文档:pyecharts.org</span><br><span class="line">画廊官网:https://gallery.pyecharts.org/#/README</span><br></pre></td></tr></table></figure>
-<p>安装：</p>
-<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt; pip install pyecharts</span><br><span class="line"># 检查安装效果</span><br><span class="line"># 进入Python导入模块</span><br><span class="line">&gt;&gt;&gt; python</span><br><span class="line">&gt;&gt;&gt; import pyecharts</span><br></pre></td></tr></table></figure>
-<h3 id="pyecharts入门使用"><a href="#pyecharts入门使用" class="headerlink" title="pyecharts入门使用"></a>pyecharts入门使用</h3><p>pycharts有那些配置选项:</p>
-<p>​    全局配置选项:针对整个图像进行设置，图像的标题，图例，工具箱等</p>
-<p>​    全局配置可以通过一个set_global_opts方法进行配置，相应的选项和选项的功能如下:<img src="../images/Python基础综合案例/全局配置.png" alt=""></p>
-<p>​    <img src="../images/Python基础综合案例/全局配置01.png" alt=""></p>
-<p>​    系列配置选项:针对具体的轴数据进行配置</p>
-<h3 id="数据处理"><a href="#数据处理" class="headerlink" title="数据处理"></a>数据处理</h3><p>​    通过json模块对数据进行处理</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">在线json格式化分析:ab173.com</span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 构建图表</span></span><br><span class="line"><span class="comment"># 导包</span></span><br><span class="line"><span class="keyword">from</span> pyecharts.charts <span class="keyword">import</span> Line</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建一个折线图对象</span></span><br><span class="line">l=Line()</span><br><span class="line"><span class="comment"># 给折线图对象添加x轴的数据</span></span><br><span class="line">l.add_xaxis([<span class="string">&quot;中国&quot;</span>,<span class="string">&quot;美国&quot;</span>,<span class="string">&quot;英国&quot;</span>])</span><br><span class="line"><span class="comment"># 给折线图对象添加y轴的数据</span></span><br><span class="line">l.add_yaxis(<span class="string">&quot;GDP&quot;</span>,[<span class="number">30</span>,<span class="number">20</span>,<span class="number">10</span>])</span><br><span class="line"><span class="comment"># 通过render方法，将代码生成为图像</span></span><br><span class="line">l.render()</span><br><span class="line"><span class="comment"># 设置全局配置项</span></span><br></pre></td></tr></table></figure>
-<p>地图可视化</p>
-<p>使用pyecharts构建基础的全国地图可视化图表。</p>
-<p>基础柱状图开发</p>
-<p><img src="../images/Python基础综合案例/柱状图.png" alt=""></p>
-<p><img src="../images/Python基础综合案例/柱状图_时间线.png" alt=""></p>
-<p>创建自动播放:</p>
-<p><img src="../images/Python基础综合案例/自动播放.png" alt=""></p>
-<p>修改柱状颜色</p>
-<p><img src="../images/Python基础综合案例/颜色.png" alt=""></p>
-<p>GDP动态柱状图绘制</p>
-<p>1.掌握列表的sort方法并配合lambda匿名函数完成列表排序</p>
-<p>​    sort方法 : <strong>列表.sort(key=选择排序依据的函数,reverse=True|False)</strong>。</p>
-<p>​    参数key,是要求传入一个函数，表示将列表的每一个元素都传入函数中，返回排序的依据。</p>
-<p>​    参数reverse，是否反转排序结果，True表示降序，False表示升序。</p>
-<p><img src="../images/Python基础综合案例/sort方法.png" alt=""></p>
-<p>2.完成图表所需的数据处理</p>
-<p>​    </p>
-<p>3.完成GDP动态图表绘制</p>
 ]]></content>
       <categories>
         <category>Python</category>
@@ -3094,10 +3094,10 @@
 <li>target_names:目标类别名称</li>
 <li>return：每个类别精确率和召回率</li>
 </ul>
-<h4 id="模型的选择与调优"><a href="#模型的选择与调优" class="headerlink" title="模型的选择与调优"></a>模型的选择与调优</h4><h5 id="交叉验证-cross-validation"><a href="#交叉验证-cross-validation" class="headerlink" title="交叉验证(cross validation)"></a>交叉验证(cross validation)</h5><p>为了让被评估的模型更加准确可信，在训练集中选一部分样本用于测试模型。保留一部分的训练集数据作为验证集/评估集，对训练集生成的参数进行测试，相对客观的判断这些参数对训练集之外的数据的符合程度。</p>
-<h2 id="K折交叉验证（k-fold-cross-validation）"><a href="#K折交叉验证（k-fold-cross-validation）" class="headerlink" title="K折交叉验证（k-fold cross validation）"></a>K折交叉验证（k-fold cross validation）</h2><p><img src="../images/Python机器学习算法/交叉验证.png" alt=""></p>
+<h4 id="模型的选择与调优"><a href="#模型的选择与调优" class="headerlink" title="模型的选择与调优"></a>模型的选择与调优</h4><h3 id="day03-课程第三天"><a href="#day03-课程第三天" class="headerlink" title="day03 课程第三天"></a>day03 课程第三天</h3><h4 id="交叉验证-cross-validation"><a href="#交叉验证-cross-validation" class="headerlink" title="交叉验证(cross validation)"></a>交叉验证(cross validation)</h4><p>为了让被评估的模型更加准确可信，在训练集中选一部分样本用于测试模型。保留一部分的训练集数据作为验证集/评估集，对训练集生成的参数进行测试，相对客观的判断这些参数对训练集之外的数据的符合程度。</p>
+<h4 id="K折交叉验证（k-fold-cross-validation）"><a href="#K折交叉验证（k-fold-cross-validation）" class="headerlink" title="K折交叉验证（k-fold cross validation）"></a>K折交叉验证（k-fold cross validation）</h4><p><img src="../images/Python机器学习算法/交叉验证.png" alt=""></p>
 <p>​                         把四个准确率求平均值得到一个模型结果</p>
-<h5 id="网格搜索-Grid-Search-："><a href="#网格搜索-Grid-Search-：" class="headerlink" title="网格搜索(Grid Search)："></a>网格搜索(Grid Search)：</h5><p><code>Grid Search</code>：一种调参手段/调优方法，在参数列表中进行<strong>穷举搜索</strong>，对每种情况进行训练，找到最优的参数。</p>
+<h4 id="网格搜索-Grid-Search-："><a href="#网格搜索-Grid-Search-：" class="headerlink" title="网格搜索(Grid Search)："></a>网格搜索(Grid Search)：</h4><p><code>Grid Search</code>：一种调参手段/调优方法，在参数列表中进行<strong>穷举搜索</strong>，对每种情况进行训练，找到最优的参数。</p>
 <p>穷举搜索：在所有候选的参数选择中，通过循环遍历，尝试每一种可能性，表现最好的参数就是最终的结果。其原理就像是在数组里找最大值。（为什么叫网格搜索？以有两个参数的模型为例，参数a有3种可能，参数b有4种可能，把所有可能性列出来，可以表示成一个3*4的表格，其中每个cell就是一个网格，循环过程就像是在每个网格里遍历、搜索，所以叫grid search）</p>
 <p>超参数搜索-网格搜索<code>API</code></p>
 <p><code>sklearn.model_selection.GridSearchCV</code></p>
@@ -3686,46 +3686,6 @@ cost(h_\Theta(x),y)=\begin{cases} -log(h_\Theta(x)), & \text {if $y$ = 1} \\ -lo
     <content><![CDATA[<h1 id="This-is-my-first-blog-路上只我一个人，背着手踱着。这一片天地好像是我的-我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静-爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜-niao-nuo-地开着旳，有羞涩地打着朵儿旳-正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉-mo-的流水，遮住了，不能见一些颜色-而叶子却更见风致了。"><a href="#This-is-my-first-blog-路上只我一个人，背着手踱着。这一片天地好像是我的-我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静-爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜-niao-nuo-地开着旳，有羞涩地打着朵儿旳-正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉-mo-的流水，遮住了，不能见一些颜色-而叶子却更见风致了。" class="headerlink" title="This is my first blog 路上只我一个人，背着手踱着。这一片天地好像是我的;我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静;爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜(niǎo,nuó)地开着旳，有羞涩地打着朵儿旳;正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉(mò)的流水，遮住了，不能见一些颜色;而叶子却更见风致了。"></a>This is my first blog 路上只我一个人，背着手踱着。这一片天地好像是我的;我也像超出了平常旳自己，到了另一世界里。我爱热闹，也爱冷静;爱群居，也爱独处。像今晚上，一个人在这苍茫旳月下，什么都可以想，什么都可以不想，便觉是个自由的人。白天里一定要做的事，一定要说的话，现在都可不理。这是独处的妙处，我且受用这无边的荷香月色好了。曲曲折折的荷塘上面，弥望旳是田田的叶子。叶子出水很高，像亭亭旳舞女旳裙。层层的叶子中间，零星地点缀着些白花，有袅娜(niǎo,nuó)地开着旳，有羞涩地打着朵儿旳;正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉(mò)的流水，遮住了，不能见一些颜色;而叶子却更见风致了。</h1><h2 id="welcome-to-you"><a href="#welcome-to-you" class="headerlink" title="welcome to you!"></a>welcome to you!</h2>]]></content>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2024/01/08/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.<br>&lt; !—more—&gt;</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>分支语句-switch</title>
-    <url>/2024/01/17/java-Switch%E8%AF%AD%E5%8F%A5/</url>
-    <content><![CDATA[<h1 id="Switch的语句格式"><a href="#Switch的语句格式" class="headerlink" title="Switch的语句格式"></a>Switch的语句格式</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">switch</span>(表达式) &#123;					<span class="comment">//	表达式的值==case的值</span></span><br><span class="line">	<span class="keyword">case</span> 值<span class="number">1</span>：					<span class="comment">//表达式：取值为byte,short,int,char,枚举(jdk5以后)，String(jdk7以后)</span></span><br><span class="line">		语句体<span class="number">1</span>;				   <span class="comment">// case后面的值只能表示字面量，不能是变量。</span></span><br><span class="line">        <span class="keyword">break</span>;					 <span class="comment">//当switch里面的内容得到一个结果，可以将switch赋值给一个变量</span></span><br><span class="line">    <span class="keyword">case</span> 值<span class="number">2</span>：</span><br><span class="line">		语句体<span class="number">2</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    ......</span><br><span class="line">     <span class="keyword">default</span>:</span><br><span class="line">        语句体n+<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<ol>
-<li><p>default的位置和省略</p>
-<p>位置：default位置随意，习惯写在最下面。</p>
-<p>省略：default可以省略，语法不出差，但不建议。</p>
-</li>
-<li><p>case穿透</p>
-<p>省略break会引起case穿透。</p>
-<p>使用场景：多个case的语句体重复了，那么我们考虑利用case穿透去简化代码。</p>
-</li>
-<li><p>switch的新特性(jdk12)</p>
-<p><strong>case 值1 -&gt;{</strong>    <em>//消除了case穿透，大括号里面<strong>只有一行代码</strong>时，可以省略大括号</em></p>
-<p><strong>}</strong></p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>idea插件集合</title>
     <url>/2024/01/25/idea%E6%8F%92%E4%BB%B6%E9%9B%86%E5%90%88/</url>
     <content><![CDATA[<p>idea插件集合:</p>
@@ -3745,21 +3705,18 @@ cost(h_\Theta(x),y)=\begin{cases} -log(h_\Theta(x)), & \text {if $y$ = 1} \\ -lo
       </tags>
   </entry>
   <entry>
-    <title>GUI图形化用户界面</title>
-    <url>/2024/02/25/java%E5%9F%BA%E7%A1%80-GUI%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2/</url>
-    <content><![CDATA[<p>GUI</p>
-<p>​    JFrame:最外层的窗体</p>
-<p>​    JMenuBar:最上层的菜单</p>
-<p>​    JLabel:管理文字和图片的容器</p>
-<p>​    IMageIcon</p>
-<p>​    取消隐藏容器中居中的默认方式：setLayout(null)</p>
+    <title>Hello World</title>
+    <url>/2024/01/08/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.<br>&lt; !—more—&gt;</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
   </entry>
   <entry>
     <title>面向对象进阶-包-final-权限修饰符-代码块</title>
@@ -3862,6 +3819,49 @@ cost(h_\Theta(x),y)=\begin{cases} -log(h_\Theta(x)), & \text {if $y$ = 1} \\ -lo
 <p>​            特点：需要通过static关键字修饰，随着类的加载而加载，并且自动触发，只执行一次</p>
 <p>​            使用场景：在类加载的时候，做一些数据初始化的时候使用。</p>
 <p>​            应用场景：程序刚开始时进行数据的初始化</p>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>分支语句-switch</title>
+    <url>/2024/01/17/java-Switch%E8%AF%AD%E5%8F%A5/</url>
+    <content><![CDATA[<h1 id="Switch的语句格式"><a href="#Switch的语句格式" class="headerlink" title="Switch的语句格式"></a>Switch的语句格式</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">switch</span>(表达式) &#123;					<span class="comment">//	表达式的值==case的值</span></span><br><span class="line">	<span class="keyword">case</span> 值<span class="number">1</span>：					<span class="comment">//表达式：取值为byte,short,int,char,枚举(jdk5以后)，String(jdk7以后)</span></span><br><span class="line">		语句体<span class="number">1</span>;				   <span class="comment">// case后面的值只能表示字面量，不能是变量。</span></span><br><span class="line">        <span class="keyword">break</span>;					 <span class="comment">//当switch里面的内容得到一个结果，可以将switch赋值给一个变量</span></span><br><span class="line">    <span class="keyword">case</span> 值<span class="number">2</span>：</span><br><span class="line">		语句体<span class="number">2</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    ......</span><br><span class="line">     <span class="keyword">default</span>:</span><br><span class="line">        语句体n+<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol>
+<li><p>default的位置和省略</p>
+<p>位置：default位置随意，习惯写在最下面。</p>
+<p>省略：default可以省略，语法不出差，但不建议。</p>
+</li>
+<li><p>case穿透</p>
+<p>省略break会引起case穿透。</p>
+<p>使用场景：多个case的语句体重复了，那么我们考虑利用case穿透去简化代码。</p>
+</li>
+<li><p>switch的新特性(jdk12)</p>
+<p><strong>case 值1 -&gt;{</strong>    <em>//消除了case穿透，大括号里面<strong>只有一行代码</strong>时，可以省略大括号</em></p>
+<p><strong>}</strong></p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>GUI图形化用户界面</title>
+    <url>/2024/02/25/java%E5%9F%BA%E7%A1%80-GUI%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2/</url>
+    <content><![CDATA[<p>GUI</p>
+<p>​    JFrame:最外层的窗体</p>
+<p>​    JMenuBar:最上层的菜单</p>
+<p>​    JLabel:管理文字和图片的容器</p>
+<p>​    IMageIcon</p>
+<p>​    取消隐藏容器中居中的默认方式：setLayout(null)</p>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -3977,6 +3977,34 @@ cost(h_\Theta(x),y)=\begin{cases} -log(h_\Theta(x)), & \text {if $y$ = 1} \\ -lo
 </li>
 </ol>
 <p>​     </p>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JDK的安装与下载</title>
+    <url>/2024/01/11/java%E5%9F%BA%E7%A1%80-JDK%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%B8%8B%E8%BD%BD/</url>
+    <content><![CDATA[<h1 id="JDK的安装与下载"><a href="#JDK的安装与下载" class="headerlink" title="JDK的安装与下载"></a>JDK的安装与下载</h1><h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><ol>
+<li>网址 www.oracle.com  ,找到Products -&gt; Hardware and Software -&gt; Java-&gt;Download Java -&gt;Java archive（历史版本）/ Java Downloads(最新版本)-&gt;Windows系统下的 x64 Installer-&gt;点击下载</li>
+</ol>
+<h4 id="安装："><a href="#安装：" class="headerlink" title="安装："></a>安装：</h4><ol>
+<li><p>双击打开 点击下一步</p>
+<p><img src="../images/安装001.png" alt=""></p>
+</li>
+<li><p>选择更改安装路径(安装路径不要有中文，空格，和特殊符号)</p>
+<p><img src="../images/安装002.png" alt=""></p>
+</li>
+<li><p>安装成功,点击关闭</p>
+<p><img src="../images/安装003.png" alt=""></p>
+</li>
+<li><p>JDK的安装目录及解释</p>
+<p><img src="../images/安装004.png" alt=""></p>
+</li>
+</ol>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -4114,34 +4142,6 @@ cost(h_\Theta(x),y)=\begin{cases} -log(h_\Theta(x)), & \text {if $y$ = 1} \\ -lo
       </tags>
   </entry>
   <entry>
-    <title>JDK的安装与下载</title>
-    <url>/2024/01/11/java%E5%9F%BA%E7%A1%80-JDK%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%B8%8B%E8%BD%BD/</url>
-    <content><![CDATA[<h1 id="JDK的安装与下载"><a href="#JDK的安装与下载" class="headerlink" title="JDK的安装与下载"></a>JDK的安装与下载</h1><h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><ol>
-<li>网址 www.oracle.com  ,找到Products -&gt; Hardware and Software -&gt; Java-&gt;Download Java -&gt;Java archive（历史版本）/ Java Downloads(最新版本)-&gt;Windows系统下的 x64 Installer-&gt;点击下载</li>
-</ol>
-<h4 id="安装："><a href="#安装：" class="headerlink" title="安装："></a>安装：</h4><ol>
-<li><p>双击打开 点击下一步</p>
-<p><img src="../images/安装001.png" alt=""></p>
-</li>
-<li><p>选择更改安装路径(安装路径不要有中文，空格，和特殊符号)</p>
-<p><img src="../images/安装002.png" alt=""></p>
-</li>
-<li><p>安装成功,点击关闭</p>
-<p><img src="../images/安装003.png" alt=""></p>
-</li>
-<li><p>JDK的安装目录及解释</p>
-<p><img src="../images/安装004.png" alt=""></p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>分支语句-if</title>
     <url>/2024/01/16/java%E5%9F%BA%E7%A1%80-if%E8%AF%AD%E5%8F%A5/</url>
     <content><![CDATA[<h1 id="流程控制语句"><a href="#流程控制语句" class="headerlink" title="流程控制语句"></a>流程控制语句</h1><ol>
@@ -4246,6 +4246,26 @@ cost(h_\Theta(x),y)=\begin{cases} -log(h_\Theta(x)), & \text {if $y$ = 1} \\ -lo
       </tags>
   </entry>
   <entry>
+    <title>源码-反码-补码</title>
+    <url>/2024/01/16/java%E5%9F%BA%E7%A1%80-%E5%8E%9F%E7%A0%81%E5%8F%8D%E7%A0%81%E8%A1%A5%E7%A0%81/</url>
+    <content><![CDATA[<h1 id="原码-反码-补码"><a href="#原码-反码-补码" class="headerlink" title="原码/反码/补码"></a>原码/反码/补码</h1><p>符号位：0正1负</p>
+<p>计算机中数字的存储和计算都是以补码的形式进行的。</p>
+<p><strong>原码</strong>：十进制数据的二进制表现形式，最左边的是符号位，0为正，1为负。</p>
+<p>​        利用原码对正数进行计算是不会有问题的，但是如果是<strong>负数计算，结果就会出错</strong>，实际运算的结果，跟我们预期的结果是相反的。</p>
+<p><strong>反码</strong>：为了解决原码不能计算负数的问题而出现的。</p>
+<p>计算规则：正数的反码不变，负数的反码在原码的基础上，符号位不变。数值取反，0变1，1变0；</p>
+<p>计算结果跨零时(-5+6=0),有可能存在误差。因为在反码中0有两种表现形式，<strong>+0</strong>(0000 0000),-<strong>0</strong>(1111 1111)</p>
+<p><strong>补码：</strong>屏蔽掉0的两种表现形式.使得+0和-0只有一种表现形式，实现方式是负数的反码加1.</p>
+<p><img src="../images/3-01.png" alt="原反补"></p>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>字符串相关类的底层原理</title>
     <url>/2024/02/07/java%E5%9F%BA%E7%A1%80-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9B%B8%E5%85%B3%E7%B1%BB%E7%9A%84%E5%BA%95%E5%B1%82%E5%8E%9F%E7%90%86/</url>
     <content><![CDATA[<h1 id="字符串相关类的底层原理："><a href="#字符串相关类的底层原理：" class="headerlink" title="字符串相关类的底层原理："></a>字符串相关类的底层原理：</h1><p><strong>1.字符串存储的内存原理</strong></p>
@@ -4265,26 +4285,6 @@ cost(h_\Theta(x),y)=\begin{cases} -log(h_\Theta(x)), & \text {if $y$ = 1} \\ -lo
 <p>​    <img src="C:\Users\Administrator\Desktop\微信截图_20240207073607.png" alt=""></p>
 <p><strong>5.StringBuilder源码分析</strong></p>
 <p>默认创建一个长度为16的字节数组，添加的内容长度小于16，直接存，添加的内容大于16会扩容(原来的内容*2+2)，如果扩容之后还不够，以实际长度为准。</p>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>源码-反码-补码</title>
-    <url>/2024/01/16/java%E5%9F%BA%E7%A1%80-%E5%8E%9F%E7%A0%81%E5%8F%8D%E7%A0%81%E8%A1%A5%E7%A0%81/</url>
-    <content><![CDATA[<h1 id="原码-反码-补码"><a href="#原码-反码-补码" class="headerlink" title="原码/反码/补码"></a>原码/反码/补码</h1><p>符号位：0正1负</p>
-<p>计算机中数字的存储和计算都是以补码的形式进行的。</p>
-<p><strong>原码</strong>：十进制数据的二进制表现形式，最左边的是符号位，0为正，1为负。</p>
-<p>​        利用原码对正数进行计算是不会有问题的，但是如果是<strong>负数计算，结果就会出错</strong>，实际运算的结果，跟我们预期的结果是相反的。</p>
-<p><strong>反码</strong>：为了解决原码不能计算负数的问题而出现的。</p>
-<p>计算规则：正数的反码不变，负数的反码在原码的基础上，符号位不变。数值取反，0变1，1变0；</p>
-<p>计算结果跨零时(-5+6=0),有可能存在误差。因为在反码中0有两种表现形式，<strong>+0</strong>(0000 0000),-<strong>0</strong>(1111 1111)</p>
-<p><strong>补码：</strong>屏蔽掉0的两种表现形式.使得+0和-0只有一种表现形式，实现方式是负数的反码加1.</p>
-<p><img src="../images/3-01.png" alt="原反补"></p>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -4328,6 +4328,23 @@ cost(h_\Theta(x),y)=\begin{cases} -log(h_\Theta(x)), & \text {if $y$ = 1} \\ -lo
 </ul>
 <p>​        </p>
 ]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>循环语句</title>
+    <url>/2024/01/18/java%E5%9F%BA%E7%A1%80-%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5(for&amp;while)/</url>
+    <content><![CDATA[<h1 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h1><h4 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(初始化语句;条件判断语句;条件控制语句)&#123;</span><br><span class="line">    循环体语句;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>初始化语句只执行一次，判断语句为true，循环继续，判断语句为false，循环结束。</p>
+<h4 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">初始化语句;</span><br><span class="line"><span class="keyword">while</span>(条件判断语句)&#123;</span><br><span class="line">	循环体语句;</span><br><span class="line">	条件控制语句;</span><br><span class="line">&#125;</span><br><span class="line">循环下面的其他语句;</span><br></pre></td></tr></table></figure>
+<h4 id="区别："><a href="#区别：" class="headerlink" title="区别："></a>区别：</h4><pre><code>1. 运行规则都是一样的
+1. for循环中，控制循环的变量，因为归属for循环的语法结构中 在for循环结束中，就不能再次被访问到了。**（已知循环次数或者范围）**
+1. while循环中，控制循环的变量，对于while循环来说不归属其语法结构中，在while循环结束后，该变量还可以继续使用。**(不知道循环次数和范围，只知道循环的结束条件 )**
+</code></pre>]]></content>
       <categories>
         <category>Java基础</category>
       </categories>
@@ -4397,23 +4414,6 @@ cost(h_\Theta(x),y)=\begin{cases} -log(h_\Theta(x)), & \text {if $y$ = 1} \\ -lo
 <p>​    特点:可以接收空格，制表符，遇到回车才停止接收数据。</p>
 <p>弊端:先用nextInt,再用nextLine会导致下面的nextLine接收不到数据。</p>
 ]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>循环语句</title>
-    <url>/2024/01/18/java%E5%9F%BA%E7%A1%80-%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5(for&amp;while)/</url>
-    <content><![CDATA[<h1 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h1><h4 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(初始化语句;条件判断语句;条件控制语句)&#123;</span><br><span class="line">    循环体语句;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>初始化语句只执行一次，判断语句为true，循环继续，判断语句为false，循环结束。</p>
-<h4 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">初始化语句;</span><br><span class="line"><span class="keyword">while</span>(条件判断语句)&#123;</span><br><span class="line">	循环体语句;</span><br><span class="line">	条件控制语句;</span><br><span class="line">&#125;</span><br><span class="line">循环下面的其他语句;</span><br></pre></td></tr></table></figure>
-<h4 id="区别："><a href="#区别：" class="headerlink" title="区别："></a>区别：</h4><pre><code>1. 运行规则都是一样的
-1. for循环中，控制循环的变量，因为归属for循环的语法结构中 在for循环结束中，就不能再次被访问到了。**（已知循环次数或者范围）**
-1. while循环中，控制循环的变量，对于while循环来说不归属其语法结构中，在while循环结束后，该变量还可以继续使用。**(不知道循环次数和范围，只知道循环的结束条件 )**
-</code></pre>]]></content>
       <categories>
         <category>Java基础</category>
       </categories>
@@ -4668,6 +4668,18 @@ cost(h_\Theta(x),y)=\begin{cases} -log(h_\Theta(x)), & \text {if $y$ = 1} \\ -lo
       </tags>
   </entry>
   <entry>
+    <title>跳出多重循环</title>
+    <url>/2024/02/11/java%E5%9F%BA%E7%A1%80-%E8%B7%B3%E5%87%BA%E5%A4%9A%E9%87%8D%E5%BE%AA%E7%8E%AF/</url>
+    <content><![CDATA[<p>loop:while (true) {<br>Scanner sc = new Scanner(System.in);<br>System.out.println(“请输入您的选择:”);<br>String result = sc.next();<br>switch (result){<br>    case “5”-&gt; {<br>                    System.out.println(“退出”);<br>                    break loop;<br>                }<br>}<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">停止虚拟机运行</span><br><span class="line"></span><br><span class="line">```java</span><br><span class="line">while (true) &#123;</span><br><span class="line">Scanner sc = new Scanner(System.in);</span><br><span class="line">System.out.println(&quot;请输入您的选择:&quot;);</span><br><span class="line">String result = sc.next();</span><br><span class="line">switch (result)&#123;</span><br><span class="line">	case &quot;5&quot;-&gt; &#123;</span><br><span class="line">                    System.out.println(&quot;退出&quot;);</span><br><span class="line">                    System.exit(0);</span><br><span class="line">                &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>编译和运行</title>
     <url>/2024/01/12/java%E5%9F%BA%E7%A1%80-%E7%BC%96%E8%AF%91%E8%BF%90%E8%A1%8C/</url>
     <content><![CDATA[<h1 id="编译和运行"><a href="#编译和运行" class="headerlink" title="编译和运行"></a>编译和运行</h1><ol>
@@ -4678,18 +4690,6 @@ cost(h_\Theta(x),y)=\begin{cases} -log(h_\Theta(x)), & \text {if $y$ = 1} \\ -lo
 <p><img src="../images/编译运行002.png" alt=""></p>
 </li>
 </ol>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>跳出多重循环</title>
-    <url>/2024/02/11/java%E5%9F%BA%E7%A1%80-%E8%B7%B3%E5%87%BA%E5%A4%9A%E9%87%8D%E5%BE%AA%E7%8E%AF/</url>
-    <content><![CDATA[<p>loop:while (true) {<br>Scanner sc = new Scanner(System.in);<br>System.out.println(“请输入您的选择:”);<br>String result = sc.next();<br>switch (result){<br>    case “5”-&gt; {<br>                    System.out.println(“退出”);<br>                    break loop;<br>                }<br>}<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">停止虚拟机运行</span><br><span class="line"></span><br><span class="line">```java</span><br><span class="line">while (true) &#123;</span><br><span class="line">Scanner sc = new Scanner(System.in);</span><br><span class="line">System.out.println(&quot;请输入您的选择:&quot;);</span><br><span class="line">String result = sc.next();</span><br><span class="line">switch (result)&#123;</span><br><span class="line">	case &quot;5&quot;-&gt; &#123;</span><br><span class="line">                    System.out.println(&quot;退出&quot;);</span><br><span class="line">                    System.exit(0);</span><br><span class="line">                &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -4913,28 +4913,6 @@ cost(h_\Theta(x),y)=\begin{cases} -log(h_\Theta(x)), & \text {if $y$ = 1} \\ -lo
       </tags>
   </entry>
   <entry>
-    <title>面向对象进阶-抽象类和抽象方法</title>
-    <url>/2024/02/23/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E6%8A%BD%E8%B1%A1%E7%B1%BB%E5%92%8C%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<p>抽象类：抽象方法所在的类叫做抽象类，子类必须强制重写，否则子类代码直接报错</p>
-<p>定义格式：public abstract class 类名{}</p>
-<p>抽象方法：将共性的行为抽取到父类之后，由于每一个子类执行的内容是不一样，所以，<strong>在父类中不能确定具体的方法体</strong>，该方法就可以定义为抽象方法。</p>
-<p>定义格式：public abstract 返回值类型 方法名(参数列表)；alt+回车</p>
-<p>注意事项：1.抽象类不能实例化-不能创建对象</p>
-<p>​           2.抽象类中不一定有抽象方法，但是抽象方法的类一定是抽象类</p>
-<p>​           3.可能有构造方法</p>
-<p>​           4.<strong>抽象类的子类</strong></p>
-<p>​                <strong>要么重写抽象类中的所有抽象方法</strong>(推荐使用)</p>
-<p>​                要么是抽象类</p>
-<p>意义：强制子类必须按照统一格式书写</p>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>面向对象进阶-内部类</title>
     <url>/2024/02/23/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E5%86%85%E9%83%A8%E7%B1%BB/</url>
     <content><![CDATA[<p>内部类—是类的五大成员之一(属性，方法，构造方法，内部类)，在一个类的里面，在定义一个类。</p>
@@ -4966,6 +4944,84 @@ cost(h_\Theta(x),y)=\begin{cases} -log(h_\Theta(x)), & \text {if $y$ = 1} \\ -lo
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//格式</span></span><br><span class="line"><span class="keyword">new</span> 类名或接口名()&#123;</span><br><span class="line">    重写方法;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">//包含了继承或实现，方法重写，创建对象</span></span><br><span class="line"><span class="comment">//整体就是一个类的子类对象或者接口的实现类对象</span></span><br></pre></td></tr></table></figure>
 <p><img src="../images/java基础-面向对象进阶-内部类/微信截图_20240225202806.png" alt="接口"></p>
 <p>使用场景：当方法的参数是接口或类时，以接口为例，可以传递这个接口的实现类对象，如果实现类只要使用一次，就可以用匿名内部类简化代码。</p>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>面向对象进阶-抽象类和抽象方法</title>
+    <url>/2024/02/23/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E6%8A%BD%E8%B1%A1%E7%B1%BB%E5%92%8C%E6%8A%BD%E8%B1%A1%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<p>抽象类：抽象方法所在的类叫做抽象类，子类必须强制重写，否则子类代码直接报错</p>
+<p>定义格式：public abstract class 类名{}</p>
+<p>抽象方法：将共性的行为抽取到父类之后，由于每一个子类执行的内容是不一样，所以，<strong>在父类中不能确定具体的方法体</strong>，该方法就可以定义为抽象方法。</p>
+<p>定义格式：public abstract 返回值类型 方法名(参数列表)；alt+回车</p>
+<p>注意事项：1.抽象类不能实例化-不能创建对象</p>
+<p>​           2.抽象类中不一定有抽象方法，但是抽象方法的类一定是抽象类</p>
+<p>​           3.可能有构造方法</p>
+<p>​           4.<strong>抽象类的子类</strong></p>
+<p>​                <strong>要么重写抽象类中的所有抽象方法</strong>(推荐使用)</p>
+<p>​                要么是抽象类</p>
+<p>意义：强制子类必须按照统一格式书写</p>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>面向对象进阶-接口</title>
+    <url>/2024/02/23/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E6%8E%A5%E5%8F%A3/</url>
+    <content><![CDATA[<p><strong>接口：</strong>就是一种规则，对行为的抽象。</p>
+<p><img src="C:\Users\Administrator\Desktop\MyBlog\source\images\微信截图_20240223135234.png" alt=""></p>
+<p><strong>如何定义</strong>：</p>
+<p>​    接口用关键字interface来定义，<strong>public interface 接口名{ }</strong></p>
+<p>​    <strong>接口不能实例化</strong></p>
+<p>​    接口和类之间是实现关系，通过<strong>implements</strong>关键字表示，<strong>public class 类名 implements 接口名{}</strong></p>
+<p>​    接口的子类称为实现类</p>
+<p>​        <strong>要么重写接口中的所有抽象方法。</strong></p>
+<p>​        要么是抽象类。</p>
+<p><strong>注意点1</strong>：接口和类的实现关系，可以单实现，也可以多实现。<strong>pubic class 类名 implements 接口名1 ，接口名2{ }</strong></p>
+<p><strong>注意到2</strong>：实现类还可以在继承一个类的同时实现多个接口。<strong>public class 类名 extends 父类 implements 接口名1，接口名2{}</strong></p>
+<p><strong>如何使用：</strong></p>
+<p>​    方法可以是抽象类，默认类，静态类</p>
+<p><strong>成员特点：</strong></p>
+<p>​    成员变量：接口中的成员变量只能是常量，默认修饰符：public static final</p>
+<p>​    构造方法：没有，因为接口不能创建对象，而且接口当中也不需要给子类去赋值。</p>
+<p>​    成员方法：只能是抽象方法，默认修饰符：public abstract</p>
+<p>​              JDK7以前：接口中只能定义抽象方法。</p>
+<p>​              JDK8的新特性：接口中可以定义有方法体的方法(<strong>默认，静态</strong>)。</p>
+<p>​                <strong>默认</strong></p>
+<p>​                作用：加新规则and代码不报错，解决接口升级问题</p>
+<p>​                <strong>注意事项</strong>：默认方法不是抽象方法，所以不强制被重写，但是如果被重写，重写的时候去掉default关键字。</p>
+<p>​                           public可以省略，default不能省略。</p>
+<p>​                           如果实现了多个接口，<em>多个接口中</em>存在相同名字的默认方法，子类就必须对该方法进行重写。</p>
+<p>​                <strong>静态</strong></p>
+<p>​                作用：运行在接口中定义静态方法，需要用static修饰</p>
+<p>​                接口中静态方法的定义格式：public static 返回值类型 方法名(参数列表){    }</p>
+<p>​                <strong>注意事项</strong>：静态方法只能通过接口名调用，不能通过实现类名或者对象名调用。</p>
+<p>​                           public可以省略，static不能省略。</p>
+<p>​              JDK9的新特性：接口中可以定义私有方法。</p>
+<p>​                需求：抽取出来的<strong>重复代码</strong>无需被外界调用，可以设置为私有方法，此方法只为Inter接口提供服务，不需要外类访问。//普通的私有方法，给默认方法服务，，静态的私有方法，给静态方法服务</p>
+<p>​                格式1：private 返回值类型 方法名(参数列表){}</p>
+<p>​                格式2：private static 返回值类型 方法名(参数列表){}</p>
+<p><strong>接口和类之间的关系：</strong></p>
+<p>​    类和类的关系：继承关系，只能单继承，不能多继承，但是可以多层继承</p>
+<p>​    类和接口的关系：实现关系，可以单实现，也可以多实现，还可以在继承一个类的同时实现多个接口</p>
+<p>​    接口和接口的关系：继承关系，可以单继承，也可以多继承。</p>
+<p><strong>接口的应用：</strong></p>
+<p>​    1.接口代表规则，是行为的抽象。想要让哪一个类拥有一个行为，就让这个类实现对应的接口就可以了。</p>
+<p>​    2.当一个方法的参数是接口时，可以传递接口所有实现类的对象，这种方式称为接口多态。</p>
+<p><strong>适配器设计模式</strong>：</p>
+<p>​    设计模式是一套被反复使用，多数人知晓的，经过分类编目的，代码设计经验的总结。使用设计模式是为了可重用代码，让代码更容易被他人理解，保证代码可靠性，程序的重用性。简单来说，设计模式就是各种套路。</p>
+<p>​    适配器设计模式：解决接口与接口实现类之间的矛盾问题</p>
+<p>​            1.当接口中抽象方法较多，而你执行操作其他一个，这时在实现类，就需要重写全部方法，影响阅读和操作，可以新建一个抽象类来存储所有的重写方法(空实现，即方法体空着)，然后让实现类来继承这个类，这时实现类就可以任意重写某一个方法。</p>
+<p>（为了避免其他类创建适配器类的对象，中间的适配器类用abstract进行修饰）</p>
 ]]></content>
       <categories>
         <category>Java基础</category>
@@ -5099,62 +5155,6 @@ cost(h_\Theta(x),y)=\begin{cases} -log(h_\Theta(x)), & \text {if $y$ = 1} \\ -lo
       </tags>
   </entry>
   <entry>
-    <title>面向对象进阶-接口</title>
-    <url>/2024/02/23/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6-%E6%8E%A5%E5%8F%A3/</url>
-    <content><![CDATA[<p><strong>接口：</strong>就是一种规则，对行为的抽象。</p>
-<p><img src="C:\Users\Administrator\Desktop\MyBlog\source\images\微信截图_20240223135234.png" alt=""></p>
-<p><strong>如何定义</strong>：</p>
-<p>​    接口用关键字interface来定义，<strong>public interface 接口名{ }</strong></p>
-<p>​    <strong>接口不能实例化</strong></p>
-<p>​    接口和类之间是实现关系，通过<strong>implements</strong>关键字表示，<strong>public class 类名 implements 接口名{}</strong></p>
-<p>​    接口的子类称为实现类</p>
-<p>​        <strong>要么重写接口中的所有抽象方法。</strong></p>
-<p>​        要么是抽象类。</p>
-<p><strong>注意点1</strong>：接口和类的实现关系，可以单实现，也可以多实现。<strong>pubic class 类名 implements 接口名1 ，接口名2{ }</strong></p>
-<p><strong>注意到2</strong>：实现类还可以在继承一个类的同时实现多个接口。<strong>public class 类名 extends 父类 implements 接口名1，接口名2{}</strong></p>
-<p><strong>如何使用：</strong></p>
-<p>​    方法可以是抽象类，默认类，静态类</p>
-<p><strong>成员特点：</strong></p>
-<p>​    成员变量：接口中的成员变量只能是常量，默认修饰符：public static final</p>
-<p>​    构造方法：没有，因为接口不能创建对象，而且接口当中也不需要给子类去赋值。</p>
-<p>​    成员方法：只能是抽象方法，默认修饰符：public abstract</p>
-<p>​              JDK7以前：接口中只能定义抽象方法。</p>
-<p>​              JDK8的新特性：接口中可以定义有方法体的方法(<strong>默认，静态</strong>)。</p>
-<p>​                <strong>默认</strong></p>
-<p>​                作用：加新规则and代码不报错，解决接口升级问题</p>
-<p>​                <strong>注意事项</strong>：默认方法不是抽象方法，所以不强制被重写，但是如果被重写，重写的时候去掉default关键字。</p>
-<p>​                           public可以省略，default不能省略。</p>
-<p>​                           如果实现了多个接口，<em>多个接口中</em>存在相同名字的默认方法，子类就必须对该方法进行重写。</p>
-<p>​                <strong>静态</strong></p>
-<p>​                作用：运行在接口中定义静态方法，需要用static修饰</p>
-<p>​                接口中静态方法的定义格式：public static 返回值类型 方法名(参数列表){    }</p>
-<p>​                <strong>注意事项</strong>：静态方法只能通过接口名调用，不能通过实现类名或者对象名调用。</p>
-<p>​                           public可以省略，static不能省略。</p>
-<p>​              JDK9的新特性：接口中可以定义私有方法。</p>
-<p>​                需求：抽取出来的<strong>重复代码</strong>无需被外界调用，可以设置为私有方法，此方法只为Inter接口提供服务，不需要外类访问。//普通的私有方法，给默认方法服务，，静态的私有方法，给静态方法服务</p>
-<p>​                格式1：private 返回值类型 方法名(参数列表){}</p>
-<p>​                格式2：private static 返回值类型 方法名(参数列表){}</p>
-<p><strong>接口和类之间的关系：</strong></p>
-<p>​    类和类的关系：继承关系，只能单继承，不能多继承，但是可以多层继承</p>
-<p>​    类和接口的关系：实现关系，可以单实现，也可以多实现，还可以在继承一个类的同时实现多个接口</p>
-<p>​    接口和接口的关系：继承关系，可以单继承，也可以多继承。</p>
-<p><strong>接口的应用：</strong></p>
-<p>​    1.接口代表规则，是行为的抽象。想要让哪一个类拥有一个行为，就让这个类实现对应的接口就可以了。</p>
-<p>​    2.当一个方法的参数是接口时，可以传递接口所有实现类的对象，这种方式称为接口多态。</p>
-<p><strong>适配器设计模式</strong>：</p>
-<p>​    设计模式是一套被反复使用，多数人知晓的，经过分类编目的，代码设计经验的总结。使用设计模式是为了可重用代码，让代码更容易被他人理解，保证代码可靠性，程序的重用性。简单来说，设计模式就是各种套路。</p>
-<p>​    适配器设计模式：解决接口与接口实现类之间的矛盾问题</p>
-<p>​            1.当接口中抽象方法较多，而你执行操作其他一个，这时在实现类，就需要重写全部方法，影响阅读和操作，可以新建一个抽象类来存储所有的重写方法(空实现，即方法体空着)，然后让实现类来继承这个类，这时实现类就可以任意重写某一个方法。</p>
-<p>（为了避免其他类创建适配器类的对象，中间的适配器类用abstract进行修饰）</p>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>面向对象进阶main()方法的进一步理解</title>
     <url>/2024/02/19/java%E5%9F%BA%E7%A1%80-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6main()%E6%96%B9%E6%B3%95%E7%9A%84%E8%BF%9B%E4%B8%80%E6%AD%A5%E7%90%86%E8%A7%A3/</url>
     <content><![CDATA[<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">public:被JVM(虚拟机)调用，访问权限足够大</span></span><br><span class="line"><span class="comment">static:被JVM调用，不用创建对象，直接类名访问，因为main()方法是静态的，所以测试类中其他方法也需要是静态的</span></span><br><span class="line"><span class="comment">void:被JVM调用，不需要给JVM返回值</span></span><br><span class="line"><span class="comment">main:一个通用的名称，虽然不是关键字，但是被JVM识别</span></span><br><span class="line"><span class="comment">String[] args:以前用于接收键盘录入数据的，现在没用。</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>]]></content>
@@ -5163,17 +5163,6 @@ cost(h_\Theta(x),y)=\begin{cases} -log(h_\Theta(x)), & \text {if $y$ = 1} \\ -lo
       </categories>
       <tags>
         <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>回文数的计算</title>
-    <url>/2024/01/18/%E5%9B%9E%E6%96%87%E6%95%B0/</url>
-    <content><![CDATA[<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> com.itheima.struct;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">PalindromeNumber</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="comment">//需求:给你一个整数x</span></span><br><span class="line">        <span class="comment">//如果x是一个回文整数，打印true，否则，返回false。</span></span><br><span class="line">        <span class="comment">//解释：回文数是指正序(从左向右)和倒序(从右向左)读都是一样的整数。</span></span><br><span class="line">        <span class="comment">//例如，121是回文，而123不是</span></span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        System.out.println(<span class="string">&quot;请输入一个整数&quot;</span>);</span><br><span class="line">        <span class="type">int</span> <span class="variable">number</span> <span class="operator">=</span> sc.nextInt();</span><br><span class="line">        <span class="type">int</span> reverse=<span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> origin=number;</span><br><span class="line">        <span class="type">int</span> k;</span><br><span class="line">        <span class="comment">//思路：翻转后的数字等于翻转前的数字</span></span><br><span class="line">        <span class="keyword">while</span> (number != <span class="number">0</span>)&#123;</span><br><span class="line">            k=number%<span class="number">10</span>;</span><br><span class="line">            reverse=reverse*<span class="number">10</span>+k;</span><br><span class="line">            number/=<span class="number">10</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (origin==reverse)&#123;</span><br><span class="line">            System.out.println(origin+<span class="string">&quot;是回文数&quot;</span>);</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            System.out.println(origin+<span class="string">&quot;不是回文数&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>经典算法思想</category>
-      </categories>
-      <tags>
-        <tag>算法思想</tag>
       </tags>
   </entry>
   <entry>
@@ -5219,6 +5208,17 @@ cost(h_\Theta(x),y)=\begin{cases} -log(h_\Theta(x)), & \text {if $y$ = 1} \\ -lo
       </categories>
       <tags>
         <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>回文数的计算</title>
+    <url>/2024/01/18/%E5%9B%9E%E6%96%87%E6%95%B0/</url>
+    <content><![CDATA[<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> com.itheima.struct;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">PalindromeNumber</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="comment">//需求:给你一个整数x</span></span><br><span class="line">        <span class="comment">//如果x是一个回文整数，打印true，否则，返回false。</span></span><br><span class="line">        <span class="comment">//解释：回文数是指正序(从左向右)和倒序(从右向左)读都是一样的整数。</span></span><br><span class="line">        <span class="comment">//例如，121是回文，而123不是</span></span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        System.out.println(<span class="string">&quot;请输入一个整数&quot;</span>);</span><br><span class="line">        <span class="type">int</span> <span class="variable">number</span> <span class="operator">=</span> sc.nextInt();</span><br><span class="line">        <span class="type">int</span> reverse=<span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> origin=number;</span><br><span class="line">        <span class="type">int</span> k;</span><br><span class="line">        <span class="comment">//思路：翻转后的数字等于翻转前的数字</span></span><br><span class="line">        <span class="keyword">while</span> (number != <span class="number">0</span>)&#123;</span><br><span class="line">            k=number%<span class="number">10</span>;</span><br><span class="line">            reverse=reverse*<span class="number">10</span>+k;</span><br><span class="line">            number/=<span class="number">10</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (origin==reverse)&#123;</span><br><span class="line">            System.out.println(origin+<span class="string">&quot;是回文数&quot;</span>);</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            System.out.println(origin+<span class="string">&quot;不是回文数&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>经典算法思想</category>
+      </categories>
+      <tags>
+        <tag>算法思想</tag>
       </tags>
   </entry>
   <entry>
@@ -5829,14 +5829,11 @@ cost(h_\Theta(x),y)=\begin{cases} -log(h_\Theta(x)), & \text {if $y$ = 1} \\ -lo
       </tags>
   </entry>
   <entry>
-    <title>生成验证码</title>
-    <url>/2024/02/19/%E7%94%9F%E6%88%90%E9%AA%8C%E8%AF%81%E7%A0%81/</url>
-    <content><![CDATA[<h4 id="验证码规则："><a href="#验证码规则：" class="headerlink" title="验证码规则："></a>验证码规则：</h4><p>​    长度为5</p>
-<p>​    由4位大写或者小写字母和1位数字组成，同一个字母可重复</p>
-<p>​    数字可以出现在任意位置</p>
-<p>比如：aQa1K</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> String <span class="title function_">getVericode</span><span class="params">()</span> &#123;</span><br><span class="line">    	<span class="comment">//1.创建一个集合添加所有的大写和小写字母</span></span><br><span class="line">    	ArrayList&lt;Character&gt; list=<span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br><span class="line">    	<span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span> ; i&lt;<span class="number">26</span> ; i++)&#123;</span><br><span class="line">            list.add((<span class="type">char</span>)(<span class="string">&#x27;a&#x27;</span>+i));</span><br><span class="line">            list.add((<span class="type">char</span>)(<span class="string">&#x27;A&#x27;</span>+i));</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">StringBuffer</span> <span class="variable">sb</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">StringBuffer</span>();</span><br><span class="line">        <span class="type">Random</span> <span class="variable">rd</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Random</span>();</span><br><span class="line">        <span class="comment">//2.要随机抽取4个字符</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; <span class="number">4</span>; i++) &#123;</span><br><span class="line">            <span class="comment">//获取随机索引</span></span><br><span class="line">            <span class="type">int</span> index=rd.nextInt(list.size());</span><br><span class="line">            <span class="comment">//利用索引获取字符</span></span><br><span class="line">            <span class="type">char</span> c=list.get(index);</span><br><span class="line">            sb.append(c);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//3.生成1位随机数字</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">number</span> <span class="operator">=</span> rd.nextInt(<span class="number">10</span>); <span class="comment">// 生成0到9之间的随机数字</span></span><br><span class="line">    	sb.append(number);</span><br><span class="line">    	<span class="comment">//4.将字符串变成字符数组，然后再新建一个新的字符串</span></span><br><span class="line">    	<span class="type">char</span>[] arr=sb.toString().toCharArray();</span><br><span class="line">    	<span class="comment">//拿着最后一个索引，跟随机索引进行交换</span></span><br><span class="line">    	<span class="type">int</span> randomIndex=rd.nextInt(arr.length);</span><br><span class="line">        <span class="comment">//最大索引指向的元素，跟随机索引指向的元素交换</span></span><br><span class="line">    	<span class="type">char</span> temp=arr[randomIndex];</span><br><span class="line">        arr[randomIndex]=arr[arr.length-<span class="number">1</span>];</span><br><span class="line">    	arr[arr.length-<span class="number">1</span>]=temp;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">String</span>(arr);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-]]></content>
+    <title>生成随机且不重复的数据</title>
+    <url>/2024/01/24/%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E4%B8%94%E4%B8%8D%E9%87%8D%E5%A4%8D%E7%9A%84%E6%95%B0%E6%8D%AE/</url>
+    <content><![CDATA[<p>创建大小为 x的 int 的空数组；<br>调用 random 产生随机数字；<br>当产生的随机数和数组中的元素没有重复的时候，放进去，即可；</p>
+<h1 id="1-判断随机数字在数组中是否存在"><a href="#1-判断随机数字在数组中是否存在" class="headerlink" title="1.判断随机数字在数组中是否存在"></a>1.判断随机数字在数组中是否存在</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">boolean</span> <span class="title function_">contain</span><span class="params">(<span class="type">int</span> [] arr,<span class="type">int</span> number)</span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (arr[i]==number)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="2-当产生的随机数和数组中的元素没有重复的时候，放入数组"><a href="#2-当产生的随机数和数组中的元素没有重复的时候，放入数组" class="headerlink" title="2.当产生的随机数和数组中的元素没有重复的时候，放入数组"></a>2.当产生的随机数和数组中的元素没有重复的时候，放入数组</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span>[] createNumber()&#123;</span><br><span class="line">    <span class="comment">//1.创建数组用于添加中奖号码，六个红球1个蓝球，数组长度为7</span></span><br><span class="line">    <span class="type">int</span>[] arr=<span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">7</span>];</span><br><span class="line">    <span class="comment">//2.生成随机数字，红球的号码不能重复，蓝球的号码可以和红球重复</span></span><br><span class="line">    <span class="type">Random</span> <span class="variable">r</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Random</span>();</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; <span class="number">6</span>;) &#123;</span><br><span class="line">        <span class="type">int</span>  <span class="variable">red</span> <span class="operator">=</span> r.nextInt(<span class="number">33</span>)+<span class="number">1</span>;<span class="comment">//红球号码从1-33中选择，且不能重复。</span></span><br><span class="line">        <span class="type">boolean</span> <span class="variable">flag</span> <span class="operator">=</span> contain(arr, red);</span><br><span class="line">        <span class="keyword">if</span> (!flag)&#123;</span><br><span class="line">            arr[i]=red;</span><br><span class="line">            i++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; <span class="number">6</span>; i++) &#123;</span><br><span class="line">        System.out.println(arr[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> arr;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>经典算法思想</category>
       </categories>
@@ -5845,11 +5842,14 @@ cost(h_\Theta(x),y)=\begin{cases} -log(h_\Theta(x)), & \text {if $y$ = 1} \\ -lo
       </tags>
   </entry>
   <entry>
-    <title>生成随机且不重复的数据</title>
-    <url>/2024/01/24/%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E4%B8%94%E4%B8%8D%E9%87%8D%E5%A4%8D%E7%9A%84%E6%95%B0%E6%8D%AE/</url>
-    <content><![CDATA[<p>创建大小为 x的 int 的空数组；<br>调用 random 产生随机数字；<br>当产生的随机数和数组中的元素没有重复的时候，放进去，即可；</p>
-<h1 id="1-判断随机数字在数组中是否存在"><a href="#1-判断随机数字在数组中是否存在" class="headerlink" title="1.判断随机数字在数组中是否存在"></a>1.判断随机数字在数组中是否存在</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">boolean</span> <span class="title function_">contain</span><span class="params">(<span class="type">int</span> [] arr,<span class="type">int</span> number)</span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (arr[i]==number)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h1 id="2-当产生的随机数和数组中的元素没有重复的时候，放入数组"><a href="#2-当产生的随机数和数组中的元素没有重复的时候，放入数组" class="headerlink" title="2.当产生的随机数和数组中的元素没有重复的时候，放入数组"></a>2.当产生的随机数和数组中的元素没有重复的时候，放入数组</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span>[] createNumber()&#123;</span><br><span class="line">    <span class="comment">//1.创建数组用于添加中奖号码，六个红球1个蓝球，数组长度为7</span></span><br><span class="line">    <span class="type">int</span>[] arr=<span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">7</span>];</span><br><span class="line">    <span class="comment">//2.生成随机数字，红球的号码不能重复，蓝球的号码可以和红球重复</span></span><br><span class="line">    <span class="type">Random</span> <span class="variable">r</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Random</span>();</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; <span class="number">6</span>;) &#123;</span><br><span class="line">        <span class="type">int</span>  <span class="variable">red</span> <span class="operator">=</span> r.nextInt(<span class="number">33</span>)+<span class="number">1</span>;<span class="comment">//红球号码从1-33中选择，且不能重复。</span></span><br><span class="line">        <span class="type">boolean</span> <span class="variable">flag</span> <span class="operator">=</span> contain(arr, red);</span><br><span class="line">        <span class="keyword">if</span> (!flag)&#123;</span><br><span class="line">            arr[i]=red;</span><br><span class="line">            i++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; <span class="number">6</span>; i++) &#123;</span><br><span class="line">        System.out.println(arr[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> arr;</span><br></pre></td></tr></table></figure>]]></content>
+    <title>生成验证码</title>
+    <url>/2024/02/19/%E7%94%9F%E6%88%90%E9%AA%8C%E8%AF%81%E7%A0%81/</url>
+    <content><![CDATA[<h4 id="验证码规则："><a href="#验证码规则：" class="headerlink" title="验证码规则："></a>验证码规则：</h4><p>​    长度为5</p>
+<p>​    由4位大写或者小写字母和1位数字组成，同一个字母可重复</p>
+<p>​    数字可以出现在任意位置</p>
+<p>比如：aQa1K</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> String <span class="title function_">getVericode</span><span class="params">()</span> &#123;</span><br><span class="line">    	<span class="comment">//1.创建一个集合添加所有的大写和小写字母</span></span><br><span class="line">    	ArrayList&lt;Character&gt; list=<span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br><span class="line">    	<span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span> ; i&lt;<span class="number">26</span> ; i++)&#123;</span><br><span class="line">            list.add((<span class="type">char</span>)(<span class="string">&#x27;a&#x27;</span>+i));</span><br><span class="line">            list.add((<span class="type">char</span>)(<span class="string">&#x27;A&#x27;</span>+i));</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">StringBuffer</span> <span class="variable">sb</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">StringBuffer</span>();</span><br><span class="line">        <span class="type">Random</span> <span class="variable">rd</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Random</span>();</span><br><span class="line">        <span class="comment">//2.要随机抽取4个字符</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; <span class="number">4</span>; i++) &#123;</span><br><span class="line">            <span class="comment">//获取随机索引</span></span><br><span class="line">            <span class="type">int</span> index=rd.nextInt(list.size());</span><br><span class="line">            <span class="comment">//利用索引获取字符</span></span><br><span class="line">            <span class="type">char</span> c=list.get(index);</span><br><span class="line">            sb.append(c);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//3.生成1位随机数字</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">number</span> <span class="operator">=</span> rd.nextInt(<span class="number">10</span>); <span class="comment">// 生成0到9之间的随机数字</span></span><br><span class="line">    	sb.append(number);</span><br><span class="line">    	<span class="comment">//4.将字符串变成字符数组，然后再新建一个新的字符串</span></span><br><span class="line">    	<span class="type">char</span>[] arr=sb.toString().toCharArray();</span><br><span class="line">    	<span class="comment">//拿着最后一个索引，跟随机索引进行交换</span></span><br><span class="line">    	<span class="type">int</span> randomIndex=rd.nextInt(arr.length);</span><br><span class="line">        <span class="comment">//最大索引指向的元素，跟随机索引指向的元素交换</span></span><br><span class="line">    	<span class="type">char</span> temp=arr[randomIndex];</span><br><span class="line">        arr[randomIndex]=arr[arr.length-<span class="number">1</span>];</span><br><span class="line">    	arr[arr.length-<span class="number">1</span>]=temp;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">String</span>(arr);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+]]></content>
       <categories>
         <category>经典算法思想</category>
       </categories>
@@ -5873,6 +5873,34 @@ cost(h_\Theta(x),y)=\begin{cases} -log(h_\Theta(x)), & \text {if $y$ = 1} \\ -lo
     <title>决策树算法</title>
     <url>/2024/11/01/%E7%AE%97%E6%B3%95_%E5%86%B3%E7%AD%96%E6%A0%91%E7%AE%97%E6%B3%95/</url>
     <content><![CDATA[]]></content>
+      <categories>
+        <category>经典算法思想</category>
+      </categories>
+      <tags>
+        <tag>算法思想</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>标准数组格式</title>
+    <url>/2024/01/21/%E8%BE%93%E5%87%BA%E6%A0%87%E5%87%86%E6%95%B0%E7%BB%84%E6%A0%BC%E5%BC%8F%EF%BC%9A%5B11,22,33,44,55%5D/</url>
+    <content><![CDATA[<p>输出标准数组格式：[11,22,33,44,55]</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">System.out.print(<span class="string">&quot;[&quot;</span>);</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; array.length; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (i==array.length-<span class="number">1</span>)&#123;</span><br><span class="line">                System.out.print(array[i]);</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                System.out.print(array[i]+<span class="string">&quot;,&quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(<span class="string">&quot;]&quot;</span>);</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>经典算法思想</category>
+      </categories>
+      <tags>
+        <tag>算法思想</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>超出范围重新录入</title>
+    <url>/2024/01/23/%E8%A7%84%E5%AE%9A%E8%8C%83%E5%9B%B4%E5%86%85%E5%BD%95%E5%85%A5%E6%95%B0%E6%8D%AE/</url>
+    <content><![CDATA[<h1 id="规定范围内录入数据"><a href="#规定范围内录入数据" class="headerlink" title="规定范围内录入数据"></a>规定范围内录入数据</h1><p>1.多位时(for循环和i++)</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="comment">//输入规定范围的整数：0-100之间</span></span><br><span class="line">        <span class="type">int</span>[] scores = <span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">6</span>];</span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span><span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; scores.length;) &#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;请输入评分:&quot;</span>);</span><br><span class="line">            <span class="type">int</span> score=sc.nextInt();</span><br><span class="line">            <span class="keyword">if</span> (score&gt;=<span class="number">0</span>&amp;&amp;score&lt;=<span class="number">100</span>)&#123;</span><br><span class="line">                scores[i]=score;</span><br><span class="line">                i++;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                System.out.println(<span class="string">&quot;超出范围，继续录入，当前的i为:&quot;</span>+i);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<p>2.一位时(while和break)</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;输入蓝色球号:&quot;</span>);</span><br><span class="line">    <span class="type">int</span> <span class="variable">number</span> <span class="operator">=</span> number = sc.nextInt();</span><br><span class="line">    <span class="keyword">if</span> (number &gt;= <span class="number">1</span> &amp;&amp; number &lt;= <span class="number">16</span>) &#123;</span><br><span class="line">        newArr[newArr.length-<span class="number">1</span>] = number;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;蓝球码超出范围，重新输入:&quot;</span>);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+]]></content>
       <categories>
         <category>经典算法思想</category>
       </categories>
@@ -5908,21 +5936,6 @@ cost(h_\Theta(x),y)=\begin{cases} -log(h_\Theta(x)), & \text {if $y$ = 1} \\ -lo
       </tags>
   </entry>
   <entry>
-    <title>超出范围重新录入</title>
-    <url>/2024/01/23/%E8%A7%84%E5%AE%9A%E8%8C%83%E5%9B%B4%E5%86%85%E5%BD%95%E5%85%A5%E6%95%B0%E6%8D%AE/</url>
-    <content><![CDATA[<h1 id="规定范围内录入数据"><a href="#规定范围内录入数据" class="headerlink" title="规定范围内录入数据"></a>规定范围内录入数据</h1><p>1.多位时(for循环和i++)</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="comment">//输入规定范围的整数：0-100之间</span></span><br><span class="line">        <span class="type">int</span>[] scores = <span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">6</span>];</span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span><span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; scores.length;) &#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;请输入评分:&quot;</span>);</span><br><span class="line">            <span class="type">int</span> score=sc.nextInt();</span><br><span class="line">            <span class="keyword">if</span> (score&gt;=<span class="number">0</span>&amp;&amp;score&lt;=<span class="number">100</span>)&#123;</span><br><span class="line">                scores[i]=score;</span><br><span class="line">                i++;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                System.out.println(<span class="string">&quot;超出范围，继续录入，当前的i为:&quot;</span>+i);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<p>2.一位时(while和break)</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;输入蓝色球号:&quot;</span>);</span><br><span class="line">    <span class="type">int</span> <span class="variable">number</span> <span class="operator">=</span> number = sc.nextInt();</span><br><span class="line">    <span class="keyword">if</span> (number &gt;= <span class="number">1</span> &amp;&amp; number &lt;= <span class="number">16</span>) &#123;</span><br><span class="line">        newArr[newArr.length-<span class="number">1</span>] = number;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;蓝球码超出范围，重新输入:&quot;</span>);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>经典算法思想</category>
-      </categories>
-      <tags>
-        <tag>算法思想</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>金额转换思想</title>
     <url>/2024/02/04/%E9%87%91%E9%A2%9D%E8%BD%AC%E6%8D%A2%E6%80%9D%E6%83%B3/</url>
     <content><![CDATA[<h1 id="金额转换思想："><a href="#金额转换思想：" class="headerlink" title="金额转换思想："></a>金额转换思想：</h1><p>​            2135</p>
@@ -5943,19 +5956,6 @@ cost(h_\Theta(x),y)=\begin{cases} -log(h_\Theta(x)), & \text {if $y$ = 1} \\ -lo
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> ZeroCount=<span class="number">7</span>-strMoney.length;</span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;ZeroCount;i++)&#123;</span><br><span class="line">    strMoney=<span class="string">&quot;零&quot;</span>+strMoney;<span class="comment">//字符串拼接,前拼</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><strong>三:插入单位</strong></p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//1.定义数组单位</span></span><br><span class="line">String[] arr = &#123;<span class="string">&quot;佰&quot;</span>,<span class="string">&quot;拾&quot;</span>,<span class="string">&quot;万&quot;</span>,<span class="string">&quot;仟&quot;</span>,<span class="string">&quot;佰&quot;</span>,<span class="string">&quot;拾&quot;</span>,<span class="string">&quot;元&quot;</span>&#125;;</span><br><span class="line"><span class="comment">//2.遍历strMoney，然后把大写数字和单位拼接到字符串中</span></span><br><span class="line">String result=<span class="string">&quot;&quot;</span>;</span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;strMoney.length();i++)&#123;</span><br><span class="line">    <span class="type">char</span> c=strMoney.charAt(i);</span><br><span class="line">    result=result+c+arr[i];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>经典算法思想</category>
-      </categories>
-      <tags>
-        <tag>算法思想</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>标准数组格式</title>
-    <url>/2024/01/21/%E8%BE%93%E5%87%BA%E6%A0%87%E5%87%86%E6%95%B0%E7%BB%84%E6%A0%BC%E5%BC%8F%EF%BC%9A%5B11,22,33,44,55%5D/</url>
-    <content><![CDATA[<p>输出标准数组格式：[11,22,33,44,55]</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">System.out.print(<span class="string">&quot;[&quot;</span>);</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; array.length; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (i==array.length-<span class="number">1</span>)&#123;</span><br><span class="line">                System.out.print(array[i]);</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                System.out.print(array[i]+<span class="string">&quot;,&quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(<span class="string">&quot;]&quot;</span>);</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>经典算法思想</category>
