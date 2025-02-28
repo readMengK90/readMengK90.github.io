@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 7.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"readmengk90.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":{"home":"/","about":"/about","tags":"/tags"}},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="C++后端开发-C语言基础&amp;Linux系统编程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C++后端开发">
+<meta property="og:url" content="https://readmengk90.github.io/2025/02/26/C%E8%AF%AD%E8%A8%80-%E7%8E%8B%E9%81%93/index.html">
+<meta property="og:site_name" content="东瓶西镜">
+<meta property="og:description" content="C++后端开发-C语言基础&amp;Linux系统编程">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://readmengk90.github.io/2025/02/26/images/C%E8%AF%AD%E8%A8%80-%E7%8E%8B%E9%81%93/Clike.png">
+<meta property="og:image" content="https://readmengk90.github.io/2025/02/26/images/C%E8%AF%AD%E8%A8%80-%E7%8E%8B%E9%81%93/%E8%BD%AF%E4%BB%B6%E7%9B%AE%E5%BD%95.png">
+<meta property="og:image" content="https://readmengk90.github.io/2025/02/26/images/C%E8%AF%AD%E8%A8%80-%E7%8E%8B%E9%81%93/%E9%A2%84%E5%A4%84%E7%90%8602.png">
+<meta property="og:image" content="https://readmengk90.github.io/2025/02/26/images/C%E8%AF%AD%E8%A8%80-%E7%8E%8B%E9%81%93/%E9%A2%84%E5%A4%84%E7%90%86.png">
+<meta property="og:image" content="https://readmengk90.github.io/2025/02/26/images/C%E8%AF%AD%E8%A8%80-%E7%8E%8B%E9%81%93/%E7%BC%96%E8%AF%91.png">
+<meta property="og:image" content="https://readmengk90.github.io/2025/02/26/images/C%E8%AF%AD%E8%A8%80-%E7%8E%8B%E9%81%93/c%E7%A8%8B%E5%BA%8F%E6%89%A7%E8%A1%8C%E8%BF%87%E7%A8%8B.png">
+<meta property="og:image" content="https://readmengk90.github.io/2025/02/26/images/C%E8%AF%AD%E8%A8%80-%E7%8E%8B%E9%81%93/%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98%E7%A9%BA%E9%97%B4-1740622800842-2.png">
+<meta property="og:image" content="https://readmengk90.github.io/2025/02/26/images/C%E8%AF%AD%E8%A8%80-%E7%8E%8B%E9%81%93/%E5%85%B3%E9%94%AE%E5%AD%97.png">
+<meta property="og:image" content="https://readmengk90.github.io/2025/02/26/images/C%E8%AF%AD%E8%A8%80-%E7%8E%8B%E9%81%93/%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E7%B1%BB%E5%9E%8B-1740639090978-8.png">
+<meta property="og:image" content="https://readmengk90.github.io/2025/02/26/images/C%E8%AF%AD%E8%A8%80-%E7%8E%8B%E9%81%93/%E6%A0%BC%E5%BC%8F%E4%B8%B2.png">
+<meta property="og:image" content="https://readmengk90.github.io/2025/02/26/images/C%E8%AF%AD%E8%A8%80-%E7%8E%8B%E9%81%93/scanf%E6%A0%BC%E5%BC%8F%E4%B8%B2.png">
+<meta property="og:image" content="https://readmengk90.github.io/2025/02/26/images/C%E8%AF%AD%E8%A8%80-%E7%8E%8B%E9%81%93/%E6%95%B4%E6%95%B0%E7%9A%84%E7%BC%96%E7%A0%81.png">
+<meta property="og:image" content="https://readmengk90.github.io/2025/02/26/images/C%E8%AF%AD%E8%A8%80-%E7%8E%8B%E9%81%93/ASCII%E7%A0%81.png">
+<meta property="og:image" content="https://readmengk90.github.io/2025/02/26/images/C%E8%AF%AD%E8%A8%80-%E7%8E%8B%E9%81%93/char%E7%B1%BB%E5%9E%8B.png">
+<meta property="og:image" content="https://readmengk90.github.io/2025/02/26/images/C%E8%AF%AD%E8%A8%80-%E7%8E%8B%E9%81%93/%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2-1740662807505-15.png">
+<meta property="og:image" content="https://readmengk90.github.io/2025/02/26/images/C%E8%AF%AD%E8%A8%80-%E7%8E%8B%E9%81%93/sizeof.png">
+<meta property="article:published_time" content="2025-02-26T08:19:07.059Z">
+<meta property="article:modified_time" content="2025-02-28T08:22:16.311Z">
+<meta property="article:author" content="Amber">
+<meta property="article:tag" content="C++后端开发">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://readmengk90.github.io/2025/02/26/images/C%E8%AF%AD%E8%A8%80-%E7%8E%8B%E9%81%93/Clike.png">
+
+<link rel="canonical" href="https://readmengk90.github.io/2025/02/26/C%E8%AF%AD%E8%A8%80-%E7%8E%8B%E9%81%93/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>C++后端开发 | 东瓶西镜</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="东瓶西镜" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">东瓶西镜</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Welcome to my blog</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-photos">
+
+    <a href="/photos/" rel="section"><i class="fa fa-camera fa-fw"></i>photos</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+  <a href="https://github.com/readMengK90/readMengK90.github.io.git" class="github-corner" title="readMengK90 GitHub" aria-label="readMengK90 GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://readmengk90.github.io/2025/02/26/C%E8%AF%AD%E8%A8%80-%E7%8E%8B%E9%81%93/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Amber">
+      <meta itemprop="description" content="programming study">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="东瓶西镜">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          C++后端开发
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-02-26 16:19:07" itemprop="dateCreated datePublished" datetime="2025-02-26T16:19:07+08:00">2025-02-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-02-28 16:22:16" itemprop="dateModified" datetime="2025-02-28T16:22:16+08:00">2025-02-28</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/C-%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" itemprop="url" rel="index"><span itemprop="name">C++后端开发</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>4.3k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>8 分钟</span>
+            </span>
+            <div class="post-description"><center>C++后端开发-C语言基础&Linux系统编程</center></div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>[toc]</p>
+<p>观念：1.学习本身是一件痛苦的事情(改变行为,改变认知)。</p>
+<p>​        2.从学习知识的认知转变为学习技能(理论先行，理论与实践并重)</p>
+<p>技巧：课前预习,课堂认真听讲(跟上老师的思路，如何思考问题)，课后(作业按时完成,及时总结复习)</p>
+<p>忠告：1.千万不要用百度解决代码问题(<code>google</code>)</p>
+<p>​        2.英语很重要(逼自己一把)</p>
+<p>​        3.品味很重要(读好书)</p>
+<p>就业方向:</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>C/S(client/server)(游戏,金融)</th>
+<th>B/S(browser/server)(电商,政府网站)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>速度快，传输数据量少，可采样自定义协议</td>
+<td>学习成本低，不需要开发客户端</td>
+</tr>
+<tr>
+<td>开发客户端,学习成本,更新比较麻烦</td>
+<td>传输数据量大，HTTP/HTTPs协议(速度慢)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<p>1.前端</p>
+<p>client端：QT</p>
+<p>browser端：<code>HTML5/CSS/JavaScript</code></p>
+<p>2.后端</p>
+<p>Server端：业务逻辑+架构</p>
+<p>​            逻辑:数据库,缓存,消息队列</p>
+<p>​            架构:微服务(上云)</p>
+<p>3.底层开发</p>
+<p>开发数据库，操作系统，浏览器，游戏引擎(变动不大)</p>
+<p>4.数据方向(有一定数学能力)</p>
+<p> 大数据，人工智能</p>
+<p>5.嵌入式方向</p>
+<p>汽车，芯片，IOT(智能家居)</p>
+<p>6.安全方向(密码学)</p>
+<p>网络攻防</p>
+<hr>
+<p><code>阶段一：C语言/数据结构/算法</code>(15天)</p>
+<p>C语言基础：9天</p>
+<p>C语言是奇怪的，有缺陷的，取得巨大的成功的语言。</p>
+<p>数据结构和算法：6天 动态数组,链表,栈,队列,哈希表,位图(数据结构),二叉树;排序，查找(分析算法)</p>
+<p>词法分析器：题目</p>
+<h3 id="1-为什么要学习C语言？"><a href="#1-为什么要学习C语言？" class="headerlink" title="1.为什么要学习C语言？"></a>1.为什么要学习C语言？</h3><p>1.当今网络世界是建立在C语言之上的，Linux,HTTP服务器(Nginx),Redis(内存数据库,缓存)，PostgreSql,网络协议栈等都是C语言实现的。</p>
+<p><img src="../images/C语言-王道/Clike.png" alt=""></p>
+<hr>
+<p>3.特性少(函数,结构体,指针等)</p>
+<h3 id="2-第一个程序编写编译执行"><a href="#2-第一个程序编写编译执行" class="headerlink" title="2.第一个程序编写编译执行"></a>2.第一个程序编写编译执行</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span> <span class="comment">//stdio.h:预处理指令</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">void</span>)</span> &#123; <span class="comment">//void表示无参数，不可省略</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello World\n&quot;</span>); <span class="comment">// \n (n换行符,\n转义序列)</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>; <span class="comment">//程序结束</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>课堂使用VScode软件编写程序</p>
+<p><img src="../images/C语言-王道/软件目录.png" alt=""></p>
+<h3 id="3-编译和链接-♥"><a href="#3-编译和链接-♥" class="headerlink" title="3.编译和链接(♥)"></a>3.编译和链接(♥)</h3><p>虽然<code>HelloWold.c</code>很简单,但是为了运行这个程序，却需要涉及很多内容。我们需要把文本形式的<code>HelloWorld.c</code>转换成计算机可以执行的(二进制)形式。对C程序来说，通常包括下面4个步骤：</p>
+<p><strong>预处理</strong>：首先程序会由预处理器进行处理。预处理器执行以#开头的指令。预处理指令一般都比较简单：比如，把头文件中内容copy到源代码中，或者是对宏进行文本替换等。</p>
+<p>预处理命令不用加分号</p>
+<p><img src="../images/C语言-王道/预处理02.png" alt=""></p>
+<p>宏函数:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> FOO(X) (1+(x)*(x))</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">void</span>)</span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;FOO(1+2)=%d\n&quot;</span>,FOO(<span class="number">1</span>+<span class="number">2</span>)); <span class="comment">//1+1+2*1+2,实参替换形参</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line">宏函数注意事项:</span><br><span class="line"><span class="number">1.</span>除了参数需要用括号括起来之外，整个表达式也需要用括号括起来，才准确。</span><br><span class="line"><span class="number">2.</span>左括号紧挨着宏函数名字，FOO(X)</span><br><span class="line"><span class="comment">// #define FOO(X) 1+(x)*(x)</span></span><br><span class="line"><span class="comment">// printf(&quot;FOO(1+2)=%d\n&quot;,10/FOO(1+2));</span></span><br><span class="line">为什么需要宏函数:</span><br><span class="line"><span class="number">1.</span>宏函数能够避免函数调用的开销(应用场景:简短的频繁调用的函数)</span><br><span class="line"><span class="number">2.</span>提供了一定的宏编程能力(没有指定类型)</span><br><span class="line">库文件运行在链接阶段</span><br></pre></td></tr></table></figure>
+<p>程序只执行预处理的设置:右键项目-属性-属性配置(C/C++)-预处理器-预处理到文件(是)</p>
+<p><strong>预处理过程就是将.h文件的内容复制到.c文件中生成一个.i文件</strong></p>
+<p><img src="../images/C语言-王道/预处理.png" alt=""></p>
+<p><strong>编译</strong>：经过预处理器处理的文件(main.i)会交给编译器进行编译，编译器会把程序翻译成对应平台的汇编代码</p>
+<p><img src="../images/C语言-王道/编译.png" alt=""></p>
+<p><strong>汇编</strong>：汇编器会把生成的汇编代码翻译成对应平台的机器代码(目标代码)。然而程序现在是不能运行的，还需要经过最后一个步骤链接。</p>
+<p><strong>链接</strong>：在链接阶段，链接器会把由汇编器生成的目标代码和程序需要的其他附加代码整合在一起，生成最终可执行的程序。这些附加代码包括程序中用的的库函数(如printf函数)</p>
+<p><img src="../images/C语言-王道/c程序执行过程.png" alt=""></p>
+<h3 id="4-进程虚拟内存空间-♥"><a href="#4-进程虚拟内存空间-♥" class="headerlink" title="4.进程虚拟内存空间(♥)"></a>4.进程虚拟内存空间(♥)</h3><p>程序和进程:程序是经过(预处理,编译,汇编,链接)形成的二进制文件，进程是一个运行的程序，每个进程都有自己的虚拟内存空间。</p>
+<p><img src="../images/C语言-王道/虚拟内存空间-1740622800842-2.png" alt=""></p>
+<h3 id="5-变量和赋值"><a href="#5-变量和赋值" class="headerlink" title="5.变量和赋值"></a>5.变量和赋值</h3><p><strong>变量的三要素</strong>: </p>
+<p>​            变量名:引言变量绑定的值</p>
+<p>​            类型：1.限定了值的范围(限定编码和内存的大小来限定值的范围)；</p>
+<p>​                    2.值能够进行的操作</p>
+<p>​            值：</p>
+<p><strong>标识符</strong>:在编写程序时，需要对变量,函数,宏等内容进行命名.这些名字我们称为标识符。在C语言中，标识符可以含有字母，数字，下划线，但是必须以字母或者下划线开头(C语言区分大小写)。</p>
+<p>规范:单词间用下划线;驼峰命名法(前单词小写后单词首字母大写)</p>
+<p><strong>关键字</strong>:关键字不能作为标识符来使用，对C编辑器有特殊意义</p>
+<p><img src="../images/C语言-王道/关键字.png" alt=""></p>
+<h3 id="6-输入输出模型"><a href="#6-输入输出模型" class="headerlink" title="6.输入输出模型"></a>6.输入输出模型</h3><p><img src="../images/C语言-王道/输入输出类型-1740639090978-8.png" alt=""></p>
+<p><strong>printf=print(打印)+format(格式化)</strong></p>
+<p><code>printf</code>的工作原理：打印格式串中的内容，并用后面用表达式的值替换<code>格式串</code>中的转换说明(占位符）。</p>
+<p><img src="../images/C语言-王道/格式串.png" alt=""></p>
+<p>m.p的作用是控制输出格式</p>
+<p><strong>scanf=scan(扫描)+format(格式化)</strong></p>
+<p>scanf的工作原理：从左到右<strong>依次匹配</strong>格式串中的每一项,忽略前置的空白字符。</p>
+<p>如果有一项匹配不成功，scanf会立刻返回,123ABC。</p>
+<p>scanf会返回匹配成功的转换说明的个数。</p>
+<p><img src="../images/C语言-王道/scanf格式串.png" alt=""></p>
+<p>​                                     %c:匹配一个字符</p>
+<h3 id="7-整数的编码"><a href="#7-整数的编码" class="headerlink" title="7.整数的编码"></a>7.整数的编码</h3><p><img src="../images/C语言-王道/整数的编码.png" alt=""></p>
+<p>补码的两个性质:</p>
+<p>1.补码里二进制表示都是1，则值为-1</p>
+<p>2.两个有符号整数x+(-x),结果为100000000000000(n个0)</p>
+<p>为什么计算机采用补码存储有符号整数?  -&gt;用加法器来做减法运算。</p>
+<ul>
+<li><p><strong>原码</strong>：简单直观但不利于直接用于硬件上的算术运算。</p>
+<ul>
+<li><p>00001110（14）</p>
+</li>
+<li><p>+10000110  (-6)</p>
+</li>
+</ul>
+<hr>
+<pre><code> 10010100  (-20)
+</code></pre></li>
+<li><p><strong>反码</strong>：解决了部分运算问题但仍存在两个零的问题。</p>
+<ul>
+<li><p>对于正数，其反码与原码相同；对于负数，将原码除符号位外的所有位取反</p>
+</li>
+<li><p>00001110（14）</p>
+</li>
+<li><p>+11111001  (-6)</p>
+</li>
+</ul>
+<hr>
+<p>  1 00000111  (7)</p>
+</li>
+<li><p><strong>补码</strong>：广泛应用于现代计算机系统中，因为它简化了算术运算并有效解决了两个零的问题。</p>
+<ul>
+<li><p>对于正数，其补码与原码相同；对于负数，先求出其反码，然后在其最低位加1得到补码。</p>
+</li>
+<li><p>00001110（14）</p>
+</li>
+<li><p>+11111010  (-6)</p>
+</li>
+</ul>
+<hr>
+<pre><code> 00001000 (8)
+</code></pre></li>
+</ul>
+<h3 id="8-浮点数类型"><a href="#8-浮点数类型" class="headerlink" title="8.浮点数类型"></a>8.浮点数类型</h3><p>编码：IEEE754标准,浮点数是不精确的，越往0越集中，越远离0越稀疏。</p>
+<p>单精度float(%f)</p>
+<p>双精度double(%lf)</p>
+<h3 id="9-字符类型"><a href="#9-字符类型" class="headerlink" title="9.字符类型"></a>9.字符类型</h3><p>编码采用ASCII码(1个字节，低7位，128个字符)</p>
+<p>前32个+127是控制字符</p>
+<p>五个特殊码点</p>
+<p><img src="../images/C语言-王道/ASCII码.png" alt=""></p>
+<p><img src="../images/C语言-王道/char类型.png" alt=""></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//C语言把字符当作一个字节的整数处理</span></span><br><span class="line"><span class="comment">//大小写转换</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;ctype.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">tolower</span><span class="params">(<span class="type">int</span> c)</span>;</span><br><span class="line"><span class="type">int</span> <span class="title function_">toupper</span><span class="params">(<span class="type">int</span> c)</span>;</span><br></pre></td></tr></table></figure>
+<p><a target="_blank" rel="noopener" href="https://zh.cppreference.com/w/c/string/byte">空终止字节字符串 - cppreference.com</a></p>
+<p>​    读操作和写操作(和用户交互)</p>
+<p>​        printf+%c:打印字符</p>
+<p>​        scanf+%c:读取字符    （%c匹配一个字符，不会忽略空白字符）</p>
+<p>​        Q:跳过空白字符，读取下一个非空白字符：“  %c”, 或者putchar()和getchar()</p>
+<p>getchar()惯用法：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># while (getchar() != <span class="string">&#x27;\n&#x27;</span>) 是一个常见的C语言代码片段，用于读取并丢弃输入直到遇到换行符（\n）.</span></span><br><span class="line"><span class="keyword">while</span> (getchar() != <span class="string">&#x27;\n&#x27;</span>) &#123;</span><br><span class="line">        ;<span class="comment">// 空循环体</span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="comment">//跳过这一行剩余的字符，包括换行符</span></span><br><span class="line"><span class="comment">//通常用在需要清除输入缓冲区或忽略用户输入的特定部分时.</span></span><br></pre></td></tr></table></figure>
+<h3 id="10-类型转换"><a href="#10-类型转换" class="headerlink" title="10.类型转换"></a>10.类型转换</h3><p><img src="../images/C语言-王道/类型转换-1740662807505-15.png" alt=""></p>
+<p>void空类型没有值</p>
+<h3 id="11-给类型定义别名"><a href="#11-给类型定义别名" class="headerlink" title="11.给类型定义别名"></a>11.给类型定义别名</h3><p>格式：typedef 类型 别名；</p>
+<p>我们可以使用宏给某一类型创建一个别名，如：但是更好的做法是使用 typedef</p>
+<p>注意：我们定义的别名是放在最后的，而且类型定义是一条语句，后面需要加分号。使用 typedef 定义别名 Bool，编译器会把 Bool 加入它所能识别的类型名列表中。现在我们可以像使用 C 语言内置类型一样使用 Bool 类型了。如：编译器会把 Bool 看作 int 的同义词；因此，flag 其实就是一个普通的 int 类型变量。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> BOOL int</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="type">int</span> Bool;</span><br><span class="line">Bool flag;</span><br></pre></td></tr></table></figure>
+<p>为什么要定义别名:</p>
+<p>1.可读性强 (前提是选择合适的类型名)</p>
+<p>2.可移植性强</p>
+<p>我们举个例子来说明这一点。把 C 语言程序从一台机器移植到另一台机器，可能出现的问题之一就是类型的取值范围不同。比如，i 是 int 类型的变量，那么在 32-bit 的机器上是没有问题的，但在 16-bit 的机器上就会出错。当然为了避免出现可移植性问题，我们可以变量 i 声明为 long int 类型。但是 int 类型的变量在运算时会比 long int 类型的变量更快，而且所占内存空间更少。</p>
+<p>另一个解决方案就是使用别名。在 32-bit 的机器上，我们这样定义 Quantity 类型：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="type">int</span> Quantity;</span><br></pre></td></tr></table></figure>
+<p>而在 16-bit 的机器上，我们将 Quantity 的定义改为：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">typedef long Quantity;</span><br></pre></td></tr></table></figure>
+<p>C 语言库也经常使用 typedef 去定义一些类型；这些类型名经常以 _t 结尾。如：size_t, ptrdiff_t 和 wchar_t，这些类型的定义可能随着实现的不同而不同(所以才定义别名，增加代码的可移植性)。下面是它们的典型定义：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="type">long</span> <span class="type">int</span> <span class="type">ptrdiff_t</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">unsigned</span> <span class="type">long</span> <span class="type">int</span> <span class="type">size_t</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">int</span> <span class="type">wchar_t</span>;</span><br></pre></td></tr></table></figure>
+<h3 id="12-sizeof运算符"><a href="#12-sizeof运算符" class="headerlink" title="12.sizeof运算符"></a>12.sizeof运算符</h3><p>作用:计算某一类型的值在内存中,所占字节的长度,运算符也可以应用于常量、变量和表达式。</p>
+<p><img src="../images/C语言-王道/sizeof.png" alt=""></p>
+<h3 id="13-表达式"><a href="#13-表达式" class="headerlink" title="13. 表达式"></a>13. 表达式</h3><p><code>阶段二：Linux系统编程</code>(30天)</p>
+<p>Shell命令：4天，编写编译程序，debug</p>
+<p>文件: 目录(递归地处理目录)(递归复制,删除,打印目录)</p>
+<p>​      普通文件:(对文件描述符的操作)</p>
+<p>进程: 基本操作(创建,终止进程,执行程序)</p>
+<p>​      进程间的通信(管道,信号)</p>
+<p>线程: 基本操作(创建,终止,等待,游离,join,清理线程)</p>
+<p>​      同步(互斥地访问资源,等待某个条件成立)</p>
+<p>​      模型：生产者消费者模型</p>
+<p>​          线程池</p>
+<p>网络：降低复杂度</p>
+<p>​        Socket套接字(传输层提供给应用层的操作)</p>
+<p>​        I/O多路复用模型(提高服务器的效率)(select,poll,<code>epoll</code>)</p>
+<p>代码仓库：<a target="_blank" rel="noopener" href="https://gitee.com/cplusplus2023/cpp58th">https://gitee.com/cplusplus2023/cpp58th</a></p>
+<p>代码在线编译平台：<a target="_blank" rel="noopener" href="https://godbolt.org/">https://godbolt.org/</a></p>
+
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div></div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/WeChat.png" alt="Amber 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.png" alt="Amber 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Amber
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://readmengk90.github.io/2025/02/26/C%E8%AF%AD%E8%A8%80-%E7%8E%8B%E9%81%93/" title="C++后端开发">https://readmengk90.github.io/2025/02/26/C语言-王道/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/C-%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" rel="tag"># C++后端开发</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2025/02/20/flask%E6%A1%86%E6%9E%B6/" rel="prev" title="flask框架">
+      <i class="fa fa-chevron-left"></i> flask框架
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%AD%A6%E4%B9%A0C%E8%AF%AD%E8%A8%80%EF%BC%9F"><span class="nav-number">1.</span> <span class="nav-text">1.为什么要学习C语言？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F%E7%BC%96%E5%86%99%E7%BC%96%E8%AF%91%E6%89%A7%E8%A1%8C"><span class="nav-number">2.</span> <span class="nav-text">2.第一个程序编写编译执行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E7%BC%96%E8%AF%91%E5%92%8C%E9%93%BE%E6%8E%A5-%E2%99%A5"><span class="nav-number">3.</span> <span class="nav-text">3.编译和链接(♥)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E8%BF%9B%E7%A8%8B%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98%E7%A9%BA%E9%97%B4-%E2%99%A5"><span class="nav-number">4.</span> <span class="nav-text">4.进程虚拟内存空间(♥)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E5%8F%98%E9%87%8F%E5%92%8C%E8%B5%8B%E5%80%BC"><span class="nav-number">5.</span> <span class="nav-text">5.变量和赋值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E6%A8%A1%E5%9E%8B"><span class="nav-number">6.</span> <span class="nav-text">6.输入输出模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-%E6%95%B4%E6%95%B0%E7%9A%84%E7%BC%96%E7%A0%81"><span class="nav-number">7.</span> <span class="nav-text">7.整数的编码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-%E6%B5%AE%E7%82%B9%E6%95%B0%E7%B1%BB%E5%9E%8B"><span class="nav-number">8.</span> <span class="nav-text">8.浮点数类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-%E5%AD%97%E7%AC%A6%E7%B1%BB%E5%9E%8B"><span class="nav-number">9.</span> <span class="nav-text">9.字符类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2"><span class="nav-number">10.</span> <span class="nav-text">10.类型转换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-%E7%BB%99%E7%B1%BB%E5%9E%8B%E5%AE%9A%E4%B9%89%E5%88%AB%E5%90%8D"><span class="nav-number">11.</span> <span class="nav-text">11.给类型定义别名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-sizeof%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">12.</span> <span class="nav-text">12.sizeof运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13-%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="nav-number">13.</span> <span class="nav-text">13. 表达式</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Amber"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">Amber</p>
+  <div class="site-description" itemprop="description">programming study</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">75</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags">
+          
+        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="mailto:2770576166@qq.com" title="E-Mail → mailto:2770576166@qq.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.google.com.hk/" title="Google → https:&#x2F;&#x2F;www.google.com.hk&#x2F;" rel="noopener" target="_blank"><i class="fab fa-google fa-fw"></i>Google</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://github.com/readMengK90/readMengK90.github.io" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;readMengK90&#x2F;readMengK90.github.io" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Amber</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">170k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">5:09</span>
+</div>
+  <div class="powered-by">
+    
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
